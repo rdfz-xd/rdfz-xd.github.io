@@ -34,10 +34,10 @@ titles_from_headings:
   collections: true
 
 highlighter: rouge
-markdown: kramdown
-kramdown:
-  math_engine: katex
-  input: GFM
-  auto_ids: true
-  hard_wrap: false
-  syntax_highlighter: rouge
+markdown:
+  kramdown:
+    math_engine: katex
+    input: GFM
+    auto_ids: true
+    hard_wrap: false
+    syntax_highlighter: rouge
