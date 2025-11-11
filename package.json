@@ -12,6 +12,9 @@
     "url": "https://github.com/jackyzha0/quartz.git"
   },
   "scripts": {
+    "dev": "npx quartz build --serve",
+    "build": "npx quartz build",
+    "deploy": "npx quartz build && git add public && git commit -m 'Deploy site' && git subtree push --prefix public origin main",
     "quartz": "./quartz/bootstrap-cli.mjs",
     "docs": "npx quartz build --serve -d docs",
     "check": "tsc --noEmit && npx prettier . --check",
