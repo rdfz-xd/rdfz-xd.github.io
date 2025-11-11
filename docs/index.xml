@@ -6,12 +6,6 @@
       <description>Last 10 notes on Dong Xing&#039;s Blog</description>
       <generator>Quartz -- quartz.jzhao.xyz</generator>
       <item>
-    <title>test</title>
-    <link>https://quartz.jzhao.xyz/PRISMS-Math-Team-Training/test</link>
-    <guid>https://quartz.jzhao.xyz/PRISMS-Math-Team-Training/test</guid>
-    <description><![CDATA[  ]]></description>
-    <pubDate>Tue, 11 Nov 2025 00:36:13 GMT</pubDate>
-  </item><item>
     <title>20250919 PRISMS Junior Varsity Training</title>
     <link>https://quartz.jzhao.xyz/PRISMS-Math-Team-Training/20250919-PRISMS-Junior-Varsity-Training</link>
     <guid>https://quartz.jzhao.xyz/PRISMS-Math-Team-Training/20250919-PRISMS-Junior-Varsity-Training</guid>
@@ -64,6 +58,12 @@
     <link>https://quartz.jzhao.xyz/%E7%BB%84%E5%90%88/%E5%AE%B9%E6%96%A5</link>
     <guid>https://quartz.jzhao.xyz/%E7%BB%84%E5%90%88/%E5%AE%B9%E6%96%A5</guid>
     <description><![CDATA[ 定理（子集反演） 设两个关于集合的函数 f, g 满足 f(S)=\sum_{T\subseteq S}g(T) 那么就有 g(S)=\sum_{T\subseteq S}(-1)^{|S|-|T|}f(T) 证明 \begin{align} \sum_{T\subseteq S}(-1)^{|S|-|T|}f(T)&amp;=\sum_{T\subseteq S}(-1)^{|S|-|T|}\sum_{Q\subseteq T}g(Q)\\ &amp;=\sum_{Q\subseteq S}g(Q)\sum_{Q\subseteq T\subseteq S}(-1)^{|S|-|T|}\\ ... ]]></description>
+    <pubDate>Tue, 11 Nov 2025 00:13:38 GMT</pubDate>
+  </item><item>
+    <title>鸽巢</title>
+    <link>https://quartz.jzhao.xyz/%E7%BB%84%E5%90%88/%E9%B8%BD%E5%B7%A2</link>
+    <guid>https://quartz.jzhao.xyz/%E7%BB%84%E5%90%88/%E9%B8%BD%E5%B7%A2</guid>
+    <description><![CDATA[  定理 \forall S\in\binom{\{1,2,\dots,2n\}}{n+1}，\exist x,y\in S 满足 x&lt;y\land x\mid y。 证明 设 T_m=\{2^km:k\in\N\}。易证 \forall x\in S，T_1,T_3,\dots,T_{2n-1} 这 n 个集合中恰有一个集合包含 x。应用鸽巢原理得到 \exist x,y\in S，满足 x&lt;y 且 x 和 y 被划分到同一个集合中。易证 x\mid y。 定理 \forall p\in S_{mn+1}，必存在一个长度 m+1 的上升子序列或者一个长度 n+1 的下降子序列。 证... ]]></description>
     <pubDate>Tue, 11 Nov 2025 00:13:38 GMT</pubDate>
   </item>
     </channel>
