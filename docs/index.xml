@@ -6,6 +6,12 @@
       <description>Last 10 notes on Dong Xing&#039;s Blog</description>
       <generator>Quartz -- quartz.jzhao.xyz</generator>
       <item>
+    <title>20250919 PRISMS Junior Varsity Training</title>
+    <link>https://quartz.jzhao.xyz/PRISMS-Math-Team-Training/20250919-PRISMS-Junior-Varsity-Training</link>
+    <guid>https://quartz.jzhao.xyz/PRISMS-Math-Team-Training/20250919-PRISMS-Junior-Varsity-Training</guid>
+    <description><![CDATA[ Problem 1 Find all the roots of equation 2x-2.8=\lfloor x\rfloor. ]]></description>
+    <pubDate>Tue, 11 Nov 2025 00:35:12 GMT</pubDate>
+  </item><item>
     <title>20250915 PRISMS Senior Varsity Training</title>
     <link>https://quartz.jzhao.xyz/PRISMS-Math-Team-Training/20250915-PRISMS-Senior-Varsity-Training</link>
     <guid>https://quartz.jzhao.xyz/PRISMS-Math-Team-Training/20250915-PRISMS-Senior-Varsity-Training</guid>
@@ -59,12 +65,6 @@
     <guid>https://quartz.jzhao.xyz/%E7%BB%84%E5%90%88/%E9%B8%BD%E5%B7%A2</guid>
     <description><![CDATA[  定理 \forall S\in\binom{\{1,2,\dots,2n\}}{n+1}，\exist x,y\in S 满足 x&lt;y\land x\mid y。 证明 设 T_m=\{2^km:k\in\N\}。易证 \forall x\in S，T_1,T_3,\dots,T_{2n-1} 这 n 个集合中恰有一个集合包含 x。应用鸽巢原理得到 \exist x,y\in S，满足 x&lt;y 且 x 和 y 被划分到同一个集合中。易证 x\mid y。 定理 \forall p\in S_{mn+1}，必存在一个长度 m+1 的上升子序列或者一个长度 n+1 的下降子序列。 证... ]]></description>
     <pubDate>Tue, 11 Nov 2025 00:13:38 GMT</pubDate>
-  </item><item>
-    <title>20250919 PRISMS Junior Varsity Training</title>
-    <link>https://quartz.jzhao.xyz/PRISMS-Math-Team-Training/20250919-PRISMS-Junior-Varsity-Training</link>
-    <guid>https://quartz.jzhao.xyz/PRISMS-Math-Team-Training/20250919-PRISMS-Junior-Varsity-Training</guid>
-    <description><![CDATA[ Problem 1 Find all the roots of equation 2x-2.8=\lfloor x\rfloor. ]]></description>
-    <pubDate>Tue, 14 Oct 2025 18:37:53 GMT</pubDate>
   </item>
     </channel>
   </rss>
