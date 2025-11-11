@@ -7,3 +7,5 @@ Hi! I am Dong Xing, a sophomore at Princeton International School of Mathematics
 ### Honors and Achievements
 
 - **USACO Platinum Division (2025 - Present)**
+
+![](https://cdn.luogu.com.cn/upload/image_hosting/mhzx3lgo.png)
