@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0">
+    <channel>
+      <title>Dong Xing&#039;s Blog</title>
+      <link>https://quartz.jzhao.xyz</link>
+      <description>Last 10 notes on Dong Xing&#039;s Blog</description>
+      <generator>Quartz -- quartz.jzhao.xyz</generator>
+      <item>
+    <title>20250915 PRISMS Senior Varsity Training</title>
+    <link>https://quartz.jzhao.xyz/PRISMS-Math-Team-Training/20250915-PRISMS-Senior-Varsity-Training</link>
+    <guid>https://quartz.jzhao.xyz/PRISMS-Math-Team-Training/20250915-PRISMS-Senior-Varsity-Training</guid>
+    <description><![CDATA[ Problem 1 (2013 PUMaC, Number Theory Problem 2) Find the smallest n such that 2013^n ends in 001. ]]></description>
+    <pubDate>Tue, 11 Nov 2025 00:13:38 GMT</pubDate>
+  </item><item>
+    <title>20250919  PRISMS Junior Varsity Training</title>
+    <link>https://quartz.jzhao.xyz/PRISMS-Math-Team-Training/20250919--PRISMS-Junior-Varsity-Training</link>
+    <guid>https://quartz.jzhao.xyz/PRISMS-Math-Team-Training/20250919--PRISMS-Junior-Varsity-Training</guid>
+    <description><![CDATA[ Problem 1 Find all the roots of equation 2x-2.8=\lfloor x\rfloor. ]]></description>
+    <pubDate>Tue, 11 Nov 2025 00:13:38 GMT</pubDate>
+  </item><item>
+    <title>20250922 PRISMS Senior Varsity Training</title>
+    <link>https://quartz.jzhao.xyz/PRISMS-Math-Team-Training/20250922-PRISMS-Senior-Varsity-Training</link>
+    <guid>https://quartz.jzhao.xyz/PRISMS-Math-Team-Training/20250922-PRISMS-Senior-Varsity-Training</guid>
+    <description><![CDATA[ Problem 1 Find the number of integer values of k in the closed interval [-500,500] for which the equation \log(kx)=2\log(x+2) has exactly one real solution. ]]></description>
+    <pubDate>Tue, 11 Nov 2025 00:13:38 GMT</pubDate>
+  </item><item>
+    <title>20250929 PRISMS Senior Varsity Training</title>
+    <link>https://quartz.jzhao.xyz/PRISMS-Math-Team-Training/20250929-PRISMS-Senior-Varsity-Training</link>
+    <guid>https://quartz.jzhao.xyz/PRISMS-Math-Team-Training/20250929-PRISMS-Senior-Varsity-Training</guid>
+    <description><![CDATA[ Problem 1 Equilateral \triangle ABC with side length 14 is rotated about its center by angle \theta, where 0&lt;\theta&lt;60\degree, to form \triangle DEF. ]]></description>
+    <pubDate>Tue, 11 Nov 2025 00:13:38 GMT</pubDate>
+  </item><item>
+    <title>Welcome to My Blog!</title>
+    <link>https://quartz.jzhao.xyz/</link>
+    <guid>https://quartz.jzhao.xyz/</guid>
+    <description><![CDATA[ Hi! I am Dong Xing, a sophomore at Princeton International School of Mathematics and Science. ]]></description>
+    <pubDate>Tue, 11 Nov 2025 00:13:38 GMT</pubDate>
+  </item><item>
+    <title>2025 高考数学（北京）压轴题另解</title>
+    <link>https://quartz.jzhao.xyz/%E6%96%87%E5%8C%96%E8%AF%BE/2025-%E9%AB%98%E8%80%83%E6%95%B0%E5%AD%A6%EF%BC%88%E5%8C%97%E4%BA%AC%EF%BC%89%E5%8E%8B%E8%BD%B4%E9%A2%98%E5%8F%A6%E8%A7%A3</link>
+    <guid>https://quartz.jzhao.xyz/%E6%96%87%E5%8C%96%E8%AF%BE/2025-%E9%AB%98%E8%80%83%E6%95%B0%E5%AD%A6%EF%BC%88%E5%8C%97%E4%BA%AC%EF%BC%89%E5%8E%8B%E8%BD%B4%E9%A2%98%E5%8F%A6%E8%A7%A3</guid>
+    <description><![CDATA[ 思路来自柳宏谦。 设顶点集 V = \{\langle x, y \rangle : x \in \{1, 2, \dots, 8\} \land y \in \{1, 2, \dots, 8\}\}，边集 E = \{ \{ \langle x_0, y_0 \rangle, \langle x_1, y_1 \rangle \} : (|x_0 - x_1| = 3 \land |x_0 - x_1| = 4) \lor (|x_0 - x_1| = 4 \land |x_0 - x_1| = 3)\}，图 G = \langle V, E \rangle。易证原问题等价于证明 G 不存在... ]]></description>
+    <pubDate>Tue, 11 Nov 2025 00:13:38 GMT</pubDate>
+  </item><item>
+    <title>杜教筛</title>
+    <link>https://quartz.jzhao.xyz/%E7%AE%97%E6%B3%95/%E6%9D%9C%E6%95%99%E7%AD%9B</link>
+    <guid>https://quartz.jzhao.xyz/%E7%AE%97%E6%B3%95/%E6%9D%9C%E6%95%99%E7%AD%9B</guid>
+    <description><![CDATA[ 对于数论函数 f，记 S_f(n)=\sum_{k=1}^nf(k)。 记 R(n)=\{\lfloor\frac{n}{d}\rfloor:d\in \mathbb{Z}^+\land d\le n\}。 引理 |R(n)|\le2\sqrt{n} 证明 d\le\sqrt{n} 的数不超过 \sqrt{n} 个。对于 d&gt;\sqrt{n}，\lfloor\frac{n}{d}\rfloor&lt;\sqrt{n}，同样不超过 \sqrt{n} 个。 称 S_f 为在 R(n) 中每个点上的值为 f 对于 n 的块筛。 杜教筛可以对于几类特殊数论函数，O(n^{\frac{3}{4}}... ]]></description>
+    <pubDate>Tue, 11 Nov 2025 00:13:38 GMT</pubDate>
+  </item><item>
+    <title>双重计数</title>
+    <link>https://quartz.jzhao.xyz/%E7%BB%84%E5%90%88/%E5%8F%8C%E9%87%8D%E8%AE%A1%E6%95%B0</link>
+    <guid>https://quartz.jzhao.xyz/%E7%BB%84%E5%90%88/%E5%8F%8C%E9%87%8D%E8%AE%A1%E6%95%B0</guid>
+    <description><![CDATA[  定理 \forall n,r,s\in\N，有 \binom{n}{r}\binom{r}{s}=\binom{n}{s}\binom{n-s}{r-s} 证明 考虑计算 |\{\langle A,B\rangle:|A|=r\land|B|=s\land B\subseteq A\subseteq\{1,2,\dots,n\}\}|。 先枚举 A 再枚举 B。 先枚举 B 再枚举 A。 推论 \forall n,m\in\N，有 \sum_{k=m}^n\binom{n}{k}\binom{k}{m}=\binom{n}{m}2^{n-m} 证明 \begin{align} \sum_{k... ]]></description>
+    <pubDate>Tue, 11 Nov 2025 00:13:38 GMT</pubDate>
+  </item><item>
+    <title>容斥</title>
+    <link>https://quartz.jzhao.xyz/%E7%BB%84%E5%90%88/%E5%AE%B9%E6%96%A5</link>
+    <guid>https://quartz.jzhao.xyz/%E7%BB%84%E5%90%88/%E5%AE%B9%E6%96%A5</guid>
+    <description><![CDATA[ 定理（子集反演） 设两个关于集合的函数 f, g 满足 f(S)=\sum_{T\subseteq S}g(T) 那么就有 g(S)=\sum_{T\subseteq S}(-1)^{|S|-|T|}f(T) 证明 \begin{align} \sum_{T\subseteq S}(-1)^{|S|-|T|}f(T)&amp;=\sum_{T\subseteq S}(-1)^{|S|-|T|}\sum_{Q\subseteq T}g(Q)\\ &amp;=\sum_{Q\subseteq S}g(Q)\sum_{Q\subseteq T\subseteq S}(-1)^{|S|-|T|}\\ ... ]]></description>
+    <pubDate>Tue, 11 Nov 2025 00:13:38 GMT</pubDate>
+  </item><item>
+    <title>鸽巢</title>
+    <link>https://quartz.jzhao.xyz/%E7%BB%84%E5%90%88/%E9%B8%BD%E5%B7%A2</link>
+    <guid>https://quartz.jzhao.xyz/%E7%BB%84%E5%90%88/%E9%B8%BD%E5%B7%A2</guid>
+    <description><![CDATA[  定理 \forall S\in\binom{\{1,2,\dots,2n\}}{n+1}，\exist x,y\in S 满足 x&lt;y\land x\mid y。 证明 设 T_m=\{2^km:k\in\N\}。易证 \forall x\in S，T_1,T_3,\dots,T_{2n-1} 这 n 个集合中恰有一个集合包含 x。应用鸽巢原理得到 \exist x,y\in S，满足 x&lt;y 且 x 和 y 被划分到同一个集合中。易证 x\mid y。 定理 \forall p\in S_{mn+1}，必存在一个长度 m+1 的上升子序列或者一个长度 n+1 的下降子序列。 证... ]]></description>
+    <pubDate>Tue, 11 Nov 2025 00:13:38 GMT</pubDate>
+  </item>
+    </channel>
+  </rss>
