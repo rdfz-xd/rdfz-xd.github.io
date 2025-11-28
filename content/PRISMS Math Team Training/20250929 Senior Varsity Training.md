@@ -1,3 +1,9 @@
+---
+tags: [Geometry]
+---
+
+
+
 ### Problem 1
 
 Equilateral $\triangle ABC$ with side length $14$ is rotated about its center by angle $\theta$, where $0<\theta<60\degree$, to form $\triangle DEF$. See figure. The area of hexagon $ADBECF$ is $91\sqrt3$. What is $\tan(\theta)$?
