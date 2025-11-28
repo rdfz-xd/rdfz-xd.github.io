@@ -85,8 +85,6 @@ Solve equation $x^2-\lfloor x\rfloor-2=0$.
 
 Solve equation $\lfloor\frac{5x-13}{3}\rfloor=\frac{3x+1}{5}$.
 
-### Solution 3
-
 > [!Solution]-
 > $$
 > \begin{align}
