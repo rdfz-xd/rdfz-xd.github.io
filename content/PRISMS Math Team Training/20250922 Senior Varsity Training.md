@@ -31,7 +31,7 @@ has exactly one real solution.
 > &\Longrightarrow k<0\lor k\ge8
 > \end{align}
 > $$
-> Applying Vieta's Formulas yields
+> Applying **Vieta's Formulas** yields
 > $$
 > x_1+x_2=k-4\land x_1x_2=4
 > $$
@@ -342,7 +342,7 @@ There exist two triples of real numbers $\langle a,b,c\rangle$ such that $a-\fra
 >
 > ### 
 >
-> Applying Vieta's Formulas yields
+> Applying **Vieta's Formulas** yields
 > $$
 > \left(a-\frac{1}{b}\right)\left(b-\frac{1}{c}\right)\left(c-\frac{1}{a}\right)=-3
 > $$
@@ -351,7 +351,7 @@ There exist two triples of real numbers $\langle a,b,c\rangle$ such that $a-\fra
 > \left(a-\frac{1}{b}\right)\left(b-\frac{1}{c}\right)\left(c-\frac{1}{a}\right)=-3\Longleftrightarrow abc-a-b-c+\frac{1}{a}+\frac{1}{b}+\frac{1}{c}-\frac{1}{abc}=-3
 > $$
 >
-> Applying Vieta's Formulas yields
+> Applying **Vieta's Formulas** yields
 > $$
 > a-\frac{1}{b}+b-\frac{1}{c}+c-\frac{1}{a}=5
 > $$
@@ -367,7 +367,7 @@ There exist two triples of real numbers $\langle a,b,c\rangle$ such that $a-\fra
 > \end{align}
 > $$
 >
-> Applying Vieta's Formulas yields
+> Applying **Vieta's Formulas** yields
 > $$
 > f(0)=-a_1b_1c_1,g(0)=-a_2b_2c_2
 > $$
@@ -386,7 +386,7 @@ Find all possible values of $a$ such that the roots of polynomial $x^3-6x^2+ax+a
 
 > [!Solution]-
 >
-> Applying Newton's Identities yields
+> Applying **Newton's Identities** yields
 > $$
 > x_1+x_2+x_3=6
 > $$
@@ -443,7 +443,7 @@ If $r$, $s$, $t$ and $u$ denote the roots of the polynomial $f(x)=x^4+3x^3+3x+2$
 > $$
 > $g(x)$ is a polynomial with roots $\frac{1}{r}$, $\frac{1}{s}$, $\frac{1}{t}$ and $\frac{1}{u}$.
 >
-> Applying Newton's Identities yields
+> Applying **Newton's Identities** yields
 > $$
 > \frac{1}{r}+\frac{1}{s}+\frac{1}{t}+\frac{1}{u}=-\frac{3}{2}
 > $$
@@ -527,7 +527,7 @@ The equation $x^2-2ax+a^2-4a=0,a\in\R$ has at least one root with magitude $3$. 
 > $$
 > f(x)=0\Longleftrightarrow f(\overline x)=0
 > $$
-> Therefore, applying Vieta's Formulas yields
+> Therefore, applying **Vieta's Formulas** yields
 > $$
 > \begin{align}
 > \exist x\in\mathbb C\setminus\R,|x|=3\land f(x)=0&\Longleftrightarrow \exist x\in\mathbb C\setminus\R,|x|=3\land x+\overline{x}=2a\land x\overline{x}=a^2-4a\\

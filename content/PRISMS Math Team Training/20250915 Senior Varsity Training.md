@@ -19,7 +19,7 @@ Find the smallest $n$ such that $2013^n$ ends in $001$.
 > &\Longleftrightarrow\nu_2(5^n-1^n)\ge3\land\nu_5(13^n-1^n)\ge3\\
 > \end{align}
 > $$
-> If $n\equiv0\pmod2$, applying the Lifting the Exponent Lemma yields
+> If $n\equiv0\pmod2$, applying the **Lifting-the-Exponent Lemma** yields
 > $$
 > \begin{align}
 > \nu_2(5^n-1^n)&=\nu_2(4)+\nu_2(6)+\nu_2(n)-1\\
@@ -27,7 +27,7 @@ Find the smallest $n$ such that $2013^n$ ends in $001$.
 > &\ge3
 > \end{align}
 > $$
-> If $n\equiv1\pmod2$, applying the Lifting the Exponent Lemma yields
+> If $n\equiv1\pmod2$, applying the **Lifting-the-Exponent Lemma** yields
 > $$
 > \begin{align}
 > \nu_2(5^n-1^n)&=\nu_2(4)\\
@@ -56,7 +56,7 @@ Find the smallest $n$ such that $2013^n$ ends in $001$.
 > &\Longleftrightarrow\exist k\in\Z,n=4k\land\nu_5((13^4)^k-(1^4)^k)\ge3\\
 > \end{align}
 > $$
-> Applying the Lifting the Exponent Lemma yields
+> Applying the **Lifting-the-Exponent Lemma** yields
 > $$
 > \begin{align}
 > \nu_5((13^4)^k-(1^4)^k)&=\nu_5(13^4-1^4)+\nu_5(k)\\
@@ -94,7 +94,7 @@ Let $n$ be the least positive integer such that $149^n-2^n$ is divisible by $3^3
 > &\Longleftrightarrow\nu_3(149^n-2^n)\ge3\land\nu_5(149^n-2^n)\ge5\land\nu_7(149^n-2^n)\ge7
 > \end{align}
 > $$
-> Applying the Lifting the Exponent Lemma yields
+> Applying the **Lifting-the-Exponent Lemma** yields
 > $$
 > \begin{align}
 > \nu_3(149^n-2^n)&=\nu_3(147)+\nu_3(n)\\
@@ -142,7 +142,7 @@ Let $n$ be the least positive integer such that $149^n-2^n$ is divisible by $3^3
 > &\Longleftrightarrow\exist k\in\Z,n=4k\land\nu_5((149^4)^n-(2^4)^n)\ge5\\
 > \end{align}
 > $$
-> Applying the Lifting the Exponent Lemma yields
+> Applying the **Lifting-the-Exponent Lemma** yields
 > $$
 > \begin{align}
 > \nu_5((149^4)^k-(2^4)^k)&=\nu_5(149^4-2^4)+\nu_5(k)\\
@@ -158,7 +158,7 @@ Let $n$ be the least positive integer such that $149^n-2^n$ is divisible by $3^3
 > &\Longleftrightarrow4\cdot5^4\mid n\\
 > \end{align}
 > $$
-> Applying the Lifting the Exponent Lemma yields
+> Applying the **Lifting-the-Exponent Lemma** yields
 > $$
 > \begin{align}
 > \nu_7(149^n-2^n)&=\nu_7(147)+\nu_7(n)\\
@@ -209,7 +209,7 @@ $$
 > $$
 > \nu_{11}(1990^{1991^{1992}}+1992^{1991^{1990}})=\nu_{11}((1990^{1991^2})^{1991^{1990}}+1992^{1991^{1990}})
 > $$
-> Applying the Lifting the Exponent Lemma yields
+> Applying the **Lifting-the-Exponent Lemma** yields
 > $$
 > \begin{align}
 > \nu_{11}((1990^{1991^2})^{1991^{1990}}+1992^{1991^{1990}})&=\nu_{11}(1990^{1991^2}+1992)+1990\nu_{11}(1991)\\
@@ -246,7 +246,7 @@ $$
 > $$
 > 3^m\mid7^{3^{527}}-1\Longleftrightarrow\nu_3(7^{3^{527}}-1^{3^{527}})\ge m
 > $$
-> Applying the Lifting the Exponent Lemma yields
+> Applying the **Lifting-the-Exponent Lemma** yields
 > $$
 > \begin{align}
 > \nu_3(7^{3^{527}}-1^{3^{527}})&=\nu_3(6)+\nu_3(3^{527})\\
@@ -272,7 +272,7 @@ Find the sum of all the divisors $d$ of $N=19^{88}-1$ which are of the form $d=2
 > \end{align}
 > $$
 >
-> Applying the Lifting the Exponent Lemma yields
+> Applying the **Lifting-the-Exponent Lemma** yields
 > $$
 > \begin{align}
 > \nu_2(19^{88}-1^{88})&=\nu_2(19-1)+\nu_2(19+1)+\nu_2(88)-1\\
@@ -280,7 +280,7 @@ Find the sum of all the divisors $d$ of $N=19^{88}-1$ which are of the form $d=2
 > &=5
 > \end{align}
 > $$
-> Applying the Lifting the Exponent Lemma yields
+> Applying the **Lifting-the-Exponent Lemma** yields
 > $$
 > \begin{align}
 > \nu_3(19^{88}-1^{88})&=\nu_3(19-1)+\nu_3(88)\\
@@ -324,7 +324,7 @@ Let $k$ be a positive integer. Find all positive integers $n$ such that $3^k\mid
 > &\Longleftrightarrow\exist m\in\Z,n=2m\land\nu_3(4^m-1^m)\ge k\\
 > \end{align}
 > $$
-> Applying the Lifting the Exponent Lemma yields
+> Applying the **Lifting-the-Exponent Lemma** yields
 > $$
 > \begin{align}
 > \nu_3(4^m-1^m)&=\nu_3(4-1)+\nu_3(m)\\
@@ -371,7 +371,7 @@ is an integer.
 > \end{align}
 > $$
 >
-> Applying Fermat's Little Theorem yields
+> Applying **Fermat's Little Theorem** yields
 > $$
 > 5^p-2^p\equiv3\pmod p
 > $$
@@ -384,7 +384,7 @@ is an integer.
 > &\Longleftrightarrow\delta_p\left(\frac{5}{2}\right)=q\\
 > \end{align}
 > $$
-> Applying Fermat's Little Theorem yields
+> Applying **Fermat's Little Theorem** yields
 > $$
 > \left(\frac{5}{2}\right)^{p-1}\equiv1\pmod p
 > $$
@@ -425,7 +425,7 @@ Find all positive integers $n$ such that $3^n-1$ is divisible by $2^n$.
 > 2^n\mid3^n-1\Longleftrightarrow\nu_2(3^n-1^n)\ge n
 > $$
 >
-> Applying the Lifting the Exponent Lemma yields
+> Applying the **Lifting-the-Exponent Lemma** yields
 > $$
 > \begin{align}
 > \nu_2(3^n-1^n)&=\begin{cases}
@@ -473,7 +473,7 @@ Find all positive integers $a$ such that $\frac{5^a+1}{3^a}$ is a positive integ
 > &\Longleftrightarrow a\equiv1\pmod2\land\nu_3(5^a+1^a)\ge a\\
 > \end{align}
 > $$
-> Applying the Lifting the Exponent Lemma yields that, if $a\equiv1\pmod 2$,
+> Applying the **Lifting-the-Exponent Lemma** yields that, if $a\equiv1\pmod 2$,
 > $$
 > \begin{align}
 > \nu_3(5^a+1^a)&=\nu_3(6)+\nu_3(a)\\
@@ -523,7 +523,7 @@ $$
 > \forall a,2^{2017}\mid a^n-1\Longleftrightarrow\forall a,\nu_2(a^n-1^n)\ge2017
 > $$
 >
-> Applying the Lifting the Exponent Lemma yields
+> Applying the **Lifting-the-Exponent Lemma** yields
 > $$
 > \nu_2(a^n-1^n)=\begin{cases}
 > \nu_2(a-1)+\nu_2(a+1)+\nu_2(n)-1,&n\equiv0\pmod2\\
@@ -556,7 +556,7 @@ Let $m,k\ge0,p=2^{2^m}+1$ a prime. Prove:
    > \end{align}
    > $$
    >
-   > Applying the Lifting the Exponent Lemma yields
+   > Applying the **Lifting-the-Exponent Lemma** yields
    > $$
    > \begin{align}
    > \nu_p((2^{2^{m+1}})^{p^k}-1^{p^k})&=\nu_p(2^{2^{m+1}}-1)+k\nu_p(p)\\

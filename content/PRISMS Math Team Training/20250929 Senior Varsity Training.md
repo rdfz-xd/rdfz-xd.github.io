@@ -45,11 +45,11 @@ Suppose $A$, $B$ and $C$ are points in the plane with $|AB|=40$ and $|AC|=42$, a
 
 > [!Solution]-
 >
-> Applying the Triangle Inequality yields that $A$, $B$ and $C$ forms a triangle iff
+> Applying the **Triangle Inequality** yields that $A$, $B$ and $C$ forms a triangle iff
 > $$
 > ||AB|-|AC||<|BC|<|AB|+|AC|\Longleftrightarrow2<|BC|<82
 > $$
-> Applying Apollonius's Theorem yields
+> Applying **Apollonius's Theorem** yields
 > $$
 > \begin{align}
 > x&=\frac{1}{2}\sqrt{2|AB|^2+2|AC|^2-|BC|^2}\\
@@ -69,7 +69,7 @@ Suppose $A$, $B$ and $C$ are points in the plane with $|AB|=40$ and $|AC|=42$, a
 > \end{align}
 > $$
 >
-> Applying the Pythagorean Theorem yields
+> Applying the **Pythagorean Theorem** yields
 > $$
 > \begin{align}
 > \angle BAC=90\degree&\Longleftrightarrow|AB|^2+|AC|^2=|BC|^2\\
@@ -104,7 +104,7 @@ Let $\triangle ABC$ be a triangle with integer side lengths and the property tha
 
 > [!Solution]-
 >
-> Applying the Law of Sines yields
+> Applying the **Law of Sines** yields
 > $$
 > \frac{|AC|}{|BC|}=\frac{\sin(\angle B)}{\sin(\angle A)}
 > $$
@@ -116,7 +116,7 @@ Let $\triangle ABC$ be a triangle with integer side lengths and the property tha
 > &\Longleftrightarrow\frac{|AC|}{|BC|}=2\cos(\angle A)
 > \end{align}
 > $$
-> Applying the Law of Cosines yields
+> Applying the **Law of Cosines** yields
 > $$
 > \cos(\angle A)=\frac{|AB|^2+|AC|^2-|BC|^2}{2|AB||AC|}
 > $$
@@ -129,7 +129,7 @@ Let $\triangle ABC$ be a triangle with integer side lengths and the property tha
 > $$
 > Therefore, it is easy to prove that if $|AC|<7$, the only triangle with integer side lengths and the property that $\angle B=2\angle A$ is the triangle such that $|AB|=5\land|AC|=6\land|BC|=4$. The perimeter of this triangle is $5+6+4=15$.
 >
-> Applying the Triangle Inequality yields
+> Applying the **Triangle Inequality** yields
 > $$
 > |AB|+|BC|>|AC|
 > $$
@@ -218,7 +218,7 @@ Cyclic quadrilateral $ABCD$ has lengths $|BC|=|CD|=3$ and $|AD|=5$ with $\angle 
 
 > [!Solution]-
 >
-> Applying the Law of Cosines yields
+> Applying the **Law of Cosines** yields
 > $$
 > |AC|^2=|AD|^2+|CD|^2-2|AD||CD|\cos(\angle ADC)
 > $$
@@ -227,7 +227,7 @@ Cyclic quadrilateral $ABCD$ has lengths $|BC|=|CD|=3$ and $|AD|=5$ with $\angle 
 > |AC|^2=|AD|^2+|CD|^2-2|AD||CD|\cos(\angle ADC)\Longleftrightarrow|AC|=7
 > $$
 >
-> Applying the Law of Cosines yields
+> Applying the **Law of Cosines** yields
 > $$
 > |AC|^2=|AB|^2+|BC|^2-2|AB||BC|\cos(\angle ABC)
 > $$
@@ -242,7 +242,7 @@ Cyclic quadrilateral $ABCD$ has lengths $|BC|=|CD|=3$ and $|AD|=5$ with $\angle 
 > $$
 > |AC|^2=|AB|^2+|BC|^2-2|AB||BC|\cos(\angle ABC)\Longleftrightarrow|AB|=8
 > $$
-> Applying Ptolemy's Theorem yields
+> Applying **Ptolemy's Theorem** yields
 > $$
 > |AC||BD|=|AB||CD|+|AD||BC|
 > $$
@@ -261,7 +261,7 @@ On top of a rectangular card with sides of length $1$ and $2+\sqrt3$, an identic
 
 > [!Solution]-
 >
-> Applying the Pythagorean Theorem yields
+> Applying the **Pythagorean Theorem** yields
 > $$
 > \begin{align}
 > |AC|&=\sqrt{|AB|^2+|BC|^2}\\
@@ -283,7 +283,7 @@ On top of a rectangular card with sides of length $1$ and $2+\sqrt3$, an identic
 > \end{align}
 > $$
 >
-> Applying the Law of Cosines yields
+> Applying the **Law of Cosines** yields
 > $$
 > |AB|^2=|AD|^2+|BD|^2-2|AD||BD|\cos(\angle ADB)
 > $$
@@ -305,7 +305,7 @@ Triangle $\triangle ABC$ has side lengths in arithmetic progression, and the sma
 >
 > Wlog, assume $|AB|\le|AC|\le|BC|$, then it is easy to prove that $|AB|=6$ and $\angle A=120\degree$.
 >
-> Applying the Law of Cosines yields
+> Applying the **Law of Cosines** yields
 > $$
 > |BC|^2=|AB|^2+|AC|^2-2|AB||AC|\cos(\angle A)
 > $$
@@ -372,7 +372,7 @@ Let $\triangle PQR$ be a triangle with $\angle P=75\degree$ and $\angle Q=60\deg
 
 > [!Solution]-
 >
-> Applying the Law of Sines yields
+> Applying the **Law of Sines** yields
 > $$
 > \begin{align}
 > \frac{|PA|}{|PF|}&=\frac{\sin(\angle PFA)}{\sin(\angle APF)}\\
@@ -432,7 +432,7 @@ In the figure below, semicircles with centers at $A$ and $B$ and with radii $2$ 
 >
 > Let $O$ be the center of the largest semicircle, $r$ be the length of the radius of $\odot P$, then it is easy to prove that $|AB|=3,|OA|=1,|OB|=2,|AP|=2+r,|BP|=1+r,|OP|=3-r$.
 >
-> Applying Steward's Theorem yields
+> Applying **Steward's Theorem** yields
 > $$
 > |AP|^2|OB|+|BP|^2|OA|=|OP|^2|AB|+|OA||OB||AB|
 > $$
@@ -448,7 +448,7 @@ Point $B$ is on $\overline{AC}$ with $|AB|=9$ and $|BC|=21$. Point $D$ is not on
 
 > [!Solution]-
 >
-> Let $E$ be the midpoint of $\overline{AC}$, then applying the Pythagorean Theorem yields
+> Let $E$ be the midpoint of $\overline{AC}$, then applying the **Pythagorean Theorem** yields
 > $$
 > |AD|^2-|AE|^2=|DE|^2,|BD|^2-|BE|^2=|DE|^2
 > $$
@@ -513,7 +513,7 @@ A paper equilateral triangle $\triangle ABC$ has side length $12$. The paper tri
 
 > [!Solution]-
 >
-> Let $D$ be the point on $\overline{BC}$, $M$ be the point on $\overline{AB}$. Then applying the Law of Cosines yields
+> Let $D$ be the point on $\overline{BC}$, $M$ be the point on $\overline{AB}$. Then applying the **Law of Cosines** yields
 > $$
 > |MD|^2=|MB|^2+|BD|^2+2|MB||BD|\cos(\angle B)
 > $$
@@ -522,7 +522,7 @@ A paper equilateral triangle $\triangle ABC$ has side length $12$. The paper tri
 > |MD|^2=|MB|^2+|BD|^2+2|MB||BD|\cos(\angle B)\Longleftrightarrow|AM|=\frac{39}{5}
 > $$
 >
-> Let $N$ be the point on $\overline{AC}$, then applying the Law of Cosines yields
+> Let $N$ be the point on $\overline{AC}$, then applying the **Law of Cosines** yields
 > $$
 > |ND|^2=|NC|^2+|CD|^2+2|NC||CD|\cos(\angle C)
 > $$
@@ -531,7 +531,7 @@ A paper equilateral triangle $\triangle ABC$ has side length $12$. The paper tri
 > |ND|^2=|NC|^2+|CD|^2+2|NC||CD|\cos(\angle C)\Longleftrightarrow|AN|=\frac{39}{7}
 > $$
 >
-> Applying the Law of Cosines yields
+> Applying the **Law of Cosines** yields
 > $$
 > \begin{align}
 > |MN|&=\sqrt{|AM|^2+|AN|^2+2|AM||AN|\cos(\angle A)}\\
@@ -585,7 +585,7 @@ In $\triangle ABC$ we have $|AB|=7,|AC|=8,|BC|=9$. Point $D$ is on the circumscr
 > \end{align}
 > $$
 >
-> Therefore, applying Ptolemy's Theorem yields
+> Therefore, applying **Ptolemy's Theorem** yields
 > $$
 > |AB||CD|+|AC||BD|=|AD||BC|\Longleftrightarrow\frac{|AD|}{|CD|}=\frac{5}{3}
 > $$
@@ -669,7 +669,7 @@ Two externally tangent circles $\omega_1$ and $\omega_2$ have centers $O_1$ and 
 > $$
 > it follows that $A'B'DC$ is an isosceles trapezoid.
 >
-> Therefore, applying Ptolemy's Theorem yields
+> Therefore, applying **Ptolemy's Theorem** yields
 > $$
 > |A'B'||CD|+|A'C||B'D|=|A'D||B'C|
 > $$
@@ -678,7 +678,7 @@ Two externally tangent circles $\omega_1$ and $\omega_2$ have centers $O_1$ and 
 > |A'B'||CD|+|A'C||B'D|=|A'D||B'C|\Longleftrightarrow|A'C|=\sqrt{193}
 > $$
 >
-> Therefore, applying the Law of Cosines yields
+> Therefore, applying the **Law of Cosines** yields
 > $$
 > \begin{align}
 > \cos(\angle A'B'C)&=\frac{|A'B'|^2+|B'C|^2-|A'C|^2}{2|A'B'||B'C|}\\
@@ -711,7 +711,7 @@ Two externally tangent circles $\omega_1$ and $\omega_2$ have centers $O_1$ and 
 > &=15
 > \end{align}
 > $$
-> Applying the Law of Cosines yields
+> Applying the **Law of Cosines** yields
 > $$
 > |A'C|^2=|O_1A'|^2+|O_1C|^2-2|O_1A'||O_1C|\cos(\angle A'O_1C)
 > $$
@@ -785,14 +785,14 @@ Quadrilateral $ABCD$ is inscribed in $\odot O$ and has side lengths $|AB|=3$, $|
 > &\Longleftrightarrow\frac{|CX|}{|FX|}=\frac{9}{16}
 > \end{align}
 > $$
-> Applying the Law of Cosines yields
+> Applying the **Law of Cosines** yields
 > $$
 > \begin{align}
 > |BD|^2&=|AB|^2+|AD|^2-2|AB||AD|\cos(\angle BAD)\\
 > &=73-48\cos(\angle BAD)
 > \end{align}
 > $$
-> Applying the Law of Cosines yields
+> Applying the **Law of Cosines** yields
 > $$
 > \begin{align}
 > |BD|^2&=|BC|^2+|CD|^2-2|BC||CD|\cos(\angle BCD)\\
@@ -818,7 +818,7 @@ Quadrilateral $ABCD$ is inscribed in $\odot O$ and has side lengths $|AB|=3$, $|
 > &=\frac{3\sqrt{51}}{4}
 > \end{align}
 > $$
-> Applying the Power of a Point Theorem yields
+> Applying the **Power of a Point Theorem** yields
 > $$
 > \begin{align}
 > |CX||GX|&=|BX||DX|\\
@@ -842,7 +842,7 @@ In $\triangle ABC$, $\angle A=40\degree$, $|AB|=10$, and $|AC|=6$. Points $D$ an
 >
 > Let $B'$ be the reflection of $B$ about $\overleftrightarrow{AC}$, then $|B'E|=|BE|$. Let $C'$ be the reflection of $C$ about $\overleftrightarrow{AB}$, then $|C'D|=|CD|$.
 >
-> Since applying the Law of Cosines yields
+> Since applying the **Law of Cosines** yields
 > $$
 > \begin{align}
 > |B'C'|&=\sqrt{|AB'|^2+|AC'|^2-2|AB'||AC'|\cos(\angle B'AC')}\\
@@ -881,7 +881,7 @@ Tetrahedron $ABCD$ has $|AB|=5$, $|AC|=3$, $|BC|=4$, $|AD|=3$, $|BD|=4$, and $|C
 
 > [!Solution]-
 >
-> Applying the Pythagorean Theorem yields
+> Applying the **Pythagorean Theorem** yields
 > $$
 > |AB|^2=|AC|^2+|BC|^2\Longleftrightarrow\angle ACB=90\degree
 > $$
@@ -894,7 +894,7 @@ Tetrahedron $ABCD$ has $|AB|=5$, $|AC|=3$, $|BC|=4$, $|AD|=3$, $|BD|=4$, and $|C
 > $$
 > Similarly, it follows that $|DE|=\frac{12}{5}$.
 >
-> Applying the Pythagoream Theorem yields
+> Applying the **Pythagorean Theorem** yields
 > $$
 > |CD|^2=|CE|^2+|DE|^2\Longleftrightarrow\angle CED=90\degree
 > $$
@@ -914,7 +914,7 @@ Inside a right circular cone with base radius $5$ and height $12$ are three cong
 
 > [!Solution]-
 >
-> Let $O$ be the center of one of the spheres, $D$ be the point where that sphere is tangent to the base, $E$ be the point where that sphere is tangent to the side, $B$ be the center of the base, $A$ be the point such that $\overline{AB}$ is a radius of the base containing $D$, $C$ be the vertex of the cone. Then applying the Pythagorean Theorem yields
+> Let $O$ be the center of one of the spheres, $D$ be the point where that sphere is tangent to the base, $E$ be the point where that sphere is tangent to the side, $B$ be the center of the base, $A$ be the point such that $\overline{AB}$ is a radius of the base containing $D$, $C$ be the vertex of the cone. Then applying the **Pythagorean Theorem** yields
 > $$
 > \begin{align}
 > |AC|&=\sqrt{|AB|^2+|BC|^2}\\
@@ -926,7 +926,7 @@ Inside a right circular cone with base radius $5$ and height $12$ are three cong
 > \overline{OD}\perp\overline{AB}\land\overline{OE}\perp\overline{AC}\land|OD|=|OE|\Longrightarrow\angle OAB=\angle OAC
 > $$
 >
-> Therefore, let $F$ be the intersection of $\overleftrightarrow{OA}$ and $\overline{BC}$, then applying the Angle Bisector Theorem yields
+> Therefore, let $F$ be the intersection of $\overleftrightarrow{OA}$ and $\overline{BC}$, then applying the **Angle Bisector Theorem** yields
 > $$
 > \frac{|BF|}{|CF|}=\frac{|AB|}{|AC|}
 > $$
@@ -959,7 +959,7 @@ Three numbers in the interval $[0,1]$ are chosen independently and at random. Wh
 
 > [!Solution]-
 >
-> Let the numbers be $x$, $y$, and $z$, respectively, then applying the Triangle Inequality yields $x$, $y$, and $z$ form a triangle iff
+> Let the numbers be $x$, $y$, and $z$, respectively, then applying the **Triangle Inequality** yields $x$, $y$, and $z$ form a triangle iff
 > $$
 > y+z>x\land x+z>y\land x+y>z
 > $$
@@ -967,7 +967,7 @@ Three numbers in the interval $[0,1]$ are chosen independently and at random. Wh
 > $$
 > \Pr[y+z>x\land x+z>y\land x+y>z]
 > $$
-> Applying the Law of Total Probability yields
+> Applying the **Law of Total Probability** yields
 > $$
 > \begin{align}
 > \Pr[y+z>x\land x+z>y\land x+y>z]&=\Pr[y+z>x\mid x>y\land x>z]\\
@@ -989,7 +989,7 @@ Real numbers $x$, $y$, and $z$ are chosen independently and at random from the i
 >
 > Assume $n\ge2$.
 >
-> Applying the Law of Total Probability yields
+> Applying the **Law of Total Probability** yields
 > $$
 > \begin{align}
 > \Pr[|x-y|>1\land|x-z|>1\land|y-z|>1]&=\Pr[x-y>1\land y-z>1\mid x>y>z]\\
@@ -1015,7 +1015,7 @@ Equilateral $\triangle ABC$ has side length $600$. Points $P$ and $Q$ lie outsid
 >
 > Since $|OA|=|OB|=|OC|$ and $|OP|=|OQ|$, it follows that $O$ is on $\overline{PQ}$.
 >
-> Therefore, applying the Pythagorean Theorem yields
+> Therefore, applying the **Pythagorean Theorem** yields
 > $$
 > |OA|^2=|OD|^2+|AD|^2
 > $$
@@ -1059,7 +1059,7 @@ A $4\times4\times h$ rectangular box contains a sphere of radius $2$ and eight s
 >
 > Therefore, let $O$ be the center of $BCDE$, then it is easy to prove that $\overline{OA}\perp BCDE$.
 >
-> Therefore, applying the Pythagorean Theorem yields
+> Therefore, applying the **Pythagorean Theorem** yields
 > $$
 > \begin{align}
 > |OA|&=\sqrt{|AB|^2-|OB|^2}\\
@@ -1076,7 +1076,7 @@ A sphere is inscribed in a truncated right circular cone as shown. The volume of
 
 > [!Solution]-
 >
-> Let $r$ be the radius of the top base of the truncated cone, $R$ be the radius of the bottom base of the truncated cone, $s$ be the radius of the sphere. Then applying the Pythagoream Theorem yields
+> Let $r$ be the radius of the top base of the truncated cone, $R$ be the radius of the bottom base of the truncated cone, $s$ be the radius of the sphere. Then applying the **Pythagorean Theorem** yields
 > $$
 > (R+r)^2=(R-r)^2+(2s)^2
 > $$
@@ -1119,7 +1119,7 @@ Suppose that $\triangle ABC$ is an equilateral triangle of side length $s$, with
 > |AP|=|AQ|\land\angle PAQ=60\degree\Longleftrightarrow|PQ|=1
 > $$
 >
-> Therefore, applying the Pythagorean Theorem yields
+> Therefore, applying the **Pythagorean Theorem** yields
 > $$
 > |CP|^2=|CQ|^2+|PQ|^2\Longleftrightarrow\angle CQP=90\degree
 > $$
@@ -1137,7 +1137,7 @@ Suppose that $\triangle ABC$ is an equilateral triangle of side length $s$, with
 > &=120\degree
 > \end{align}
 > $$
-> Therefore, applying the Law of Cosines yields
+> Therefore, applying the **Law of Cosines** yields
 > $$
 > \begin{align}
 > s&=|AC|\\
