@@ -303,7 +303,7 @@ Find all polynomials $f(x)$ with real coefficients such that $f(x^2)=f(x)^2$.
 > \end{align}
 > $$
 >
-> Therefore, if $\exist x\in\C\setminus\{-1,0,1\},f(x)=0$, infinitely many distinct numbers
+> Therefore, if $\exist x\in\mathbb{C}\setminus\{-1,0,1\},f(x)=0$, infinitely many distinct numbers
 > $$
 > x,x^2,x^4,x^8,\dots
 > $$
