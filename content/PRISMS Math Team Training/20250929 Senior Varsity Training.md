@@ -8,7 +8,7 @@ tags: [Geometry]
 
 Equilateral $\triangle ABC$ with side length $14$ is rotated about its center by angle $\theta$, where $0<\theta<60\degree$, to form $\triangle DEF$. See figure. The area of hexagon $ADBECF$ is $91\sqrt3$. What is $\tan(\theta)$?
 
-![](https://cdn.luogu.com.cn/upload/image_hosting/liskyet7.png)
+![](https://files.catbox.moe/oyhii5.png)
 
 > [!Solution]-
 >
@@ -257,7 +257,7 @@ Cyclic quadrilateral $ABCD$ has lengths $|BC|=|CD|=3$ and $|AD|=5$ with $\angle 
 
 On top of a rectangular card with sides of length $1$ and $2+\sqrt3$, an identical card is placed so that two of their diagonals line up, as shown ($\overline{AC}$, in this case). Continue the process, adding a third card to the second, and so on, lining up successive diagonals after rotating clockwise. In total, how many cards must be used until a vertex of a new card lands exactly on the vertex $B$ in the figure?
 
-![](https://cdn.luogu.com.cn/upload/image_hosting/lkg7x9pz.png)
+![](https://files.catbox.moe/cjzqi4.png)
 
 > [!Solution]-
 >
@@ -426,7 +426,7 @@ Let $\triangle PQR$ be a triangle with $\angle P=75\degree$ and $\angle Q=60\deg
 
 In the figure below, semicircles with centers at $A$ and $B$ and with radii $2$ and $1$, respectively, are drawn in the interior of, and sharing bases with, a semicircle with diameter $\overline{JK}$. The two smaller semicircles are externally tangent to each other and internally tangent to the largest semicircle. A circle centered at $P$ is drawn externally tangent to the two smaller semicircles and internally tangent to the largest semicircle. What is the radius of the circle centered at $P$?
 
-![](https://cdn.luogu.com.cn/upload/image_hosting/bzyvd5hm.png)
+![](https://files.catbox.moe/8okvek.png)
 
 > [!Solution]-
 >
@@ -595,7 +595,7 @@ In $\triangle ABC$ we have $|AB|=7,|AC|=8,|BC|=9$. Point $D$ is on the circumscr
 
 Two externally tangent circles $\omega_1$ and $\omega_2$ have centers $O_1$ and $O_2$, respectively. A third circle $\Omega$ passing through $O_1$ and $O_2$ intersects $\omega_1$ at $B$ and $C$ and $\omega_2$ at $A$ and $D$, as shown. Suppose that $|AB|=2,|O_1O_2|=15,|CD|=16$, and $ABO_1CDO_2$ is a convex hexagon. Find the area of this hexagon.
 
-![](https://cdn.luogu.com.cn/upload/image_hosting/bgmrad8a.png)
+![](https://files.catbox.moe/d5ti9o.png)
 
 > [!Solution]-
 >
@@ -863,7 +863,7 @@ In $\triangle ABC$, $\angle A=40\degree$, $|AB|=10$, and $|AC|=6$. Points $D$ an
 
 Cube $ABCDEFGH$, labeled as shown below, has edge length of $1$ and is cut by a plane passing through vertex $D$ and the midpoints $M$ and $N$ of $\overline{AB}$ and $\overline{CG}$ respectively. The plane divides the cube into two solids. The volume of the larger of the two solids can be written in the form $\frac{p}{q}$, where $p$ and $q$ are relatively prime positive integers. Find $p+q$.
 
-![](https://cdn.luogu.com.cn/upload/image_hosting/hsjyyky2.png)
+![](https://files.catbox.moe/tny4dm.png)
 
 > [!Solution]-
 >
@@ -1051,7 +1051,7 @@ Equilateral $\triangle ABC$ has side length $600$. Points $P$ and $Q$ lie outsid
 
 A $4\times4\times h$ rectangular box contains a sphere of radius $2$ and eight smaller spheres of radius $1$. The smaller spheres are each tangent to three sides of the box, and the larger sphere is tangent to each of the smaller spheres. What is $h$?
 
-![](https://cdn.luogu.com.cn/upload/image_hosting/3ryl7cgf.png)
+![](https://files.catbox.moe/hpdpyh.png)
 
 > [!Solution]-
 >
@@ -1072,7 +1072,7 @@ A $4\times4\times h$ rectangular box contains a sphere of radius $2$ and eight s
 
 A sphere is inscribed in a truncated right circular cone as shown. The volume of the truncated cone is twice that of the sphere. What is the ratio of the radius of the bottom base of the truncated cone to the radius of the top base of the truncated cone?
 
-![](https://cdn.luogu.com.cn/upload/image_hosting/lvssgc6j.png)
+![](https://files.catbox.moe/6g03ko.png)
 
 > [!Solution]-
 >
