@@ -1,5 +1,5 @@
 ---
-tags: [Algebra]
+tags: [Mathematics, Mathematics/Algebra]
 ---
 
 ### Problem 1

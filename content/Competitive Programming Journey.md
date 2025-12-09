@@ -12,7 +12,7 @@
 
 Team: **Even If** (Dong Xing)
 
-![photo](https://files.catbox.moe/j79p9l.JPG)
+![results](https://files.catbox.moe/j79p9l.JPG)
 
 - **Advanced Individual Round (High School Division)**: 2nd place
 - **Advanced Team Round (High School Division)**: 3rd place

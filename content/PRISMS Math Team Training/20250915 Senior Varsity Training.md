@@ -1,5 +1,5 @@
 ---
-tags: [Number Theory]
+tags: [Mathematics, Mathematics/Number Theory]
 ---
 
 ### Problem 1
