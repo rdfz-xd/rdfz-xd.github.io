@@ -8,4 +8,4 @@ I am interested in **Computer Science** and **Mathematics**, especially [[Compet
 
 This blog is a garden of my thoughts. Hope you have a great time!
 
-![](https://files.catbox.moe/4oh7hv.jpg)
+![photo](https://files.catbox.moe/4oh7hv.jpg)

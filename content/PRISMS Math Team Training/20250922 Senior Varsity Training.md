@@ -2,8 +2,6 @@
 tags: [Algebra]
 ---
 
-
-
 ### Problem 1
 
 Find the number of integer values of $k$ in the closed interval $[-500,500]$ for which the equation

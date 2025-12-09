@@ -2,8 +2,6 @@
 tags: [Algebra]
 ---
 
-
-
 ### Problem 1
 
 Find all the roots of equation $2x-2.8=\lfloor x\rfloor$.
