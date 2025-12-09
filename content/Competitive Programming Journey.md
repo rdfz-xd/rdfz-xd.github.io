@@ -1,8 +1,8 @@
-### Codeforces
+### [Codeforces](https://codeforces.com/)
 
 [![](https://cfrating.baoshuo.dev/rating?username=Apteryxx)](https://codeforces.com/profile/Apteryxx)
 
-### AtCoder
+### [AtCoder](https://atcoder.jp/)
 
 [![](https://atrating.baoshuo.dev/rating?username=Apteryxx)](https://atcoder.jp/users/Apteryxx)
 
