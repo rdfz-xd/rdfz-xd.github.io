@@ -14,5 +14,5 @@ Team: **Even If** (Dong Xing)
 
 ![results](https://files.catbox.moe/j79p9l.JPG)
 
-- **Advanced Individual Round (High School Division)**: 2nd place
-- **Advanced Team Round (High School Division)**: 3rd place
+- **[Advanced Individual Round (High School Division)](https://mitit.org/Contest/ViewScoreboard/advanced-indiv-hs-25-26?mode=onsite&div=highschool)**: 2nd place
+- **[Advanced Team Round (High School Division)](https://mitit.org/Contest/ViewScoreboard/advanced-team-hs-25-26?mode=onsite&div=highschool)**: 3rd place
