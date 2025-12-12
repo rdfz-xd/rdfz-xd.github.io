@@ -10,7 +10,7 @@
     <link>https://dxing.blog/Competitive-Programming-Journey</link>
     <guid>https://dxing.blog/Competitive-Programming-Journey</guid>
     <description><![CDATA[ Codeforces AtCoder MIT Informatics Tournament 2025-26 Winter Contest December 7th, 2025 Team: Even If (Dong Xing) Advanced Individual Round (High School Division): 2nd place Advanced Team Round (High School Division): 3rd place . ]]></description>
-    <pubDate>Fri, 12 Dec 2025 01:19:38 GMT</pubDate>
+    <pubDate>Fri, 12 Dec 2025 01:30:28 GMT</pubDate>
   </item><item>
     <title>20250929 Senior Varsity Training</title>
     <link>https://dxing.blog/PRISMS-Math-Team-Training/20250929-Senior-Varsity-Training</link>
@@ -41,6 +41,12 @@
     <guid>https://dxing.blog/PRISMS-Math-Team-Training/20250922-Senior-Varsity-Training</guid>
     <description><![CDATA[ Problem 1 Find the number of integer values of k in the closed interval [-500,500] for which the equation \log(kx)=2\log(x+2) has exactly one real solution. ]]></description>
     <pubDate>Tue, 09 Dec 2025 18:33:04 GMT</pubDate>
+  </item><item>
+    <title>20251006 Senior Varsity Training</title>
+    <link>https://dxing.blog/PRISMS-Math-Team-Training/20251006-Senior-Varsity-Training</link>
+    <guid>https://dxing.blog/PRISMS-Math-Team-Training/20251006-Senior-Varsity-Training</guid>
+    <description><![CDATA[ Problem 1 How many positive integers n are there such that n is a multiple of 5, and the least common multiple of 5! and n equals 5 times the greatest common divisor of 10! and n? Solution Since \begin{align} \operatorname{lcm}(5!,n)=5\gcd(10!,n)&amp;\iff\forall p\in\mathbb{P},\nu_p(\operatorname{lc... ]]></description>
+    <pubDate>Tue, 09 Dec 2025 03:19:45 GMT</pubDate>
   </item>
     </channel>
   </rss>
