@@ -1,10 +1,10 @@
 ### [Codeforces](https://codeforces.com/)
 
-[![](https://cfrating.baoshuo.dev/rating?username=Apteryxx)](https://codeforces.com/profile/Apteryxx)
+[![Codeforces](https://cfrating.baoshuo.dev/rating?username=Apteryxx)](https://codeforces.com/profile/Apteryxx)
 
 ### [AtCoder](https://atcoder.jp/)
 
-[![](https://atrating.baoshuo.dev/rating?username=Apteryxx)](https://atcoder.jp/users/Apteryxx)
+[![AtCoder](https://atrating.baoshuo.dev/rating?username=Apteryxx)](https://atcoder.jp/users/Apteryxx)
 
 ### MIT Informatics Tournament 2025-26 Winter Contest
 
