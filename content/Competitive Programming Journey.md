@@ -12,7 +12,7 @@
 
 Team: **Even If** (Dong Xing)
 
-![results](https://files.catbox.moe/j79p9l.JPG)
+![results](/images/MIT_Informatics_Tournament_2025-26_Winter_Contest.JPG)
 
 - **[Advanced Individual Round (High School Division)](https://mitit.org/Contest/ViewScoreboard/advanced-indiv-hs-25-26?mode=onsite&div=highschool)**: 2nd place
 - **[Advanced Team Round (High School Division)](https://mitit.org/Contest/ViewScoreboard/advanced-team-hs-25-26?mode=onsite&div=highschool)**: 3rd place

@@ -8,4 +8,4 @@ I am interested in **Computer Science** and [[tags/Mathematics]], especially [[C
 
 This blog is a garden of my thoughts. Hope you have a great time!
 
-![photo](https://files.catbox.moe/4oh7hv.jpg)
+![photo](/images/tourist.jpg)
