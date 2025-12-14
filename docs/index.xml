@@ -6,6 +6,18 @@
       <description>Last 10 notes on Dong Xing&#039;s Blog</description>
       <generator>Quartz -- quartz.jzhao.xyz</generator>
       <item>
+    <title>Knuth-Morris-Pratt Algorithm</title>
+    <link>https://dxing.blog/Algorithms/Knuth-Morris-Pratt-Algorithm</link>
+    <guid>https://dxing.blog/Algorithms/Knuth-Morris-Pratt-Algorithm</guid>
+    <description><![CDATA[ The Knuth-Morris-Pratt Algorithm is an algorithm that can find \pi(1),\pi(2),\dots,\pi(n) for a string s of length n in \mathcal{O}(n) time and \mathcal{O}(n) memory, where \pi(i)=\max\{j:j&lt;i\land s_0s_1\dots s_{j-1}=s_{i-j}s_{i-j+1}\dots s_{i-1}\} Algorithm 0 The definition yields an algorithm t... ]]></description>
+    <pubDate>Sun, 14 Dec 2025 00:58:40 GMT</pubDate>
+  </item><item>
+    <title>20251006 Senior Varsity Training</title>
+    <link>https://dxing.blog/PRISMS-Math-Team-Training/20251006-Senior-Varsity-Training</link>
+    <guid>https://dxing.blog/PRISMS-Math-Team-Training/20251006-Senior-Varsity-Training</guid>
+    <description><![CDATA[ Problem 1 How many positive integers n are there such that n is a multiple of 5, and the least common multiple of 5! and n equals 5 times the greatest common divisor of 10! and n? Solution Since \begin{align} \operatorname{lcm}(5!,n)=5\gcd(10!,n)&amp;\iff\forall p\in\mathbb{P},\nu_p(\operatorname{lc... ]]></description>
+    <pubDate>Fri, 12 Dec 2025 13:50:55 GMT</pubDate>
+  </item><item>
     <title>Competitive Programming Journey</title>
     <link>https://dxing.blog/Competitive-Programming-Journey</link>
     <guid>https://dxing.blog/Competitive-Programming-Journey</guid>
@@ -41,12 +53,6 @@
     <guid>https://dxing.blog/PRISMS-Math-Team-Training/20250922-Senior-Varsity-Training</guid>
     <description><![CDATA[ Problem 1 Find the number of integer values of k in the closed interval [-500,500] for which the equation \log(kx)=2\log(x+2) has exactly one real solution. ]]></description>
     <pubDate>Tue, 09 Dec 2025 18:33:04 GMT</pubDate>
-  </item><item>
-    <title>20251006 Senior Varsity Training</title>
-    <link>https://dxing.blog/PRISMS-Math-Team-Training/20251006-Senior-Varsity-Training</link>
-    <guid>https://dxing.blog/PRISMS-Math-Team-Training/20251006-Senior-Varsity-Training</guid>
-    <description><![CDATA[ Problem 1 How many positive integers n are there such that n is a multiple of 5, and the least common multiple of 5! and n equals 5 times the greatest common divisor of 10! and n? Solution Since \begin{align} \operatorname{lcm}(5!,n)=5\gcd(10!,n)&amp;\iff\forall p\in\mathbb{P},\nu_p(\operatorname{lc... ]]></description>
-    <pubDate>Tue, 09 Dec 2025 03:19:45 GMT</pubDate>
   </item>
     </channel>
   </rss>
