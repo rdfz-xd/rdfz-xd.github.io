@@ -2,19 +2,19 @@
 tags: [Computer Science, Computer Science/Algorithm, Computer Science/String Theory]
 ---
 
-The **Knuth-Morris-Pratt Algorithm** is an algorithm that can find $\pi(1),\pi(2),\dots,\pi(n)$ for a string $s$ of length $n$ in $\mathcal{O}(n)$ time and $\mathcal{O}(n)$ memory, where
+The [[Knuth-Morris-Pratt Algorithm]] is an algorithm that can find $\pi(1),\pi(2),\dots,\pi(n)$ for a string $s$ of length $n$ in $\mathcal{O}(n)$ time and $\mathcal{O}(n)$ memory, where
 $$
 \pi(i)=\max\{j:j<i\land s_0s_1\dots s_{j-1}=s_{i-j}s_{i-j+1}\dots s_{i-1}\}
 $$
 
 ### Algorithm 0
 
-The definition yields an algorithm that solves the problem in $\mathcal{O}(n^3)$ time and $\mathcal{O}(n)$ memory.
+Applying the definition yields an algorithm that solves the problem in $\mathcal{O}(n^3)$ time and $\mathcal{O}(n)$ memory.
 
 ~~~c++
 std::vector pi(n + 1, 0);
 for (int i = 2; i <= n; i++) {
-	for (int j = i - 1; j >= 0; j--) {
+	for (int j = i - 1; j > 0; j--) {
 		if (s.substr(0, j) == s.substr(i - j, j)) {
 			pi[i] = j;
 			break;
@@ -44,7 +44,7 @@ Applying the lemma yields an algorithm that solves the problem in $\mathcal{O}(n
 ~~~c++
 std::vector pi(n + 1, 0);
 for (int i = 2; i <= n; i++) {
-	for (int j = pi[i - 1] + 1; j >= 0; j--) {
+	for (int j = pi[i - 1] + 1; j > 0; j--) {
 		if (s.substr(0, j) == s.substr(i - j, j)) {
 			pi[i] = j;
 			break;
@@ -55,7 +55,7 @@ for (int i = 2; i <= n; i++) {
 
 > [!Proof]-
 >
-> It is easy to prove that the string comparison is executed
+> It is easy to prove that `s.substr(0, j) == s.substr(i - j, j)` is executed
 > $$
 > \begin{align}
 > \sum_{i=2}^n(\pi(i-1)+1-\pi(i)+1)&=\pi(1)-\pi(n)+2(n-1)\\
@@ -92,7 +92,8 @@ for (int i = 2; i <= n; i++) {
 Applying the lemma yields an algorithm that solves the problem in $\mathcal{O}(n)$ time and $\mathcal{O}(n)$ memory.
 
 ~~~c++
-std::vector pi(n + 1, 0);
+std::vector<int> pi(n + 1);
+pi[0] = pi[1] = 0;
 for (int i = 1, j = 0; i < n; i++) {
 	while (j && s[j] != s[i]) {
 		j = pi[j];
