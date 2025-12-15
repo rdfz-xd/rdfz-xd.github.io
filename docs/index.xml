@@ -6,16 +6,16 @@
       <description>Last 10 notes on Dong Xing&#039;s Blog</description>
       <generator>Quartz -- quartz.jzhao.xyz</generator>
       <item>
-    <title>Knuth-Morris-Pratt Algorithm</title>
-    <link>https://dxing.blog/Algorithms/Knuth-Morris-Pratt-Algorithm</link>
-    <guid>https://dxing.blog/Algorithms/Knuth-Morris-Pratt-Algorithm</guid>
-    <description><![CDATA[ The Knuth-Morris-Pratt Algorithm is an algorithm that can find \pi(1),\pi(2),\dots,\pi(n) for a string s of length n in \mathcal{O}(n) time and \mathcal{O}(n) memory, where \pi(i)=\max\{j:j&lt;i\land s_0s_1\dots s_{j-1}=s_{i-j}s_{i-j+1}\dots s_{i-1}\} Algorithm 0 Applying the definition yields an al... ]]></description>
-    <pubDate>Sun, 14 Dec 2025 23:41:32 GMT</pubDate>
-  </item><item>
     <title>Manacher&#039;s Algorithm</title>
     <link>https://dxing.blog/Algorithms/Manacher's-Algorithm</link>
     <guid>https://dxing.blog/Algorithms/Manacher's-Algorithm</guid>
     <description><![CDATA[ Manacher’s Algorithm is an algorithm that can find d(0),d(1),\dots,d(n-1) for a string s of length n in \mathcal{O}(n) time and \mathcal{O}(n) memory, where d(i)=\max\{j:i-j\ge0\land i+j&lt;n\land s_is_{i-1}\dots s_{i-j}=s_is_{i+1}\dots s_{i+j}\} Hint The idea of Manacher’s Algorithm is very similar... ]]></description>
+    <pubDate>Mon, 15 Dec 2025 01:50:42 GMT</pubDate>
+  </item><item>
+    <title>Knuth-Morris-Pratt Algorithm</title>
+    <link>https://dxing.blog/Algorithms/Knuth-Morris-Pratt-Algorithm</link>
+    <guid>https://dxing.blog/Algorithms/Knuth-Morris-Pratt-Algorithm</guid>
+    <description><![CDATA[ The Knuth-Morris-Pratt Algorithm is an algorithm that can find \pi(1),\pi(2),\dots,\pi(n) for a string s of length n in \mathcal{O}(n) time and \mathcal{O}(n) memory, where \pi(i)=\max\{j:j&lt;i\land s_0s_1\dots s_{j-1}=s_{i-j}s_{i-j+1}\dots s_{i-1}\} Algorithm 0 Applying the definition yields an al... ]]></description>
     <pubDate>Sun, 14 Dec 2025 23:41:32 GMT</pubDate>
   </item><item>
     <title>Z Algorithm</title>
@@ -29,12 +29,6 @@
     <guid>https://dxing.blog/</guid>
     <description><![CDATA[ Hi! I am Dong Xing, a sophomore at Princeton International School of Mathematics and Science. ]]></description>
     <pubDate>Sun, 14 Dec 2025 01:01:31 GMT</pubDate>
-  </item><item>
-    <title>20251013 Senior Varsity Training</title>
-    <link>https://dxing.blog/PRISMS-Math-Team-Training/20251013-Senior-Varsity-Training</link>
-    <guid>https://dxing.blog/PRISMS-Math-Team-Training/20251013-Senior-Varsity-Training</guid>
-    <description><![CDATA[  ]]></description>
-    <pubDate>Fri, 12 Dec 2025 19:58:16 GMT</pubDate>
   </item><item>
     <title>20251006 Senior Varsity Training</title>
     <link>https://dxing.blog/PRISMS-Math-Team-Training/20251006-Senior-Varsity-Training</link>
@@ -64,6 +58,12 @@
     <link>https://dxing.blog/PRISMS-Math-Team-Training/20250919-Junior-Varsity-Training</link>
     <guid>https://dxing.blog/PRISMS-Math-Team-Training/20250919-Junior-Varsity-Training</guid>
     <description><![CDATA[ Problem 1 Find all the roots of equation 2x-2.8=\lfloor x\rfloor. ]]></description>
+    <pubDate>Tue, 09 Dec 2025 18:33:04 GMT</pubDate>
+  </item><item>
+    <title>20250922 Senior Varsity Training</title>
+    <link>https://dxing.blog/PRISMS-Math-Team-Training/20250922-Senior-Varsity-Training</link>
+    <guid>https://dxing.blog/PRISMS-Math-Team-Training/20250922-Senior-Varsity-Training</guid>
+    <description><![CDATA[ Problem 1 Find the number of integer values of k in the closed interval [-500,500] for which the equation \log(kx)=2\log(x+2) has exactly one real solution. ]]></description>
     <pubDate>Tue, 09 Dec 2025 18:33:04 GMT</pubDate>
   </item>
     </channel>

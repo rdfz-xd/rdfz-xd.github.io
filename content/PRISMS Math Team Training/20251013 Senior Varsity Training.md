@@ -1,4 +1,0 @@
----
-tags: [Mathematics, Mathematics/Combinatorics]
----
-
