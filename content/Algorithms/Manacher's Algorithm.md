@@ -35,7 +35,7 @@ for (int i = 0; i < n; i++) {
 > > $$
 > > \begin{align}
 > > s_js_{j-1}\dots s_{j-d(j)}=s_js_{j+1}\dots s_{j+d(j)}&\iff s_{j-d(j)}s_{j-d(j)+1}\dots s_{j+d(j)}=s_{j+d(j)}s_{j+d(j)-1}\dots s_{j-d(j)}\\
-> > &\implies s_is_{i-1}\dots s_{2i-j-d(j)}=s_{2j-i}s_{2j-i+1}\dots s_{3j+d(j)-2i)}\land s_is_{i+1}\dots s_{j+d(j)}=s_{2j-i}s_{2j-i-1}\dots s_{j-d(j)}\\
+> > &\implies s_is_{i-1}\dots s_{2i-j-d(j)}=s_{2j-i}s_{2j-i+1}\dots s_{3j+d(j)-2i}\land s_is_{i+1}\dots s_{j+d(j)}=s_{2j-i}s_{2j-i-1}\dots s_{j-d(j)}\\
 > > &\implies d(i)\ge\min\{d(2j-i),j+d(j)-i\}
 > > \end{align}
 > > $$
