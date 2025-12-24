@@ -2,14 +2,14 @@
 tags: [Computer Science, Computer Science/Algorithm, Computer Science/String Theory]
 ---
 
-The [[Knuth-Morris-Pratt Algorithm]] is an algorithm that can find $\pi(1),\pi(2),\dots,\pi(n)$ for a string $s$ of length $n$ in $\mathcal{O}(n)$ time and $\mathcal{O}(n)$ memory, where
+The [[Knuth-Morris-Pratt Algorithm]] is an algorithm that computes $\pi(1),\pi(2),\dots,\pi(n)$ for a string $s$ of length $n$ in $\mathcal{O}(n)$ time and $\mathcal{O}(n)$ space, where
 $$
 \pi(i)=\max\{j:j<i\land s_0s_1\dots s_{j-1}=s_{i-j}s_{i-j+1}\dots s_{i-1}\}
 $$
 
 ### Algorithm 0
 
-Applying the definition yields an algorithm that solves the problem in $\mathcal{O}(n^3)$ time and $\mathcal{O}(n)$ memory.
+Applying the definition yields an algorithm that solves the problem in $\mathcal{O}(n^3)$ time and $\mathcal{O}(n)$ space.
 
 ~~~c++
 std::vector pi(n + 1, 0);
@@ -39,7 +39,7 @@ for (int i = 2; i <= n; i++) {
 > > \end{align}
 > > $$
 
-Applying the lemma yields an algorithm that solves the problem in $\mathcal{O}(n^2)$ time and $\mathcal{O}(n)$ memory.
+Based on [[Knuth-Morris-Pratt-Algorithm#Algorithm 0]], applying the lemma yields an algorithm that solves the problem in $\mathcal{O}(n^2)$ time and $\mathcal{O}(n)$ space.
 
 ~~~c++
 std::vector pi(n + 1, 0);
@@ -55,7 +55,7 @@ for (int i = 2; i <= n; i++) {
 
 > [!Proof]-
 >
-> It is easy to prove that `s.substr(0, j) == s.substr(i - j, j)` is executed
+> The total number of executions of  `s.substr(0, j) == s.substr(i - j, j)` is
 > $$
 > \begin{align}
 > \sum_{i=2}^n(\pi(i-1)+1-\pi(i)+1)&=\pi(1)-\pi(n)+2(n-1)\\
@@ -63,7 +63,6 @@ for (int i = 2; i <= n; i++) {
 > &\in\mathcal{O}(n)
 > \end{align}
 > $$
-> times.
 
 ### Algorithm 2
 
@@ -76,7 +75,7 @@ for (int i = 2; i <= n; i++) {
 >
 > > [!Proof]-
 > >
-> > Let $S=$ $\{\{j:j<i\land s_0s_1\dots s_{j-1}=s_{i-j}s_{i-j+1}\dots s_{i-1}\}\}$, $a_j$ be the $j$-th largest element in $S$. Then for $j\in\{1,2,\dots,|S|-1\}$, since
+> > Let $S=$ $\{\{j:j<i\land s_0s_1\dots s_{j-1}=s_{i-j}s_{i-j+1}\dots s_{i-1}\}\}$, $a_j$ denote the $j$-th largest element in $S$. Then for $j\in\{1,2,\dots,|S|-1\}$, since
 > > $$
 > > s_0s_1\dots s_{a_j-1}=s_{i-a_j}s_{i-a_j+1}\dots s_{i-1}\implies\forall k\in\{0,1,\dots,a_j-1\},s_{a_j-k}s_{a_j-k+1}\dots s_{a_j-1}=s_{i-k}s_{i-k+1}\dots s_{i-1}
 > > $$
@@ -89,7 +88,7 @@ for (int i = 2; i <= n; i++) {
 > > \end{align}
 > > $$
 
-Applying the lemma yields an algorithm that solves the problem in $\mathcal{O}(n)$ time and $\mathcal{O}(n)$ memory.
+Based on [[Knuth-Morris-Pratt-Algorithm#Algorithm 1]], applying the lemma yields an algorithm that solves the problem in $\mathcal{O}(n)$ time and $\mathcal{O}(n)$ space.
 
 ~~~c++
 std::vector<int> pi(n + 1);

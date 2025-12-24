@@ -2,18 +2,18 @@
 tags: [Computer Science, Computer Science/Algorithm, Computer Science/String Theory]
 ---
 
-[[Manacher's Algorithm]] is an algorithm that can find $d(0),d(1),\dots,d(n-1)$ for a string $s$ of length $n$ in $\mathcal{O}(n)$ time and $\mathcal{O}(n)$ memory, where
+[[Manacher's Algorithm]] is an algorithm that computes $d(0),d(1),\dots,d(n-1)$ for a string $s$ of length $n$ in $\mathcal{O}(n)$ time and $\mathcal{O}(n)$ space, where
 $$
 d(i)=\max\{j:i-j\ge0\land i+j<n\land s_is_{i-1}\dots s_{i-j}=s_is_{i+1}\dots s_{i+j}\}
 $$
 
 > [!Hint]
 >
-> The idea of [[Manacher's Algorithm]] is very similar to the [[Z Algorithm]].
+> The idea of [[Manacher's Algorithm]] is closely related to the [[Z Algorithm]].
 
 ### Algorithm 0
 
-Applying the definition yields an algorithm that solves the problem in $\mathcal{O}(n^2)$ time and $\mathcal{O}(n)$ memory.
+Applying the definition yields an algorithm that solves the problem in $\mathcal{O}(n^2)$ time and $\mathcal{O}(n)$ space.
 
 ~~~c++
 std::vector d(n, 0);
@@ -40,7 +40,7 @@ for (int i = 0; i < n; i++) {
 > > \end{align}
 > > $$
 
-Maintaining $\operatorname{argmax}_{j=0}^{i-1}(j+d(j))$ and applying the lemma yield an algorithm that solves the problem in $\mathcal{O}(n)$ time and $\mathcal{O}(n)$ memory.
+Based on [[Manacher's Algorithm#Algorithm 0]], maintaining $\operatorname{argmax}_{j=0}^{i-1}(j+d(j))$ and applying the lemma yield an algorithm that solves the problem in $\mathcal{O}(n)$ time and $\mathcal{O}(n)$ space.
 
 ~~~c++
 std::vector<int> d(n);
@@ -57,7 +57,7 @@ for (int i = 0, l = 0, r = 0; i < n; i++) {
 
 > [!Proof]-
 >
-> It is easy to prove that the upper bound of the number of times `d[i]++;` is executed is
+> It is easy to prove that the upper bound of the total number of executions of `d[i]++;` is
 > $$
 > \begin{align}
 > \max_{i=0}^{n-1}(i+d(i))&\le n\\

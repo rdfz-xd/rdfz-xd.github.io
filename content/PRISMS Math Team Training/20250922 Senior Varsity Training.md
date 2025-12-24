@@ -302,8 +302,8 @@ Find all polynomials $f(x)$ with real coefficients such that $f(x^2)=f(x)^2$.
 > 
 > $$
 > \begin{align}
-> f(x^2)=f(x)^2&\Longrightarrow\forall x\in\mathbb{C},f(x^2)=0\leftrightarrow f(x)^2=0\\
-> &\Longleftrightarrow\forall x\in\mathbb{C},f(x^2)=0\leftrightarrow f(x)=0
+> f(x^2)=f(x)^2&\Longrightarrow\forall x\in\mathbb{C},f(x^2)=0\Leftrightarrow f(x)^2=0\\
+> &\Longleftrightarrow\forall x\in\mathbb{C},f(x^2)=0\Leftrightarrow f(x)=0
 > \end{align}
 > $$
 >

@@ -2,18 +2,18 @@
 tags: [Computer Science, Computer Science/Algorithm, Computer Science/String Theory]
 ---
 
-The [[Z Algorithm]] is an algorithm that can find $z(0),z(1),\dots,z(n-1)$ for a string $s$ of length $n$ in $\mathcal{O}(n)$ time and $\mathcal{O}(n)$ memory, where
+The [[Z Algorithm]] is an algorithm that computes $z(0),z(1),\dots,z(n-1)$ for a string $s$ of length $n$ in $\mathcal{O}(n)$ time and $\mathcal{O}(n)$ space, where
 $$
 z(i)=\operatorname{lcp}(s,s_is_{i+1}\dots s_{n-1})
 $$
 
 > [!Hint]
 >
-> The idea of the [[Z Algorithm]] is very similar to [[Manacher's Algorithm]].
+> The idea of the [[Z Algorithm]] is closely related to [[Manacher's Algorithm]].
 
 ### Algorithm 0
 
-Applying the definition yields an algorithm that solves the problem in $\mathcal{O}(n^2)$ time and $\mathcal{O}(n)$ memory.
+Applying the definition yields an algorithm that solves the problem in $\mathcal{O}(n^2)$ time and $\mathcal{O}(n)$ space.
 
 ~~~c++
 std::vector z(n, 0);
@@ -39,7 +39,7 @@ for (int i = 0; i < n; i++) {
 > > \end{align}
 > > $$
 
-Maintaining $\operatorname{argmax}_{j=1}^{i-1}(j+z(j))$ and applying the lemma yield an algorithm that solves the problem in $\mathcal{O}(n)$ time and $\mathcal{O}(n)$ memory.
+Based on [[Z Algorithm#Algorithm 0]], maintaining $\operatorname{argmax}_{j=1}^{i-1}(j+z(j))$ and applying the lemma yield an algorithm that solves the problem in $\mathcal{O}(n)$ time and $\mathcal{O}(n)$ space.
 
 ~~~c++
 std::vector<int> z(n);
@@ -57,7 +57,7 @@ for (int i = 1, l = 0, r = 0; i < n; i++) {
 
 > [!Proof]-
 >
-> It is easy to prove that the upper bound of the number of times `z[i]++;` is executed is
+> It is easy to prove that the upper bound of the total number of executions of `z[i]++;` is
 > $$
 > \begin{align}
 > \max_{i=1}^{n-1}(i+z(i))&\le n\\
