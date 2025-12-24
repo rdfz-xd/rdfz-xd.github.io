@@ -48,7 +48,7 @@ y_combinator([&](auto &&self, int o, int s, int t) -> void {
 >
 > Any query segment can be decomposed into $\mathcal{O}(\log(n))$ maintained segments.
 
-According to the lemma, summing of the sums of the maintained segments yields an algorithm that solves the problem in $\mathcal{O}(\log(n))$ time.
+According to the lemma, summing the sums of the maintained segments yields an algorithm that solves the problem in $\mathcal{O}(\log(n))$ time.
 
 ~~~c++
 return y_combinator([&](auto &&self, int o, int s, int t) -> int {
