@@ -9,32 +9,38 @@
     <title>Dijkstra&#039;s Algorithm</title>
     <link>https://dxing.blog/Algorithms/Dijkstra's-Algorithm</link>
     <guid>https://dxing.blog/Algorithms/Dijkstra's-Algorithm</guid>
-    <description><![CDATA[ Dijkstra’s Algorithm is an algorithm that computes \operatorname{dist}(s,v_0),\operatorname{dist}(s,v_1),\dots,\operatorname{dist}(s,v_{|V|-1}) for a graph G with non-negative edge weights and a vertex s\in G in \mathcal{O}(|V|^2+|E|) time and \mathcal{O}(|V|+|E|) space or \mathcal{O}((|V|+|E|)\log(... ]]></description>
-    <pubDate>Wed, 24 Dec 2025 19:03:23 GMT</pubDate>
-  </item><item>
-    <title>Segment Tree</title>
-    <link>https://dxing.blog/Data-Structures/Segment-Tree</link>
-    <guid>https://dxing.blog/Data-Structures/Segment-Tree</guid>
-    <description><![CDATA[ A Segment Tree maintains an array of n=2^k numbers a_0,a_1,\dots,a_{n-1} by maintaining s(0,2^k),s(0,2^{k-1}),s(2^{k-1},2^k),\dots,s(0,1),s(1,2),\dots,s(2^k-1,2^k), where s(l,r)=\sum_{i=l}^{r-1}a_i which costs \mathcal{O}(n) space. ]]></description>
-    <pubDate>Wed, 24 Dec 2025 19:02:13 GMT</pubDate>
-  </item><item>
-    <title>Manacher&#039;s Algorithm</title>
-    <link>https://dxing.blog/Algorithms/Manacher's-Algorithm</link>
-    <guid>https://dxing.blog/Algorithms/Manacher's-Algorithm</guid>
-    <description><![CDATA[ Manacher’s Algorithm is an algorithm that computes d(0),d(1),\dots,d(n-1) for a string s of length n in \mathcal{O}(n) time and \mathcal{O}(n) space, where d(i)=\max\{j:i-j\ge0\land i+j&lt;n\land s_is_{i-1}\dots s_{i-j}=s_is_{i+1}\dots s_{i+j}\} Hint The idea of Manacher’s Algorithm is closely relat... ]]></description>
-    <pubDate>Mon, 15 Dec 2025 01:50:42 GMT</pubDate>
+    <description><![CDATA[ Dijkstra’s Algorithm is an algorithm that computes \operatorname{dist}(s,v_0),\operatorname{dist}(s,v_1),\dots,\operatorname{dist}(s,v_{|V|-1}) for a graph G with non-negative edge weights and a vertex s\in G in \mathcal{O}(|V|^2+|E|) time and \mathcal{O}(|V|+|E|) space \mathcal{O}((|V|+|E|)\log(|V|... ]]></description>
+    <pubDate>Wed, 24 Dec 2025 19:05:10 GMT</pubDate>
   </item><item>
     <title>Knuth-Morris-Pratt Algorithm</title>
     <link>https://dxing.blog/Algorithms/Knuth-Morris-Pratt-Algorithm</link>
     <guid>https://dxing.blog/Algorithms/Knuth-Morris-Pratt-Algorithm</guid>
     <description><![CDATA[ The Knuth-Morris-Pratt Algorithm is an algorithm that computes \pi(1),\pi(2),\dots,\pi(n) for a string s of length n in \mathcal{O}(n) time and \mathcal{O}(n) space, where \pi(i)=\max\{j:j&lt;i\land s_0s_1\dots s_{j-1}=s_{i-j}s_{i-j+1}\dots s_{i-1}\} Algorithm 0 Applying the definition yields an alg... ]]></description>
-    <pubDate>Sun, 14 Dec 2025 23:41:32 GMT</pubDate>
+    <pubDate>Wed, 24 Dec 2025 19:05:10 GMT</pubDate>
+  </item><item>
+    <title>Manacher&#039;s Algorithm</title>
+    <link>https://dxing.blog/Algorithms/Manacher's-Algorithm</link>
+    <guid>https://dxing.blog/Algorithms/Manacher's-Algorithm</guid>
+    <description><![CDATA[ Manacher’s Algorithm is an algorithm that computes d(0),d(1),\dots,d(n-1) for a string s of length n in \mathcal{O}(n) time and \mathcal{O}(n) space, where d(i)=\max\{j:i-j\ge0\land i+j&lt;n\land s_is_{i-1}\dots s_{i-j}=s_is_{i+1}\dots s_{i+j}\} Hint The idea of Manacher’s Algorithm is closely relat... ]]></description>
+    <pubDate>Wed, 24 Dec 2025 19:05:10 GMT</pubDate>
   </item><item>
     <title>Z Algorithm</title>
     <link>https://dxing.blog/Algorithms/Z-Algorithm</link>
     <guid>https://dxing.blog/Algorithms/Z-Algorithm</guid>
     <description><![CDATA[ The Z Algorithm is an algorithm that computes z(0),z(1),\dots,z(n-1) for a string s of length n in \mathcal{O}(n) time and \mathcal{O}(n) space, where z(i)=\operatorname{lcp}(s,s_is_{i+1}\dots s_{n-1}) Hint The idea of the Z Algorithm is closely related to Manacher’s Algorithm. ]]></description>
-    <pubDate>Sun, 14 Dec 2025 23:41:32 GMT</pubDate>
+    <pubDate>Wed, 24 Dec 2025 19:05:10 GMT</pubDate>
+  </item><item>
+    <title>Segment Tree</title>
+    <link>https://dxing.blog/Data-Structures/Segment-Tree</link>
+    <guid>https://dxing.blog/Data-Structures/Segment-Tree</guid>
+    <description><![CDATA[ A Segment Tree maintains an array of n=2^k numbers a_0,a_1,\dots,a_{n-1} by maintaining s(0,2^k),s(0,2^{k-1}),s(2^{k-1},2^k),\dots,s(0,1),s(1,2),\dots,s(2^k-1,2^k), where s(l,r)=\sum_{i=l}^{r-1}a_i which costs \mathcal{O}(n) space. ]]></description>
+    <pubDate>Wed, 24 Dec 2025 19:05:10 GMT</pubDate>
+  </item><item>
+    <title>20250922 Senior Varsity Training</title>
+    <link>https://dxing.blog/PRISMS-Math-Team-Training/20250922-Senior-Varsity-Training</link>
+    <guid>https://dxing.blog/PRISMS-Math-Team-Training/20250922-Senior-Varsity-Training</guid>
+    <description><![CDATA[ Problem 1 Find the number of integer values of k in the closed interval [-500,500] for which the equation \log(kx)=2\log(x+2) has exactly one real solution. ]]></description>
+    <pubDate>Wed, 24 Dec 2025 19:05:10 GMT</pubDate>
   </item><item>
     <title>Welcome to My Blog!</title>
     <link>https://dxing.blog/</link>
@@ -59,12 +65,6 @@
     <guid>https://dxing.blog/PRISMS-Math-Team-Training/20250929-Senior-Varsity-Training</guid>
     <description><![CDATA[ Problem 1 Equilateral \triangle ABC with side length 14 is rotated about its center by angle \theta, where 0&lt;\theta&lt;60\degree, to form \triangle DEF. ]]></description>
     <pubDate>Fri, 12 Dec 2025 01:19:38 GMT</pubDate>
-  </item><item>
-    <title>20250915 Senior Varsity Training</title>
-    <link>https://dxing.blog/PRISMS-Math-Team-Training/20250915-Senior-Varsity-Training</link>
-    <guid>https://dxing.blog/PRISMS-Math-Team-Training/20250915-Senior-Varsity-Training</guid>
-    <description><![CDATA[ Problem 1 Find the smallest n such that 2013^n ends in 001. ]]></description>
-    <pubDate>Tue, 09 Dec 2025 18:33:04 GMT</pubDate>
   </item>
     </channel>
   </rss>
