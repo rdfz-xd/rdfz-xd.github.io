@@ -6,17 +6,17 @@
       <description>Last 10 notes on Dong Xing&#039;s Blog</description>
       <generator>Quartz -- quartz.jzhao.xyz</generator>
       <item>
+    <title>Dijkstra&#039;s Algorithm</title>
+    <link>https://dxing.blog/Algorithms/Dijkstra's-Algorithm</link>
+    <guid>https://dxing.blog/Algorithms/Dijkstra's-Algorithm</guid>
+    <description><![CDATA[ Dijkstra’s Algorithm is an algorithm that computes \operatorname{dist}(s,v_0),\operatorname{dist}(s,v_1),\dots,\operatorname{dist}(s,v_{|V|-1}) for a graph G with non-negative edge weights and a vertex s\in G in \mathcal{O}(|V|^2+|E|) time and \mathcal{O}(|V|+|E|) space \mathcal{O}((|V|+|E|)\log(|V|... ]]></description>
+    <pubDate>Wed, 24 Dec 2025 19:30:11 GMT</pubDate>
+  </item><item>
     <title>Segment Tree</title>
     <link>https://dxing.blog/Data-Structures/Segment-Tree</link>
     <guid>https://dxing.blog/Data-Structures/Segment-Tree</guid>
     <description><![CDATA[ A Segment Tree maintains an array of n=2^k numbers a_0,a_1,\dots,a_{n-1} by maintaining s(0,2^k),s(0,2^{k-1}),s(2^{k-1},2^k),\dots,s(0,1),s(1,2),\dots,s(2^k-1,2^k), where s(l,r)=\sum_{i=l}^{r-1}a_i which costs \mathcal{O}(n) space. ]]></description>
     <pubDate>Wed, 24 Dec 2025 19:13:09 GMT</pubDate>
-  </item><item>
-    <title>Dijkstra&#039;s Algorithm</title>
-    <link>https://dxing.blog/Algorithms/Dijkstra's-Algorithm</link>
-    <guid>https://dxing.blog/Algorithms/Dijkstra's-Algorithm</guid>
-    <description><![CDATA[ Dijkstra’s Algorithm is an algorithm that computes \operatorname{dist}(s,v_0),\operatorname{dist}(s,v_1),\dots,\operatorname{dist}(s,v_{|V|-1}) for a graph G with non-negative edge weights and a vertex s\in G in \mathcal{O}(|V|^2+|E|) time and \mathcal{O}(|V|+|E|) space \mathcal{O}((|V|+|E|)\log(|V|... ]]></description>
-    <pubDate>Wed, 24 Dec 2025 19:07:30 GMT</pubDate>
   </item><item>
     <title>Knuth-Morris-Pratt Algorithm</title>
     <link>https://dxing.blog/Algorithms/Knuth-Morris-Pratt-Algorithm</link>
