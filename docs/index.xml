@@ -6,18 +6,6 @@
       <description>Last 10 notes on Dong Xing&#039;s Blog</description>
       <generator>Quartz -- quartz.jzhao.xyz</generator>
       <item>
-    <title>Dijkstra&#039;s Algorithm</title>
-    <link>https://dxing.blog/Algorithms/Dijkstra's-Algorithm</link>
-    <guid>https://dxing.blog/Algorithms/Dijkstra's-Algorithm</guid>
-    <description><![CDATA[ Dijkstra’s Algorithm is an algorithm that computes \operatorname{dist}(s,v_0),\operatorname{dist}(s,v_1),\dots,\operatorname{dist}(s,v_{|V|-1}) for a graph G with non-negative edge weights and a vertex s\in G in \mathcal{O}(|V|^2+|E|) time and \mathcal{O}(|V|+|E|) space \mathcal{O}((|V|+|E|)\log(|V|... ]]></description>
-    <pubDate>Wed, 24 Dec 2025 19:34:48 GMT</pubDate>
-  </item><item>
-    <title>Segment Tree</title>
-    <link>https://dxing.blog/Data-Structures/Segment-Tree</link>
-    <guid>https://dxing.blog/Data-Structures/Segment-Tree</guid>
-    <description><![CDATA[ A Segment Tree maintains an array of n=2^k numbers a_0,a_1,\dots,a_{n-1} by maintaining s(0,2^k),s(0,2^{k-1}),s(2^{k-1},2^k),\dots,s(0,1),s(1,2),\dots,s(2^k-1,2^k), where s(l,r)=\sum_{i=l}^{r-1}a_i which costs \mathcal{O}(n) space. ]]></description>
-    <pubDate>Wed, 24 Dec 2025 19:13:09 GMT</pubDate>
-  </item><item>
     <title>Knuth-Morris-Pratt Algorithm</title>
     <link>https://dxing.blog/Algorithms/Knuth-Morris-Pratt-Algorithm</link>
     <guid>https://dxing.blog/Algorithms/Knuth-Morris-Pratt-Algorithm</guid>
@@ -42,6 +30,12 @@
     <description><![CDATA[ Problem 1 Find the number of integer values of k in the closed interval [-500,500] for which the equation \log(kx)=2\log(x+2) has exactly one real solution. ]]></description>
     <pubDate>Wed, 24 Dec 2025 19:05:10 GMT</pubDate>
   </item><item>
+    <title>20251013 Senior Varsity Training</title>
+    <link>https://dxing.blog/PRISMS-Math-Team-Training/20251013-Senior-Varsity-Training</link>
+    <guid>https://dxing.blog/PRISMS-Math-Team-Training/20251013-Senior-Varsity-Training</guid>
+    <description><![CDATA[  ]]></description>
+    <pubDate>Mon, 15 Dec 2025 01:51:03 GMT</pubDate>
+  </item><item>
     <title>Welcome to My Blog!</title>
     <link>https://dxing.blog/</link>
     <guid>https://dxing.blog/</guid>
@@ -65,6 +59,12 @@
     <guid>https://dxing.blog/PRISMS-Math-Team-Training/20250929-Senior-Varsity-Training</guid>
     <description><![CDATA[ Problem 1 Equilateral \triangle ABC with side length 14 is rotated about its center by angle \theta, where 0&lt;\theta&lt;60\degree, to form \triangle DEF. ]]></description>
     <pubDate>Fri, 12 Dec 2025 01:19:38 GMT</pubDate>
+  </item><item>
+    <title>20250915 Senior Varsity Training</title>
+    <link>https://dxing.blog/PRISMS-Math-Team-Training/20250915-Senior-Varsity-Training</link>
+    <guid>https://dxing.blog/PRISMS-Math-Team-Training/20250915-Senior-Varsity-Training</guid>
+    <description><![CDATA[ Problem 1 Find the smallest n such that 2013^n ends in 001. ]]></description>
+    <pubDate>Tue, 09 Dec 2025 18:33:04 GMT</pubDate>
   </item>
     </channel>
   </rss>
