@@ -30,12 +30,6 @@
     <description><![CDATA[ Problem 1 Find the number of integer values of k in the closed interval [-500,500] for which the equation \log(kx)=2\log(x+2) has exactly one real solution. ]]></description>
     <pubDate>Wed, 24 Dec 2025 19:05:10 GMT</pubDate>
   </item><item>
-    <title>20251013 Senior Varsity Training</title>
-    <link>https://dxing.blog/PRISMS-Math-Team-Training/20251013-Senior-Varsity-Training</link>
-    <guid>https://dxing.blog/PRISMS-Math-Team-Training/20251013-Senior-Varsity-Training</guid>
-    <description><![CDATA[  ]]></description>
-    <pubDate>Mon, 15 Dec 2025 01:51:03 GMT</pubDate>
-  </item><item>
     <title>Welcome to My Blog!</title>
     <link>https://dxing.blog/</link>
     <guid>https://dxing.blog/</guid>
@@ -64,6 +58,12 @@
     <link>https://dxing.blog/PRISMS-Math-Team-Training/20250915-Senior-Varsity-Training</link>
     <guid>https://dxing.blog/PRISMS-Math-Team-Training/20250915-Senior-Varsity-Training</guid>
     <description><![CDATA[ Problem 1 Find the smallest n such that 2013^n ends in 001. ]]></description>
+    <pubDate>Tue, 09 Dec 2025 18:33:04 GMT</pubDate>
+  </item><item>
+    <title>20250919 Junior Varsity Training</title>
+    <link>https://dxing.blog/PRISMS-Math-Team-Training/20250919-Junior-Varsity-Training</link>
+    <guid>https://dxing.blog/PRISMS-Math-Team-Training/20250919-Junior-Varsity-Training</guid>
+    <description><![CDATA[ Problem 1 Find all the roots of equation 2x-2.8=\lfloor x\rfloor. ]]></description>
     <pubDate>Tue, 09 Dec 2025 18:33:04 GMT</pubDate>
   </item>
     </channel>
