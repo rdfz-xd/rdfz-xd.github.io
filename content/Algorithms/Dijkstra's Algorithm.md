@@ -24,7 +24,7 @@ tags: [Computer Science, Computer Science/Algorithm, Computer Science/Graph Theo
 > > \end{align}
 > > $$
 
-Let $d_S(v)$ denote the length of the shortest path from $s$ to $v$ that only passes through vertices in $S$. Visit the vertices in the order of their distance from $s$ by maintaining a set $S$ of unvisited vertices. Let $v$ be a vertex in $\operatorname{argmin}_{v\in S}d_{V\setminus S}(v)$, then applying the lemma yields $\operatorname{dist}(s,v)=d_{V\setminus S}(v)$. Therefore, the next vertex to visit can be $v$.
+Let $d_S(v)$ denote the length of the shortest path from $s$ to $v$ that only passes through vertices in $S$. Visit the vertices in the order of their distance from $s$ by maintaining a set $S$ of unvisited vertices. Let $v$ be a vertex in $\operatorname{argmin}_{v\in S}d_{V\setminus S}(v)$, then applying the lemma yields $\operatorname{dist}(s,v)=d_{V\setminus S}(v)$ and the next vertex to visit can be $v$.
 
 This algorithm solves the problem in $\mathcal{O}(|V|^2+|E|)$ time and $\mathcal{O}(|V|+|E|)$ space.
 
