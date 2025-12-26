@@ -424,7 +424,7 @@ Let $\triangle PQR$ be a triangle with $\angle P=75\degree$ and $\angle Q=60\deg
 
 In the figure below, semicircles with centers at $A$ and $B$ and with radii $2$ and $1$, respectively, are drawn in the interior of, and sharing bases with, a semicircle with diameter $\overline{JK}$. The two smaller semicircles are externally tangent to each other and internally tangent to the largest semicircle. A circle centered at $P$ is drawn externally tangent to the two smaller semicircles and internally tangent to the largest semicircle. What is the radius of the circle centered at $P$?
 
-![diagram](/images/20250929_Senior Varsity_Training_Problem_12.png)
+![diagram](/images/20250929_Senior_Varsity_Training_Problem_12.png)
 
 > [!Solution]-
 >

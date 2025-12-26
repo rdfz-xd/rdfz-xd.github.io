@@ -548,8 +548,8 @@ Let $z=a+bi$ be the complex number with $|z|=5$ and $b>0$ such that the distance
 > [!Solution]-
 > $$
 > \begin{align}
-> \operatorname*{argmax}_{|z|=5\land\Im(z)>0}\left|(1+2i)z^3-z^5\right|&=\operatorname*{argmax}_{|z|=5\land\Im(z)>0}|z|^3\left|1+2i-z^2\right|\\
-> &=\operatorname*{argmax}_{|z|=5\land\Im(z)>0}\left|1+2i-z^2\right|\\
+> \arg\max_{|z|=5\land\Im(z)>0}\left|(1+2i)z^3-z^5\right|&=\arg\max_{|z|=5\land\Im(z)>0}|z|^3\left|1+2i-z^2\right|\\
+> &=\arg\max_{|z|=5\land\Im(z)>0}\left|1+2i-z^2\right|\\
 > &=\left\{\sqrt{-25\frac{1+2i}{|1+2i|}}\right\}\\
 > &=\left\{\sqrt{-5\sqrt5(1+2i)}\right\}
 > \end{align}

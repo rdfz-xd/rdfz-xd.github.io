@@ -40,7 +40,7 @@ for (int i = 0; i < n; i++) {
 > > \end{align}
 > > $$
 
-Based on [[Manacher's Algorithm#Algorithm 0]], maintaining $\operatorname{argmax}_{j=0}^{i-1}(j+d(j))$ and applying the lemma yield an algorithm that solves the problem in $\mathcal{O}(n)$ time and $\mathcal{O}(n)$ space.
+Based on [[Manacher's Algorithm#Algorithm 0]], maintaining $\operatorname{arg max}_{j=0}^{i-1}(j+d(j))$ and applying the lemma yield an algorithm that solves the problem in $\mathcal{O}(n)$ time and $\mathcal{O}(n)$ space.
 
 ~~~c++
 std::vector<int> d(n);
