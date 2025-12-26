@@ -1,0 +1,45 @@
+*一花一世界，一葉一菩提。*
+
+### Aug. 25th, 2025 · New York, NY
+
+![photo](/images/20250825.JPG)
+
+### Aug. 26th, 2025 · Cambridge, MA
+
+![photo](/images/20250826.JPG)
+
+### Sept. 6th, 2025 · Princeton, NJ
+
+![photo](/images/20250906.JPG)
+
+### Sept. 8th, 2025 · Princeton, NJ
+
+![photo](/images/20250908.JPG)
+
+### Sept. 23th, 2025 · Princeton, NJ
+
+![photo](/images/20250923.JPG)
+
+### Sept. 29th, 2025 · Princeton, NJ
+
+![photo](/images/20250929.JPG)
+
+### Oct. 6th, 2025 · Princeton, NJ
+
+![photo](/images/20251006.JPG)
+
+### Nov. 8th, 2025 · Cambridge, MA
+
+![photo](/images/20251108_0.JPG)
+
+![photo](/images/20251108_1.JPG)
+
+### Nov. 22th, 2025 · Princeton, NJ
+
+![photo](/images/20251122_0.JPG)
+
+![photo](/images/20251122_1.JPG)
+
+### Dec. 24th, 2025 · San Francisco, CA
+
+![photo](/images/20251224.JPG)

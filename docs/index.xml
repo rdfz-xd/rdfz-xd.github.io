@@ -6,17 +6,23 @@
       <description>Last 10 notes on Dong Xing&#039;s Blog</description>
       <generator>Quartz -- quartz.jzhao.xyz</generator>
       <item>
-    <title>Floyd-Warshall Algorithm</title>
-    <link>https://dxing.blog/Algorithms/Floyd-Warshall-Algorithm</link>
-    <guid>https://dxing.blog/Algorithms/Floyd-Warshall-Algorithm</guid>
-    <description><![CDATA[ The Floyd-Warshall Algorithm is an algorithm that computes the length of the shortest path between every pair of vertices in a graph G=\langle V,E\rangle with edge weights in \mathcal{O}(|V|^3+|E|) time and \mathcal{O}(|V|^2+|E|) space. ]]></description>
-    <pubDate>Fri, 26 Dec 2025 06:41:52 GMT</pubDate>
+    <title>Garden</title>
+    <link>https://dxing.blog/Garden</link>
+    <guid>https://dxing.blog/Garden</guid>
+    <description><![CDATA[ 一花一世界，一葉一菩提。 Aug. 25th, 2025 · New York, NY Aug. 26th, 2025 · Cambridge, MA Sept. 6th, 2025 · Princeton, NJ Sept. 8th, 2025 · Princeton, NJ Sept. ]]></description>
+    <pubDate>Fri, 26 Dec 2025 07:55:55 GMT</pubDate>
   </item><item>
     <title>Dijkstra&#039;s Algorithm</title>
     <link>https://dxing.blog/Algorithms/Dijkstra's-Algorithm</link>
     <guid>https://dxing.blog/Algorithms/Dijkstra's-Algorithm</guid>
     <description><![CDATA[ Dijkstra’s Algorithm is an algorithm that computes the length of the shortest path from a vertex s to every vertex in a graph G=\langle V,E\rangle with non-negative edge weights in \mathcal{O}(|V|^2+|E|) time and \mathcal{O}(|V|+|E|) space, or \mathcal{O}((|V|+|E|)\log(|V|)) time and \mathcal{O}(|V|... ]]></description>
-    <pubDate>Fri, 26 Dec 2025 05:59:11 GMT</pubDate>
+    <pubDate>Fri, 26 Dec 2025 06:46:08 GMT</pubDate>
+  </item><item>
+    <title>Floyd-Warshall Algorithm</title>
+    <link>https://dxing.blog/Algorithms/Floyd-Warshall-Algorithm</link>
+    <guid>https://dxing.blog/Algorithms/Floyd-Warshall-Algorithm</guid>
+    <description><![CDATA[ The Floyd-Warshall Algorithm is an algorithm that computes the length of the shortest path between every pair of vertices in a graph G=\langle V,E\rangle with edge weights in \mathcal{O}(|V|^3+|E|) time and \mathcal{O}(|V|^2+|E|) space. ]]></description>
+    <pubDate>Fri, 26 Dec 2025 06:46:08 GMT</pubDate>
   </item><item>
     <title>Knuth-Morris-Pratt Algorithm</title>
     <link>https://dxing.blog/Algorithms/Knuth-Morris-Pratt-Algorithm</link>
@@ -58,12 +64,6 @@
     <link>https://dxing.blog/PRISMS-Math-Team-Training/20250919-Junior-Varsity-Training</link>
     <guid>https://dxing.blog/PRISMS-Math-Team-Training/20250919-Junior-Varsity-Training</guid>
     <description><![CDATA[ Problem 1 Find all the roots of equation 2x-2.8=\lfloor x\rfloor. ]]></description>
-    <pubDate>Fri, 26 Dec 2025 05:59:11 GMT</pubDate>
-  </item><item>
-    <title>20250922 Senior Varsity Training</title>
-    <link>https://dxing.blog/PRISMS-Math-Team-Training/20250922-Senior-Varsity-Training</link>
-    <guid>https://dxing.blog/PRISMS-Math-Team-Training/20250922-Senior-Varsity-Training</guid>
-    <description><![CDATA[ Problem 1 Find the number of integer values of k in the closed interval [-500,500] for which the equation \log(kx)=2\log(x+2) has exactly one real solution. ]]></description>
     <pubDate>Fri, 26 Dec 2025 05:59:11 GMT</pubDate>
   </item>
     </channel>
