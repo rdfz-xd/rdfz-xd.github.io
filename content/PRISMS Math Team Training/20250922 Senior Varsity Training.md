@@ -10,7 +10,7 @@ $$
 $$
 has exactly one real solution.
 
-> [!Solution]-
+> [!note]- Solution
 >
 > 
 > $$
@@ -78,7 +78,7 @@ has exactly one real solution.
 
 Real numbers $x$ and $y$ with $x,y>1$ satisfy $\log_x(y^x)=\log_y(x^{4y})=10$. What is the value of $xy$?
 
-> [!Solution]-
+> [!note]- Solution
 >
 > 
 > $$
@@ -106,7 +106,7 @@ $$
 $$
 Then the value of $\left|\log_2(x^4y^3z^2)\right|$ is $\frac{m}{n}$ where $m$ and $n$ are relatively prime positive integers. Find $m+n$.
 
-> [!Solution]-
+> [!note]- Solution
 > $$
 > \begin{align}
 > \log_2\left(\frac{x}{yz}\right)=\frac{1}{2}\land\log_2\left(\frac{y}{xz}\right)=\frac{1}{3}\land\log_2\left(\frac{z}{xy}\right)=\frac{1}{4}&\Longleftrightarrow\log_2(x)-\log_2(y)-\log_2(z)=\frac{1}{2}\land\log_2(y)-\log_2(x)-\log_2(z)=\frac{1}{3}\land\log_2(z)-\log_2(x)-\log_2(y)=\frac{1}{4}\\
@@ -131,7 +131,7 @@ $$
 $$
 Find the reminder when $x$ is divided by $1000$.
 
-> [!Solution]-
+> [!note]- Solution
 > $$
 > \begin{align}
 > \log_a(\log_a(\log_a(2))+\log_a(24)-128)=128&\Longleftrightarrow\log_a(24\log_a(2))=128+a^{128}\\
@@ -161,7 +161,7 @@ $$
 $$
 Find the value of $\left|\log_5(x)\right|+\left|\log_5(y)\right|+\left|\log_5(z)\right|$.
 
-> [!Solution]-
+> [!note]- Solution
 > $$
 > \begin{align}
 > \log_2(xyz-3+\log_5(x))=5\land\log_3(xyz-3+\log_5(y))=4\land\log_4(xyz-3+\log_5(z))=4&\Longleftrightarrow xyz+\log_5(x)=35\land xyz+\log_5(y)=84\land xyz+\log_5(z)=259\\
@@ -193,7 +193,7 @@ Find the value of $\left|\log_5(x)\right|+\left|\log_5(y)\right|+\left|\log_5(z)
 
 Quadratic polynomials $P(x)$ and $Q(x)$ have leading coefficients of $2$ and $-2$, respectively. The graphs of both polynomials pass through the two points $(16,54)$ and $(20,53)$. Find $P(0)+Q(0)$.
 
-> [!Solution]-
+> [!note]- Solution
 >
 > Let $P(x)=2x^2+b_Px+c_P$, then
 > $$
@@ -237,7 +237,7 @@ $$
 f(x)=x^4+x^3+bx^2+100x+c
 $$
 
-> [!Solution]-
+> [!note]- Solution
 >
 > Let $x_0$ be the additional root of $f(x)$, then
 > $$
@@ -266,7 +266,7 @@ $$
 
 There are nonzero integers $a$, $b$, $r$ and $s$ such that the complex number $r+si$ is a zero of the polynomial $P(x)=x^3-ax^2+bx-65$. For each possible combination of $a$ and $b$, let $\rho_{a,b}$ be the sum of the zeros of $P(x)$. Find the sum of the $\rho_{a,b}$'s for all possible combinations of $a$ and $b$.
 
-> [!Solution]-
+> [!note]- Solution
 >
 > It is easy to prove that the problem is equivalent to finding the sum of the sum of zeros of all $P(x)\in\R[x]$ such that
 > $$
@@ -297,7 +297,7 @@ There are nonzero integers $a$, $b$, $r$ and $s$ such that the complex number $r
 
 Find all polynomials $f(x)$ with real coefficients such that $f(x^2)=f(x)^2$.
 
-> [!Solution]-
+> [!note]- Solution
 >
 > 
 > $$
@@ -336,7 +336,7 @@ Find all polynomials $f(x)$ with real coefficients such that $f(x^2)=f(x)^2$.
 
 There exist two triples of real numbers $\langle a,b,c\rangle$ such that $a-\frac{1}{b}$, $b-\frac{1}{c}$, and $c-\frac{1}{a}$ are the roots to the cubic equation $x^3-5x^2-15x+3$ listed in increasing order. Denote those $\langle a_1,b_1,c_1\rangle$ and $\langle a_2,b_2,c_2\rangle$. If $a_1$, $b_1$ and $c_1$ are the roots to monic cubic polynomial $f$ and $a_2$, $b_2$ and $c_2$ are the roots to monic cubic polynomial $g$, find $f(0)^3+g(0)^3$.
 
-> [!Solution]-
+> [!note]- Solution
 >
 > ### 
 >
@@ -382,7 +382,7 @@ There exist two triples of real numbers $\langle a,b,c\rangle$ such that $a-\fra
 
 Find all possible values of $a$ such that the roots of polynomial $x^3-6x^2+ax+a$ (denote by $x_1,x_2,x_3$) satisfy that $(x_1-3)^3+(x_2-3)^3+(x_3-3)^3=0$.
 
-> [!Solution]-
+> [!note]- Solution
 >
 > Applying **Newton's Identities** yields
 > $$
@@ -423,7 +423,7 @@ Find all possible values of $a$ such that the roots of polynomial $x^3-6x^2+ax+a
 
 If $r$, $s$, $t$ and $u$ denote the roots of the polynomial $f(x)=x^4+3x^3+3x+2$, evaluate $\frac{1}{r^2}+\frac{1}{s^2}+\frac{1}{t^2}+\frac{1}{u^2}$.
 
-> [!Solution]-
+> [!note]- Solution
 >
 > Let
 > $$
@@ -458,7 +458,7 @@ If $r$, $s$, $t$ and $u$ denote the roots of the polynomial $f(x)=x^4+3x^3+3x+2$
 
 Find all polynomials of degree less than $4$ satisfying that $f(0)=1,f(1)=1,f(2)=5,f(3)=11$.
 
-> [!Solution]-
+> [!note]- Solution
 >
 > It is easy to prove the problem is equivalent to finding all polynomials $f(x)$ such that
 > $$
@@ -478,7 +478,7 @@ Find all polynomials of degree less than $4$ satisfying that $f(0)=1,f(1)=1,f(2)
 
 What is the sum of the roots of $z^{12}=64$ that have a positive real part?
 
-> [!Solution]-
+> [!note]- Solution
 >
 > The roots of $z^{12}=64$ are
 > $$
@@ -502,7 +502,7 @@ What is the sum of the roots of $z^{12}=64$ that have a positive real part?
 
 The equation $x^2-2ax+a^2-4a=0,a\in\R$ has at least one root with magitude $3$. Find all possible values of $a$.
 
-> [!Solution]-
+> [!note]- Solution
 >
 > Let $f(x)=x^2-2ax+a^2-4a$, then it is easy to prove that the problem is equivalent to finding all possible values of $a$ such that
 > $$
@@ -545,7 +545,7 @@ The equation $x^2-2ax+a^2-4a=0,a\in\R$ has at least one root with magitude $3$. 
 
 Let $z=a+bi$ be the complex number with $|z|=5$ and $b>0$ such that the distance between $(1+2i)z^3$ and $z^5$ is maximized, and let $z^4=c+di$. Find $c+d$.
 
-> [!Solution]-
+> [!note]- Solution
 > $$
 > \begin{align}
 > \arg\max_{|z|=5\land\Im(z)>0}\left|(1+2i)z^3-z^5\right|&=\arg\max_{|z|=5\land\Im(z)>0}|z|^3\left|1+2i-z^2\right|\\
@@ -576,7 +576,7 @@ $$
 $$
 where $\cos(\theta)=\frac{1}{5}$.
 
-> [!Solution]-
+> [!note]- Solution
 > $$
 > \begin{align}
 > \sum_{n=0}^\infty\frac{\cos(n\theta)}{2^n}&=\sum_{n=0}^\infty\frac{\Re(e^{in\theta})}{2^n}\\
@@ -594,7 +594,7 @@ where $\cos(\theta)=\frac{1}{5}$.
 
 Let $\omega\ne1$ be a $13$th root of unity. Find the remainder when $\prod_{k=0}^{12}(2-2\omega^k+\omega^{2k})$ is divided by $1000$.
 
-> [!Solution]-
+> [!note]- Solution
 > $$
 > \begin{align}
 > \prod_{k=0}^{12}(2-2\omega^k+\omega^{2k})&=\prod_{x^{13}-1=0}(x^2-2x+2)\\
@@ -612,7 +612,7 @@ Let $\omega\ne1$ be a $13$th root of unity. Find the remainder when $\prod_{k=0}
 
 The polynomial $f(z)=az^{2018}+bz^{2017}+cz^{2016}$ has real coefficients not exceeding $2019$, and $f\left(\frac{1+\sqrt3i}{2}\right)=2015+2019\sqrt3i$. Find the remainder when $f(1)$ is divided by $1000$.
 
-> [!Solution]-
+> [!note]- Solution
 >
 > Since $\left(\frac{1+\sqrt3i}{2}\right)^6=1$, it follows that
 > $$
@@ -643,7 +643,7 @@ The polynomial $f(z)=az^{2018}+bz^{2017}+cz^{2016}$ has real coefficients not ex
 
 Find the largest possible real part of $(75+117i)z+\frac{96+144i}{z}$ where $z$ is a complex number with $|z|=4$.
 
-> [!Solution]-
+> [!note]- Solution
 > $$
 > \begin{align}
 > \max_{|z|=4}\Re\left((75+117i)z+\frac{96+144i}{z}\right)&=\max_\theta\Re((300+468i)e^{i\theta}+(24+36i)e^{-i\theta})\\
@@ -675,7 +675,7 @@ $$
 (x_1^2+1)(x_2^2+1)(x_3^2+1)(x_4^2+1)
 $$
 
-> [!Solution]-
+> [!note]- Solution
 > $$
 > \begin{align}
 > (x_1^2+1)(x_2^2+1)(x_3^2+1)(x_4^2+1)&=(i-x_1)(-i-x_1)(i-x_2)(-i-x_2)(i-x_3)(-i-x_3)(i-x_4)(-i-x_4)\\
@@ -691,7 +691,7 @@ $$
 
 Let $N$ be the number of complex numbers $z$ with the properties that $|z|=1$ and $z^{6!}-z^{5!}$ is a real number. Find the remainder when $N$ is divided by $1000$.
 
-> [!Solution]-
+> [!note]- Solution
 > $$
 > \begin{align}
 > N&=|\{z:z\in\mathbb{C}\land|z|=1\land z^{6!}-z^{5!}\in\R\}|\\
@@ -726,7 +726,7 @@ Evaluate the following sums:
 $$
 \binom{48}{0}+\binom{48}{3}+\dots+\binom{48}{48}
 $$
-> [!Solution]-
+> [!note]- Solution
 > $$
 > \begin{align}
 > \binom{48}{0}+\binom{48}{3}+\dots+\binom{48}{48}&=\sum_{n=0}^{48}\binom{48}{n}[3\mid n]\\
@@ -743,7 +743,7 @@ $$
 \binom{48}{0}+\binom{48}{4}+\dots+\binom{48}{48}
 $$
 
-> [!Solution]-
+> [!note]- Solution
 > $$
 > \begin{align}
 > \binom{48}{0}+\binom{48}{4}+\dots+\binom{48}{48}&=\sum_{n=0}^{48}\binom{48}{n}[4\mid n]\\

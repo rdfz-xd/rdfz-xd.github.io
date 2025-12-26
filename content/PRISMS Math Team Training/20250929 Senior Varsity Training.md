@@ -8,7 +8,7 @@ Equilateral $\triangle ABC$ with side length $14$ is rotated about its center by
 
 ![diagram](/images/20250929_Senior_Varsity_Training_Problem_1.png)
 
-> [!Solution]-
+> [!note]- Solution
 >
 > Let $O$ be the center of $\triangle ABC$, then it is easy to prove that
 > $$
@@ -41,7 +41,7 @@ Equilateral $\triangle ABC$ with side length $14$ is rotated about its center by
 
 Suppose $A$, $B$ and $C$ are points in the plane with $|AB|=40$ and $|AC|=42$, and let $x$ be the length of the line segment from $A$ to the midpoint of $\overline{BC}$. Define a function $f$ by letting $f(x)$ be the area of $\triangle ABC$. Then the domain of $f$ is an open interval $(p,q)$, and the maximum value $r$ of $f(x)$ occurs at $x=s$. What is $p+q+r+s$?
 
-> [!Solution]-
+> [!note]- Solution
 >
 > Applying the **Triangle Inequality** yields that $A$, $B$ and $C$ forms a triangle iff
 > $$
@@ -82,7 +82,7 @@ Suppose $A$, $B$ and $C$ are points in the plane with $|AB|=40$ and $|AC|=42$, a
 
 The measures of the smallest angles of three different right triangles sum to $90\degree$. All three triangles have side lengths that are primitive Pythagorean triples. Two of them are $3-4-5$ and $5-12-13$. What is the perimeter of the third triangle?
 
-> [!Solution]-
+> [!note]- Solution
 >
 > Let the smallest angles of these triangles be $\alpha$, $\beta$ and $\gamma$, respectively. Then
 >
@@ -100,7 +100,7 @@ The measures of the smallest angles of three different right triangles sum to $9
 
 Let $\triangle ABC$ be a triangle with integer side lengths and the property that $\angle B=2\angle A$. What is the least possible perimeter of such a triangle?
 
-> [!Solution]-
+> [!note]- Solution
 >
 > Applying the **Law of Sines** yields
 > $$
@@ -144,7 +144,7 @@ Let $\triangle ABC$ be a triangle with integer side lengths and the property tha
 
 A right pyramid has regular octagon $ABCDEFGH$ with side length $1$ as its base and apex $V$. Segments $\overline{AV}$ and $\overline{DV}$ are perpendicular. What is the square of the height of the pyramid?
 
-> [!Solution]-
+> [!note]- Solution
 >
 > Let $O$ be the center of the octagon, $X$ be a point on $\overline{BC}$ such that $\overline{OX}\perp\overline{BC}$, $Y$ be a point on $DE$ such that $\overline{OY}\perp\overline{DE}$. Set up a coordinate system by taking $O$ as the origin, $\overrightarrow{OX}$ as the $x$-axis, $\overrightarrow{OY}$ as the $y$-axis, and $\overrightarrow{OV}$ as the $z$-axis. Then it is easy to prove that
 > $$
@@ -179,7 +179,7 @@ A right pyramid has regular octagon $ABCDEFGH$ with side length $1$ as its base 
 
 What is the number of ordered triples $\langle a,b,c\rangle$ of positive integers, with $a\le b\le c\le9$, such that there exists a (non-degenerate) triangle $\triangle ABC$ with an integer inradius for which $a$, $b$ and $c$ are the lengths of the altitudes from $A$ to $\overline{BC}$, $B$ to $\overline{AC}$, and $C$ to $\overline{AB}$, respectively?
 
-> [!Solution]-
+> [!note]- Solution
 >
 > Let $O$ be the incenter of $\triangle ABC$, $r$ be the length of the inradius of $\triangle ABC$. Then
 > $$
@@ -214,7 +214,7 @@ What is the number of ordered triples $\langle a,b,c\rangle$ of positive integer
 
 Cyclic quadrilateral $ABCD$ has lengths $|BC|=|CD|=3$ and $|AD|=5$ with $\angle ADC=120\degree$. What is the length of the shorter diagonal of $ABCD$?
 
-> [!Solution]-
+> [!note]- Solution
 >
 > Applying the **Law of Cosines** yields
 > $$
@@ -257,7 +257,7 @@ On top of a rectangular card with sides of length $1$ and $2+\sqrt3$, an identic
 
 ![diagram](/images/20250929_Senior_Varsity_Training_Problem_8.png)
 
-> [!Solution]-
+> [!note]- Solution
 >
 > Applying the **Pythagorean Theorem** yields
 > $$
@@ -299,7 +299,7 @@ On top of a rectangular card with sides of length $1$ and $2+\sqrt3$, an identic
 
 Triangle $\triangle ABC$ has side lengths in arithmetic progression, and the smallest side has length $6$. If the triangle has an angle of $120\degree$, what is the area of $\triangle ABC$?
 
-> [!Solution]-
+> [!note]- Solution
 >
 > Wlog, assume $|AB|\le|AC|\le|BC|$, then it is easy to prove that $|AB|=6$ and $\angle A=120\degree$.
 >
@@ -326,7 +326,7 @@ Triangle $\triangle ABC$ has side lengths in arithmetic progression, and the sma
 
 A regular pentagon with area $1+\sqrt5$ is printed on paper and cut out. The five vertices of the pentagon are folded into the center of the pentagon, creating a smaller pentagon. What is the area of the new pentagon?
 
-> [!Solution]-
+> [!note]- Solution
 >
 > Let $ABCDE$ be the pentagon, $O$ be the center of $ABCDE$, $M$ be the midpoint of $\overline{OA}$, $N$ be a point on $\overline{AB}$ such that $\overline{ON}\perp\overline{AB}$, $x$ be area of the new pentagon. Then it is easy to prove that
 > $$
@@ -368,7 +368,7 @@ A regular pentagon with area $1+\sqrt5$ is printed on paper and cut out. The fiv
 
 Let $\triangle PQR$ be a triangle with $\angle P=75\degree$ and $\angle Q=60\degree$. A regular hexagon $ABCDEF$ with side length $1$ is drawn inside $\triangle PQR$ so that side $\overline{AB}$ lies on $\overline{PQ}$, side $\overline{CD}$ lies on $\overline{QR}$, and one of the remaining vertices lies on $\overline{PR}$. There are positive integers $a$, $b$, $c$, and $d$ such that the area of $\triangle PQR$ can be expressed in the form $\frac{a+b\sqrt{c}}{d}$, where $a$ and $d$ are relatively prime, and $c$ is not divisible by the square of any prime. Find $a+b+c+d$.
 
-> [!Solution]-
+> [!note]- Solution
 >
 > Applying the **Law of Sines** yields
 > $$
@@ -426,7 +426,7 @@ In the figure below, semicircles with centers at $A$ and $B$ and with radii $2$ 
 
 ![diagram](/images/20250929_Senior_Varsity_Training_Problem_12.png)
 
-> [!Solution]-
+> [!note]- Solution
 >
 > Let $O$ be the center of the largest semicircle, $r$ be the length of the radius of $\odot P$, then it is easy to prove that $|AB|=3,|OA|=1,|OB|=2,|AP|=2+r,|BP|=1+r,|OP|=3-r$.
 >
@@ -444,7 +444,7 @@ In the figure below, semicircles with centers at $A$ and $B$ and with radii $2$ 
 
 Point $B$ is on $\overline{AC}$ with $|AB|=9$ and $|BC|=21$. Point $D$ is not on $\overline{AC}$ so that $|AD|=|CD|$, and $|AD|$ and $|BD|$ are integers. Let $s$ be the sum of all possible perimeters of $\triangle ACD$. Find $s$.
 
-> [!Solution]-
+> [!note]- Solution
 >
 > Let $E$ be the midpoint of $\overline{AC}$, then applying the **Pythagorean Theorem** yields
 > $$
@@ -464,7 +464,7 @@ Point $B$ is on $\overline{AC}$ with $|AB|=9$ and $|BC|=21$. Point $D$ is not on
 
 In $\triangle ABC$, $|AB|=13$, $|AC|=14$, and $|BC|=15$. Point $D$ is on $\overline{BC}$ with $|CD|=6$. Point $E$ is on $\overline{BC}$ such that $\angle BAE=\angle CAD$. Given that $|BE|=\frac{p}{q}$ where $p$ and $q$ are relatively prime positive integers, find $q$.
 
-> [!Solution]-
+> [!note]- Solution
 >
 > 
 > $$
@@ -509,7 +509,7 @@ In $\triangle ABC$, $|AB|=13$, $|AC|=14$, and $|BC|=15$. Point $D$ is on $\overl
 
 A paper equilateral triangle $\triangle ABC$ has side length $12$. The paper triangle is folded so that vertex $A$ touches a point on side $\overline{BC}$ a distance $9$ from point $B$. The length of the line segment along which the triangle is folded can be written as $\frac{m\sqrt p}{n}$, where $m$, $n$, and $p$ are positive integers, $m$ and $n$ are relatively prime, and $p$ is not divisible by the square of any prime. Find $m+n+p$.
 
-> [!Solution]-
+> [!note]- Solution
 >
 > Let $D$ be the point on $\overline{BC}$, $M$ be the point on $\overline{AB}$. Then applying the **Law of Cosines** yields
 > $$
@@ -542,7 +542,7 @@ A paper equilateral triangle $\triangle ABC$ has side length $12$. The paper tri
 
 Let $\triangle ABC$ be an acute triangle with circumcenter $O$ and centroid $G$. Let $X$ be the intersection of the line tangent to the circumcircle of $\triangle ABC$ at $A$ and the line perpendicular to $\overline{GO}$ at $G$. Let $Y$ be the intersection of lines $\overleftrightarrow{XG}$ and $\overleftrightarrow{BC}$. Given that the measures of $\angle ABC$, $\angle ACB$, and $\angle XOY$ are in the ratio $13:2:17$, the degree measure of $\angle BAC$ can be written as $\frac{m}{n}$, where $m$ and $n$ are relatively prime positive integers. Find $m+n$.
 
-> [!Solution]-
+> [!note]- Solution
 >
 > Since $\angle XGO=\angle XAO$, it follows that $XOGA$ is cyclic. Since $XOGA$ is cyclic, it follows that $\angle GAO=\angle GXO$.
 >
@@ -575,7 +575,7 @@ Let $\triangle ABC$ be an acute triangle with circumcenter $O$ and centroid $G$.
 
 In $\triangle ABC$ we have $|AB|=7,|AC|=8,|BC|=9$. Point $D$ is on the circumscribed circle of the triangle so that $\overline{AD}$ bisects $\angle BAC$. What is the value of $\frac{|AD|}{|CD|}$?
 
-> [!Solution]-
+> [!note]- Solution
 > $$
 > \begin{align}
 > \angle BAD=\angle CAD&\Longleftrightarrow\angle BCD=\angle CBD\\
@@ -595,7 +595,7 @@ Two externally tangent circles $\omega_1$ and $\omega_2$ have centers $O_1$ and 
 
 ![diagram](/images/20250929_Senior_Varsity_Training_Problem_18.png)
 
-> [!Solution]-
+> [!note]- Solution
 >
 > Let $A'$ and $B'$ be the reflections of $A$ and $B$, respectively, about the perpendicular bisector of $\overline{O_1O_2}$. Then it is easy to prove that $A'$ and $B'$ are on $\Omega$ and $O_1O_2AB\cong O_2O_1A'B'$.
 > $$
@@ -764,7 +764,7 @@ Two externally tangent circles $\omega_1$ and $\omega_2$ have centers $O_1$ and 
 
 Quadrilateral $ABCD$ is inscribed in $\odot O$ and has side lengths $|AB|=3$, $|BC|=2$, $|CD|=6$, and $|AD|=8$. Let $X$ and $Y$ be points on $\overline{BD}$ such that $\frac{|DX|}{|BD|}=\frac{1}{4}$ and $\frac{|BY|}{|BD|}=\frac{11}{36}$. Let $E$ be the intersection of line $\overleftrightarrow{AX}$ and the line through $Y$ parallel to $\overline{AD}$. Let $F$ be the intersection of the line $\overleftrightarrow{CX}$ and the line through $E$ parallel to $\overleftrightarrow{AC}$. Let $G$ be the point on $\odot O$ other than $C$ that lies on line $\overleftrightarrow{CX}$. What is $|FX||GX|$?
 
-> [!Solution]-
+> [!note]- Solution
 >
 > 
 > $$
@@ -836,7 +836,7 @@ Quadrilateral $ABCD$ is inscribed in $\odot O$ and has side lengths $|AB|=3$, $|
 
 In $\triangle ABC$, $\angle A=40\degree$, $|AB|=10$, and $|AC|=6$. Points $D$ and $E$ lie on $\overline{AB}$ and $\overline{AC}$ respectively. What is the minimum possible value of $|BE|+|DE|+|CD|$?
 
-> [!Solution]-
+> [!note]- Solution
 >
 > Let $B'$ be the reflection of $B$ about $\overleftrightarrow{AC}$, then $|B'E|=|BE|$. Let $C'$ be the reflection of $C$ about $\overleftrightarrow{AB}$, then $|C'D|=|CD|$.
 >
@@ -863,7 +863,7 @@ Cube $ABCDEFGH$, labeled as shown below, has edge length of $1$ and is cut by a 
 
 ![diagram](/images/20250929_Senior_Varsity_Training_Problem_21.png)
 
-> [!Solution]-
+> [!note]- Solution
 >
 > Set up a coordinate system by taking $D$ as the origin, $\overrightarrow{DA}$ as the $x$-axis, $\overrightarrow{DC}$ as the $y$-axis, and $\overrightarrow{DH}$ as the $z$-axis, then $M=(1,\frac{1}{2},0),N=(0,1,\frac{1}{2})$. Therefore, the plane is $z=-\frac{1}{4}x+\frac{1}{2}y$.
 >
@@ -877,7 +877,7 @@ Cube $ABCDEFGH$, labeled as shown below, has edge length of $1$ and is cut by a 
 
 Tetrahedron $ABCD$ has $|AB|=5$, $|AC|=3$, $|BC|=4$, $|AD|=3$, $|BD|=4$, and $|CD|=\frac{12\sqrt2}{5}$. What is the volume of the tetrahedron?
 
-> [!Solution]-
+> [!note]- Solution
 >
 > Applying the **Pythagorean Theorem** yields
 > $$
@@ -910,7 +910,7 @@ Tetrahedron $ABCD$ has $|AB|=5$, $|AC|=3$, $|BC|=4$, $|AD|=3$, $|BD|=4$, and $|C
 
 Inside a right circular cone with base radius $5$ and height $12$ are three congruent spheres with radius $r$. Each sphere is tangent to the other two spheres and also tangent to the base and side of the cone. What is $r$?
 
-> [!Solution]-
+> [!note]- Solution
 >
 > Let $O$ be the center of one of the spheres, $D$ be the point where that sphere is tangent to the base, $E$ be the point where that sphere is tangent to the side, $B$ be the center of the base, $A$ be the point such that $\overline{AB}$ is a radius of the base containing $D$, $C$ be the vertex of the cone. Then applying the **Pythagorean Theorem** yields
 > $$
@@ -955,7 +955,7 @@ Inside a right circular cone with base radius $5$ and height $12$ are three cong
 
 Three numbers in the interval $[0,1]$ are chosen independently and at random. What is the probability that the chosen numbers are the side lengths of a triangle with positive area?
 
-> [!Solution]-
+> [!note]- Solution
 >
 > Let the numbers be $x$, $y$, and $z$, respectively, then applying the **Triangle Inequality** yields $x$, $y$, and $z$ form a triangle iff
 > $$
@@ -981,7 +981,7 @@ Three numbers in the interval $[0,1]$ are chosen independently and at random. Wh
 
 Real numbers $x$, $y$, and $z$ are chosen independently and at random from the interval $[0,n]$ for some positive integer $n$. The probability that no two of $x$, $y$, and $z$ are within $1$ unit of each other is greater than $\frac{1}{2}$. What is the smallest possible value of $n$?
 
-> [!Solution]-
+> [!note]- Solution
 >
 > Since it is easy to prove that the probability is $0$ when $n=1$, it follows that $n\ge2$.
 >
@@ -1007,7 +1007,7 @@ Real numbers $x$, $y$, and $z$ are chosen independently and at random from the i
 
 Equilateral $\triangle ABC$ has side length $600$. Points $P$ and $Q$ lie outside the plane of $\triangle ABC$ and are on opposite sides of the plane. Furthermore, $|PA|=|PB|=|PC|$, and $|QA|=|QB|=|QC|$, and the planes of $\triangle PAB$ and $\triangle QAB$ form a $120\degree$ diheral angle. There is a point $O$ whose distance from each of $A,B,C,P,Q$ is $d$. Find $d$.
 
-> [!Solution]-
+> [!note]- Solution
 >
 > Let $D$ be the center of $\triangle ABC$, then it is easy to prove that $\overline{PQ}\perp\triangle ABC$ and the perpendicular foot is $D$.
 >
@@ -1051,7 +1051,7 @@ A $4\times4\times h$ rectangular box contains a sphere of radius $2$ and eight s
 
 ![diagram](/images/20250929_Senior_Varsity_Training_Problem_27.png)
 
-> [!Solution]-
+> [!note]- Solution
 >
 > Let $A$ be the center of the larger sphere, $B,C,D,E$ be the centers of the smaller spheres below the larger sphere, respectively. Then it is easy to prove that $|BC|=|CD|=|DE|=|BE|=2$ and $|AB|=|AC|=|AD|=|AE|=3$.
 >
@@ -1072,7 +1072,7 @@ A sphere is inscribed in a truncated right circular cone as shown. The volume of
 
 ![diagram](/images/20250929_Senior_Varsity_Training_Problem_28.png)
 
-> [!Solution]-
+> [!note]- Solution
 >
 > Let $r$ be the radius of the top base of the truncated cone, $R$ be the radius of the bottom base of the truncated cone, $s$ be the radius of the sphere. Then applying the **Pythagorean Theorem** yields
 > $$
@@ -1101,7 +1101,7 @@ A sphere is inscribed in a truncated right circular cone as shown. The volume of
 
 Suppose that $\triangle ABC$ is an equilateral triangle of side length $s$, with property that there is a unique point $P$ inside the triangle such that $|AP|=1$, $|BP|=\sqrt3$, and $|CP|=2$. What is $s$?
 
-> [!Solution]-
+> [!note]- Solution
 >
 > Let $Q$ be the point obtained by rotating $P$ $60\degree$ counterclockwise about $A$. Then
 > $$

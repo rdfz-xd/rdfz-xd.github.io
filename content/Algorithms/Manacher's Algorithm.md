@@ -7,10 +7,6 @@ $$
 d(i)=\max\{j:i-j\ge0\land i+j<n\land s_is_{i-1}\dots s_{i-j}=s_is_{i+1}\dots s_{i+j}\}
 $$
 
-> [!Hint]
->
-> The idea of [[Manacher's Algorithm]] is closely related to the [[Z Algorithm]].
-
 ### Algorithm 0
 
 Applying the definition yields an algorithm that solves the problem in $\mathcal{O}(n^2)$ time and $\mathcal{O}(n)$ space.
@@ -26,12 +22,12 @@ for (int i = 0; i < n; i++) {
 
 ### Algorithm 1
 
-> [!Lemma]
+> [!info] Lemma
 > $$
 > j<i\implies d(i)\ge\min\{d(2j-i),j+d(j)-i\}
 > $$
 >
-> > [!Proof]-
+> > [!note]- Proof
 > > $$
 > > \begin{align}
 > > s_js_{j-1}\dots s_{j-d(j)}=s_js_{j+1}\dots s_{j+d(j)}&\iff s_{j-d(j)}s_{j-d(j)+1}\dots s_{j+d(j)}=s_{j+d(j)}s_{j+d(j)-1}\dots s_{j-d(j)}\\
@@ -55,7 +51,7 @@ for (int i = 0, l = 0, r = 0; i < n; i++) {
 }
 ~~~
 
-> [!Proof]-
+> [!note]- Proof
 >
 > It is easy to prove that the upper bound of the total number of executions of `d[i]++;` is
 > $$

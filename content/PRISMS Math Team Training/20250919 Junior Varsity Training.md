@@ -6,7 +6,7 @@ tags: [Mathematics, Mathematics/Algebra]
 
 Find all the roots of equation $2x-2.8=\lfloor x\rfloor$.
 
-> [!Solution]-
+> [!note]- Solution
 > $$
 > \begin{align}
 > 2x-2.8=\lfloor x\rfloor&\Longrightarrow x-1<2x-2.8\le x\\
@@ -38,7 +38,7 @@ Find all the roots of equation $2x-2.8=\lfloor x\rfloor$.
 
 Solve equation $x^2-\lfloor x\rfloor-2=0$.
 
-> [!Solution]-
+> [!note]- Solution
 >
 > 
 > $$
@@ -83,7 +83,7 @@ Solve equation $x^2-\lfloor x\rfloor-2=0$.
 
 Solve equation $\lfloor\frac{5x-13}{3}\rfloor=\frac{3x+1}{5}$.
 
-> [!Solution]-
+> [!note]- Solution
 > $$
 > \begin{align}
 > \left\lfloor\frac{5x-13}{3}\right\rfloor=\frac{3x+1}{5}&\Longleftrightarrow\exist k\in\Z,\left\lfloor\frac{5x-13}{3}\right\rfloor=k\land\frac{3x+1}{5}=k\\
@@ -115,7 +115,7 @@ $$
 3x-3=\lfloor x\rfloor
 $$
 
-> [!Solution]-
+> [!note]- Solution
 > $$
 > \begin{align}
 > 3x-3=\lfloor x\rfloor&\Longrightarrow x-1<3x-3\le x\\
@@ -144,7 +144,7 @@ $$
 5-x^2=\lfloor x\rfloor
 $$
 
-> [!Solution]-
+> [!note]- Solution
 > $$
 > \begin{align}
 > 5-x^2=\lfloor x\rfloor&\Longrightarrow x-1<5-x^2\le x\\
@@ -175,7 +175,7 @@ $$
 |x-2|=\lfloor x\rfloor
 $$
 
-> [!Solution]-
+> [!note]- Solution
 > $$
 > \begin{align}
 > \lfloor x\rfloor\in\Z&\Longleftrightarrow|x-2|\in\Z\\
@@ -199,7 +199,7 @@ $$
 \frac{3x+2}{4}=\left\lfloor\frac{6x-1}{5}\right\rfloor
 $$
 
-> [!Solution]-
+> [!note]- Solution
 > $$
 > \begin{align}
 > \frac{3x+2}{4}=\left\lfloor\frac{6x-1}{5}\right\rfloor&\Longleftrightarrow\exist k\in\Z,\frac{3x+2}{4}=k\land\left\lfloor\frac{6x-1}{5}\right\rfloor=k\\
@@ -235,7 +235,7 @@ x=3\lfloor y\rfloor-12.5
 \end{cases}
 $$
 
-> [!Solution]-
+> [!note]- Solution
 > $$
 > \begin{align}
 > y=2\lfloor x\rfloor+\sqrt2\land x=3\lfloor y\rfloor-12.5&\Longleftrightarrow\exist k\in\Z,\lfloor x\rfloor=k\land y=2k+\sqrt2\land x=3\lfloor y\rfloor-12.5\\

@@ -6,7 +6,7 @@ tags: [Mathematics, Mathematics/Number Theory]
 
 Find the smallest $n$ such that $2013^n$ ends in $001$.
 
-> [!Solution]-
+> [!note]- Solution
 >
 > It is easy to prove that the problem is equivalent to finding the smallest $n>0$ such that $2013^n\equiv1\pmod{1000}$.
 > $$
@@ -83,7 +83,7 @@ Find the smallest $n$ such that $2013^n$ ends in $001$.
 
 Let $n$ be the least positive integer such that $149^n-2^n$ is divisible by $3^35^57^7$. Find the number of positive divisors of $n$.
 
-> [!Solution]-
+> [!note]- Solution
 >
 > 
 > $$
@@ -186,7 +186,7 @@ $$
 1991^k\mid1990^{1991^{1992}}+1992^{1991^{1990}}
 $$
 
-> [!Solution]-
+> [!note]- Solution
 >
 > 
 > $$
@@ -239,7 +239,7 @@ $$
 $$
  find the maximum possible value of $m$.
 
-> [!Solution]-
+> [!note]- Solution
 >
 > $$
 > 3^m\mid7^{3^{527}}-1\Longleftrightarrow\nu_3(7^{3^{527}}-1^{3^{527}})\ge m
@@ -262,7 +262,7 @@ $$
 
 Find the sum of all the divisors $d$ of $N=19^{88}-1$ which are of the form $d=2^a3^b$ with $a,b\in\N$.
 
-> [!Solution]-
+> [!note]- Solution
 > $$
 > \begin{align}
 > 2^a3^b\mid19^{88}-1&\Longleftrightarrow2^a\mid19^{88}-1\land3^b\mid19^{88}-1\\
@@ -303,7 +303,7 @@ Find the sum of all the divisors $d$ of $N=19^{88}-1$ which are of the form $d=2
 
 Let $k$ be a positive integer. Find all positive integers $n$ such that $3^k\mid2^n-1$.
 
-> [!Solution]-
+> [!note]- Solution
 > $$
 > \begin{align}
 > 3^k\mid2^n-1&\Longrightarrow3\mid2^n-1\\
@@ -347,7 +347,7 @@ $$
 $$
 is an integer.
 
-> [!Solution]-
+> [!note]- Solution
 >
 > Wlog, assume $p\le q$.
 > $$
@@ -418,7 +418,7 @@ is an integer.
 
 Find all positive integers $n$ such that $3^n-1$ is divisible by $2^n$.
 
-> [!Solution]-
+> [!note]- Solution
 > $$
 > 2^n\mid3^n-1\Longleftrightarrow\nu_2(3^n-1^n)\ge n
 > $$
@@ -454,7 +454,7 @@ Find all positive integers $n$ such that $3^n-1$ is divisible by $2^n$.
 
 Find all positive integers $a$ such that $\frac{5^a+1}{3^a}$ is a positive integer.
 
-> [!Solution]-
+> [!note]- Solution
 > $$
 > \begin{align}
 > \frac{5^a+1}{3^a}\in\Z_+&\Longleftrightarrow3^a\mid5^a+1\\
@@ -496,7 +496,7 @@ f(X)=X^{3p^k-1}+X^{3p^k-2}+\dots+X+1
 $$
 modulo $p$.
 
-> [!Solution]-
+> [!note]- Solution
 > $$
 > \begin{align}
 > f(X)&\equiv X^{3p^k-1}+X^{3p^k-2}+\dots+X+1\pmod p\\
@@ -516,7 +516,7 @@ $$
 2^{2017}\mid a^n-1
 $$
 
-> [!Solution]-
+> [!note]- Solution
 > $$
 > \forall a,2^{2017}\mid a^n-1\Longleftrightarrow\forall a,\nu_2(a^n-1^n)\ge2017
 > $$
@@ -546,7 +546,7 @@ Let $m,k\ge0,p=2^{2^m}+1$ a prime. Prove:
 
 1. $2^{2^{m+1}p^k}\equiv1\pmod{p^{k+1}}$;
 
-   > [!Solution]-
+   > [!note]- Solution
    > $$
    > \begin{align}
    > 2^{2^{m+1}p^k}\equiv1\pmod{p^{k+1}}&\Longleftrightarrow p^{k+1}\mid2^{2^{m+1}p^k}-1\\
@@ -569,7 +569,7 @@ Let $m,k\ge0,p=2^{2^m}+1$ a prime. Prove:
 
 2. The smallest $n$ such that $2^n\equiv1\pmod{p^{k+1}}$ is $2^{m+1}p^k$.
 
-   > [!Solution]-
+   > [!note]- Solution
    >
    > If $\delta_{p^{k+1}}(2)<2^{m+1}p^k$,
    > $$

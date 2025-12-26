@@ -9,7 +9,7 @@ tags: [Computer Science, Computer Science/Algorithm, Computer Science/Graph Theo
 
 ### Algorithm 0
 
-> [!Lemma]
+> [!info] Lemma
 >
 > Let $d_S(v)$ denote the length of the shortest path from $s$ to $v$ that only passes through vertices in $S$.
 > $$

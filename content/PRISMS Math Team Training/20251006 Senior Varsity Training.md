@@ -6,7 +6,7 @@ tags: [Mathematics, Mathematics/Number Theory]
 
 How many positive integers $n$ are there such that $n$ is a multiple of $5$, and the least common multiple of $5!$ and $n$ equals $5$ times the greatest common divisor of $10!$ and $n$?
 
-> [!Solution]-
+> [!note]- Solution
 >
 > Since
 > $$
@@ -29,7 +29,7 @@ How many positive integers $n$ are there such that $n$ is a multiple of $5$, and
 
 Call a positive integer $n$ extra-distinct if the remainders when $n$ is divided by $2$, $3$, $4$, $5$, and $6$ are distinct. Find the number of extra-distinct positive integers less than $1000$.
 
-> [!Solution]-
+> [!note]- Solution
 >
 > Since it is easy to prove that if there are two positive integers $x$ and $y$ such that $x\equiv y\pmod{60}$, $x$ is extra-distinct iff $y$ is extra-distinct, and since it is easy to prove that all extra-distinct positive integers less than or equal to $60$ are $35$, $58$, and $59$, it follows that $n$ is extra-distinct iff
 > $$
@@ -41,7 +41,7 @@ Call a positive integer $n$ extra-distinct if the remainders when $n$ is divided
 
 Let $N$ be the greatest four-digit positive integer with the property that whenever one of its digits is changed to $1$, the resulting number is divisible by $7$. Let $Q$ and $R$ be the quotient and remainder, respectively, when $N$ is divided by $1000$. Find $Q+R$.
 
-> [!Solution]-
+> [!note]- Solution
 >
 > Let the digits of $N$ be $a$, $b$, $c$, and $d$, respectively, then $N$ satisfies the property iff
 > $$
@@ -65,7 +65,7 @@ for all positive integers $n$. What is $f(2023)$?
 
 ### Solution 4
 
-> [!Solution]-
+> [!note]- Solution
 >
 > 
 > $$
@@ -90,7 +90,7 @@ for all positive integers $n$. What is $f(2023)$?
 
 What is the smallest positive integer $n$ such that $20\equiv n^{15}\pmod{29}$?
 
-> [!Solution]-
+> [!note]- Solution
 >
 > Applying **Fermat's Little Theorem** yields
 > $$
@@ -149,7 +149,7 @@ $$
 17^{17^{17^{17}}}+18^{18^{18^{18}}}+19^{19^{19^{19}}}+20^{20^{20^{20}}}
 $$
 
-> [!Solution]-
+> [!note]- Solution
 >
 > It is easy to prove that the answer is equal to
 > $$
@@ -248,7 +248,7 @@ $$
 
 Let $p$ be the least prime number that for which there exists a positive integer $n$ such that $n^4+1$ is divisible by $p^2$. Find the least possible $m$ such that $m^4+1$ is divisible by $p^2$.
 
-> [!Solution]-
+> [!note]- Solution
 >
 > Since
 > $$
@@ -336,7 +336,7 @@ Let $p$ be the least prime number that for which there exists a positive integer
 
 Let $a,b$ be positive integers. If for any positive integer $n$, we have $a^n+n\mid b^n+n$, prove $a=b$.
 
-> [!Solution]-
+> [!note]- Solution
 >
 > 
 > $$

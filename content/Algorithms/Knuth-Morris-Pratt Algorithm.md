@@ -25,12 +25,12 @@ for (int i = 2; i <= n; i++) {
 
 ### Algorithm 1
 
-> [!Lemma]
+> [!info] Lemma
 > $$
 > \forall i\in\{2,3,\dots,n\},\pi(i)\le\pi(i-1)+1
 > $$
 >
-> > [!Proof]-
+> > [!node]- Proof
 > > $$
 > > \begin{align}
 > > \pi(i)=j&\implies s_0s_1\dots s_{j-1}=s_{i-j}s_{i-j+1}\dots s_{i-1}\\
@@ -53,7 +53,7 @@ for (int i = 2; i <= n; i++) {
 }
 ~~~
 
-> [!Proof]-
+> [!note]- Proof
 >
 > The total number of executions of  `s.substr(0, j) == s.substr(i - j, j)` is
 > $$
@@ -66,14 +66,14 @@ for (int i = 2; i <= n; i++) {
 
 ### Algorithm 2
 
-> [!Lemma]
+> [!info] Lemma
 >
 > Let $\pi(0)=0$, then
 > $$
 > \{j:j<i\land s_0s_1\dots s_{j-1}=s_{i-j}s_{i-j+1}\dots s_{i-1}\}=\{\pi(i),\pi(\pi(i)),\pi(\pi(\pi(i))),\dots\}
 > $$
 >
-> > [!Proof]-
+> > [!note]- Proof
 > >
 > > Let $S=$ $\{\{j:j<i\land s_0s_1\dots s_{j-1}=s_{i-j}s_{i-j+1}\dots s_{i-1}\}\}$, $a_j$ denote the $j$-th largest element in $S$. Then for $j\in\{1,2,\dots,|S|-1\}$, since
 > > $$

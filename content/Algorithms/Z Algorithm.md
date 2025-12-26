@@ -7,10 +7,6 @@ $$
 z(i)=\operatorname{lcp}(s,s_is_{i+1}\dots s_{n-1})
 $$
 
-> [!Hint]
->
-> The idea of the [[Z Algorithm]] is closely related to [[Manacher's Algorithm]].
-
 ### Algorithm 0
 
 Applying the definition yields an algorithm that solves the problem in $\mathcal{O}(n^2)$ time and $\mathcal{O}(n)$ space.
@@ -26,12 +22,12 @@ for (int i = 0; i < n; i++) {
 
 ### Algorithm 1
 
-> [!Lemma]
+> [!info] Lemma
 > $$
 > j<i\implies z(i)\ge\min\{z(i-j),j+z(j)-i\}
 > $$
 >
-> > [!Proof]-
+> > [!note]- Proof
 > > $$
 > > \begin{align}
 > > s_0s_1\dots s_{z(j)-1}=s_js_{j+1}\dots s_{j+z(j)-1}&\implies s_{i-j}s_{i-j+1}\dots s_{z(j)-1}=s_is_{i+1}\dots s_{j+z(j)-1}\\
@@ -55,7 +51,7 @@ for (int i = 1, l = 0, r = 0; i < n; i++) {
 }
 ~~~
 
-> [!Proof]-
+> [!note]- Proof
 >
 > It is easy to prove that the upper bound of the total number of executions of `z[i]++;` is
 > $$

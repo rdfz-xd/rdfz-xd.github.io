@@ -10,18 +10,18 @@
     <link>https://dxing.blog/Algorithms/Dijkstra's-Algorithm</link>
     <guid>https://dxing.blog/Algorithms/Dijkstra's-Algorithm</guid>
     <description><![CDATA[ Dijkstra’s Algorithm is an algorithm that computes the length of the shortest path from a vertex s to every vertex in a graph G=\langle V,E\rangle with non-negative edge weights in \mathcal{O}(|V|^2+|E|) time and \mathcal{O}(|V|+|E|) space, or \mathcal{O}((|V|+|E|)\log(|V|)) time and \mathcal{O}(|V|... ]]></description>
-    <pubDate>Fri, 26 Dec 2025 05:30:40 GMT</pubDate>
+    <pubDate>Fri, 26 Dec 2025 05:34:48 GMT</pubDate>
   </item><item>
     <title>Manacher&#039;s Algorithm</title>
     <link>https://dxing.blog/Algorithms/Manacher's-Algorithm</link>
     <guid>https://dxing.blog/Algorithms/Manacher's-Algorithm</guid>
-    <description><![CDATA[ Manacher’s Algorithm is an algorithm that computes d(0),d(1),\dots,d(n-1) for a string s of length n in \mathcal{O}(n) time and \mathcal{O}(n) space, where d(i)=\max\{j:i-j\ge0\land i+j&lt;n\land s_is_{i-1}\dots s_{i-j}=s_is_{i+1}\dots s_{i+j}\} Hint The idea of Manacher’s Algorithm is closely relat... ]]></description>
+    <description><![CDATA[ Manacher’s Algorithm is an algorithm that computes d(0),d(1),\dots,d(n-1) for a string s of length n in \mathcal{O}(n) time and \mathcal{O}(n) space, where d(i)=\max\{j:i-j\ge0\land i+j&lt;n\land s_is_{i-1}\dots s_{i-j}=s_is_{i+1}\dots s_{i+j}\} Algorithm 0 Applying the definition yields an algorith... ]]></description>
     <pubDate>Fri, 26 Dec 2025 04:07:04 GMT</pubDate>
   </item><item>
     <title>Z Algorithm</title>
     <link>https://dxing.blog/Algorithms/Z-Algorithm</link>
     <guid>https://dxing.blog/Algorithms/Z-Algorithm</guid>
-    <description><![CDATA[ The Z Algorithm is an algorithm that computes z(0),z(1),\dots,z(n-1) for a string s of length n in \mathcal{O}(n) time and \mathcal{O}(n) space, where z(i)=\operatorname{lcp}(s,s_is_{i+1}\dots s_{n-1}) Hint The idea of the Z Algorithm is closely related to Manacher’s Algorithm. ]]></description>
+    <description><![CDATA[ The Z Algorithm is an algorithm that computes z(0),z(1),\dots,z(n-1) for a string s of length n in \mathcal{O}(n) time and \mathcal{O}(n) space, where z(i)=\operatorname{lcp}(s,s_is_{i+1}\dots s_{n-1}) Algorithm 0 Applying the definition yields an algorithm that solves the problem in \mathcal{O}(n^2... ]]></description>
     <pubDate>Fri, 26 Dec 2025 04:07:04 GMT</pubDate>
   </item><item>
     <title>Segment Tree</title>
@@ -63,7 +63,7 @@
     <title>Competitive Programming Journey</title>
     <link>https://dxing.blog/Competitive-Programming-Journey</link>
     <guid>https://dxing.blog/Competitive-Programming-Journey</guid>
-    <description><![CDATA[ Codeforces AtCoder MIT Informatics Tournament 2025-26 Winter Contest December 7th, 2025 Team: Even If (Dong Xing) Advanced Individual Round (High School Division): 2nd place Advanced Team Round (High School Division): 3rd place . ]]></description>
+    <description><![CDATA[ Codeforces AtCoder MIT Informatics Tournament 2025-26 Winter Contest December 7th, 2025 Team Even If (Dong Xing) Results Advanced Individual Round (High School Division): 2nd place Advanced Team Round (High School Division): 3rd place . ]]></description>
     <pubDate>Fri, 12 Dec 2025 01:30:28 GMT</pubDate>
   </item>
     </channel>
