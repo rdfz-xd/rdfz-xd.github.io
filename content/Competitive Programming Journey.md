@@ -8,7 +8,7 @@
 
 ### MIT Informatics Tournament 2025-26 Winter Contest
 
-*December 7th, 2025*
+*Dec. 7th, 2025*
 
 >  [!info] Team
 >
