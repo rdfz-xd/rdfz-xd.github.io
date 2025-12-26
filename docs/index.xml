@@ -9,8 +9,8 @@
     <title>Dijkstra&#039;s Algorithm</title>
     <link>https://dxing.blog/Algorithms/Dijkstra's-Algorithm</link>
     <guid>https://dxing.blog/Algorithms/Dijkstra's-Algorithm</guid>
-    <description><![CDATA[ Dijkstra’s Algorithm is an algorithm that computes the length of the shortest path from a vertex s to every vertex for a graph G=\langle V,E\rangle with non-negative edge weights in \mathcal{O}(|V|^2+|E|) time and \mathcal{O}(|V|+|E|) space, or \mathcal{O}((|V|+|E|)\log(|V|)) time and \mathcal{O}(|V... ]]></description>
-    <pubDate>Fri, 26 Dec 2025 05:27:55 GMT</pubDate>
+    <description><![CDATA[ Dijkstra’s Algorithm is an algorithm that computes the length of the shortest path from a vertex s to every vertex in a graph G=\langle V,E\rangle with non-negative edge weights in \mathcal{O}(|V|^2+|E|) time and \mathcal{O}(|V|+|E|) space, or \mathcal{O}((|V|+|E|)\log(|V|)) time and \mathcal{O}(|V|... ]]></description>
+    <pubDate>Fri, 26 Dec 2025 05:30:40 GMT</pubDate>
   </item><item>
     <title>Manacher&#039;s Algorithm</title>
     <link>https://dxing.blog/Algorithms/Manacher's-Algorithm</link>
