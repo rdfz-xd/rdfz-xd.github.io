@@ -6,11 +6,23 @@
       <description>Last 10 notes on Dong Xing&#039;s Blog</description>
       <generator>Quartz -- quartz.jzhao.xyz</generator>
       <item>
+    <title>Floyd-Warshall Algorithm</title>
+    <link>https://dxing.blog/Algorithms/Floyd-Warshall-Algorithm</link>
+    <guid>https://dxing.blog/Algorithms/Floyd-Warshall-Algorithm</guid>
+    <description><![CDATA[ The Floyd-Warshall Algorithm is an algorithm that computes the length of the shortest path between every pair of vertices in a graph G=\langle V,E\rangle with edge weights in \mathcal{O}(|V|^3+|E|) time and \mathcal{O}(|V|^2+|E|) space. ]]></description>
+    <pubDate>Sun, 28 Dec 2025 05:48:42 GMT</pubDate>
+  </item><item>
+    <title>Segment Tree</title>
+    <link>https://dxing.blog/Data-Structures/Segment-Tree</link>
+    <guid>https://dxing.blog/Data-Structures/Segment-Tree</guid>
+    <description><![CDATA[ A Segment Tree maintains an array of n=2^k numbers a_0,a_1,\dots,a_{n-1} by maintaining s(0,2^k),s(0,2^{k-1}),s(2^{k-1},2^k),\dots,s(0,1),s(1,2),\dots,s(2^k-1,2^k), where s(l,r)=\sum_{i=l}^{r-1}a_i which costs a space of \mathcal{O}(n). ]]></description>
+    <pubDate>Sun, 28 Dec 2025 05:48:42 GMT</pubDate>
+  </item><item>
     <title>Sparse Table</title>
     <link>https://dxing.blog/Data-Structures/Sparse-Table</link>
     <guid>https://dxing.blog/Data-Structures/Sparse-Table</guid>
     <description><![CDATA[ A Sparse Table maintains an array of n numbers a_0,a_1,\dots,a_{n-1} by maintaining f(i,j)=\max_{k=j}^{j+2^i-1}a_k which costs a space of \mathcal{O}(n\log(n)). ]]></description>
-    <pubDate>Sun, 28 Dec 2025 05:47:11 GMT</pubDate>
+    <pubDate>Sun, 28 Dec 2025 05:48:42 GMT</pubDate>
   </item><item>
     <title>Welcome to My Blog!</title>
     <link>https://dxing.blog/</link>
@@ -36,12 +48,6 @@
     <description><![CDATA[ Dijkstra’s Algorithm is an algorithm that computes the length of the shortest path from a vertex s to every vertex in a graph G=\langle V,E\rangle with non-negative edge weights in \mathcal{O}(|V|^2+|E|) time and \mathcal{O}(|V|+|E|) space, or \mathcal{O}((|V|+|E|)\log(|V|)) time and \mathcal{O}(|V|... ]]></description>
     <pubDate>Fri, 26 Dec 2025 06:46:08 GMT</pubDate>
   </item><item>
-    <title>Floyd-Warshall Algorithm</title>
-    <link>https://dxing.blog/Algorithms/Floyd-Warshall-Algorithm</link>
-    <guid>https://dxing.blog/Algorithms/Floyd-Warshall-Algorithm</guid>
-    <description><![CDATA[ The Floyd-Warshall Algorithm is an algorithm that computes the length of the shortest path between every pair of vertices in a graph G=\langle V,E\rangle with edge weights in \mathcal{O}(|V|^3+|E|) time and \mathcal{O}(|V|^2+|E|) space. ]]></description>
-    <pubDate>Fri, 26 Dec 2025 06:46:08 GMT</pubDate>
-  </item><item>
     <title>Knuth-Morris-Pratt Algorithm</title>
     <link>https://dxing.blog/Algorithms/Knuth-Morris-Pratt-Algorithm</link>
     <guid>https://dxing.blog/Algorithms/Knuth-Morris-Pratt-Algorithm</guid>
@@ -58,12 +64,6 @@
     <link>https://dxing.blog/Algorithms/Z-Algorithm</link>
     <guid>https://dxing.blog/Algorithms/Z-Algorithm</guid>
     <description><![CDATA[ The Z Algorithm is an algorithm that computes z(0),z(1),\dots,z(n-1) for a string s of length n in \mathcal{O}(n) time and \mathcal{O}(n) space, where z(i)=\operatorname{lcp}(s,s_is_{i+1}\dots s_{n-1}) Algorithm 0 Applying the definition yields an algorithm that solves the problem in \mathcal{O}(n^2... ]]></description>
-    <pubDate>Fri, 26 Dec 2025 05:59:11 GMT</pubDate>
-  </item><item>
-    <title>Segment Tree</title>
-    <link>https://dxing.blog/Data-Structures/Segment-Tree</link>
-    <guid>https://dxing.blog/Data-Structures/Segment-Tree</guid>
-    <description><![CDATA[ A Segment Tree maintains an array of n=2^k numbers a_0,a_1,\dots,a_{n-1} by maintaining s(0,2^k),s(0,2^{k-1}),s(2^{k-1},2^k),\dots,s(0,1),s(1,2),\dots,s(2^k-1,2^k), where s(l,r)=\sum_{i=l}^{r-1}a_i which costs a space of \mathcal{O}(n). ]]></description>
     <pubDate>Fri, 26 Dec 2025 05:59:11 GMT</pubDate>
   </item>
     </channel>

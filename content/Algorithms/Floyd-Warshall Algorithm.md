@@ -24,7 +24,7 @@ $$
 Therefore, computing $f$ yields an algorithm that solves the problem in $\mathcal{O}(|V|^3+|E|)$ time and $\mathcal{O}(|V|^3+|E|)$ space.
 
 ~~~c++
-std::vector dist(n, std::vector(n, std::vector(n, inf)));
+std::vector dist(n + 1, std::vector(n, std::vector(n, inf)));
 for (auto [u, v, w] : edges) {
 	dist[0][u][v] = w;
 }
@@ -35,6 +35,7 @@ for (int k = 0; k < n; k++) {
 		}
 	}
 }
+return dist[n];
 ~~~
 
 ### Algorithm 1
@@ -62,5 +63,6 @@ for (int k = 0; k < n; k++) {
 		}
 	}
 }
+return dist;
 ~~~
 

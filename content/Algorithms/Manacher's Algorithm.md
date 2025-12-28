@@ -18,6 +18,7 @@ for (int i = 0; i < n; i++) {
 		d[i]++;
 	}
 }
+return d;
 ~~~
 
 ### Algorithm 1
@@ -49,6 +50,7 @@ for (int i = 0, l = 0, r = 0; i < n; i++) {
 		l = i - d[i], r = i + d[i] + 1;
 	}
 }
+return d;
 ~~~
 
 > [!note]- Proof

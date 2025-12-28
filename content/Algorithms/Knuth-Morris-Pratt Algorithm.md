@@ -21,6 +21,7 @@ for (int i = 2; i <= n; i++) {
 		}
 	}
 }
+return pi;
 ~~~
 
 ### Algorithm 1
@@ -51,6 +52,7 @@ for (int i = 2; i <= n; i++) {
 		}
 	}
 }
+return pi;
 ~~~
 
 > [!note]- Proof
@@ -100,4 +102,5 @@ for (int i = 1, j = 0; i < n; i++) {
 	j += s[j] == s[i];
 	pi[i + 1] = j;
 }
+return pi;
 ~~~

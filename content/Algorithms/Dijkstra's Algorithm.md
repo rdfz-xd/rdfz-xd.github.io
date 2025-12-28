@@ -54,6 +54,8 @@ while (!s.empty()) {
 		dist[v] = std::min(dist[v], dist[u] + w);
 	}
 }
+
+return dist;
 ~~~
 
 ### Algorithm 1
@@ -80,5 +82,7 @@ while (!s.empty()) {
 		}
 	}
 }
+
+return dist;
 ~~~
 
