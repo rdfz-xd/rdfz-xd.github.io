@@ -51,7 +51,7 @@ for (int k = 0; k < n; k++) {
 Based on [[Floyd-Warshall Algorithm#Algorithm 0]], applying the lemma yields an algorithm that solves the problem in $\mathcal{O}(|V|^3+|E|)$ time and $\mathcal{O}(|V|^2+|E|)$ space.
 
 ~~~c++
-std::vector dist(n, std::vector(n, inf);
+std::vector dist(n, std::vector(n, inf));
 for (auto [u, v, w] : edges) {
 	dist[u][v] = w;
 }

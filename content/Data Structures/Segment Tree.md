@@ -17,13 +17,13 @@ which costs a space of $\mathcal{O}(n)$.
 > \end{align}
 > $$
 
-### Modify an Element
+## Modify a Number
 
-Updating all the maintained segments that contain the given element yields an algorithm that solves the problem in $\mathcal{O}(\log(n))$ time.
+Updating all the maintained segments that contain the given element yields an algorithm that solves the problem in $\mathcal{O}(\log(n))$ time and $\mathcal{O}(\log(n))$ space.
 
 > [!note]- Proof
 >
-> It is easy to prove that exactly $1$ segment in each layer is visited.
+> It is easy to prove that exactly $1$ segment is visited in each layer.
 
 ~~~c++
 y_combinator([&](auto &&self, int o, int s, int t) -> void {
@@ -42,13 +42,13 @@ y_combinator([&](auto &&self, int o, int s, int t) -> void {
 })(1, 0, n);
 ~~~
 
-### Find the Sum of Elements in a Segment
+## Query the Range Sum
 
-Decomposing the query segment into maintained segments yields an algorithm that solves the problem in $\mathcal{O}(\log(n))$ time.
+Decomposing the query interval into maintained segments yields an algorithm that solves the problem in $\mathcal{O}(\log(n))$ time and $\mathcal{O}(\log(n))$ space.
 
 > [!note]- Proof
 >
-> It is easy to prove that at most $4$ segments in each layer are visited.
+> It is easy to prove that at most $4$ segments are visited in each layer.
 
 ~~~c++
 return y_combinator([&](auto &&self, int o, int s, int t) -> int {
