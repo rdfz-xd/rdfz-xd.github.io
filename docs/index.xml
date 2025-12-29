@@ -6,16 +6,28 @@
       <description>Last 10 notes on Dong Xing&#039;s Blog</description>
       <generator>Quartz -- quartz.jzhao.xyz</generator>
       <item>
+    <title>Trie</title>
+    <link>https://dxing.blog/Data-Structures/Trie</link>
+    <guid>https://dxing.blog/Data-Structures/Trie</guid>
+    <description><![CDATA[ A Trie maintains a set S of strings in \Sigma^* by maintaining a deterministic finite automaton that accepts and only accepts strings in S. ]]></description>
+    <pubDate>Mon, 29 Dec 2025 02:40:39 GMT</pubDate>
+  </item><item>
+    <title>Competitive Programming Journey</title>
+    <link>https://dxing.blog/Competitive-Programming-Journey</link>
+    <guid>https://dxing.blog/Competitive-Programming-Journey</guid>
+    <description><![CDATA[ Codeforces AtCoder MIT Informatics Tournament 2025-26 Winter Contest Dec. ]]></description>
+    <pubDate>Sun, 28 Dec 2025 17:43:24 GMT</pubDate>
+  </item><item>
     <title>Dijkstra&#039;s Algorithm</title>
     <link>https://dxing.blog/Algorithms/Dijkstra's-Algorithm</link>
     <guid>https://dxing.blog/Algorithms/Dijkstra's-Algorithm</guid>
-    <description><![CDATA[ Dijkstra’s Algorithm is an algorithm that computes the length of the shortest path from a vertex s to every vertex in a graph G=\langle V,E\rangle with non-negative edge weights in \mathcal{O}(|V|^2+|E|) time and \mathcal{O}(|V|+|E|) space, or \mathcal{O}((|V|+|E|)\log(|V|)) time and \mathcal{O}(|V|... ]]></description>
+    <description><![CDATA[ Dijkstra’s Algorithm is an algorithm that computes the length of the shortest path from a vertex s to every vertex in a graph G=\langle V,E\rangle with non-negative edge weights in \mathcal{O}(|V|^2+|E|) time and \mathcal{O}(|V|) space, or \mathcal{O}((|V|+|E|)\log(|V|)) time and \mathcal{O}(|V|) sp... ]]></description>
     <pubDate>Sun, 28 Dec 2025 05:59:13 GMT</pubDate>
   </item><item>
     <title>Floyd-Warshall Algorithm</title>
     <link>https://dxing.blog/Algorithms/Floyd-Warshall-Algorithm</link>
     <guid>https://dxing.blog/Algorithms/Floyd-Warshall-Algorithm</guid>
-    <description><![CDATA[ The Floyd-Warshall Algorithm is an algorithm that computes the length of the shortest path between every pair of vertices in a graph G=\langle V,E\rangle with edge weights in \mathcal{O}(|V|^3+|E|) time and \mathcal{O}(|V|^2+|E|) space. ]]></description>
+    <description><![CDATA[ The Floyd-Warshall Algorithm is an algorithm that computes the length of the shortest path between every pair of vertices in a graph G=\langle V,E\rangle with edge weights in \mathcal{O}(|V|^3+|E|) time and \mathcal{O}(|V|^2) space. ]]></description>
     <pubDate>Sun, 28 Dec 2025 05:59:13 GMT</pubDate>
   </item><item>
     <title>Knuth-Morris-Pratt Algorithm</title>
@@ -53,18 +65,6 @@
     <guid>https://dxing.blog/</guid>
     <description><![CDATA[ Hi! I am Dong Xing, a sophomore at Princeton International School of Mathematics and Science. ]]></description>
     <pubDate>Fri, 26 Dec 2025 10:35:00 GMT</pubDate>
-  </item><item>
-    <title>Competitive Programming Journey</title>
-    <link>https://dxing.blog/Competitive-Programming-Journey</link>
-    <guid>https://dxing.blog/Competitive-Programming-Journey</guid>
-    <description><![CDATA[ Codeforces AtCoder MIT Informatics Tournament 2025-26 Winter Contest Dec. ]]></description>
-    <pubDate>Fri, 26 Dec 2025 08:09:59 GMT</pubDate>
-  </item><item>
-    <title>Garden</title>
-    <link>https://dxing.blog/Garden</link>
-    <guid>https://dxing.blog/Garden</guid>
-    <description><![CDATA[ 一花一世界，一葉一菩提。 Aug. 25th, 2025 · New York, NY Aug. 26th, 2025 · Cambridge, MA Sept. 6th, 2025 · Princeton, NJ Sept. 8th, 2025 · Princeton, NJ Sept. ]]></description>
-    <pubDate>Fri, 26 Dec 2025 08:02:46 GMT</pubDate>
   </item>
     </channel>
   </rss>

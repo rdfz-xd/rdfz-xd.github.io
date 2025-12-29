@@ -17,7 +17,9 @@ which costs a space of $\mathcal{O}(n)$.
 > \end{align}
 > $$
 
-## Modify a Number
+## Modify
+
+This is an algorithm that updates $a_i$ to $x$ in $\mathcal{O}(\log(n))$ time and $\mathcal{O}(\log(n))$ space.
 
 Updating all the maintained segments that contain the given element yields an algorithm that solves the problem in $\mathcal{O}(\log(n))$ time and $\mathcal{O}(\log(n))$ space.
 
@@ -42,7 +44,9 @@ y_combinator([&](auto &&self, int o, int s, int t) -> void {
 })(1, 0, n);
 ~~~
 
-## Query the Range Sum
+## Range Sum Query
+
+This is an algorithm that computes $\sum_{i=l}^{r-1}a_i$ in $\mathcal{O}(\log(n))$ time and $\mathcal{O}(\log(n))$ space.
 
 Decomposing the query interval into maintained segments yields an algorithm that solves the problem in $\mathcal{O}(\log(n))$ time and $\mathcal{O}(\log(n))$ space.
 

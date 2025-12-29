@@ -4,12 +4,12 @@ tags: [Computer Science, Computer Science/Algorithm, Computer Science/Graph Theo
 
 [[Dijkstra's Algorithm]] is an algorithm that computes the length of the shortest path from a vertex $s$ to every vertex in a graph $G=\langle V,E\rangle$ with **non-negative** edge weights in
 
-- $\mathcal{O}(|V|^2+|E|)$ time and $\mathcal{O}(|V|+|E|)$ space, or
-- $\mathcal{O}((|V|+|E|)\log(|V|))$ time and $\mathcal{O}(|V|+|E|)$ space.
+- $\mathcal{O}(|V|^2+|E|)$ time and $\mathcal{O}(|V|)$ space, or
+- $\mathcal{O}((|V|+|E|)\log(|V|))$ time and $\mathcal{O}(|V|)$ space.
 
 > [!tip] Hint
 >
-> This problem can also be solved by [[Floyd-Warshall Algorithm]] in $\mathcal{O}(|V|^3+|E|)$ time and $\mathcal{O}(|V|^2+|E|)$ space.
+> This problem can also be solved by [[Floyd-Warshall Algorithm]] in $\mathcal{O}(|V|^3+|E|)$ time and $\mathcal{O}(|V|^2)$ space.
 
 ### Algorithm 0
 
@@ -36,7 +36,7 @@ tags: [Computer Science, Computer Science/Algorithm, Computer Science/Graph Theo
 > > \operatorname{dist}(s,v)\le d_{V\setminus S}(v)\land\operatorname{dist}(s,v)\ge d_{V\setminus S}(v)\iff\operatorname{dist}(s,v)=d_{V\setminus S}(v)
 > > $$
 
-Maintaining a set $S$ of unvisited vertices, repeatedly visiting a vertex $v$ in $\arg\min_{u\in S}d_{V\setminus S}(u)$ and applying the lemma to find $\operatorname{dist}(s,v)$ until $S=\empty$ yield an algorithm that solves the problem in $\mathcal{O}(|V|^2+|E|)$ time and $\mathcal{O}(|V|+|E|)$ space.
+Maintaining a set $S$ of unvisited vertices, repeatedly visiting a vertex $v$ in $\arg\min_{u\in S}d_{V\setminus S}(u)$ and applying the lemma to find $\operatorname{dist}(s,v)$ until $S=\empty$ yield an algorithm that solves the problem in $\mathcal{O}(|V|^2+|E|)$ time and $\mathcal{O}(|V|)$ space.
 
 ~~~c++
 std::vector dist(n, inf);
@@ -60,7 +60,7 @@ return dist;
 
 ### Algorithm 1
 
-Based on [[Dijkstra's Algorithm#Algorithm 0]], using a **heap** to maintain the set $S$ yields an algorithm that solves the problem in $\mathcal{O}((|V|+|E|)\log(|V|))$ time and $\mathcal{O}(|V|+|E|)$ space.
+Based on [[Dijkstra's Algorithm#Algorithm 0]], using a **heap** to maintain the set $S$ yields an algorithm that solves the problem in $\mathcal{O}((|V|+|E|)\log(|V|))$ time and $\mathcal{O}(|V|)$ space.
 
 ~~~c++
 std::vector dist(n, inf);

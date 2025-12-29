@@ -2,14 +2,14 @@
 tags: [Computer Science, Computer Science/Algorithm, Computer Science/Graph Theory]
 ---
 
-The [[Floyd-Warshall Algorithm]] is an algorithm that computes the length of the shortest path between every pair of vertices in a graph $G=\langle V,E\rangle$ with edge weights in $\mathcal{O}(|V|^3+|E|)$ time and $\mathcal{O}(|V|^2+|E|)$ space.
+The [[Floyd-Warshall Algorithm]] is an algorithm that computes the length of the shortest path between every pair of vertices in a graph $G=\langle V,E\rangle$ with edge weights in $\mathcal{O}(|V|^3+|E|)$ time and $\mathcal{O}(|V|^2)$ space.
 
 > [!tip] Hint
 >
 > If the edge weights are non-negative, this problem can also be solved by [[Dijkstra's Algorithm]] in
 >
-> - $\mathcal{O}(|V|^3+|V||E|)$ time and $\mathcal{O}(|V|^2+|E|)$ space, or
-> - $\mathcal{O}(|V|(|V|+|E|)\log(|V|))$ and $\mathcal{O}(|V|^2+|E|)$ space.
+> - $\mathcal{O}(|V|^3+|V||E|)$ time and $\mathcal{O}(|V|^2)$ space, or
+> - $\mathcal{O}(|V|(|V|+|E|)\log(|V|))$ and $\mathcal{O}(|V|^2)$ space.
 
 ### Algorithm 0
 
@@ -21,7 +21,7 @@ and
 $$
 \forall x,y\in V,\operatorname{dist}(x,y)=f(|V|,x,y)
 $$
-Therefore, computing $f$ yields an algorithm that solves the problem in $\mathcal{O}(|V|^3+|E|)$ time and $\mathcal{O}(|V|^3+|E|)$ space.
+Therefore, computing $f$ yields an algorithm that solves the problem in $\mathcal{O}(|V|^3+|E|)$ time and $\mathcal{O}(|V|^3)$ space.
 
 ~~~c++
 std::vector dist(n + 1, std::vector(n, std::vector(n, inf)));
@@ -49,7 +49,7 @@ return dist[n];
 > \forall i\in\{1,2,\dots,|V|\},\forall y\in V,f(i,v_{i-1},y)=f(i-1,v_{i-1},y)
 > $$
 
-Based on [[Floyd-Warshall Algorithm#Algorithm 0]], applying the lemma yields an algorithm that solves the problem in $\mathcal{O}(|V|^3+|E|)$ time and $\mathcal{O}(|V|^2+|E|)$ space.
+Based on [[Floyd-Warshall Algorithm#Algorithm 0]], applying the lemma yields an algorithm that solves the problem in $\mathcal{O}(|V|^3+|E|)$ time and $\mathcal{O}(|V|^2)$ space.
 
 ~~~c++
 std::vector dist(n, std::vector(n, inf));
