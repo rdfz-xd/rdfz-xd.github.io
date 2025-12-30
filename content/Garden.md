@@ -43,3 +43,9 @@
 ### Dec. 24th, 2025 · San Francisco, CA
 
 ![photo](/images/20251224.JPG)
+
+### Dec. 30th, 2025 · Felton, CA
+
+![photo](/images/20251230_0.JPG)
+
+![photo](/images/20251230_1.JPG)
