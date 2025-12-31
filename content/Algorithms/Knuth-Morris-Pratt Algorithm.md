@@ -77,7 +77,7 @@ return pi;
 >
 > > [!note]- Proof
 > >
-> > Let $S=$ $\{\{j:j<i\land s_0s_1\dots s_{j-1}=s_{i-j}s_{i-j+1}\dots s_{i-1}\}\}$, $a_j$ denote the $j$-th largest element in $S$. Then for $j\in\{1,2,\dots,|S|-1\}$, since
+> > Let $S=$ $\{j:j<i\land s_0s_1\dots s_{j-1}=s_{i-j}s_{i-j+1}\dots s_{i-1}\}$, $a_j$ denote the $j$-th largest element in $S$. Then for $j\in\{1,2,\dots,|S|-1\}$, since
 > > $$
 > > s_0s_1\dots s_{a_j-1}=s_{i-a_j}s_{i-a_j+1}\dots s_{i-1}\implies\forall k\in\{0,1,\dots,a_j-1\},s_{a_j-k}s_{a_j-k+1}\dots s_{a_j-1}=s_{i-k}s_{i-k+1}\dots s_{i-1}
 > > $$
