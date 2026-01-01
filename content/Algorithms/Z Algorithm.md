@@ -25,7 +25,7 @@ return z;
 
 > [!info] Lemma
 > $$
-> j<i\implies z(i)\ge\min\{z(i-j),j+z(j)-i\}
+> \forall j\in\{0,1,\dots,n-1\},\forall i\in\{j,j+1,\dots,n-1\},z(i)\ge\min\{z(i-j),j+z(j)-i\}
 > $$
 >
 > > [!note]- Proof

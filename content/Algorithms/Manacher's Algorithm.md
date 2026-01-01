@@ -25,7 +25,7 @@ return d;
 
 > [!info] Lemma
 > $$
-> j<i\implies d(i)\ge\min\{d(2j-i),j+d(j)-i\}
+> \forall j\in\{0,1,\dots,n-1\},\forall i\in\{j,j+1,\dots,n-1\},d(i)\ge\min\{d(2j-i),j+d(j)-i\}
 > $$
 >
 > > [!note]- Proof
