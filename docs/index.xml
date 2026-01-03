@@ -6,6 +6,12 @@
       <description>Last 10 notes on Dong Xing&#039;s Blog</description>
       <generator>Quartz -- quartz.jzhao.xyz</generator>
       <item>
+    <title>Dijkstra&#039;s Algorithm</title>
+    <link>https://dxing.blog/Algorithms/Dijkstra's-Algorithm</link>
+    <guid>https://dxing.blog/Algorithms/Dijkstra's-Algorithm</guid>
+    <description><![CDATA[ Dijkstra’s Algorithm is an algorithm that computes the length of the shortest path from a vertex s to every vertex in a graph G=\langle V,E\rangle with non-negative edge weights in \mathcal{O}(|V|^2+|E|) time and \mathcal{O}(|V|) space, or \mathcal{O}((|V|+|E|)\log(|V|)) time and \mathcal{O}(|V|) sp... ]]></description>
+    <pubDate>Sat, 03 Jan 2026 20:21:23 GMT</pubDate>
+  </item><item>
     <title>Manacher&#039;s Algorithm</title>
     <link>https://dxing.blog/Algorithms/Manacher's-Algorithm</link>
     <guid>https://dxing.blog/Algorithms/Manacher's-Algorithm</guid>
@@ -35,12 +41,6 @@
     <guid>https://dxing.blog/Garden</guid>
     <description><![CDATA[ 一花一世界，一葉一菩提。 Aug. 25th, 2025 · New York, NY Aug. 26th, 2025 · Cambridge, MA Sept. 6th, 2025 · Princeton, NJ Sept. 8th, 2025 · Princeton, NJ Sept. ]]></description>
     <pubDate>Tue, 30 Dec 2025 16:38:55 GMT</pubDate>
-  </item><item>
-    <title>Dijkstra&#039;s Algorithm</title>
-    <link>https://dxing.blog/Algorithms/Dijkstra's-Algorithm</link>
-    <guid>https://dxing.blog/Algorithms/Dijkstra's-Algorithm</guid>
-    <description><![CDATA[ Dijkstra’s Algorithm is an algorithm that computes the length of the shortest path from a vertex s to every vertex in a graph G=\langle V,E\rangle with non-negative edge weights in \mathcal{O}(|V|^2+|E|) time and \mathcal{O}(|V|) space, or \mathcal{O}((|V|+|E|)\log(|V|)) time and \mathcal{O}(|V|) sp... ]]></description>
-    <pubDate>Mon, 29 Dec 2025 21:13:27 GMT</pubDate>
   </item><item>
     <title>Floyd-Warshall Algorithm</title>
     <link>https://dxing.blog/Algorithms/Floyd-Warshall-Algorithm</link>

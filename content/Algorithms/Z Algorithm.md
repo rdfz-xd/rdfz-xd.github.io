@@ -36,7 +36,7 @@ return z;
 > > \end{align}
 > > $$
 
-Based on [[Z Algorithm#Algorithm 0]], maintaining $\operatorname{arg max}_{j=1}^{i-1}(j+z(j))$ and applying the lemma yield an algorithm that solves the problem in $\mathcal{O}(n)$ time and $\mathcal{O}(n)$ space.
+Based on [[Z Algorithm#Algorithm 0]], maintaining $\arg\max_{j=1}^{i-1}(j+z(j))$ and applying the lemma yield an algorithm that solves the problem in $\mathcal{O}(n)$ time and $\mathcal{O}(n)$ space.
 
 ~~~c++
 std::vector<int> z(n);
