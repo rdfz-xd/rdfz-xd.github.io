@@ -9,7 +9,7 @@ tags: [Computer Science, Computer Science/Algorithm, Computer Science/Graph Theo
 
 > [!tip] Hint
 >
-> This problem can also be solved by [[Floyd-Warshall Algorithm]] in $\mathcal{O}(|V|^3+|E|)$ time and $\mathcal{O}(|V|^2)$ space.
+> This problem can also be solved by the [[Floyd-Warshall Algorithm]] in $\mathcal{O}(|V|^3+|E|)$ time and $\mathcal{O}(|V|^2)$ space.
 
 ### Algorithm 0
 
