@@ -10,7 +10,7 @@
     <link>https://dxing.blog/</link>
     <guid>https://dxing.blog/</guid>
     <description><![CDATA[ So glad to see you here! I am Dong Xing, a sophomore at Princeton International School of Mathematics and Science. ]]></description>
-    <pubDate>Mon, 05 Jan 2026 02:13:25 GMT</pubDate>
+    <pubDate>Mon, 05 Jan 2026 02:15:21 GMT</pubDate>
   </item><item>
     <title>Manacher&#039;s Algorithm</title>
     <link>https://dxing.blog/Algorithms/Manacher's-Algorithm</link>
@@ -27,7 +27,7 @@
     <title>Dijkstra&#039;s Algorithm</title>
     <link>https://dxing.blog/Algorithms/Dijkstra's-Algorithm</link>
     <guid>https://dxing.blog/Algorithms/Dijkstra's-Algorithm</guid>
-    <description><![CDATA[ Dijkstra’s Algorithm is an algorithm that computes the length of the shortest path from a vertex s to every vertex in a graph G=\langle V,E\rangle with non-negative edge weights in \mathcal{O}(|V|^2+|E|) time and \mathcal{O}(|V|) space, or \mathcal{O}((|V|+|E|)\log(|V|)) time and \mathcal{O}(|V|) sp... ]]></description>
+    <description><![CDATA[ Dijkstra’s Algorithm is an algorithm that computes the length of the shortest path from a vertex s to every vertex in a graph G=(V,E) with non-negative edge weights in \mathcal{O}(|V|^2+|E|) time and \mathcal{O}(|V|) space, or \mathcal{O}((|V|+|E|)\log(|V|)) time and \mathcal{O}(|V|) space. ]]></description>
     <pubDate>Sat, 03 Jan 2026 20:21:23 GMT</pubDate>
   </item><item>
     <title>Fenwick Tree</title>
@@ -51,7 +51,7 @@
     <title>Floyd-Warshall Algorithm</title>
     <link>https://dxing.blog/Algorithms/Floyd-Warshall-Algorithm</link>
     <guid>https://dxing.blog/Algorithms/Floyd-Warshall-Algorithm</guid>
-    <description><![CDATA[ The Floyd-Warshall Algorithm is an algorithm that computes the length of the shortest path between every pair of vertices in a graph G=\langle V,E\rangle with edge weights in \mathcal{O}(|V|^3+|E|) time and \mathcal{O}(|V|^2) space. ]]></description>
+    <description><![CDATA[ The Floyd-Warshall Algorithm is an algorithm that computes the length of the shortest path between every pair of vertices in a graph G=(V,E) with edge weights in \mathcal{O}(|V|^3+|E|) time and \mathcal{O}(|V|^2) space. ]]></description>
     <pubDate>Mon, 29 Dec 2025 02:46:28 GMT</pubDate>
   </item><item>
     <title>Segment Tree</title>

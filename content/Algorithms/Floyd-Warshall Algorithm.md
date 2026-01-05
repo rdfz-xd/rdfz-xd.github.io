@@ -2,7 +2,7 @@
 tags: [Computer Science, Computer Science/Algorithm, Computer Science/Graph Theory]
 ---
 
-The [[Floyd-Warshall Algorithm]] is an algorithm that computes the length of the shortest path between every pair of vertices in a graph $G=\langle V,E\rangle$ with edge weights in $\mathcal{O}(|V|^3+|E|)$ time and $\mathcal{O}(|V|^2)$ space.
+The [[Floyd-Warshall Algorithm]] is an algorithm that computes the length of the shortest path between every pair of vertices in a graph $G=(V,E)$ with edge weights in $\mathcal{O}(|V|^3+|E|)$ time and $\mathcal{O}(|V|^2)$ space.
 
 > [!tip] Hint
 >
