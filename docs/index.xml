@@ -6,6 +6,12 @@
       <description>Last 10 notes on Dong Xing&#039;s Blog</description>
       <generator>Quartz -- quartz.jzhao.xyz</generator>
       <item>
+    <title>Welcome to My Blog!</title>
+    <link>https://dxing.blog/</link>
+    <guid>https://dxing.blog/</guid>
+    <description><![CDATA[ So glad to see you here! I am Dong Xing, a sophomore at Princeton International School of Mathematics and Science. ]]></description>
+    <pubDate>Mon, 05 Jan 2026 02:13:25 GMT</pubDate>
+  </item><item>
     <title>Manacher&#039;s Algorithm</title>
     <link>https://dxing.blog/Algorithms/Manacher's-Algorithm</link>
     <guid>https://dxing.blog/Algorithms/Manacher's-Algorithm</guid>
@@ -58,12 +64,6 @@
     <link>https://dxing.blog/Data-Structures/Sparse-Table</link>
     <guid>https://dxing.blog/Data-Structures/Sparse-Table</guid>
     <description><![CDATA[ A Sparse Table maintains an array of n numbers a_0,a_1,\dots,a_{n-1} by maintaining f(i,j)=\max_{k=j}^{j+2^i-1}a_k which costs a space of \mathcal{O}(n\log(n)). ]]></description>
-    <pubDate>Mon, 29 Dec 2025 02:46:28 GMT</pubDate>
-  </item><item>
-    <title>Trie</title>
-    <link>https://dxing.blog/Data-Structures/Trie</link>
-    <guid>https://dxing.blog/Data-Structures/Trie</guid>
-    <description><![CDATA[ A Trie maintains a set S of strings in \Sigma^* by maintaining a deterministic finite automaton that accepts and only accepts strings in S. ]]></description>
     <pubDate>Mon, 29 Dec 2025 02:46:28 GMT</pubDate>
   </item>
     </channel>

@@ -2,7 +2,7 @@
 title: Welcome to My Blog!
 ---
 
-Nice to meet you!
+So glad to see you here!
 
 I am **[Dong Xing](mailto:dong.xing@prismsus.org)**, a sophomore at **[Princeton International School of Mathematics and Science](https://prismsus.org/)**.
 
