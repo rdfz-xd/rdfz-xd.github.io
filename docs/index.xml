@@ -6,6 +6,18 @@
       <description>Last 10 notes on Dong Xing&#039;s Blog</description>
       <generator>Quartz -- quartz.jzhao.xyz</generator>
       <item>
+    <title>Dijkstra&#039;s Algorithm</title>
+    <link>https://dxing.blog/Algorithms/Dijkstra's-Algorithm</link>
+    <guid>https://dxing.blog/Algorithms/Dijkstra's-Algorithm</guid>
+    <description><![CDATA[ Dijkstra’s Algorithm is an algorithm that computes the length of the shortest path from a vertex s to every vertex in a graph G=(V,E) with non-negative edge weights in \mathcal{O}(|V|^2+|E|) time and \mathcal{O}(|V|) space, or \mathcal{O}((|V|+|E|)\log(|V|)) time and \mathcal{O}(|V|) space. ]]></description>
+    <pubDate>Mon, 05 Jan 2026 02:25:26 GMT</pubDate>
+  </item><item>
+    <title>Floyd-Warshall Algorithm</title>
+    <link>https://dxing.blog/Algorithms/Floyd-Warshall-Algorithm</link>
+    <guid>https://dxing.blog/Algorithms/Floyd-Warshall-Algorithm</guid>
+    <description><![CDATA[ The Floyd-Warshall Algorithm is an algorithm that computes the length of the shortest path between every pair of vertices in a graph G=(V,E) with edge weights in \mathcal{O}(|V|^3+|E|) time and \mathcal{O}(|V|^2) space. ]]></description>
+    <pubDate>Mon, 05 Jan 2026 02:25:26 GMT</pubDate>
+  </item><item>
     <title>Welcome to My Blog!</title>
     <link>https://dxing.blog/</link>
     <guid>https://dxing.blog/</guid>
@@ -24,12 +36,6 @@
     <description><![CDATA[ The Z Algorithm is an algorithm that computes z(0),z(1),\dots,z(n-1) for a string s of length n in \mathcal{O}(n) time and \mathcal{O}(n) space, where z(i)=\operatorname{lcp}(s,s_is_{i+1}\dots s_{n-1}) Algorithm 0 Applying the definition yields an algorithm that solves the problem in \mathcal{O}(n^2... ]]></description>
     <pubDate>Sat, 03 Jan 2026 22:05:39 GMT</pubDate>
   </item><item>
-    <title>Dijkstra&#039;s Algorithm</title>
-    <link>https://dxing.blog/Algorithms/Dijkstra's-Algorithm</link>
-    <guid>https://dxing.blog/Algorithms/Dijkstra's-Algorithm</guid>
-    <description><![CDATA[ Dijkstra’s Algorithm is an algorithm that computes the length of the shortest path from a vertex s to every vertex in a graph G=(V,E) with non-negative edge weights in \mathcal{O}(|V|^2+|E|) time and \mathcal{O}(|V|) space, or \mathcal{O}((|V|+|E|)\log(|V|)) time and \mathcal{O}(|V|) space. ]]></description>
-    <pubDate>Sat, 03 Jan 2026 20:21:23 GMT</pubDate>
-  </item><item>
     <title>Fenwick Tree</title>
     <link>https://dxing.blog/Data-Structures/Fenwick-Tree</link>
     <guid>https://dxing.blog/Data-Structures/Fenwick-Tree</guid>
@@ -47,12 +53,6 @@
     <guid>https://dxing.blog/Garden</guid>
     <description><![CDATA[ 一花一世界，一葉一菩提。 Aug. 25th, 2025 · New York, NY Aug. 26th, 2025 · Cambridge, MA Sept. 6th, 2025 · Princeton, NJ Sept. 8th, 2025 · Princeton, NJ Sept. ]]></description>
     <pubDate>Tue, 30 Dec 2025 16:38:55 GMT</pubDate>
-  </item><item>
-    <title>Floyd-Warshall Algorithm</title>
-    <link>https://dxing.blog/Algorithms/Floyd-Warshall-Algorithm</link>
-    <guid>https://dxing.blog/Algorithms/Floyd-Warshall-Algorithm</guid>
-    <description><![CDATA[ The Floyd-Warshall Algorithm is an algorithm that computes the length of the shortest path between every pair of vertices in a graph G=(V,E) with edge weights in \mathcal{O}(|V|^3+|E|) time and \mathcal{O}(|V|^2) space. ]]></description>
-    <pubDate>Mon, 29 Dec 2025 02:46:28 GMT</pubDate>
   </item><item>
     <title>Segment Tree</title>
     <link>https://dxing.blog/Data-Structures/Segment-Tree</link>

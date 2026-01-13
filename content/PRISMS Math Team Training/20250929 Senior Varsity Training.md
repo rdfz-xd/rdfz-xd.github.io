@@ -430,7 +430,7 @@ In the figure below, semicircles with centers at $A$ and $B$ and with radii $2$ 
 >
 > Let $O$ be the center of the largest semicircle, $r$ be the length of the radius of $\odot P$, then it is easy to prove that $|AB|=3,|OA|=1,|OB|=2,|AP|=2+r,|BP|=1+r,|OP|=3-r$.
 >
-> Applying **Steward's Theorem** yields
+> Applying **Stewart's Theorem** yields
 > $$
 > |AP|^2|OB|+|BP|^2|OA|=|OP|^2|AB|+|OA||OB||AB|
 > $$

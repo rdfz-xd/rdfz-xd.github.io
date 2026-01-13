@@ -151,7 +151,7 @@ $$
 
 > [!note]- Solution
 >
-> It is easy to prove that the answer is equal to
+> It is easy to prove that the answer is
 > $$
 > \left(17^{17^{17^{17}}}+18^{18^{18^{18}}}+19^{19^{19^{19}}}+20^{20^{20^{20}}}\right)\bmod 100
 > $$
