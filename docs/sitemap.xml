@@ -1,12 +1,15 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml"><url>
     <loc>https://dxing.blog/Algorithms/Dijkstra's-Algorithm</loc>
-    <lastmod>2026-01-05T02:25:26.000Z</lastmod>
+    <lastmod>2026-01-13T02:39:11.000Z</lastmod>
   </url><url>
     <loc>https://dxing.blog/Algorithms/Floyd-Warshall-Algorithm</loc>
     <lastmod>2026-01-05T02:25:26.000Z</lastmod>
   </url><url>
     <loc>https://dxing.blog/Algorithms/Knuth-Morris-Pratt-Algorithm</loc>
     <lastmod>2025-12-31T06:35:40.000Z</lastmod>
+  </url><url>
+    <loc>https://dxing.blog/Algorithms/Kruskal's-Algorithm</loc>
+    <lastmod>2026-01-13T16:54:40.320Z</lastmod>
   </url><url>
     <loc>https://dxing.blog/Algorithms/Manacher's-Algorithm</loc>
     <lastmod>2026-01-03T22:05:39.000Z</lastmod>
