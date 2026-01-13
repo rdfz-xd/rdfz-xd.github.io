@@ -10,7 +10,7 @@
     <link>https://dxing.blog/Algorithms/Kruskal's-Algorithm</link>
     <guid>https://dxing.blog/Algorithms/Kruskal's-Algorithm</guid>
     <description><![CDATA[ Kruskal’s Algorithm is an algorithm that computes the weight of the minimum spanning tree in a connected undirected graph G=(V,E) with edge weights in \mathcal{O}(|E|\log(|E|)) time and \mathcal{O}(|E|) space. ]]></description>
-    <pubDate>Tue, 13 Jan 2026 19:20:23 GMT</pubDate>
+    <pubDate>Tue, 13 Jan 2026 21:20:49 GMT</pubDate>
   </item><item>
     <title>Dijkstra&#039;s Algorithm</title>
     <link>https://dxing.blog/Algorithms/Dijkstra's-Algorithm</link>
