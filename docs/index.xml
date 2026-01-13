@@ -6,6 +6,18 @@
       <description>Last 10 notes on Dong Xing&#039;s Blog</description>
       <generator>Quartz -- quartz.jzhao.xyz</generator>
       <item>
+    <title>20250929 Senior Varsity Training</title>
+    <link>https://dxing.blog/PRISMS-Math-Team-Training/20250929-Senior-Varsity-Training</link>
+    <guid>https://dxing.blog/PRISMS-Math-Team-Training/20250929-Senior-Varsity-Training</guid>
+    <description><![CDATA[ Problem 1 Equilateral \triangle ABC with side length 14 is rotated about its center by angle \theta, where 0&lt;\theta&lt;60\degree, to form \triangle DEF. ]]></description>
+    <pubDate>Tue, 13 Jan 2026 00:54:22 GMT</pubDate>
+  </item><item>
+    <title>20251006 Senior Varsity Training</title>
+    <link>https://dxing.blog/PRISMS-Math-Team-Training/20251006-Senior-Varsity-Training</link>
+    <guid>https://dxing.blog/PRISMS-Math-Team-Training/20251006-Senior-Varsity-Training</guid>
+    <description><![CDATA[ Problem 1 How many positive integers n are there such that n is a multiple of 5, and the least common multiple of 5! and n equals 5 times the greatest common divisor of 10! and n? Solution Since \begin{align} \operatorname{lcm}(5!,n)=5\gcd(10!,n)&amp;\iff\forall p\in\mathbb{P},\nu_p(\operatorname{lc... ]]></description>
+    <pubDate>Tue, 13 Jan 2026 00:54:22 GMT</pubDate>
+  </item><item>
     <title>Dijkstra&#039;s Algorithm</title>
     <link>https://dxing.blog/Algorithms/Dijkstra's-Algorithm</link>
     <guid>https://dxing.blog/Algorithms/Dijkstra's-Algorithm</guid>
@@ -53,18 +65,6 @@
     <guid>https://dxing.blog/Garden</guid>
     <description><![CDATA[ 一花一世界，一葉一菩提。 Aug. 25th, 2025 · New York, NY Aug. 26th, 2025 · Cambridge, MA Sept. 6th, 2025 · Princeton, NJ Sept. 8th, 2025 · Princeton, NJ Sept. ]]></description>
     <pubDate>Tue, 30 Dec 2025 16:38:55 GMT</pubDate>
-  </item><item>
-    <title>Segment Tree</title>
-    <link>https://dxing.blog/Data-Structures/Segment-Tree</link>
-    <guid>https://dxing.blog/Data-Structures/Segment-Tree</guid>
-    <description><![CDATA[ A Segment Tree maintains an array of n=2^k numbers a_0,a_1,\dots,a_{n-1} by maintaining s(0,2^k),s(0,2^{k-1}),s(2^{k-1},2^k),\dots,s(0,1),s(1,2),\dots,s(2^k-1,2^k), where s(l,r)=\sum_{i=l}^{r-1}a_i which costs a space of \mathcal{O}(n). ]]></description>
-    <pubDate>Mon, 29 Dec 2025 02:46:28 GMT</pubDate>
-  </item><item>
-    <title>Sparse Table</title>
-    <link>https://dxing.blog/Data-Structures/Sparse-Table</link>
-    <guid>https://dxing.blog/Data-Structures/Sparse-Table</guid>
-    <description><![CDATA[ A Sparse Table maintains an array of n numbers a_0,a_1,\dots,a_{n-1} by maintaining f(i,j)=\max_{k=j}^{j+2^i-1}a_k which costs a space of \mathcal{O}(n\log(n)). ]]></description>
-    <pubDate>Mon, 29 Dec 2025 02:46:28 GMT</pubDate>
   </item>
     </channel>
   </rss>
