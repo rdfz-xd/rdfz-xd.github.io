@@ -2,7 +2,7 @@
 tags: [Computer Science, Computer Science/Algorithm, Computer Science/Graph Theory]
 ---
 
-[[Kruskal's Algorithm]] is an algorithm that computes the weight of the **minimum spanning tree** in a connected undirected graph $G=(V,E)$ with edge weights in $\mathcal{O}(|E|\log(|E|))$ time and $\mathcal{O}(|E|)$ space.
+[[Kruskal's Algorithm]] is an algorithm that computes the weight of the minimum spanning tree in a connected undirected graph $G=(V,E)$ with edge weights in $\mathcal{O}(|E|\log(|E|))$ time and $\mathcal{O}(|E|)$ space.
 
 ### Algorithm
 
@@ -10,7 +10,7 @@ Maintain a set $S$ of selected edges. Process all edges in non-decreasing order 
 
 > [!note]- Proof
 >
-> Let $P_n$ be true iff after processing $n$ edges, there exists a **minimum spanning tree** $T$ that contains all the selected edges and none of the rejected edges.
+> Let $P_n$ be true iff after processing $n$ edges, there exists a minimum spanning tree $T$ that contains all the selected edges and none of the rejected edges.
 >
 > > [!info] Lemma
 > > $$
@@ -19,7 +19,7 @@ Maintain a set $S$ of selected edges. Process all edges in non-decreasing order 
 > >
 > > > [!note]- Proof
 > > >
-> > > Let $T$ be a **minimum spanning tree** that satisfies for $n$.
+> > > Let $T$ be a minimum spanning tree that satisfies for $n$.
 > > >
 > > > If $e$ is rejected, since it is easy to prove that $e\notin E(T)$, it follows that $T$ satisfies for $n+1$.
 > > >
