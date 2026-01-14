@@ -4,6 +4,13 @@ tags: [Computer Science, Computer Science/Algorithm, Computer Science/Graph Theo
 
 [[Kruskal's Algorithm]] is an algorithm that computes the weight of the minimum spanning tree in a connected undirected graph $G=(V,E)$ with edge weights in $\mathcal{O}(|E|\log(|E|))$ time and $\mathcal{O}(|E|)$ space.
 
+> [!tip] Hint
+>
+> This problem can also be solved by [[Prim's Algorithm]] in
+>
+> - $\mathcal{O}(|V|^2+|E|)$ time and $\mathcal{O}(|V|)$ space, or
+> - $\mathcal{O}(|E|\log(|V|))$ time and $\mathcal{O}(|V|)$ space.
+
 ### Algorithm
 
 Maintain a set $S$ of selected edges. Process all edges in non-decreasing order of weight, select an edge $e$ if $S\cup\{e\}$ is acyclic.
@@ -29,9 +36,9 @@ Maintain a set $S$ of selected edges. Process all edges in non-decreasing order 
 > > >
 > > > Since $f$ is not processed, it follows that $w(f)\ge w(e)$.
 > > >
-> > > Since $w(f)>w(e)$ implies that $T-f+e$ is a spanning tree with less weight than $T$, it follows that $w(f)=w(e)$. 
+> > > Since $w(f)>w(e)$ implies that $T+e-f$ is a spanning tree with less weight than $T$, it follows that $w(f)=w(e)$. 
 > > >
-> > > Therefore, $T-f+e$ satisfies for $n+1$.
+> > > Therefore, $T+e-f$ satisfies for $n+1$.
 >
 > Since it is easy to prove that $P_0$ is true, it follows that applying the lemma yields that $P_{|E|}$ is true.
 

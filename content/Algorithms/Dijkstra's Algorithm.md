@@ -17,7 +17,7 @@ tags: [Computer Science, Computer Science/Algorithm, Computer Science/Graph Theo
 >
 > Let $d_S(v)$ denote the length of the shortest path from $s$ to $v$ that only passes through vertices in $S$.
 > $$
-> \forall S\subseteq V,\forall v\in\arg\min_{u\in S}\,d_{V\setminus S}(u),\operatorname{dist}(s,v)=d_{V\setminus S}(v)
+> \forall S\subseteq V,\forall v\in\arg\min_{v\in S}\,d_{V\setminus S}(v),\operatorname{dist}(s,v)=d_{V\setminus S}(v)
 > $$
 >
 > > [!Proof]-
@@ -36,7 +36,7 @@ tags: [Computer Science, Computer Science/Algorithm, Computer Science/Graph Theo
 > > \operatorname{dist}(s,v)\le d_{V\setminus S}(v)\land\operatorname{dist}(s,v)\ge d_{V\setminus S}(v)\iff\operatorname{dist}(s,v)=d_{V\setminus S}(v)
 > > $$
 
-Maintain a set $S$ of unvisited vertices, repeatedly visit a vertex $v$ in $\arg\min_{u\in S}d_{V\setminus S}(u)$ and apply the lemma to find $\operatorname{dist}(s,v)$ until $S=\empty$.
+Maintain a set $S$ of unvisited vertices, repeatedly visit a vertex $v$ in $\arg\min_{v\in S}d_{V\setminus S}(v)$ and apply the lemma to find $\operatorname{dist}(s,v)$ until $S=\empty$.
 
 This algorithm solves the problem in $\mathcal{O}(|V|^2+|E|)$ time and $\mathcal{O}(|V|)$ space.
 
