@@ -15,7 +15,7 @@ tags: [Computer Science, Computer Science/Graph Theory]
 
 > [!info] Lemma
 >
-> Let $M$ be the set of all minimum spanning trees of $G$, then
+> Let $M$ denote the set of minimum spanning trees of $G$, then
 > $$
 > \forall e\in\arg\min_{e\in E}w(e),\exist T\in M,e\in E(T)
 > $$

@@ -15,7 +15,7 @@ tags: [Computer Science, Computer Science/Graph Theory]
 
 > [!info] Lemma
 >
-> Let $M$ be the set of all minimum spanning trees of $G$, $\delta(v)$ denote the set of edges incident with $v$. Then
+> Let $M$ denote the set of minimum spanning trees of $G$, $\delta(v)$ denote the set of edges incident with $v$. Then
 > $$
 > \forall v\in V,\forall e\in\arg\min_{e\in\delta(v)}w(e),\exist T\in M,e\in E(T)
 > $$
