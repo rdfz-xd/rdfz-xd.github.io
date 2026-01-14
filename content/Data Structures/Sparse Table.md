@@ -1,5 +1,5 @@
 ---
-tags: [Computer Science, Computer Science/Data Structure]
+tags: [Computer Science]
 ---
 
 A [[Sparse Table]] maintains an array of $n$ numbers $a_0,a_1,\dots,a_{n-1}$ by maintaining

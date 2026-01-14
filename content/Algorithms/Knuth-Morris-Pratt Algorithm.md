@@ -1,5 +1,5 @@
 ---
-tags: [Computer Science, Computer Science/Algorithm, Computer Science/String Theory]
+tags: [Computer Science, Computer Science/String Theory]
 ---
 
 The [[Knuth-Morris-Pratt Algorithm]] is an algorithm that computes $\pi(1),\pi(2),\dots,\pi(n)$ for a string $s$ of length $n$ in $\mathcal{O}(n)$ time and $\mathcal{O}(n)$ space, where

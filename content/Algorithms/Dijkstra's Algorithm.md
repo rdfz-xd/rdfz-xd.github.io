@@ -1,5 +1,5 @@
 ---
-tags: [Computer Science, Computer Science/Algorithm, Computer Science/Graph Theory]
+tags: [Computer Science, Computer Science/Graph Theory]
 ---
 
 [[Dijkstra's Algorithm]] is an algorithm that computes the length of the shortest path from a vertex $s$ to every vertex in a graph $G=(V,E)$ with **non-negative** edge weights in

@@ -1,5 +1,5 @@
 ---
-tags: [Computer Science, Computer Science/Data Structure, Computer Science/String Theory]
+tags: [Computer Science, Computer Science/String Theory]
 ---
 
 A [[Trie]] maintains a set $S$ of strings in $\Sigma^*$ by maintaining a **deterministic finite automaton** that accepts and only accepts strings in $S$. Specifically, let $T$ be a set of all prefixes of strings in $S$, $\delta$ be a function in $(T\cup\{q_\perp\})\times\Sigma\to T\cup\{q_\perp\}$ satisfying

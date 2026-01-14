@@ -1,5 +1,5 @@
 ---
-tags: [Computer Science, Computer Science/Algorithm, Computer Science/String Theory]
+tags: [Computer Science, Computer Science/String Theory]
 ---
 
 The [[Z Algorithm]] is an algorithm that computes $z(0),z(1),\dots,z(n-1)$ for a string $s$ of length $n$ in $\mathcal{O}(n)$ time and $\mathcal{O}(n)$ space, where

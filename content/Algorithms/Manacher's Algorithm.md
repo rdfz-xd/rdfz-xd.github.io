@@ -1,5 +1,5 @@
 ---
-tags: [Computer Science, Computer Science/Algorithm, Computer Science/String Theory]
+tags: [Computer Science, Computer Science/String Theory]
 ---
 
 [[Manacher's Algorithm]] is an algorithm that computes $d(0),d(1),\dots,d(n-1)$ for a string $s$ of length $n$ in $\mathcal{O}(n)$ time and $\mathcal{O}(n)$ space, where
