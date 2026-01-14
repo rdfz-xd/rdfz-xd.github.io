@@ -15,9 +15,9 @@ tags: [Computer Science, Computer Science/Graph Theory]
 
 > [!info] Lemma
 >
-> Let $M$ denote the set of minimum spanning trees of $G$, then
+> Let $\mathcal{T}$ denote the set of minimum spanning trees of $G$, then
 > $$
-> \forall e\in\arg\min_{e\in E}w(e),\exist T\in M,e\in E(T)
+> \forall e\in\arg\min_{e\in E}w(e),\exist T\in\mathcal{T},e\in E(T)
 > $$
 >
 > > [!note]- Proof
