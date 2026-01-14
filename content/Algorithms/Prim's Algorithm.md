@@ -15,18 +15,18 @@ tags: [Computer Science, Computer Science/Graph Theory]
 
 > [!info] Lemma
 >
-> Let $M$ be the set of all minimum spanning trees of $G$, then
+> Let $M$ be the set of all minimum spanning trees of $G$, $\delta(v)$ denote the set of edges incident with $v$. Then
 > $$
-> \forall v\in V,\forall e\in\arg\min_{e\in N_G(v)}w(e),\exist T\in M,e\in E(T)
+> \forall v\in V,\forall e\in\arg\min_{e\in\delta(v)}w(e),\exist T\in M,e\in E(T)
 > $$
 >
 > > [!note]- Proof
 > >
 > > Let $T$ be an arbitrary minimum spanning tree of $G$.
 > >
-> > If $e\notin E(T)$, let $C$ be the cycle in $T+e$, $f$ be an edge in $C\cap N_G(v)\setminus\{e\}$, then since $w(f)\ge w(e)$, it follows that $T+e-f$ is a minimum spanning tree of $G$.
+> > If $e\notin E(T)$, let $C$ be the cycle in $T+e$, $f$ be an edge in $C\cap\delta(v)\setminus\{e\}$, then since $w(f)\ge w(e)$, it follows that $T+e-f$ is a minimum spanning tree of $G$.
 
-Let $v$ be a vertex in $V$, select an edge $e$ in $\arg\min_{e\in N_G(v)}w(e)$ and update $G$ to $G/e$. Repeat this process until $|V|=1$. Applying the lemma yields that the selected edges form a minimum spanning tree.
+Let $v$ be a vertex in $V$, select an edge $e$ in $\arg\min_{e\in\delta(v)}w(e)$ and update $G$ to $G/e$. Repeat this process until $|V|=1$. Applying the lemma yields that the selected edges form a minimum spanning tree.
 
 This algorithm solves the problem in $\mathcal{O}(|V|^2+|E|)$ time and $\mathcal{O}(|V|)$ space.
 

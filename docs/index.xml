@@ -6,6 +6,18 @@
       <description>Last 10 notes on Dong Xing&#039;s Blog</description>
       <generator>Quartz -- quartz.jzhao.xyz</generator>
       <item>
+    <title>Kruskal&#039;s Algorithm</title>
+    <link>https://dxing.blog/Algorithms/Kruskal's-Algorithm</link>
+    <guid>https://dxing.blog/Algorithms/Kruskal's-Algorithm</guid>
+    <description><![CDATA[ Kruskal’s Algorithm is an algorithm that computes the weight of the minimum spanning tree of a connected undirected graph G=(V,E) with edge weights in \mathcal{O}(|E|\log(|E|)) time and \mathcal{O}(|E|) space. ]]></description>
+    <pubDate>Wed, 14 Jan 2026 16:59:20 GMT</pubDate>
+  </item><item>
+    <title>Prim&#039;s Algorithm</title>
+    <link>https://dxing.blog/Algorithms/Prim's-Algorithm</link>
+    <guid>https://dxing.blog/Algorithms/Prim's-Algorithm</guid>
+    <description><![CDATA[ Prim’s Algorithm is an algorithm that computes the weight of the minimum spanning tree of a connected undirected graph G=(V,E) with edge weights in \mathcal{O}(|V|^2+|E|) time and \mathcal{O}(|V|)) space, or \mathcal{O}(|E|\log(|V|)) time and \mathcal{O}(|V|) space. ]]></description>
+    <pubDate>Wed, 14 Jan 2026 16:59:20 GMT</pubDate>
+  </item><item>
     <title>Dijkstra&#039;s Algorithm</title>
     <link>https://dxing.blog/Algorithms/Dijkstra's-Algorithm</link>
     <guid>https://dxing.blog/Algorithms/Dijkstra's-Algorithm</guid>
@@ -24,22 +36,10 @@
     <description><![CDATA[ The Knuth-Morris-Pratt Algorithm is an algorithm that computes \pi(1),\pi(2),\dots,\pi(n) for a string s of length n in \mathcal{O}(n) time and \mathcal{O}(n) space, where \pi(i)=\max\{j:j&lt;i\land s_0s_1\dots s_{j-1}=s_{i-j}s_{i-j+1}\dots s_{i-1}\} Algorithm 0 Applying the definition yields an alg... ]]></description>
     <pubDate>Wed, 14 Jan 2026 03:35:36 GMT</pubDate>
   </item><item>
-    <title>Kruskal&#039;s Algorithm</title>
-    <link>https://dxing.blog/Algorithms/Kruskal's-Algorithm</link>
-    <guid>https://dxing.blog/Algorithms/Kruskal's-Algorithm</guid>
-    <description><![CDATA[ Kruskal’s Algorithm is an algorithm that computes the weight of the minimum spanning tree of a connected undirected graph G=(V,E) with edge weights in \mathcal{O}(|E|\log(|E|)) time and \mathcal{O}(|E|) space. ]]></description>
-    <pubDate>Wed, 14 Jan 2026 03:35:36 GMT</pubDate>
-  </item><item>
     <title>Manacher&#039;s Algorithm</title>
     <link>https://dxing.blog/Algorithms/Manacher's-Algorithm</link>
     <guid>https://dxing.blog/Algorithms/Manacher's-Algorithm</guid>
     <description><![CDATA[ Manacher’s Algorithm is an algorithm that computes d(0),d(1),\dots,d(n-1) for a string s of length n in \mathcal{O}(n) time and \mathcal{O}(n) space, where d(i)=\max\{j:i-j\ge0\land i+j&lt;n\land s_is_{i-1}\dots s_{i-j}=s_is_{i+1}\dots s_{i+j}\} Algorithm 0 Applying the definition yields an algorith... ]]></description>
-    <pubDate>Wed, 14 Jan 2026 03:35:36 GMT</pubDate>
-  </item><item>
-    <title>Prim&#039;s Algorithm</title>
-    <link>https://dxing.blog/Algorithms/Prim's-Algorithm</link>
-    <guid>https://dxing.blog/Algorithms/Prim's-Algorithm</guid>
-    <description><![CDATA[ Prim’s Algorithm is an algorithm that computes the weight of the minimum spanning tree of a connected undirected graph G=(V,E) with edge weights in \mathcal{O}(|V|^2+|E|) time and \mathcal{O}(|V|)) space, or \mathcal{O}(|E|\log(|V|)) time and \mathcal{O}(|V|) space. ]]></description>
     <pubDate>Wed, 14 Jan 2026 03:35:36 GMT</pubDate>
   </item><item>
     <title>Z Algorithm</title>
