@@ -10,7 +10,7 @@
     <link>https://dxing.blog/Algorithms/Boruvka's-Algorithm</link>
     <guid>https://dxing.blog/Algorithms/Boruvka's-Algorithm</guid>
     <description><![CDATA[ Boruvka’s Algorithm is an algorithm that computes the weight of the minimum spanning tree of a connected undirected graph G=(V,E) with edge weights in \mathcal{O}(|E|\log(|V|)) time and \mathcal{O}(|V|) space. ]]></description>
-    <pubDate>Wed, 14 Jan 2026 20:40:00 GMT</pubDate>
+    <pubDate>Wed, 14 Jan 2026 22:08:01 GMT</pubDate>
   </item><item>
     <title>Kruskal&#039;s Algorithm</title>
     <link>https://dxing.blog/Algorithms/Kruskal's-Algorithm</link>
