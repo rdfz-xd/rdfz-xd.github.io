@@ -30,7 +30,7 @@ tags: [Computer Science, Computer Science/Graph Theory]
 > >
 > > If $e\notin E(T)$, let $C$ be the cycle in $T+e$, $f$ be an edge in $C\cap\delta(v)\setminus\{e\}$, then since $w(f)\ge w(e)$, it follows that $T+e-f$ is a minimum spanning tree of $G$.
 
-For each $v$ in $V$, let $e_v$ be an edge in $\arg\min_{f\in\delta(v)}w(f)$. Then, for each $v$ in $V$, if $e_v$ is not a self-loop, select $e_v$, update $G$ to $G/e_v$, and update $e$ accordingly. Repeat this process until $|V|=1$.
+For each $v$ in $V$, choose an edge $e_v$ in $\arg\min_{f\in\delta(v)}w(f)$. Then, for each $v$ in $V$, if $e_v$ is not a self-loop, select $e_v$, update $G$ to $G/e_v$, and update $e$ accordingly. Repeat this process until $|V|=1$.
 
 Let $u$ be the other vertex incident with $e_v$, then it is easy to prove that
 $$

@@ -10,25 +10,25 @@
     <link>https://dxing.blog/Algorithms/Boruvka's-Algorithm</link>
     <guid>https://dxing.blog/Algorithms/Boruvka's-Algorithm</guid>
     <description><![CDATA[ Boruvka’s Algorithm is an algorithm that computes the weight of the minimum spanning tree of a connected undirected graph G=(V,E) with edge weights in \mathcal{O}(|E|\log(|V|)) time and \mathcal{O}(|V|) space. ]]></description>
-    <pubDate>Wed, 14 Jan 2026 20:34:53 GMT</pubDate>
+    <pubDate>Wed, 14 Jan 2026 20:40:00 GMT</pubDate>
+  </item><item>
+    <title>Kruskal&#039;s Algorithm</title>
+    <link>https://dxing.blog/Algorithms/Kruskal's-Algorithm</link>
+    <guid>https://dxing.blog/Algorithms/Kruskal's-Algorithm</guid>
+    <description><![CDATA[ Kruskal’s Algorithm is an algorithm that computes the weight of the minimum spanning tree of a connected undirected graph G=(V,E) with edge weights in \mathcal{O}(|E|\log(|E|)) time and \mathcal{O}(|E|) space. ]]></description>
+    <pubDate>Wed, 14 Jan 2026 20:40:00 GMT</pubDate>
+  </item><item>
+    <title>Prim&#039;s Algorithm</title>
+    <link>https://dxing.blog/Algorithms/Prim's-Algorithm</link>
+    <guid>https://dxing.blog/Algorithms/Prim's-Algorithm</guid>
+    <description><![CDATA[ Prim’s Algorithm is an algorithm that computes the weight of the minimum spanning tree of a connected undirected graph G=(V,E) with edge weights in \mathcal{O}(|V|^2+|E|) time and \mathcal{O}(|V|)) space, or \mathcal{O}(|E|\log(|V|)) time and \mathcal{O}(|V|) space. ]]></description>
+    <pubDate>Wed, 14 Jan 2026 20:40:00 GMT</pubDate>
   </item><item>
     <title>Garden</title>
     <link>https://dxing.blog/Garden</link>
     <guid>https://dxing.blog/Garden</guid>
     <description><![CDATA[ 一花一世界，一葉一菩提。 Aug. 25th, 2025 · New York, NY Aug. 26th, 2025 · Cambridge, MA Sept. 6th, 2025 · Princeton, NJ Sept. 8th, 2025 · Princeton, NJ Sept. ]]></description>
     <pubDate>Wed, 14 Jan 2026 17:43:50 GMT</pubDate>
-  </item><item>
-    <title>Kruskal&#039;s Algorithm</title>
-    <link>https://dxing.blog/Algorithms/Kruskal's-Algorithm</link>
-    <guid>https://dxing.blog/Algorithms/Kruskal's-Algorithm</guid>
-    <description><![CDATA[ Kruskal’s Algorithm is an algorithm that computes the weight of the minimum spanning tree of a connected undirected graph G=(V,E) with edge weights in \mathcal{O}(|E|\log(|E|)) time and \mathcal{O}(|E|) space. ]]></description>
-    <pubDate>Wed, 14 Jan 2026 17:39:10 GMT</pubDate>
-  </item><item>
-    <title>Prim&#039;s Algorithm</title>
-    <link>https://dxing.blog/Algorithms/Prim's-Algorithm</link>
-    <guid>https://dxing.blog/Algorithms/Prim's-Algorithm</guid>
-    <description><![CDATA[ Prim’s Algorithm is an algorithm that computes the weight of the minimum spanning tree of a connected undirected graph G=(V,E) with edge weights in \mathcal{O}(|V|^2+|E|) time and \mathcal{O}(|V|)) space, or \mathcal{O}(|E|\log(|V|)) time and \mathcal{O}(|V|) space. ]]></description>
-    <pubDate>Wed, 14 Jan 2026 17:39:10 GMT</pubDate>
   </item><item>
     <title>Dijkstra&#039;s Algorithm</title>
     <link>https://dxing.blog/Algorithms/Dijkstra's-Algorithm</link>
