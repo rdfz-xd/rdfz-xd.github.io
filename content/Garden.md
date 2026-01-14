@@ -16,7 +16,7 @@
 
 ![photo](/images/20250908.JPG)
 
-### Sept. 23th, 2025 · Princeton, NJ
+### Sept. 23rd, 2025 · Princeton, NJ
 
 ![photo](/images/20250923.JPG)
 
@@ -34,7 +34,7 @@
 
 ![photo](/images/20251108_1.JPG)
 
-### Nov. 22th, 2025 · Princeton, NJ
+### Nov. 22nd, 2025 · Princeton, NJ
 
 ![photo](/images/20251122_0.JPG)
 
