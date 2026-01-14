@@ -6,65 +6,65 @@
       <description>Last 10 notes on Dong Xing&#039;s Blog</description>
       <generator>Quartz -- quartz.jzhao.xyz</generator>
       <item>
-    <title>Trie</title>
-    <link>https://dxing.blog/Data-Structures/Trie</link>
-    <guid>https://dxing.blog/Data-Structures/Trie</guid>
-    <description><![CDATA[ A Trie maintains a set S of strings in \Sigma^* by maintaining a deterministic finite automaton that accepts and only accepts strings in S. ]]></description>
-    <pubDate>Wed, 14 Jan 2026 01:56:04 GMT</pubDate>
-  </item><item>
     <title>Dijkstra&#039;s Algorithm</title>
     <link>https://dxing.blog/Algorithms/Dijkstra's-Algorithm</link>
     <guid>https://dxing.blog/Algorithms/Dijkstra's-Algorithm</guid>
     <description><![CDATA[ Dijkstra’s Algorithm is an algorithm that computes the length of the shortest path from a vertex s to every vertex in a graph G=(V,E) with non-negative edge weights in \mathcal{O}(|V|^2+|E|) time and \mathcal{O}(|V|) space, or \mathcal{O}((|V|+|E|)\log(|V|)) time and \mathcal{O}(|V|) space. ]]></description>
-    <pubDate>Wed, 14 Jan 2026 00:16:21 GMT</pubDate>
-  </item><item>
-    <title>Kruskal&#039;s Algorithm</title>
-    <link>https://dxing.blog/Algorithms/Kruskal's-Algorithm</link>
-    <guid>https://dxing.blog/Algorithms/Kruskal's-Algorithm</guid>
-    <description><![CDATA[ Kruskal’s Algorithm is an algorithm that computes the weight of the minimum spanning tree in a connected undirected graph G=(V,E) with edge weights in \mathcal{O}(|E|\log(|E|)) time and \mathcal{O}(|E|) space. ]]></description>
-    <pubDate>Wed, 14 Jan 2026 00:16:21 GMT</pubDate>
-  </item><item>
-    <title>Prim&#039;s Algorithm</title>
-    <link>https://dxing.blog/Algorithms/Prim's-Algorithm</link>
-    <guid>https://dxing.blog/Algorithms/Prim's-Algorithm</guid>
-    <description><![CDATA[ Prim’s Algorithm is an algorithm that computes the weight of the minimum spanning tree in a connected undirected graph G=(V,E) with edge weights in \mathcal{O}(|V|^2+|E|) time and \mathcal{O}(|V|)) space, or \mathcal{O}(|E|\log(|V|)) time and \mathcal{O}(|V|) space. ]]></description>
-    <pubDate>Wed, 14 Jan 2026 00:16:21 GMT</pubDate>
-  </item><item>
-    <title>20250929 Senior Varsity Training</title>
-    <link>https://dxing.blog/PRISMS-Math-Team-Training/20250929-Senior-Varsity-Training</link>
-    <guid>https://dxing.blog/PRISMS-Math-Team-Training/20250929-Senior-Varsity-Training</guid>
-    <description><![CDATA[ Problem 1 Equilateral \triangle ABC with side length 14 is rotated about its center by angle \theta, where 0&lt;\theta&lt;60\degree, to form \triangle DEF. ]]></description>
-    <pubDate>Tue, 13 Jan 2026 00:54:22 GMT</pubDate>
-  </item><item>
-    <title>20251006 Senior Varsity Training</title>
-    <link>https://dxing.blog/PRISMS-Math-Team-Training/20251006-Senior-Varsity-Training</link>
-    <guid>https://dxing.blog/PRISMS-Math-Team-Training/20251006-Senior-Varsity-Training</guid>
-    <description><![CDATA[ Problem 1 How many positive integers n are there such that n is a multiple of 5, and the least common multiple of 5! and n equals 5 times the greatest common divisor of 10! and n? Solution Since \begin{align} \operatorname{lcm}(5!,n)=5\gcd(10!,n)&amp;\iff\forall p\in\mathbb{P},\nu_p(\operatorname{lc... ]]></description>
-    <pubDate>Tue, 13 Jan 2026 00:54:22 GMT</pubDate>
+    <pubDate>Wed, 14 Jan 2026 03:35:36 GMT</pubDate>
   </item><item>
     <title>Floyd-Warshall Algorithm</title>
     <link>https://dxing.blog/Algorithms/Floyd-Warshall-Algorithm</link>
     <guid>https://dxing.blog/Algorithms/Floyd-Warshall-Algorithm</guid>
     <description><![CDATA[ The Floyd-Warshall Algorithm is an algorithm that computes the length of the shortest path between every pair of vertices in a graph G=(V,E) with edge weights in \mathcal{O}(|V|^3+|E|) time and \mathcal{O}(|V|^2) space. ]]></description>
-    <pubDate>Mon, 05 Jan 2026 02:25:26 GMT</pubDate>
+    <pubDate>Wed, 14 Jan 2026 03:35:36 GMT</pubDate>
   </item><item>
-    <title>Welcome to My Blog!</title>
-    <link>https://dxing.blog/</link>
-    <guid>https://dxing.blog/</guid>
-    <description><![CDATA[ So glad to see you here! I am Dong Xing, a sophomore at Princeton International School of Mathematics and Science. ]]></description>
-    <pubDate>Mon, 05 Jan 2026 02:15:21 GMT</pubDate>
+    <title>Knuth-Morris-Pratt Algorithm</title>
+    <link>https://dxing.blog/Algorithms/Knuth-Morris-Pratt-Algorithm</link>
+    <guid>https://dxing.blog/Algorithms/Knuth-Morris-Pratt-Algorithm</guid>
+    <description><![CDATA[ The Knuth-Morris-Pratt Algorithm is an algorithm that computes \pi(1),\pi(2),\dots,\pi(n) for a string s of length n in \mathcal{O}(n) time and \mathcal{O}(n) space, where \pi(i)=\max\{j:j&lt;i\land s_0s_1\dots s_{j-1}=s_{i-j}s_{i-j+1}\dots s_{i-1}\} Algorithm 0 Applying the definition yields an alg... ]]></description>
+    <pubDate>Wed, 14 Jan 2026 03:35:36 GMT</pubDate>
+  </item><item>
+    <title>Kruskal&#039;s Algorithm</title>
+    <link>https://dxing.blog/Algorithms/Kruskal's-Algorithm</link>
+    <guid>https://dxing.blog/Algorithms/Kruskal's-Algorithm</guid>
+    <description><![CDATA[ Kruskal’s Algorithm is an algorithm that computes the weight of the minimum spanning tree in a connected undirected graph G=(V,E) with edge weights in \mathcal{O}(|E|\log(|E|)) time and \mathcal{O}(|E|) space. ]]></description>
+    <pubDate>Wed, 14 Jan 2026 03:35:36 GMT</pubDate>
   </item><item>
     <title>Manacher&#039;s Algorithm</title>
     <link>https://dxing.blog/Algorithms/Manacher's-Algorithm</link>
     <guid>https://dxing.blog/Algorithms/Manacher's-Algorithm</guid>
     <description><![CDATA[ Manacher’s Algorithm is an algorithm that computes d(0),d(1),\dots,d(n-1) for a string s of length n in \mathcal{O}(n) time and \mathcal{O}(n) space, where d(i)=\max\{j:i-j\ge0\land i+j&lt;n\land s_is_{i-1}\dots s_{i-j}=s_is_{i+1}\dots s_{i+j}\} Algorithm 0 Applying the definition yields an algorith... ]]></description>
-    <pubDate>Sat, 03 Jan 2026 22:05:39 GMT</pubDate>
+    <pubDate>Wed, 14 Jan 2026 03:35:36 GMT</pubDate>
+  </item><item>
+    <title>Prim&#039;s Algorithm</title>
+    <link>https://dxing.blog/Algorithms/Prim's-Algorithm</link>
+    <guid>https://dxing.blog/Algorithms/Prim's-Algorithm</guid>
+    <description><![CDATA[ Prim’s Algorithm is an algorithm that computes the weight of the minimum spanning tree in a connected undirected graph G=(V,E) with edge weights in \mathcal{O}(|V|^2+|E|) time and \mathcal{O}(|V|)) space, or \mathcal{O}(|E|\log(|V|)) time and \mathcal{O}(|V|) space. ]]></description>
+    <pubDate>Wed, 14 Jan 2026 03:35:36 GMT</pubDate>
   </item><item>
     <title>Z Algorithm</title>
     <link>https://dxing.blog/Algorithms/Z-Algorithm</link>
     <guid>https://dxing.blog/Algorithms/Z-Algorithm</guid>
     <description><![CDATA[ The Z Algorithm is an algorithm that computes z(0),z(1),\dots,z(n-1) for a string s of length n in \mathcal{O}(n) time and \mathcal{O}(n) space, where z(i)=\operatorname{lcp}(s,s_is_{i+1}\dots s_{n-1}) Algorithm 0 Applying the definition yields an algorithm that solves the problem in \mathcal{O}(n^2... ]]></description>
-    <pubDate>Sat, 03 Jan 2026 22:05:39 GMT</pubDate>
+    <pubDate>Wed, 14 Jan 2026 03:35:36 GMT</pubDate>
+  </item><item>
+    <title>Fenwick Tree</title>
+    <link>https://dxing.blog/Data-Structures/Fenwick-Tree</link>
+    <guid>https://dxing.blog/Data-Structures/Fenwick-Tree</guid>
+    <description><![CDATA[ A Fenwick Tree maintains an array of n integers a_0,a_1,\dots,a_{n-1} by maintaining s(i)=\sum_{j=i-\operatorname{lsb}(i)}^{i-1}a_i which costs a space of \mathcal{O}(n). ]]></description>
+    <pubDate>Wed, 14 Jan 2026 03:35:36 GMT</pubDate>
+  </item><item>
+    <title>Segment Tree</title>
+    <link>https://dxing.blog/Data-Structures/Segment-Tree</link>
+    <guid>https://dxing.blog/Data-Structures/Segment-Tree</guid>
+    <description><![CDATA[ A Segment Tree maintains an array of n=2^k numbers a_0,a_1,\dots,a_{n-1} by maintaining s(0,2^k),s(0,2^{k-1}),s(2^{k-1},2^k),\dots,s(0,1),s(1,2),\dots,s(2^k-1,2^k), where s(l,r)=\sum_{i=l}^{r-1}a_i which costs a space of \mathcal{O}(n). ]]></description>
+    <pubDate>Wed, 14 Jan 2026 03:35:36 GMT</pubDate>
+  </item><item>
+    <title>Sparse Table</title>
+    <link>https://dxing.blog/Data-Structures/Sparse-Table</link>
+    <guid>https://dxing.blog/Data-Structures/Sparse-Table</guid>
+    <description><![CDATA[ A Sparse Table maintains an array of n numbers a_0,a_1,\dots,a_{n-1} by maintaining f(i,j)=\max_{k=j}^{j+2^i-1}a_k which costs a space of \mathcal{O}(n\log(n)). ]]></description>
+    <pubDate>Wed, 14 Jan 2026 03:35:36 GMT</pubDate>
   </item>
     </channel>
   </rss>
