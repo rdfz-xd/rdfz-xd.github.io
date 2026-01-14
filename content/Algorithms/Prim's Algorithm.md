@@ -11,6 +11,10 @@ tags: [Computer Science, Computer Science/Graph Theory]
 >
 > This problem can also be solved by [[Kruskal's Algorithm]] in $\mathcal{O}(|E|\log(|E|))$ time and $\mathcal{O}(|E|)$ space.
 
+> [!tip] Hint
+>
+> This problem can also be solved by [[Boruvka's Algorithm]] in $\mathcal{O}(|E|\log(|V|))$ time and $\mathcal{O}(|V|)$ space.
+
 ### Algorithm 0
 
 > [!info] Lemma

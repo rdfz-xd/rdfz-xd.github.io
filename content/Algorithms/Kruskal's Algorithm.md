@@ -11,6 +11,10 @@ tags: [Computer Science, Computer Science/Graph Theory]
 > - $\mathcal{O}(|V|^2+|E|)$ time and $\mathcal{O}(|V|)$ space, or
 > - $\mathcal{O}(|E|\log(|V|))$ time and $\mathcal{O}(|V|)$ space.
 
+> [!tip] Hint
+>
+> This problem can also be solved by [[Boruvka's Algorithm]] in $\mathcal{O}(|E|\log(|V|))$ time and $\mathcal{O}(|V|)$ space.
+
 ### Algorithm
 
 > [!info] Lemma
