@@ -2,7 +2,7 @@
 tags: [Computer Science, Computer Science/Graph Theory]
 ---
 
-[[Kruskal's Algorithm]] is an algorithm that computes the weight of the minimum spanning tree in a connected undirected graph $G=(V,E)$ with edge weights in $\mathcal{O}(|E|\log(|E|))$ time and $\mathcal{O}(|E|)$ space.
+[[Kruskal's Algorithm]] is an algorithm that computes the weight of the minimum spanning tree of a connected undirected graph $G=(V,E)$ with edge weights in $\mathcal{O}(|E|\log(|E|))$ time and $\mathcal{O}(|E|)$ space.
 
 > [!tip] Hint
 >
@@ -13,36 +13,22 @@ tags: [Computer Science, Computer Science/Graph Theory]
 
 ### Algorithm
 
-Maintain a set $S$ of selected edges. Process all edges in non-decreasing order of weight, select an edge $e$ if $S\cup\{e\}$ is acyclic.
-
-> [!note]- Proof
+> [!info] Lemma
 >
-> Let $P_n$ be true iff after processing $n$ edges, there exists a minimum spanning tree $T$ that contains all the selected edges and none of the rejected edges.
+> Let $M$ be the set of all minimum spanning trees of $G$, then
+> $$
+> \forall e\in\arg\min_{e\in E}w(e),\exist T\in M,e\in E(T)
+> $$
 >
-> > [!info] Lemma
-> > $$
-> > \forall n\in\{0,1,\dots,|E|-1\},P_n\Rightarrow P_{n+1}
-> > $$
+> > [!note]- Proof
 > >
-> > > [!note]- Proof
-> > >
-> > > Let $T$ be a minimum spanning tree that satisfies for $n$.
-> > >
-> > > If $e$ is rejected, since it is easy to prove that $e\notin E(T)$, it follows that $T$ satisfies for $n+1$.
-> > >
-> > > If $e$ is selected and $e\in E(T)$, $T$ satisfies for $n+1$.
-> > >
-> > > If $e$ is selected and $e\notin E(T)$, let $C$ be the cycle in $T+e$, then since $T$ satisfies for $n$, it follows that there exists $f\in C$ such that $f$ is not processed.
-> > >
-> > > Since $f$ is not processed, it follows that $w(f)\ge w(e)$.
-> > >
-> > > Since $w(f)>w(e)$ implies that $T+e-f$ is a spanning tree with less weight than $T$, it follows that $w(f)=w(e)$. 
-> > >
-> > > Therefore, $T+e-f$ satisfies for $n+1$.
->
-> Since it is easy to prove that $P_0$ is true, it follows that applying the lemma yields that $P_{|E|}$ is true.
+> > Let $T$ be an arbitrary minimum spanning tree of $G$.
+> >
+> > If $e\notin E(T)$, let $C$ be the cycle in $T+e$, $f$ be an edge in $C\setminus\{e\}$. Then since $w(f)\ge w(e)$, it follows that $T+e-f$ is a minimum spanning tree.
 
-Applying **Introsort** to sort the edges and using a **Disjoint Set Union** to maintain the set $S$ yield an algorithm that solves the problem in $\mathcal{O}(|E|\log(|E|))$ time and $\mathcal{O}(|E|)$ space.
+Repeatedly select an edge $e$ in $\arg\min_{e\in E}w(e)$ and update $G$ to $G/e$ until $|V|=1$. Applying the lemma yields that the selected edges form a minimum spanning tree.
+
+Applying **Introsort** to sort the edges and using a **Disjoint Set Union** to maintain the structure of the graph $G$ yield an algorithm that solves the problem in $\mathcal{O}(|E|\log(|E|))$ time and $\mathcal{O}(|E|)$ space.
 
 ~~~c++
 std::ranges::sort(e);
