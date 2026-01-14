@@ -9,7 +9,7 @@ s\sigma,&s\sigma\in T\\
 q_\perp,&s\sigma\not\in T
 \end{cases}
 $$
-Then it is easy to prove that $M=\langle T\cup\{q_\perp\},\Sigma,\delta,\varepsilon,S\rangle$ is a **deterministic finite automaton** that accepts and only accepts strings in $S$. This costs a space of $\mathcal{O}(|\Sigma|\sum_{s\in S}|s|)$.
+Then it is easy to prove that $M=(T\cup\{q_\perp\},\Sigma,\delta,\varepsilon,S)$ is a **deterministic finite automaton** that accepts and only accepts strings in $S$. This costs a space of $\mathcal{O}(|\Sigma|\sum_{s\in S}|s|)$.
 
 ## Add
 
