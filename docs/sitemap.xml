@@ -1,9 +1,12 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml"><url>
     <loc>https://dxing.blog/Algorithms/Boruvka's-Algorithm</loc>
-    <lastmod>2026-01-14T22:08:01.000Z</lastmod>
+    <lastmod>2026-01-15T17:03:51.000Z</lastmod>
   </url><url>
     <loc>https://dxing.blog/Algorithms/Dijkstra's-Algorithm</loc>
     <lastmod>2026-01-14T03:35:36.000Z</lastmod>
+  </url><url>
+    <loc>https://dxing.blog/Algorithms/Euler's-Sieve</loc>
+    <lastmod>2026-01-15T21:26:25.242Z</lastmod>
   </url><url>
     <loc>https://dxing.blog/Algorithms/Floyd-Warshall-Algorithm</loc>
     <lastmod>2026-01-14T03:35:36.000Z</lastmod>
@@ -21,7 +24,7 @@
     <lastmod>2026-01-14T20:40:00.000Z</lastmod>
   </url><url>
     <loc>https://dxing.blog/Algorithms/Sieve-of-Eratosthenes</loc>
-    <lastmod>2026-01-15T17:01:26.411Z</lastmod>
+    <lastmod>2026-01-15T17:03:51.000Z</lastmod>
   </url><url>
     <loc>https://dxing.blog/Algorithms/Z-Algorithm</loc>
     <lastmod>2026-01-14T03:35:36.000Z</lastmod>
