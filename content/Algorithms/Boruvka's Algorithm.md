@@ -40,10 +40,6 @@ Therefore, applying the lemma yields that the selected edges form a minimum span
 
 Using a **Disjoint Set Union** to maintain the structure of the graph $G$ yields an algorithm that solves the problem in $\mathcal{O}(|E|\log(|V|))$ time and $\mathcal{O}(|V|)$ space.
 
-> [!note]- Proof
->
-> It is easy to prove that in each phase, $|V|$ decreases by at least a factor of $2$.
-
 ~~~c++
 DSU dsu(n);
 int sum = 0;
@@ -71,3 +67,6 @@ while (dsu.size(0) < n) {
 return sum;
 ~~~
 
+> [!note]- Proof
+>
+> It is easy to prove that in each phase, $|V|$ decreases by at least a factor of $2$.
