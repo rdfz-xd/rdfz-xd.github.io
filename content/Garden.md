@@ -49,3 +49,7 @@
 ![photo](/images/20251230_0.JPG)
 
 ![photo](/images/20251230_1.JPG)
+
+### Jan. 17th, 2026 · Princeton, NJ
+
+![photo](/images/20260117.JPG)
