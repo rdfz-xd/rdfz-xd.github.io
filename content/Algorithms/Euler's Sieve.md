@@ -2,11 +2,11 @@
 tags: [Computer Science]
 ---
 
-[[Euler's Sieve]] is an algorithm that finds all the primes in $2,3,\dots,n$ in $\mathcal{O}(n)$ time and $\mathcal{O}(n)$ memory.
+[[Euler's Sieve]] is an algorithm that finds all the primes in $2,3,\dots,n$ in $\mathcal{O}(n)$ time and $\mathcal{O}(n)$ space.
 
 > [!tip] Hint
 >
-> This problem can also be solved by the [[Sieve of Eratosthenes]] in $\mathcal{O}(n\log(\log(n)))$ time and $\mathcal{O}(n)$ memory.
+> This problem can also be solved by the [[Sieve of Eratosthenes]] in $\mathcal{O}(n\log(\log(n)))$ time and $\mathcal{O}(n)$ space.
 
 ### Algorithm
 

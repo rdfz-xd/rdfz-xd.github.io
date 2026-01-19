@@ -2,11 +2,11 @@
 tags: [Computer Science]
 ---
 
-The [[Sieve of Eratosthenes]] is an algorithm that finds all the primes in $2,3,\dots,n$ in $\mathcal{O}(n\log(\log(n)))$ time and $\mathcal{O}(n)$ memory.
+The [[Sieve of Eratosthenes]] is an algorithm that finds all the primes in $2,3,\dots,n$ in $\mathcal{O}(n\log(\log(n)))$ time and $\mathcal{O}(n)$ space.
 
 > [!tip] Hint
 >
-> This problem can also be solved by [[Euler's Sieve]] in $\mathcal{O}(n)$ time and $\mathcal{O}(n)$ memory.
+> This problem can also be solved by [[Euler's Sieve]] in $\mathcal{O}(n)$ time and $\mathcal{O}(n)$ space.
 
 ### Algorithm
 
@@ -17,7 +17,7 @@ The [[Sieve of Eratosthenes]] is an algorithm that finds all the primes in $2,3,
 
 For $m=2,3,\dots,n$, if $m$ is not marked, mark all the multiples of $m$ greater than $m$. Applying the lemma yields that $m$ is prime iff $m$ is unmarked.
 
-This algorithm solves the problem in $\mathcal{O}(n\log(\log(n)))$ time and $\mathcal{O}(n)$ memory.
+This algorithm solves the problem in $\mathcal{O}(n\log(\log(n)))$ time and $\mathcal{O}(n)$ space.
 
 ~~~c++
 std::vector f(n + 1, true);
