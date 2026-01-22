@@ -10,13 +10,25 @@
     <link>https://dxing.blog/Algorithms/Euclidean-Algorithm</link>
     <guid>https://dxing.blog/Algorithms/Euclidean-Algorithm</guid>
     <description><![CDATA[ The Euclidean Algorithm is an algorithm that computes \gcd(a, b) for integers a and b in \mathcal{O}(\log(a)+\log(b)) time and \mathcal{O}(\log(a)+\log(b)) space. ]]></description>
-    <pubDate>Mon, 19 Jan 2026 00:37:09 GMT</pubDate>
+    <pubDate>Mon, 19 Jan 2026 00:38:32 GMT</pubDate>
+  </item><item>
+    <title>Euler&#039;s Sieve</title>
+    <link>https://dxing.blog/Algorithms/Euler's-Sieve</link>
+    <guid>https://dxing.blog/Algorithms/Euler's-Sieve</guid>
+    <description><![CDATA[ Euler’s Sieve is an algorithm that finds all the primes in 2,3,\dots,n in \mathcal{O}(n) time and \mathcal{O}(n) space. ]]></description>
+    <pubDate>Mon, 19 Jan 2026 00:38:32 GMT</pubDate>
   </item><item>
     <title>Extended Euclidean Algorithm</title>
     <link>https://dxing.blog/Algorithms/Extended-Euclidean-Algorithm</link>
     <guid>https://dxing.blog/Algorithms/Extended-Euclidean-Algorithm</guid>
     <description><![CDATA[ The Extended Euclidean Algorithm is an algorithm that finds a pair of integers x and y such that ax+by=\gcd(a,b) for integers a and b in \mathcal{O}(\log(a)+\log(b)) time and \mathcal{O}(\log(a)+\log(b)) space. ]]></description>
-    <pubDate>Mon, 19 Jan 2026 00:33:39 GMT</pubDate>
+    <pubDate>Mon, 19 Jan 2026 00:38:32 GMT</pubDate>
+  </item><item>
+    <title>Sieve of Eratosthenes</title>
+    <link>https://dxing.blog/Algorithms/Sieve-of-Eratosthenes</link>
+    <guid>https://dxing.blog/Algorithms/Sieve-of-Eratosthenes</guid>
+    <description><![CDATA[ The Sieve of Eratosthenes is an algorithm that finds all the primes in 2,3,\dots,n in \mathcal{O}(n\log(\log(n))) time and \mathcal{O}(n) space. ]]></description>
+    <pubDate>Mon, 19 Jan 2026 00:38:32 GMT</pubDate>
   </item><item>
     <title>Welcome to My Blog!</title>
     <link>https://dxing.blog/</link>
@@ -35,18 +47,6 @@
     <guid>https://dxing.blog/Garden</guid>
     <description><![CDATA[ 一花一世界，一葉一菩提。 Aug. 25th, 2025 · New York, NY Aug. 26th, 2025 · Cambridge, MA Sept. 6th, 2025 · Princeton, NJ Sept. 8th, 2025 · Princeton, NJ Sept. ]]></description>
     <pubDate>Sat, 17 Jan 2026 21:22:40 GMT</pubDate>
-  </item><item>
-    <title>Euler&#039;s Sieve</title>
-    <link>https://dxing.blog/Algorithms/Euler's-Sieve</link>
-    <guid>https://dxing.blog/Algorithms/Euler's-Sieve</guid>
-    <description><![CDATA[ Euler’s Sieve is an algorithm that finds all the primes in 2,3,\dots,n in \mathcal{O}(n) time and \mathcal{O}(n) space. ]]></description>
-    <pubDate>Thu, 15 Jan 2026 21:30:09 GMT</pubDate>
-  </item><item>
-    <title>Sieve of Eratosthenes</title>
-    <link>https://dxing.blog/Algorithms/Sieve-of-Eratosthenes</link>
-    <guid>https://dxing.blog/Algorithms/Sieve-of-Eratosthenes</guid>
-    <description><![CDATA[ The Sieve of Eratosthenes is an algorithm that finds all the primes in 2,3,\dots,n in \mathcal{O}(n\log(\log(n))) time and \mathcal{O}(n) space. ]]></description>
-    <pubDate>Thu, 15 Jan 2026 21:30:09 GMT</pubDate>
   </item><item>
     <title>Boruvka&#039;s Algorithm</title>
     <link>https://dxing.blog/Algorithms/Boruvka's-Algorithm</link>
