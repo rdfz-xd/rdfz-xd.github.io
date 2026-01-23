@@ -2,8 +2,6 @@
 title: Welcome to My Blog!
 ---
 
-So glad to see you here!
-
 I am [Dong Xing](mailto:dong.xing@prismsus.org), a sophomore at [Princeton International School of Mathematics and Science](https://prismsus.org/).
 
 I am interested in  [[tags/Computer Science]] and [[tags/Mathematics]], especially [[Competitive Programming Journey|competitive programming]].
