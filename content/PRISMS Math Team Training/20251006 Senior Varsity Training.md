@@ -31,7 +31,7 @@ Call a positive integer $n$ extra-distinct if the remainders when $n$ is divided
 
 > [!note]- Solution
 >
-> Since it is easy to prove that if there are two positive integers $x$ and $y$ such that $x\equiv y\pmod{60}$, $x$ is extra-distinct iff $y$ is extra-distinct, and since it is easy to prove that all extra-distinct positive integers less than or equal to $60$ are $35$, $58$, and $59$, it follows that $n$ is extra-distinct iff
+> Since it is easy to prove that if there are two positive integers $x$ and $y$ such that $x\equiv y\pmod{60}$, $x$ is extra-distinct iff $y$ is extra-distinct, and it is easy to prove that all extra-distinct positive integers less than or equal to $60$ are $35$, $58$, and $59$, it follows that $n$ is extra-distinct iff
 > $$
 > n\equiv35\pmod{60}\lor n\equiv58\pmod{60}\lor n\equiv{59}\pmod{60}
 > $$
@@ -263,7 +263,7 @@ Let $p$ be the least prime number that for which there exists a positive integer
 > &\iff n^8\equiv1\pmod{p^2}
 > \end{align}
 > $$
-> and since
+> and
 > $$
 > \begin{align}
 > p^2\mid n^4+1&\implies p^2\nmid n^4-1\\
