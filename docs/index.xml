@@ -6,6 +6,12 @@
       <description>Last 10 notes on Dong Xing&#039;s Blog</description>
       <generator>Quartz -- quartz.jzhao.xyz</generator>
       <item>
+    <title>20251006 Senior Varsity Training</title>
+    <link>https://dxing.blog/PRISMS-Math-Team-Training/20251006-Senior-Varsity-Training</link>
+    <guid>https://dxing.blog/PRISMS-Math-Team-Training/20251006-Senior-Varsity-Training</guid>
+    <description><![CDATA[ Problem 1 How many positive integers n are there such that n is a multiple of 5, and the least common multiple of 5! and n equals 5 times the greatest common divisor of 10! and n? Solution Since \begin{align} \operatorname{lcm}(5!,n)=5\gcd(10!,n)&amp;\iff\forall p\in\mathbb{P},\nu_p(\operatorname{lc... ]]></description>
+    <pubDate>Sun, 25 Jan 2026 20:36:47 GMT</pubDate>
+  </item><item>
     <title>Welcome to My Blog!</title>
     <link>https://dxing.blog/</link>
     <guid>https://dxing.blog/</guid>
@@ -58,12 +64,6 @@
     <link>https://dxing.blog/Algorithms/Kruskal's-Algorithm</link>
     <guid>https://dxing.blog/Algorithms/Kruskal's-Algorithm</guid>
     <description><![CDATA[ Kruskal’s Algorithm is an algorithm that computes the weight of the minimum spanning tree of a connected undirected graph G=(V,E) with edge weights in \mathcal{O}(|E|\log(|E|)) time and \mathcal{O}(|E|) space. ]]></description>
-    <pubDate>Wed, 14 Jan 2026 20:40:00 GMT</pubDate>
-  </item><item>
-    <title>Prim&#039;s Algorithm</title>
-    <link>https://dxing.blog/Algorithms/Prim's-Algorithm</link>
-    <guid>https://dxing.blog/Algorithms/Prim's-Algorithm</guid>
-    <description><![CDATA[ Prim’s Algorithm is an algorithm that computes the weight of the minimum spanning tree of a connected undirected graph G=(V,E) with edge weights in \mathcal{O}(|V|^2+|E|) time and \mathcal{O}(|V|)) space, or \mathcal{O}(|E|\log(|V|)) time and \mathcal{O}(|V|) space. ]]></description>
     <pubDate>Wed, 14 Jan 2026 20:40:00 GMT</pubDate>
   </item>
     </channel>

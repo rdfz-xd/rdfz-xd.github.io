@@ -373,7 +373,7 @@ is an integer.
 > $$
 > 5^p-2^p\equiv3\pmod p
 > $$
-> Therefore, if $p\ne 3$,
+> Therefore, assume $p\ne 3$, then
 > $$
 > \begin{align}
 > (5^p-2^p)(5^q-2^q)\equiv0\pmod p&\Longleftrightarrow5^q-2^q\equiv0\pmod p\\
@@ -398,7 +398,7 @@ is an integer.
 > &\Longrightarrow q<p
 > \end{align}
 > $$
-> By contradiction, if follows that $p=3$.
+> By contradiction, it follows that $p=3$.
 >
 > Therefore,
 > $$
