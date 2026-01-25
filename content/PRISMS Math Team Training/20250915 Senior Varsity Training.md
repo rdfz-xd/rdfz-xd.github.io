@@ -373,7 +373,7 @@ is an integer.
 > $$
 > 5^p-2^p\equiv3\pmod p
 > $$
-> Therefore, assume $p\ne 3$, then
+> Therefore, if $p\ne 3$,
 > $$
 > \begin{align}
 > (5^p-2^p)(5^q-2^q)\equiv0\pmod p&\Longleftrightarrow5^q-2^q\equiv0\pmod p\\
