@@ -34,14 +34,13 @@ This algorithm solves the problem in $\mathcal{O}(\log(a)+\log(b))$ time and $\m
 
 ~~~c++
 int x = 1, y = 0;
-y_combinator([&](auto &&self, int a, int b) -> int {
+y_combinator([&](auto &&self, int a, int b) -> void {
 	if (!b) {
-		return a;
+		return;
 	}
 
-	int gcd = self(b, a % b);
+	self(b, a % b);
 	x = std::exchange(y, x - a / b * y);
-	return gcd;
 })(a, b);
 
 return {x, y};
