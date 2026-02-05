@@ -965,7 +965,6 @@ Three numbers in the interval $[0,1]$ are chosen independently and at random. Wh
 > $$
 > \Pr[y+z>x\land x+z>y\land x+y>z]
 > $$
-> Applying the **Law of Total Probability** yields
 > $$
 > \begin{align}
 > \Pr[y+z>x\land x+z>y\land x+y>z]&=\Pr[y+z>x\mid x>y\land x>z]\\
@@ -975,7 +974,7 @@ Three numbers in the interval $[0,1]$ are chosen independently and at random. Wh
 > &=\frac{1}{2}
 > \end{align}
 > $$
->
+> 
 
 ### Problem 25
 
@@ -987,7 +986,6 @@ Real numbers $x$, $y$, and $z$ are chosen independently and at random from the i
 >
 > Assume $n\ge2$.
 >
-> Applying the **Law of Total Probability** yields
 > $$
 > \begin{align}
 > \Pr[|x-y|>1\land|x-z|>1\land|y-z|>1]&=\Pr[x-y>1\land y-z>1\mid x>y>z]\\

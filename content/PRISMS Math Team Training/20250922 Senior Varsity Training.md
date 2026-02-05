@@ -268,7 +268,7 @@ There are nonzero integers $a$, $b$, $r$ and $s$ such that the complex number $r
 
 > [!note]- Solution
 >
-> It is easy to prove that the problem is equivalent to finding the sum of the sum of zeros of all $P(x)\in\R[x]$ such that
+> It is easy to prove that the answer is equal to the sum of the sum of zeros of all $P(x)\in\R[x]$ such that
 > $$
 > \exist r,s\in\Z\setminus\{0\},P(r+si)=0\land\exist a,b\in\Z\setminus\{0\},P(x)=x^3-ax^2+bx-65
 > $$
@@ -299,7 +299,7 @@ Find all polynomials $f(x)$ with real coefficients such that $f(x^2)=f(x)^2$.
 
 > [!note]- Solution
 >
-> 
+>
 > $$
 > \begin{align}
 > f(x^2)=f(x)^2&\Longrightarrow\forall x\in\mathbb{C},f(x^2)=0\Leftrightarrow f(x)^2=0\\
@@ -311,11 +311,13 @@ Find all polynomials $f(x)$ with real coefficients such that $f(x^2)=f(x)^2$.
 > $$
 > x,x^2,x^4,x^8,\dots
 > $$
-> are all zeros of $f(x)$. If $\exist x\in\{0,1\},f(x)=0$, infinitely many distinct numbers
+> are all zeros of $f(x)$. If $\exist x\in\{-1,1\},f(x)=0$, infinitely many distinct numbers
 > $$
 > e^{i\pi},e^\frac{i\pi}{2},e^\frac{i\pi}{4},e^\frac{i\pi}{8},\dots
 > $$
-> are all zeros of $f(x)$. Therefore,
+> are all zeros of $f(x)$.
+>
+> Therefore,
 > $$
 > \begin{align}
 > f(x^2)=f(x)^2&\Longrightarrow f(x)=0\lor\forall x\in\mathbb{C}\setminus\{0\},f(x)\ne0\\
@@ -369,7 +371,7 @@ There exist two triples of real numbers $\langle a,b,c\rangle$ such that $a-\fra
 > $$
 > f(0)=-a_1b_1c_1,g(0)=-a_2b_2c_2
 > $$
-> It is *easy* to prove that $f(0)\ne g(0)$, therefore
+> Since it is *easy* to prove that $f(0)\ne g(0)$, it follows that
 > $$
 > \begin{align}
 > f(0)^3+g(0)^3&=\left(-\left(1-\sqrt2\right)\right)^3+\left(-\left(1+\sqrt2\right)\right)^3\\
@@ -432,7 +434,7 @@ If $r$, $s$, $t$ and $u$ denote the roots of the polynomial $f(x)=x^4+3x^3+3x+2$
 > &=2x^4+3x^3+3x+1
 > \end{align}
 > $$
-> then, since
+> then since
 > $$
 > \begin{align}
 > g(x)&=x^nf(x^{-1})\\
@@ -504,7 +506,7 @@ The equation $x^2-2ax+a^2-4a=0,a\in\R$ has at least one root with magitude $3$. 
 
 > [!note]- Solution
 >
-> Let $f(x)=x^2-2ax+a^2-4a$, then it is easy to prove that the problem is equivalent to finding all possible values of $a$ such that
+> Let $f(x)=x^2-2ax+a^2-4a$, then it is easy to prove that the answer is equal to all possible values of $a$ such that
 > $$
 > \exist x\in\mathbb C,|x|=3\land f(x)=0
 > $$
@@ -651,14 +653,14 @@ Find the largest possible real part of $(75+117i)z+\frac{96+144i}{z}$ where $z$ 
 > \end{align}
 > $$
 >
-> Applying Cauchy-Schwarz Inequality yields
+> Since applying the **Cauchy-Schwarz Inequality** yields
 > $$
 > \begin{align}
 > 324\cos(\theta)-432\sin(\theta)&\le\sqrt{(324^2+432^2)(\cos(\theta)^2+\sin(\theta)^2)}\\
 > &=540
 > \end{align}
 > $$
-> and when $\theta=-\arctan\left(\frac{4}{3}\right)$, $324\cos(\theta)-432\sin(\theta)=540$. Therefore,
+> and when $\theta=-\arctan\left(\frac{4}{3}\right)$, $324\cos(\theta)-432\sin(\theta)=540$, it follows that
 > $$
 > \max_\theta(324\cos(\theta)-432\sin(\theta))=540
 > $$

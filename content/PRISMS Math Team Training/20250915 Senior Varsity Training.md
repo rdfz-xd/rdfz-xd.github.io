@@ -8,7 +8,7 @@ Find the smallest $n$ such that $2013^n$ ends in $001$.
 
 > [!note]- Solution
 >
-> It is easy to prove that the problem is equivalent to finding the smallest $n>0$ such that $2013^n\equiv1\pmod{1000}$.
+> It is easy to prove that the answer is equal to the smallest $n>0$ such that $2013^n\equiv1\pmod{1000}$.
 > $$
 > \begin{align}
 > 2013^n\equiv1\pmod{1000}&\Longleftrightarrow2013^n\equiv1\pmod{2^3}\land2013^n\equiv1\pmod{5^3}\\
@@ -211,9 +211,9 @@ $$
 > $$
 > \begin{align}
 > \nu_{11}((1990^{1991^2})^{1991^{1990}}+1992^{1991^{1990}})&=\nu_{11}(1990^{1991^2}+1992)+1990\nu_{11}(1991)\\
-> &=\nu_{11}(\sum_{n=0}^{1991^2}\binom{1991^2}{n}1991^n(-1)^{1991^2-n}+1992)+1990\\
-> &=\nu_{11}(\sum_{n=1}^{1991^2}\binom{1991^2}{n}1991^n(-1)^{1991^2-n}+1991)+1990\\
-> &=\nu_{11}(1991)+\nu_{11}(\sum_{n=1}^{1991^2}\binom{1991^2}{n}1991^{n-1}(-1)^{1991^2-n}+1)+1990\\
+> &=\nu_{11}\left(\sum_{n=0}^{1991^2}\binom{1991^2}{n}1991^n(-1)^{1991^2-n}+1992\right)+1990\\
+> &=\nu_{11}\left(\sum_{n=1}^{1991^2}\binom{1991^2}{n}1991^n(-1)^{1991^2-n}+1991\right)+1990\\
+> &=\nu_{11}(1991)+\nu_{11}\left(\sum_{n=1}^{1991^2}\binom{1991^2}{n}1991^{n-1}(-1)^{1991^2-n}+1\right)+1990\\
 > &=1+0+1990\\
 > &=1991\\
 > \end{align}
@@ -292,7 +292,7 @@ Find the sum of all the divisors $d$ of $N=19^{88}-1$ which are of the form $d=2
 > The sum of all the divisors $d$ of the form $d=2^a3^b$ is
 > $$
 > \begin{align}
-> \sum_{a=0}^5\sum_{b=0}^22^a3^b&=(\sum_{a=0}^52^a)(\sum_{b=0}^23^b)\\
+> \sum_{a=0}^5\sum_{b=0}^22^a3^b&=\left(\sum_{a=0}^52^a\right)\left(\sum_{b=0}^23^b\right)\\
 > &=63\cdot13\\
 > &=819
 > \end{align}
