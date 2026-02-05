@@ -462,7 +462,7 @@ Find all polynomials of degree less than $4$ satisfying that $f(0)=1,f(1)=1,f(2)
 
 > [!note]- Solution
 >
-> It is easy to prove the problem is equivalent to finding all polynomials $f(x)$ such that
+> It is easy to prove the answer is all polynomials $f(x)$ such that
 > $$
 > \exist a,b,c,d\in\Z,f(x)=ax^3+bx^2+cx+d\land f(0)=1\land f(1)=1\land f(2)=5\land f(3)=11
 > $$
