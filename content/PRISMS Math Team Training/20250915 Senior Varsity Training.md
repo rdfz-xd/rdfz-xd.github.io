@@ -8,7 +8,7 @@ Find the smallest $n$ such that $2013^n$ ends in $001$.
 
 > [!note]- Solution
 >
-> It is easy to prove that the answer is equal to the smallest $n>0$ such that $2013^n\equiv1\pmod{1000}$.
+> It is easy to prove that the answer is the smallest $n>0$ such that $2013^n\equiv1\pmod{1000}$.
 > $$
 > \begin{align}
 > 2013^n\equiv1\pmod{1000}&\Longleftrightarrow2013^n\equiv1\pmod{2^3}\land2013^n\equiv1\pmod{5^3}\\

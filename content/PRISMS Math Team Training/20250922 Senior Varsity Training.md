@@ -268,7 +268,7 @@ There are nonzero integers $a$, $b$, $r$ and $s$ such that the complex number $r
 
 > [!note]- Solution
 >
-> It is easy to prove that the answer is equal to the sum of the sum of zeros of all $P(x)\in\R[x]$ such that
+> It is easy to prove that the answer is the sum of the sum of zeros of all $P(x)\in\R[x]$ such that
 > $$
 > \exist r,s\in\Z\setminus\{0\},P(r+si)=0\land\exist a,b\in\Z\setminus\{0\},P(x)=x^3-ax^2+bx-65
 > $$
@@ -506,7 +506,7 @@ The equation $x^2-2ax+a^2-4a=0,a\in\R$ has at least one root with magitude $3$. 
 
 > [!note]- Solution
 >
-> Let $f(x)=x^2-2ax+a^2-4a$, then it is easy to prove that the answer is equal to all possible values of $a$ such that
+> Let $f(x)=x^2-2ax+a^2-4a$, then it is easy to prove that the answer is all possible values of $a$ such that
 > $$
 > \exist x\in\mathbb C,|x|=3\land f(x)=0
 > $$
