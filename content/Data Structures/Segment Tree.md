@@ -19,7 +19,7 @@ which costs a space of $\mathcal{O}(n)$.
 
 ## Modify
 
-This is an algorithm that updates $a_i$ to $x$ in $\mathcal{O}(\log(n))$ time and $\mathcal{O}(\log(n))$ space.
+[[Segment Tree#Modify]] is an algorithm that updates $a_i$ to $x$ in $\mathcal{O}(\log(n))$ time and $\mathcal{O}(\log(n))$ space.
 
 Updating all the maintained segments that contain the given element yields an algorithm that solves the problem in $\mathcal{O}(\log(n))$ time and $\mathcal{O}(\log(n))$ space.
 
@@ -46,7 +46,7 @@ y_combinator([&](auto &&self, int o, int s, int t) -> void {
 
 ## Range Sum Query
 
-This is an algorithm that computes $\sum_{i=l}^{r-1}a_i$ in $\mathcal{O}(\log(n))$ time and $\mathcal{O}(\log(n))$ space.
+[[Segment Tree#Range Sum Query]] is an algorithm that computes $\sum_{i=l}^{r-1}a_i$ in $\mathcal{O}(\log(n))$ time and $\mathcal{O}(\log(n))$ space.
 
 Decomposing the query interval into maintained segments yields an algorithm that solves the problem in $\mathcal{O}(\log(n))$ time and $\mathcal{O}(\log(n))$ space.
 

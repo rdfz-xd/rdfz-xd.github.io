@@ -10,7 +10,7 @@ which costs a space of $\mathcal{O}(n\log(n))$.
 
 ## Initialize
 
-This is an algorithm that initializes the [[Sparse Table]] with $a_0,a_1,\dots,a_{n-1}$ in $\mathcal{O}(n\log(n))$ time and $\mathcal{O}(1)$ space.
+[[Sparse Table#Initialize]] is an algorithm that initializes the [[Sparse Table]] with $a_0,a_1,\dots,a_{n-1}$ in $\mathcal{O}(n\log(n))$ time and $\mathcal{O}(1)$ space.
 
 > [!info] Lemma
 > $$
@@ -30,7 +30,7 @@ for (int i = 1; i <= std::__lg(n); i++) {
 
 ## Range Maximum Query
 
-This is an algorithm that computes $\max_{i=l}^{r-1}a_i$ in $\mathcal{O}(1)$ time and $\mathcal{O}(1)$ space.
+[[Sparse Table#Range Maximum Query]] is an algorithm that computes $\max_{i=l}^{r-1}a_i$ in $\mathcal{O}(1)$ time and $\mathcal{O}(1)$ space.
 
 > [!info] Lemma
 > $$

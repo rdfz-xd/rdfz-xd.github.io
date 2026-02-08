@@ -13,7 +13,7 @@ Then it is easy to prove that $M=(T\cup\{q_\perp\},\Sigma,\delta,\varepsilon,S)$
 
 ## Add
 
-This is an algorithm that updates $S$ to $S\cup\{s\}$ in $\mathcal{O}(|s|)$ time and $\mathcal{O}(1)$ space.
+[[Trie#Add]] is an algorithm that updates $S$ to $S\cup\{s\}$ in $\mathcal{O}(|s|)$ time and $\mathcal{O}(1)$ space.
 
 Updating the values in $\delta$ that is changed by $s$ yields an algorithm that solves the problem in $\mathcal{O}(|s|)$ time and $\mathcal{O}(1)$ space.
 
@@ -32,7 +32,7 @@ f[o] = true;
 
 ## Find
 
-This is an algorithm that checks if $s\in S$ in $\mathcal{O}(|s|)$ time and $\mathcal{O}(1)$ space.
+[[Trie#Find]] is an algorithm that checks if $s\in S$ in $\mathcal{O}(|s|)$ time and $\mathcal{O}(1)$ space.
 
 Running $s$ on $M$ yields an algorithm that solves the problem in $\mathcal{O}(|s|)$ time and $\mathcal{O}(1)$ space.
 
