@@ -82,19 +82,19 @@ return sf;
 >
 > Applying the lemma yields that
 > $$
-> T(n)\in\mathcal{O}\left(n^\frac{2}{3}+\sum_{d=1}^{n^\frac{1}{3}}\sqrt{\frac{n}{d}}\right)
+> T(n)\in\mathcal{O}\left(n^\frac{2}{3}+\sum_{d=1}^{\lfloor n^\frac{1}{3}\rfloor}\sqrt{\frac{n}{d}}\right)
 > $$
 > Therefore, since
 > $$
 > \begin{align}
-> \mathcal{O}\left(\sum_{d=1}^{n^\frac{1}{3}}\sqrt{\frac{n}{d}}\right)&=\mathcal{O}\left(\sqrt{n}\sum_{d=1}^{n^\frac{1}{3}}d^{-\frac{1}{2}}\right)\\
+> \mathcal{O}\left(\sum_{d=1}^{\lfloor n^\frac{1}{3}\rfloor}\sqrt{\frac{n}{d}}\right)&=\mathcal{O}\left(\sqrt{n}\sum_{d=1}^{\lfloor n^\frac{1}{3}\rfloor}d^{-\frac{1}{2}}\right)\\
 > &=\mathcal{O}\left(\sqrt n\int_0^{n^\frac{1}{3}}x^{-\frac{1}{2}}\mathrm{d}x\right)\\
 > &=\mathcal{O}(n^\frac{2}{3})
 > \end{align}
 > $$
 > it follows that
 > $$
-> \mathcal{O}\left(n^\frac{2}{3}+\sum_{d=1}^{n^\frac{1}{3}}\sqrt{\frac{n}{d}}\right)=\mathcal{O}(n^\frac{2}{3})
+> \mathcal{O}\left(n^\frac{2}{3}+\sum_{d=1}^{\lfloor n^\frac{1}{3}\rfloor}\sqrt{\frac{n}{d}}\right)=\mathcal{O}(n^\frac{2}{3})
 > $$
 > Therefore,
 > $$
