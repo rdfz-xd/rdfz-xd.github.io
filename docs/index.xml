@@ -6,29 +6,41 @@
       <description>Last 10 notes on Dong Xing&#039;s Blog</description>
       <generator>Quartz -- quartz.jzhao.xyz</generator>
       <item>
-    <title>Du&#039;s Second Division Sieve</title>
-    <link>https://dxing.blog/Algorithms/Du's-Sieves/Du's-Second-Division-Sieve</link>
-    <guid>https://dxing.blog/Algorithms/Du's-Sieves/Du's-Second-Division-Sieve</guid>
-    <description><![CDATA[ Let S_f(n)=\sum_{k=1}^nf(k). ]]></description>
-    <pubDate>Sun, 08 Feb 2026 18:15:08 GMT</pubDate>
-  </item><item>
-    <title>Du&#039;s Second Multiplication Sieve</title>
-    <link>https://dxing.blog/Algorithms/Du's-Sieves/Du's-Second-Multiplication-Sieve</link>
-    <guid>https://dxing.blog/Algorithms/Du's-Sieves/Du's-Second-Multiplication-Sieve</guid>
-    <description><![CDATA[ Let S_f(n)=\sum_{k=1}^nf(k). ]]></description>
-    <pubDate>Sun, 08 Feb 2026 18:14:03 GMT</pubDate>
-  </item><item>
     <title>Du&#039;s First Division Sieve</title>
     <link>https://dxing.blog/Algorithms/Du's-Sieves/Du's-First-Division-Sieve</link>
     <guid>https://dxing.blog/Algorithms/Du's-Sieves/Du's-First-Division-Sieve</guid>
     <description><![CDATA[ Let S_f(n)=\sum_{k=1}^nf(k). ]]></description>
-    <pubDate>Sun, 08 Feb 2026 17:57:30 GMT</pubDate>
+    <pubDate>Sun, 08 Feb 2026 18:32:25 GMT</pubDate>
   </item><item>
     <title>Du&#039;s First Multiplication Sieve</title>
     <link>https://dxing.blog/Algorithms/Du's-Sieves/Du's-First-Multiplication-Sieve</link>
     <guid>https://dxing.blog/Algorithms/Du's-Sieves/Du's-First-Multiplication-Sieve</guid>
     <description><![CDATA[ Let S_f(n)=\sum_{k=1}^nf(k). ]]></description>
-    <pubDate>Sun, 08 Feb 2026 17:50:44 GMT</pubDate>
+    <pubDate>Sun, 08 Feb 2026 18:32:25 GMT</pubDate>
+  </item><item>
+    <title>Du&#039;s Second Division Sieve</title>
+    <link>https://dxing.blog/Algorithms/Du's-Sieves/Du's-Second-Division-Sieve</link>
+    <guid>https://dxing.blog/Algorithms/Du's-Sieves/Du's-Second-Division-Sieve</guid>
+    <description><![CDATA[ Let S_f(n)=\sum_{k=1}^nf(k). ]]></description>
+    <pubDate>Sun, 08 Feb 2026 18:32:25 GMT</pubDate>
+  </item><item>
+    <title>Du&#039;s Second Multiplication Sieve</title>
+    <link>https://dxing.blog/Algorithms/Du's-Sieves/Du's-Second-Multiplication-Sieve</link>
+    <guid>https://dxing.blog/Algorithms/Du's-Sieves/Du's-Second-Multiplication-Sieve</guid>
+    <description><![CDATA[ Let S_f(n)=\sum_{k=1}^nf(k). ]]></description>
+    <pubDate>Sun, 08 Feb 2026 18:32:25 GMT</pubDate>
+  </item><item>
+    <title>Floyd-Warshall Algorithm</title>
+    <link>https://dxing.blog/Algorithms/Floyd-Warshall-Algorithm</link>
+    <guid>https://dxing.blog/Algorithms/Floyd-Warshall-Algorithm</guid>
+    <description><![CDATA[ The Floyd-Warshall Algorithm is an algorithm that computes the length of the shortest path between every pair of vertices in a graph G=(V,E) with edge weights in \mathcal{O}(|V|^3+|E|) time and \mathcal{O}(|V|^2) space. ]]></description>
+    <pubDate>Sun, 08 Feb 2026 18:32:25 GMT</pubDate>
+  </item><item>
+    <title>Sieve of Eratosthenes</title>
+    <link>https://dxing.blog/Algorithms/Sieve-of-Eratosthenes</link>
+    <guid>https://dxing.blog/Algorithms/Sieve-of-Eratosthenes</guid>
+    <description><![CDATA[ The Sieve of Eratosthenes is an algorithm that finds all the primes in 2,3,\dots,n in \mathcal{O}(n\log(\log(n))) time and \mathcal{O}(n) space. ]]></description>
+    <pubDate>Sun, 08 Feb 2026 18:32:25 GMT</pubDate>
   </item><item>
     <title>20250915 Senior Varsity Training</title>
     <link>https://dxing.blog/PRISMS-Math-Team-Training/20250915-Senior-Varsity-Training</link>
@@ -53,18 +65,6 @@
     <guid>https://dxing.blog/Algorithms/Extended-Euclidean-Algorithm</guid>
     <description><![CDATA[ The Extended Euclidean Algorithm is an algorithm that finds a pair of integers x and y such that ax+by=\gcd(a,b) for integers a and b in \mathcal{O}(\log(a)+\log(b)) time and \mathcal{O}(\log(a)+\log(b)) space. ]]></description>
     <pubDate>Sun, 01 Feb 2026 18:03:41 GMT</pubDate>
-  </item><item>
-    <title>Garden</title>
-    <link>https://dxing.blog/Garden</link>
-    <guid>https://dxing.blog/Garden</guid>
-    <description><![CDATA[ 一花一世界，一葉一菩提。 Aug. 25th, 2025 · New York, NY Aug. 26th, 2025 · Cambridge, MA Sept. 6th, 2025 · Princeton, NJ Sept. 8th, 2025 · Princeton, NJ Sept. ]]></description>
-    <pubDate>Mon, 26 Jan 2026 00:16:59 GMT</pubDate>
-  </item><item>
-    <title>20251006 Senior Varsity Training</title>
-    <link>https://dxing.blog/PRISMS-Math-Team-Training/20251006-Senior-Varsity-Training</link>
-    <guid>https://dxing.blog/PRISMS-Math-Team-Training/20251006-Senior-Varsity-Training</guid>
-    <description><![CDATA[ Problem 1 How many positive integers n are there such that n is a multiple of 5, and the least common multiple of 5! and n equals 5 times the greatest common divisor of 10! and n? Solution Since \begin{align} \operatorname{lcm}(5!,n)=5\gcd(10!,n)&amp;\iff\forall p\in\mathbb{P},\nu_p(\operatorname{lc... ]]></description>
-    <pubDate>Sun, 25 Jan 2026 20:36:47 GMT</pubDate>
   </item>
     </channel>
   </rss>

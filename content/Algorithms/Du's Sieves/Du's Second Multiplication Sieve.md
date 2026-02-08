@@ -54,6 +54,7 @@ for (int i = 1; i <= n23; i++) {
 	sh[i] = sh[i - 1] + h[i];
 }
 for (int i = n / n23; i > 0; i--) {
+  sh[n / i] = 0;
 	for (int j = 1; j <= n / i; j = n / i / (n / i / j) + 1) {
 		sh[n / i] += (sg[n / i / (n / i / j)] - sg[j - 1]) * sf[n / i / j];
 	}
