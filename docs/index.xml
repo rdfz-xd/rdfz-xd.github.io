@@ -6,17 +6,41 @@
       <description>Last 10 notes on Dong Xing&#039;s Blog</description>
       <generator>Quartz -- quartz.jzhao.xyz</generator>
       <item>
-    <title>20250922 Senior Varsity Training</title>
-    <link>https://dxing.blog/PRISMS-Math-Team-Training/20250922-Senior-Varsity-Training</link>
-    <guid>https://dxing.blog/PRISMS-Math-Team-Training/20250922-Senior-Varsity-Training</guid>
-    <description><![CDATA[ Problem 1 Find the number of integer values of k in the closed interval [-500,500] for which the equation \log(kx)=2\log(x+2) has exactly one real solution. ]]></description>
-    <pubDate>Thu, 05 Feb 2026 17:49:53 GMT</pubDate>
+    <title>Du&#039;s Second Division Sieve</title>
+    <link>https://dxing.blog/Algorithms/Du's-Sieves/Du's-Second-Division-Sieve</link>
+    <guid>https://dxing.blog/Algorithms/Du's-Sieves/Du's-Second-Division-Sieve</guid>
+    <description><![CDATA[ Let S_f(n)=\sum_{k=1}^nf(k). ]]></description>
+    <pubDate>Sun, 08 Feb 2026 18:15:08 GMT</pubDate>
+  </item><item>
+    <title>Du&#039;s Second Multiplication Sieve</title>
+    <link>https://dxing.blog/Algorithms/Du's-Sieves/Du's-Second-Multiplication-Sieve</link>
+    <guid>https://dxing.blog/Algorithms/Du's-Sieves/Du's-Second-Multiplication-Sieve</guid>
+    <description><![CDATA[ Let S_f(n)=\sum_{k=1}^nf(k). ]]></description>
+    <pubDate>Sun, 08 Feb 2026 18:14:03 GMT</pubDate>
+  </item><item>
+    <title>Du&#039;s First Division Sieve</title>
+    <link>https://dxing.blog/Algorithms/Du's-Sieves/Du's-First-Division-Sieve</link>
+    <guid>https://dxing.blog/Algorithms/Du's-Sieves/Du's-First-Division-Sieve</guid>
+    <description><![CDATA[ Let S_f(n)=\sum_{k=1}^nf(k). ]]></description>
+    <pubDate>Sun, 08 Feb 2026 17:57:30 GMT</pubDate>
+  </item><item>
+    <title>Du&#039;s First Multiplication Sieve</title>
+    <link>https://dxing.blog/Algorithms/Du's-Sieves/Du's-First-Multiplication-Sieve</link>
+    <guid>https://dxing.blog/Algorithms/Du's-Sieves/Du's-First-Multiplication-Sieve</guid>
+    <description><![CDATA[ Let S_f(n)=\sum_{k=1}^nf(k). ]]></description>
+    <pubDate>Sun, 08 Feb 2026 17:50:44 GMT</pubDate>
   </item><item>
     <title>20250915 Senior Varsity Training</title>
     <link>https://dxing.blog/PRISMS-Math-Team-Training/20250915-Senior-Varsity-Training</link>
     <guid>https://dxing.blog/PRISMS-Math-Team-Training/20250915-Senior-Varsity-Training</guid>
     <description><![CDATA[ Problem 1 Find the smallest n such that 2013^n ends in 001. ]]></description>
-    <pubDate>Thu, 05 Feb 2026 17:49:08 GMT</pubDate>
+    <pubDate>Thu, 05 Feb 2026 17:52:34 GMT</pubDate>
+  </item><item>
+    <title>20250922 Senior Varsity Training</title>
+    <link>https://dxing.blog/PRISMS-Math-Team-Training/20250922-Senior-Varsity-Training</link>
+    <guid>https://dxing.blog/PRISMS-Math-Team-Training/20250922-Senior-Varsity-Training</guid>
+    <description><![CDATA[ Problem 1 Find the number of integer values of k in the closed interval [-500,500] for which the equation \log(kx)=2\log(x+2) has exactly one real solution. ]]></description>
+    <pubDate>Thu, 05 Feb 2026 17:52:34 GMT</pubDate>
   </item><item>
     <title>20250929 Senior Varsity Training</title>
     <link>https://dxing.blog/PRISMS-Math-Team-Training/20250929-Senior-Varsity-Training</link>
@@ -41,30 +65,6 @@
     <guid>https://dxing.blog/PRISMS-Math-Team-Training/20251006-Senior-Varsity-Training</guid>
     <description><![CDATA[ Problem 1 How many positive integers n are there such that n is a multiple of 5, and the least common multiple of 5! and n equals 5 times the greatest common divisor of 10! and n? Solution Since \begin{align} \operatorname{lcm}(5!,n)=5\gcd(10!,n)&amp;\iff\forall p\in\mathbb{P},\nu_p(\operatorname{lc... ]]></description>
     <pubDate>Sun, 25 Jan 2026 20:36:47 GMT</pubDate>
-  </item><item>
-    <title>Welcome to My Blog!</title>
-    <link>https://dxing.blog/</link>
-    <guid>https://dxing.blog/</guid>
-    <description><![CDATA[ I am Dong Xing, a sophomore at Princeton International School of Mathematics and Science. ]]></description>
-    <pubDate>Fri, 23 Jan 2026 00:31:02 GMT</pubDate>
-  </item><item>
-    <title>Competitive Programming Journey</title>
-    <link>https://dxing.blog/Competitive-Programming-Journey</link>
-    <guid>https://dxing.blog/Competitive-Programming-Journey</guid>
-    <description><![CDATA[ MIT Informatics Tournament 2025-26 Winter Contest Dec. ]]></description>
-    <pubDate>Thu, 22 Jan 2026 23:15:20 GMT</pubDate>
-  </item><item>
-    <title>Euclidean Algorithm</title>
-    <link>https://dxing.blog/Algorithms/Euclidean-Algorithm</link>
-    <guid>https://dxing.blog/Algorithms/Euclidean-Algorithm</guid>
-    <description><![CDATA[ The Euclidean Algorithm is an algorithm that computes \gcd(a, b) for integers a and b in \mathcal{O}(\log(a)+\log(b)) time and \mathcal{O}(\log(a)+\log(b)) space. ]]></description>
-    <pubDate>Mon, 19 Jan 2026 00:38:32 GMT</pubDate>
-  </item><item>
-    <title>Euler&#039;s Sieve</title>
-    <link>https://dxing.blog/Algorithms/Euler's-Sieve</link>
-    <guid>https://dxing.blog/Algorithms/Euler's-Sieve</guid>
-    <description><![CDATA[ Euler’s Sieve is an algorithm that finds all the primes in 2,3,\dots,n in \mathcal{O}(n) time and \mathcal{O}(n) space. ]]></description>
-    <pubDate>Mon, 19 Jan 2026 00:38:32 GMT</pubDate>
   </item>
     </channel>
   </rss>

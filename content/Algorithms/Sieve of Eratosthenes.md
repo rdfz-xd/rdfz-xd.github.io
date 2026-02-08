@@ -40,7 +40,8 @@ return primes;
 > Let $p_i$ be the $i$-th smallest prime, then
 > $$
 > \begin{align}
-> \mathcal{O}\left(\sum_{i=1}^{\pi(n)}\frac{n}{p_i}\right)&=\mathcal{O}\left(n\sum_{i=2}^{\pi(n)}\frac{1}{i\log(i)}\right)\\
+> T(n)&\in\mathcal{O}\left(\sum_{i=1}^{\pi(n)}\frac{n}{p_i}\right)\\
+> &=\mathcal{O}\left(n\sum_{i=2}^{\pi(n)}\frac{1}{i\log(i)}\right)\\
 > &=\mathcal{O}\left(n\int_{2}^{\pi(n)}\frac{\mathrm{d}x}{x\log(x)}\right)\\
 > &=\mathcal{O}(n\log(\log(n)))
 > \end{align}

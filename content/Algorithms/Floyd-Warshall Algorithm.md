@@ -4,13 +4,6 @@ tags: [Computer Science, Computer Science/Graph Theory]
 
 The [[Floyd-Warshall Algorithm]] is an algorithm that computes the length of the shortest path between every pair of vertices in a graph $G=(V,E)$ with edge weights in $\mathcal{O}(|V|^3+|E|)$ time and $\mathcal{O}(|V|^2)$ space.
 
-> [!tip] Hint
->
-> If the edge weights are non-negative, this problem can also be solved by [[Dijkstra's Algorithm]] in
->
-> - $\mathcal{O}(|V|^3+|V||E|)$ time and $\mathcal{O}(|V|^2)$ space, or
-> - $\mathcal{O}(|V|(|V|+|E|)\log(|V|))$ and $\mathcal{O}(|V|^2)$ space.
-
 ### Algorithm 0
 
 Let $V=\{v_0,v_1,\dots,v_{|V|-1}\}$, $f(i,x,y)$ denote the length of the shortest path from $x$ to $y$ that only passes through vertices $v_0,v_1,\dots,v_{i-1}$. Then it is easy to prove that
