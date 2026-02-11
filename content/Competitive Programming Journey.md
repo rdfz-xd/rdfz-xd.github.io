@@ -17,3 +17,9 @@
 
 - **Gold**: 1000 points
 - **Platinum**: 154 points
+
+### [USACO 2026 Second Contest](https://usaco.org/index.php?page=season26contest2results)
+
+*Jan. 30th, 2026 - Feb. 2nd, 2026*
+
+- **Platinum**: 198 points
