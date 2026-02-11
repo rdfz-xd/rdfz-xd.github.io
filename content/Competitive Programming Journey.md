@@ -1,6 +1,6 @@
 ### MIT Informatics Tournament 2025-26 Winter Contest
 
-*Dec. 7th, 2025*
+*December 7, 2025*
 
 >  [!info] Team
 >
@@ -13,13 +13,13 @@
 
 ### [USACO 2026 First Contest](https://usaco.org/index.php?page=season26contest1results)
 
-*Jan. 9th, 2026 - Jan. 12th, 2026*
+*January 9, 2026 - January 12, 2026*
 
 - **Gold**: 1000 points
 - **Platinum**: 154 points
 
 ### [USACO 2026 Second Contest](https://usaco.org/index.php?page=season26contest2results)
 
-*Jan. 30th, 2026 - Feb. 2nd, 2026*
+*January 30, 2026 - February 2, 2026*
 
 - **Platinum**: 198 points

@@ -1,63 +1,63 @@
 *一花一世界，一葉一菩提。*
 
-### Aug. 25th, 2025 · New York, NY
+### August 25, 2025 · New York, New York
 
 ![photo](/images/20250825.JPG)
 
-### Aug. 26th, 2025 · Cambridge, MA
+### August 26, 2025 · Cambridge, Massachusetts
 
 ![photo](/images/20250826.JPG)
 
-### Sept. 6th, 2025 · Princeton, NJ
+### September 6, 2025 · Princeton, New Jersey
 
 ![photo](/images/20250906.JPG)
 
-### Sept. 8th, 2025 · Princeton, NJ
+### September 8, 2025 · Princeton, New Jersey
 
 ![photo](/images/20250908.JPG)
 
-### Sept. 23rd, 2025 · Princeton, NJ
+### September 23, 2025 · Princeton, New Jersey
 
 ![photo](/images/20250923.JPG)
 
-### Sept. 29th, 2025 · Princeton, NJ
+### September 29, 2025 · Princeton, New Jersey
 
 ![photo](/images/20250929.JPG)
 
-### Oct. 6th, 2025 · Princeton, NJ
+### October 6, 2025 · Princeton, New Jersey
 
 ![photo](/images/20251006.JPG)
 
-### Nov. 8th, 2025 · Cambridge, MA
+### November 8, 2025 · Cambridge, Massachusetts
 
 ![photo](/images/20251108_0.JPG)
 
 ![photo](/images/20251108_1.JPG)
 
-### Nov. 22nd, 2025 · Princeton, NJ
+### November 22, 2025 · Princeton, New Jersey
 
 ![photo](/images/20251122_0.JPG)
 
 ![photo](/images/20251122_1.JPG)
 
-### Dec. 24th, 2025 · San Francisco, CA
+### December 24, 2025 · San Francisco, California
 
 ![photo](/images/20251224.JPG)
 
-### Dec. 30th, 2025 · Felton, CA
+### December 30, 2025 · Felton, California
 
 ![photo](/images/20251230_0.JPG)
 
 ![photo](/images/20251230_1.JPG)
 
-### Jan. 17th, 2026 · Princeton, NJ
+### January 17, 2026 · Princeton, New Jersey
 
 ![photo](/images/20260117.JPG)
 
-### Jan. 25th, 2026 · Princeton, NJ
+### January 25, 2026 · Princeton, New Jersey
 
 ![photo](/images/20260125.JPG)
 
-### Feb. 11th, 2026 · Princeton, NJ
+### February 11, 2026 · Princeton, New Jersey
 
 ![photo](/images/20260211.JPG)
