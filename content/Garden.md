@@ -57,3 +57,7 @@
 ### Jan. 25th, 2026 · Princeton, NJ
 
 ![photo](/images/20260125.JPG)
+
+### Feb. 11th, 2026 · Princeton, NJ
+
+![photo](/images/20260211.JPG)
