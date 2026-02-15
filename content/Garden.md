@@ -1,7 +1,3 @@
-<span style="font-family: 'HanziPen SC'; font-size: 1.2em;">
-一花一世界，一葉一菩提。
-</span>
-
 ### August 25, 2025 · New York, New York
 
 ![photo](/images/20250825.JPG)
