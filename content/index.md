@@ -6,7 +6,7 @@ I am [<span style="font-family:Apple Chancery;">Dong Xing</span>](mailto:dong.xi
 
 I am interested in  [[tags/Computer Science]] and [[tags/Mathematics]], especially [[Competitive Programming Journey|competitive programming]].
 
-This blog is a [[Garden|garden]] of my thoughts. Hope you have a great time!
+This blog is a garden of my thoughts. Hope you have a great time!
 
 ![photo](/images/tourist.jpg)
 

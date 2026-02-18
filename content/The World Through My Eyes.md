@@ -1,6 +1,6 @@
 ![[/images/Crossroad.m4a]]*DJ OKAWARI - Crossroad*
 
-### August 25, 2025 · New York, New York
+### August 25, 2025 · Manhattan, New York
 
 ![photo](/images/20250825.JPG)
 
