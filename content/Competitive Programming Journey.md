@@ -1,4 +1,4 @@
-### MIT Informatics Tournament 2025-26 Winter Contest
+### [MIT Informatics Tournament 2025-26 Winter Contest](https://mitit.org/Contest/Archive/Results202526Winter)
 
 *December 7, 2025*
 
