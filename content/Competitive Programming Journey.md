@@ -23,3 +23,9 @@
 *January 30, 2026 - February 2, 2026*
 
 - **Platinum**: 198 points
+
+### [USACO 2026 Third Contest](https://usaco.org/index.php?page=season26contest3results)
+
+*February 20, 2026 - February 23, 2026*
+
+- **Platinum**: 333 points
