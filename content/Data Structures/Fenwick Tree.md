@@ -10,7 +10,7 @@ which costs a space of $\mathcal{O}(n)$.
 
 ## Add
 
-[[Fenwick Tree#Add]] is an algorithm that updates $a_i$ to $a_i+x$ in $\mathcal{O}(\log(n))$ time and $\mathcal{O}(1)$ space.
+[[Fenwick Tree#Add]] updates $a_i$ to $a_i+x$ in $\mathcal{O}(\log(n))$ time and $\mathcal{O}(1)$ space.
 
 > [!info] Lemma
 > 
@@ -57,7 +57,7 @@ for (int j = i + 1; j <= n; j += j & -j) {
 
 ## Sum
 
-[[Fenwick Tree#Sum]] is an algorithm that computes $\sum_{j=0}^{i-1}a_j$ in $\mathcal{O}(\log(n))$ time and $\mathcal{O}(1)$ space.
+[[Fenwick Tree#Sum]] computes $\sum_{j=0}^{i-1}a_j$ in $\mathcal{O}(\log(n))$ time and $\mathcal{O}(1)$ space.
 
 > [!info] Lemma
 > $$
