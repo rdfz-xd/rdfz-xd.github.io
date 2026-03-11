@@ -62,7 +62,7 @@ return dist;
 
 ### Algorithm 1
 
-Based on [[Dijkstra's Algorithm#Algorithm 0]], using a **binary heap** to maintain the set $S$ yields an algorithm that solves the problem in $\mathcal{O}((|V|+|E|)\log(|V|))$ time and $\mathcal{O}(|V|)$ space.
+Based on [[Dijkstra's Algorithm#Algorithm 0]], using a [[Binary Heap]] to maintain the set $S$ yields an algorithm that solves the problem in $\mathcal{O}((|V|+|E|)\log(|V|))$ time and $\mathcal{O}(|V|)$ space.
 
 ~~~c++
 std::vector dist(n, inf);

@@ -58,7 +58,7 @@ return sum;
 
 ### Algorithm 1
 
-Based on [[Prim's Algorithm#Algorithm 0]], using a **binary heap** to maintain the structure of the graph $G$ yields an algorithm that solves the problem in $\mathcal{O}(|E|\log(|V|))$ time and $\mathcal{O}(|V|)$ space.
+Based on [[Prim's Algorithm#Algorithm 0]], using a [[Binary Heap]] to maintain the structure of the graph $G$ yields an algorithm that solves the problem in $\mathcal{O}(|E|\log(|V|))$ time and $\mathcal{O}(|V|)$ space.
 
 ~~~c++
 std::priority_queue<std::pair<int, int>, std::vector<std::pair<int, int>>, std::greater<>> q;

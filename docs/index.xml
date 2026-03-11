@@ -6,6 +6,18 @@
       <description>Last 10 notes on Dong Xing&#039;s Blog</description>
       <generator>Quartz -- quartz.jzhao.xyz</generator>
       <item>
+    <title>Binary Heap</title>
+    <link>https://dxing.blog/Data-Structures/Binary-Heap</link>
+    <guid>https://dxing.blog/Data-Structures/Binary-Heap</guid>
+    <description><![CDATA[ A Binary Heap maintains a multiset S of numbers by maintaining a complete binary tree where each vertex contains an element in S, and the element in each vertex is greater than or equal to the element in its parent, which costs a space of \mathcal{O}(|S|). ]]></description>
+    <pubDate>Wed, 11 Mar 2026 02:27:16 GMT</pubDate>
+  </item><item>
+    <title>Competitive Programming Journey</title>
+    <link>https://dxing.blog/Competitive-Programming-Journey</link>
+    <guid>https://dxing.blog/Competitive-Programming-Journey</guid>
+    <description><![CDATA[ MIT Informatics Tournament 2025-26 Winter Contest December 7, 2025 Team Even If (Dong Xing) Advanced Individual Round (High School Division): 2nd place Advanced Team Round (High School Division): 3rd place USACO 2026 First Contest January 9, 2026 - January 12, 2026 Gold: 1000 points Platinum: 154 po... ]]></description>
+    <pubDate>Wed, 04 Mar 2026 20:24:00 GMT</pubDate>
+  </item><item>
     <title>Fenwick Tree</title>
     <link>https://dxing.blog/Data-Structures/Fenwick-Tree</link>
     <guid>https://dxing.blog/Data-Structures/Fenwick-Tree</guid>
@@ -30,12 +42,6 @@
     <description><![CDATA[ A Trie maintains a set S of strings in \Sigma^* by maintaining a deterministic finite automaton that accepts and only accepts strings in S. ]]></description>
     <pubDate>Tue, 03 Mar 2026 00:03:11 GMT</pubDate>
   </item><item>
-    <title>Competitive Programming Journey</title>
-    <link>https://dxing.blog/Competitive-Programming-Journey</link>
-    <guid>https://dxing.blog/Competitive-Programming-Journey</guid>
-    <description><![CDATA[ MIT Informatics Tournament 2025-26 Winter Contest December 7, 2025 Team Even If (Dong Xing) Advanced Individual Round (High School Division): 2nd place Advanced Team Round (High School Division): 3rd place USACO 2026 First Contest January 9, 2026 - January 12, 2026 Gold: 1000 points Platinum: 154 po... ]]></description>
-    <pubDate>Mon, 02 Mar 2026 21:36:26 GMT</pubDate>
-  </item><item>
     <title>The World Through My Eyes</title>
     <link>https://dxing.blog/The-World-Through-My-Eyes</link>
     <guid>https://dxing.blog/The-World-Through-My-Eyes</guid>
@@ -59,12 +65,6 @@
     <guid>https://dxing.blog/Algorithms/Du's-Sieves/Du's-Second-Multiplication-Sieve</guid>
     <description><![CDATA[ Let S_f(n)=\sum_{k=1}^nf(k). ]]></description>
     <pubDate>Sun, 08 Feb 2026 18:54:40 GMT</pubDate>
-  </item><item>
-    <title>Du&#039;s First Division Sieve</title>
-    <link>https://dxing.blog/Algorithms/Du's-Sieves/Du's-First-Division-Sieve</link>
-    <guid>https://dxing.blog/Algorithms/Du's-Sieves/Du's-First-Division-Sieve</guid>
-    <description><![CDATA[ Let S_f(n)=\sum_{k=1}^nf(k). ]]></description>
-    <pubDate>Sun, 08 Feb 2026 18:32:25 GMT</pubDate>
   </item>
     </channel>
   </rss>
