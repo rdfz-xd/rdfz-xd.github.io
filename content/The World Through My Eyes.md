@@ -70,4 +70,4 @@
 
 ### March 19, 2026 · Princeton, New Jersey
 
-![photo](/images/20260319.JPG)
+![photo](/images/20260319.jpg)
