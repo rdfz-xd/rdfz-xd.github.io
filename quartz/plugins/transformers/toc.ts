@@ -40,11 +40,24 @@ export const TableOfContents: QuartzTransformerPlugin<Partial<Options>> = (userO
               let highestDepth: number = opts.maxDepth
               visit(tree, "heading", (node) => {
                 if (node.depth <= opts.maxDepth) {
-                  const text = toString(node)
+                  let text = toString(node)
+                  let tocText = text
+
+                  const match = text.match(/(.*)\[toc:\s*(.*?)\s*\]\s*$/)
+                  if (match) {
+                    text = match[1].trim()
+                    tocText = match[2].trim()
+
+                    const lastChild = node.children[node.children.length - 1]
+                    if (lastChild && lastChild.type === "text") {
+                      lastChild.value = lastChild.value.replace(/\[toc:\s*.*?\s*\]\s*$/, "").trim()
+                    }
+                  }
+
                   highestDepth = Math.min(highestDepth, node.depth)
                   toc.push({
                     depth: node.depth,
-                    text,
+                    text: tocText,
                     slug: slugAnchor.slug(text),
                   })
                 }
