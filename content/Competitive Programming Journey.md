@@ -1,6 +1,6 @@
-### [MIT Informatics Tournament 2025-26 Winter Contest](https://mitit.org/Contest/Archive/Results202526Winter)
+### [MIT Informatics Tournament 2025-26 Winter Contest](https://mitit.org/Contest/Archive/Results202526Winter) [toc: M(IT)^2 2025-26 Winter Contest]
 
-*December 7, 2025*
+*Dec 7, 2025*
 
 >  [!info] Team
 >
@@ -11,21 +11,21 @@
 - **Advanced Individual Round (High School Division)**: 2nd place
 - **Advanced Team Round (High School Division)**: 3rd place
 
-### [USACO 2026 First Contest](https://usaco.org/index.php?page=season26contest1results)
+### [USA Computing Olympiad 2026 First Contest](https://usaco.org/index.php?page=season26contest1results) [toc: USACO 2026 First Contest]
 
-*January 9, 2026 - January 12, 2026*
+*Jan 9, 2026 - Jan 12, 2026*
 
 - **Gold**: 1000 points
 - **Platinum**: 154 points
 
-### [USACO 2026 Second Contest](https://usaco.org/index.php?page=season26contest2results)
+### [USA Computing Olympiad 2026 Second Contest](https://usaco.org/index.php?page=season26contest2results) [toc: USACO 2026 Second Contest]
 
-*January 30, 2026 - February 2, 2026*
+*Jan 30, 2026 - Feb 2, 2026*
 
 - **Platinum**: 198 points
 
-### [USACO 2026 Third Contest](https://usaco.org/index.php?page=season26contest3results)
+### [USA Computing Olympiad 2026 Third Contest ](https://usaco.org/index.php?page=season26contest3results)[toc: USACO 2026 Third Contest]
 
-*February 20, 2026 - February 23, 2026*
+*Feb 20, 2026 - Feb 23, 2026*
 
 - **Platinum**: 333 points
