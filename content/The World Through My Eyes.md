@@ -74,17 +74,16 @@
 
 ### March 29, 2026 · Princeton, New Jersey [toc: Mar 29, 2026 · Princeton, NJ]
 
-![photo](/images/20260329_0.jpg)
+![photo](/images/20260329_0.JPG)
 
-![photo](/images/20260329_1.jpg)
+![photo](/images/20260329_1.JPG)
 
-![photo](/images/20260329_2.jpg)
+![photo](/images/20260329_2.JPG)
 
-![photo](/images/20260329_3.jpg)
+![photo](/images/20260329_3.JPG)
 
-![photo](/images/20260329_4.jpg)
+![photo](/images/20260329_4.JPG)
 
-![photo](/images/20260329_5.jpg)
+![photo](/images/20260329_5.JPG)
 
-![photo](/images/20260329_6.jpg)
-
+![photo](/images/20260329_6.JPG)
