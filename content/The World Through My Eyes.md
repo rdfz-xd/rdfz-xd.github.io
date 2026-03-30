@@ -1,4 +1,4 @@
-![[/images/Crossroad.m4a]]*DJ OKAWARI - Crossroad*
+![[/images/The-End-of-the-World.m4a]]*Skeeter Davis - The End of the World*
 
 ### August 25, 2025 · New York, New York [toc: Aug 25, 2025 · New York, NY]
 
