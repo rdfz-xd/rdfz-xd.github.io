@@ -71,3 +71,20 @@
 ### March 19, 2026 · Princeton, New Jersey [toc: Mar 19, 2026 · Princeton, NJ]
 
 ![photo](/images/20260319.jpg)
+
+### March 29, 2026 · Princeton, New Jersey [toc: Mar 29, 2026 · Princeton, NJ]
+
+![photo](/images/20260329_0.jpg)
+
+![photo](/images/20260329_1.jpg)
+
+![photo](/images/20260329_2.jpg)
+
+![photo](/images/20260329_3.jpg)
+
+![photo](/images/20260329_4.jpg)
+
+![photo](/images/20260329_5.jpg)
+
+![photo](/images/20260329_6.jpg)
+
