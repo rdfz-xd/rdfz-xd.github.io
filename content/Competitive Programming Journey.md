@@ -24,7 +24,7 @@
 
 - **Platinum**: 198 points
 
-### [USA Computing Olympiad 2026 Third Contest ](https://usaco.org/index.php?page=season26contest3results)[toc: USACO 2026 Third Contest]
+### [USA Computing Olympiad 2026 Third Contest](https://usaco.org/index.php?page=season26contest3results) [toc: USACO 2026 Third Contest]
 
 *Feb 20, 2026 - Feb 23, 2026*
 
