@@ -15,10 +15,8 @@ This algorithm solves the problem in $\mathcal{O}(\log(|S|))$ time and $\mathcal
 
 ~~~c++
 a.push_back(x);
-for (int i = a.size() - 1; i > 1; i >>= 1) {
-	if (a[i >> 1] > a[i]) {
-		std::swap(a[i >> 1], a[i]);
-	}
+for (int i = a.size() - 1; i > 1 && a[i >> 1] > a[i]; i >>= 1) {
+	std::swap(a[i >> 1], a[i]);
 }
 ~~~
 
@@ -48,11 +46,12 @@ This algorithm solves the problem in $\mathcal{O}(\log(|S|))$ time and $\mathcal
 std::swap(a[1], a.back());
 a.pop_back();
 for (int i = 1, j; i << 1 < int(a.size()); i = j) {
-	j = (i << 1 | 1) >= int(a.size()) || a[i << 1] < a[i << 1 | 1] ? i << 1 : i << 1 | 1;
-	if (a[i] <= a[j]) {
+	j = i << 1 | ((i << 1 | 1) < int(a.size()) && a[i << 1 | 1] < a[i << 1]);
+	if (a[i] > a[j]) {
+		std::swap(a[i], a[j]);
+	} else {
 		break;
 	}
-	std::swap(a[i], a[j]);
 }
 ~~~
 
