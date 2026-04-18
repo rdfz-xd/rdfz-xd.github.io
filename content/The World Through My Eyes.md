@@ -87,3 +87,7 @@
 ![photo](/images/20260329_5.JPG)
 
 ![photo](/images/20260329_6.JPG)
+
+### April 18, 2026 · Princeton, New Jersey [toc: Apr 18, 2026 · Princeton, NJ]
+
+![photo](/images/20260418.JPG)
