@@ -29,3 +29,9 @@
 *Feb 20, 2026 - Feb 23, 2026*
 
 - **Platinum**: 333 points
+
+### [USA Computing Olympiad 2026 US Open Contest](https://usaco.org/index.php?page=season26open) [toc: USACO 2026 US Open Contest]
+
+*Mar 28, 2026*
+
+- 248 points
