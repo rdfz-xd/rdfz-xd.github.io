@@ -11,6 +11,12 @@
 - **Advanced Individual Round (High School Division)**: 2nd place
 - **Advanced Team Round (High School Division)**: 3rd place
 
+
+
+---
+
+
+
 ### [USA Computing Olympiad 2026 First Contest](https://usaco.org/index.php?page=season26contest1results) [toc: USACO 2026 First Contest]
 
 *Jan 9, 2026 - Jan 12, 2026*
@@ -18,17 +24,35 @@
 - **Gold**: 1000 points
 - **Platinum**: 154 points
 
+
+
+---
+
+
+
 ### [USA Computing Olympiad 2026 Second Contest](https://usaco.org/index.php?page=season26contest2results) [toc: USACO 2026 Second Contest]
 
 *Jan 30, 2026 - Feb 2, 2026*
 
 - **Platinum**: 198 points
 
+
+
+---
+
+
+
 ### [USA Computing Olympiad 2026 Third Contest](https://usaco.org/index.php?page=season26contest3results) [toc: USACO 2026 Third Contest]
 
 *Feb 20, 2026 - Feb 23, 2026*
 
 - **Platinum**: 333 points
+
+
+
+---
+
+
 
 ### [USA Computing Olympiad 2026 US Open](https://usaco.org/index.php?page=season26open) [toc: USACO 2026 US Open]
 
