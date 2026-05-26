@@ -91,3 +91,7 @@
 ### April 18, 2026 · Princeton, New Jersey [toc: Apr 18, 2026 · Princeton, NJ]
 
 ![photo](/images/20260418.JPG)
+
+### May 26, 2026 · Clemson, South Carolina [toc: May 26, 2026 · Clemson, SC]
+
+![photo](/images/20260526.JPG)
