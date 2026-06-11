@@ -54,7 +54,7 @@
 
 
 
-### [USA Computing Olympiad 2026 US Open](https://usaco.org/index.php?page=season26open) [toc: USACO 2026 US Open]
+### [USA Computing Olympiad 2026 US Open Contest](https://usaco.org/index.php?page=season26open) [toc: USACO 2026 US Open Contest]
 
 *Mar 28, 2026*
 
