@@ -8,9 +8,9 @@ f(i,j)=\max_{k=j}^{j+2^i-1}a_k
 $$
 which costs a space of $\mathcal{O}(n\log(n))$.
 
-## Initialize
+## Build
 
-[[Sparse Table#Initialize]] initializes the [[Sparse Table]] with $a_0,a_1,\dots,a_{n-1}$ in $\mathcal{O}(n\log(n))$ time and $\mathcal{O}(1)$ space.
+[[Sparse Table#Build]] builds a [[Sparse Table]] for $a_0,a_1,\dots,a_{n-1}$ in $\mathcal{O}(n\log(n))$ time and $\mathcal{O}(1)$ space.
 
 > [!info] Lemma
 > $$

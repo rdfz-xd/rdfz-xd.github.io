@@ -33,17 +33,14 @@ it follows that if $x=y'\land y=x'-\lfloor\frac{a}{b}\rfloor y'$, $ax+by=\gcd(a,
 This algorithm solves the problem in $\mathcal{O}(\log(a)+\log(b))$ time and $\mathcal{O}(\log(a)+\log(b))$ space.
 
 ~~~c++
-int x = 1, y = 0;
-y_combinator([&](auto &&self, int a, int b) -> void {
+return y_combinator([&](auto &&self, int a, int b) -> std::pair<int, int> {
 	if (!b) {
-		return;
+		return {1, 0};
 	}
-
-	self(b, a % b);
-	x = std::exchange(y, x - a / b * y);
+ 
+	auto [x, y] = self(b, a % b);
+	return {y, x - a / b * y};
 })(a, b);
-
-return {x, y};
 ~~~
 
 > [!note]- Proof
