@@ -2,7 +2,7 @@
 tags: [Computer Science, Computer Science/String Theory]
 ---
 
-The [[Trie]] is a data structure that maintains a set $S$ of strings in $\Sigma^*$ by maintaining a deterministic finite automaton that accepts and only accepts strings in $S$. Specifically, let $P$ be the set of all the prefixes of all the strings in $S$, $\delta$ be a function in $(P\cup\{q_\perp\})\times\Sigma\to P\cup\{q_\perp\}$ satisfying
+[[Trie]] is a data structure that maintains a set $S$ of strings in $\Sigma^*$ by maintaining a deterministic finite automaton that accepts and only accepts strings in $S$. Specifically, let $P$ be the set of all the prefixes of all the strings in $S$, $\delta$ be a function in $(P\cup\{q_\perp\})\times\Sigma\to P\cup\{q_\perp\}$ satisfying
 $$
 \forall s\in P\cup\{q_\perp\},\forall\sigma\in\Sigma,\delta(s,\sigma)=\begin{cases}
 s\sigma,&s\sigma\in P\\
