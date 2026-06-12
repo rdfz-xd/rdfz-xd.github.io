@@ -5,15 +5,15 @@ tags: [Computer Science, Computer Science/Graph Theory]
 [[Prim's Algorithm]] is an algorithm that computes the weight of the minimum spanning tree of a connected undirected graph $G=(V,E)$ with edge weights in
 
 - $\mathcal{O}(|V|^2+|E|)$ time and $\mathcal{O}(|V|))$ space, or
-- $\mathcal{O}(|E|\log(|V|))$ time and $\mathcal{O}(|V|)$ space.
+- $\mathcal{O}(|E|\log|V|)$ time and $\mathcal{O}(|V|)$ space.
 
 > [!tip] Hint
 >
-> This problem can also be solved by [[Kruskal's Algorithm]] in $\mathcal{O}(|E|\log(|E|))$ time and $\mathcal{O}(|E|)$ space.
+> This problem can also be solved by [[Kruskal's Algorithm]] in $\mathcal{O}(|E|\log|E|)$ time and $\mathcal{O}(|E|)$ space.
 
 > [!tip] Hint
 >
-> This problem can also be solved by [[Boruvka's Algorithm]] in $\mathcal{O}(|E|\log(|V|))$ time and $\mathcal{O}(|V|)$ space.
+> This problem can also be solved by [[Boruvka's Algorithm]] in $\mathcal{O}(|E|\log|V|)$ time and $\mathcal{O}(|V|)$ space.
 
 ### Algorithm 0
 
@@ -58,7 +58,7 @@ return sum;
 
 ### Algorithm 1
 
-Based on [[Prim's Algorithm#Algorithm 0]], using a [[Binary Heap]] to maintain the structure of the graph $G$ yields an algorithm that solves the problem in $\mathcal{O}(|E|\log(|V|))$ time and $\mathcal{O}(|V|)$ space.
+Based on [[Prim's Algorithm#Algorithm 0]], using a [[Binary Heap]] to maintain the structure of the graph $G$ yields an algorithm that solves the problem in $\mathcal{O}(|E|\log|V|)$ time and $\mathcal{O}(|V|)$ space.
 
 ~~~c++
 std::priority_queue<std::pair<int, int>, std::vector<std::pair<int, int>>, std::greater<>> q;

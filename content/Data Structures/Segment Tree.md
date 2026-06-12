@@ -2,7 +2,7 @@
 tags: [Computer Science]
 ---
 
-A [[Segment Tree]] maintains an array of $n=2^k$ numbers $a_0,a_1,\dots,a_{n-1}$ by maintaining $s(0,2^k),s(0,2^{k-1}),s(2^{k-1},2^k),\dots,s(0,1),s(1,2),\dots,s(2^k-1,2^k)$, where
+The [[Segment Tree]] is a data structure that maintains an array of $n=2^k$ numbers $a_0,a_1,\dots,a_{n-1}$ by maintaining $s(0,2^k),s(0,2^{k-1}),s(2^{k-1},2^k),\dots,s(0,1),s(1,2),\dots,s(2^k-1,2^k)$, where
 $$
 s(l,r)=\sum_{i=l}^{r-1}a_i
 $$
@@ -19,9 +19,11 @@ which costs a space of $\mathcal{O}(n)$.
 
 ## Modify
 
-[[Segment Tree#Modify]] updates $a_i$ to $x$ in $\mathcal{O}(\log(n))$ time and $\mathcal{O}(\log(n))$ space.
+[[Segment Tree#Modify]] updates $a_i$ to $x$ in $\mathcal{O}(\log n)$ time and $\mathcal{O}(\log n)$ space.
 
-Updating all the maintained segments that contain the given element yields an algorithm that solves the problem in $\mathcal{O}(\log(n))$ time and $\mathcal{O}(\log(n))$ space.
+### Algorithm
+
+Updating all the maintained segments containing the given element yields an algorithm that solves the problem in $\mathcal{O}(\log n)$ time and $\mathcal{O}(\log n)$ space.
 
 > [!note]- Proof
 >
@@ -46,9 +48,11 @@ y_combinator([&](auto &&self, int o, int s, int t) -> void {
 
 ## Range Sum Query
 
-[[Segment Tree#Range Sum Query]] computes $\sum_{i=l}^{r-1}a_i$ in $\mathcal{O}(\log(n))$ time and $\mathcal{O}(\log(n))$ space.
+[[Segment Tree#Range Sum Query]] computes $\sum_{i=l}^{r-1}a_i$ in $\mathcal{O}(\log n)$ time and $\mathcal{O}(\log n)$ space.
 
-Decomposing the query interval into maintained segments yields an algorithm that solves the problem in $\mathcal{O}(\log(n))$ time and $\mathcal{O}(\log(n))$ space.
+### Algorithm
+
+Decomposing the query interval into maintained segments yields an algorithm that solves the problem in $\mathcal{O}(\log n)$ time and $\mathcal{O}(\log n)$ space.
 
 > [!note]- Proof
 >

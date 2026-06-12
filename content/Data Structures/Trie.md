@@ -2,7 +2,7 @@
 tags: [Computer Science, Computer Science/String Theory]
 ---
 
-A [[Trie]] maintains a set $S$ of strings in $\Sigma^*$ by maintaining a deterministic finite automaton that accepts and only accepts strings in $S$. Specifically, let $P$ be the set of all the prefixes of all the strings in $S$, $\delta$ be a function in $(P\cup\{q_\perp\})\times\Sigma\to P\cup\{q_\perp\}$ satisfying
+The [[Trie]] is a data structure that maintains a set $S$ of strings in $\Sigma^*$ by maintaining a deterministic finite automaton that accepts and only accepts strings in $S$. Specifically, let $P$ be the set of all the prefixes of all the strings in $S$, $\delta$ be a function in $(P\cup\{q_\perp\})\times\Sigma\to P\cup\{q_\perp\}$ satisfying
 $$
 \forall s\in P\cup\{q_\perp\},\forall\sigma\in\Sigma,\delta(s,\sigma)=\begin{cases}
 s\sigma,&s\sigma\in P\\
@@ -14,6 +14,8 @@ Then it is easy to prove that $M=(P\cup\{q_\perp\},\Sigma,\delta,\varepsilon,S)$
 ## Add
 
 [[Trie#Add]] updates $S$ to $S\cup\{s\}$ in $\mathcal{O}(|s|)$ time and $\mathcal{O}(1)$ space.
+
+### Algorithm
 
 Updating the values in $\delta$ that are changed by $s$ yields an algorithm that solves the problem in $\mathcal{O}(|s|)$ time and $\mathcal{O}(1)$ space.
 
@@ -33,6 +35,8 @@ f[o] = true;
 ## Find
 
 [[Trie#Find]] checks if $s\in S$ in $\mathcal{O}(|s|)$ time and $\mathcal{O}(1)$ space.
+
+### Algorithm
 
 Running $s$ on $M$ yields an algorithm that solves the problem in $\mathcal{O}(|s|)$ time and $\mathcal{O}(1)$ space.
 

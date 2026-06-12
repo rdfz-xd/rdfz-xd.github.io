@@ -2,7 +2,7 @@
 tags: [Computer Science]
 ---
 
-A [[Fenwick Tree]] maintains an array of $n$ integers $a_0,a_1,\dots,a_{n-1}$ by maintaining
+The [[Fenwick Tree]] is a data structure that maintains an array of $n$ integers $a_0,a_1,\dots,a_{n-1}$ by maintaining
 $$
 s(i)=\sum_{j=i-\operatorname{lsb}(i)}^{i-1}a_i
 $$
@@ -10,7 +10,9 @@ which costs a space of $\mathcal{O}(n)$.
 
 ## Add
 
-[[Fenwick Tree#Add]] updates $a_i$ to $a_i+x$ in $\mathcal{O}(\log(n))$ time and $\mathcal{O}(1)$ space.
+[[Fenwick Tree#Add]] updates $a_i$ to $a_i+x$ in $\mathcal{O}(\log n)$ time and $\mathcal{O}(1)$ space.
+
+### Algorithm
 
 > [!info] Lemma
 > 
@@ -47,7 +49,7 @@ which costs a space of $\mathcal{O}(n)$.
 > > \end{align}
 > > $$
 
-Applying the lemmas yields an algorithm that solves the problem in $\mathcal{O}(\log(n))$ time and $\mathcal{O}(1)$ space.
+Applying the lemmas yields an algorithm that solves the problem in $\mathcal{O}(\log n)$ time and $\mathcal{O}(1)$ space.
 
 ~~~c++
 for (int j = i + 1; j <= n; j += j & -j) {
@@ -57,14 +59,16 @@ for (int j = i + 1; j <= n; j += j & -j) {
 
 ## Sum
 
-[[Fenwick Tree#Sum]] computes $\sum_{j=0}^{i-1}a_j$ in $\mathcal{O}(\log(n))$ time and $\mathcal{O}(1)$ space.
+[[Fenwick Tree#Sum]] computes $\sum_{j=0}^{i-1}a_j$ in $\mathcal{O}(\log n)$ time and $\mathcal{O}(1)$ space.
+
+### Algorithm
 
 > [!info] Lemma
 > $$
 > \forall i\in\{1,2,\dots,n\},\sum_{j=0}^{i-1}a_j=s(i)+\sum_{j=0}^{i-\operatorname{lsb}(i)-1}a_j
 > $$
 
-Applying the lemma yields an algorithm that solves the problem in $\mathcal{O}(\log(n))$ time and $\mathcal{O}(1)$ space.
+Applying the lemma yields an algorithm that solves the problem in $\mathcal{O}(\log n)$ time and $\mathcal{O}(1)$ space.
 
 ~~~c++
 int res = 0;

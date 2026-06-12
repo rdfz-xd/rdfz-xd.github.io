@@ -6,7 +6,7 @@ tags: [Computer Science]
 
 > [!tip] Hint
 >
-> This problem can also be solved by the [[Sieve of Eratosthenes]] in $\mathcal{O}(n\log(\log(n)))$ time and $\mathcal{O}(n)$ space.
+> This problem can also be solved by the [[Sieve of Eratosthenes]] in $\mathcal{O}(n\log\log n)$ time and $\mathcal{O}(n)$ space.
 
 ### Algorithm
 

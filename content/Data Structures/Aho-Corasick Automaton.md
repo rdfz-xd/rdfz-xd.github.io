@@ -2,7 +2,7 @@
 tags: [Computer Science, Computer Science/String Theory]
 ---
 
-An [[Aho-Corasick Automaton]] maintains a set $S$ of strings in $\Sigma^*$ by maintaining a deterministic finite automaton that accepts and only accepts strings containing a string from $S$ as a suffix. Specifically, let $P$ be the set of all the prefixes of all the strings in $S$, and let
+The [[Aho-Corasick Automaton]] is a data structure that maintains a set $S$ of strings in $\Sigma^*$ by maintaining a deterministic finite automaton that accepts and only accepts strings containing a string from $S$ as a suffix. Specifically, let $P$ be the set of all the prefixes of all the strings in $S$, and let
 $$
 E(s)=\{t:t\in P\land t=s_{|s|-|t|}s_{|s|-|t|+1}\dots s_{|s|-1}\}
 $$
@@ -21,6 +21,8 @@ Let $F=\{s:s\in P\land\exist t\in S,t=s_{|s|-|t|}s_{|s|-|t|+1}\dots s_{|s|-1}\}$
 ## Build
 
 [[Aho-Corasick Automaton#Build]] builds an [[Aho-Corasick Automaton]] for $S$ in $\mathcal{O}(|\Sigma|\sum_{s\in S}|s|)$ time and $\mathcal{O}(\sum_{s\in S}|s|)$ space.
+
+### Algorithm
 
 > [!info] Lemma
 >
@@ -83,6 +85,8 @@ while (!q.empty()) {
 ## Find
 
 [[Find]] checks if $\exist t\in S,t=s_{|s|-|t|}s_{|s|-|t|+1}\dots s_{|s|-1}$ in $\mathcal{O}(|s|)$ time and $\mathcal{O}(1)$ space.
+
+### Algorithm
 
 Running $s$ on $M$ yields an algorithm that solves the problem in $\mathcal{O}(|s|)$ time and $\mathcal{O}(1)$ space.
 
