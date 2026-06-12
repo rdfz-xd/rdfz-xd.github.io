@@ -6,6 +6,12 @@
       <description>Last 10 notes on Dong Xing&#039;s Blog</description>
       <generator>Quartz -- quartz.jzhao.xyz</generator>
       <item>
+    <title>Trie</title>
+    <link>https://dxing.blog/Data-Structures/Trie</link>
+    <guid>https://dxing.blog/Data-Structures/Trie</guid>
+    <description><![CDATA[ Trie is a data structure that maintains a set S of strings in \Sigma^* by maintaining a deterministic finite automaton that accepts and only accepts strings in S. ]]></description>
+    <pubDate>Fri, 12 Jun 2026 03:57:13 GMT</pubDate>
+  </item><item>
     <title>Boruvka&#039;s Algorithm</title>
     <link>https://dxing.blog/Algorithms/Boruvka's-Algorithm</link>
     <guid>https://dxing.blog/Algorithms/Boruvka's-Algorithm</guid>
@@ -58,12 +64,6 @@
     <link>https://dxing.blog/Data-Structures/Aho-Corasick-Automaton</link>
     <guid>https://dxing.blog/Data-Structures/Aho-Corasick-Automaton</guid>
     <description><![CDATA[ The Aho-Corasick Automaton is a data structure that maintains a set S of strings in \Sigma^* by maintaining a deterministic finite automaton that accepts and only accepts strings containing a string from S as a suffix. ]]></description>
-    <pubDate>Fri, 12 Jun 2026 03:05:31 GMT</pubDate>
-  </item><item>
-    <title>Binary Heap</title>
-    <link>https://dxing.blog/Data-Structures/Binary-Heap</link>
-    <guid>https://dxing.blog/Data-Structures/Binary-Heap</guid>
-    <description><![CDATA[ The Binary Heap is a data structure that maintains a multiset S of numbers by maintaining a complete binary tree where each vertex contains an element in S, and the element in each vertex is greater than or equal to the element in its parent, which costs a space of \mathcal{O}(|S|). ]]></description>
     <pubDate>Fri, 12 Jun 2026 03:05:31 GMT</pubDate>
   </item>
     </channel>
