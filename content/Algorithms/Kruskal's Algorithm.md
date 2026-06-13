@@ -9,7 +9,7 @@ tags: [Computer Science, Computer Science/Graph Theory]
 > This problem can also be solved by [[Prim's Algorithm]] in
 >
 > - $\mathcal{O}(|V|^2+|E|)$ time and $\mathcal{O}(|V|)$ space, or
-> - $\mathcal{O}(|E|\log|V|)$ time and $\mathcal{O}(|V|)$ space.
+> - $\mathcal{O}(|E|\log|E|)$ time and $\mathcal{O}(|E|)$ space.
 
 > [!tip] Hint
 >
@@ -35,12 +35,12 @@ Repeatedly select an edge $e$ in $\arg\min_{e\in E}w(e)$ and update $G$ to $G/e$
 Applying **Introsort** to sort the edges and using a **Disjoint Set Union** to maintain the structure of the graph $G$ yield an algorithm that solves the problem in $\mathcal{O}(|E|\log|E|)$ time and $\mathcal{O}(|E|)$ space.
 
 ~~~c++
-std::ranges::sort(e);
+std::ranges::sort(E);
 
 DSU dsu(n);
 int sum = 0;
 
-for (auto [w, u, v] : e) {
+for (auto [w, u, v] : E) {
 	if (dsu.merge(u, v)) {
 		sum += w;
 	}

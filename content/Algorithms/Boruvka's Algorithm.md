@@ -13,7 +13,7 @@ tags: [Computer Science, Computer Science/Graph Theory]
 > This problem can also be solved by [[Prim's Algorithm]] in
 >
 > - $\mathcal{O}(|V|^2+|E|)$ time and $\mathcal{O}(|V|)$ space, or
-> - $\mathcal{O}(|E|\log|V|)$ time and $\mathcal{O}(|V|)$ space.
+> - $\mathcal{O}(|E|\log|E|)$ time and $\mathcal{O}(|E|)$ space.
 
 ### Algorithm
 
