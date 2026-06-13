@@ -10,25 +10,43 @@
     <link>https://dxing.blog/Algorithms/Bellman-Ford-Algorithm</link>
     <guid>https://dxing.blog/Algorithms/Bellman-Ford-Algorithm</guid>
     <description><![CDATA[ The Bellman-Ford Algorithm is an algorithm that computes the length of the shortest path from a vertex s to every vertex in a directed graph G=(V,E) with edge weights and no negative cycles in \mathcal{O}(|V||E|) time and \mathcal{O}(|V|) space. ]]></description>
-    <pubDate>Sat, 13 Jun 2026 07:48:25 GMT</pubDate>
+    <pubDate>Sat, 13 Jun 2026 07:55:33 GMT</pubDate>
+  </item><item>
+    <title>Boruvka&#039;s Algorithm</title>
+    <link>https://dxing.blog/Algorithms/Boruvka's-Algorithm</link>
+    <guid>https://dxing.blog/Algorithms/Boruvka's-Algorithm</guid>
+    <description><![CDATA[ Boruvka’s Algorithm is an algorithm that computes the weight of the minimum spanning tree of a connected undirected graph G=(V,E) with edge weights in \mathcal{O}(|E|\log|V|) time and \mathcal{O}(|V|) space. ]]></description>
+    <pubDate>Sat, 13 Jun 2026 07:55:33 GMT</pubDate>
+  </item><item>
+    <title>Dijkstra&#039;s Algorithm</title>
+    <link>https://dxing.blog/Algorithms/Dijkstra's-Algorithm</link>
+    <guid>https://dxing.blog/Algorithms/Dijkstra's-Algorithm</guid>
+    <description><![CDATA[ Dijkstra’s Algorithm is an algorithm that computes the length of the shortest path from a vertex s to every vertex in a directed graph G=(V,E) with non-negative edge weights in \mathcal{O}(|V|^2+|E|) time and \mathcal{O}(|V|) space, or \mathcal{O}((|V|+|E|)\log|E|) time and \mathcal{O}(|E|) space. ]]></description>
+    <pubDate>Sat, 13 Jun 2026 07:55:33 GMT</pubDate>
+  </item><item>
+    <title>Floyd-Warshall Algorithm</title>
+    <link>https://dxing.blog/Algorithms/Floyd-Warshall-Algorithm</link>
+    <guid>https://dxing.blog/Algorithms/Floyd-Warshall-Algorithm</guid>
+    <description><![CDATA[ The Floyd-Warshall Algorithm is an algorithm that computes the length of the shortest path between every pair of vertices in a directed graph G=(V,E) with edge weights and no negative cycles in \mathcal{O}(|V|^3+|E|) time and \mathcal{O}(|V|^2) space. ]]></description>
+    <pubDate>Sat, 13 Jun 2026 07:55:33 GMT</pubDate>
+  </item><item>
+    <title>Kruskal&#039;s Algorithm</title>
+    <link>https://dxing.blog/Algorithms/Kruskal's-Algorithm</link>
+    <guid>https://dxing.blog/Algorithms/Kruskal's-Algorithm</guid>
+    <description><![CDATA[ Kruskal’s Algorithm is an algorithm that computes the weight of the minimum spanning tree of a connected undirected graph G=(V,E) with edge weights in \mathcal{O}(|E|\log|E|) time and \mathcal{O}(|E|) space. ]]></description>
+    <pubDate>Sat, 13 Jun 2026 07:55:33 GMT</pubDate>
+  </item><item>
+    <title>Prim&#039;s Algorithm</title>
+    <link>https://dxing.blog/Algorithms/Prim's-Algorithm</link>
+    <guid>https://dxing.blog/Algorithms/Prim's-Algorithm</guid>
+    <description><![CDATA[ Prim’s Algorithm is an algorithm that computes the weight of the minimum spanning tree of a connected undirected graph G=(V,E) with edge weights in \mathcal{O}(|V|^2+|E|) time and \mathcal{O}(|V|)) space, or \mathcal{O}(|E|\log|E|) time and \mathcal{O}(|E|) space. ]]></description>
+    <pubDate>Sat, 13 Jun 2026 07:55:33 GMT</pubDate>
   </item><item>
     <title>Trie</title>
     <link>https://dxing.blog/Data-Structures/Trie</link>
     <guid>https://dxing.blog/Data-Structures/Trie</guid>
     <description><![CDATA[ Trie is a data structure that maintains a set S of strings in \Sigma^* by maintaining a deterministic finite automaton that accepts and only accepts strings in S. ]]></description>
     <pubDate>Fri, 12 Jun 2026 03:57:13 GMT</pubDate>
-  </item><item>
-    <title>Boruvka&#039;s Algorithm</title>
-    <link>https://dxing.blog/Algorithms/Boruvka's-Algorithm</link>
-    <guid>https://dxing.blog/Algorithms/Boruvka's-Algorithm</guid>
-    <description><![CDATA[ Boruvka’s Algorithm is an algorithm that computes the weight of the minimum spanning tree of a connected undirected graph G=(V,E) with edge weights in \mathcal{O}(|E|\log|V|) time and \mathcal{O}(|V|) space. ]]></description>
-    <pubDate>Fri, 12 Jun 2026 03:05:31 GMT</pubDate>
-  </item><item>
-    <title>Dijkstra&#039;s Algorithm</title>
-    <link>https://dxing.blog/Algorithms/Dijkstra's-Algorithm</link>
-    <guid>https://dxing.blog/Algorithms/Dijkstra's-Algorithm</guid>
-    <description><![CDATA[ Dijkstra’s Algorithm is an algorithm that computes the length of the shortest path from a vertex s to every vertex in a directed graph G=(V,E) with non-negative edge weights in \mathcal{O}(|V|^2+|E|) time and \mathcal{O}(|V|) space, or \mathcal{O}((|V|+|E|)\log|E|) time and \mathcal{O}(|E|) space. ]]></description>
-    <pubDate>Fri, 12 Jun 2026 03:05:31 GMT</pubDate>
   </item><item>
     <title>Euclidean Algorithm</title>
     <link>https://dxing.blog/Algorithms/Euclidean-Algorithm</link>
@@ -46,24 +64,6 @@
     <link>https://dxing.blog/Algorithms/Extended-Euclidean-Algorithm</link>
     <guid>https://dxing.blog/Algorithms/Extended-Euclidean-Algorithm</guid>
     <description><![CDATA[ The Extended Euclidean Algorithm is an algorithm that finds a pair of integers x and y such that ax+by=\gcd(a,b) for non-negative integers a and b in \mathcal{O}(\log a+\log b) time and \mathcal{O}(\log a+\log b) space. ]]></description>
-    <pubDate>Fri, 12 Jun 2026 03:05:31 GMT</pubDate>
-  </item><item>
-    <title>Kruskal&#039;s Algorithm</title>
-    <link>https://dxing.blog/Algorithms/Kruskal's-Algorithm</link>
-    <guid>https://dxing.blog/Algorithms/Kruskal's-Algorithm</guid>
-    <description><![CDATA[ Kruskal’s Algorithm is an algorithm that computes the weight of the minimum spanning tree of a connected undirected graph G=(V,E) with edge weights in \mathcal{O}(|E|\log|E|) time and \mathcal{O}(|E|) space. ]]></description>
-    <pubDate>Fri, 12 Jun 2026 03:05:31 GMT</pubDate>
-  </item><item>
-    <title>Prim&#039;s Algorithm</title>
-    <link>https://dxing.blog/Algorithms/Prim's-Algorithm</link>
-    <guid>https://dxing.blog/Algorithms/Prim's-Algorithm</guid>
-    <description><![CDATA[ Prim’s Algorithm is an algorithm that computes the weight of the minimum spanning tree of a connected undirected graph G=(V,E) with edge weights in \mathcal{O}(|V|^2+|E|) time and \mathcal{O}(|V|)) space, or \mathcal{O}(|E|\log|E|) time and \mathcal{O}(|E|) space. ]]></description>
-    <pubDate>Fri, 12 Jun 2026 03:05:31 GMT</pubDate>
-  </item><item>
-    <title>Sieve of Eratosthenes</title>
-    <link>https://dxing.blog/Algorithms/Sieve-of-Eratosthenes</link>
-    <guid>https://dxing.blog/Algorithms/Sieve-of-Eratosthenes</guid>
-    <description><![CDATA[ The Sieve of Eratosthenes is an algorithm that finds all the primes in 2,3,\dots,n in \mathcal{O}(n\log\log n) time and \mathcal{O}(n) space. ]]></description>
     <pubDate>Fri, 12 Jun 2026 03:05:31 GMT</pubDate>
   </item>
     </channel>
