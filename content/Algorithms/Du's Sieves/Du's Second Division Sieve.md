@@ -36,7 +36,7 @@ Let $S_f(n)=\sum_{k=1}^nf(k)$.
 
 2. Find $f(1),f(2),\dots,f(\lfloor n^\frac{2}{3}\rfloor)$ using the results from Step 1.
 3. Find $S_f(1),S_f(2),\dots,S_f(\lfloor n^\frac{2}{3}\rfloor)$ using the results from Step 2.
-4. For each $k$ in $\{\lfloor\frac{n}{1}\rfloor,\lfloor\frac{n}{2}\rfloor,\dots,\lfloor\frac{n}{n}\rfloor\}\setminus\{1,2,\dots,\lfloor n^\frac{2}{3}\rfloor\}$, applying the lemma to find $S_f(k)$.
+4. For each $k$ in $\{\lfloor\frac{n}{1}\rfloor,\lfloor\frac{n}{2}\rfloor,\dots,\lfloor\frac{n}{n}\rfloor\}\setminus\{1,2,\dots,\lfloor n^\frac{2}{3}\rfloor\}$, apply the lemma to find $S_f(k)$.
 
 ~~~c++
 std::vector<int> f(n23 + 1);

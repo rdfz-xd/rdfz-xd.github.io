@@ -8,6 +8,14 @@ The [[Bellman-Ford Algorithm]] is an algorithm that computes the length of the s
 >
 > This problem can also be solved by the [[Floyd-Warshall Algorithm]] in $\mathcal{O}(|V|^3+|E|)$ time and $\mathcal{O}(|V|^2)$ space.
 
+> [!tip] Hint
+>
+> This problem can also be solved by [[Johnson's Algorithm]] in
+>
+> - $\mathcal{O}(|V|^3+|V||E|)$ time and $\mathcal{O}(|V|^2)$ space, or
+>
+> - $\mathcal{O}((|V|^2+|V||E|)\log|E|)$ time and $\mathcal{O}(|V|^2+|E|)$ space.
+
 ### Algorithm 0
 
 Let $f_i(v)$ denote the length of the shortest path from $s$ to $v$ passing through at most $i$ edges, $\delta_\text{in}(v)$ denote the set of edges directed toward $v$.

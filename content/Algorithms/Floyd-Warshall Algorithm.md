@@ -8,6 +8,14 @@ The [[Floyd-Warshall Algorithm]] is an algorithm that computes the length of the
 >
 > This problem can also be solved by the [[Bellman-Ford Algorithm]] in $\mathcal{O}(|V|^2|E|)$ time and $\mathcal{O}(|V|^2)$ space.
 
+> [!tip] Hint
+>
+> This problem can also be solved by [[Johnson's Algorithm]] in
+>
+> - $\mathcal{O}(|V|^3+|V||E|)$ time and $\mathcal{O}(|V|^2)$ space, or
+>
+> - $\mathcal{O}((|V|^2+|V||E|)\log|E|)$ time and $\mathcal{O}(|V|^2+|E|)$ space.
+
 ### Algorithm 0
 
 Let $V=\{v_0,v_1,\dots,v_{|V|-1}\}$, and let $f_i(x,y)$ denote the length of the shortest path from $x$ to $y$ that only passes through vertices $v_0,v_1,\dots,v_{i-1}$.

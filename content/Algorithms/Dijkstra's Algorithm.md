@@ -5,7 +5,7 @@ tags: [Computer Science, Computer Science/Graph Theory]
 [[Dijkstra's Algorithm]] is an algorithm that computes the length of the shortest path from a vertex $s$ to every vertex in a directed graph $G=(V,E)$ with **non-negative** edge weights in
 
 - $\mathcal{O}(|V|^2+|E|)$ time and $\mathcal{O}(|V|)$ space, or
-- $\mathcal{O}((|V|+|E|)\log|E|)$ time and $\mathcal{O}(|E|)$ space.
+- $\mathcal{O}((|V|+|E|)\log|E|)$ time and $\mathcal{O}(|V|+|E|)$ space.
 
 > [!tip] Hint
 >
@@ -14,6 +14,14 @@ tags: [Computer Science, Computer Science/Graph Theory]
 > [!tip] Hint
 >
 > This problem can also be solved by the [[Bellman-Ford Algorithm]] in $\mathcal{O}(|V||E|)$ time and $\mathcal{O}(|V|)$ space.
+
+> [!tip] Hint
+>
+> This problem can also be solved by [[Johnson's Algorithm]] in
+>
+> - $\mathcal{O}(|V|^3+|V||E|)$ time and $\mathcal{O}(|V|^2)$ space, or
+>
+> - $\mathcal{O}((|V|^2+|V||E|)\log|E|)$ time and $\mathcal{O}(|V|^2+|E|)$ space.
 
 ### Algorithm 0
 
@@ -43,7 +51,7 @@ return dist;
 
 ### Algorithm 1
 
-Based on [[Dijkstra's Algorithm#Algorithm 0]], using a [[Binary Heap]] to maintain the queue yields an algorithm that solves the problem in $\mathcal{O}((|V|+|E|)\log|E|)$ time and $\mathcal{O}(|E|)$ space.
+Based on [[Dijkstra's Algorithm#Algorithm 0]], using a [[Binary Heap]] to maintain the queue yields an algorithm that solves the problem in $\mathcal{O}((|V|+|E|)\log|E|)$ time and $\mathcal{O}(|V|+|E|)$ space.
 
 ~~~c++
 std::vector dist(n, inf);
