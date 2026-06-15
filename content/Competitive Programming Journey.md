@@ -59,3 +59,16 @@
 *Mar 28, 2026*
 
 - 248 points
+
+
+
+---
+
+
+
+### USA Computing Olympiad 2026 Training Camp [toc: USACO 2026 Training Camp]
+
+*May 21, 2026 - May 30, 2026*
+
+- **Day 1**: 10th place
+- **Day 4**: 10th place
