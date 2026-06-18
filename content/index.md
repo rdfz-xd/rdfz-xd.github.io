@@ -6,7 +6,7 @@ I am [Dong Xing](mailto:dong.xing@prismsus.org), a sophomore at [Princeton Inter
 
 I am interested in [[tags/Computer Science]], especially [[Competitive Programming Journey|competitive programming]]. I was a [USA Computing Olympiad](https://usaco.org/) **Finalist** in [2026](https://usaco.org/index.php?page=finalists26).
 
-This blog is a garden of my thoughts. Hope you have a great time!
+This is my blog. Hope you have a great time!
 
 ![photo](/images/usaco2026.jpg)
 
