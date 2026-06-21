@@ -2,7 +2,9 @@
 tags: [Computer Science, Computer Science/String Theory]
 ---
 
-The [[Aho-Corasick Automaton]] is a data structure that maintains a set $S$ of strings in $\Sigma^*$ by maintaining a deterministic finite automaton that accepts and only accepts strings containing a string from $S$ as a suffix. Specifically, let $P$ be the set of all the prefixes of all the strings in $S$, and let
+The [[Aho-Corasick Automaton]] is a data structure that maintains a set $S$ of strings in $\Sigma^*$ by maintaining a deterministic finite automaton that accepts and only accepts strings containing a string from $S$ as a suffix.
+
+Specifically, let $P$ be the set of all the prefixes of all the strings in $S$, and let
 $$
 E(s)=\{t:t\in P\land t=s_{|s|-|t|}s_{|s|-|t|+1}\dots s_{|s|-1}\}
 $$
@@ -16,7 +18,9 @@ $$
 > \forall s\in\Sigma^*,\arg\max_{t\in E(s)}|t|=\{\delta(\dots\delta(\delta(\varepsilon,s_0),s_1)\dots,s_{|s|-1})\}
 > $$
 
-Let $F=\{s:s\in P\land\exist t\in S,t=s_{|s|-|t|}s_{|s|-|t|+1}\dots s_{|s|-1}\}$, then applying the lemma yields that $M=(P,\Sigma,\delta,\varepsilon,F)$ is a deterministic finite automaton that accepts and only accepts strings containing a string from $S$ as a suffix. This costs a space of $\mathcal{O}(|\Sigma|\sum_{s\in S}|s|)$.
+Let $F=\{s:s\in P\land\exist t\in S,t=s_{|s|-|t|}s_{|s|-|t|+1}\dots s_{|s|-1}\}$, then applying the lemma yields that $M=(P,\Sigma,\delta,\varepsilon,F)$ is a deterministic finite automaton that accepts and only accepts strings containing a string from $S$ as a suffix.
+
+This costs a space of $\mathcal{O}(|\Sigma|\sum_{s\in S}|s|)$.
 
 ## Build
 

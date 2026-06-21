@@ -2,6 +2,19 @@
 tags: [Computer Science]
 ---
 
+> [!info] Lemma
+> $$
+> \forall n\in\Z_+,\left|\left\{\left\lfloor\frac{n}{1}\right\rfloor,\left\lfloor\frac{n}{2}\right\rfloor,\dots,\left\lfloor\frac{n}{n}\right\rfloor\right\}\right|\le2\sqrt n
+> $$
+>
+> > [!note]- Proof
+> > $$
+> > \begin{align}
+> > \left|\left\{\left\lfloor\frac{n}{1}\right\rfloor,\left\lfloor\frac{n}{2}\right\rfloor,\dots,\left\lfloor\frac{n}{n}\right\rfloor\right\}\right|&\le\left|\left\{\left\lfloor\frac{n}{d}\right\rfloor:d\in\{1,2,\dots,\lfloor\sqrt n\rfloor\}\right\}\right|+\left|\left\{\left\lfloor\frac{n}{1}\right\rfloor,\left\lfloor\frac{n}{2}\right\rfloor,\dots,\left\lfloor\frac{n}{n}\right\rfloor\right\}\cap\{1,2,\dots,\lfloor\sqrt n\rfloor\}\right|\\
+> > &\le2\sqrt n
+> > \end{align}
+> > $$
+
 Let $S_f(n)=\sum_{k=1}^nf(k)$.
 
 [[Du's Second Division Sieve]] is an algorithm that computes $S_f(\lfloor\frac{n}{1}\rfloor),S_f(\lfloor\frac{n}{2}\rfloor),\dots,S_f(\lfloor\frac{n}{n}\rfloor)$ for **multiplicative** functions $f$ and $g$ in $\mathcal{O}(n^\frac{2}{3})$ time and $\mathcal{O}(n^\frac{2}{3})$ space, if $g(1),g(2),\dots,g(\lfloor n^\frac{2}{3}\rfloor)$, $S_g(\lfloor\frac{n}{1}\rfloor),S_g(\lfloor\frac{n}{2}\rfloor),\dots,S_g(\lfloor\frac{n}{n}\rfloor)$, $(f*g)(1),(f*g)(2),\dots,(f*g)(\lfloor n^\frac{2}{3}\rfloor)$, and $S_{f*g}(\lfloor\frac{n}{1}\rfloor),S_{f*g}(\lfloor\frac{n}{2}\rfloor),\dots,S_{f*g}(\lfloor\frac{n}{n}\rfloor)$ are given.
@@ -67,24 +80,10 @@ return sf;
 
 > [!note]- Proof
 >
-> > [!info] Lemma
-> > $$
-> > \forall n\in\Z_+,\left|\left\{\left\lfloor\frac{n}{1}\right\rfloor,\left\lfloor\frac{n}{2}\right\rfloor,\dots,\left\lfloor\frac{n}{n}\right\rfloor\right\}\right|\le2\sqrt n
-> > $$
-> >
-> > > [!note]- Proof
-> > > $$
-> > > \begin{align}
-> > > \left|\left\{\left\lfloor\frac{n}{1}\right\rfloor,\left\lfloor\frac{n}{2}\right\rfloor,\dots,\left\lfloor\frac{n}{n}\right\rfloor\right\}\right|&\le\left|\left\{\left\lfloor\frac{n}{d}\right\rfloor:d\in\{1,2,\dots,\lfloor\sqrt n\rfloor\}\right\}\right|+\left|\left\{\left\lfloor\frac{n}{1}\right\rfloor,\left\lfloor\frac{n}{2}\right\rfloor,\dots,\left\lfloor\frac{n}{n}\right\rfloor\right\}\cap\{1,2,\dots,\lfloor\sqrt n\rfloor\}\right|\\
-> > > &\le2\sqrt n
-> > > \end{align}
-> > > $$
->
-> Applying the lemma yields that
 > $$
 > T(n)\in\mathcal{O}\left(n^\frac{2}{3}+\sum_{d=1}^{\lfloor n^\frac{1}{3}\rfloor}\sqrt{\frac{n}{d}}\right)
 > $$
-> Therefore, since
+> Since
 > $$
 > \begin{align}
 > \mathcal{O}\left(\sum_{d=1}^{\lfloor n^\frac{1}{3}\rfloor}\sqrt{\frac{n}{d}}\right)&=\mathcal{O}\left(\sqrt{n}\sum_{d=1}^{\lfloor n^\frac{1}{3}\rfloor}d^{-\frac{1}{2}}\right)\\
@@ -93,7 +92,7 @@ return sf;
 > \end{align}
 > $$
 > it follows that
-> $$
+>$$
 > \mathcal{O}\left(n^\frac{2}{3}+\sum_{d=1}^{\lfloor n^\frac{1}{3}\rfloor}\sqrt{\frac{n}{d}}\right)=\mathcal{O}(n^\frac{2}{3})
 > $$
 > Therefore,
