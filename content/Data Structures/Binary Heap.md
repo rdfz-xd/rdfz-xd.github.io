@@ -4,7 +4,7 @@ tags: [Computer Science]
 
 The [[Binary Heap]] is a data structure that maintains a multiset $S$ of numbers by maintaining a complete binary tree.
 
-Specifically, in the complete binary tree, each node stores an element in $S$. The complete binary tree satisfies that the element in each node is less than or equal to that of its parent.
+Specifically, in the complete binary tree, each node stores an element in $S$. The complete binary tree satisfies that the element in each node is less than or equal to the element in its parent.
 
 This costs a space of $\mathcal{O}(|S|)$.
 
