@@ -14,7 +14,7 @@ This costs a space of $\mathcal{O}(|S|)$.
 
 ### Algorithm
 
-1. Make a new node that contains $x$.
+1. Make a new node that stores $x$.
 2. Maintain the order by swapping elements.
 
 This algorithm solves the problem in $\mathcal{O}(\log|S|)$ time and $\mathcal{O}(1)$ space.

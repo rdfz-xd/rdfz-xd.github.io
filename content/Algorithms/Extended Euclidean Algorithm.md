@@ -11,24 +11,30 @@ The [[Extended Euclidean Algorithm]] is an algorithm that finds a pair of intege
 > \forall a\in\N,\forall b\in\Z_+,\gcd\{a,b\}=\gcd\{b,a\bmod b\}
 > $$
 
-Let $x'$ and $y'$ be integers such that
-$$
-bx'+(a\bmod b)y'=\gcd\{b,a\bmod b\}
-$$
-then applying the lemma yields
-$$
-\begin{align}
-bx'+(a\bmod b)y'&=\gcd\{a,b\}
-\end{align}
-$$
-Since
-$$
-\begin{align}
-bx'+(a\bmod b)y'&=bx'+\left(a-\left\lfloor\frac{a}{b}\right\rfloor\right)y'\\
-&=ay'+b\left(x'-\left\lfloor\frac{a}{b}\right\rfloor y'\right)
-\end{align}
-$$
-it follows that if $x=y'\land y=x'-\lfloor\frac{a}{b}\rfloor y'$, $ax+by=\gcd\{a,b\}$.
+> [!info] Lemma
+>
+> Let $x'$ and $y'$ be integers satisfying
+> $$
+> bx'+(a\bmod b)y'=\gcd\{b,a\bmod b\}
+> $$
+> then $ax+by=\gcd\{a,b\}$ if
+> $$
+> x=y'\land y=x'-\left\lfloor\frac{a}{b}\right\rfloor y'
+> $$
+>
+> > [!note]- Proof
+> > $$
+> > \begin{align}
+> > ax+by&=ay'+b\left(x'-\left\lfloor\frac{a}{b}\right\rfloor y'\right)\\
+> > &=bx'+\left(a-\left\lfloor\frac{a}{b}\right\rfloor\right)y'\\
+> > &=bx'+(a\bmod b)y'\\
+> > &=\gcd\{b,a\bmod b\}\\
+> > &=\gcd\{a,b\}
+> > \end{align}
+> > $$
+
+1. Solve for $bx'+(a\bmod b)y'=\gcd\{b,a\bmod b\}$ recursively.
+2. Applying the lemma to find $x$ and $y$.
 
 This algorithm solves the problem in $\mathcal{O}(\log a+\log b)$ time and $\mathcal{O}(\log a+\log b)$ space.
 

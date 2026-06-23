@@ -37,7 +37,7 @@ return d;
 > > \end{align}
 > > $$
 
-Based on [[Manacher's Algorithm#Algorithm 0]], maintaining $\arg\max_{j=0}^{i-1}(j+d(j))$ and applying the lemma yield an algorithm that solves the problem in $\mathcal{O}(n)$ time and $\mathcal{O}(n)$ space.
+Based on [[Manacher's Algorithm#Algorithm 0]], maintaining $\arg\max_{j=0}^{i-1}(j+d(j))$ and applying the lemma to get an lower bound for $d(i)$ yield an algorithm that solves the problem in $\mathcal{O}(n)$ time and $\mathcal{O}(n)$ space.
 
 ~~~c++
 std::vector<int> d(n);
@@ -55,7 +55,7 @@ return d;
 
 > [!note]- Proof
 >
-> It is easy to prove that the upper bound of the total number of executions of `d[i]++;` is
+> It is easy to prove that the upper bound on the total number of executions of `d[i]++;` is
 > $$
 > \begin{align}
 > \max_{i=0}^{n-1}(i+d(i))&\le n\\

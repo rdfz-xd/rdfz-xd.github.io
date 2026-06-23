@@ -36,7 +36,7 @@ return z;
 > > \end{align}
 > > $$
 
-Based on [[Z Algorithm#Algorithm 0]], maintaining $\arg\max_{j=1}^{i-1}(j+z(j))$ and applying the lemma yield an algorithm that solves the problem in $\mathcal{O}(n)$ time and $\mathcal{O}(n)$ space.
+Based on [[Z Algorithm#Algorithm 0]], maintaining $\arg\max_{j=1}^{i-1}(j+z(j))$ and applying the lemma to get a lower bound for $z(i)$ yield an algorithm that solves the problem in $\mathcal{O}(n)$ time and $\mathcal{O}(n)$ space.
 
 ~~~c++
 std::vector<int> z(n);
@@ -55,7 +55,7 @@ return z;
 
 > [!note]- Proof
 >
-> It is easy to prove that the upper bound of the total number of executions of `z[i]++;` is
+> It is easy to prove that the upper bound on the total number of executions of `z[i]++;` is
 > $$
 > \begin{align}
 > \max_{i=1}^{n-1}(i+z(i))&\le n\\

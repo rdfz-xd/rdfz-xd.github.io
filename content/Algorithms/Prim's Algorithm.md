@@ -28,9 +28,13 @@ tags: [Computer Science, Computer Science/Graph Theory]
 > >
 > > Let $T$ be an arbitrary minimum spanning tree of $G$.
 > >
-> > If $e\notin E(T)$, let $C$ be the cycle in $T+e$, $f$ be an edge in $C\cap\delta(v)\setminus\{e\}$, then since $w(f)\ge w(e)$, it follows that $T+e-f$ is a minimum spanning tree of $G$.
+> > If $e\notin E(T)$, let $C$ be the cycle in $T+e$, $f$ be an edge in $C\cap\delta(v)\setminus\{e\}$, then since $w(f)\ge w(e)$, it follows that $T+e-f$ is also a minimum spanning tree of $G$.
 
-Let $v$ be a vertex in $V$, select an edge $e$ in $\arg\min_{e\in\delta(v)}w(e)$ and update $G$ to $G/e$. Repeat this process until $|V|=1$. Applying the lemma yields that the selected edges form a minimum spanning tree.
+1. Fix a vertex $v$.
+2. Select an edge $e$ in $\arg\min_{e\in\delta(v)}w(e)$.
+3. Solve for the graph obtained by contracting $e$ recursively.
+
+Applying the lemma yields that the selected edges form a minimum spanning tree.
 
 This algorithm solves the problem in $\mathcal{O}(|V|^2+|E|)$ time and $\mathcal{O}(|V|)$ space.
 
@@ -58,7 +62,7 @@ return sum;
 
 ### Algorithm 1
 
-Based on [[Prim's Algorithm#Algorithm 0]], using a [[Binary Heap]] to maintain the structure of the graph $G$ yields an algorithm that solves the problem in $\mathcal{O}(|E|\log|E|)$ time and $\mathcal{O}(|E|)$ space.
+Based on [[Prim's Algorithm#Algorithm 0]], using a [[Binary Heap]] to maintain the adjacency list of $v$ yields an algorithm that solves the problem in $\mathcal{O}(|E|\log|E|)$ time and $\mathcal{O}(|E|)$ space.
 
 ~~~c++
 std::priority_queue<std::pair<int, int>, std::vector<std::pair<int, int>>, std::greater<>> q;

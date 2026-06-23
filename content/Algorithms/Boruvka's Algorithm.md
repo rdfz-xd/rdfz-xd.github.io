@@ -28,42 +28,81 @@ tags: [Computer Science, Computer Science/Graph Theory]
 > >
 > > Let $T$ be an arbitrary minimum spanning tree of $G$.
 > >
-> > If $e\notin E(T)$, let $C$ be the cycle in $T+e$, $f$ be an edge in $C\cap\delta(v)\setminus\{e\}$, then since $w(f)\ge w(e)$, it follows that $T+e-f$ is a minimum spanning tree of $G$.
+> > If $e\notin E(T)$, let $C$ be the cycle in $T+e$, $f$ be an edge in $C\cap\delta(v)\setminus\{e\}$, then since $w(f)\ge w(e)$, it follows that $T+e-f$ is also a minimum spanning tree of $G$.
 
-For each $v$ in $V$, choose an edge $e_v$ in $\arg\min_{f\in\delta(v)}w(f)$. Then, for each $v$ in $V$, if $e_v$ is not a self-loop, select $e_v$, update $G$ to $G/e_v$, and update $e$ accordingly. Repeat this process until $|V|=1$.
+1. For each $v$ in $V$, choose an edge $e_v$ in $\arg\min_{e\in\delta(v)}w(e)$.
+2. For each $e_v$, if it is still connecting two distinct vertices, select and contract it.
+3. Solve for the resulting graph recursively.
 
 Let $u$ be the other vertex incident with $e_v$, then it is easy to prove that
 $$
-\min_{f\in\delta(u)}w(f)\le\min_{f\in\delta(v)}w(f)
+\min_{e\in\delta(u)}w(e)\le\min_{e\in\delta(v)}w(e)
 $$
-Therefore, applying the lemma yields that the selected edges form a minimum spanning tree.
+Therefore, at the moment each edge is selected, it satisfies the conditions of the lemma. Applying the lemma yields that the selected edges form a minimum spanning tree.
 
-Using a **Disjoint Set Union** to maintain the structure of the graph $G$ yields an algorithm that solves the problem in $\mathcal{O}(|E|\log|V|)$ time and $\mathcal{O}(|V|)$ space.
+This algorithm solves the problem in $\mathcal{O}(|E|\log|V|)$ time and $\mathcal{O}(|V|)$ space.
 
 ~~~c++
-DSU dsu(n);
-int sum = 0;
-
-while (dsu.size(0) < n) {
-	std::vector e(n, -1);
+std::vector f(m, false);
+while (std::ranges::count(f, true) < n - 1) {
+	std::vector<std::vector<int>> adj(n);
 	for (int i = 0; i < m; i++) {
-		if (dsu.same(u[i], v[i])) {
+		if (f[i]) {
+			adj[u[i]].push_back(v[i]);
+			adj[v[i]].push_back(u[i]);
+		}
+	}
+
+	std::vector bel(n, -1);
+	int cnt = 0;
+
+	for (int i = 0; i < n; i++) {
+		if (~bel[i]) {
+			continue;
+		}
+		bel[i] = cnt;
+
+		std::queue<int> q;
+		q.push(i);
+		while (!q.empty()) {
+			int u = q.front();
+			q.pop();
+
+			for (int v : adj[u]) {
+				if (bel[v] == -1) {
+					bel[v] = cnt;
+					q.push(v);
+				}
+			}
+		}
+
+		cnt++;
+	}
+
+	std::vector e(cnt, -1);
+	for (int i = 0; i < m; i++) {
+		if (bel[u[i]] == bel[v[i]]) {
 			continue;
 		}
 
-		for (int j : {dsu.find(u[i]), dsu.find(v[i])}) {
+		for (int j : {bel[u[i]], bel[v[i]]}) {
 			if (e[j] == -1 || w[e[j]] > w[i]) {
 				e[j] = i;
 			}
 		}
 	}
-	for (int i = 0; i < n; i++) {
-		if (dsu.find(i) == i && dsu.merge(u[e[i]], v[e[i]])) {
-			sum += w[e[i]];
-		}
+
+	for (int i = 0; i < cnt; i++) {
+		f[e[i]] = true;
 	}
 }
 
+int sum = 0;
+for (int i = 0; i < m; i++) {
+	if (f[i]) {
+		sum += w[i];
+	}
+}
 return sum;
 ~~~
 

@@ -28,11 +28,14 @@ tags: [Computer Science, Computer Science/Graph Theory]
 > >
 > > Let $T$ be an arbitrary minimum spanning tree of $G$.
 > >
-> > If $e\notin E(T)$, let $C$ be the cycle in $T+e$, $f$ be an edge in $C\setminus\{e\}$. Then since $w(f)\ge w(e)$, it follows that $T+e-f$ is a minimum spanning tree.
+> > If $e\notin E(T)$, let $C$ be the cycle in $T+e$, $f$ be an edge in $C\setminus\{e\}$. Then since $w(f)\ge w(e)$, it follows that $T+e-f$ is also a minimum spanning tree.
 
-Repeatedly select an edge $e$ in $\arg\min_{e\in E}w(e)$ and update $G$ to $G/e$ until $|V|=1$. Applying the lemma yields that the selected edges form a minimum spanning tree.
+1. Select an edge $e$ in $\arg\min_{e\in E}w(e)$.
+2. Solve for the graph obtained by contracting edge $e$ recursively.
 
-Applying **Introsort** to sort the edges and using a **Disjoint Set Union** to maintain the structure of the graph $G$ yield an algorithm that solves the problem in $\mathcal{O}(|E|\log|E|)$ time and $\mathcal{O}(|E|)$ space.
+Applying the lemma yields that the selected edges form a minimum spanning tree.
+
+Applying **Introsort** to sort the edges and using a **Disjoint Set Union** to maintain the structure of the graph yield an algorithm that solves the problem in $\mathcal{O}(|E|\log|E|)$ time and $\mathcal{O}(|E|)$ space.
 
 ~~~c++
 std::ranges::sort(E);
