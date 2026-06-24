@@ -9,7 +9,7 @@ $$
 
 ### Algorithm 0
 
-Applying the definition yields an algorithm that solves the problem in $\mathcal{O}(n^2)$ time and $\mathcal{O}(n)$ space.
+Applying the definition to find $z$ yields an algorithm that solves the problem in $\mathcal{O}(n^2)$ time and $\mathcal{O}(n)$ space.
 
 ~~~c++
 std::vector z(n, 0);

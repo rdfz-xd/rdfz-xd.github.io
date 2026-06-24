@@ -3,7 +3,7 @@
     <lastmod>2026-06-14T08:55:13.000Z</lastmod>
   </url><url>
     <loc>https://dxing.blog/Algorithms/Boruvka's-Algorithm</loc>
-    <lastmod>2026-06-13T07:55:33.000Z</lastmod>
+    <lastmod>2026-06-23T06:10:20.000Z</lastmod>
   </url><url>
     <loc>https://dxing.blog/Algorithms/Dijkstra's-Algorithm</loc>
     <lastmod>2026-06-14T08:55:13.000Z</lastmod>
@@ -21,13 +21,13 @@
     <lastmod>2026-06-21T08:03:14.000Z</lastmod>
   </url><url>
     <loc>https://dxing.blog/Algorithms/Euclidean-Algorithm</loc>
-    <lastmod>2026-06-21T08:03:14.000Z</lastmod>
+    <lastmod>2026-06-23T06:10:20.000Z</lastmod>
   </url><url>
     <loc>https://dxing.blog/Algorithms/Euler's-Sieve</loc>
     <lastmod>2026-06-12T03:05:31.000Z</lastmod>
   </url><url>
     <loc>https://dxing.blog/Algorithms/Extended-Euclidean-Algorithm</loc>
-    <lastmod>2026-06-21T08:03:14.000Z</lastmod>
+    <lastmod>2026-06-23T06:10:20.000Z</lastmod>
   </url><url>
     <loc>https://dxing.blog/Algorithms/Floyd-Warshall-Algorithm</loc>
     <lastmod>2026-06-14T08:55:13.000Z</lastmod>
@@ -36,22 +36,22 @@
     <lastmod>2026-06-14T08:55:13.000Z</lastmod>
   </url><url>
     <loc>https://dxing.blog/Algorithms/Knuth-Morris-Pratt-Algorithm</loc>
-    <lastmod>2026-01-14T03:35:36.000Z</lastmod>
+    <lastmod>2026-06-23T06:10:20.000Z</lastmod>
   </url><url>
     <loc>https://dxing.blog/Algorithms/Kruskal's-Algorithm</loc>
-    <lastmod>2026-06-13T07:55:33.000Z</lastmod>
+    <lastmod>2026-06-23T06:10:20.000Z</lastmod>
   </url><url>
     <loc>https://dxing.blog/Algorithms/Manacher's-Algorithm</loc>
-    <lastmod>2026-01-14T03:35:36.000Z</lastmod>
+    <lastmod>2026-06-23T06:10:20.000Z</lastmod>
   </url><url>
     <loc>https://dxing.blog/Algorithms/Prim's-Algorithm</loc>
-    <lastmod>2026-06-13T07:55:33.000Z</lastmod>
+    <lastmod>2026-06-23T06:10:20.000Z</lastmod>
   </url><url>
     <loc>https://dxing.blog/Algorithms/Sieve-of-Eratosthenes</loc>
     <lastmod>2026-06-12T03:05:31.000Z</lastmod>
   </url><url>
     <loc>https://dxing.blog/Algorithms/Z-Algorithm</loc>
-    <lastmod>2026-01-14T03:35:36.000Z</lastmod>
+    <lastmod>2026-06-23T06:10:20.000Z</lastmod>
   </url><url>
     <loc>https://dxing.blog/Competitive-Programming-Journey</loc>
     <lastmod>2026-06-21T08:03:14.000Z</lastmod>
@@ -60,7 +60,7 @@
     <lastmod>2026-06-21T08:03:14.000Z</lastmod>
   </url><url>
     <loc>https://dxing.blog/Data-Structures/Binary-Heap</loc>
-    <lastmod>2026-06-22T03:57:21.000Z</lastmod>
+    <lastmod>2026-06-23T06:10:20.000Z</lastmod>
   </url><url>
     <loc>https://dxing.blog/Data-Structures/Fenwick-Tree</loc>
     <lastmod>2026-06-12T03:05:31.000Z</lastmod>
@@ -76,6 +76,9 @@
   </url><url>
     <loc>https://dxing.blog/Data-Structures/Trie</loc>
     <lastmod>2026-06-21T08:03:14.000Z</lastmod>
+  </url><url>
+    <loc>https://dxing.blog/Data-Structures/Wavelet-Tree</loc>
+    <lastmod>2026-06-24T08:44:34.309Z</lastmod>
   </url><url>
     <loc>https://dxing.blog/The-World-Through-My-Eyes</loc>
     <lastmod>2026-06-21T08:03:14.000Z</lastmod>

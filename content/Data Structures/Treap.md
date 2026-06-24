@@ -4,7 +4,7 @@ tags: [Computer Science]
 
 [[Treap]] is a data structure that maintains an array of $n$ values $a_0,a_1,\dots,a_{n-1}$ by maintaining a binary tree.
 
-Specifically, a random priority $w_i$ is generated for each $a_i$. In the binary tree, each node stores a pair $(a_i,w_i)$. The binary tree satisfies that the in-order traversal order of the nodes matches their order in the array, and the priority of each node is lower than the priority of its parent. In other words, the binary tree is a Cartesian tree derived from $w_0,w_1,\dots,w_{n-1}$.
+Specifically, a random priority $w_i$ is generated for each $a_i$. In the binary tree, each node stores a pair $(a_i,w_i)$. The binary tree satisfies that the in-order traversal order of the nodes matches their order in the array, and the priority of each node is lower than the priority of its parent. In other words, the binary tree is a **Cartesian Tree** with respect to $w_0,w_1,\dots,w_{n-1}$.
 
 This costs of space of $\mathcal{O}(n)$.
 
