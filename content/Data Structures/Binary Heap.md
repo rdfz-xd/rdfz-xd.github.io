@@ -32,9 +32,9 @@ for (int i = a.size() - 1; i > 1 && a[i >> 1] < a[i]; i >>= 1) {
 
 ### Algorithm
 
-Since the element in each node is less than or equal to the element in its parent, it follows that the element in the root is $\max S$.
+Since the element in each node is less than or equal to the element in its parent, the element in the root is $\max S$.
 
-Finding the element in the root yields an algorithm that solves the problem in $\mathcal{O}(1)$ time and $\mathcal{O}(1)$ space.
+Accessing the element in the root yields an algorithm that solves the problem in $\mathcal{O}(1)$ time and $\mathcal{O}(1)$ space.
 
 ~~~c++
 return a[1];

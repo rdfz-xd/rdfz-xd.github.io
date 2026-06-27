@@ -34,7 +34,7 @@ Let $f_i(v)$ denote the length of the shortest path from $s$ to $v$ passing thro
 > >
 > > Let $v_0v_1\dots v_{n-2}v_{n-1}$, where $v_0=s$ and $v_{n-1}=v$, be a shortest path from $s$ to $v$ passing through the least number of edges.
 > >
-> > Then, if $n>|V|$, applying the **Pigeonhole Principle** yields that
+> > Then, if $n>|V|$, applying the **Pigeonhole Principle** yields
 > > $$
 > > \exist i,j\in\{0,1,\dots,n-1\},i<j\land v_i=v_j
 > > $$

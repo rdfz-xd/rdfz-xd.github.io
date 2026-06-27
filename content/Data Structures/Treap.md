@@ -10,7 +10,7 @@ This costs of space of $\mathcal{O}(n)$.
 
 > [!info] Lemma
 >
-> Let $\operatorname{dep}(i)$ be the depth of the $i$-th node in the binary tree, then
+> Let $\operatorname{dep}(i)$ denote the depth of the $i$-th node in the binary tree, then
 > $$
 > \forall i\in\{0,1,\dots,n-1\},\mathbb{E}[\operatorname{dep}(i)]\in\mathcal{O}(\log n)
 > $$

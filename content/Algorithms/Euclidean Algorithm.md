@@ -12,7 +12,7 @@ The [[Euclidean Algorithm]] is an algorithm that computes $\gcd\{a, b\}$ for non
 > $$
 
 1. Solve for $\gcd\{b,a\bmod b\}$ recursively.
-2. Applying to lemma to find $\gcd\{a,b\}$.
+2. Apply the lemma to find $\gcd\{a,b\}$.
 
 This algorithm solves the problem in $\mathcal{O}(\log a+\log b)$ time and $\mathcal{O}(\log a+\log b)$ space.
 

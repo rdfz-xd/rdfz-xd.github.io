@@ -4,14 +4,15 @@ tags: [Computer Science]
 
 > [!info] Lemma
 > $$
-> \forall n\in\Z_+,\left|\left\{\left\lfloor\frac{n}{1}\right\rfloor,\left\lfloor\frac{n}{2}\right\rfloor,\dots,\left\lfloor\frac{n}{n}\right\rfloor\right\}\right|\le2\sqrt n
+> \forall n\in\Z_+,\left|\left\{\left\lfloor\frac{n}{1}\right\rfloor,\left\lfloor\frac{n}{2}\right\rfloor,\dots,\left\lfloor\frac{n}{n}\right\rfloor\right\}\right|\in\mathcal{O}(\sqrt n)
 > $$
 >
 > > [!note]- Proof
 > > $$
 > > \begin{align}
 > > \left|\left\{\left\lfloor\frac{n}{1}\right\rfloor,\left\lfloor\frac{n}{2}\right\rfloor,\dots,\left\lfloor\frac{n}{n}\right\rfloor\right\}\right|&\le\left|\left\{\left\lfloor\frac{n}{d}\right\rfloor:d\in\{1,2,\dots,\lfloor\sqrt n\rfloor\}\right\}\right|+\left|\left\{\left\lfloor\frac{n}{1}\right\rfloor,\left\lfloor\frac{n}{2}\right\rfloor,\dots,\left\lfloor\frac{n}{n}\right\rfloor\right\}\cap\{1,2,\dots,\lfloor\sqrt n\rfloor\}\right|\\
-> > &\le2\sqrt n
+> > &\le2\sqrt n\\
+> > &\in\mathcal{O}(\sqrt n)
 > > \end{align}
 > > $$
 
@@ -47,8 +48,8 @@ Let $S_f(n)=\sum_{k=1}^nf(k)$.
 
 1. For each $k$ in $\{k:k\in\{1,2,\dots,\lfloor n^\frac{2}{3}\rfloor\}\land\exist p\in \mathbb{P},\exist e\in\N,k=p^e\}$, find $f(k)$.
 
-2. Find $f(1),f(2),\dots,f(\lfloor n^\frac{2}{3}\rfloor)$ using the results from Step 1.
-3. Find $S_f(1),S_f(2),\dots,S_f(\lfloor n^\frac{2}{3}\rfloor)$ using the results from Step 2.
+2. Use the results from Step 1 to find $f(1),f(2),\dots,f(\lfloor n^\frac{2}{3}\rfloor)$.
+3. Use the results from Step 2 to find $S_f(1),S_f(2),\dots,S_f(\lfloor n^\frac{2}{3}\rfloor)$.
 4. For each $k$ in $\{\lfloor\frac{n}{1}\rfloor,\lfloor\frac{n}{2}\rfloor,\dots,\lfloor\frac{n}{n}\rfloor\}\setminus\{1,2,\dots,\lfloor n^\frac{2}{3}\rfloor\}$, apply the lemma to find $S_f(k)$.
 
 ~~~c++
@@ -80,6 +81,7 @@ return sf;
 
 > [!note]- Proof
 >
+> Applying the lemma yields
 > $$
 > T(n)\in\mathcal{O}\left(n^\frac{2}{3}+\sum_{d=1}^{\lfloor n^\frac{1}{3}\rfloor}\sqrt{\frac{n}{d}}\right)
 > $$
@@ -92,7 +94,7 @@ return sf;
 > \end{align}
 > $$
 > it follows that
->$$
+> $$
 > \mathcal{O}\left(n^\frac{2}{3}+\sum_{d=1}^{\lfloor n^\frac{1}{3}\rfloor}\sqrt{\frac{n}{d}}\right)=\mathcal{O}(n^\frac{2}{3})
 > $$
 > Therefore,

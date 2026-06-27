@@ -30,7 +30,7 @@ tags: [Computer Science, Computer Science/Graph Theory]
 > >
 > > If $e\notin E(T)$, let $C$ be the cycle in $T+e$, $f$ be an edge in $C\cap\delta(v)\setminus\{e\}$, then since $w(f)\ge w(e)$, it follows that $T+e-f$ is also a minimum spanning tree of $G$.
 
-1. For each $v$ in $V$, choose an edge $e_v$ in $\arg\min_{e\in\delta(v)}w(e)$.
+1. For each vertex $v$ in $V$, choose an edge $e_v$ in $\arg\min_{e\in\delta(v)}w(e)$.
 2. For each $e_v$, if it is still connecting two distinct vertices, select and contract it.
 3. Solve for the resulting graph recursively.
 

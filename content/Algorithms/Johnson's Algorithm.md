@@ -19,7 +19,7 @@ tags: [Computer Science, Computer Science/Graph Theory]
 ### Algorithm
 
 1. Let $s$ be a new vertex, and let $G^*=(V\cup\{s\},E\cup\{(s,v,0):v\in V\})$.
-2. Apply the [[Bellman-Ford Algorithm]] to find $\operatorname{dist}_{G^*}(s,v)$ for each $v\in V$.
+2. Apply the [[Bellman-Ford Algorithm]] to find $\operatorname{dist}_{G^*}(s,v)$ for each vertex $v$ in $V$.
 
 > [!info] Lemma
 >
@@ -37,7 +37,7 @@ tags: [Computer Science, Computer Science/Graph Theory]
 > > By contradiction, it follows that $w(e)+h(s(e))-h(t(e))\ge0$.
 
 3. Let $G'=(V,\{(s(e),t(e),w(e)+h(s(e))-h(t(e)):e\in E\})$, then applying the lemma yields that $G'$ is a directed graph with non-negative edge weights.
-4. Apply [[Dijkstra's Algorithm]] $|V|$ times to find $\operatorname{dist}_{G'}(x,y)$ for each $x,y\in V$.
+4. Apply [[Dijkstra's Algorithm]] $|V|$ times to find $\operatorname{dist}_{G'}(x,y)$ for each pair of vertices $x$ and $y$ in $V$.
 
 > [!info] Lemma
 > $$

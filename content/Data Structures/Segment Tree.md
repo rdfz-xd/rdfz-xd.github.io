@@ -25,10 +25,6 @@ which costs a space of $\mathcal{O}(n)$.
 
 Updating all the maintained segments containing the given element yields an algorithm that solves the problem in $\mathcal{O}(\log n)$ time and $\mathcal{O}(\log n)$ space.
 
-> [!note]- Proof
->
-> It is easy to prove that exactly $1$ segment is visited in each layer.
-
 ~~~c++
 y_combinator([&](auto &&self, int o, int s, int t) -> void {
 	if (s + 1 == t) {
@@ -46,6 +42,10 @@ y_combinator([&](auto &&self, int o, int s, int t) -> void {
 })(1, 0, n);
 ~~~
 
+> [!note]- Proof
+>
+> It is easy to prove that exactly $1$ segment is visited in each layer.
+
 ## Range Sum Query
 
 [[Segment Tree#Range Sum Query]] computes $\sum_{i=l}^{r-1}a_i$ in $\mathcal{O}(\log n)$ time and $\mathcal{O}(\log n)$ space.
@@ -53,10 +53,6 @@ y_combinator([&](auto &&self, int o, int s, int t) -> void {
 ### Algorithm
 
 Decomposing the query interval into maintained segments yields an algorithm that solves the problem in $\mathcal{O}(\log n)$ time and $\mathcal{O}(\log n)$ space.
-
-> [!note]- Proof
->
-> It is easy to prove that at most $4$ segments are visited in each layer.
 
 ~~~c++
 return y_combinator([&](auto &&self, int o, int s, int t) -> int {
@@ -72,3 +68,6 @@ return y_combinator([&](auto &&self, int o, int s, int t) -> int {
 })(1, 0, n);
 ~~~
 
+> [!note]- Proof
+>
+> It is easy to prove that at most $4$ segments are visited in each layer.
