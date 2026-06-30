@@ -13,7 +13,7 @@ tags: [Computer Science, Computer Science/Graph Theory]
 
 > [!tip] Hint
 >
-> This problem can also be solved by [[Boruvka's Algorithm]] in $\mathcal{O}(|E|\log|V|)$ time and $\mathcal{O}(|V|)$ space.
+> This problem can also be solved by [[Boruvka's Algorithm]] in $\mathcal{O}(|E|\log|V|)$ time and $\mathcal{O}(|E|)$ space.
 
 ### Algorithm
 
@@ -30,8 +30,9 @@ tags: [Computer Science, Computer Science/Graph Theory]
 > >
 > > If $e\notin E(T)$, let $C$ be the cycle in $T+e$, $f$ be an edge in $C\setminus\{e\}$. Then since $w(f)\ge w(e)$, it follows that $T+e-f$ is also a minimum spanning tree.
 
-1. Select an edge $e$ in $\arg\min_{e\in E}w(e)$.
-2. Solve for the graph obtained by contracting edge $e$ recursively.
+0. Select an edge $e$ in $\arg\min_{e\in E}w(e)$.
+
+1. Solve for the graph obtained by contracting edge $e$ recursively.
 
 Applying the lemma yields that the selected edges form a minimum spanning tree.
 

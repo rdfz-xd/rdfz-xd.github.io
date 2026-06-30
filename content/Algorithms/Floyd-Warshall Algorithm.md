@@ -18,19 +18,21 @@ The [[Floyd-Warshall Algorithm]] is an algorithm that computes the length of the
 
 ### Algorithm 0
 
-Let $V=\{v_0,v_1,\dots,v_{|V|-1}\}$, and let $f_i(x,y)$ denote the length of the shortest path from $x$ to $y$ that only passes through vertices $v_0,v_1,\dots,v_{i-1}$.
+> [!info] Lemma
+>
+> Let $V=\{v_0,v_1,\dots,v_{|V|-1}\}$, and let $f_i(x,y)$ denote the length of the shortest path from $x$ to $y$ that only passes through (excluding the endpoints) vertices $v_0,v_1,\dots,v_{i-1}$. Then
+> $$
+> \forall i\in\{0,1,\dots,|V|-1\},\forall x,y\in V,f_{i+1}(x,y)=\min\{f_i(x,y),f_i(x,v_i)+f_i(v_i,y)\}
+> $$
 
 > [!info] Lemma
-> $$
-> \forall i\in\{1,2,\dots,|V|\},\forall x,y\in V,f_i(x,y)=\min\{f_{i-1}(x,y),f_{i-1}(x,v_{i-1})+f_{i-1}(v_{i-1},y)\}
-> $$
-
-> [!info] Lemma
+>
+> Let $\operatorname{dist}(x,y)$ denote the length of the shortest path from $x$ to $y$, then
 > $$
 > \forall x,y\in V,\operatorname{dist}_G(x,y)=f_{|V|}(x,y)
 > $$
 
-Applying the lemmas to find $f$ and $\operatorname{dist}_G$ yields an algorithm that solves the problem in $\mathcal{O}(|V|^3+|E|)$ time and $\mathcal{O}(|V|^3)$ space.
+Applying the lemmas to find $f$ and $\operatorname{dist}$ yields an algorithm that solves the problem in $\mathcal{O}(|V|^3+|E|)$ time and $\mathcal{O}(|V|^3)$ space.
 
 ~~~c++
 std::vector dist(n + 1, std::vector(n, std::vector(n, inf)));
@@ -51,14 +53,16 @@ return dist[n];
 
 > [!info] Lemma
 > $$
-> \forall i\in\{1,2,\dots,|V|\},\forall x\in V,f_i(x,v_{i-1})=f_{i-1}(x,v_{i-1})
+> \forall i\in\{0,1,\dots,|V|-1\},\forall x\in V,f_{i+1}(x,v_i)=f_i(x,v_i)
 > $$
 >
 > $$
-> \forall i\in\{1,2,\dots,|V|\},\forall y\in V,f_i(v_{i-1},y)=f_{i-1}(v_{i-1},y)
+> \forall i\in\{0,1,\dots,|V|-1\},\forall y\in V,f_{i+1}(v_i,y)=f_i(v_i,y)
 > $$
 
-Based on [[Floyd-Warshall Algorithm#Algorithm 0]], applying the lemma yields an algorithm that solves the problem in $\mathcal{O}(|V|^3+|E|)$ time and $\mathcal{O}(|V|^2)$ space.
+Applying the lemma yields that the first dimension can be ignored.
+
+Based on [[Floyd-Warshall Algorithm#Algorithm 0]], ignoring the first dimension yields an algorithm that solves the problem in $\mathcal{O}(|V|^3+|E|)$ time and $\mathcal{O}(|V|^2)$ space.
 
 ~~~c++
 std::vector dist(n, std::vector(n, inf));

@@ -36,8 +36,8 @@ std::vector<int> q(n);
 std::iota(q.begin(), q.end(), 0);
 
 while (!q.empty()) {
-	int u = std::ranges::min(q, [&](int i, int j) -> bool {
-		return dist[i] < dist[j];
+	int u = std::ranges::min(q, std::less(), [&](int u) -> int {
+		return dist[u];
 	});
 	std::erase(q, u);
 

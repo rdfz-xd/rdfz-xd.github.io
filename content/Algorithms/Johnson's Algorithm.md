@@ -18,8 +18,11 @@ tags: [Computer Science, Computer Science/Graph Theory]
 
 ### Algorithm
 
-1. Let $s$ be a new vertex, and let $G^*=(V\cup\{s\},E\cup\{(s,v,0):v\in V\})$.
-2. Apply the [[Bellman-Ford Algorithm]] to find $\operatorname{dist}_{G^*}(s,v)$ for each vertex $v$ in $V$.
+Let $\operatorname{dist}_G(x,y)$ denote the length of the shortest path between $x$ and $y$ in graph $G$.
+
+0. Let $s$ be a new vertex, and let $G^*=(V\cup\{s\},E\cup\{(s,v,0):v\in V\})$.
+
+1. Apply the [[Bellman-Ford Algorithm]] to find $\operatorname{dist}_{G^*}(s,v)$ for each vertex $v$ in $V$.
 
 > [!info] Lemma
 >

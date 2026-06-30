@@ -13,7 +13,7 @@ tags: [Computer Science, Computer Science/Graph Theory]
 
 > [!tip] Hint
 >
-> This problem can also be solved by [[Boruvka's Algorithm]] in $\mathcal{O}(|E|\log|V|)$ time and $\mathcal{O}(|V|)$ space.
+> This problem can also be solved by [[Boruvka's Algorithm]] in $\mathcal{O}(|E|\log|V|)$ time and $\mathcal{O}(|E|)$ space.
 
 ### Algorithm 0
 
@@ -30,9 +30,10 @@ tags: [Computer Science, Computer Science/Graph Theory]
 > >
 > > If $e\notin E(T)$, let $C$ be the cycle in $T+e$, $f$ be an edge in $C\cap\delta(v)\setminus\{e\}$, then since $w(f)\ge w(e)$, it follows that $T+e-f$ is also a minimum spanning tree of $G$.
 
-1. Fix a vertex $v$ in $V$.
-2. Select an edge $e$ in $\arg\min_{e\in\delta(v)}w(e)$.
-3. Solve for the graph obtained by contracting $e$ recursively.
+0. Fix a vertex $v$ in $V$.
+
+1. Select an edge $e$ in $\arg\min_{e\in\delta(v)}w(e)$.
+2. Solve for the graph obtained by contracting $e$ recursively.
 
 Applying the lemma yields that the selected edges form a minimum spanning tree.
 
@@ -46,8 +47,8 @@ std::iota(s.begin(), s.end(), 0);
 int sum = 0;
 
 while (!s.empty()) {
-	int u = std::ranges::min(s, [&](int i, int j) -> bool {
-		return dist[i] < dist[j];
+	int u = std::ranges::min(s, std::less(), [&](int u) -> int {
+		return dist[u];
 	});
 	std::erase(s, u);
 

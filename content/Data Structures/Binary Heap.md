@@ -14,8 +14,9 @@ This costs a space of $\mathcal{O}(|S|)$.
 
 ### Algorithm
 
-1. Make a new node that stores $x$.
-2. Maintain the order by swapping elements.
+0. Make a new node that stores $x$.
+
+1. Maintain the order by swapping elements.
 
 This algorithm solves the problem in $\mathcal{O}(\log|S|)$ time and $\mathcal{O}(1)$ space.
 
@@ -46,9 +47,10 @@ return a[1];
 
 ### Algorithm
 
-1. Swap the element in the root with the element in the last node.
-2. Delete the last node.
-3. Maintain the order by swapping elements.
+0. Swap the element in the root with the element in the last node.
+
+1. Delete the last node.
+2. Maintain the order by swapping elements.
 
 This algorithm solves the problem in $\mathcal{O}(\log|S|)$ time and $\mathcal{O}(1)$ space.
 

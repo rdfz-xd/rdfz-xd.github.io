@@ -11,8 +11,9 @@ The [[Euclidean Algorithm]] is an algorithm that computes $\gcd\{a, b\}$ for non
 > \forall a\in\N,\forall b\in\Z_+,\gcd\{a,b\}=\gcd\{b,a\bmod b\}
 > $$
 
-1. Solve for $\gcd\{b,a\bmod b\}$ recursively.
-2. Apply the lemma to find $\gcd\{a,b\}$.
+0. Solve for $\gcd\{b,a\bmod b\}$ recursively.
+
+1. Apply the lemma to find $\gcd\{a,b\}$.
 
 This algorithm solves the problem in $\mathcal{O}(\log a+\log b)$ time and $\mathcal{O}(\log a+\log b)$ space.
 

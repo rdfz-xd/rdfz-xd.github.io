@@ -18,16 +18,18 @@ The [[Bellman-Ford Algorithm]] is an algorithm that computes the length of the s
 
 ### Algorithm 0
 
-Let $f_i(v)$ denote the length of the shortest path from $s$ to $v$ passing through at most $i$ edges, $\delta_\text{in}(v)$ denote the set of edges directed toward $v$.
-
 > [!info] Lemma
+>
+> Let $f_i(v)$ denote the length of the shortest path from $s$ to $v$ passing through at most $i$ edges, $\delta_\text{in}(v)$ denote the set of edges directed toward $v$. Then
 > $$
 > \forall i\in\Z_+,\forall v\in V,f_i(v)=\min\{f_{i-1}(v),\min_{e\in\delta_\text{in}(v)}(f_{i-1}(s(e))+w(e))\}
 > $$
 
 > [!info] Lemma
+>
+> Let $\operatorname{dist}(s,v)$ denote the length of the shortest path from $s$ to $v$, then
 > $$
-> \forall v\in V,\operatorname{dist}_G(s,v)=f_{|V|-1}(v)
+> \forall v\in V,\operatorname{dist}(s,v)=f_{|V|-1}(v)
 > $$
 >
 > > [!note]- Proof

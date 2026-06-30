@@ -11,8 +11,9 @@ The [[Extended Euclidean Algorithm]] is an algorithm that finds a pair of intege
 > \forall a\in\N,\forall b\in\Z_+,\gcd\{a,b\}=\gcd\{b,a\bmod b\}
 > $$
 
-1. Solve for $bx'+(a\bmod b)y'=\gcd\{b,a\bmod b\}$ recursively.
-2. $x=y',y=x'-\lfloor\frac{a}{b}\rfloor y'$ is a solution for $ax+by=\gcd\{a,b\}$.
+0. Solve for $bx'+(a\bmod b)y'=\gcd\{b,a\bmod b\}$ recursively.
+
+1. $x=y',y=x'-\lfloor\frac{a}{b}\rfloor y'$ is a solution for $ax+by=\gcd\{a,b\}$.
 
 > [!note]- Proof
 >

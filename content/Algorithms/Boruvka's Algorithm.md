@@ -2,7 +2,7 @@
 tags: [Computer Science, Computer Science/Graph Theory]
 ---
 
-[[Boruvka's Algorithm]] is an algorithm that computes the weight of the minimum spanning tree of a connected undirected graph $G=(V,E)$ with edge weights in $\mathcal{O}(|E|\log|V|)$ time and $\mathcal{O}(|V|)$ space.
+[[Boruvka's Algorithm]] is an algorithm that computes the weight of the minimum spanning tree of a connected undirected graph $G=(V,E)$ with edge weights in $\mathcal{O}(|E|\log|V|)$ time and $\mathcal{O}(|E|)$ space.
 
 > [!tip] Hint
 >
@@ -30,9 +30,10 @@ tags: [Computer Science, Computer Science/Graph Theory]
 > >
 > > If $e\notin E(T)$, let $C$ be the cycle in $T+e$, $f$ be an edge in $C\cap\delta(v)\setminus\{e\}$, then since $w(f)\ge w(e)$, it follows that $T+e-f$ is also a minimum spanning tree of $G$.
 
-1. For each vertex $v$ in $V$, choose an edge $e_v$ in $\arg\min_{e\in\delta(v)}w(e)$.
-2. For each $e_v$, if it is still connecting two distinct vertices, select and contract it.
-3. Solve for the resulting graph recursively.
+0. For each vertex $v$ in $V$, choose an edge $e_v$ in $\arg\min_{e\in\delta(v)}w(e)$.
+
+1. For each $e_v$, if it is still connecting two distinct vertices, select and contract it.
+2. Solve for the resulting graph recursively.
 
 Let $u$ be the other vertex incident with $e_v$, then it is easy to prove that
 $$
@@ -40,7 +41,7 @@ $$
 $$
 Therefore, at the moment each edge is selected, it satisfies the conditions of the lemma. Applying the lemma yields that the selected edges form a minimum spanning tree.
 
-This algorithm solves the problem in $\mathcal{O}(|E|\log|V|)$ time and $\mathcal{O}(|V|)$ space.
+This algorithm solves the problem in $\mathcal{O}(|E|\log|V|)$ time and $\mathcal{O}(|E|)$ space.
 
 ~~~c++
 std::vector f(m, false);
