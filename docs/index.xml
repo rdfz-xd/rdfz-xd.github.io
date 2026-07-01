@@ -10,61 +10,61 @@
     <link>https://dxing.blog/Algorithms/Bellman-Ford-Algorithm</link>
     <guid>https://dxing.blog/Algorithms/Bellman-Ford-Algorithm</guid>
     <description><![CDATA[ The Bellman-Ford Algorithm is an algorithm that computes the length of the shortest path from a vertex s to every vertex in a directed graph G=(V,E) with edge weights and no negative cycles in \mathcal{O}(|V||E|) time and \mathcal{O}(|V|) space. ]]></description>
-    <pubDate>Tue, 30 Jun 2026 06:38:01 GMT</pubDate>
+    <pubDate>Wed, 01 Jul 2026 06:25:27 GMT</pubDate>
   </item><item>
     <title>Boruvka&#039;s Algorithm</title>
     <link>https://dxing.blog/Algorithms/Boruvka's-Algorithm</link>
     <guid>https://dxing.blog/Algorithms/Boruvka's-Algorithm</guid>
     <description><![CDATA[ Boruvka’s Algorithm is an algorithm that computes the weight of the minimum spanning tree of a connected undirected graph G=(V,E) with edge weights in \mathcal{O}(|E|\log|V|) time and \mathcal{O}(|E|) space. ]]></description>
-    <pubDate>Tue, 30 Jun 2026 06:38:01 GMT</pubDate>
+    <pubDate>Wed, 01 Jul 2026 06:25:27 GMT</pubDate>
   </item><item>
     <title>Dijkstra&#039;s Algorithm</title>
     <link>https://dxing.blog/Algorithms/Dijkstra's-Algorithm</link>
     <guid>https://dxing.blog/Algorithms/Dijkstra's-Algorithm</guid>
     <description><![CDATA[ Dijkstra’s Algorithm is an algorithm that computes the length of the shortest path from a vertex s to every vertex in a directed graph G=(V,E) with non-negative edge weights in \mathcal{O}(|V|^2+|E|) time and \mathcal{O}(|V|+|E|) space, or \mathcal{O}((|V|+|E|)\log|E|) time and \mathcal{O}(|V|+|E|) ... ]]></description>
-    <pubDate>Tue, 30 Jun 2026 06:38:01 GMT</pubDate>
+    <pubDate>Wed, 01 Jul 2026 06:25:27 GMT</pubDate>
+  </item><item>
+    <title>Du&#039;s First Division Sieve</title>
+    <link>https://dxing.blog/Algorithms/Du's-Sieves/Du's-First-Division-Sieve</link>
+    <guid>https://dxing.blog/Algorithms/Du's-Sieves/Du's-First-Division-Sieve</guid>
+    <description><![CDATA[  Lemma \forall n\in\Z_+,\left|\left\{\left\lfloor\frac{n}{1}\right\rfloor,\left\lfloor\frac{n}{2}\right\rfloor,\dots,\left\lfloor\frac{n}{n}\right\rfloor\right\}\right|\in\mathcal{O}(\sqrt n) Proof \begin{align} \left|\left\{\left\lfloor\frac{n}{1}\right\rfloor,\left\lfloor\frac{n}{2}\right\rfloor,\... ]]></description>
+    <pubDate>Wed, 01 Jul 2026 06:25:27 GMT</pubDate>
+  </item><item>
+    <title>Du&#039;s First Multiplication Sieve</title>
+    <link>https://dxing.blog/Algorithms/Du's-Sieves/Du's-First-Multiplication-Sieve</link>
+    <guid>https://dxing.blog/Algorithms/Du's-Sieves/Du's-First-Multiplication-Sieve</guid>
+    <description><![CDATA[  Lemma \forall n\in\Z_+,\left|\left\{\left\lfloor\frac{n}{1}\right\rfloor,\left\lfloor\frac{n}{2}\right\rfloor,\dots,\left\lfloor\frac{n}{n}\right\rfloor\right\}\right|\in\mathcal{O}(\sqrt n) Proof \begin{align} \left|\left\{\left\lfloor\frac{n}{1}\right\rfloor,\left\lfloor\frac{n}{2}\right\rfloor,\... ]]></description>
+    <pubDate>Wed, 01 Jul 2026 06:25:27 GMT</pubDate>
+  </item><item>
+    <title>Du&#039;s Second Division Sieve</title>
+    <link>https://dxing.blog/Algorithms/Du's-Sieves/Du's-Second-Division-Sieve</link>
+    <guid>https://dxing.blog/Algorithms/Du's-Sieves/Du's-Second-Division-Sieve</guid>
+    <description><![CDATA[  Lemma \forall n\in\Z_+,\left|\left\{\left\lfloor\frac{n}{1}\right\rfloor,\left\lfloor\frac{n}{2}\right\rfloor,\dots,\left\lfloor\frac{n}{n}\right\rfloor\right\}\right|\in\mathcal{O}(\sqrt n) Proof \begin{align} \left|\left\{\left\lfloor\frac{n}{1}\right\rfloor,\left\lfloor\frac{n}{2}\right\rfloor,\... ]]></description>
+    <pubDate>Wed, 01 Jul 2026 06:25:27 GMT</pubDate>
+  </item><item>
+    <title>Du&#039;s Second Multiplication Sieve</title>
+    <link>https://dxing.blog/Algorithms/Du's-Sieves/Du's-Second-Multiplication-Sieve</link>
+    <guid>https://dxing.blog/Algorithms/Du's-Sieves/Du's-Second-Multiplication-Sieve</guid>
+    <description><![CDATA[  Lemma \forall n\in\Z_+,\left|\left\{\left\lfloor\frac{n}{1}\right\rfloor,\left\lfloor\frac{n}{2}\right\rfloor,\dots,\left\lfloor\frac{n}{n}\right\rfloor\right\}\right|\in\mathcal{O}(\sqrt n) Proof \begin{align} \left|\left\{\left\lfloor\frac{n}{1}\right\rfloor,\left\lfloor\frac{n}{2}\right\rfloor,\... ]]></description>
+    <pubDate>Wed, 01 Jul 2026 06:25:27 GMT</pubDate>
   </item><item>
     <title>Euclidean Algorithm</title>
     <link>https://dxing.blog/Algorithms/Euclidean-Algorithm</link>
     <guid>https://dxing.blog/Algorithms/Euclidean-Algorithm</guid>
     <description><![CDATA[ The Euclidean Algorithm is an algorithm that computes \gcd\{a, b\} for non-negative integers a and b in \mathcal{O}(\log a+\log b) time and \mathcal{O}(\log a+\log b) space. ]]></description>
-    <pubDate>Tue, 30 Jun 2026 06:38:01 GMT</pubDate>
+    <pubDate>Wed, 01 Jul 2026 06:25:27 GMT</pubDate>
+  </item><item>
+    <title>Euler&#039;s Sieve</title>
+    <link>https://dxing.blog/Algorithms/Euler's-Sieve</link>
+    <guid>https://dxing.blog/Algorithms/Euler's-Sieve</guid>
+    <description><![CDATA[ Euler’s Sieve is an algorithm that finds all the primes in 2,3,\dots,n in \mathcal{O}(n) time and \mathcal{O}(n) space. ]]></description>
+    <pubDate>Wed, 01 Jul 2026 06:25:27 GMT</pubDate>
   </item><item>
     <title>Extended Euclidean Algorithm</title>
     <link>https://dxing.blog/Algorithms/Extended-Euclidean-Algorithm</link>
     <guid>https://dxing.blog/Algorithms/Extended-Euclidean-Algorithm</guid>
     <description><![CDATA[ The Extended Euclidean Algorithm is an algorithm that finds a pair of integers x and y such that ax+by=\gcd\{a,b\} for non-negative integers a and b in \mathcal{O}(\log a+\log b) time and \mathcal{O}(\log a+\log b) space. ]]></description>
-    <pubDate>Tue, 30 Jun 2026 06:38:01 GMT</pubDate>
-  </item><item>
-    <title>Floyd-Warshall Algorithm</title>
-    <link>https://dxing.blog/Algorithms/Floyd-Warshall-Algorithm</link>
-    <guid>https://dxing.blog/Algorithms/Floyd-Warshall-Algorithm</guid>
-    <description><![CDATA[ The Floyd-Warshall Algorithm is an algorithm that computes the length of the shortest path between every pair of vertices in a directed graph G=(V,E) with edge weights and no negative cycles in \mathcal{O}(|V|^3+|E|) time and \mathcal{O}(|V|^2) space. ]]></description>
-    <pubDate>Tue, 30 Jun 2026 06:38:01 GMT</pubDate>
-  </item><item>
-    <title>Hierholzer&#039;s Algorithm</title>
-    <link>https://dxing.blog/Algorithms/Hierholzer's-Algorithm</link>
-    <guid>https://dxing.blog/Algorithms/Hierholzer's-Algorithm</guid>
-    <description><![CDATA[ Hierholzer’s Algorithm is an algorithm that finds an Eulerian circuit in a weakly connected directed graph G=(V,E), where the in-degree of each vertex equals its out-degree, in \mathcal{O}(|E|) time and \mathcal{O}(|E|) space. ]]></description>
-    <pubDate>Tue, 30 Jun 2026 06:38:01 GMT</pubDate>
-  </item><item>
-    <title>Johnson&#039;s Algorithm</title>
-    <link>https://dxing.blog/Algorithms/Johnson's-Algorithm</link>
-    <guid>https://dxing.blog/Algorithms/Johnson's-Algorithm</guid>
-    <description><![CDATA[ Johnson’s Algorithm is an algorithm that computes the length of the shortest path between every pair of vertices in a directed graph G=(V,E) with edge weights and no negative cycles in \mathcal{O}(|V|^3+|V||E|) time and \mathcal{O}(|V|^2+|E|) space, or \mathcal{O}((|V|^2+|V||E|)\log|E|) time and \ma... ]]></description>
-    <pubDate>Tue, 30 Jun 2026 06:38:01 GMT</pubDate>
-  </item><item>
-    <title>Kahn&#039;s Algorithm</title>
-    <link>https://dxing.blog/Algorithms/Kahn's-Algorithm</link>
-    <guid>https://dxing.blog/Algorithms/Kahn's-Algorithm</guid>
-    <description><![CDATA[ Kahn’s Algorithm is an algorithm that finds a topological sort for a directed acyclic graph G=(V,E) in \mathcal{O}(|V|+|E|) time and \mathcal{O}(|V|+|E|) space. ]]></description>
-    <pubDate>Tue, 30 Jun 2026 06:38:01 GMT</pubDate>
-  </item><item>
-    <title>Kruskal&#039;s Algorithm</title>
-    <link>https://dxing.blog/Algorithms/Kruskal's-Algorithm</link>
-    <guid>https://dxing.blog/Algorithms/Kruskal's-Algorithm</guid>
-    <description><![CDATA[ Kruskal’s Algorithm is an algorithm that computes the weight of the minimum spanning tree of a connected undirected graph G=(V,E) with edge weights in \mathcal{O}(|E|\log|E|) time and \mathcal{O}(|E|) space. ]]></description>
-    <pubDate>Tue, 30 Jun 2026 06:38:01 GMT</pubDate>
+    <pubDate>Wed, 01 Jul 2026 06:25:27 GMT</pubDate>
   </item>
     </channel>
   </rss>
