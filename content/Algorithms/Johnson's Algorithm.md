@@ -4,7 +4,7 @@ tags: [Computer Science, Computer Science/Graph Theory]
 
 [[Johnson's Algorithm]] is an algorithm that computes the length of the shortest path between every pair of vertices in a directed graph $G=(V,E)$ with edge weights and no negative cycles in
 
-- $\mathcal{O}(|V|^3+|V||E|)$ time and $\mathcal{O}(|V|^2)$ space, or
+- $\mathcal{O}(|V|^3+|V||E|)$ time and $\mathcal{O}(|V|^2+|E|)$ space, or
 
 - $\mathcal{O}((|V|^2+|V||E|)\log|E|)$ time and $\mathcal{O}(|V|^2+|E|)$ space.
 
@@ -61,33 +61,31 @@ Let $\operatorname{dist}_G(x,y)$ denote the length of the shortest path between 
 
 This algorithm solves the problem in
 
-- $\mathcal{O}(|V|^3+|V||E|)$ time and $\mathcal{O}(|V|^2)$ space, or
+- $\mathcal{O}(|V|^3+|V||E|)$ time and $\mathcal{O}(|V|^2+|E|)$ space, or
 
 - $\mathcal{O}((|V|^2+|V||E|)\log|E|)$ time and $\mathcal{O}(|V|^2+|E|)$ space.
 
 ```c++
-auto adj0 = adj;
-adj0.emplace_back();
-for (int i = 0; i < n; i++) {
-	adj0[n].emplace_back(i, 0);
-}
-
-auto h = bellman_ford(adj0, n);
-
-auto adj1 = adj;
-for (int u = 0; u < n; u++) {
-	for (auto &[v, w] : adj1[u]) {
-		w += h[u] - h[v];
+std::vector<std::vector<int>> johnson(int n, int m, std::vector<int> u, std::vector<int> v, std::vector<int> w) {
+	for (int i = 0; i < n; i++) {
+		u.push_back(n);
+		v.push_back(i);
+		w.push_back(0);
 	}
-}
 
-std::vector dist(n, std::vector<int>(n));
-for (int u = 0; u < n; u++) {
-	dist[u] = dijkstra(adj1, u);
-	for (int v = 0; v < n; v++) {
-		dist[u][v] -= h[u] - h[v];
+	auto h = bellman_ford(n, m, u, v, w, n);
+	for (int i = 0; i < m; i++) {
+		w[i] += h[u[i]] - h[v[i]];
 	}
+
+	std::vector dist(n, std::vector<int>(n));
+	for (int i = 0; i < n; i++) {
+		dist[i] = dijkstra(n, m, u, v, w, i);
+		for (int j = 0; j < n; j++) {
+			dist[i][j] -= h[i] - h[j];
+		}
+	}
+	return dist;
 }
-return dist;
 ```
 

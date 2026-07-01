@@ -12,16 +12,18 @@ $$
 Applying the definition to find $\pi$ yields an algorithm that solves the problem in $\mathcal{O}(n^3)$ time and $\mathcal{O}(n)$ space.
 
 ~~~c++
-std::vector pi(n + 1, 0);
-for (int i = 2; i <= n; i++) {
-	for (int j = i - 1; j > 0; j--) {
-		if (s.substr(0, j) == s.substr(i - j, j)) {
-			pi[i] = j;
-			break;
+std::vector<int> knuth_morris_pratt(int n, const std::string &s) {
+	std::vector pi(n + 1, 0);
+	for (int i = 2; i <= n; i++) {
+		for (int j = i - 1; j > 0; j--) {
+			if (s.substr(0, j) == s.substr(i - j, j)) {
+				pi[i] = j;
+				break;
+			}
 		}
 	}
+	return pi;
 }
-return pi;
 ~~~
 
 ### Algorithm 1
@@ -43,16 +45,18 @@ return pi;
 Based on [[Knuth-Morris-Pratt-Algorithm#Algorithm 0]], applying the lemma to get an upper bound for $\pi(i)$ yields an algorithm that solves the problem in $\mathcal{O}(n^2)$ time and $\mathcal{O}(n)$ space.
 
 ~~~c++
-std::vector pi(n + 1, 0);
-for (int i = 2; i <= n; i++) {
-	for (int j = pi[i - 1] + 1; j > 0; j--) {
-		if (s.substr(0, j) == s.substr(i - j, j)) {
-			pi[i] = j;
-			break;
+std::vector<int> knuth_morris_pratt(int n, const std::string &s) {
+	std::vector pi(n + 1, 0);
+	for (int i = 2; i <= n; i++) {
+		for (int j = pi[i - 1] + 1; j > 0; j--) {
+			if (s.substr(0, j) == s.substr(i - j, j)) {
+				pi[i] = j;
+				break;
+			}
 		}
 	}
+	return pi;
 }
-return pi;
 ~~~
 
 > [!note]- Proof
@@ -95,14 +99,16 @@ return pi;
 Based on [[Knuth-Morris-Pratt-Algorithm#Algorithm 1]], applying the lemma to rule out some impossible $j$ yields an algorithm that solves the problem in $\mathcal{O}(n)$ time and $\mathcal{O}(n)$ space.
 
 ~~~c++
-std::vector<int> pi(n + 1);
-pi[0] = pi[1] = 0;
-for (int i = 1, j = 0; i < n; i++) {
-	while (j && s[j] != s[i]) {
-		j = pi[j];
+std::vector<int> knuth_morris_pratt(int n, const std::string &s) {
+	std::vector<int> pi(n + 1);
+	pi[0] = pi[1] = 0;
+	for (int i = 1, j = 0; i < n; i++) {
+		while (j && s[j] != s[i]) {
+			j = pi[j];
+		}
+		j += s[j] == s[i];
+		pi[i + 1] = j;
 	}
-	j += s[j] == s[i];
-	pi[i + 1] = j;
+	return pi;
 }
-return pi;
 ~~~

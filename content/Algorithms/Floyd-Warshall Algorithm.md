@@ -12,7 +12,7 @@ The [[Floyd-Warshall Algorithm]] is an algorithm that computes the length of the
 >
 > This problem can also be solved by [[Johnson's Algorithm]] in
 >
-> - $\mathcal{O}(|V|^3+|V||E|)$ time and $\mathcal{O}(|V|^2)$ space, or
+> - $\mathcal{O}(|V|^3+|V||E|)$ time and $\mathcal{O}(|V|^2+|E|)$ space, or
 >
 > - $\mathcal{O}((|V|^2+|V||E|)\log|E|)$ time and $\mathcal{O}(|V|^2+|E|)$ space.
 
@@ -35,18 +35,20 @@ The [[Floyd-Warshall Algorithm]] is an algorithm that computes the length of the
 Applying the lemmas to find $f$ and $\operatorname{dist}$ yields an algorithm that solves the problem in $\mathcal{O}(|V|^3+|E|)$ time and $\mathcal{O}(|V|^3)$ space.
 
 ~~~c++
-std::vector dist(n + 1, std::vector(n, std::vector(n, inf)));
-for (auto [u, v, w] : E) {
-	dist[0][u][v] = w;
-}
-for (int k = 0; k < n; k++) {
-	for (int i = 0; i < n; i++) {
-		for (int j = 0; j < n; j++) {
-			dist[k + 1][i][j] = std::min(dist[k][i][j], dist[k][i][k] + dist[k][k][j]);
+std::vector<std::vector<int>> floyd_warshall(int n, int m, const std::vector<int> &u, const std::vector<int> &v, const std::vector<int> &w) {
+	std::vector dist(n + 1, std::vector(n, std::vector(n, inf)));
+	for (int i = 0; i < m; i++) {
+		dist[0][u[i]][v[i]] = std::min(dist[0][u[i]][v[i]], w[i]);
+	}
+	for (int k = 0; k < n; k++) {
+		for (int i = 0; i < n; i++) {
+			for (int j = 0; j < n; j++) {
+				dist[k + 1][i][j] = std::min(dist[k][i][j], dist[k][i][k] + dist[k][k][j]);
+			}
 		}
 	}
+	return dist[n];
 }
-return dist[n];
 ~~~
 
 ### Algorithm 1
@@ -65,17 +67,19 @@ Applying the lemma yields that the first dimension can be ignored.
 Based on [[Floyd-Warshall Algorithm#Algorithm 0]], ignoring the first dimension yields an algorithm that solves the problem in $\mathcal{O}(|V|^3+|E|)$ time and $\mathcal{O}(|V|^2)$ space.
 
 ~~~c++
-std::vector dist(n, std::vector(n, inf));
-for (auto [u, v, w] : E) {
-	dist[u][v] = w;
-}
-for (int k = 0; k < n; k++) {
-	for (int i = 0; i < n; i++) {
-		for (int j = 0; j < n; j++) {
-			dist[i][j] = std::min(dist[i][j], dist[i][k] + dist[k][j]);
+std::vector<std::vector<int>> floyd_warshall(int n, int m, const std::vector<int> &u, const std::vector<int> &v, const std::vector<int> &w) {
+	std::vector dist(n, std::vector(n, inf));
+	for (int i = 0; i < m; i++) {
+		dist[u[i]][v[i]] = std::min(dist[u[i]][v[i]], w[i]);
+	}
+	for (int k = 0; k < n; k++) {
+		for (int i = 0; i < n; i++) {
+			for (int j = 0; j < n; j++) {
+				dist[i][j] = std::min(dist[i][j], dist[i][k] + dist[k][j]);
+			}
 		}
 	}
+	return dist;
 }
-return dist;
 ~~~
 

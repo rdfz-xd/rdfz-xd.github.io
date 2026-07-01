@@ -18,7 +18,7 @@ tags: [Computer Science]
 
 Let $S_f(n)=\sum_{k=1}^nf(k)$.
 
-[[Du's First Multiplication Sieve]] is an algorithm that computes $S_{f*g}(\lfloor\frac{n}{1}\rfloor),S_{f*g}(\lfloor\frac{n}{2}\rfloor),\dots,S_{f*g}(\lfloor\frac{n}{n}\rfloor)$ for arithmetic functions $f$ and $g$ in $\mathcal{O}(n^\frac{3}{4})$ time and $\mathcal{O}(\sqrt n)$ space, if $S_f(\lfloor\frac{n}{1}\rfloor),S_f(\lfloor\frac{n}{2}\rfloor),\dots,S_f(\lfloor\frac{n}{n}\rfloor)$ and $S_g(\lfloor\frac{n}{1}\rfloor),S_g(\lfloor\frac{n}{2}\rfloor),\dots,S_g(\lfloor\frac{n}{n}\rfloor)$ are given.
+[[Du's First Multiplication Sieve]] is an algorithm that computes $S_{f*g}(\lfloor\frac{n}{1}\rfloor),S_{f*g}(\lfloor\frac{n}{2}\rfloor),\dots,S_{f*g}(\lfloor\frac{n}{n}\rfloor)$ for arithmetic functions $f$ and $g$, if $S_f(\lfloor\frac{n}{1}\rfloor),S_f(\lfloor\frac{n}{2}\rfloor),\dots,S_f(\lfloor\frac{n}{n}\rfloor)$ and $S_g(\lfloor\frac{n}{1}\rfloor),S_g(\lfloor\frac{n}{2}\rfloor),\dots,S_g(\lfloor\frac{n}{n}\rfloor)$ are given, in $\mathcal{O}(n^\frac{3}{4})$ time and $\mathcal{O}(\sqrt n)$ space.
 
 ### Algorithm
 
@@ -41,13 +41,28 @@ Let $S_f(n)=\sum_{k=1}^nf(k)$.
 Applying the lemma to find $S_{f*g}$ yields an algorithm that solves the problem in $\mathcal{O}(n^\frac{3}{4})$ time and $\mathcal{O}(\sqrt n)$ space.
 
 ~~~c++
-std::unordered_map<int, int> sh;
-for (int i : s) {
-	for (int j = 1; j <= i; j = i / (i / j) + 1) {
-		sh[i] += (sg[i / (i / j)] - sg[j - 1]) * sf[i / j];
+std::unordered_map<int, int> du(int n, const std::unordered_map<int, int> &sf, const std::unordered_map<int, int> &sg) {
+	int m = std::sqrt(n);
+
+	std::vector<int> d;
+	for (int i = 1; i < m; i++) {
+		if (n / (n / i) == i) {
+			d.push_back(i);
+		}
 	}
+	for (int i = n / m; i > 0; i--) {
+		d.push_back(n / i);
+	}
+	d.erase(std::unique(d.begin(), d.end()), d.end());
+
+	std::unordered_map<int, int> sh;
+	for (int i : d) {
+		for (int j = 1; j <= i; j = i / (i / j) + 1) {
+			sh[i] += (sg.at(i / (i / j)) - (j > 1 ? sg.at(j - 1) : 0)) * sf.at(i / j);
+		}
+	}
+	return sh;
 }
-return sh;
 ~~~
 
 > [!note]- Proof

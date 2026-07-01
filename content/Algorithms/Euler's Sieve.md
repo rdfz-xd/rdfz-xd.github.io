@@ -18,25 +18,27 @@ tags: [Computer Science]
 For $m=2,3,\dots,n$, mark all $k$ such that $\frac{k}{\operatorname{lpf}(k)}=m$. Applying the lemma yields that $m$ is prime iff $m$ is unmarked.
 
 ~~~c++
-std::vector f(n + 1, true);
-std::vector<int> primes;
+std::vector<int> euler(int n) {
+	std::vector f(n + 1, true);
+	std::vector<int> primes;
 
-for (int i = 2; i <= n; i++) {
-	if (f[i]) {
-		primes.push_back(i);
-	}
-	for (int j : primes) {
-		if (i * j > n) {
-			break;
+	for (int i = 2; i <= n; i++) {
+		if (f[i]) {
+			primes.push_back(i);
 		}
-		f[i * j] = false;
-		if (i % j == 0) {
-			break;
+		for (int j : primes) {
+			if (i * j > n) {
+				break;
+			}
+			f[i * j] = false;
+			if (i % j == 0) {
+				break;
+			}
 		}
 	}
+
+	return primes;
 }
-
-return primes;
 ~~~
 
 > [!note]- Proof

@@ -64,23 +64,25 @@ This costs of space of $\mathcal{O}(n)$.
 This algorithm solves the problem in expected $\mathcal{O}(\log n)$ time and expected $\mathcal{O}(\log n)$ space.
 
 ```c++
-return y_combinator([&](auto &&self, Node *o, int k) -> std::pair<Node *, Node *> {
-	if (!o) {
-		return {nullptr, nullptr};
-	}
+std::pair<Node *, Node *> split(Node *o, int k) {
+	return y_combinator([&](auto &&self, Node *o, int k) -> std::pair<Node *, Node *> {
+		if (!o) {
+			return {nullptr, nullptr};
+		}
 
-	if (k <= size(o->lch)) {
-		auto [x, y] = self(o->lch, k);
-		o->lch = y;
-		o->siz = size(o->lch) + 1 + size(o->rch);
-		return {x, o};
-	} else {
-		auto [x, y] = self(o->rch, k - size(o->lch) - 1);
-		o->rch = x;
-		o->siz = size(o->lch) + 1 + size(o->rch);
-		return {o, y};
-	}
-})(o, k);
+		if (k <= size(o->lch)) {
+			auto [x, y] = self(o->lch, k);
+			o->lch = y;
+			o->siz = size(o->lch) + 1 + size(o->rch);
+			return {x, o};
+		} else {
+			auto [x, y] = self(o->rch, k - size(o->lch) - 1);
+			o->rch = x;
+			o->siz = size(o->lch) + 1 + size(o->rch);
+			return {o, y};
+		}
+	})(o, k);
+}
 ```
 
 ## Merge
@@ -97,22 +99,24 @@ Let $x$ be the root of the first [[Treap]], $y$ be the root of the second [[Trea
 This algorithm solves the problem in expected $\mathcal{O}(\log n)$ time and expected $\mathcal{O}(\log n)$ space.
 
 ```c++
-return y_combinator([&](auto &&self, Node *x, Node *y) -> Node * {
-	if (!x) {
-		return y;
-	}
-	if (!y) {
-		return x;
-	}
+Node *merge(Node *x, Node *y) {
+	return y_combinator([&](auto &&self, Node *x, Node *y) -> Node * {
+		if (!x) {
+			return y;
+		}
+		if (!y) {
+			return x;
+		}
 
-	if (x->prio > y->prio) {
-		x->rch = self(x->rch, y);
-		x->siz = size(x->lch) + 1 + size(x->rch);
-		return x;
-	} else {
-		y->lch = self(x, y->lch);
-		y->siz = size(y->lch) + 1 + size(y->rch);
-		return y;
-	}
-})(x, y);
+		if (x->prio > y->prio) {
+			x->rch = self(x->rch, y);
+			x->siz = size(x->lch) + 1 + size(x->rch);
+			return x;
+		} else {
+			y->lch = self(x, y->lch);
+			y->siz = size(y->lch) + 1 + size(y->rch);
+			return y;
+		}
+	})(x, y);
+}
 ```

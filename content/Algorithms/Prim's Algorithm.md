@@ -4,7 +4,7 @@ tags: [Computer Science, Computer Science/Graph Theory]
 
 [[Prim's Algorithm]] is an algorithm that computes the weight of the minimum spanning tree of a connected undirected graph $G=(V,E)$ with edge weights in
 
-- $\mathcal{O}(|V|^2+|E|)$ time and $\mathcal{O}(|V|))$ space, or
+- $\mathcal{O}(|V|^2+|E|)$ time and $\mathcal{O}(|E|))$ space, or
 - $\mathcal{O}(|E|\log|E|)$ time and $\mathcal{O}(|E|)$ space.
 
 > [!tip] Hint
@@ -37,28 +37,36 @@ tags: [Computer Science, Computer Science/Graph Theory]
 
 Applying the lemma yields that the selected edges form a minimum spanning tree.
 
-This algorithm solves the problem in $\mathcal{O}(|V|^2+|E|)$ time and $\mathcal{O}(|V|)$ space.
+This algorithm solves the problem in $\mathcal{O}(|V|^2+|E|)$ time and $\mathcal{O}(|E|)$ space.
 
 ~~~c++
-std::vector dist(n, inf);
-dist[0] = 0;
-std::vector<int> s(n);
-std::iota(s.begin(), s.end(), 0);
-int sum = 0;
-
-while (!s.empty()) {
-	int u = std::ranges::min(s, std::less(), [&](int u) -> int {
-		return dist[u];
-	});
-	std::erase(s, u);
-
-	sum += dist[u];
-	for (auto [v, w] : adj[u]) {
-		dist[v] = std::min(dist[v], w);
+int prim(int n, int m, const std::vector<int> &u, const std::vector<int> &v, const std::vector<int> &w) {
+	std::vector<std::vector<std::pair<int, int>>> adj(n);
+	for (int i = 0; i < m; i++) {
+		adj[u[i]].emplace_back(v[i], w[i]);
+		adj[v[i]].emplace_back(u[i], w[i]);
 	}
-}
 
-return sum;
+	std::vector dist(n, inf);
+	dist[0] = 0;
+	std::vector<int> s(n);
+	std::iota(s.begin(), s.end(), 0);
+	int sum = 0;
+
+	while (!s.empty()) {
+		int u = std::ranges::min(s, std::less(), [&](int u) -> int {
+			return dist[u];
+		});
+		std::erase(s, u);
+
+		sum += dist[u];
+		for (auto [v, w] : adj[u]) {
+			dist[v] = std::min(dist[v], w);
+		}
+	}
+
+	return sum;
+}
 ~~~
 
 ### Algorithm 1
@@ -66,25 +74,33 @@ return sum;
 Based on [[Prim's Algorithm#Algorithm 0]], using a [[Binary Heap]] to maintain the adjacency list of $v$ yields an algorithm that solves the problem in $\mathcal{O}(|E|\log|E|)$ time and $\mathcal{O}(|E|)$ space.
 
 ~~~c++
-std::priority_queue<std::pair<int, int>, std::vector<std::pair<int, int>>, std::greater<>> q;
-q.emplace(0, 0);
-std::vector vis(n, false);
-int sum = 0;
-
-while (!q.empty()) {
-	auto [d, u] = q.top();
-	q.pop();
-	if (vis[u]) {
-		continue;
+int prim(int n, int m, const std::vector<int> &u, const std::vector<int> &v, const std::vector<int> &w) {
+	std::vector<std::vector<std::pair<int, int>>> adj(n);
+	for (int i = 0; i < m; i++) {
+		adj[u[i]].emplace_back(v[i], w[i]);
+		adj[v[i]].emplace_back(u[i], w[i]);
 	}
-	vis[u] = true;
 
-	sum += d;
-	for (auto [v, w] : adj[u]) {
-		q.emplace(w, v);
+	std::priority_queue<std::pair<int, int>, std::vector<std::pair<int, int>>, std::greater<>> q;
+	q.emplace(0, 0);
+	std::vector vis(n, false);
+	int sum = 0;
+
+	while (!q.empty()) {
+		auto [d, u] = q.top();
+		q.pop();
+		if (vis[u]) {
+			continue;
+		}
+		vis[u] = true;
+
+		sum += d;
+		for (auto [v, w] : adj[u]) {
+			q.emplace(w, v);
+		}
 	}
+
+	return sum;
 }
-
-return sum;
 ~~~
 

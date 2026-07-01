@@ -2,7 +2,7 @@
 tags: [Computer Science, Computer Science/Graph Theory]
 ---
 
-[[Kahn's Algorithm]] is an algorithm that finds a topological sort for a directed acyclic graph $G=(V,E)$ in $\mathcal{O}(|V|+|E|)$ time and $\mathcal{O}(|V|)$ space.
+[[Kahn's Algorithm]] is an algorithm that finds a topological sort for a directed acyclic graph $G=(V,E)$ in $\mathcal{O}(|V|+|E|)$ time and $\mathcal{O}(|V|+|E|)$ space.
 
 ### Algorithm 0
 
@@ -34,63 +34,69 @@ tags: [Computer Science, Computer Science/Graph Theory]
 1. Find a topological sort $v_0,v_1,\dots,v_{|V|-2}$ of $G-v$ recursively.
 2. $v,v_0,v_1,\dots,v_{|V|-2}$ is a topological sort of $G$.
 
-This algorithm solves the problem in $\mathcal{O}(|V|^2+|E|)$ time and $\mathcal{O}(|V|)$ space.
+This algorithm solves the problem in $\mathcal{O}(|V|^2+|E|)$ time and $\mathcal{O}(|V|+|E|)$ space.
 
 ```c++
-std::vector deg(n, 0);
-for (int u = 0; u < n; u++) {
-	for (int v : adj[u]) {
-		deg[v]++;
-	}
-}
+std::vector<int> kahn(int n, int m, const std::vector<int> &u, const std::vector<int> &v) {
+	std::vector<std::vector<int>> adj(n);
+	std::vector deg(n, 0);
 
-std::vector<int> s(n), o;
-std::iota(s.begin(), s.end(), 0);
-while (!s.empty()) {
-	int u = std::ranges::min(s, std::less(), [&](int u) -> int {
-		return deg[u];
-	});
-	std::erase(s, u);
-
-	o.push_back(u);
-	for (int v : adj[u]) {
-		deg[v]--;
+	for (int i = 0; i < m; i++) {
+		adj[u[i]].push_back(v[i]);
+		deg[v[i]]++;
 	}
+
+	std::vector<int> s(n), o;
+	std::iota(s.begin(), s.end(), 0);
+	while (!s.empty()) {
+		int u = std::ranges::min(s, std::less(), [&](int u) -> int {
+			return deg[u];
+		});
+		std::erase(s, u);
+
+		o.push_back(u);
+		for (int v : adj[u]) {
+			deg[v]--;
+		}
+	}
+	return o;
 }
-return o;
 ```
 
 ### Algorithm 1
 
-Based on [[Kahn's Algorithm#Algorithm 0]], maintaining $\{v:v\in V\land\deg_\text{in}(v)=0\}$ yields an algorithm that solves the problem in $\mathcal{O}(|V|+|E|)$ time and $\mathcal{O}(|V|)$ space.
+Based on [[Kahn's Algorithm#Algorithm 0]], maintaining $\{v:v\in V\land\deg_\text{in}(v)=0\}$ yields an algorithm that solves the problem in $\mathcal{O}(|V|+|E|)$ time and $\mathcal{O}(|V|+|E|)$ space.
 
 ```c++
-std::vector deg(n, 0);
-for (int u = 0; u < n; u++) {
-	for (int v : adj[u]) {
-		deg[v]++;
+std::vector<int> kahn(int n, int m, const std::vector<int> &u, const std::vector<int> &v) {
+	std::vector<std::vector<int>> adj(n);
+	std::vector deg(n, 0);
+
+	for (int i = 0; i < m; i++) {
+		adj[u[i]].push_back(v[i]);
+		deg[v[i]]++;
 	}
-}
 
-std::queue<int> q;
-for (int i = 0; i < n; i++) {
-	if (!deg[i]) {
-		q.push(i);
-	}
-}
-
-std::vector<int> o;
-while (!q.empty()) {
-	int u = q.front();
-	q.pop();
-
-	o.push_back(u);
-	for (int v : adj[u]) {
-		if (!--deg[v]) {
-			q.push(v);
+	std::queue<int> q;
+	for (int i = 0; i < n; i++) {
+		if (!deg[i]) {
+			q.push(i);
 		}
 	}
+
+	std::vector<int> o;
+	while (!q.empty()) {
+		int u = q.front();
+		q.pop();
+
+		o.push_back(u);
+		for (int v : adj[u]) {
+			if (!--deg[v]) {
+				q.push(v);
+			}
+		}
+	}
+	return o;
 }
-return o;
 ```
 

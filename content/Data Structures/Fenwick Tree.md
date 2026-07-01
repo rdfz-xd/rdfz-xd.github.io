@@ -52,8 +52,10 @@ which costs a space of $\mathcal{O}(n)$.
 Applying the lemmas to update $s$ yields an algorithm that solves the problem in $\mathcal{O}(\log n)$ time and $\mathcal{O}(1)$ space.
 
 ~~~c++
-for (int j = i + 1; j <= n; j += j & -j) {
-	s[j] += x;
+void add(int i, int x) {
+	for (int j = i + 1; j <= n; j += j & -j) {
+		s[j] += x;
+	}
 }
 ~~~
 
@@ -68,12 +70,14 @@ for (int j = i + 1; j <= n; j += j & -j) {
 > \forall i\in\{1,2,\dots,n\},\sum_{j=0}^{i-1}a_j=s(i)+\sum_{j=0}^{i-\operatorname{lsb}(i)-1}a_j
 > $$
 
-Applying the lemma to find the sum yields an algorithm that solves the problem in $\mathcal{O}(\log n)$ time and $\mathcal{O}(1)$ space.
+Applying the lemma to find $\sum_{j=0}^{i-1}a_j$ yields an algorithm that solves the problem in $\mathcal{O}(\log n)$ time and $\mathcal{O}(1)$ space.
 
 ~~~c++
-int res = 0;
-for (int j = i; j > 0; j -= j & -j) {
-	res += s[j];
+int sum(int i) {
+	int res = 0;
+	for (int j = i; j > 0; j -= j & -j) {
+		res += s[j];
+	}
+	return res;
 }
-return res;
 ~~~

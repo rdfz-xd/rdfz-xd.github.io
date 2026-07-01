@@ -42,13 +42,15 @@ This costs a space of $\mathcal{O}(nm)$.
 Applying the definition to find $S$ yields an algorithm that solves the problem in $\mathcal{O}(nm)$ time and $\mathcal{O}(n)$ space.
 
 ```c++
-for (int i = m - 1; i >= 0; i--) {
-	for (int j = 0; j < n; j++) {
-		s[i][j + 1] = s[i][j] + !(a[j] >> i & 1);
+void build(int n, std::vector<int> a) {
+	for (int i = m - 1; i >= 0; i--) {
+		for (int j = 0; j < n; j++) {
+			s[i][j + 1] = s[i][j] + !(a[j] >> i & 1);
+		}
+		std::ranges::stable_partition(a, [&](int x) -> bool {
+			return !(x >> i & 1);
+		});
 	}
-	std::ranges::stable_partition(a, [&](int x) -> bool {
-		return !(x >> i & 1);
-	});
 }
 ```
 
@@ -69,19 +71,21 @@ $$
 This algorithm solves the problem in $\mathcal{O}(m)$ time and $\mathcal{O}(1)$ space.
 
 ```c++
-int res = 0;
-for (int i = m - 1; i >= 0; i--) {
-	if (k < s[i][r] - s[i][l]) {
-		l = s[i][l];
-		r = s[i][r];
-	} else {
-		res |= 1 << i;
-		k -= s[i][r] - s[i][l];
-		l += s[i][n] - s[i][l];
-		r += s[i][n] - s[i][r];
+int range_kth_query(int l, int r, int k) {
+	int res = 0;
+	for (int i = m - 1; i >= 0; i--) {
+		if (k < s[i][r] - s[i][l]) {
+			l = s[i][l];
+			r = s[i][r];
+		} else {
+			res |= 1 << i;
+			k -= s[i][r] - s[i][l];
+			l += s[i][n] - s[i][l];
+			r += s[i][n] - s[i][r];
+		}
 	}
+	return res;
 }
-return res;
 ```
 
 ## Range Rank Query
@@ -101,17 +105,19 @@ $$
 This algorithm solves the problem in $\mathcal{O}(m)$ time and $\mathcal{O}(1)$ space.
 
 ```c++
-int res = 0;
-for (int i = m - 1; i >= 0; i--) {
-	if (!(x >> i & 1)) {
-		l = s[i][l];
-		r = s[i][r];
-	} else {
-		res += s[i][r] - s[i][l];
-		l += s[i][n] - s[i][l];
-		r += s[i][n] - s[i][r];
+int range_rank_query(int l, int r, int x) {
+	int res = 0;
+	for (int i = m - 1; i >= 0; i--) {
+		if (!(x >> i & 1)) {
+			l = s[i][l];
+			r = s[i][r];
+		} else {
+			res += s[i][r] - s[i][l];
+			l += s[i][n] - s[i][l];
+			r += s[i][n] - s[i][r];
+		}
 	}
+	return res;
 }
-return res;
 ```
 

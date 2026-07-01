@@ -12,13 +12,15 @@ $$
 Applying the definition to find $z$ yields an algorithm that solves the problem in $\mathcal{O}(n^2)$ time and $\mathcal{O}(n)$ space.
 
 ~~~c++
-std::vector z(n, 0);
-for (int i = 0; i < n; i++) {
-	while (i + z[i] < n && s[z[i]] == s[i + z[i]]) {
-		z[i]++;
+std::vector<int> z(int n, const std::string &s) {
+	std::vector z(n, 0);
+	for (int i = 0; i < n; i++) {
+		while (i + z[i] < n && s[z[i]] == s[i + z[i]]) {
+			z[i]++;
+		}
 	}
+	return z;
 }
-return z;
 ~~~
 
 ### Algorithm 1
@@ -39,18 +41,20 @@ return z;
 Based on [[Z Algorithm#Algorithm 0]], maintaining $\arg\max_{j=1}^{i-1}(j+z(j))$ and applying the lemma to get a lower bound for $z(i)$ yield an algorithm that solves the problem in $\mathcal{O}(n)$ time and $\mathcal{O}(n)$ space.
 
 ~~~c++
-std::vector<int> z(n);
-z[0] = n;
-for (int i = 1, l = 0, r = 0; i < n; i++) {
-	z[i] = i < r ? std::min(z[i - l], r - i) : 0;
-	while (i + z[i] < n && s[z[i]] == s[i + z[i]]) {
-		z[i]++;
+std::vector<int> z(int n, const std::string &s) {
+	std::vector<int> z(n);
+	z[0] = n;
+	for (int i = 1, l = 0, r = 0; i < n; i++) {
+		z[i] = i < r ? std::min(z[i - l], r - i) : 0;
+		while (i + z[i] < n && s[z[i]] == s[i + z[i]]) {
+			z[i]++;
+		}
+		if (i + z[i] > r) {
+			l = i, r = i + z[i];
+		}
 	}
-	if (i + z[i] > r) {
-		l = i, r = i + z[i];
-	}
+	return z;
 }
-return z;
 ~~~
 
 > [!note]- Proof

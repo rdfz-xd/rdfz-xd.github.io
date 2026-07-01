@@ -18,9 +18,11 @@ The [[Euclidean Algorithm]] is an algorithm that computes $\gcd\{a, b\}$ for non
 This algorithm solves the problem in $\mathcal{O}(\log a+\log b)$ time and $\mathcal{O}(\log a+\log b)$ space.
 
 ~~~c++
-return y_combinator([&](auto &&self, int a, int b) -> int {
-	return b ? self(b, a % b) : a;
-})(a, b);
+int euclidean(int a, int b) {
+	return y_combinator([&](auto &&self, int a, int b) -> int {
+		return b ? self(b, a % b) : a;
+	})(a, b);
+}
 ~~~
 
 > [!note]- Proof

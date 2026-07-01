@@ -32,29 +32,36 @@ tags: [Computer Science, Computer Science/Graph Theory]
 This algorithm solves the problem in $\mathcal{O}(|E|)$ time and $\mathcal{O}(|E|)$ space.
 
 ```c++
-std::vector<int> circuit;
-y_combinator([&](auto &&self, int u) -> void {
-	std::vector<int> c;
-	y_combinator([&](auto &&self, int u) -> void {
-		c.push_back(u);
-		if (!adj[u].empty()) {
-			int v = adj[u].back();
-			adj[u].pop_back();
-
-			self(v);
-		}
-	})(u);
-
-	if (c.size() == 1) {
-		circuit.push_back(u);
-	} else {
-		for (int v : c) {
-			self(v);
-		}
+std::vector<int> hierholzer(int n, int m, const std::vector<int> &u, const std::vector<int> &v) {
+	std::vector<std::vector<int>> adj(n);
+	for (int i = 0; i < m; i++) {
+		adj[u[i]].push_back(v[i]);
 	}
-})(0);
 
-return circuit;
+	std::vector<int> circuit;
+	y_combinator([&](auto &&self, int u) -> void {
+		std::vector<int> c;
+		y_combinator([&](auto &&self, int u) -> void {
+			c.push_back(u);
+			if (!adj[u].empty()) {
+				int v = adj[u].back();
+				adj[u].pop_back();
+
+				self(v);
+			}
+		})(u);
+
+		if (c.size() == 1) {
+			circuit.push_back(u);
+		} else {
+			for (int v : c) {
+				self(v);
+			}
+		}
+	})(0);
+
+	return circuit;
+}
 ```
 
 ### Algorithm 1
@@ -62,18 +69,25 @@ return circuit;
 Based on [[Hierholzer's Algorithm#Algorithm 0]], instead of storing the circuit explicitly, recursing during the backtracking after the circuit is found yields an algorithm that solves the problem in $\mathcal{O}(|E|)$ time and $\mathcal{O}(|E|)$ space.
 
 ```c++
-std::vector<int> circuit;
-y_combinator([&](auto &&self, int u) -> void {
-	while (!adj[u].empty()) {
-		int v = adj[u].back();
-		adj[u].pop_back();
-
-		self(v);
+std::vector<int> hierholzer(int n, int m, const std::vector<int> &u, const std::vector<int> &v) {
+	std::vector<std::vector<int>> adj(n);
+	for (int i = 0; i < m; i++) {
+		adj[u[i]].push_back(v[i]);
 	}
-	circuit.push_back(u);
-})(0);
-std::ranges::reverse(circuit);
 
-return circuit;
+	std::vector<int> circuit;
+	y_combinator([&](auto &&self, int u) -> void {
+		while (!adj[u].empty()) {
+			int v = adj[u].back();
+			adj[u].pop_back();
+
+			self(v);
+		}
+		circuit.push_back(u);
+	})(0);
+	std::ranges::reverse(circuit);
+
+	return circuit;
+}
 ```
 

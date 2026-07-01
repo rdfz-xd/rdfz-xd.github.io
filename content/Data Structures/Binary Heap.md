@@ -21,9 +21,11 @@ This costs a space of $\mathcal{O}(|S|)$.
 This algorithm solves the problem in $\mathcal{O}(\log|S|)$ time and $\mathcal{O}(1)$ space.
 
 ~~~c++
-a.push_back(x);
-for (int i = a.size() - 1; i > 1 && a[i >> 1] < a[i]; i >>= 1) {
-	std::swap(a[i >> 1], a[i]);
+void push(int x) {
+	a.push_back(x);
+	for (int i = a.size() - 1; i > 1 && a[i >> 1] < a[i]; i >>= 1) {
+		std::swap(a[i >> 1], a[i]);
+	}
 }
 ~~~
 
@@ -38,7 +40,9 @@ Since the element in each node is less than or equal to the element in its paren
 Accessing the element in the root yields an algorithm that solves the problem in $\mathcal{O}(1)$ time and $\mathcal{O}(1)$ space.
 
 ~~~c++
-return a[1];
+int top() {
+	return a[1];
+}
 ~~~
 
 ## Pop
@@ -55,14 +59,16 @@ return a[1];
 This algorithm solves the problem in $\mathcal{O}(\log|S|)$ time and $\mathcal{O}(1)$ space.
 
 ~~~c++
-std::swap(a[1], a.back());
-a.pop_back();
-for (int i = 1, j; i << 1 < int(a.size()); i = j) {
-	j = i << 1 | ((i << 1 | 1) < int(a.size()) && a[i << 1 | 1] > a[i << 1]);
-	if (a[i] < a[j]) {
-		std::swap(a[i], a[j]);
-	} else {
-		break;
+void pop() {
+	std::swap(a[1], a.back());
+	a.pop_back();
+	for (int i = 1, j; i << 1 < int(a.size()); i = j) {
+		j = i << 1 | ((i << 1 | 1) < int(a.size()) && a[i << 1 | 1] > a[i << 1]);
+		if (a[i] < a[j]) {
+			std::swap(a[i], a[j]);
+		} else {
+			break;
+		}
 	}
 }
 ~~~

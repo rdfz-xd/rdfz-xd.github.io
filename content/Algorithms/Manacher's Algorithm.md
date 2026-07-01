@@ -12,13 +12,15 @@ $$
 Applying the definition to find $d$ yields an algorithm that solves the problem in $\mathcal{O}(n^2)$ time and $\mathcal{O}(n)$ space.
 
 ~~~c++
-std::vector d(n, 0);
-for (int i = 0; i < n; i++) {
-	while (i - d[i] - 1 >= 0 && i + d[i] + 1 < n && s[i - d[i] - 1] == s[i + d[i] + 1]) {
-		d[i]++;
+std::vector<int> manacher(int n, const std::string &s) {
+	std::vector d(n, 0);
+	for (int i = 0; i < n; i++) {
+		while (i - d[i] - 1 >= 0 && i + d[i] + 1 < n && s[i - d[i] - 1] == s[i + d[i] + 1]) {
+			d[i]++;
+		}
 	}
+	return d;
 }
-return d;
 ~~~
 
 ### Algorithm 1
@@ -40,17 +42,19 @@ return d;
 Based on [[Manacher's Algorithm#Algorithm 0]], maintaining $\arg\max_{j=0}^{i-1}(j+d(j))$ and applying the lemma to get an lower bound for $d(i)$ yield an algorithm that solves the problem in $\mathcal{O}(n)$ time and $\mathcal{O}(n)$ space.
 
 ~~~c++
-std::vector<int> d(n);
-for (int i = 0, l = 0, r = 0; i < n; i++) {
-	d[i] = i < r ? std::min(d[l + r - i - 1], r - i - 1) : 0;
-	while (i - d[i] - 1 >= 0 && i + d[i] + 1 < n && s[i - d[i] - 1] == s[i + d[i] + 1]) {
-		d[i]++;
+std::vector<int> manacher(int n, const std::string &s) {
+	std::vector<int> d(n);
+	for (int i = 0, l = 0, r = 0; i < n; i++) {
+		d[i] = i < r ? std::min(d[l + r - i - 1], r - i - 1) : 0;
+		while (i - d[i] - 1 >= 0 && i + d[i] + 1 < n && s[i - d[i] - 1] == s[i + d[i] + 1]) {
+			d[i]++;
+		}
+		if (i + d[i] + 1 > r) {
+			l = i - d[i], r = i + d[i] + 1;
+		}
 	}
-	if (i + d[i] + 1 > r) {
-		l = i - d[i], r = i + d[i] + 1;
-	}
+	return d;
 }
-return d;
 ~~~
 
 > [!note]- Proof

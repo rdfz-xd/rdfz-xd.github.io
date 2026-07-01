@@ -20,19 +20,21 @@ For $m=2,3,\dots,n$, if $m$ is not marked, mark all the multiples of $m$ greater
 This algorithm solves the problem in $\mathcal{O}(n\log\log n)$ time and $\mathcal{O}(n)$ space.
 
 ~~~c++
-std::vector f(n + 1, true);
-std::vector<int> primes;
+std::vector<int> eratosthenes(int n) {
+	std::vector f(n + 1, true);
+	std::vector<int> primes;
 
-for (int i = 2; i <= n; i++) {
-	if (f[i]) {
-		primes.push_back(i);
-		for (int j = 2 * i; j <= n; j += i) {
-			f[j] = false;
+	for (int i = 2; i <= n; i++) {
+		if (f[i]) {
+			primes.push_back(i);
+			for (int j = 2 * i; j <= n; j += i) {
+				f[j] = false;
+			}
 		}
 	}
-}
 
-return primes;
+	return primes;
+}
 ~~~
 
 > [!note]- Proof

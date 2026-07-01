@@ -33,14 +33,16 @@ The [[Extended Euclidean Algorithm]] is an algorithm that finds a pair of intege
 This algorithm solves the problem in $\mathcal{O}(\log a+\log b)$ time and $\mathcal{O}(\log a+\log b)$ space.
 
 ~~~c++
-return y_combinator([&](auto &&self, int a, int b) -> std::pair<int, int> {
-	if (!b) {
-		return {1, 0};
-	}
- 
-	auto [x, y] = self(b, a % b);
-	return {y, x - a / b * y};
-})(a, b);
+std::pair<int, int> extended_euclidean(int a, int b) {
+	return y_combinator([&](auto &&self, int a, int b) -> std::pair<int, int> {
+		if (!b) {
+			return {1, 0};
+		}
+	 
+		auto [x, y] = self(b, a % b);
+		return {y, x - a / b * y};
+	})(a, b);
+}
 ~~~
 
 > [!note]- Proof

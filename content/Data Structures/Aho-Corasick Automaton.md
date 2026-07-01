@@ -53,34 +53,36 @@ This costs a space of $\mathcal{O}(|\Sigma|\sum_{s\in S}|s|)$.
 This algorithm solves the problem in $\mathcal{O}(|\Sigma|\sum_{s\in S}|s|)$ time and $\mathcal{O}(\sum_{s\in S}|s|)$ space.
 
 ```c++
-next[0].fill(1);
-for (auto s : S) {
-	int o = 1;
-	for (char c : s) {
-		if (!next[o][c]) {
-			next[o][c] = next.size();
-			next.emplace_back();
-			fail.push_back(0);
-			f.push_back(false);
+void build(int n, const std::vector<std::string> &s) {
+	next[0].fill(1);
+	for (int i = 0; i < n; i++) {
+		int o = 1;
+		for (char c : s[i]) {
+			if (!next[o][c]) {
+				next[o][c] = next.size();
+				next.emplace_back();
+				fail.push_back(0);
+				f.push_back(false);
+			}
+			o = next[o][c];
 		}
-		o = next[o][c];
+		f[o] = true;
 	}
-	f[o] = true;
-}
 
-std::queue<int> q;
-q.push(1);
-while (!q.empty()) {
-	int o = q.front();
-	q.pop();
+	std::queue<int> q;
+	q.push(1);
+	while (!q.empty()) {
+		int o = q.front();
+		q.pop();
 
-	f[o] = f[o] || f[fail[o]];
-	for (char c : C) {
-		if (next[o][c]) {
-			fail[next[o][c]] = next[fail[o]][c];
-			q.push(next[o][c]);
-		} else {
-			next[o][c] = next[fail[o]][c];
+		f[o] = f[o] || f[fail[o]];
+		for (char c : alphabet) {
+			if (next[o][c]) {
+				fail[next[o][c]] = next[fail[o]][c];
+				q.push(next[o][c]);
+			} else {
+				next[o][c] = next[fail[o]][c];
+			}
 		}
 	}
 }
@@ -95,10 +97,12 @@ while (!q.empty()) {
 Running $s$ on $M$ yields an algorithm that solves the problem in $\mathcal{O}(|s|)$ time and $\mathcal{O}(1)$ space.
 
 ```c++
-int o = 1;
-for (char c : s) {
-	o = next[o][c];
+bool find(const std::string &s) {
+	int o = 1;
+	for (char c : s) {
+		o = next[o][c];
+	}
+	return f[o];
 }
-return f[o];
 ```
 

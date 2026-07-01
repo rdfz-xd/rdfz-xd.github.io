@@ -26,20 +26,22 @@ which costs a space of $\mathcal{O}(n)$.
 Updating all the maintained segments containing the given element yields an algorithm that solves the problem in $\mathcal{O}(\log n)$ time and $\mathcal{O}(\log n)$ space.
 
 ~~~c++
-y_combinator([&](auto &&self, int o, int s, int t) -> void {
-	if (s + 1 == t) {
-		sum[o] = x;
-		return;
-	}
+void modify(int i, int x) {
+	y_combinator([&](auto &&self, int o, int s, int t) -> void {
+		if (s + 1 == t) {
+			sum[o] = x;
+			return;
+		}
 
-	int mid = std::midpoint(s, t);
-	if (i < mid) {
-		self(o << 1, s, mid);
-	} else {
-		self(o << 1 | 1, mid, t);
-	}
-	sum[o] = sum[o << 1] + sum[o << 1 | 1];
-})(1, 0, n);
+		int mid = std::midpoint(s, t);
+		if (i < mid) {
+			self(o << 1, s, mid);
+		} else {
+			self(o << 1 | 1, mid, t);
+		}
+		sum[o] = sum[o << 1] + sum[o << 1 | 1];
+	})(1, 0, n);
+}
 ~~~
 
 > [!note]- Proof
@@ -55,17 +57,19 @@ y_combinator([&](auto &&self, int o, int s, int t) -> void {
 Decomposing the query interval into maintained segments yields an algorithm that solves the problem in $\mathcal{O}(\log n)$ time and $\mathcal{O}(\log n)$ space.
 
 ~~~c++
-return y_combinator([&](auto &&self, int o, int s, int t) -> int {
-	if (s >= r || t <= l) {
-		return 0;
-	}
-	if (l <= s && t <= r) {
-		return sum[o];
-	}
+int range_sum_query(int l, int r) {
+	return y_combinator([&](auto &&self, int o, int s, int t) -> int {
+		if (s >= r || t <= l) {
+			return 0;
+		}
+		if (l <= s && t <= r) {
+			return sum[o];
+		}
 
-	int mid = std::midpoint(s, t);
-	return self(o << 1, s, mid) + self(o << 1 | 1, mid, t);
-})(1, 0, n);
+		int mid = std::midpoint(s, t);
+		return self(o << 1, s, mid) + self(o << 1 | 1, mid, t);
+	})(1, 0, n);
+}
 ~~~
 
 > [!note]- Proof

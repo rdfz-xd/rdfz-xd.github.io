@@ -24,16 +24,18 @@ This costs a space of $\mathcal{O}(|\Sigma|\sum_{s\in S}|s|)$.
 Updating the values in $\delta$ that are changed by $s$ yields an algorithm that solves the problem in $\mathcal{O}(|s|)$ time and $\mathcal{O}(1)$ space.
 
 ~~~c++
-int o = 1;
-for (char c : s) {
-	if (!next[o][c]) {
-		next[o][c] = next.size();
-		next.emplace_back();
-		f.push_back(false);
+void add(const std::string &s) {
+	int o = 1;
+	for (char c : s) {
+		if (!next[o][c]) {
+			next[o][c] = next.size();
+			next.emplace_back();
+			f.push_back(false);
+		}
+		o = next[o][c];
 	}
-	o = next[o][c];
+	f[o] = true;
 }
-f[o] = true;
 ~~~
 
 ## Find
@@ -45,10 +47,12 @@ f[o] = true;
 Running $s$ on $M$ yields an algorithm that solves the problem in $\mathcal{O}(|s|)$ time and $\mathcal{O}(1)$ space.
 
 ~~~c++
-int o = 1;
-for (char c : s) {
-	o = next[o][c];
+bool find(const std::string &s) {
+	int o = 1;
+	for (char c : s) {
+		o = next[o][c];
+	}
+	return f[o];
 }
-return f[o];
 ~~~
 

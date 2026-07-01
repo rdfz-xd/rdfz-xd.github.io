@@ -22,10 +22,12 @@ which costs a space of $\mathcal{O}(n\log n)$.
 Applying the lemma yields to find $f$ an algorithm that solves the problem in $\mathcal{O}(n\log n)$ time and $\mathcal{O}(1)$ space.
 
 ~~~c++
-f[0] = a;
-for (int i = 1; i <= std::__lg(n); i++) {
-	for (int j = 0; j + (1 << i) <= n; j++) {
-		f[i][j] = std::max(f[i - 1][j], f[i - 1][j + (1 << (i - 1))]);
+void build(int n, const std::vector<int> &a) {
+	f[0] = a;
+	for (int i = 1; i <= std::__lg(n); i++) {
+		for (int j = 0; j + (1 << i) <= n; j++) {
+			f[i][j] = std::max(f[i - 1][j], f[i - 1][j + (1 << (i - 1))]);
+		}
 	}
 }
 ~~~
@@ -44,7 +46,9 @@ for (int i = 1; i <= std::__lg(n); i++) {
 Applying the lemma to find $\max_{i=l}^{r-1}a_i$ yields an algorithm that solves the problem in $\mathcal{O}(1)$ time and $\mathcal{O}(1)$ space.
 
 ~~~c++
-int i = std::__lg(r - l);
-return std::max(f[i][l], f[i][r - (1 << i)]);
+int range_max_query(int l, int r) {
+	int i = std::__lg(r - l);
+	return std::max(f[i][l], f[i][r - (1 << i)]);
+}
 ~~~
 

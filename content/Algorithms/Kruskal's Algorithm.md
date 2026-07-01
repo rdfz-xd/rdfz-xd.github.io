@@ -8,7 +8,7 @@ tags: [Computer Science, Computer Science/Graph Theory]
 >
 > This problem can also be solved by [[Prim's Algorithm]] in
 >
-> - $\mathcal{O}(|V|^2+|E|)$ time and $\mathcal{O}(|V|)$ space, or
+> - $\mathcal{O}(|V|^2+|E|)$ time and $\mathcal{O}(|E|)$ space, or
 > - $\mathcal{O}(|E|\log|E|)$ time and $\mathcal{O}(|E|)$ space.
 
 > [!tip] Hint
@@ -39,17 +39,23 @@ Applying the lemma yields that the selected edges form a minimum spanning tree.
 Applying **Introsort** to sort the edges and using a **Disjoint Set Union** to maintain the structure of the graph yield an algorithm that solves the problem in $\mathcal{O}(|E|\log|E|)$ time and $\mathcal{O}(|E|)$ space.
 
 ~~~c++
-std::ranges::sort(E);
+int kruskal(int n, int m, const std::vector<int> &u, const std::vector<int> &v, const std::vector<int> &w) {
+	std::vector<int> o(m);
+	std::iota(o.begin(), o.end(), 0);
+	std::ranges::sort(o, std::less(), [&](int i) -> int {
+		return w[i];
+	});
 
-DSU dsu(n);
-int sum = 0;
+	DSU dsu(n);
+	int sum = 0;
 
-for (auto [w, u, v] : E) {
-	if (dsu.merge(u, v)) {
-		sum += w;
+	for (int i : o) {
+		if (dsu.merge(u[i], v[i])) {
+			sum += w[i];
+		}
 	}
-}
 
-return sum;
+	return sum;
+}
 ~~~
 

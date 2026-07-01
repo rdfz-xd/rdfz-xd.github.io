@@ -18,7 +18,7 @@ tags: [Computer Science]
 
 Let $S_f(n)=\sum_{k=1}^nf(k)$.
 
-[[Du's First Division Sieve]] is an algorithm that computes $S_f(\lfloor\frac{n}{1}\rfloor),S_f(\lfloor\frac{n}{2}\rfloor),\dots,S_f(\lfloor\frac{n}{n}\rfloor)$ for arithmetic functions $f$ and $g$ ($g(1)\ne0$) in $\mathcal{O}(n^\frac{3}{4})$ time and $\mathcal{O}(\sqrt n)$ space, if $S_g(\lfloor\frac{n}{1}\rfloor),S_g(\lfloor\frac{n}{2}\rfloor),\dots,S_g(\lfloor\frac{n}{n}\rfloor)$ and $S_{f*g}(\lfloor\frac{n}{1}\rfloor),S_{f*g}(\lfloor\frac{n}{2}\rfloor),\dots,S_{f*g}(\lfloor\frac{n}{n}\rfloor)$ are given.
+[[Du's First Division Sieve]] is an algorithm that computes $S_f(\lfloor\frac{n}{1}\rfloor),S_f(\lfloor\frac{n}{2}\rfloor),\dots,S_f(\lfloor\frac{n}{n}\rfloor)$ for arithmetic functions $f$ and $g$ ($g(1)\ne0$), if $S_g(\lfloor\frac{n}{1}\rfloor),S_g(\lfloor\frac{n}{2}\rfloor),\dots,S_g(\lfloor\frac{n}{n}\rfloor)$ and $S_{f*g}(\lfloor\frac{n}{1}\rfloor),S_{f*g}(\lfloor\frac{n}{2}\rfloor),\dots,S_{f*g}(\lfloor\frac{n}{n}\rfloor)$ are given, in $\mathcal{O}(n^\frac{3}{4})$ time and $\mathcal{O}(\sqrt n)$ space.
 
 ### Algorithm
 
@@ -45,15 +45,30 @@ Let $S_f(n)=\sum_{k=1}^nf(k)$.
 Applying the lemma to find $S_f$ yields an algorithm that solves in the problem in $\mathcal{O}(n^\frac{3}{4})$ time and $\mathcal{O}(\sqrt n)$ space.
 
 ~~~c++
-std::unordered_map<int, int> sf;
-for (int i : s) {
-	sf[i] = sh[i];
-	for (int j = 2; j <= i; j = i / (i / j) + 1) {
-		sf[i] -= (sg[i / (i / j)] - sg[j - 1]) * sf[i / j];
+std::unordered_map<int, int> du(int n, const std::unordered_map<int, int> &sg, const std::unordered_map<int, int> &sh) {
+	int m = std::sqrt(n);
+
+	std::vector<int> d;
+	for (int i = 1; i < m; i++) {
+		if (n / (n / i) == i) {
+			d.push_back(i);
+		}
 	}
-	sf[i] /= sg[1];
+	for (int i = n / m; i > 0; i--) {
+		d.push_back(n / i);
+	}
+	d.erase(std::unique(d.begin(), d.end()), d.end());
+
+	std::unordered_map<int, int> sf;
+	for (int i : d) {
+		sf[i] = sh.at(i);
+		for (int j = 2; j <= i; j = i / (i / j) + 1) {
+			sf[i] -= (sg.at(i / (i / j)) - sg.at(j - 1)) * sf[i / j];
+		}
+		sf[i] /= sg.at(1);
+	}
+	return sf;
 }
-return sf;
 ~~~
 
 > [!note]- Proof

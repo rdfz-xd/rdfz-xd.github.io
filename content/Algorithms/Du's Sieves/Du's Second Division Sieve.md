@@ -18,11 +18,7 @@ tags: [Computer Science]
 
 Let $S_f(n)=\sum_{k=1}^nf(k)$.
 
-[[Du's Second Division Sieve]] is an algorithm that computes $S_f(\lfloor\frac{n}{1}\rfloor),S_f(\lfloor\frac{n}{2}\rfloor),\dots,S_f(\lfloor\frac{n}{n}\rfloor)$ for **multiplicative** functions $f$ and $g$ in $\mathcal{O}(n^\frac{2}{3})$ time and $\mathcal{O}(n^\frac{2}{3})$ space, if $g(1),g(2),\dots,g(\lfloor n^\frac{2}{3}\rfloor)$, $S_g(\lfloor\frac{n}{1}\rfloor),S_g(\lfloor\frac{n}{2}\rfloor),\dots,S_g(\lfloor\frac{n}{n}\rfloor)$, $(f*g)(1),(f*g)(2),\dots,(f*g)(\lfloor n^\frac{2}{3}\rfloor)$, and $S_{f*g}(\lfloor\frac{n}{1}\rfloor),S_{f*g}(\lfloor\frac{n}{2}\rfloor),\dots,S_{f*g}(\lfloor\frac{n}{n}\rfloor)$ are given.
-
-> [!tip] Hint
->
-> This problem can also be solved by [[Du's First Division Sieve]] in $\mathcal{O}(n^\frac{3}{4})$ time and $\mathcal{O}(\sqrt n)$ space.
+[[Du's Second Division Sieve]] is an algorithm that computes $S_f(1),S_f(2),\dots,S_f(\lfloor n^\frac{2}{3}\rfloor-1)$ and $S_f(\lfloor\frac{n}{1}\rfloor),S_f(\lfloor\frac{n}{2}\rfloor),\dots,S_f(\lfloor\frac{n}{n}\rfloor)$ for **multiplicative** functions $f$ and $g$, if $S_g(1),S_g(2),\dots,S_g(\lfloor n^\frac{2}{3}\rfloor-1)$, $S_g(\lfloor\frac{n}{1}\rfloor),S_g(\lfloor\frac{n}{2}\rfloor),\dots,S_g(\lfloor\frac{n}{n}\rfloor)$, $S_{f*g}(1),S_{f*g}(2),\dots,S_{f*g}(\lfloor n^\frac{2}{3}\rfloor-1)$, and $S_{f*g}(\lfloor\frac{n}{1}\rfloor),S_{f*g}(\lfloor\frac{n}{2}\rfloor),\dots,S_{f*g}(\lfloor\frac{n}{n}\rfloor)$ are given, in $\mathcal{O}(n^\frac{2}{3})$ time and $\mathcal{O}(n^\frac{2}{3})$ space.
 
 ### Algorithm
 
@@ -46,37 +42,42 @@ Let $S_f(n)=\sum_{k=1}^nf(k)$.
 > > S_{f*g}(n)=S_f(n)+\sum_{d=2}^ng(d)S_f\left(\left\lfloor\frac{n}{d}\right\rfloor\right)\iff S_f(n)=S_{f*g}(n)-\sum_{d=2}^ng(d)S_f\left(\left\lfloor\frac{n}{d}\right\rfloor\right)
 > > $$
 
-1. For each $k$ in $\{k:k\in\{1,2,\dots,\lfloor n^\frac{2}{3}\rfloor\}\land\exist p\in \mathbb{P},\exist e\in\N,k=p^e\}$, find $f(k)$.
+1. For each $k$ in $\{k:k\in\{1,2,\dots,\lfloor n^\frac{2}{3}\rfloor-1\}\land\exist p\in \mathbb{P},\exist e\in\N,k=p^e\}$, find $f(k)$.
 
-2. Use the results from Step 1 to find $f(1),f(2),\dots,f(\lfloor n^\frac{2}{3}\rfloor)$.
-3. Use the results from Step 2 to find $S_f(1),S_f(2),\dots,S_f(\lfloor n^\frac{2}{3}\rfloor)$.
-4. For each $k$ in $\{\lfloor\frac{n}{1}\rfloor,\lfloor\frac{n}{2}\rfloor,\dots,\lfloor\frac{n}{n}\rfloor\}\setminus\{1,2,\dots,\lfloor n^\frac{2}{3}\rfloor\}$, apply the lemma to find $S_f(k)$.
+2. Use the results from Step 1 to find $f(1),f(2),\dots,f(\lfloor n^\frac{2}{3}\rfloor-1)$.
+3. Use the results from Step 2 to find $S_f(1),S_f(2),\dots,S_f(\lfloor n^\frac{2}{3}\rfloor-1)$.
+4. For each $k$ in $\{\lfloor\frac{n}{1}\rfloor,\lfloor\frac{n}{2}\rfloor,\dots,\lfloor\frac{n}{n}\rfloor\}\setminus\{1,2,\dots,\lfloor n^\frac{2}{3}\rfloor-1\}$, apply the lemma to find $S_f(k)$.
 
 ~~~c++
-std::vector<int> f(n23 + 1);
-f[1] = 1;
-for (int i = 2; i <= n23; i++) {
-	if (pk[i] == i) {
-		f[i] = h[i];
-		for (int j = i / pf[i]; j; j /= pf[i]) {
-			f[i] -= f[j] * g[i / j];
-		}
-	} else {
-		f[i] = f[i / pk[i]] * f[pk[i]];
-	}
-}
+std::unordered_map<int, int> du(int n, const std::unordered_map<int, int> &sg, const std::unordered_map<int, int> &sh) {
+	int m = std::pow(n, .67);
 
-std::unordered_map<int, int> sf;
-for (int i = 1; i <= n23; i++) {
-	sf[i] = sf[i - 1] + f[i];
-}
-for (int i = n / n23; i > 0; i--) {
-	sf[n / i] = sh[n / i];
-	for (int j = 2; j <= n / i; j = n / i / (n / i / j) + 1) {
-		sf[n / i] -= (sg[n / i / (n / i / j)] - sg[j - 1]) * sf[n / i / j];
+	std::vector<int> f(m);
+	f[1] = 1;
+	for (int i = 2; i < m; i++) {
+		if (pk[i] == i) {
+			f[i] = sh.at(i) - sh.at(i - 1);
+			for (int j = i / pf[i]; j; j /= pf[i]) {
+				f[i] -= f[j] * (sg.at(i / j) - sg.at(i / j - 1));
+			}
+		} else {
+			f[i] = f[i / pk[i]] * f[pk[i]];
+		}
 	}
+
+	std::unordered_map<int, int> sf;
+	sf[1] = f[1];
+	for (int i = 1; i < m; i++) {
+		sf[i] = sf[i - 1] + f[i];
+	}
+	for (int i = n / m; i > 0; i--) {
+		sf[n / i] = sh.at(n / i);
+		for (int j = 2; j <= n / i; j = n / i / (n / i / j) + 1) {
+			sf[n / i] -= (sg.at(n / i / (n / i / j)) - sg.at(j - 1)) * sf[n / i / j];
+		}
+	}
+	return sf;
 }
-return sf;
 ~~~
 
 > [!note]- Proof

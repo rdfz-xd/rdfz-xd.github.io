@@ -12,7 +12,7 @@ tags: [Computer Science, Computer Science/Graph Theory]
 >
 > This problem can also be solved by [[Prim's Algorithm]] in
 >
-> - $\mathcal{O}(|V|^2+|E|)$ time and $\mathcal{O}(|V|)$ space, or
+> - $\mathcal{O}(|V|^2+|E|)$ time and $\mathcal{O}(|E|)$ space, or
 > - $\mathcal{O}(|E|\log|E|)$ time and $\mathcal{O}(|E|)$ space.
 
 ### Algorithm
@@ -44,67 +44,69 @@ Therefore, at the moment each edge is selected, it satisfies the conditions of t
 This algorithm solves the problem in $\mathcal{O}(|E|\log|V|)$ time and $\mathcal{O}(|E|)$ space.
 
 ~~~c++
-std::vector f(m, false);
-while (std::ranges::count(f, true) < n - 1) {
-	std::vector<std::vector<int>> adj(n);
-	for (int i = 0; i < m; i++) {
-		if (f[i]) {
-			adj[u[i]].push_back(v[i]);
-			adj[v[i]].push_back(u[i]);
+int boruvka(int n, int m, const std::vector<int> &u, const std::vector<int> &v, const std::vector<int> &w) {
+	std::vector f(m, false);
+	while (std::ranges::count(f, true) < n - 1) {
+		std::vector<std::vector<int>> adj(n);
+		for (int i = 0; i < m; i++) {
+			if (f[i]) {
+				adj[u[i]].push_back(v[i]);
+				adj[v[i]].push_back(u[i]);
+			}
 		}
-	}
 
-	std::vector bel(n, -1);
-	int cnt = 0;
+		std::vector bel(n, -1);
+		int cnt = 0;
 
-	for (int i = 0; i < n; i++) {
-		if (~bel[i]) {
-			continue;
+		for (int i = 0; i < n; i++) {
+			if (~bel[i]) {
+				continue;
+			}
+			bel[i] = cnt;
+
+			std::queue<int> q;
+			q.push(i);
+			while (!q.empty()) {
+				int u = q.front();
+				q.pop();
+
+				for (int v : adj[u]) {
+					if (bel[v] == -1) {
+						bel[v] = cnt;
+						q.push(v);
+					}
+				}
+			}
+
+			cnt++;
 		}
-		bel[i] = cnt;
 
-		std::queue<int> q;
-		q.push(i);
-		while (!q.empty()) {
-			int u = q.front();
-			q.pop();
+		std::vector e(cnt, -1);
+		for (int i = 0; i < m; i++) {
+			if (bel[u[i]] == bel[v[i]]) {
+				continue;
+			}
 
-			for (int v : adj[u]) {
-				if (bel[v] == -1) {
-					bel[v] = cnt;
-					q.push(v);
+			for (int j : {bel[u[i]], bel[v[i]]}) {
+				if (e[j] == -1 || w[e[j]] > w[i]) {
+					e[j] = i;
 				}
 			}
 		}
 
-		cnt++;
+		for (int i = 0; i < cnt; i++) {
+			f[e[i]] = true;
+		}
 	}
 
-	std::vector e(cnt, -1);
+	int sum = 0;
 	for (int i = 0; i < m; i++) {
-		if (bel[u[i]] == bel[v[i]]) {
-			continue;
-		}
-
-		for (int j : {bel[u[i]], bel[v[i]]}) {
-			if (e[j] == -1 || w[e[j]] > w[i]) {
-				e[j] = i;
-			}
+		if (f[i]) {
+			sum += w[i];
 		}
 	}
-
-	for (int i = 0; i < cnt; i++) {
-		f[e[i]] = true;
-	}
+	return sum;
 }
-
-int sum = 0;
-for (int i = 0; i < m; i++) {
-	if (f[i]) {
-		sum += w[i];
-	}
-}
-return sum;
 ~~~
 
 > [!note]- Proof

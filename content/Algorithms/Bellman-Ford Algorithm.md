@@ -12,7 +12,7 @@ The [[Bellman-Ford Algorithm]] is an algorithm that computes the length of the s
 >
 > This problem can also be solved by [[Johnson's Algorithm]] in
 >
-> - $\mathcal{O}(|V|^3+|V||E|)$ time and $\mathcal{O}(|V|^2)$ space, or
+> - $\mathcal{O}(|V|^3+|V||E|)$ time and $\mathcal{O}(|V|^2+|E|)$ space, or
 >
 > - $\mathcal{O}((|V|^2+|V||E|)\log|E|)$ time and $\mathcal{O}(|V|^2+|E|)$ space.
 
@@ -47,15 +47,17 @@ The [[Bellman-Ford Algorithm]] is an algorithm that computes the length of the s
 Applying the lemmas to find $f$ and $\operatorname{dist}$ yields an algorithm that solves the problem in $\mathcal{O}(|V||E|)$ time and $\mathcal{O}(|V|^2)$ space.
 
 ```c++
-std::vector dist(n, std::vector(n, inf));
-dist[0][s] = 0;
-for (int i = 1; i < n; i++) {
-	dist[i] = dist[i - 1];
-	for (auto [u, v, w] : E) {
-		dist[i][v] = std::min(dist[i][v], dist[i - 1][u] + w);
+std::vector<int> bellman_ford(int n, int m, const std::vector<int> &u, const std::vector<int> &v, const std::vector<int> &w, int s) {
+	std::vector dist(n, std::vector(n, inf));
+	dist[0][s] = 0;
+	for (int i = 1; i < n; i++) {
+		dist[i] = dist[i - 1];
+		for (int j = 0; j < m; j++) {
+			dist[i][v[j]] = std::min(dist[i][v[j]], dist[i - 1][u[j]] + w[j]);
+		}
 	}
+	return dist[n - 1];
 }
-return dist[n - 1];
 ```
 
 ### Algorithm 1
@@ -63,14 +65,16 @@ return dist[n - 1];
 Based on [[Bellman-Ford Algorithm#Algorithm 0]], ignoring the first dimension yields an algorithm that solves the problem in $\mathcal{O}(|V||E|)$ time and $\mathcal{O}(|V|)$ space.
 
 ```c++
-std::vector dist(n, inf);
-dist[s] = 0;
-for (int i = 1; i < n; i++) {
-	for (auto [u, v, w] : E) {
-		dist[v] = std::min(dist[v], dist[u] + w);
+std::vector<int> bellman_ford(int n, int m, const std::vector<int> &u, const std::vector<int> &v, const std::vector<int> &w, int s) {
+	std::vector dist(n, inf);
+	dist[s] = 0;
+	for (int i = 1; i < n; i++) {
+		for (int j = 0; j < m; j++) {
+			dist[v[i]] = std::min(dist[v[i]], dist[u[i]] + w[i]);
+		}
 	}
+	return dist;
 }
-return dist;
 ```
 
 > [!note]- Proof
@@ -79,32 +83,39 @@ return dist;
 
 ### Algorithm 2
 
-Based on [[Bellman-Ford Algorithm#Algorithm 1]], maintaining a queue to skip unchanged values that cannot be used to update other values yields an algorithm that solves the problem in $\mathcal{O}(|V||E|)$ and $\mathcal{O}(|V|)$ space.
+Based on [[Bellman-Ford Algorithm#Algorithm 1]], maintaining a queue to skip unchanged values that cannot be used to update other values yields an algorithm that solves the problem in $\mathcal{O}(|V||E|)$ and $\mathcal{O}(|V|+|E|)$ space.
 
 ```c++
-std::vector dist(n, inf);
-dist[s] = 0;
-std::queue<int> q;
-q.push(s);
-std::vector vis(n, false);
-vis[s] = true;
+std::vector<int> bellman_ford(int n, int m, const std::vector<int> &u, const std::vector<int> &v, const std::vector<int> &w, int s) {
+	std::vector<std::vector<std::pair<int, int>>> adj(n);
+	for (int i = 0; i < m; i++) {
+		adj[u[i]].emplace_back(v[i], w[i]);
+	}
 
-while (!q.empty()) {
-	int u = q.front();
-	q.pop();
-	vis[u] = false;
+	std::vector dist(n, inf);
+	dist[s] = 0;
+	std::queue<int> q;
+	q.push(s);
+	std::vector vis(n, false);
+	vis[s] = true;
 
-	for (auto [v, w] : adj[u]) {
-		if (dist[v] > dist[u] + w) {
-			dist[v] = dist[u] + w;
-			if (!vis[v]) {
-				q.push(v);
-				vis[v] = true;
+	while (!q.empty()) {
+		int u = q.front();
+		q.pop();
+		vis[u] = false;
+
+		for (auto [v, w] : adj[u]) {
+			if (dist[v] > dist[u] + w) {
+				dist[v] = dist[u] + w;
+				if (!vis[v]) {
+					q.push(v);
+					vis[v] = true;
+				}
 			}
 		}
 	}
-}
 
-return dist;
+	return dist;
+}
 ```
 
