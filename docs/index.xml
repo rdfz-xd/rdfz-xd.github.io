@@ -6,11 +6,47 @@
       <description>Last 10 notes on Dong Xing&#039;s Blog</description>
       <generator>Quartz -- quartz.jzhao.xyz</generator>
       <item>
+    <title>Du&#039;s Second Multiplication Sieve</title>
+    <link>https://dxing.blog/Algorithms/Du's-Sieves/Du's-Second-Multiplication-Sieve</link>
+    <guid>https://dxing.blog/Algorithms/Du's-Sieves/Du's-Second-Multiplication-Sieve</guid>
+    <description><![CDATA[  Lemma \forall n\in\Z_+,\left|\left\{\left\lfloor\frac{n}{1}\right\rfloor,\left\lfloor\frac{n}{2}\right\rfloor,\dots,\left\lfloor\frac{n}{n}\right\rfloor\right\}\right|\in\mathcal{O}(\sqrt n) Proof \begin{align} \left|\left\{\left\lfloor\frac{n}{1}\right\rfloor,\left\lfloor\frac{n}{2}\right\rfloor,\... ]]></description>
+    <pubDate>Thu, 02 Jul 2026 06:12:28 GMT</pubDate>
+  </item><item>
+    <title>Euler&#039;s Sieve</title>
+    <link>https://dxing.blog/Algorithms/Euler's-Sieve</link>
+    <guid>https://dxing.blog/Algorithms/Euler's-Sieve</guid>
+    <description><![CDATA[ Euler’s Sieve is an algorithm that finds the primes in 2,3,\dots,n in \mathcal{O}(n) time and \mathcal{O}(n) space. ]]></description>
+    <pubDate>Thu, 02 Jul 2026 06:12:28 GMT</pubDate>
+  </item><item>
     <title>Kosaraju&#039;s Algorithm</title>
     <link>https://dxing.blog/Algorithms/Kosaraju's-Algorithm</link>
     <guid>https://dxing.blog/Algorithms/Kosaraju's-Algorithm</guid>
     <description><![CDATA[ Kosaraju’s Algorithm is an algorithm that finds the strongly connected components of a directed graph G=(V,E) in \mathcal{O}(|V|+|E|) and \mathcal{O}(|V|+|E|) space. ]]></description>
-    <pubDate>Thu, 02 Jul 2026 06:05:36 GMT</pubDate>
+    <pubDate>Thu, 02 Jul 2026 06:12:28 GMT</pubDate>
+  </item><item>
+    <title>Sieve of Eratosthenes</title>
+    <link>https://dxing.blog/Algorithms/Sieve-of-Eratosthenes</link>
+    <guid>https://dxing.blog/Algorithms/Sieve-of-Eratosthenes</guid>
+    <description><![CDATA[ The Sieve of Eratosthenes is an algorithm that finds the primes in 2,3,\dots,n in \mathcal{O}(n\log\log n) time and \mathcal{O}(n) space. ]]></description>
+    <pubDate>Thu, 02 Jul 2026 06:12:28 GMT</pubDate>
+  </item><item>
+    <title>Aho-Corasick Automaton</title>
+    <link>https://dxing.blog/Data-Structures/Aho-Corasick-Automaton</link>
+    <guid>https://dxing.blog/Data-Structures/Aho-Corasick-Automaton</guid>
+    <description><![CDATA[ The Aho-Corasick Automaton is a data structure that maintains a set S of strings in \Sigma^* by maintaining a deterministic finite automaton that accepts and only accepts strings containing a string from S as a suffix. ]]></description>
+    <pubDate>Thu, 02 Jul 2026 06:12:28 GMT</pubDate>
+  </item><item>
+    <title>Segment Tree</title>
+    <link>https://dxing.blog/Data-Structures/Segment-Tree</link>
+    <guid>https://dxing.blog/Data-Structures/Segment-Tree</guid>
+    <description><![CDATA[ The Segment Tree is a data structure that maintains an array of n=2^k numbers a_0,a_1,\dots,a_{n-1} by maintaining s(0,2^k),s(0,2^{k-1}),s(2^{k-1},2^k),\dots,s(0,1),s(1,2),\dots,s(2^k-1,2^k), where s(l,r)=\sum_{i=l}^{r-1}a_i which costs a space of \mathcal{O}(n). ]]></description>
+    <pubDate>Thu, 02 Jul 2026 06:12:28 GMT</pubDate>
+  </item><item>
+    <title>Trie</title>
+    <link>https://dxing.blog/Data-Structures/Trie</link>
+    <guid>https://dxing.blog/Data-Structures/Trie</guid>
+    <description><![CDATA[ Trie is a data structure that maintains a set S of strings in \Sigma^* by maintaining a deterministic finite automaton that accepts and only accepts strings in S. ]]></description>
+    <pubDate>Thu, 02 Jul 2026 06:12:28 GMT</pubDate>
   </item><item>
     <title>Bellman-Ford Algorithm</title>
     <link>https://dxing.blog/Algorithms/Bellman-Ford-Algorithm</link>
@@ -28,42 +64,6 @@
     <link>https://dxing.blog/Algorithms/Dijkstra's-Algorithm</link>
     <guid>https://dxing.blog/Algorithms/Dijkstra's-Algorithm</guid>
     <description><![CDATA[ Dijkstra’s Algorithm is an algorithm that computes the length of the shortest path from a vertex s to every vertex in a directed graph G=(V,E) with non-negative edge weights in \mathcal{O}(|V|^2+|E|) time and \mathcal{O}(|V|+|E|) space, or \mathcal{O}((|V|+|E|)\log|E|) time and \mathcal{O}(|V|+|E|) ... ]]></description>
-    <pubDate>Wed, 01 Jul 2026 06:25:27 GMT</pubDate>
-  </item><item>
-    <title>Du&#039;s First Division Sieve</title>
-    <link>https://dxing.blog/Algorithms/Du's-Sieves/Du's-First-Division-Sieve</link>
-    <guid>https://dxing.blog/Algorithms/Du's-Sieves/Du's-First-Division-Sieve</guid>
-    <description><![CDATA[  Lemma \forall n\in\Z_+,\left|\left\{\left\lfloor\frac{n}{1}\right\rfloor,\left\lfloor\frac{n}{2}\right\rfloor,\dots,\left\lfloor\frac{n}{n}\right\rfloor\right\}\right|\in\mathcal{O}(\sqrt n) Proof \begin{align} \left|\left\{\left\lfloor\frac{n}{1}\right\rfloor,\left\lfloor\frac{n}{2}\right\rfloor,\... ]]></description>
-    <pubDate>Wed, 01 Jul 2026 06:25:27 GMT</pubDate>
-  </item><item>
-    <title>Du&#039;s First Multiplication Sieve</title>
-    <link>https://dxing.blog/Algorithms/Du's-Sieves/Du's-First-Multiplication-Sieve</link>
-    <guid>https://dxing.blog/Algorithms/Du's-Sieves/Du's-First-Multiplication-Sieve</guid>
-    <description><![CDATA[  Lemma \forall n\in\Z_+,\left|\left\{\left\lfloor\frac{n}{1}\right\rfloor,\left\lfloor\frac{n}{2}\right\rfloor,\dots,\left\lfloor\frac{n}{n}\right\rfloor\right\}\right|\in\mathcal{O}(\sqrt n) Proof \begin{align} \left|\left\{\left\lfloor\frac{n}{1}\right\rfloor,\left\lfloor\frac{n}{2}\right\rfloor,\... ]]></description>
-    <pubDate>Wed, 01 Jul 2026 06:25:27 GMT</pubDate>
-  </item><item>
-    <title>Du&#039;s Second Division Sieve</title>
-    <link>https://dxing.blog/Algorithms/Du's-Sieves/Du's-Second-Division-Sieve</link>
-    <guid>https://dxing.blog/Algorithms/Du's-Sieves/Du's-Second-Division-Sieve</guid>
-    <description><![CDATA[  Lemma \forall n\in\Z_+,\left|\left\{\left\lfloor\frac{n}{1}\right\rfloor,\left\lfloor\frac{n}{2}\right\rfloor,\dots,\left\lfloor\frac{n}{n}\right\rfloor\right\}\right|\in\mathcal{O}(\sqrt n) Proof \begin{align} \left|\left\{\left\lfloor\frac{n}{1}\right\rfloor,\left\lfloor\frac{n}{2}\right\rfloor,\... ]]></description>
-    <pubDate>Wed, 01 Jul 2026 06:25:27 GMT</pubDate>
-  </item><item>
-    <title>Du&#039;s Second Multiplication Sieve</title>
-    <link>https://dxing.blog/Algorithms/Du's-Sieves/Du's-Second-Multiplication-Sieve</link>
-    <guid>https://dxing.blog/Algorithms/Du's-Sieves/Du's-Second-Multiplication-Sieve</guid>
-    <description><![CDATA[  Lemma \forall n\in\Z_+,\left|\left\{\left\lfloor\frac{n}{1}\right\rfloor,\left\lfloor\frac{n}{2}\right\rfloor,\dots,\left\lfloor\frac{n}{n}\right\rfloor\right\}\right|\in\mathcal{O}(\sqrt n) Proof \begin{align} \left|\left\{\left\lfloor\frac{n}{1}\right\rfloor,\left\lfloor\frac{n}{2}\right\rfloor,\... ]]></description>
-    <pubDate>Wed, 01 Jul 2026 06:25:27 GMT</pubDate>
-  </item><item>
-    <title>Euclidean Algorithm</title>
-    <link>https://dxing.blog/Algorithms/Euclidean-Algorithm</link>
-    <guid>https://dxing.blog/Algorithms/Euclidean-Algorithm</guid>
-    <description><![CDATA[ The Euclidean Algorithm is an algorithm that computes \gcd\{a, b\} for non-negative integers a and b in \mathcal{O}(\log a+\log b) time and \mathcal{O}(\log a+\log b) space. ]]></description>
-    <pubDate>Wed, 01 Jul 2026 06:25:27 GMT</pubDate>
-  </item><item>
-    <title>Euler&#039;s Sieve</title>
-    <link>https://dxing.blog/Algorithms/Euler's-Sieve</link>
-    <guid>https://dxing.blog/Algorithms/Euler's-Sieve</guid>
-    <description><![CDATA[ Euler’s Sieve is an algorithm that finds the primes in 2,3,\dots,n in \mathcal{O}(n) time and \mathcal{O}(n) space. ]]></description>
     <pubDate>Wed, 01 Jul 2026 06:25:27 GMT</pubDate>
   </item>
     </channel>
