@@ -55,7 +55,7 @@ std::unordered_map<int, int> du(int n, const std::unordered_map<int, int> &sf, c
 		if (pk[i] == i) {
 			h[i] = 0;
 			for (int j = i; j; j /= pf[i]) {
-				h[i] += (sf.at(j) - sf.at(j - 1)) * (sg.at(i / j) - (i > j ? sg.at(i / j - 1) : 0));
+				h[i] += (sf.at(j) - (j > 1 ? sf.at(j - 1) : 0)) * (sg.at(i / j) - (i > j ? sg.at(i / j - 1) : 0));
 			}
 		} else {
 			h[i] = h[i / pk[i]] * h[pk[i]];

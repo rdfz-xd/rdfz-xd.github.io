@@ -2,7 +2,7 @@
 tags: [Computer Science]
 ---
 
-[[Euler's Sieve]] is an algorithm that finds all the primes in $2,3,\dots,n$ in $\mathcal{O}(n)$ time and $\mathcal{O}(n)$ space.
+[[Euler's Sieve]] is an algorithm that finds the primes in $2,3,\dots,n$ in $\mathcal{O}(n)$ time and $\mathcal{O}(n)$ space.
 
 > [!tip] Hint
 >

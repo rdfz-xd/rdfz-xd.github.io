@@ -23,7 +23,7 @@ which costs a space of $\mathcal{O}(n)$.
 
 ### Algorithm
 
-Updating all the maintained segments containing the given element yields an algorithm that solves the problem in $\mathcal{O}(\log n)$ time and $\mathcal{O}(\log n)$ space.
+Updating the maintained segments containing the given element yields an algorithm that solves the problem in $\mathcal{O}(\log n)$ time and $\mathcal{O}(\log n)$ space.
 
 ~~~c++
 void modify(int i, int x) {

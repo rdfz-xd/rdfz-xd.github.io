@@ -4,7 +4,7 @@ tags: [Computer Science, Computer Science/String Theory]
 
 The [[Aho-Corasick Automaton]] is a data structure that maintains a set $S$ of strings in $\Sigma^*$ by maintaining a deterministic finite automaton that accepts and only accepts strings containing a string from $S$ as a suffix.
 
-Specifically, let $P$ be the set of all the prefixes of all the strings in $S$, and let
+Specifically, let $P$ be the set of the prefixes of the strings in $S$, and let
 $$
 E(s)=\{t:t\in P\land t=s_{|s|-|t|}s_{|s|-|t|+1}\dots s_{|s|-1}\}
 $$
