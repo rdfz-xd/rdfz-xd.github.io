@@ -6,37 +6,39 @@ tags: [Computer Science, Computer Science/Graph Theory]
 
 ### Algorithm
 
-0. Find an arbitrary depth-first search forest of $G$, and let $v_0,v_1,\dots,v_{|V|-1}$ be the backtracking order of the vertices during the depth-first search.
+0. Find an arbitrary depth-first search forest of $G$. Let $t_\text{out}(v)$ denote the exit time of $v$ during the depth-first search, and let $v_0,v_1,\dots,v_{|V|-1}$ be the vertices in the decreasing order of $t_\text{out}$.
 
 > [!info] Lemma
 >
-> Let $t(v)$ denote the index of $v$ in $v_0,v_1,\dots,v_{|V|-1}$, $\mathcal{S}$ denote the set of the strongly connected components of $G$.
->
-> Then, let $f(S)=\max_{v\in S}t(v)$, and let $S_0,S_1,\dots,S_{|\mathcal{S}|-1}$ be the strongly connected components of $G$ in the decreasing order of $f$, then $S_0,S_1,\dots,S_{|\mathcal{S}|-1}$ is also a topological sort of the strongly connected components by their reachability.
+> Let
+> $$
+> t_\text{out}(S)=\max_{v\in S}t_\text{out}(v)
+> $$
+> Then, let $\mathcal{S}$ denote the set of the strongly connected components of $G$, and let $S_0,S_1,\dots,S_{|\mathcal{S}|-1}$ be the strongly connected components of $G$ in the decreasing order of $t_\text{out}$, then $S_0,S_1,\dots,S_{|\mathcal{S}|-1}$ is also a topological sort of the strongly connected components by their reachability.
 >
 > > [!note]- Proof
 > >
 > > It is easy to prove that
 > > $$
-> > \forall S,T\in\mathcal{S},(S\ne T\land S\leadsto_G T)\Rightarrow f(S)>f(T)
+> > \forall S,T\in\mathcal{S},(S\ne T\land S\leadsto_G T)\Rightarrow t_\text{out}(S)>t_\text{out}(T)
 > > $$
 
 > [!info] Lemma
 > $$
-> \forall v\in V,v\in S_0\Leftrightarrow v_{|V|-1}\leadsto_{G^\text{T}}v
+> \forall v\in V,v\in S_0\Leftrightarrow v_0\leadsto_{G^\text{T}}v
 > $$
 >
 > > [!note]- Proof
 > >
-> > Applying the definition yields $v_{|V|-1}\in S_0$.
+> > Applying the definition yields $v_0\in S_0$.
 > >
 > > Therefore,
 > > $$
-> > \forall v\in S_0,v\leadsto_Gv_{|V|-1}
+> > \forall v\in S_0,v\leadsto_Gv_0
 > > $$
 > >
 > > $$
-> > \forall v\in S_0,v\leadsto_Gv_{|V|-1}\iff\forall v\in S_0,v_{|V|-1}\leadsto_{G^\text{T}}v
+> > \forall v\in S_0,v\leadsto_Gv_0\iff\forall v\in S_0,v_0\leadsto_{G^\text{T}}v
 > > $$
 > >
 > > Since $S_0,S_1,\dots,S_{|\mathcal{S}|-1}$ is a topological sort by reachability, it follows that
@@ -47,8 +49,8 @@ tags: [Computer Science, Computer Science/Graph Theory]
 > > $$
 > > \begin{align}
 > > \forall i\in\{1,2,\dots,|\mathcal{S}|-1\},S_i\not\leadsto_GS_0&\iff\forall i\in\{1,2,\dots,|\mathcal{S}|-1\},S_0\not\leadsto_{G^\text{T}}S_i\\
-> > &\iff\forall v\in V\setminus S_0,v_{|V|-1}\not\leadsto_{G^\text{T}}v\\
-> > &\iff\forall v\in V,v_{|V|-1}\leadsto_{G^\text{T}}v\Rightarrow v\in S_0
+> > &\iff\forall v\in V\setminus S_0,v_0\not\leadsto_{G^\text{T}}v\\
+> > &\iff\forall v\in V,v_0\leadsto_{G^\text{T}}v\Rightarrow v\in S_0
 > > \end{align}
 > > $$
 > >
