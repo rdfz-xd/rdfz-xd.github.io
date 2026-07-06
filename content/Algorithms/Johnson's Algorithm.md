@@ -32,10 +32,12 @@ Let $\operatorname{dist}_G(x,y)$ denote the length of the shortest path between 
 > $$
 >
 > > [!note]- Proof
-> > $$
-> > w(e)+h(s(e))-h(t(e))<0\iff\operatorname{dist}_{G^*}(s,t(e))>\operatorname{dist}_{G^*}(s,s(e))+w(e)
-> > $$
-> > Therefore, let $e_0e_1\dots e_{n-1}$ be a shortest path from $s$ to $s(e)$, then $e_0e_1\dots e_{n-1}e$ is a path from $s$ to $t(e)$ with a weight less than $\operatorname{dist}_{G^*}(s,t(e))$.
+> >
+> > - If $w(e)+h(s(e))-h(t(e))<0$, since
+> >   $$
+> >   w(e)+h(s(e))-h(t(e))<0\iff\operatorname{dist}_{G^*}(s,t(e))>\operatorname{dist}_{G^*}(s,s(e))+w(e)
+> >   $$
+> >   it follows that, let $e_0e_1\dots e_{n-1}$ be a shortest path from $s$ to $s(e)$, then $e_0e_1\dots e_{n-1}e$ is a path from $s$ to $t(e)$ with a weight less than $\operatorname{dist}_{G^*}(s,t(e))$.
 > >
 > > By contradiction, it follows that $w(e)+h(s(e))-h(t(e))\ge0$.
 

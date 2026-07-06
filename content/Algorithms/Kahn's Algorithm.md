@@ -15,17 +15,17 @@ tags: [Computer Science, Computer Science/Graph Theory]
 >
 > > [!note]- Proof
 > >
-> > If $\forall v\in V,\deg_\text{in}(v)>0$, let $f(v)$ be a vertex such that there exists an edge directed from $f(v)$ to $v$.
+> > - If $\forall v\in V,\deg_\text{in}(v)>0$, let $f(v)$ be a vertex such that there exists an edge directed from $f(v)$ to $v$.
 > >
-> > Let $v_0,v_1,\dots,v_{|V|}$ be a sequence of vertices in $V$ such that
-> > $$
-> > \forall i\in\{0,1,\dots,|V|-1\},v_{i+1}=f(v_i)
-> > $$
-> > Then applying the **Pigeonhole Principle** yields
-> > $$
-> > \exist i,j\in\{0,1,\dots,|V|\},i<j\land v_i=v_j
-> > $$
-> > Therefore, $v_j,v_{j-1},\dots,v_{i+1}$ is a cycle in $G$.
+> >   Let $v_0,v_1,\dots,v_{|V|}$ be a sequence of vertices in $V$ such that
+> >   $$
+> >   \forall i\in\{0,1,\dots,|V|-1\},v_{i+1}=f(v_i)
+> >   $$
+> >   Then applying the **Pigeonhole Principle** yields
+> >   $$
+> >   \exist i,j\in\{0,1,\dots,|V|\},i<j\land v_i=v_j
+> >   $$
+> >   Therefore, $v_j,v_{j-1},\dots,v_{i+1}$ is a cycle in $G$.
 > >
 > > By contradiction, it follows that $\exist v\in V,\deg_\text{in}(v)=0$.
 

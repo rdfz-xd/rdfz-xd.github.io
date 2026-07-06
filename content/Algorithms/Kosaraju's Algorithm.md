@@ -4,6 +4,10 @@ tags: [Computer Science, Computer Science/Graph Theory]
 
 [[Kosaraju's Algorithm]] is an algorithm that finds the strongly connected components of a directed graph $G=(V,E)$ in $\mathcal{O}(|V|+|E|)$ and $\mathcal{O}(|V|+|E|)$ space.
 
+> [!tip] Hint
+>
+> This problem can also be solved by [[Tarjan's Strongly Connected Components Algorithm]] in $\mathcal{O}(|V|+|E|)$ time and $\mathcal{O}(|V|+|E|)$ space.
+
 ### Algorithm
 
 0. Find an arbitrary depth-first search forest of $G$. Let $t_\text{out}(v)$ denote the exit time of $v$ during the depth-first search, and let $v_0,v_1,\dots,v_{|V|-1}$ be the vertices in the decreasing order of $t_\text{out}$.
@@ -89,7 +93,7 @@ tags: [Computer Science, Computer Science/Graph Theory]
 This algorithm solves the problem in $\mathcal{O}(|V|+|E|)$ time and $\mathcal{O}(|V|+|E|)$ space.
 
 ```c++
-std::vector<int> kosaraju(int n, int m, const std::vector<int> &u, const std::vector<int> &v) {
+std::vector<std::vector<int>> kosaraju(int n, int m, const std::vector<int> &u, const std::vector<int> &v) {
 	std::vector<std::vector<int>> adj(n), adjt(n);
 	for (int i = 0; i < m; i++) {
 		adj[u[i]].push_back(v[i]);
@@ -115,26 +119,28 @@ std::vector<int> kosaraju(int n, int m, const std::vector<int> &u, const std::ve
 		})(i);
 	}
 
-	std::vector bel(n, -1);
-	int cnt = 0;
+	std::vector<std::vector<int>> res;
+	vis.assign(n, false);
 
 	for (int i : o | std::views::reverse) {
-		if (~bel[i]) {
+		if (vis[i]) {
 			continue;
 		}
 
+		res.emplace_back();
 		y_combinator([&](auto &&self, int u) -> void {
-			bel[u] = cnt;
+			res.back().push_back(u);
+			vis[u] = true;
+
 			for (int v : adjt[u]) {
-				if (bel[v] == -1) {
+				if (!vis[v]) {
 					self(v);
 				}
 			}
 		})(i);
-		cnt++;
 	}
 
-	return bel;
+	return res;
 }
 ```
 

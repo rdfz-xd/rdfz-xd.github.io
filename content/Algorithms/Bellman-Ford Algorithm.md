@@ -36,11 +36,12 @@ The [[Bellman-Ford Algorithm]] is an algorithm that computes the length of the s
 > >
 > > Let $v_0v_1\dots v_{n-2}v_{n-1}$, where $v_0=s$ and $v_{n-1}=v$, be a shortest path from $s$ to $v$ passing through the least number of edges.
 > >
-> > Then, if $n>|V|$, applying the **Pigeonhole Principle** yields
-> > $$
-> > \exist i,j\in\{0,1,\dots,n-1\},i<j\land v_i=v_j
-> > $$
-> > Therefore, $v_0v_1\dots v_iv_{j+1}v_{j+2}\dots v_{n-1}$ is a shortest path passing through fewer edges.
+> > - If $n>|V|$, applying the **Pigeonhole Principle** yields
+> >   $$
+> >   \exist i,j\in\{0,1,\dots,n-1\},i<j\land v_i=v_j
+> >   $$
+> >   Therefore, $v_0v_1\dots v_iv_{j+1}v_{j+2}\dots v_{n-1}$ is a shortest path passing through fewer edges.
+> >
 > >
 > > By contradiction, it follows that $n\le|V|$.
 

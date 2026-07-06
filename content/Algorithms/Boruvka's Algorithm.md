@@ -28,7 +28,7 @@ tags: [Computer Science, Computer Science/Graph Theory]
 > >
 > > Let $T$ be an arbitrary minimum spanning tree of $G$.
 > >
-> > If $e\notin E(T)$, let $C$ be the cycle in $T+e$, $f$ be an edge in $C\cap\delta(v)\setminus\{e\}$, then since $w(f)\ge w(e)$, it follows that $T+e-f$ is also a minimum spanning tree of $G$.
+> > If $e\notin E(T)$, let $C$ be the cycle in $T+e$, $f$ be an edge in $C\cap\delta(v)\setminus\{e\}$, then since $w(f)\ge w(e)$, it follows that $T+e-f$ is a minimum spanning tree containing $e$.
 
 0. For each vertex $v$ in $V$, choose an edge $e_v$ in $\arg\min_{e\in\delta(v)}w(e)$.
 

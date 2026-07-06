@@ -4,7 +4,7 @@ tags: [Computer Science, Computer Science/Graph Theory]
 
 [[Prim's Algorithm]] is an algorithm that computes the weight of the minimum spanning tree of a connected undirected graph $G=(V,E)$ with edge weights in
 
-- $\mathcal{O}(|V|^2+|E|)$ time and $\mathcal{O}(|E|))$ space, or
+- $\mathcal{O}(|V|^2+|E|)$ time and $\mathcal{O}(|E|)$ space, or
 - $\mathcal{O}(|E|\log|E|)$ time and $\mathcal{O}(|E|)$ space.
 
 > [!tip] Hint
@@ -28,7 +28,7 @@ tags: [Computer Science, Computer Science/Graph Theory]
 > >
 > > Let $T$ be an arbitrary minimum spanning tree of $G$.
 > >
-> > If $e\notin E(T)$, let $C$ be the cycle in $T+e$, $f$ be an edge in $C\cap\delta(v)\setminus\{e\}$, then since $w(f)\ge w(e)$, it follows that $T+e-f$ is also a minimum spanning tree of $G$.
+> > If $e\notin E(T)$, let $C$ be the cycle in $T+e$, $f$ be an edge in $C\cap\delta(v)\setminus\{e\}$, then since $w(f)\ge w(e)$, it follows that $T+e-f$ is a minimum spanning tree containing $e$.
 
 0. Fix a vertex $v$ in $V$.
 

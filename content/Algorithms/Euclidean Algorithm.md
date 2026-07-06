@@ -4,6 +4,10 @@ tags: [Computer Science]
 
 The [[Euclidean Algorithm]] is an algorithm that computes $\gcd\{a, b\}$ for non-negative integers $a$ and $b$ in $\mathcal{O}(\log a+\log b)$ time and $\mathcal{O}(\log a+\log b)$ space.
 
+> [!tip] Hint
+>
+> This problem can also be solved by the [[Extended Euclidean Algorithm]] in $\mathcal{O}(\log a+\log b)$ time and $\mathcal{O}(\log a+\log b)$ space.
+
 ### Algorithm
 
 > [!info] Lemma
