@@ -10,17 +10,17 @@ tags: [Computer Science, Computer Science/Graph Theory]
 
 > [!info] Lemma
 >
-> Every bridge in $G$ corresponds to an edge in $T$.
+> Every bridge in $G$ corresponds to an edge in $E(T)$.
 
 > [!info] Lemma
 >
-> For any edge $e$ in $T$, let $e'$ be the corresponding edge of $e$ in $G$, then $e'$ is a bridge iff there is no edge other than $e'$ connecting a vertex in the subtree rooted at $t(e)$ to a vertex outside the subtree.
+> For any edge $e$ in $E(T)$, let $e'$ be the corresponding edge of $e$ in $E$, then $e'$ is a bridge in $G$ iff there is no non-tree edge in $E$ connecting a vertex in the subtree rooted at $t(e)$ to a vertex outside the subtree.
 
 > [!info] Lemma
 >
-> Let $t_\text{in}(v)$ denote the entry time of $v$ during the depth-first search, $t_\text{low}(v)$ denote the minimum $t_\text{in}$ of a vertex reachable from a vertex in the subtree rooted at $v$ via at most one non-tree edge.
+> Let $t_\text{in}(v)$ denote the entry time of $v$ during the depth-first search, $t_\text{low}(v)$ denote the minimum $t_\text{in}$ of a vertex reachable from a vertex in the subtree rooted at $v$ via at most one non-tree edge in $E$.
 >
-> Then, for any edge $e$ in $T$, $e$ corresponds to a bridge in $G$ iff $t_\text{low}(t(e))=t_\text{in}(t(e))$.
+> Then, for any edge $e$ in $E(T)$, $e$ corresponds to a bridge in $G$ iff $t_\text{low}(t(e))=t_\text{in}(t(e))$.
 
 1. Apply the lemma to find the bridges.
 

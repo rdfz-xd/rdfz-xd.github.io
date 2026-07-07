@@ -36,7 +36,7 @@ tags: [Computer Science, Computer Science/Graph Theory]
 
 > [!info] Lemma
 >
-> For any vertex $v$ in $V$, $v$ is a *root* iff, after processing its subtree, there is no edge directed from a vertex in the subtree to an unassigned vertex outside the subtree.
+> For any vertex $v$ in $V$, $v$ is a *root* iff, after processing its subtree, there is no edge in $E$ directed from a vertex in the subtree to an unassigned vertex outside the subtree.
 >
 > > [!note]- Proof
 > >
@@ -64,7 +64,7 @@ tags: [Computer Science, Computer Science/Graph Theory]
 
 > [!info] Lemma
 >
-> Let $t_\text{in}(v)$ denote the entry time of $v$ during the depth-first search, $t_\text{low}(v)$ denote, after processing the subtree rooted at $v$,  the minimum $t_\text{in}$ of an unassigned vertex reachable from a vertex in the subtree via at most one edge.
+> Let $t_\text{in}(v)$ denote the entry time of $v$ during the depth-first search, $t_\text{low}(v)$ denote, after processing the subtree rooted at $v$,  the minimum $t_\text{in}$ of an unassigned vertex reachable from a vertex in the subtree via at most one edge in $E$.
 >
 > Then, for any vertex $v$ in $V$, $v$ is a *root* iff $t_\text{low}(v)=t_\text{in}(v)$.
 

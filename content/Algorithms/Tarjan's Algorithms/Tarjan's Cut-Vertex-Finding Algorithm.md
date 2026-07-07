@@ -10,11 +10,11 @@ tags: [Computer Science, Computer Science/Graph Theory]
 
 > [!info] Lemma
 >
-> For any vertex $v$ in $V$, $v$ is a cut vertex iff, in $T$, $v$ has a parent and there exists a child $c$ of $v$ such that there is no edge connecting a vertex in the subtree rooted at $c$ to a vertex other than $v$ outside the subtree, or $v$ has no parent but has more than one child.
+> For any vertex $v$ in $V$, $v$ is a cut vertex in $G$ iff, in $T$, $v$ has a parent and there exists a child $c$ of $v$ such that there is no edge in $E$ connecting a vertex in the subtree rooted at $c$ to a vertex other than $v$ outside the subtree, or $v$ has no parent but has more than one child.
 
 > [!info] Lemma
 >
-> Let $t_\text{in}(v)$ denote the entry time of $v$ during the depth-first search, $t_\text{low}(v)$ denote the minimum $t_\text{in}$ of a vertex reachable from a vertex in the subtree rooted at $v$ via at most one edge.
+> Let $t_\text{in}(v)$ denote the entry time of $v$ during the depth-first search, $t_\text{low}(v)$ denote the minimum $t_\text{in}$ of a vertex reachable from a vertex in the subtree rooted at $v$ via at most one edge in $E$.
 >
 > Then, $v$ is a cut vertex iff, in $T$, $v$ has a parent and there exists a child $c$ of $v$ such that $t_\text{low}(c)=t_\text{in}(v)$, or $v$ has no parent but has more than one child.
 
