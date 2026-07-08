@@ -63,6 +63,10 @@ std::vector<int> knuth_morris_pratt(int n, const std::string &s) {
 >
 > The total number of executions of  `s.substr(0, j) == s.substr(i - j, j)` is
 > $$
+> \sum_{i=2}^n(\pi(i-1)+1-\pi(i)+1)
+> $$
+>
+> $$
 > \begin{align}
 > \sum_{i=2}^n(\pi(i-1)+1-\pi(i)+1)&=\pi(1)-\pi(n)+2(n-1)\\
 > &\le2n\\

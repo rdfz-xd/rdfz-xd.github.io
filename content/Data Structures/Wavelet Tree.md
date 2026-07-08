@@ -2,7 +2,7 @@
 tags: [Computer Science]
 ---
 
-[[Wavelet Tree]] is a data structure that maintains an array of $n$ integers $a_0,a_1,\dots,a_{n-1}\in\{0,1,\dots,2^m-1\}$ by maintaining the **Wavelet Matrix** of the array.
+The [[Wavelet Tree]] is a data structure that maintains an array of $n$ integers $a_0,a_1,\dots,a_{n-1}\in\{0,1,\dots,2^m-1\}$ by maintaining the **Wavelet Matrix** of the array.
 
 The **Wavelet Matrix** $W$ is an $m\times n$ matrix constructed in the following way:
 

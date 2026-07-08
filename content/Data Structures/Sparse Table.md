@@ -2,7 +2,7 @@
 tags: [Computer Science]
 ---
 
-[[Sparse Table]] is a data structure that maintains an array of $n$ numbers $a_0,a_1,\dots,a_{n-1}$ by maintaining
+The [[Sparse Table]] is a data structure that maintains an array of $n$ numbers $a_0,a_1,\dots,a_{n-1}$ by maintaining
 $$
 f(i,j)=\max_{k=j}^{j+2^i-1}a_k
 $$

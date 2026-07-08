@@ -2,7 +2,7 @@
 tags: [Computer Science]
 ---
 
-[[Segment Tree]] is a data structure that maintains an array of $n=2^k$ numbers $a_0,a_1,\dots,a_{n-1}$ by maintaining $s(0,2^k),s(0,2^{k-1}),s(2^{k-1},2^k),\dots,s(0,1),s(1,2),\dots,s(2^k-1,2^k)$, where
+The [[Segment Tree]] is a data structure that maintains an array of $n=2^k$ numbers $a_0,a_1,\dots,a_{n-1}$ by maintaining $s(0,2^k),s(0,2^{k-1}),s(2^{k-1},2^k),\dots,s(0,1),s(1,2),\dots,s(2^k-1,2^k)$, where
 $$
 s(l,r)=\sum_{i=l}^{r-1}a_i
 $$

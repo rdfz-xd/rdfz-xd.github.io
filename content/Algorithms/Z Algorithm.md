@@ -59,7 +59,11 @@ std::vector<int> z(int n, const std::string &s) {
 
 > [!note]- Proof
 >
-> It is easy to prove that the upper bound on the total number of executions of `z[i]++;` is
+> It is easy to prove that the upper bound on the total number of executions of `z[i]++` is
+> $$
+> \max_{i=1}^{n-1}(i+z(i))
+> $$
+>
 > $$
 > \begin{align}
 > \max_{i=1}^{n-1}(i+z(i))&\le n\\

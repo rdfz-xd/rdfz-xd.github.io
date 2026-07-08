@@ -59,7 +59,11 @@ std::vector<int> manacher(int n, const std::string &s) {
 
 > [!note]- Proof
 >
-> It is easy to prove that the upper bound on the total number of executions of `d[i]++;` is
+> It is easy to prove that the upper bound on the total number of executions of `d[i]++` is
+> $$
+> \max_{i=0}^{n-1}(i+d(i))
+> $$
+>
 > $$
 > \begin{align}
 > \max_{i=0}^{n-1}(i+d(i))&\le n\\
