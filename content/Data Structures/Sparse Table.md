@@ -2,7 +2,7 @@
 tags: [Computer Science]
 ---
 
-The [[Sparse Table]] is a data structure that maintains an array of $n$ numbers $a_0,a_1,\dots,a_{n-1}$ by maintaining
+[[Sparse Table]] is a data structure that maintains an array of $n$ numbers $a_0,a_1,\dots,a_{n-1}$ by maintaining
 $$
 f(i,j)=\max_{k=j}^{j+2^i-1}a_k
 $$
@@ -23,7 +23,7 @@ Applying the lemma yields to find $f$ an algorithm that solves the problem in $\
 
 ~~~c++
 void build(int n, const std::vector<int> &a) {
-	f[0] = a;
+	f.assign(std::__lg(n) + 1, a);
 	for (int i = 1; i <= std::__lg(n); i++) {
 		for (int j = 0; j + (1 << i) <= n; j++) {
 			f[i][j] = std::max(f[i - 1][j], f[i - 1][j + (1 << (i - 1))]);

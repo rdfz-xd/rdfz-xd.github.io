@@ -2,7 +2,7 @@
 tags: [Computer Science]
 ---
 
-The [[Fenwick Tree]] is a data structure that maintains an array of $n$ integers $a_0,a_1,\dots,a_{n-1}$ by maintaining
+[[Fenwick Tree]] is a data structure that maintains an array of $n$ integers $a_0,a_1,\dots,a_{n-1}$ by maintaining
 $$
 s(i)=\sum_{j=i-\operatorname{lsb}(i)}^{i-1}a_i
 $$

@@ -67,9 +67,9 @@ std::unordered_map<int, int> du(int n, const std::unordered_map<int, int> &sf, c
 
 > [!note]- Proof
 >
-> Applying the lemma yields
+> Applying the lemma yields that the time complexity of the algorithm is
 > $$
-> T(n)\in\mathcal{O}\left(\sum_{k\in\{\lfloor\frac{n}{1}\rfloor,\lfloor\frac{n}{2}\rfloor,\dots,\lfloor\frac{n}{n}\rfloor\}}\sqrt k\right)
+> \mathcal{O}\left(\sum_{k\in\{\lfloor\frac{n}{1}\rfloor,\lfloor\frac{n}{2}\rfloor,\dots,\lfloor\frac{n}{n}\rfloor\}}\sqrt k\right)
 > $$
 >
 > $$

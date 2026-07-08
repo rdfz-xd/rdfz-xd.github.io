@@ -2,7 +2,7 @@
 tags: [Computer Science]
 ---
 
-The [[Binary Heap]] is a data structure that maintains a multiset $S$ of numbers by maintaining a complete binary tree.
+[[Binary Heap]] is a data structure that maintains a multiset $S$ of numbers by maintaining a complete binary tree.
 
 Specifically, in the complete binary tree, each node stores an element in $S$. The complete binary tree satisfies that the element in each node is less than or equal to the element in its parent.
 
@@ -47,11 +47,11 @@ int top() {
 
 ## Pop
 
-[[Binary Heap#Pop]] updates $S$ to $S\setminus\max S$ in $\mathcal{O}(\log|S|)$ time and $\mathcal{O}(1)$ space.
+[[Binary Heap#Pop]] updates $S$ to $S\setminus\{\max S\}$ in $\mathcal{O}(\log|S|)$ time and $\mathcal{O}(1)$ space.
 
 ### Algorithm
 
-0. Swap the element in the root with the element in the last node.
+0. Swap the element in the root and the element in the last node.
 
 1. Delete the last node.
 2. Maintain the order by swapping elements.

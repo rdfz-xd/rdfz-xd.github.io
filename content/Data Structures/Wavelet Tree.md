@@ -2,7 +2,7 @@
 tags: [Computer Science]
 ---
 
-The [[Wavelet Tree]] is a data structure that maintains an array of $n$ integers $a_0,a_1,\dots,a_{n-1}\in\{0,1,\dots,2^m-1\}$ by maintaining the **Wavelet Matrix** of the array.
+[[Wavelet Tree]] is a data structure that maintains an array of $n$ integers $a_0,a_1,\dots,a_{n-1}\in\{0,1,\dots,2^m-1\}$ by maintaining the **Wavelet Matrix** of the array.
 
 The **Wavelet Matrix** $W$ is an $m\times n$ matrix constructed in the following way:
 
@@ -42,7 +42,8 @@ This costs a space of $\mathcal{O}(nm)$.
 Applying the definition to find $S$ yields an algorithm that solves the problem in $\mathcal{O}(nm)$ time and $\mathcal{O}(n)$ space.
 
 ```c++
-void build(int n, std::vector<int> a) {
+void build(int m, int n, std::vector<int> a) {
+	s.assign(m, std::vector(n + 1, 0));
 	for (int i = m - 1; i >= 0; i--) {
 		for (int j = 0; j < n; j++) {
 			s[i][j + 1] = s[i][j] + !(a[j] >> i & 1);

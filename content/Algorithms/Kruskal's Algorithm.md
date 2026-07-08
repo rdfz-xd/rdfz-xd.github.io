@@ -36,7 +36,7 @@ tags: [Computer Science, Computer Science/Graph Theory]
 
 Applying the lemma yields that the selected edges form a minimum spanning tree.
 
-Applying **Introsort** to sort the edges and using a **Disjoint Set Union** to maintain the structure of the graph yield an algorithm that solves the problem in $\mathcal{O}(|E|\log|E|)$ time and $\mathcal{O}(|E|)$ space.
+Applying an appropriate sorting algorithm (i.e. [[Merge Sort]], [[Heapsort]]) to sort the edges and using a **Disjoint Set Union** to maintain the structure of the graph yield an algorithm that solves the problem in $\mathcal{O}(|E|\log|E|)$ time and $\mathcal{O}(|E|)$ space.
 
 ~~~c++
 int kruskal(int n, int m, const std::vector<int> &u, const std::vector<int> &v, const std::vector<int> &w) {

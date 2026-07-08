@@ -6,64 +6,64 @@
       <description>Last 10 notes on Dong Xing&#039;s Blog</description>
       <generator>Quartz -- quartz.jzhao.xyz</generator>
       <item>
-    <title>Bellman-Ford Algorithm</title>
-    <link>https://dxing.blog/Algorithms/Bellman-Ford-Algorithm</link>
-    <guid>https://dxing.blog/Algorithms/Bellman-Ford-Algorithm</guid>
-    <description><![CDATA[ The Bellman-Ford Algorithm is an algorithm that computes the length of the shortest path from a vertex s to every vertex in a directed graph G=(V,E) with edge weights and no negative cycles in \mathcal{O}(|V||E|) time and \mathcal{O}(|V|) space. ]]></description>
-    <pubDate>Mon, 06 Jul 2026 03:56:01 GMT</pubDate>
+    <title>Binary Search</title>
+    <link>https://dxing.blog/Algorithms/Binary-Search</link>
+    <guid>https://dxing.blog/Algorithms/Binary-Search</guid>
+    <description><![CDATA[ Binary Search is an algorithm that counts the number of true values in an array of n booleans f_0,f_1,\dots,f_{n-1} satisfying \forall i\in\{1,2,\dots,n-1\},f_i\Rightarrow f_{i-1} in \mathcal{O}(\log n) time and \mathcal{O}(1) space. ]]></description>
+    <pubDate>Wed, 08 Jul 2026 08:45:52 GMT</pubDate>
   </item><item>
-    <title>Boruvka&#039;s Algorithm</title>
-    <link>https://dxing.blog/Algorithms/Boruvka's-Algorithm</link>
-    <guid>https://dxing.blog/Algorithms/Boruvka's-Algorithm</guid>
-    <description><![CDATA[ Boruvka’s Algorithm is an algorithm that computes the weight of the minimum spanning tree of a connected undirected graph G=(V,E) with edge weights in \mathcal{O}(|E|\log|V|) time and \mathcal{O}(|E|) space. ]]></description>
-    <pubDate>Mon, 06 Jul 2026 03:56:01 GMT</pubDate>
+    <title>Merge Sort</title>
+    <link>https://dxing.blog/Algorithms/Merge-Sort</link>
+    <guid>https://dxing.blog/Algorithms/Merge-Sort</guid>
+    <description><![CDATA[ Merge Sort is an algorithm that sorts an array of n numbers a_0,a_1,\dots,a_{n-1} in non-decreasing order in \mathcal{O}(n\log n) time and \mathcal{O}(n) space. ]]></description>
+    <pubDate>Wed, 08 Jul 2026 08:41:20 GMT</pubDate>
   </item><item>
-    <title>Euclidean Algorithm</title>
-    <link>https://dxing.blog/Algorithms/Euclidean-Algorithm</link>
-    <guid>https://dxing.blog/Algorithms/Euclidean-Algorithm</guid>
-    <description><![CDATA[ The Euclidean Algorithm is an algorithm that computes \gcd\{a, b\} for non-negative integers a and b in \mathcal{O}(\log a+\log b) time and \mathcal{O}(\log a+\log b) space. ]]></description>
-    <pubDate>Mon, 06 Jul 2026 03:56:01 GMT</pubDate>
+    <title>Heapsort</title>
+    <link>https://dxing.blog/Algorithms/Heapsort</link>
+    <guid>https://dxing.blog/Algorithms/Heapsort</guid>
+    <description><![CDATA[ Heapsort is an algorithm that sorts an array of n numbers a_0,a_1,\dots,a_{n-1} in non-decreasing order in \mathcal{O}(n\log n) time and \mathcal{O}(1) space. ]]></description>
+    <pubDate>Wed, 08 Jul 2026 07:30:29 GMT</pubDate>
   </item><item>
-    <title>Hierholzer&#039;s Algorithm</title>
-    <link>https://dxing.blog/Algorithms/Hierholzer's-Algorithm</link>
-    <guid>https://dxing.blog/Algorithms/Hierholzer's-Algorithm</guid>
-    <description><![CDATA[ Hierholzer’s Algorithm is an algorithm that finds an Eulerian circuit in a weakly connected directed graph G=(V,E), where the in-degree of each vertex equals its out-degree, in \mathcal{O}(|E|) time and \mathcal{O}(|E|) space. ]]></description>
-    <pubDate>Mon, 06 Jul 2026 03:56:01 GMT</pubDate>
+    <title>Selection Sort</title>
+    <link>https://dxing.blog/Algorithms/Selection-Sort</link>
+    <guid>https://dxing.blog/Algorithms/Selection-Sort</guid>
+    <description><![CDATA[ Selection Sort is an algorithm that sorts an array of n numbers a_0,a_1,\dots,a_{n-1} in non-decreasing order in \mathcal{O}(n^2) time and \mathcal{O}(1) space. ]]></description>
+    <pubDate>Wed, 08 Jul 2026 06:48:38 GMT</pubDate>
   </item><item>
-    <title>Johnson&#039;s Algorithm</title>
-    <link>https://dxing.blog/Algorithms/Johnson's-Algorithm</link>
-    <guid>https://dxing.blog/Algorithms/Johnson's-Algorithm</guid>
-    <description><![CDATA[ Johnson’s Algorithm is an algorithm that computes the length of the shortest path between every pair of vertices in a directed graph G=(V,E) with edge weights and no negative cycles in \mathcal{O}(|V|^3+|V||E|) time and \mathcal{O}(|V|^2+|E|) space, or \mathcal{O}((|V|^2+|V||E|)\log|E|) time and \ma... ]]></description>
-    <pubDate>Mon, 06 Jul 2026 03:56:01 GMT</pubDate>
+    <title>Insertion Sort</title>
+    <link>https://dxing.blog/Algorithms/Insertion-Sort</link>
+    <guid>https://dxing.blog/Algorithms/Insertion-Sort</guid>
+    <description><![CDATA[ Insertion Sort is an algorithm that sorts an array of n numbers a_0,a_1,\dots,a_{n-1} in non-decreasing order in \mathcal{O}(n^2) time and \mathcal{O}(1) space. ]]></description>
+    <pubDate>Wed, 08 Jul 2026 06:48:31 GMT</pubDate>
   </item><item>
-    <title>Kahn&#039;s Algorithm</title>
-    <link>https://dxing.blog/Algorithms/Kahn's-Algorithm</link>
-    <guid>https://dxing.blog/Algorithms/Kahn's-Algorithm</guid>
-    <description><![CDATA[ Kahn’s Algorithm is an algorithm that finds a topological sort for a directed acyclic graph G=(V,E) in \mathcal{O}(|V|+|E|) time and \mathcal{O}(|V|+|E|) space. ]]></description>
-    <pubDate>Mon, 06 Jul 2026 03:56:01 GMT</pubDate>
-  </item><item>
-    <title>Kosaraju&#039;s Algorithm</title>
-    <link>https://dxing.blog/Algorithms/Kosaraju's-Algorithm</link>
-    <guid>https://dxing.blog/Algorithms/Kosaraju's-Algorithm</guid>
-    <description><![CDATA[ Kosaraju’s Algorithm is an algorithm that finds the strongly connected components of a directed graph G=(V,E) in \mathcal{O}(|V|+|E|) and \mathcal{O}(|V|+|E|) space. ]]></description>
-    <pubDate>Mon, 06 Jul 2026 03:56:01 GMT</pubDate>
-  </item><item>
-    <title>Kruskal&#039;s Algorithm</title>
-    <link>https://dxing.blog/Algorithms/Kruskal's-Algorithm</link>
-    <guid>https://dxing.blog/Algorithms/Kruskal's-Algorithm</guid>
-    <description><![CDATA[ Kruskal’s Algorithm is an algorithm that computes the weight of the minimum spanning tree of a connected undirected graph G=(V,E) with edge weights in \mathcal{O}(|E|\log|E|) time and \mathcal{O}(|E|) space. ]]></description>
-    <pubDate>Mon, 06 Jul 2026 03:56:01 GMT</pubDate>
-  </item><item>
-    <title>Prim&#039;s Algorithm</title>
-    <link>https://dxing.blog/Algorithms/Prim's-Algorithm</link>
-    <guid>https://dxing.blog/Algorithms/Prim's-Algorithm</guid>
-    <description><![CDATA[ Prim’s Algorithm is an algorithm that computes the weight of the minimum spanning tree of a connected undirected graph G=(V,E) with edge weights in \mathcal{O}(|V|^2+|E|) time and \mathcal{O}(|E|) space, or \mathcal{O}(|E|\log|E|) time and \mathcal{O}(|E|) space. ]]></description>
-    <pubDate>Mon, 06 Jul 2026 03:56:01 GMT</pubDate>
+    <title>Bubble Sort</title>
+    <link>https://dxing.blog/Algorithms/Bubble-Sort</link>
+    <guid>https://dxing.blog/Algorithms/Bubble-Sort</guid>
+    <description><![CDATA[ Bubble Sort is an algorithm that sorts an array of n numbers a_0,a_1,\dots,a_{n-1} in non-decreasing order in \mathcal{O}(n^2) time and \mathcal{O}(1) space. ]]></description>
+    <pubDate>Wed, 08 Jul 2026 06:48:21 GMT</pubDate>
   </item><item>
     <title>Tarjan&#039;s Bridge-Finding Algorithm</title>
     <link>https://dxing.blog/Algorithms/Tarjan's-Algorithms/Tarjan's-Bridge-Finding-Algorithm</link>
     <guid>https://dxing.blog/Algorithms/Tarjan's-Algorithms/Tarjan's-Bridge-Finding-Algorithm</guid>
     <description><![CDATA[ Tarjan’s Bridge-Finding Algorithm is an algorithm that finds the bridges in an undirected graph G=(V,E) in \mathcal{O}(|V|+|E|) time and \mathcal{O}(|V|+|E|) space. ]]></description>
+    <pubDate>Tue, 07 Jul 2026 02:00:32 GMT</pubDate>
+  </item><item>
+    <title>Tarjan&#039;s Cut-Vertex-Finding Algorithm</title>
+    <link>https://dxing.blog/Algorithms/Tarjan's-Algorithms/Tarjan's-Cut-Vertex-Finding-Algorithm</link>
+    <guid>https://dxing.blog/Algorithms/Tarjan's-Algorithms/Tarjan's-Cut-Vertex-Finding-Algorithm</guid>
+    <description><![CDATA[ Tarjan’s Cut-Vertex-Finding Algorithm is an algorithm that finds the cut vertices in an undirected graph G=(V,E) in \mathcal{O}(|V|+|E|) time and \mathcal{O}(|V|+|E|) space. ]]></description>
+    <pubDate>Tue, 07 Jul 2026 02:00:32 GMT</pubDate>
+  </item><item>
+    <title>Tarjan&#039;s Strongly Connected Components Algorithm</title>
+    <link>https://dxing.blog/Algorithms/Tarjan's-Algorithms/Tarjan's-Strongly-Connected-Components-Algorithm</link>
+    <guid>https://dxing.blog/Algorithms/Tarjan's-Algorithms/Tarjan's-Strongly-Connected-Components-Algorithm</guid>
+    <description><![CDATA[ Tarjan’s Strongly Connected Components Algorithm is an algorithm that finds the strongly connected components of a directed graph G=(V,E) in \mathcal{O}(|V|+|E|) and \mathcal{O}(|V|+|E|) space. ]]></description>
+    <pubDate>Tue, 07 Jul 2026 02:00:32 GMT</pubDate>
+  </item><item>
+    <title>Bellman-Ford Algorithm</title>
+    <link>https://dxing.blog/Algorithms/Bellman-Ford-Algorithm</link>
+    <guid>https://dxing.blog/Algorithms/Bellman-Ford-Algorithm</guid>
+    <description><![CDATA[ The Bellman-Ford Algorithm is an algorithm that computes the length of the shortest path from a vertex s to every vertex in a directed graph G=(V,E) with edge weights and no negative cycles in \mathcal{O}(|V||E|) time and \mathcal{O}(|V|) space. ]]></description>
     <pubDate>Mon, 06 Jul 2026 03:56:01 GMT</pubDate>
   </item>
     </channel>

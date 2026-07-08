@@ -54,20 +54,24 @@ This algorithm solves the problem in $\mathcal{O}(|\Sigma|\sum_{s\in S}|s|)$ tim
 
 ```c++
 void build(int n, const std::vector<std::string> &s) {
+	next.assign(2, {});
 	next[0].fill(1);
+	f.assign(2, false);
+
 	for (int i = 0; i < n; i++) {
 		int o = 1;
 		for (char c : s[i]) {
 			if (!next[o][c]) {
 				next[o][c] = next.size();
 				next.emplace_back();
-				fail.push_back(0);
 				f.push_back(false);
 			}
 			o = next[o][c];
 		}
 		f[o] = true;
 	}
+
+	std::vector fail(next.size(), 0);
 
 	std::queue<int> q;
 	q.push(1);
