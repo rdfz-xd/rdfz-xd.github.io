@@ -10,61 +10,61 @@
     <link>https://dxing.blog/Algorithms/Binary-Search</link>
     <guid>https://dxing.blog/Algorithms/Binary-Search</guid>
     <description><![CDATA[ Binary Search is an algorithm that counts the number of true values in an array of n booleans f_0,f_1,\dots,f_{n-1} satisfying \forall i\in\{1,2,\dots,n-1\},f_i\Rightarrow f_{i-1} in \mathcal{O}(\log n) time and \mathcal{O}(1) space. ]]></description>
-    <pubDate>Wed, 08 Jul 2026 08:45:52 GMT</pubDate>
-  </item><item>
-    <title>Merge Sort</title>
-    <link>https://dxing.blog/Algorithms/Merge-Sort</link>
-    <guid>https://dxing.blog/Algorithms/Merge-Sort</guid>
-    <description><![CDATA[ Merge Sort is an algorithm that sorts an array of n numbers a_0,a_1,\dots,a_{n-1} in non-decreasing order in \mathcal{O}(n\log n) time and \mathcal{O}(n) space. ]]></description>
-    <pubDate>Wed, 08 Jul 2026 08:41:20 GMT</pubDate>
-  </item><item>
-    <title>Heapsort</title>
-    <link>https://dxing.blog/Algorithms/Heapsort</link>
-    <guid>https://dxing.blog/Algorithms/Heapsort</guid>
-    <description><![CDATA[ Heapsort is an algorithm that sorts an array of n numbers a_0,a_1,\dots,a_{n-1} in non-decreasing order in \mathcal{O}(n\log n) time and \mathcal{O}(1) space. ]]></description>
-    <pubDate>Wed, 08 Jul 2026 07:30:29 GMT</pubDate>
-  </item><item>
-    <title>Selection Sort</title>
-    <link>https://dxing.blog/Algorithms/Selection-Sort</link>
-    <guid>https://dxing.blog/Algorithms/Selection-Sort</guid>
-    <description><![CDATA[ Selection Sort is an algorithm that sorts an array of n numbers a_0,a_1,\dots,a_{n-1} in non-decreasing order in \mathcal{O}(n^2) time and \mathcal{O}(1) space. ]]></description>
-    <pubDate>Wed, 08 Jul 2026 06:48:38 GMT</pubDate>
-  </item><item>
-    <title>Insertion Sort</title>
-    <link>https://dxing.blog/Algorithms/Insertion-Sort</link>
-    <guid>https://dxing.blog/Algorithms/Insertion-Sort</guid>
-    <description><![CDATA[ Insertion Sort is an algorithm that sorts an array of n numbers a_0,a_1,\dots,a_{n-1} in non-decreasing order in \mathcal{O}(n^2) time and \mathcal{O}(1) space. ]]></description>
-    <pubDate>Wed, 08 Jul 2026 06:48:31 GMT</pubDate>
+    <pubDate>Wed, 08 Jul 2026 08:59:19 GMT</pubDate>
   </item><item>
     <title>Bubble Sort</title>
     <link>https://dxing.blog/Algorithms/Bubble-Sort</link>
     <guid>https://dxing.blog/Algorithms/Bubble-Sort</guid>
     <description><![CDATA[ Bubble Sort is an algorithm that sorts an array of n numbers a_0,a_1,\dots,a_{n-1} in non-decreasing order in \mathcal{O}(n^2) time and \mathcal{O}(1) space. ]]></description>
-    <pubDate>Wed, 08 Jul 2026 06:48:21 GMT</pubDate>
+    <pubDate>Wed, 08 Jul 2026 08:59:19 GMT</pubDate>
   </item><item>
-    <title>Tarjan&#039;s Bridge-Finding Algorithm</title>
-    <link>https://dxing.blog/Algorithms/Tarjan's-Algorithms/Tarjan's-Bridge-Finding-Algorithm</link>
-    <guid>https://dxing.blog/Algorithms/Tarjan's-Algorithms/Tarjan's-Bridge-Finding-Algorithm</guid>
-    <description><![CDATA[ Tarjan’s Bridge-Finding Algorithm is an algorithm that finds the bridges in an undirected graph G=(V,E) in \mathcal{O}(|V|+|E|) time and \mathcal{O}(|V|+|E|) space. ]]></description>
-    <pubDate>Tue, 07 Jul 2026 02:00:32 GMT</pubDate>
+    <title>Du&#039;s First Division Sieve</title>
+    <link>https://dxing.blog/Algorithms/Du's-Sieves/Du's-First-Division-Sieve</link>
+    <guid>https://dxing.blog/Algorithms/Du's-Sieves/Du's-First-Division-Sieve</guid>
+    <description><![CDATA[  Lemma \forall n\in\Z_+,\left|\left\{\left\lfloor\frac{n}{1}\right\rfloor,\left\lfloor\frac{n}{2}\right\rfloor,\dots,\left\lfloor\frac{n}{n}\right\rfloor\right\}\right|\in\mathcal{O}(\sqrt n) Proof \begin{align} \left|\left\{\left\lfloor\frac{n}{1}\right\rfloor,\left\lfloor\frac{n}{2}\right\rfloor,\... ]]></description>
+    <pubDate>Wed, 08 Jul 2026 08:59:19 GMT</pubDate>
   </item><item>
-    <title>Tarjan&#039;s Cut-Vertex-Finding Algorithm</title>
-    <link>https://dxing.blog/Algorithms/Tarjan's-Algorithms/Tarjan's-Cut-Vertex-Finding-Algorithm</link>
-    <guid>https://dxing.blog/Algorithms/Tarjan's-Algorithms/Tarjan's-Cut-Vertex-Finding-Algorithm</guid>
-    <description><![CDATA[ Tarjan’s Cut-Vertex-Finding Algorithm is an algorithm that finds the cut vertices in an undirected graph G=(V,E) in \mathcal{O}(|V|+|E|) time and \mathcal{O}(|V|+|E|) space. ]]></description>
-    <pubDate>Tue, 07 Jul 2026 02:00:32 GMT</pubDate>
+    <title>Du&#039;s First Multiplication Sieve</title>
+    <link>https://dxing.blog/Algorithms/Du's-Sieves/Du's-First-Multiplication-Sieve</link>
+    <guid>https://dxing.blog/Algorithms/Du's-Sieves/Du's-First-Multiplication-Sieve</guid>
+    <description><![CDATA[  Lemma \forall n\in\Z_+,\left|\left\{\left\lfloor\frac{n}{1}\right\rfloor,\left\lfloor\frac{n}{2}\right\rfloor,\dots,\left\lfloor\frac{n}{n}\right\rfloor\right\}\right|\in\mathcal{O}(\sqrt n) Proof \begin{align} \left|\left\{\left\lfloor\frac{n}{1}\right\rfloor,\left\lfloor\frac{n}{2}\right\rfloor,\... ]]></description>
+    <pubDate>Wed, 08 Jul 2026 08:59:19 GMT</pubDate>
   </item><item>
-    <title>Tarjan&#039;s Strongly Connected Components Algorithm</title>
-    <link>https://dxing.blog/Algorithms/Tarjan's-Algorithms/Tarjan's-Strongly-Connected-Components-Algorithm</link>
-    <guid>https://dxing.blog/Algorithms/Tarjan's-Algorithms/Tarjan's-Strongly-Connected-Components-Algorithm</guid>
-    <description><![CDATA[ Tarjan’s Strongly Connected Components Algorithm is an algorithm that finds the strongly connected components of a directed graph G=(V,E) in \mathcal{O}(|V|+|E|) and \mathcal{O}(|V|+|E|) space. ]]></description>
-    <pubDate>Tue, 07 Jul 2026 02:00:32 GMT</pubDate>
+    <title>Du&#039;s Second Division Sieve</title>
+    <link>https://dxing.blog/Algorithms/Du's-Sieves/Du's-Second-Division-Sieve</link>
+    <guid>https://dxing.blog/Algorithms/Du's-Sieves/Du's-Second-Division-Sieve</guid>
+    <description><![CDATA[  Lemma \forall n\in\Z_+,\left|\left\{\left\lfloor\frac{n}{1}\right\rfloor,\left\lfloor\frac{n}{2}\right\rfloor,\dots,\left\lfloor\frac{n}{n}\right\rfloor\right\}\right|\in\mathcal{O}(\sqrt n) Proof \begin{align} \left|\left\{\left\lfloor\frac{n}{1}\right\rfloor,\left\lfloor\frac{n}{2}\right\rfloor,\... ]]></description>
+    <pubDate>Wed, 08 Jul 2026 08:59:19 GMT</pubDate>
   </item><item>
-    <title>Bellman-Ford Algorithm</title>
-    <link>https://dxing.blog/Algorithms/Bellman-Ford-Algorithm</link>
-    <guid>https://dxing.blog/Algorithms/Bellman-Ford-Algorithm</guid>
-    <description><![CDATA[ The Bellman-Ford Algorithm is an algorithm that computes the length of the shortest path from a vertex s to every vertex in a directed graph G=(V,E) with edge weights and no negative cycles in \mathcal{O}(|V||E|) time and \mathcal{O}(|V|) space. ]]></description>
-    <pubDate>Mon, 06 Jul 2026 03:56:01 GMT</pubDate>
+    <title>Du&#039;s Second Multiplication Sieve</title>
+    <link>https://dxing.blog/Algorithms/Du's-Sieves/Du's-Second-Multiplication-Sieve</link>
+    <guid>https://dxing.blog/Algorithms/Du's-Sieves/Du's-Second-Multiplication-Sieve</guid>
+    <description><![CDATA[  Lemma \forall n\in\Z_+,\left|\left\{\left\lfloor\frac{n}{1}\right\rfloor,\left\lfloor\frac{n}{2}\right\rfloor,\dots,\left\lfloor\frac{n}{n}\right\rfloor\right\}\right|\in\mathcal{O}(\sqrt n) Proof \begin{align} \left|\left\{\left\lfloor\frac{n}{1}\right\rfloor,\left\lfloor\frac{n}{2}\right\rfloor,\... ]]></description>
+    <pubDate>Wed, 08 Jul 2026 08:59:19 GMT</pubDate>
+  </item><item>
+    <title>Heapsort</title>
+    <link>https://dxing.blog/Algorithms/Heapsort</link>
+    <guid>https://dxing.blog/Algorithms/Heapsort</guid>
+    <description><![CDATA[ Heapsort is an algorithm that sorts an array of n numbers a_0,a_1,\dots,a_{n-1} in non-decreasing order in \mathcal{O}(n\log n) time and \mathcal{O}(1) space. ]]></description>
+    <pubDate>Wed, 08 Jul 2026 08:59:19 GMT</pubDate>
+  </item><item>
+    <title>Insertion Sort</title>
+    <link>https://dxing.blog/Algorithms/Insertion-Sort</link>
+    <guid>https://dxing.blog/Algorithms/Insertion-Sort</guid>
+    <description><![CDATA[ Insertion Sort is an algorithm that sorts an array of n numbers a_0,a_1,\dots,a_{n-1} in non-decreasing order in \mathcal{O}(n^2) time and \mathcal{O}(1) space. ]]></description>
+    <pubDate>Wed, 08 Jul 2026 08:59:19 GMT</pubDate>
+  </item><item>
+    <title>Kruskal&#039;s Algorithm</title>
+    <link>https://dxing.blog/Algorithms/Kruskal's-Algorithm</link>
+    <guid>https://dxing.blog/Algorithms/Kruskal's-Algorithm</guid>
+    <description><![CDATA[ Kruskal’s Algorithm is an algorithm that computes the weight of the minimum spanning tree of a connected undirected graph G=(V,E) with edge weights in \mathcal{O}(|E|\log|E|) time and \mathcal{O}(|E|) space. ]]></description>
+    <pubDate>Wed, 08 Jul 2026 08:59:19 GMT</pubDate>
+  </item><item>
+    <title>Merge Sort</title>
+    <link>https://dxing.blog/Algorithms/Merge-Sort</link>
+    <guid>https://dxing.blog/Algorithms/Merge-Sort</guid>
+    <description><![CDATA[ Merge Sort is an algorithm that sorts an array of n numbers a_0,a_1,\dots,a_{n-1} in non-decreasing order in \mathcal{O}(n\log n) time and \mathcal{O}(n) space. ]]></description>
+    <pubDate>Wed, 08 Jul 2026 08:59:19 GMT</pubDate>
   </item>
     </channel>
   </rss>
