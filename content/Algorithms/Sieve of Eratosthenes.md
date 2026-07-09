@@ -4,7 +4,7 @@ tags: [Computer Science]
 
 The [[Sieve of Eratosthenes]] is an algorithm that finds the primes in $2,3,\dots,n$ in $\mathcal{O}(n\log\log n)$ time and $\mathcal{O}(n)$ space.
 
-> [!tip] Hint
+> [!tip]
 >
 > This problem can also be solved by [[Euler's Sieve]] in $\mathcal{O}(n)$ time and $\mathcal{O}(n)$ space.
 

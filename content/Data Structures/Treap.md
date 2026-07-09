@@ -53,7 +53,7 @@ This costs of space of $\mathcal{O}(n)$.
 
 ## Split
 
-[[Treap#Split]] splits a [[Treap]] of $(a_0,w_0),(a_1,w_1),\dots,(a_{n-1},w_{n-1})$ into two [[Treap|Treaps]] of $(a_0,w_0),(a_1,w_1),\dots,(a_{k-1},w_{k-1})$ and $(a_k,w_k),(a_{k+1},w_{k+1}),\dots,(a_{n-1},w_{n-1})$, respectively, in expected $\mathcal{O}(\log n)$ time and expected $\mathcal{O}(\log n)$ space.
+[[Treap#Split]] splits a [[Treap]] of $(a_0,w_0),(a_1,w_1),\dots,(a_{n-1},w_{n-1})$ into two [[Treap|Treaps]] of $(a_0,w_0),(a_1,w_1),\dots,(a_{k-1},w_{k-1})$ and $(a_k,w_k),(a_{k+1},w_{k+1}),\dots,(a_{n-1},w_{n-1})$, respectively, in **expected** $\mathcal{O}(\log n)$ time and **expected** $\mathcal{O}(\log n)$ space.
 
 ### Algorithm
 
@@ -61,7 +61,7 @@ This costs of space of $\mathcal{O}(n)$.
 
 - Otherwise, the whole left sub-[[Treap]] should be in the first [[Treap]]. Split the right sub-[[Treap]] recursively.
 
-This algorithm solves the problem in expected $\mathcal{O}(\log n)$ time and expected $\mathcal{O}(\log n)$ space.
+This algorithm solves the problem in **expected** $\mathcal{O}(\log n)$ time and **expected** $\mathcal{O}(\log n)$ space.
 
 ```c++
 std::pair<Node *, Node *> split(Node *o, int k) {
@@ -87,7 +87,7 @@ std::pair<Node *, Node *> split(Node *o, int k) {
 
 ## Merge
 
-[[Treap#Merge]] merges two [[Treap|Treaps]] of $(a_0,w_0),(a_1,w_1),\dots,(a_{k-1},w_{k-1})$ and $(a_k,w_k),(a_{k+1},w_{k+1}),\dots,(a_{n-1},w_{n-1})$, respectively, into a single [[Treap]] of $(a_0,w_0),(a_1,w_1),\dots,(a_{n-1},w_{n-1})$ in expected $\mathcal{O}(\log n)$ time and expected $\mathcal{O}(\log n)$ space.
+[[Treap#Merge]] merges two [[Treap|Treaps]] of $(a_0,w_0),(a_1,w_1),\dots,(a_{k-1},w_{k-1})$ and $(a_k,w_k),(a_{k+1},w_{k+1}),\dots,(a_{n-1},w_{n-1})$, respectively, into a single [[Treap]] of $(a_0,w_0),(a_1,w_1),\dots,(a_{n-1},w_{n-1})$ in **expected** $\mathcal{O}(\log n)$ time and **expected** $\mathcal{O}(\log n)$ space.
 
 ### Algorithm
 
@@ -96,7 +96,7 @@ Let $x$ be the root of the first [[Treap]], $y$ be the root of the second [[Trea
 - If the priority of $x$ is higher than the priority of $y$, $x$ should be the root of the merged [[Treap]]. Merge the right sub-[[Treap]] of $x$ with the second [[Treap]] recursively.
 - Otherwise, $y$ should be the root of the merged [[Treap]]. Merge the first [[Treap]] with the left sub-[[Treap]] of $y$ recursively.
 
-This algorithm solves the problem in expected $\mathcal{O}(\log n)$ time and expected $\mathcal{O}(\log n)$ space.
+This algorithm solves the problem in **expected** $\mathcal{O}(\log n)$ time and **expected** $\mathcal{O}(\log n)$ space.
 
 ```c++
 Node *merge(Node *x, Node *y) {

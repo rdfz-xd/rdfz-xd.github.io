@@ -4,7 +4,7 @@ tags: [Computer Science, Computer Science/Graph Theory]
 
 [[Tarjan's Strongly Connected Components Algorithm]] is an algorithm that finds the strongly connected components of a directed graph $G=(V,E)$ in $\mathcal{O}(|V|+|E|)$ and $\mathcal{O}(|V|+|E|)$ space.
 
-> [!tip] Hint
+> [!tip]
 >
 > This problem can also be solved by [[Kosaraju's Algorithm]] in $\mathcal{O}(|V|+|E|)$ time and $\mathcal{O}(|V|+|E|)$ space.
 

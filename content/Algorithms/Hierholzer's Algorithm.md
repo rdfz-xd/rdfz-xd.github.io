@@ -16,7 +16,7 @@ tags: [Computer Science, Computer Science/Graph Theory]
 > >
 > > Let $v_0,v_1,\dots,v_{n-1}$ be the trail.
 > >
-> > - If $v_0\ne v_{n-1}$, let $c$ be the number of occurrence of $v_{n-1}$ in $v_0,v_1,\dots,v_{n-1}$, then the number of visited edges directed toward $v_{n-1}$ is $c$, and the number of visited edges directed away from $v_{n-1}$ is $c-1$.
+> > - If $v_0\ne v_{n-1}$, let $c$ be the number of occurrences of $v_{n-1}$ in $v_0,v_1,\dots,v_{n-1}$, then the number of visited edges directed toward $v_{n-1}$ is $c$, and the number of visited edges directed away from $v_{n-1}$ is $c-1$.
 > >
 > >   Let $\deg_\text{in}(v)$ denote the in-degree of $v$, $\deg_\text{out}(v)$ denote the out-degree of $v$. Then, since there are $c$ visited edges directed toward $v_{n-1}$, $\deg_\text{in}(v_{n-1})\ge c$. On the other hand, since $v_{n-1}$ has no unvisited edges left in the end, $\deg_\text{out}(v_{n-1})=c-1$.
 > >

@@ -8,11 +8,11 @@ tags: [Computer Science, Computer Science/Graph Theory]
 
 - $\mathcal{O}((|V|^2+|V||E|)\log|E|)$ time and $\mathcal{O}(|V|^2+|E|)$ space.
 
-> [!tip] Hint
+> [!tip]
 >
 > This problem can also be solved by the [[Floyd-Warshall Algorithm]] in $\mathcal{O}(|V|^3+|E|)$ time and $\mathcal{O}(|V|^2)$ space.
 
-> [!tip] Hint
+> [!tip]
 >
 > This problem can also be solved by the [[Bellman-Ford Algorithm]] in $\mathcal{O}(|V|^2|E|)$ time and $\mathcal{O}(|V|^2)$ space.
 

@@ -4,21 +4,25 @@ tags: [Computer Science]
 
 [[Selection Sort]] is an algorithm that sorts an array of $n$ numbers $a_0,a_1,\dots,a_{n-1}$ in non-decreasing order in $\mathcal{O}(n^2)$ time and $\mathcal{O}(1)$ space.
 
->  [!tip] Hint
+>  [!tip]
 >
 > This problem can also be solved by [[Insertion Sort]] in $\mathcal{O}(n^2)$ time and $\mathcal{O}(1)$ space.
 
-> [!tip] Hint
+> [!tip]
 >
 > This problem can also be solved by [[Bubble Sort]] in $\mathcal{O}(n^2)$ time and $\mathcal{O}(1)$ space.
 
-> [!tip] Hint
+> [!tip]
 >
 > This problem can also be solved by [[Merge Sort]] in $\mathcal{O}(n\log n)$ time and $\mathcal{O}(n)$ space.
 
-> [!tip] Hint
+> [!tip]
 >
 > This problem can also be solved by [[Heapsort]] in $\mathcal{O}(n\log n)$ time and $\mathcal{O}(1)$ space.
+
+> [!tip]
+>
+> This problem can also be solved by [[Quicksort]] in **expected** $\mathcal{O}(n\log n)$ time and $\mathcal{O}(\log n)$ space.
 
 ### Algorithm
 

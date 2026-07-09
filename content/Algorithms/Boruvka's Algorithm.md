@@ -4,11 +4,11 @@ tags: [Computer Science, Computer Science/Graph Theory]
 
 [[Boruvka's Algorithm]] is an algorithm that computes the weight of the minimum spanning tree of a connected undirected graph $G=(V,E)$ with edge weights in $\mathcal{O}(|E|\log|V|)$ time and $\mathcal{O}(|E|)$ space.
 
-> [!tip] Hint
+> [!tip]
 >
 > This problem can also be solved by [[Kruskal's Algorithm]] in $\mathcal{O}(|E|\log|E|)$ time and $\mathcal{O}(|E|)$ space.
 
-> [!tip] Hint
+> [!tip]
 >
 > This problem can also be solved by [[Prim's Algorithm]] in
 >

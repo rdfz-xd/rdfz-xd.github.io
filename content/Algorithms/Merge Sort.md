@@ -16,9 +16,13 @@ tags: [Computer Science]
 >
 > This problem can also be solved by [[Bubble Sort]] in $\mathcal{O}(n^2)$ time and $\mathcal{O}(1)$ space.
 
-> [!tip] Hint
+> [!tip]
 >
 > This problem can also be solved by [[Heapsort]] in $\mathcal{O}(n\log n)$ time and $\mathcal{O}(1)$ space.
+
+> [!tip]
+>
+> This problem can also be solved by [[Quicksort]] in **expected** $\mathcal{O}(n\log n)$ time and $\mathcal{O}(\log n)$ space.
 
 ### Algorithm
 
@@ -37,7 +41,7 @@ This algorithm solves the problem in $\mathcal{O}(n\log n)$ time and $\mathcal{O
 void merge_sort(int n, std::vector<int> &a) {
 	std::vector<int> tmp(n);
 	y_combinator([&](auto &&self, std::vector<int>::iterator l, std::vector<int>::iterator r) -> void {
-		if (std::is_sorted(l, r)) {
+		if (l + 1 == r) {
 			return;
 		}
 

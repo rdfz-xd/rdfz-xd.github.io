@@ -4,11 +4,11 @@ tags: [Computer Science, Computer Science/Graph Theory]
 
 The [[Bellman-Ford Algorithm]] is an algorithm that computes the length of the shortest path from a vertex $s$ to every vertex in a directed graph $G=(V,E)$ with edge weights and no negative cycles in $\mathcal{O}(|V||E|)$ time and $\mathcal{O}(|V|)$ space.
 
-> [!tip] Hint
+> [!tip]
 >
 > This problem can also be solved by the [[Floyd-Warshall Algorithm]] in $\mathcal{O}(|V|^3+|E|)$ time and $\mathcal{O}(|V|^2)$ space.
 
-> [!tip] Hint
+> [!tip]
 >
 > This problem can also be solved by [[Johnson's Algorithm]] in
 >
