@@ -30,7 +30,7 @@ tags: [Computer Science]
 
 ### Algorithm
 
-0. Find the number of occurrences $c_i$ of $i$ in $a_0,a_1,\dots,a_{n-1}$.
+0. For each $i$ in $\{0,1,\dots,m-1\}$, find the number of occurrences $c_i$ of $i$ in $a_0,a_1,\dots,a_{n-1}$.
 1. $\underbrace{0,0,\dots,0}_{c_0},\underbrace{1,1,\dots,1}_{c_1},\dots,\underbrace{m-1,m-1,\dots,m-1}_{c_{m-1}}$ is the result of sorting $a_0,a_1,\dots,a_{n-1}$.
 
 This algorithm solves the problem in $\mathcal{O}(n+m)$ time and $\mathcal{O}(m)$ space.
@@ -48,4 +48,3 @@ void counting_sort(int n, int m, std::vector<int> &a) {
 	}
 }
 ```
-
