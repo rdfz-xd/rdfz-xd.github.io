@@ -22,7 +22,11 @@ tags: [Computer Science]
 
 > [!tip]
 >
-> This problem can also be solved by [[Quicksort]] in **expected** $\mathcal{O}(n\log n)$ time and $\mathcal{O}(\log n)$ space.
+> This problem can also be solved by [[Quicksort]] in $\mathcal{O}(n\log n)$ time and $\mathcal{O}(\log n)$ space.
+
+> [!tip]
+>
+> This problem can also be solved by [[Quickselect]] in $\mathcal{O}(n^2)$ time and $\mathcal{O}(n)$ space.
 
 ### Algorithm
 
@@ -32,8 +36,8 @@ tags: [Computer Science]
 
    Consider finding the result of sorting $b_0,b_1,\dots,b_{n_b-1},c_0,c_1,\dots,c_{n_c-1}$, where $b_0\le b_1\le\dots\le b_{n_b-1}$ and $c_0\le c_1\le\dots\le c_{n_c-1}$.
 
-   - If $b_0<c_0$, the minimum value among $b_0,b_1,\dots,b_{n_b-1},c_0,c_1,\dots,c_{n_c-1}$ must be $b_0$. Find the result of sorting $b_1,b_2,\dots,b_{n_b-1},c_0,c_1,\dots,c_{n_c-1}$ recursively. Let $d_0=b_0$, the result be $d_1,d_2,\dots,d_{n_b+n_c-1}$, then $d_0,d_1,\dots,d_{n_b+n_c-1}$ is the result of sorting $b_0,b_1,\dots,b_{n_b-1},c_0,c_1,\dots,c_{n_c-1}$.
-   - Otherwise, the minimum value among $b_0,b_1,\dots,b_{n_b-1},c_0,c_1,\dots,c_{n_c-1}$ must be $c_0$. Find the result of sorting $b_0,b_1,\dots,b_{n_b-1},c_1,c_2,\dots,c_{n_c-1}$ recursively. Let $d_0=c_0$, the result be $d_1,d_2,\dots,d_{n_b+n_c-1}$, then $d_0,d_1,\dots,d_{n_b+n_c-1}$ is the result of sorting $b_0,b_1,\dots,b_{n_b-1},c_0,c_1,\dots,c_{n_c-1}$.
+   - If $b_0<c_0$, the minimum element among $b_0,b_1,\dots,b_{n_b-1},c_0,c_1,\dots,c_{n_c-1}$ must be $b_0$. Find the result of sorting $b_1,b_2,\dots,b_{n_b-1},c_0,c_1,\dots,c_{n_c-1}$ recursively. Let $d_0=b_0$, the result be $d_1,d_2,\dots,d_{n_b+n_c-1}$, then $d_0,d_1,\dots,d_{n_b+n_c-1}$ is the result of sorting $b_0,b_1,\dots,b_{n_b-1},c_0,c_1,\dots,c_{n_c-1}$.
+   - Otherwise, the minimum element among $b_0,b_1,\dots,b_{n_b-1},c_0,c_1,\dots,c_{n_c-1}$ must be $c_0$. Find the result of sorting $b_0,b_1,\dots,b_{n_b-1},c_1,c_2,\dots,c_{n_c-1}$ recursively. Let $d_0=c_0$, the result be $d_1,d_2,\dots,d_{n_b+n_c-1}$, then $d_0,d_1,\dots,d_{n_b+n_c-1}$ is the result of sorting $b_0,b_1,\dots,b_{n_b-1},c_0,c_1,\dots,c_{n_c-1}$.
 
 This algorithm solves the problem in $\mathcal{O}(n\log n)$ time and $\mathcal{O}(n)$ space.
 

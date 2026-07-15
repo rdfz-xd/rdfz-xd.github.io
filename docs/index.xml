@@ -6,6 +6,24 @@
       <description>Last 10 notes on Dong Xing&#039;s Blog</description>
       <generator>Quartz -- quartz.jzhao.xyz</generator>
       <item>
+    <title>Boyer-Moore Majority Vote Algorithm</title>
+    <link>https://dxing.blog/Algorithms/Boyer-Moore-Majority-Vote-Algorithm</link>
+    <guid>https://dxing.blog/Algorithms/Boyer-Moore-Majority-Vote-Algorithm</guid>
+    <description><![CDATA[ The Boyer-Moore Majority Vote Algorithm is an algorithm that finds the majority of an array of n numbers a_0,a_1,\dots,a_{n-1}, if the majority exists, in \mathcal{O}(n) time and \mathcal{O}(1) space. ]]></description>
+    <pubDate>Wed, 15 Jul 2026 03:54:56 GMT</pubDate>
+  </item><item>
+    <title>Quickselect</title>
+    <link>https://dxing.blog/Algorithms/Quickselect</link>
+    <guid>https://dxing.blog/Algorithms/Quickselect</guid>
+    <description><![CDATA[ Quickselect is an algorithm that finds the k-th smallest element in an array of n numbers a_0,a_1,\dots,a_{n-1} in \mathcal{O}(n) time and \mathcal{O}(n) space. ]]></description>
+    <pubDate>Wed, 15 Jul 2026 02:16:26 GMT</pubDate>
+  </item><item>
+    <title>Counting Sort</title>
+    <link>https://dxing.blog/Algorithms/Counting-Sort</link>
+    <guid>https://dxing.blog/Algorithms/Counting-Sort</guid>
+    <description><![CDATA[ Counting Sort is an algorithm that sorts an array of n integers a_0,a_1,\dots,a_{n-1}\in\{0,1,\dots,m-1\} in non-decreasing order in \mathcal{O}(n+m) time and \mathcal{O}(m) space. ]]></description>
+    <pubDate>Thu, 09 Jul 2026 13:31:56 GMT</pubDate>
+  </item><item>
     <title>Bellman-Ford Algorithm</title>
     <link>https://dxing.blog/Algorithms/Bellman-Ford-Algorithm</link>
     <guid>https://dxing.blog/Algorithms/Bellman-Ford-Algorithm</guid>
@@ -22,12 +40,6 @@
     <link>https://dxing.blog/Algorithms/Bubble-Sort</link>
     <guid>https://dxing.blog/Algorithms/Bubble-Sort</guid>
     <description><![CDATA[ Bubble Sort is an algorithm that sorts an array of n numbers a_0,a_1,\dots,a_{n-1} in non-decreasing order in \mathcal{O}(n^2) time and \mathcal{O}(1) space. ]]></description>
-    <pubDate>Thu, 09 Jul 2026 09:06:19 GMT</pubDate>
-  </item><item>
-    <title>Counting Sort</title>
-    <link>https://dxing.blog/Algorithms/Counting-Sort</link>
-    <guid>https://dxing.blog/Algorithms/Counting-Sort</guid>
-    <description><![CDATA[ Counting Sort is an algorithm that sorts an array of n integers a_0,a_1,\dots,a_{n-1}\in\{0,1,\dots,m-1\} in non-decreasing order in \mathcal{O}(n+m) time and \mathcal{O}(m) space. ]]></description>
     <pubDate>Thu, 09 Jul 2026 09:06:19 GMT</pubDate>
   </item><item>
     <title>Dijkstra&#039;s Algorithm</title>
@@ -52,18 +64,6 @@
     <link>https://dxing.blog/Algorithms/Floyd-Warshall-Algorithm</link>
     <guid>https://dxing.blog/Algorithms/Floyd-Warshall-Algorithm</guid>
     <description><![CDATA[ The Floyd-Warshall Algorithm is an algorithm that computes the length of the shortest path between every pair of vertices in a directed graph G=(V,E) with edge weights and no negative cycles in \mathcal{O}(|V|^3+|E|) time and \mathcal{O}(|V|^2) space. ]]></description>
-    <pubDate>Thu, 09 Jul 2026 09:06:19 GMT</pubDate>
-  </item><item>
-    <title>Heapsort</title>
-    <link>https://dxing.blog/Algorithms/Heapsort</link>
-    <guid>https://dxing.blog/Algorithms/Heapsort</guid>
-    <description><![CDATA[ Heapsort is an algorithm that sorts an array of n numbers a_0,a_1,\dots,a_{n-1} in non-decreasing order in \mathcal{O}(n\log n) time and \mathcal{O}(1) space. ]]></description>
-    <pubDate>Thu, 09 Jul 2026 09:06:19 GMT</pubDate>
-  </item><item>
-    <title>Hierholzer&#039;s Algorithm</title>
-    <link>https://dxing.blog/Algorithms/Hierholzer's-Algorithm</link>
-    <guid>https://dxing.blog/Algorithms/Hierholzer's-Algorithm</guid>
-    <description><![CDATA[ Hierholzer’s Algorithm is an algorithm that finds an Eulerian circuit in a weakly connected directed graph G=(V,E), where the in-degree of each vertex equals its out-degree, in \mathcal{O}(|E|) time and \mathcal{O}(|E|) space. ]]></description>
     <pubDate>Thu, 09 Jul 2026 09:06:19 GMT</pubDate>
   </item>
     </channel>

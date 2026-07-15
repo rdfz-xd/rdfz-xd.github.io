@@ -8,11 +8,14 @@
     <loc>https://dxing.blog/Algorithms/Boruvka's-Algorithm</loc>
     <lastmod>2026-07-09T09:06:19.000Z</lastmod>
   </url><url>
+    <loc>https://dxing.blog/Algorithms/Boyer-Moore-Majority-Vote-Algorithm</loc>
+    <lastmod>2026-07-15T03:54:56.476Z</lastmod>
+  </url><url>
     <loc>https://dxing.blog/Algorithms/Bubble-Sort</loc>
     <lastmod>2026-07-09T09:06:19.000Z</lastmod>
   </url><url>
     <loc>https://dxing.blog/Algorithms/Counting-Sort</loc>
-    <lastmod>2026-07-09T09:06:19.000Z</lastmod>
+    <lastmod>2026-07-09T13:31:56.000Z</lastmod>
   </url><url>
     <loc>https://dxing.blog/Algorithms/Dijkstra's-Algorithm</loc>
     <lastmod>2026-07-09T09:06:19.000Z</lastmod>
@@ -73,6 +76,9 @@
   </url><url>
     <loc>https://dxing.blog/Algorithms/Prim's-Algorithm</loc>
     <lastmod>2026-07-09T09:06:19.000Z</lastmod>
+  </url><url>
+    <loc>https://dxing.blog/Algorithms/Quickselect</loc>
+    <lastmod>2026-07-15T02:16:26.811Z</lastmod>
   </url><url>
     <loc>https://dxing.blog/Algorithms/Quicksort</loc>
     <lastmod>2026-07-09T09:06:19.000Z</lastmod>

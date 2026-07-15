@@ -82,10 +82,12 @@ std::unordered_map<int, int> du(int n, const std::unordered_map<int, int> &sg, c
 
 > [!note]- Proof
 >
-> Applying the lemma yields that the time complexity of the algorithm is
+> Applying the lemma yields that this algorithm solves the problem in
 > $$
 > \mathcal{O}\left(n^\frac{2}{3}+\sum_{d=1}^{\lfloor n^\frac{1}{3}\rfloor}\sqrt{\frac{n}{d}}\right)
 > $$
+> time.
+>
 > Since
 > $$
 > \begin{align}
