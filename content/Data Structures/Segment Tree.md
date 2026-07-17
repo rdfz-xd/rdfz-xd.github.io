@@ -6,7 +6,7 @@ The [[Segment Tree]] is a data structure that maintains an array of $n=2^k$ numb
 $$
 s(l,r)=\sum_{i=l}^{r-1}a_i
 $$
-which costs a space of $\mathcal{O}(n)$.
+This requires $\mathcal{O}(n)$ space.
 
 > [!note]- Proof
 > $$

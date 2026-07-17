@@ -6,7 +6,7 @@ The [[Fenwick Tree]] is a data structure that maintains an array of $n$ integers
 $$
 s(i)=\sum_{j=i-\operatorname{lsb}(i)}^{i-1}a_i
 $$
-which costs a space of $\mathcal{O}(n)$.
+This requires $\mathcal{O}(n)$ space.
 
 ## Add
 

@@ -6,7 +6,7 @@ The [[Sparse Table]] is a data structure that maintains an array of $n$ numbers 
 $$
 f(i,j)=\max_{k=j}^{j+2^i-1}a_k
 $$
-which costs a space of $\mathcal{O}(n\log n)$.
+This requires $\mathcal{O}(n\log n)$ space.
 
 ## Build
 
@@ -19,7 +19,7 @@ which costs a space of $\mathcal{O}(n\log n)$.
 > \forall i\in\Z_+,\forall j\in\{0,1,\dots,n-2^i\},f(i,j)=\max\{f(i-1,j),f(i-1,j+2^{i-1})\}
 > $$
 
-Applying the lemma yields to find $f$ an algorithm that solves the problem in $\mathcal{O}(n\log n)$ time and $\mathcal{O}(1)$ space.
+Applying the lemma to find $f$ yields an algorithm that solves the problem in $\mathcal{O}(n\log n)$ time and $\mathcal{O}(1)$ space.
 
 ~~~c++
 void build(int n, const std::vector<int> &a) {

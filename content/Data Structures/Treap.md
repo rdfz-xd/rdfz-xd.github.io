@@ -6,7 +6,7 @@ The [[Treap]] is a data structure that maintains an array of $n$ numbers $a_0,a_
 
 Specifically, a random priority $w_i$ is generated for each $a_i$. In the binary tree, each node stores a pair $(a_i,w_i)$. The binary tree satisfies that the in-order traversal order of the nodes matches their order in the array, and the priority of each node is lower than the priority of its parent. In other words, the binary tree is a **Cartesian Tree** with respect to $w_0,w_1,\dots,w_{n-1}$.
 
-This costs of space of $\mathcal{O}(n)$.
+This requires $\mathcal{O}(n)$ space.
 
 > [!info] Lemma
 >
@@ -91,7 +91,7 @@ std::pair<Node *, Node *> split(Node *o, int k) {
 
 ### Algorithm
 
-Let $x$ be the root of the first [[Treap]], $y$ be the root of the second [[Treap]].
+Let $x$ denote the root of the first [[Treap]], $y$ denote the root of the second [[Treap]].
 
 - If the priority of $x$ is higher than the priority of $y$, $x$ should be the root of the merged [[Treap]]. Merge the right sub-[[Treap]] of $x$ with the second [[Treap]] recursively.
 - Otherwise, $y$ should be the root of the merged [[Treap]]. Merge the first [[Treap]] with the left sub-[[Treap]] of $y$ recursively.

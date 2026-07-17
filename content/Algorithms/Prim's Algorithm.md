@@ -71,7 +71,7 @@ int prim(int n, int m, const std::vector<int> &u, const std::vector<int> &v, con
 
 ### Algorithm 1
 
-Based on [[Prim's Algorithm#Algorithm 0]], using a [[Binary Heap]] to maintain the adjacency list of $v$ yields an algorithm that solves the problem in $\mathcal{O}(|E|\log|E|)$ time and $\mathcal{O}(|E|)$ space.
+Based on [[Prim's Algorithm#Algorithm 0]], using a priority queue (e.g., [[Binary Heap]], [[Leftist Tree]]) to maintain the adjacency list of $v$ yields an algorithm that solves the problem in $\mathcal{O}(|E|\log|E|)$ time and $\mathcal{O}(|E|)$ space.
 
 ~~~c++
 int prim(int n, int m, const std::vector<int> &u, const std::vector<int> &v, const std::vector<int> &w) {

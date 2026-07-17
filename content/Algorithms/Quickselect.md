@@ -205,7 +205,7 @@ int quickselect(int n, std::vector<int> a, int k) {
 >
 > Let $T(n)$ denote the worst-case running time of this algorithm on an array of length $n$, and let $N$ and $c$ be sufficiently large positive integers.
 >
-> Then, for any $n$ in $\{N,N+1,N+2,\dots,\}$, if $\forall m\in\{1,2,\dots,n-1\},T(m)\le10cm$,
+> Then, for each $n$ in $\{N,N+1,N+2,\dots,\}$, if $\forall m\in\{1,2,\dots,n-1\},T(m)\le10cm$,
 > $$
 > \begin{align}
 > T(n)&\le T\left(\left\lfloor\frac{n}{5}\right\rfloor\right)+\max_{m=1}^{\left\lfloor\frac{7n}{10}\right\rfloor}T(m)+cn\\

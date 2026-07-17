@@ -9,28 +9,28 @@
     <lastmod>2026-07-09T09:06:19.000Z</lastmod>
   </url><url>
     <loc>https://dxing.blog/Algorithms/Boyer-Moore-Majority-Vote-Algorithm</loc>
-    <lastmod>2026-07-15T03:54:56.476Z</lastmod>
+    <lastmod>2026-07-15T03:57:30.000Z</lastmod>
   </url><url>
     <loc>https://dxing.blog/Algorithms/Bubble-Sort</loc>
-    <lastmod>2026-07-09T09:06:19.000Z</lastmod>
+    <lastmod>2026-07-15T03:57:30.000Z</lastmod>
   </url><url>
     <loc>https://dxing.blog/Algorithms/Counting-Sort</loc>
-    <lastmod>2026-07-09T13:31:56.000Z</lastmod>
+    <lastmod>2026-07-15T03:57:30.000Z</lastmod>
   </url><url>
     <loc>https://dxing.blog/Algorithms/Dijkstra's-Algorithm</loc>
     <lastmod>2026-07-09T09:06:19.000Z</lastmod>
   </url><url>
     <loc>https://dxing.blog/Algorithms/Du's-Sieves/Du's-First-Division-Sieve</loc>
-    <lastmod>2026-07-08T08:59:19.000Z</lastmod>
+    <lastmod>2026-07-15T03:57:30.000Z</lastmod>
   </url><url>
     <loc>https://dxing.blog/Algorithms/Du's-Sieves/Du's-First-Multiplication-Sieve</loc>
-    <lastmod>2026-07-08T08:59:19.000Z</lastmod>
+    <lastmod>2026-07-15T03:57:30.000Z</lastmod>
   </url><url>
     <loc>https://dxing.blog/Algorithms/Du's-Sieves/Du's-Second-Division-Sieve</loc>
-    <lastmod>2026-07-08T08:59:19.000Z</lastmod>
+    <lastmod>2026-07-15T03:57:30.000Z</lastmod>
   </url><url>
     <loc>https://dxing.blog/Algorithms/Du's-Sieves/Du's-Second-Multiplication-Sieve</loc>
-    <lastmod>2026-07-08T08:59:19.000Z</lastmod>
+    <lastmod>2026-07-15T03:57:30.000Z</lastmod>
   </url><url>
     <loc>https://dxing.blog/Algorithms/Euclidean-Algorithm</loc>
     <lastmod>2026-07-09T09:06:19.000Z</lastmod>
@@ -45,13 +45,13 @@
     <lastmod>2026-07-09T09:06:19.000Z</lastmod>
   </url><url>
     <loc>https://dxing.blog/Algorithms/Heapsort</loc>
-    <lastmod>2026-07-09T09:06:19.000Z</lastmod>
+    <lastmod>2026-07-15T03:57:30.000Z</lastmod>
   </url><url>
     <loc>https://dxing.blog/Algorithms/Hierholzer's-Algorithm</loc>
     <lastmod>2026-07-09T09:06:19.000Z</lastmod>
   </url><url>
     <loc>https://dxing.blog/Algorithms/Insertion-Sort</loc>
-    <lastmod>2026-07-09T09:06:19.000Z</lastmod>
+    <lastmod>2026-07-15T03:57:30.000Z</lastmod>
   </url><url>
     <loc>https://dxing.blog/Algorithms/Johnson's-Algorithm</loc>
     <lastmod>2026-07-09T09:06:19.000Z</lastmod>
@@ -66,25 +66,25 @@
     <lastmod>2026-07-09T09:06:19.000Z</lastmod>
   </url><url>
     <loc>https://dxing.blog/Algorithms/Kruskal's-Algorithm</loc>
-    <lastmod>2026-07-09T09:06:19.000Z</lastmod>
+    <lastmod>2026-07-15T03:57:30.000Z</lastmod>
   </url><url>
     <loc>https://dxing.blog/Algorithms/Manacher's-Algorithm</loc>
     <lastmod>2026-07-08T12:19:50.000Z</lastmod>
   </url><url>
     <loc>https://dxing.blog/Algorithms/Merge-Sort</loc>
-    <lastmod>2026-07-09T09:06:19.000Z</lastmod>
+    <lastmod>2026-07-15T03:57:30.000Z</lastmod>
   </url><url>
     <loc>https://dxing.blog/Algorithms/Prim's-Algorithm</loc>
     <lastmod>2026-07-09T09:06:19.000Z</lastmod>
   </url><url>
     <loc>https://dxing.blog/Algorithms/Quickselect</loc>
-    <lastmod>2026-07-15T02:16:26.811Z</lastmod>
+    <lastmod>2026-07-15T03:57:30.000Z</lastmod>
   </url><url>
     <loc>https://dxing.blog/Algorithms/Quicksort</loc>
-    <lastmod>2026-07-09T09:06:19.000Z</lastmod>
+    <lastmod>2026-07-15T03:57:30.000Z</lastmod>
   </url><url>
     <loc>https://dxing.blog/Algorithms/Selection-Sort</loc>
-    <lastmod>2026-07-09T09:06:19.000Z</lastmod>
+    <lastmod>2026-07-15T03:57:30.000Z</lastmod>
   </url><url>
     <loc>https://dxing.blog/Algorithms/Sieve-of-Eratosthenes</loc>
     <lastmod>2026-07-09T09:06:19.000Z</lastmod>
@@ -113,6 +113,9 @@
     <loc>https://dxing.blog/Data-Structures/Fenwick-Tree</loc>
     <lastmod>2026-07-08T12:19:50.000Z</lastmod>
   </url><url>
+    <loc>https://dxing.blog/Data-Structures/Leftist-Tree</loc>
+    <lastmod>2026-07-17T03:20:50.054Z</lastmod>
+  </url><url>
     <loc>https://dxing.blog/Data-Structures/Segment-Tree</loc>
     <lastmod>2026-07-08T12:19:50.000Z</lastmod>
   </url><url>
@@ -126,7 +129,7 @@
     <lastmod>2026-07-08T12:19:50.000Z</lastmod>
   </url><url>
     <loc>https://dxing.blog/Data-Structures/Wavelet-Tree</loc>
-    <lastmod>2026-07-09T09:06:19.000Z</lastmod>
+    <lastmod>2026-07-15T03:57:30.000Z</lastmod>
   </url><url>
     <loc>https://dxing.blog/The-World-Through-My-Eyes</loc>
     <lastmod>2026-06-21T08:03:14.000Z</lastmod>

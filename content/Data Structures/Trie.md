@@ -13,7 +13,7 @@ q_\perp,&s\sigma\not\in P
 $$
 Then it is easy to prove that $M=(P\cup\{q_\perp\},\Sigma,\delta,\varepsilon,S)$ is a deterministic finite automaton that accepts and only accepts strings in $S$.
 
-This costs a space of $\mathcal{O}(|\Sigma|\sum_{s\in S}|s|)$.
+This requires $\mathcal{O}(|\Sigma|\sum_{s\in S}|s|)$ space.
 
 ## Add
 

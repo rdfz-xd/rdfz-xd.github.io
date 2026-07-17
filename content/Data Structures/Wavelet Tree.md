@@ -16,7 +16,7 @@ S_i(j)=\sum_{k=0}^{j-1}W_{i,k}
 $$
 is also maintained.
 
-This costs a space of $\mathcal{O}(nm)$.
+This requires $\mathcal{O}(nm)$ space.
 
 > [!info] Lemma
 >

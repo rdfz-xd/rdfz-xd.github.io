@@ -20,7 +20,7 @@ $$
 
 Let $F=\{s:s\in P\land\exist t\in S,t=s_{|s|-|t|}s_{|s|-|t|+1}\dots s_{|s|-1}\}$, then applying the lemma yields that $M=(P,\Sigma,\delta,\varepsilon,F)$ is a deterministic finite automaton that accepts and only accepts strings containing a string from $S$ as a suffix.
 
-This costs a space of $\mathcal{O}(|\Sigma|\sum_{s\in S}|s|)$.
+This requires $\mathcal{O}(|\Sigma|\sum_{s\in S}|s|)$ space.
 
 ## Build
 
