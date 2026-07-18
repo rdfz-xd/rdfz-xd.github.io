@@ -66,7 +66,7 @@ void add(int i, int x) {
 ### Algorithm
 
 0. Find $\sum_{j=0}^{i-\operatorname{lsb}(i)-1}a_j$ recursively.
-1. $s(i)+\sum_{j=0}^{i-\operatorname{lsb}(i)-1}=\sum_{j=0}^{i-1}a_j$.
+1. $\sum_{j=0}^{i-\operatorname{lsb}(i)-1}a_j+s(i)=\sum_{j=0}^{i-1}a_j$.
 
 This algorithm solves the problem in $\mathcal{O}(\log n)$ time and $\mathcal{O}(1)$ space.
 
