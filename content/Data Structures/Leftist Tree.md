@@ -82,9 +82,9 @@ Node *merge(Node *x, Node *y) {
 			std::swap(x, y);
 		}
 
-		auto z = (x->lch ? x->lch->d : 0) < (x->rch ? x->rch->d : 0) ? x->lch : x->rch;
+		auto &z = (x->lch ? x->lch->d : 0) < (x->rch ? x->rch->d : 0) ? x->lch : x->rch;
 		z = self(z, y);
-		x->d = std::max(x->lch ? x->lch->d : 0, x->rch ? x->rch->d : 0) + 1;
+		x->d = std::min(x->lch ? x->lch->d : 0, x->rch ? x->rch->d : 0) + 1;
 		return x;
 	})(x, y);
 }

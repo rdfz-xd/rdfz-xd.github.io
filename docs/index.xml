@@ -6,6 +6,18 @@
       <description>Last 10 notes on Dong Xing&#039;s Blog</description>
       <generator>Quartz -- quartz.jzhao.xyz</generator>
       <item>
+    <title>Fenwick Tree</title>
+    <link>https://dxing.blog/Data-Structures/Fenwick-Tree</link>
+    <guid>https://dxing.blog/Data-Structures/Fenwick-Tree</guid>
+    <description><![CDATA[ The Fenwick Tree is a data structure that maintains an array of n integers a_0,a_1,\dots,a_{n-1} by maintaining s(i)=\sum_{j=i-\operatorname{lsb}(i)}^{i-1}a_i This requires \mathcal{O}(n) space. ]]></description>
+    <pubDate>Sat, 18 Jul 2026 01:56:26 GMT</pubDate>
+  </item><item>
+    <title>Leftist Tree</title>
+    <link>https://dxing.blog/Data-Structures/Leftist-Tree</link>
+    <guid>https://dxing.blog/Data-Structures/Leftist-Tree</guid>
+    <description><![CDATA[ The Leftist Tree is a data structure that maintains a multiset S of numbers by maintaining a binary tree. ]]></description>
+    <pubDate>Sat, 18 Jul 2026 01:56:26 GMT</pubDate>
+  </item><item>
     <title>Dijkstra&#039;s Algorithm</title>
     <link>https://dxing.blog/Algorithms/Dijkstra's-Algorithm</link>
     <guid>https://dxing.blog/Algorithms/Dijkstra's-Algorithm</guid>
@@ -40,18 +52,6 @@
     <link>https://dxing.blog/Data-Structures/Binary-Heap</link>
     <guid>https://dxing.blog/Data-Structures/Binary-Heap</guid>
     <description><![CDATA[ The Binary Heap is a data structure that maintains a multiset S of numbers by maintaining a complete binary tree. ]]></description>
-    <pubDate>Fri, 17 Jul 2026 03:56:41 GMT</pubDate>
-  </item><item>
-    <title>Fenwick Tree</title>
-    <link>https://dxing.blog/Data-Structures/Fenwick-Tree</link>
-    <guid>https://dxing.blog/Data-Structures/Fenwick-Tree</guid>
-    <description><![CDATA[ The Fenwick Tree is a data structure that maintains an array of n integers a_0,a_1,\dots,a_{n-1} by maintaining s(i)=\sum_{j=i-\operatorname{lsb}(i)}^{i-1}a_i This requires \mathcal{O}(n) space. ]]></description>
-    <pubDate>Fri, 17 Jul 2026 03:56:41 GMT</pubDate>
-  </item><item>
-    <title>Leftist Tree</title>
-    <link>https://dxing.blog/Data-Structures/Leftist-Tree</link>
-    <guid>https://dxing.blog/Data-Structures/Leftist-Tree</guid>
-    <description><![CDATA[ The Leftist Tree is a data structure that maintains a multiset S of numbers by maintaining a binary tree. ]]></description>
     <pubDate>Fri, 17 Jul 2026 03:56:41 GMT</pubDate>
   </item><item>
     <title>Segment Tree</title>

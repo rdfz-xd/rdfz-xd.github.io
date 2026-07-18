@@ -33,7 +33,7 @@ tags: [Computer Science]
 0. Let multiset $S=\{a_0,a_1,\dots,a_{n-1}\}$.
 1. For $i=n-1,n-2,\dots,0$, set $a_i=\max S$, and update $S$ to $S\setminus\{\max S\}$.
 
-Using a priority queue (e.g., [[Binary Heap]], [[Leftist Tree]]) to maintain $S$ yields an algorithm that solves the problem in $\mathcal{O}(n\log n)$ time and $\mathcal{O}(n)$ space.
+Using an appropriate priority queue (e.g., [[Binary Heap]], [[Leftist Tree]]) to maintain $S$ yields an algorithm that solves the problem in $\mathcal{O}(n\log n)$ time and $\mathcal{O}(n)$ space.
 
 ```c++
 void heapsort(int n, std::vector<int> &a) {

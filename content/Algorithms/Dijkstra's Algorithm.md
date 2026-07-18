@@ -58,7 +58,7 @@ std::vector<int> dijkstra(int n, int m, const std::vector<int> &u, const std::ve
 
 ### Algorithm 1
 
-Based on [[Dijkstra's Algorithm#Algorithm 0]], using a priority queue (e.g., [[Binary Heap]], [[Leftist Tree]]) to maintain the queue yields an algorithm that solves the problem in $\mathcal{O}((|V|+|E|)\log|E|)$ time and $\mathcal{O}(|V|+|E|)$ space.
+Based on [[Dijkstra's Algorithm#Algorithm 0]], using an appropriate priority queue (e.g., [[Binary Heap]], [[Leftist Tree]]) to maintain the queue yields an algorithm that solves the problem in $\mathcal{O}((|V|+|E|)\log|E|)$ time and $\mathcal{O}(|V|+|E|)$ space.
 
 ~~~c++
 std::vector<int> dijkstra(int n, int m, const std::vector<int> &u, const std::vector<int> &v, const std::vector<int> &w, int s) {
