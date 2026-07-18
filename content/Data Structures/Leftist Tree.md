@@ -6,15 +6,15 @@ The [[Leftist Tree]] is a data structure that maintains a multiset $S$ of number
 
 Specifically, in the binary tree, each node stores an element of $S$. The binary tree satisfies that the element in each node is less than or equal to the element in its parent.
 
-Let $d(x)$ denote the minimum number of steps required to reach an empty node, starting from node $x$ and walking down the binary tree. The binary tree satisfies that, for each node, the $d$ of its left child is greater than or equal to the $d$ of its right child.
+In addition, let $d(x)$ denote the minimum number of steps required to reach an empty node, starting from node $x$ and walking down the binary tree. $d(x)$ is also maintained for each node $x$.
 
 This requires $\mathcal{O}(|S|)$ space.
 
 > [!info] Lemma
 >
-> Let $r$ denote the root of the binary tree, then
+> Let $x$ denote the root of the binary tree, then
 > $$
-> d(r)\in\mathcal{O}(\log|S|)
+> d(x)\in\mathcal{O}(\log|S|)
 > $$
 >
 > > [!note]- Proof
@@ -43,13 +43,13 @@ This requires $\mathcal{O}(|S|)$ space.
 > >
 > > Applying the lemma yields
 > > $$
-> > |S|\ge2^{d(r)}-1
+> > |S|\ge2^{d(x)}-1
 > > $$
 > >
 > > $$
 > > \begin{align}
-> > |S|\ge2^{d(r)}-1&\iff d(r)\le\log_2(|S|+1)\\
-> > &\implies d(r)\in\mathcal{O}(\log|S|)
+> > |S|\ge2^{d(x)}-1&\iff d(x)\le\log_2(|S|+1)\\
+> > &\implies d(x)\in\mathcal{O}(\log|S|)
 > > \end{align}
 > > $$
 
@@ -59,10 +59,12 @@ This requires $\mathcal{O}(|S|)$ space.
 
 ### Algorithm
 
-Let $r$ be the root of the [[Leftist Tree]] with the greater maximum value.
+Wlog, assume $\max S\ge\max T$.
 
-0. Merge the right sub-[[Leftist-Tree]] of $r$ with the other [[Leftist Tree]] recursively.
-1. If the $d$ of the right child of $r$ exceeds the $d$ of the left child, swap the left child and the right child.
+Let $x$ denote the root of the first [[Leftist Tree]], $l$ and $r$ denote the left child and the right child of $x$, respectively.
+
+- If $d(l)<d(r)$, merge the left sub-[[Leftist-Tree]] of $x$ with the second [[Leftist Tree]] recursively.
+- Otherwise, merge the right sub-[[Leftist-Tree]] of $x$ with the second [[Leftist Tree]] recursively.
 
 This algorithm solves the problem in $\mathcal{O}(\log|S|+\log|T|)$ time and $\mathcal{O}(\log|S|+\log|T|)$ space.
 
@@ -79,11 +81,10 @@ Node *merge(Node *x, Node *y) {
 		if (x->val < y->val) {
 			std::swap(x, y);
 		}
-		x->rch = self(x->rch, y);
-		if ((x->lch ? x->lch->d : 0) < (x->rch ? x->rch->d : 0)) {
-			std::swap(x->lch, x->rch);
-		}
-		x->d = (x->rch ? x->rch->d : 0) + 1;
+
+		auto z = (x->lch ? x->lch->d : 0) < (x->rch ? x->rch->d : 0) ? x->lch : x->rch;
+		z = self(z, y);
+		x->d = std::max(x->lch ? x->lch->d : 0, x->rch ? x->rch->d : 0) + 1;
 		return x;
 	})(x, y);
 }

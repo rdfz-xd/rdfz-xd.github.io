@@ -65,12 +65,10 @@ void add(int i, int x) {
 
 ### Algorithm
 
-> [!info] Lemma
-> $$
-> \forall i\in\{1,2,\dots,n\},\sum_{j=0}^{i-1}a_j=s(i)+\sum_{j=0}^{i-\operatorname{lsb}(i)-1}a_j
-> $$
+0. Find $\sum_{j=0}^{i-\operatorname{lsb}(i)-1}a_j$ recursively.
+1. $s(i)+\sum_{j=0}^{i-\operatorname{lsb}(i)-1}=\sum_{j=0}^{i-1}a_j$.
 
-Applying the lemma to find $\sum_{j=0}^{i-1}a_j$ yields an algorithm that solves the problem in $\mathcal{O}(\log n)$ time and $\mathcal{O}(1)$ space.
+This algorithm solves the problem in $\mathcal{O}(\log n)$ time and $\mathcal{O}(1)$ space.
 
 ~~~c++
 int sum(int i) {
