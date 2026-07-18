@@ -1,4 +1,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml"><url>
+    <loc>https://dxing.blog/A-Journey</loc>
+    <lastmod>2026-06-20T10:46:05.059Z</lastmod>
+  </url><url>
     <loc>https://dxing.blog/Algorithms/Bellman-Ford-Algorithm</loc>
     <lastmod>2026-07-09T09:06:19.000Z</lastmod>
   </url><url>
@@ -101,9 +104,6 @@
     <loc>https://dxing.blog/Algorithms/Z-Algorithm</loc>
     <lastmod>2026-07-08T12:19:50.000Z</lastmod>
   </url><url>
-    <loc>https://dxing.blog/Competitive-Programming-Journey</loc>
-    <lastmod>2026-06-21T08:03:14.000Z</lastmod>
-  </url><url>
     <loc>https://dxing.blog/Data-Structures/Aho-Corasick-Automaton</loc>
     <lastmod>2026-07-17T03:56:41.000Z</lastmod>
   </url><url>
@@ -111,7 +111,7 @@
     <lastmod>2026-07-17T03:56:41.000Z</lastmod>
   </url><url>
     <loc>https://dxing.blog/Data-Structures/Fenwick-Tree</loc>
-    <lastmod>2026-07-18T01:56:26.000Z</lastmod>
+    <lastmod>2026-07-18T02:50:22.000Z</lastmod>
   </url><url>
     <loc>https://dxing.blog/Data-Structures/Leftist-Tree</loc>
     <lastmod>2026-07-18T02:47:13.000Z</lastmod>

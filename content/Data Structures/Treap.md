@@ -70,15 +70,15 @@ std::pair<Node *, Node *> split(Node *o, int k) {
 			return {nullptr, nullptr};
 		}
 
-		if (k <= size(o->lch)) {
+		if (k <= (o->lch ? o->lch->siz : 0)) {
 			auto [x, y] = self(o->lch, k);
 			o->lch = y;
-			o->siz = size(o->lch) + 1 + size(o->rch);
+			o->siz = 1 + (o->lch ? o->lch->siz : 0) + (o->rch ? o->rch->siz : 0);
 			return {x, o};
 		} else {
-			auto [x, y] = self(o->rch, k - size(o->lch) - 1);
+			auto [x, y] = self(o->rch, k - (o->lch ? o->lch->siz : 0) - 1);
 			o->rch = x;
-			o->siz = size(o->lch) + 1 + size(o->rch);
+			o->siz = 1 + (o->lch ? o->lch->siz : 0) + (o->rch ? o->rch->siz : 0);
 			return {o, y};
 		}
 	})(o, k);
@@ -110,11 +110,11 @@ Node *merge(Node *x, Node *y) {
 
 		if (x->prio > y->prio) {
 			x->rch = self(x->rch, y);
-			x->siz = size(x->lch) + 1 + size(x->rch);
+			x->siz = 1 + (x->lch ? x->lch->siz : 0) + (x->rch ? x->rch->siz : 0);
 			return x;
 		} else {
 			y->lch = self(x, y->lch);
-			y->siz = size(y->lch) + 1 + size(y->rch);
+			y->siz = 1 + (y->lch ? y->lch->siz : 0) + (y->rch ? y->rch->siz : 0);
 			return y;
 		}
 	})(x, y);
