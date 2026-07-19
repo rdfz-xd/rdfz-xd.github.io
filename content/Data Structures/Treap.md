@@ -4,7 +4,7 @@ tags: [Computer Science]
 
 The [[Treap]] is a data structure that maintains an array of $n$ numbers $a_0,a_1,\dots,a_{n-1}$ by maintaining a randomized [[Cartesian Tree]].
 
-Specifically, a random priority $w_i$ is generated independently and identically for each $a_i$. The [[Cartesian Tree]] is built based on $w_0,w_1,\dots,w_{n-1}$.
+Specifically, a random priority $w_i$ is generated independently and identically for each $a_i$. The [[Cartesian Tree]] is built based on $w_0,w_1,\dots,w_{n-1}$, and each node stores both $a_i$ and $w_i$.
 
 This requires $\mathcal{O}(n)$ space.
 

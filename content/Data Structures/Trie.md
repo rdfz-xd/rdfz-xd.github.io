@@ -21,7 +21,7 @@ This requires $\mathcal{O}(|\Sigma|\sum_{s\in S}|s|)$ space.
 
 ### Algorithm
 
-Updating the values in $\delta$ that are changed by $s$ yields an algorithm that solves the problem in $\mathcal{O}(|s|)$ time and $\mathcal{O}(1)$ space.
+Updating the values in $\delta$ affected by $s$ yields an algorithm that solves the problem in $\mathcal{O}(|s|)$ time and $\mathcal{O}(1)$ space.
 
 ~~~c++
 void add(const std::string &s) {
