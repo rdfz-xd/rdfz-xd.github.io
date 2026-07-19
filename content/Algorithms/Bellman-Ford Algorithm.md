@@ -84,7 +84,7 @@ std::vector<int> bellman_ford(int n, int m, const std::vector<int> &u, const std
 
 ### Algorithm 2
 
-Based on [[Bellman-Ford Algorithm#Algorithm 1]], maintaining a queue to skip unchanged values that cannot be used to update other values yields an algorithm that solves the problem in $\mathcal{O}(|V||E|)$ and $\mathcal{O}(|V|+|E|)$ space.
+Based on [[Bellman-Ford Algorithm#Algorithm 1]], using a queue to maintain modified values to skip unchanged values that cannot be used to update others yields an algorithm that solves the problem in $\mathcal{O}(|V||E|)$ and $\mathcal{O}(|V|+|E|)$ space.
 
 ```c++
 std::vector<int> bellman_ford(int n, int m, const std::vector<int> &u, const std::vector<int> &v, const std::vector<int> &w, int s) {
