@@ -7,29 +7,6 @@ The [[Inverse Fast Fourier Transform]] is an algorithm that finds a polynomial $
 ### Algorithm
 
 > [!info] Lemma
-> $$
-> \forall n\in\Z_+,\forall k\in\Z,[n\mid k]=\frac{1}{n}\sum_{i=0}^{n-1}\omega_n^{ki}
-> $$
->
-> > [!note]- Proof
-> >
-> > - If $n\mid k$,
-> >   $$
-> >   \begin{align}
-> >   \frac{1}{n}\sum_{i=0}^{n-1}\omega_n^{ki}&=\frac{1}{n}\sum_{i=0}^{n-1}1\\
-> >   &=1
-> >   \end{align}
-> >   $$
-> >
-> > - If $n\nmid k$,
-> >   $$
-> >   \begin{align}
-> >   \frac{1}{n}\sum_{i=0}^{n-1}\omega_n^{ki}&=\frac{\omega_n^{kn}-1}{n(\omega_n^k-1)}\\
-> >   &=0
-> >   \end{align}
-> >   $$
-
-> [!info] Lemma
 >
 > Let
 > $$
@@ -42,6 +19,30 @@ The [[Inverse Fast Fourier Transform]] is an algorithm that finds a polynomial $
 > is a polynomial such that $\forall k\in\{0,1,\dots,n-1\},f(\omega_n^k)=b_k$.
 >
 > > [!note]- Proof
+> >
+> > > [!info] Lemma
+> > > $$
+> > > \forall n\in\Z_+,\forall k\in\Z,[n\mid k]=\frac{1}{n}\sum_{i=0}^{n-1}\omega_n^{ki}
+> > > $$
+> > >
+> > > > [!note]- Proof
+> > > >
+> > > > - If $n\mid k$,
+> > > >   $$
+> > > >   \begin{align}
+> > > >   \frac{1}{n}\sum_{i=0}^{n-1}\omega_n^{ki}&=\frac{1}{n}\sum_{i=0}^{n-1}1\\
+> > > >   &=1
+> > > >   \end{align}
+> > > >   $$
+> > > >
+> > > > - If $n\nmid k$,
+> > > >   $$
+> > > >   \begin{align}
+> > > >   \frac{1}{n}\sum_{i=0}^{n-1}\omega_n^{ki}&=\frac{\omega_n^{kn}-1}{n(\omega_n^k-1)}\\
+> > > >   &=0
+> > > >   \end{align}
+> > > >   $$
+> >
 > > $$
 > > \begin{align}
 > > f(\omega_n^k)&=\frac{1}{n}\sum_{i=0}^{n-1}g(\omega_n^{-i})\omega_n^{ki}\\
@@ -66,4 +67,3 @@ void ifft(int n, std::vector<std::complex<double>> &a) {
 	}
 }
 ```
-
