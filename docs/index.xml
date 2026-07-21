@@ -6,22 +6,40 @@
       <description>Last 10 notes on Dong Xing&#039;s Blog</description>
       <generator>Quartz -- quartz.jzhao.xyz</generator>
       <item>
-    <title>Bellman-Ford Algorithm</title>
-    <link>https://dxing.blog/Algorithms/Bellman-Ford-Algorithm</link>
-    <guid>https://dxing.blog/Algorithms/Bellman-Ford-Algorithm</guid>
-    <description><![CDATA[ The Bellman-Ford Algorithm is an algorithm that computes the length of the shortest path from a vertex s to every vertex in a directed graph G=(V,E) with edge weights and no negative cycles in \mathcal{O}(|V||E|) time and \mathcal{O}(|V|) space. ]]></description>
-    <pubDate>Sun, 19 Jul 2026 06:30:58 GMT</pubDate>
+    <title>Fast Fourier Transform</title>
+    <link>https://dxing.blog/Algorithms/Fast-Fourier-Transform/Fast-Fourier-Transform</link>
+    <guid>https://dxing.blog/Algorithms/Fast-Fourier-Transform/Fast-Fourier-Transform</guid>
+    <description><![CDATA[ The Fast Fourier Transform is an algorithm that computes f(\omega_n^0),f(\omega_n^1),\dots,f(\omega_n^{n-1}) for a polynomial f(x)=\sum_{i=0}^{n-1}a_ix^i, if \exist k\in\N,n=2^k, in \mathcal{O}(n\log n) time and \mathcal{O}(1) space. ]]></description>
+    <pubDate>Tue, 21 Jul 2026 08:24:35 GMT</pubDate>
+  </item><item>
+    <title>Inverse Fast Fourier Transform</title>
+    <link>https://dxing.blog/Algorithms/Fast-Fourier-Transform/Inverse-Fast-Fourier-Transform</link>
+    <guid>https://dxing.blog/Algorithms/Fast-Fourier-Transform/Inverse-Fast-Fourier-Transform</guid>
+    <description><![CDATA[ The Inverse Fast Fourier Transform is an algorithm that finds a polynomial f(x)=\sum_{i=0}^{n-1}a_ix^i such that \forall k\in\{0,1,\dots,n-1\},f(\omega_n^k)=b_k, if \exist k\in\N,n=2^k, in \mathcal{O}(n\log n) time and \mathcal{O}(1) space. ]]></description>
+    <pubDate>Tue, 21 Jul 2026 07:45:21 GMT</pubDate>
   </item><item>
     <title>Cartesian Tree</title>
     <link>https://dxing.blog/Data-Structures/Cartesian-Tree</link>
     <guid>https://dxing.blog/Data-Structures/Cartesian-Tree</guid>
     <description><![CDATA[ The Cartesian Tree is a data structure that maintains an array of n numbers a_0,a_1,\dots,a_{n-1} by maintaining a binary tree. ]]></description>
-    <pubDate>Sun, 19 Jul 2026 06:30:58 GMT</pubDate>
+    <pubDate>Sun, 19 Jul 2026 06:43:03 GMT</pubDate>
   </item><item>
     <title>Treap</title>
     <link>https://dxing.blog/Data-Structures/Treap</link>
     <guid>https://dxing.blog/Data-Structures/Treap</guid>
     <description><![CDATA[ The Treap is a data structure that maintains an array of n numbers a_0,a_1,\dots,a_{n-1} by maintaining a randomized Cartesian Tree. ]]></description>
+    <pubDate>Sun, 19 Jul 2026 06:43:03 GMT</pubDate>
+  </item><item>
+    <title>Trie</title>
+    <link>https://dxing.blog/Data-Structures/Trie</link>
+    <guid>https://dxing.blog/Data-Structures/Trie</guid>
+    <description><![CDATA[ The Trie is a data structure that maintains a set S of strings in \Sigma^* by maintaining a deterministic finite automaton that accepts and only accepts strings in S. ]]></description>
+    <pubDate>Sun, 19 Jul 2026 06:43:03 GMT</pubDate>
+  </item><item>
+    <title>Bellman-Ford Algorithm</title>
+    <link>https://dxing.blog/Algorithms/Bellman-Ford-Algorithm</link>
+    <guid>https://dxing.blog/Algorithms/Bellman-Ford-Algorithm</guid>
+    <description><![CDATA[ The Bellman-Ford Algorithm is an algorithm that computes the length of the shortest path from a vertex s to every vertex in a directed graph G=(V,E) with edge weights and no negative cycles in \mathcal{O}(|V||E|) time and \mathcal{O}(|V|) space. ]]></description>
     <pubDate>Sun, 19 Jul 2026 06:30:58 GMT</pubDate>
   </item><item>
     <title>A Journey</title>
@@ -46,24 +64,6 @@
     <link>https://dxing.blog/Algorithms/Dijkstra's-Algorithm</link>
     <guid>https://dxing.blog/Algorithms/Dijkstra's-Algorithm</guid>
     <description><![CDATA[ Dijkstra’s Algorithm is an algorithm that computes the length of the shortest path from a vertex s to every vertex in a directed graph G=(V,E) with non-negative edge weights in \mathcal{O}(|V|^2+|E|) time and \mathcal{O}(|V|+|E|) space, or \mathcal{O}((|V|+|E|)\log|E|) time and \mathcal{O}(|V|+|E|) ... ]]></description>
-    <pubDate>Sat, 18 Jul 2026 02:47:13 GMT</pubDate>
-  </item><item>
-    <title>Heapsort</title>
-    <link>https://dxing.blog/Algorithms/Heapsort</link>
-    <guid>https://dxing.blog/Algorithms/Heapsort</guid>
-    <description><![CDATA[ Heapsort is an algorithm that sorts an array of n numbers a_0,a_1,\dots,a_{n-1} in non-decreasing order in \mathcal{O}(n\log n) time and \mathcal{O}(1) space. ]]></description>
-    <pubDate>Sat, 18 Jul 2026 02:47:13 GMT</pubDate>
-  </item><item>
-    <title>Prim&#039;s Algorithm</title>
-    <link>https://dxing.blog/Algorithms/Prim's-Algorithm</link>
-    <guid>https://dxing.blog/Algorithms/Prim's-Algorithm</guid>
-    <description><![CDATA[ Prim’s Algorithm is an algorithm that computes the weight of the minimum spanning tree of a connected undirected graph G=(V,E) with edge weights in \mathcal{O}(|V|^2+|E|) time and \mathcal{O}(|E|) space, or \mathcal{O}(|E|\log|E|) time and \mathcal{O}(|E|) space. ]]></description>
-    <pubDate>Sat, 18 Jul 2026 02:47:13 GMT</pubDate>
-  </item><item>
-    <title>Leftist Tree</title>
-    <link>https://dxing.blog/Data-Structures/Leftist-Tree</link>
-    <guid>https://dxing.blog/Data-Structures/Leftist-Tree</guid>
-    <description><![CDATA[ The Leftist Tree is a data structure that maintains a multiset S of numbers by maintaining a binary tree. ]]></description>
     <pubDate>Sat, 18 Jul 2026 02:47:13 GMT</pubDate>
   </item>
     </channel>

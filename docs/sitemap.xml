@@ -44,6 +44,12 @@
     <loc>https://dxing.blog/Algorithms/Extended-Euclidean-Algorithm</loc>
     <lastmod>2026-07-01T06:25:27.000Z</lastmod>
   </url><url>
+    <loc>https://dxing.blog/Algorithms/Fast-Fourier-Transform/Fast-Fourier-Transform</loc>
+    <lastmod>2026-07-21T08:24:35.846Z</lastmod>
+  </url><url>
+    <loc>https://dxing.blog/Algorithms/Fast-Fourier-Transform/Inverse-Fast-Fourier-Transform</loc>
+    <lastmod>2026-07-21T07:45:21.398Z</lastmod>
+  </url><url>
     <loc>https://dxing.blog/Algorithms/Floyd-Warshall-Algorithm</loc>
     <lastmod>2026-07-09T09:06:19.000Z</lastmod>
   </url><url>
@@ -111,7 +117,7 @@
     <lastmod>2026-07-17T03:56:41.000Z</lastmod>
   </url><url>
     <loc>https://dxing.blog/Data-Structures/Cartesian-Tree</loc>
-    <lastmod>2026-07-19T06:30:58.000Z</lastmod>
+    <lastmod>2026-07-19T06:43:03.000Z</lastmod>
   </url><url>
     <loc>https://dxing.blog/Data-Structures/Fenwick-Tree</loc>
     <lastmod>2026-07-18T02:50:22.000Z</lastmod>
@@ -126,10 +132,10 @@
     <lastmod>2026-07-17T03:56:41.000Z</lastmod>
   </url><url>
     <loc>https://dxing.blog/Data-Structures/Treap</loc>
-    <lastmod>2026-07-19T06:30:58.000Z</lastmod>
+    <lastmod>2026-07-19T06:43:03.000Z</lastmod>
   </url><url>
     <loc>https://dxing.blog/Data-Structures/Trie</loc>
-    <lastmod>2026-07-17T03:56:41.000Z</lastmod>
+    <lastmod>2026-07-19T06:43:03.000Z</lastmod>
   </url><url>
     <loc>https://dxing.blog/Data-Structures/Wavelet-Tree</loc>
     <lastmod>2026-07-17T03:56:41.000Z</lastmod>
