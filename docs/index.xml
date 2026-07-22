@@ -6,17 +6,29 @@
       <description>Last 10 notes on Dong Xing&#039;s Blog</description>
       <generator>Quartz -- quartz.jzhao.xyz</generator>
       <item>
-    <title>Inverse Fast Mobius Transform</title>
-    <link>https://dxing.blog/Algorithms/Fast-Mobius-Transform/Inverse-Fast-Mobius-Transform</link>
-    <guid>https://dxing.blog/Algorithms/Fast-Mobius-Transform/Inverse-Fast-Mobius-Transform</guid>
-    <description><![CDATA[ The Inverse Fast Mobius Transform is an algorithm that finds a function g such that \forall S\subseteq\{0,1,\dots,n-1\},\sum_{T\subseteq S}g(T)=f(S) in \mathcal{O}(n2^n) time and \mathcal{O}(1) space. ]]></description>
-    <pubDate>Wed, 22 Jul 2026 08:36:03 GMT</pubDate>
-  </item><item>
     <title>Fast Mobius Transform</title>
     <link>https://dxing.blog/Algorithms/Fast-Mobius-Transform/Fast-Mobius-Transform</link>
     <guid>https://dxing.blog/Algorithms/Fast-Mobius-Transform/Fast-Mobius-Transform</guid>
     <description><![CDATA[ The Fast Mobius Transform is an algorithm that computes f(S)=\sum_{T\subseteq S}g(T) for a function g defined on \mathcal{P}(\{0,1,\dots,n-1\}) in \mathcal{O}(n2^n) time and \mathcal{O}(1) space. ]]></description>
-    <pubDate>Wed, 22 Jul 2026 08:06:45 GMT</pubDate>
+    <pubDate>Wed, 22 Jul 2026 09:07:37 GMT</pubDate>
+  </item><item>
+    <title>Inverse Fast Mobius Transform</title>
+    <link>https://dxing.blog/Algorithms/Fast-Mobius-Transform/Inverse-Fast-Mobius-Transform</link>
+    <guid>https://dxing.blog/Algorithms/Fast-Mobius-Transform/Inverse-Fast-Mobius-Transform</guid>
+    <description><![CDATA[ The Inverse Fast Mobius Transform is an algorithm that finds a function g such that \forall S\subseteq\{0,1,\dots,n-1\},\sum_{T\subseteq S}g(T)=f(S) in \mathcal{O}(n2^n) time and \mathcal{O}(1) space. ]]></description>
+    <pubDate>Wed, 22 Jul 2026 09:07:37 GMT</pubDate>
+  </item><item>
+    <title>Floyd-Warshall Algorithm</title>
+    <link>https://dxing.blog/Algorithms/Floyd-Warshall-Algorithm</link>
+    <guid>https://dxing.blog/Algorithms/Floyd-Warshall-Algorithm</guid>
+    <description><![CDATA[ The Floyd-Warshall Algorithm is an algorithm that computes the length of the shortest path between every pair of vertices in a directed graph G=(V,E) with edge weights and no negative cycles in \mathcal{O}(|V|^3+|E|) time and \mathcal{O}(|V|^2) space. ]]></description>
+    <pubDate>Wed, 22 Jul 2026 09:07:37 GMT</pubDate>
+  </item><item>
+    <title>Aho-Corasick Automaton</title>
+    <link>https://dxing.blog/Data-Structures/Aho-Corasick-Automaton</link>
+    <guid>https://dxing.blog/Data-Structures/Aho-Corasick-Automaton</guid>
+    <description><![CDATA[ The Aho-Corasick Automaton is a data structure that maintains a set S of strings in \Sigma^* by maintaining a deterministic finite automaton that accepts and only accepts strings containing a string from S as a suffix. ]]></description>
+    <pubDate>Wed, 22 Jul 2026 09:07:37 GMT</pubDate>
   </item><item>
     <title>Euclidean Algorithm</title>
     <link>https://dxing.blog/Algorithms/Euclidean-Algorithm/Euclidean-Algorithm</link>
@@ -53,18 +65,6 @@
     <guid>https://dxing.blog/Data-Structures/Treap</guid>
     <description><![CDATA[ The Treap is a data structure that maintains an array of n numbers a_0,a_1,\dots,a_{n-1} by maintaining a randomized Cartesian Tree. ]]></description>
     <pubDate>Sun, 19 Jul 2026 06:43:03 GMT</pubDate>
-  </item><item>
-    <title>Trie</title>
-    <link>https://dxing.blog/Data-Structures/Trie</link>
-    <guid>https://dxing.blog/Data-Structures/Trie</guid>
-    <description><![CDATA[ The Trie is a data structure that maintains a set S of strings in \Sigma^* by maintaining a deterministic finite automaton that accepts and only accepts strings in S. ]]></description>
-    <pubDate>Sun, 19 Jul 2026 06:43:03 GMT</pubDate>
-  </item><item>
-    <title>Bellman-Ford Algorithm</title>
-    <link>https://dxing.blog/Algorithms/Bellman-Ford-Algorithm</link>
-    <guid>https://dxing.blog/Algorithms/Bellman-Ford-Algorithm</guid>
-    <description><![CDATA[ The Bellman-Ford Algorithm is an algorithm that computes the length of the shortest path from a vertex s to every vertex in a directed graph G=(V,E) with edge weights and no negative cycles in \mathcal{O}(|V||E|) time and \mathcal{O}(|V|) space. ]]></description>
-    <pubDate>Sun, 19 Jul 2026 06:30:58 GMT</pubDate>
   </item>
     </channel>
   </rss>

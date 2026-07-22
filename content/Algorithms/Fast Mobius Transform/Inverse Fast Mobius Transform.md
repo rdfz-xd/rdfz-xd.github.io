@@ -36,7 +36,7 @@ void ifmt(int n, std::vector<int> &a) {
 
 ### Algorithm 1
 
-Based on [[Algorithm 0]], ignoring the first dimension yields an algorithm that solves the problem in $\mathcal{O}(n2^n)$ time and $\mathcal{O}(1)$ space.
+Based on [[Inverse Fast Mobius Transform#Algorithm 0]], ignoring the first dimension yields an algorithm that solves the problem in $\mathcal{O}(n2^n)$ time and $\mathcal{O}(1)$ space.
 
 ```c++
 void ifmt(int n, std::vector<int> &a) {
