@@ -6,22 +6,40 @@
       <description>Last 10 notes on Dong Xing&#039;s Blog</description>
       <generator>Quartz -- quartz.jzhao.xyz</generator>
       <item>
+    <title>Inverse Fast Mobius Transform</title>
+    <link>https://dxing.blog/Algorithms/Fast-Mobius-Transform/Inverse-Fast-Mobius-Transform</link>
+    <guid>https://dxing.blog/Algorithms/Fast-Mobius-Transform/Inverse-Fast-Mobius-Transform</guid>
+    <description><![CDATA[ The Inverse Fast Mobius Transform is an algorithm that finds a function g such that \forall S\subseteq\{0,1,\dots,n-1\},\sum_{T\subseteq S}g(T)=f(S) in \mathcal{O}(n2^n) time and \mathcal{O}(1) space. ]]></description>
+    <pubDate>Wed, 22 Jul 2026 08:36:03 GMT</pubDate>
+  </item><item>
+    <title>Fast Mobius Transform</title>
+    <link>https://dxing.blog/Algorithms/Fast-Mobius-Transform/Fast-Mobius-Transform</link>
+    <guid>https://dxing.blog/Algorithms/Fast-Mobius-Transform/Fast-Mobius-Transform</guid>
+    <description><![CDATA[ The Fast Mobius Transform is an algorithm that computes f(S)=\sum_{T\subseteq S}g(T) for a function g defined on \mathcal{P}(\{0,1,\dots,n-1\}) in \mathcal{O}(n2^n) time and \mathcal{O}(1) space. ]]></description>
+    <pubDate>Wed, 22 Jul 2026 08:06:45 GMT</pubDate>
+  </item><item>
+    <title>Euclidean Algorithm</title>
+    <link>https://dxing.blog/Algorithms/Euclidean-Algorithm/Euclidean-Algorithm</link>
+    <guid>https://dxing.blog/Algorithms/Euclidean-Algorithm/Euclidean-Algorithm</guid>
+    <description><![CDATA[ The Euclidean Algorithm is an algorithm that computes \gcd\{a, b\} for non-negative integers a and b in \mathcal{O}(\log a+\log b) time and \mathcal{O}(\log a+\log b) space. ]]></description>
+    <pubDate>Tue, 21 Jul 2026 12:51:17 GMT</pubDate>
+  </item><item>
     <title>Extended Euclidean Algorithm</title>
     <link>https://dxing.blog/Algorithms/Euclidean-Algorithm/Extended-Euclidean-Algorithm</link>
     <guid>https://dxing.blog/Algorithms/Euclidean-Algorithm/Extended-Euclidean-Algorithm</guid>
     <description><![CDATA[ The Extended Euclidean Algorithm is an algorithm that finds a pair of integers x and y such that ax+by=\gcd\{a,b\} for non-negative integers a and b in \mathcal{O}(\log a+\log b) time and \mathcal{O}(\log a+\log b) space. ]]></description>
-    <pubDate>Tue, 21 Jul 2026 12:47:19 GMT</pubDate>
-  </item><item>
-    <title>Fast Fourier Transform</title>
-    <link>https://dxing.blog/Algorithms/Fast-Fourier-Transform/Fast-Fourier-Transform</link>
-    <guid>https://dxing.blog/Algorithms/Fast-Fourier-Transform/Fast-Fourier-Transform</guid>
-    <description><![CDATA[ The Fast Fourier Transform is an algorithm that computes f(\omega_n^0),f(\omega_n^1),\dots,f(\omega_n^{n-1}) for a polynomial f(x)=\sum_{i=0}^{n-1}a_ix^i, if \exist k\in\N,n=2^k, in \mathcal{O}(n\log n) time and \mathcal{O}(1) space. ]]></description>
-    <pubDate>Tue, 21 Jul 2026 08:57:53 GMT</pubDate>
+    <pubDate>Tue, 21 Jul 2026 12:51:17 GMT</pubDate>
   </item><item>
     <title>Inverse Fast Fourier Transform</title>
     <link>https://dxing.blog/Algorithms/Fast-Fourier-Transform/Inverse-Fast-Fourier-Transform</link>
     <guid>https://dxing.blog/Algorithms/Fast-Fourier-Transform/Inverse-Fast-Fourier-Transform</guid>
     <description><![CDATA[ The Inverse Fast Fourier Transform is an algorithm that finds a polynomial f(x)=\sum_{i=0}^{n-1}a_ix^i such that \forall k\in\{0,1,\dots,n-1\},f(\omega_n^k)=b_k, if \exist k\in\N,n=2^k, in \mathcal{O}(n\log n) time and \mathcal{O}(1) space. ]]></description>
+    <pubDate>Tue, 21 Jul 2026 12:51:17 GMT</pubDate>
+  </item><item>
+    <title>Fast Fourier Transform</title>
+    <link>https://dxing.blog/Algorithms/Fast-Fourier-Transform/Fast-Fourier-Transform</link>
+    <guid>https://dxing.blog/Algorithms/Fast-Fourier-Transform/Fast-Fourier-Transform</guid>
+    <description><![CDATA[ The Fast Fourier Transform is an algorithm that computes f(\omega_n^0),f(\omega_n^1),\dots,f(\omega_n^{n-1}) for a polynomial f(x)=\sum_{i=0}^{n-1}a_ix^i, if \exist k\in\N,n=2^k, in \mathcal{O}(n\log n) time and \mathcal{O}(1) space. ]]></description>
     <pubDate>Tue, 21 Jul 2026 08:57:53 GMT</pubDate>
   </item><item>
     <title>Cartesian Tree</title>
@@ -47,24 +65,6 @@
     <guid>https://dxing.blog/Algorithms/Bellman-Ford-Algorithm</guid>
     <description><![CDATA[ The Bellman-Ford Algorithm is an algorithm that computes the length of the shortest path from a vertex s to every vertex in a directed graph G=(V,E) with edge weights and no negative cycles in \mathcal{O}(|V||E|) time and \mathcal{O}(|V|) space. ]]></description>
     <pubDate>Sun, 19 Jul 2026 06:30:58 GMT</pubDate>
-  </item><item>
-    <title>A Journey</title>
-    <link>https://dxing.blog/A-Journey</link>
-    <guid>https://dxing.blog/A-Journey</guid>
-    <description><![CDATA[ MIT Informatics Tournament 2025-26 Winter Contest Dec 7, 2025 Team Even If (Dong Xing) Advanced Individual Round (High School Division): 2nd place Advanced Team Round (High School Division): 3rd place USA Computing Olympiad 2026 First Contest Jan 9, 2026 - Jan 12, 2026 Gold: 1000 points Platinum: 15... ]]></description>
-    <pubDate>Sat, 18 Jul 2026 03:59:37 GMT</pubDate>
-  </item><item>
-    <title>Welcome to My Blog!</title>
-    <link>https://dxing.blog/</link>
-    <guid>https://dxing.blog/</guid>
-    <description><![CDATA[ I am Dong Xing, a sophomore at Princeton International School of Mathematics and Science. ]]></description>
-    <pubDate>Sat, 18 Jul 2026 03:59:37 GMT</pubDate>
-  </item><item>
-    <title>Fenwick Tree</title>
-    <link>https://dxing.blog/Data-Structures/Fenwick-Tree</link>
-    <guid>https://dxing.blog/Data-Structures/Fenwick-Tree</guid>
-    <description><![CDATA[ The Fenwick Tree is a data structure that maintains an array of n integers a_0,a_1,\dots,a_{n-1} by maintaining s(i)=\sum_{j=i-\operatorname{lsb}(i)}^{i-1}a_i This requires \mathcal{O}(n) space. ]]></description>
-    <pubDate>Sat, 18 Jul 2026 02:50:22 GMT</pubDate>
   </item>
     </channel>
   </rss>

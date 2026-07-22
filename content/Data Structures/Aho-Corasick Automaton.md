@@ -34,7 +34,7 @@ This requires $\mathcal{O}(|\Sigma|\sum_{s\in S}|s|)$ space.
 > $$
 > \phi(s)\in\arg\max_{t\in E(s)\setminus\{s\}}|t|
 > $$
-> Then
+> then
 > $$
 > \forall s\in P\setminus\{\varepsilon\},\forall \sigma\in\Sigma,\delta(s,\sigma)=\begin{cases}
 > s\sigma,&s\sigma\in P\\
