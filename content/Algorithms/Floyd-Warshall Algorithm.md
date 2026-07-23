@@ -25,7 +25,7 @@ The [[Floyd-Warshall Algorithm]] is an algorithm that computes the length of the
 > \forall i\in\{0,1,\dots,|V|-1\},\forall x,y\in V,f_{i+1}(x,y)=\min\{f_i(x,y),f_i(x,v_i)+f_i(v_i,y)\}
 > $$
 
-Applying the lemmas to find $f_{|V|}$ yields an algorithm that solves the problem in $\mathcal{O}(|V|^3+|E|)$ time and $\mathcal{O}(|V|^3)$ space.
+Applying the lemma to find $f_{|V|}$ yields an algorithm that solves the problem in $\mathcal{O}(|V|^3+|E|)$ time and $\mathcal{O}(|V|^3)$ space.
 
 ~~~c++
 std::vector<std::vector<int>> floyd_warshall(int n, int m, const std::vector<int> &u, const std::vector<int> &v, const std::vector<int> &w) {
