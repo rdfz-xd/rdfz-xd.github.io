@@ -14,7 +14,7 @@ This requires $\mathcal{O}(|S|)$ space.
 
 ### Algorithm
 
-0. Make a new node that stores $x$, and let it be the new rightmost leaf.
+0. Make a new node storing $x$, and let it be the new rightmost leaf.
 
 1. Maintain the order by swapping elements.
 

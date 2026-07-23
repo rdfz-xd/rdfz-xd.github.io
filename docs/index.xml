@@ -6,6 +6,12 @@
       <description>Last 10 notes on Dong Xing&#039;s Blog</description>
       <generator>Quartz -- quartz.jzhao.xyz</generator>
       <item>
+    <title>Binary Heap</title>
+    <link>https://dxing.blog/Data-Structures/Binary-Heap</link>
+    <guid>https://dxing.blog/Data-Structures/Binary-Heap</guid>
+    <description><![CDATA[ The Binary Heap is a data structure that maintains a multiset S of numbers by maintaining a complete binary tree. ]]></description>
+    <pubDate>Thu, 23 Jul 2026 06:33:31 GMT</pubDate>
+  </item><item>
     <title>Floyd-Warshall Algorithm</title>
     <link>https://dxing.blog/Algorithms/Floyd-Warshall-Algorithm</link>
     <guid>https://dxing.blog/Algorithms/Floyd-Warshall-Algorithm</guid>
@@ -59,12 +65,6 @@
     <guid>https://dxing.blog/Algorithms/Fast-Fourier-Transform/Inverse-Fast-Fourier-Transform</guid>
     <description><![CDATA[ The Inverse Fast Fourier Transform is an algorithm that finds a polynomial f(x)=\sum_{i=0}^{n-1}a_ix^i such that \forall k\in\{0,1,\dots,n-1\},f(\omega_n^k)=b_k, if \exist k\in\N,n=2^k, in \mathcal{O}(n\log n) time and \mathcal{O}(1) space. ]]></description>
     <pubDate>Tue, 21 Jul 2026 12:51:17 GMT</pubDate>
-  </item><item>
-    <title>Fast Fourier Transform</title>
-    <link>https://dxing.blog/Algorithms/Fast-Fourier-Transform/Fast-Fourier-Transform</link>
-    <guid>https://dxing.blog/Algorithms/Fast-Fourier-Transform/Fast-Fourier-Transform</guid>
-    <description><![CDATA[ The Fast Fourier Transform is an algorithm that computes f(\omega_n^0),f(\omega_n^1),\dots,f(\omega_n^{n-1}) for a polynomial f(x)=\sum_{i=0}^{n-1}a_ix^i, if \exist k\in\N,n=2^k, in \mathcal{O}(n\log n) time and \mathcal{O}(1) space. ]]></description>
-    <pubDate>Tue, 21 Jul 2026 08:57:53 GMT</pubDate>
   </item>
     </channel>
   </rss>
