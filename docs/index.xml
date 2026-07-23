@@ -6,34 +6,34 @@
       <description>Last 10 notes on Dong Xing&#039;s Blog</description>
       <generator>Quartz -- quartz.jzhao.xyz</generator>
       <item>
+    <title>Inverse Fast Mobius Transform</title>
+    <link>https://dxing.blog/Algorithms/Fast-Mobius-Transform/Inverse-Fast-Mobius-Transform</link>
+    <guid>https://dxing.blog/Algorithms/Fast-Mobius-Transform/Inverse-Fast-Mobius-Transform</guid>
+    <description><![CDATA[ The Inverse Fast Mobius Transform is an algorithm that finds a function g such that \forall S\subseteq\{0,1,\dots,n-1\},\sum_{T\subseteq S}g(T)=f(S) in \mathcal{O}(n2^n) time and \mathcal{O}(1) space. ]]></description>
+    <pubDate>Thu, 23 Jul 2026 06:01:22 GMT</pubDate>
+  </item><item>
     <title>Fast Walsh-Hadamard Transform</title>
     <link>https://dxing.blog/Algorithms/Fast-Walsh-Hadamard-Transform/Fast-Walsh-Hadamard-Transform</link>
     <guid>https://dxing.blog/Algorithms/Fast-Walsh-Hadamard-Transform/Fast-Walsh-Hadamard-Transform</guid>
     <description><![CDATA[ The Fast Walsh-Hadamard Transform is an algorithm that computes \mathbf{y}=\mathbf{H}_n\mathbf{x} for a vector \mathbf{x}=\begin{pmatrix} x_0\\ x_1\\ \vdots\\ x_{2^n-1} \end{pmatrix} in \mathcal{O}(n2^n) time and \mathcal{O}(1) space, where \mathbf{H}_n is a matrix satisfying \mathbf{H}_0=\begin{pma... ]]></description>
-    <pubDate>Thu, 23 Jul 2026 03:40:12 GMT</pubDate>
+    <pubDate>Thu, 23 Jul 2026 06:01:22 GMT</pubDate>
   </item><item>
     <title>Inverse Fast Walsh-Hadamard Transform</title>
     <link>https://dxing.blog/Algorithms/Fast-Walsh-Hadamard-Transform/Inverse-Fast-Walsh-Hadamard-Transform</link>
     <guid>https://dxing.blog/Algorithms/Fast-Walsh-Hadamard-Transform/Inverse-Fast-Walsh-Hadamard-Transform</guid>
     <description><![CDATA[ The Inverse Fast Walsh-Hadamard Transform is an algorithm that finds a vector \mathbf{x} such that \mathbf{H}_n\mathbf{x}=\mathbf{y} for a vector \mathbf{y}=\begin{pmatrix} y_0\\ y_1\\ \vdots\\ y_{2^n-1} \end{pmatrix} in \mathcal{O}(n2^n) time and \mathcal{O}(1) space, where \mathbf{H}_n is a matrix... ]]></description>
-    <pubDate>Thu, 23 Jul 2026 03:33:50 GMT</pubDate>
-  </item><item>
-    <title>Inverse Fast Mobius Transform</title>
-    <link>https://dxing.blog/Algorithms/Fast-Mobius-Transform/Inverse-Fast-Mobius-Transform</link>
-    <guid>https://dxing.blog/Algorithms/Fast-Mobius-Transform/Inverse-Fast-Mobius-Transform</guid>
-    <description><![CDATA[ The Inverse Fast Mobius Transform is an algorithm that finds a function g such that \forall S\subseteq\{0,1,\dots,n-1\},\sum_{T\subseteq S}g(T)=f(S) in \mathcal{O}(n2^n) time and \mathcal{O}(1) space. ]]></description>
-    <pubDate>Wed, 22 Jul 2026 09:10:33 GMT</pubDate>
-  </item><item>
-    <title>Fast Mobius Transform</title>
-    <link>https://dxing.blog/Algorithms/Fast-Mobius-Transform/Fast-Mobius-Transform</link>
-    <guid>https://dxing.blog/Algorithms/Fast-Mobius-Transform/Fast-Mobius-Transform</guid>
-    <description><![CDATA[ The Fast Mobius Transform is an algorithm that computes f(S)=\sum_{T\subseteq S}g(T) for a function g defined on \mathcal{P}(\{0,1,\dots,n-1\}) in \mathcal{O}(n2^n) time and \mathcal{O}(1) space. ]]></description>
-    <pubDate>Wed, 22 Jul 2026 09:07:37 GMT</pubDate>
+    <pubDate>Thu, 23 Jul 2026 06:01:22 GMT</pubDate>
   </item><item>
     <title>Floyd-Warshall Algorithm</title>
     <link>https://dxing.blog/Algorithms/Floyd-Warshall-Algorithm</link>
     <guid>https://dxing.blog/Algorithms/Floyd-Warshall-Algorithm</guid>
     <description><![CDATA[ The Floyd-Warshall Algorithm is an algorithm that computes the length of the shortest path between every pair of vertices in a directed graph G=(V,E) with edge weights and no negative cycles in \mathcal{O}(|V|^3+|E|) time and \mathcal{O}(|V|^2) space. ]]></description>
+    <pubDate>Thu, 23 Jul 2026 06:01:22 GMT</pubDate>
+  </item><item>
+    <title>Fast Mobius Transform</title>
+    <link>https://dxing.blog/Algorithms/Fast-Mobius-Transform/Fast-Mobius-Transform</link>
+    <guid>https://dxing.blog/Algorithms/Fast-Mobius-Transform/Fast-Mobius-Transform</guid>
+    <description><![CDATA[ The Fast Mobius Transform is an algorithm that computes f(S)=\sum_{T\subseteq S}g(T) for a function g defined on \mathcal{P}(\{0,1,\dots,n-1\}) in \mathcal{O}(n2^n) time and \mathcal{O}(1) space. ]]></description>
     <pubDate>Wed, 22 Jul 2026 09:07:37 GMT</pubDate>
   </item><item>
     <title>Aho-Corasick Automaton</title>

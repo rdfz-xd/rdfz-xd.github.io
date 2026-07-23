@@ -55,9 +55,9 @@ std::vector<std::vector<int>> floyd_warshall(int n, int m, const std::vector<int
 > \forall i\in\{0,1,\dots,|V|-1\},\forall y\in V,f_{i+1}(v_i,y)=f_i(v_i,y)
 > $$
 
-Applying the lemma yields that the first dimension can be ignored.
+Based on [[Floyd-Warshall Algorithm#Algorithm 0]], applying the lemma yields that the first dimension can be ignored.
 
-Based on [[Floyd-Warshall Algorithm#Algorithm 0]], ignoring the first dimension yields an algorithm that solves the problem in $\mathcal{O}(|V|^3+|E|)$ time and $\mathcal{O}(|V|^2)$ space.
+Ignoring the first dimension yields an algorithm that solves the problem in $\mathcal{O}(|V|^3+|E|)$ time and $\mathcal{O}(|V|^2)$ space.
 
 ~~~c++
 std::vector<std::vector<int>> floyd_warshall(int n, int m, const std::vector<int> &u, const std::vector<int> &v, const std::vector<int> &w) {
