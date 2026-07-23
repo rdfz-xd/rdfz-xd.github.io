@@ -14,7 +14,7 @@ This requires $\mathcal{O}(|S|)$ space.
 
 ### Algorithm
 
-0. Make a new node that stores $x$.
+0. Make a new node that stores $x$, and let it be the new rightmost leaf.
 
 1. Maintain the order by swapping elements.
 
@@ -35,9 +35,11 @@ void push(int x) {
 
 ### Algorithm
 
-Since the element in each node is less than or equal to the element in its parent, the element in the root is $\max S$.
+> [!info] Lemma
+>
+> The element in the root is $\max S$.
 
-Accessing the element in the root yields an algorithm that solves the problem in $\mathcal{O}(1)$ time and $\mathcal{O}(1)$ space.
+Applying the lemma to find $\max S$ yields an algorithm that solves the problem in $\mathcal{O}(1)$ time and $\mathcal{O}(1)$ space.
 
 ~~~c++
 int top() {
@@ -51,9 +53,9 @@ int top() {
 
 ### Algorithm
 
-0. Swap the element in the root and the element in the last node.
+0. Swap the element in the root with the element in the rightmost leaf.
 
-1. Delete the last node.
+1. Delete the rightmost leaf.
 2. Maintain the order by swapping elements.
 
 This algorithm solves the problem in $\mathcal{O}(\log|S|)$ time and $\mathcal{O}(1)$ space.
