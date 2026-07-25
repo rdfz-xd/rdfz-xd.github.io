@@ -42,11 +42,11 @@ Let $S_f(n)=\sum_{k=1}^nf(k)$.
 > > S_{f*g}(n)=S_f(n)+\sum_{d=2}^ng(d)S_f\left(\left\lfloor\frac{n}{d}\right\rfloor\right)\iff S_f(n)=S_{f*g}(n)-\sum_{d=2}^ng(d)S_f\left(\left\lfloor\frac{n}{d}\right\rfloor\right)
 > > $$
 
-1. For each $k$ in $\{k:k\in\{1,2,\dots,\lfloor n^\frac{2}{3}\rfloor-1\}\land\exist p\in \mathbb{P},\exist e\in\N,k=p^e\}$, find $f(k)$.
+0. For each $k$ in $\{k:k\in\{1,2,\dots,\lfloor n^\frac{2}{3}\rfloor-1\}\land\exist p\in \mathbb{P},\exist e\in\N,k=p^e\}$, find $f(k)$.
 
-2. Use the results from Step 1 to find $f(1),f(2),\dots,f(\lfloor n^\frac{2}{3}\rfloor-1)$.
-3. Use the results from Step 2 to find $S_f(1),S_f(2),\dots,S_f(\lfloor n^\frac{2}{3}\rfloor-1)$.
-4. For each $k$ in $\{\lfloor\frac{n}{1}\rfloor,\lfloor\frac{n}{2}\rfloor,\dots,\lfloor\frac{n}{n}\rfloor\}\setminus\{1,2,\dots,\lfloor n^\frac{2}{3}\rfloor-1\}$, apply the lemma to find $S_f(k)$.
+1. Use the results from 0 to find $f(1),f(2),\dots,f(\lfloor n^\frac{2}{3}\rfloor-1)$.
+2. Use the results from 1 to find $S_f(1),S_f(2),\dots,S_f(\lfloor n^\frac{2}{3}\rfloor-1)$.
+3. For each $k$ in $\{\lfloor\frac{n}{1}\rfloor,\lfloor\frac{n}{2}\rfloor,\dots,\lfloor\frac{n}{n}\rfloor\}\setminus\{1,2,\dots,\lfloor n^\frac{2}{3}\rfloor-1\}$, apply the lemma to find $S_f(k)$.
 
 ~~~c++
 std::unordered_map<int, int> du(int n, const std::unordered_map<int, int> &sg, const std::unordered_map<int, int> &sh) {

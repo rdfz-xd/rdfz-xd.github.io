@@ -4,6 +4,10 @@ tags: [Computer Science]
 
 The [[Fast Fourier Transform]] is an algorithm that computes $f(\omega_n^0),f(\omega_n^1),\dots,f(\omega_n^{n-1})$ for a polynomial $f(x)=\sum_{i=0}^{n-1}a_ix^i$, if $\exist k\in\N,n=2^k$, in $\mathcal{O}(n\log n)$ time and $\mathcal{O}(1)$ space.
 
+> [!tip]
+>
+> This problem can also be solved by [[Bluestein's Algorithm]] in $\mathcal{O}(n\log n)$ time and $\mathcal{O}(n)$ space.
+
 ### Algorithm 0
 
 > [!info] Lemma

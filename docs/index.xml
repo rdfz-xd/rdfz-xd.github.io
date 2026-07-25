@@ -6,11 +6,17 @@
       <description>Last 10 notes on Dong Xing&#039;s Blog</description>
       <generator>Quartz -- quartz.jzhao.xyz</generator>
       <item>
+    <title>Bluestein&#039;s Algorithm</title>
+    <link>https://dxing.blog/Algorithms/Bluestein's-Algorithm</link>
+    <guid>https://dxing.blog/Algorithms/Bluestein's-Algorithm</guid>
+    <description><![CDATA[ Bluestein’s Algorithm is an algorithm that computes f(z^0),f(z^1),\dots,f(z^{m-1}) for a polynomial f(x)=\sum_{i=0}^{n-1}a_ix^i in \mathcal{O}((n+m)\log(n+m)) time and \mathcal{O}(n+m) space. ]]></description>
+    <pubDate>Sat, 25 Jul 2026 03:19:19 GMT</pubDate>
+  </item><item>
     <title>Binary Heap</title>
     <link>https://dxing.blog/Data-Structures/Binary-Heap</link>
     <guid>https://dxing.blog/Data-Structures/Binary-Heap</guid>
     <description><![CDATA[ The Binary Heap is a data structure that maintains a multiset S of numbers by maintaining a complete binary tree. ]]></description>
-    <pubDate>Thu, 23 Jul 2026 06:33:31 GMT</pubDate>
+    <pubDate>Thu, 23 Jul 2026 09:08:08 GMT</pubDate>
   </item><item>
     <title>Floyd-Warshall Algorithm</title>
     <link>https://dxing.blog/Algorithms/Floyd-Warshall-Algorithm</link>
@@ -58,12 +64,6 @@
     <link>https://dxing.blog/Algorithms/Euclidean-Algorithm/Extended-Euclidean-Algorithm</link>
     <guid>https://dxing.blog/Algorithms/Euclidean-Algorithm/Extended-Euclidean-Algorithm</guid>
     <description><![CDATA[ The Extended Euclidean Algorithm is an algorithm that finds a pair of integers x and y such that ax+by=\gcd\{a,b\} for non-negative integers a and b in \mathcal{O}(\log a+\log b) time and \mathcal{O}(\log a+\log b) space. ]]></description>
-    <pubDate>Tue, 21 Jul 2026 12:51:17 GMT</pubDate>
-  </item><item>
-    <title>Inverse Fast Fourier Transform</title>
-    <link>https://dxing.blog/Algorithms/Fast-Fourier-Transform/Inverse-Fast-Fourier-Transform</link>
-    <guid>https://dxing.blog/Algorithms/Fast-Fourier-Transform/Inverse-Fast-Fourier-Transform</guid>
-    <description><![CDATA[ The Inverse Fast Fourier Transform is an algorithm that finds a polynomial f(x)=\sum_{i=0}^{n-1}a_ix^i such that \forall k\in\{0,1,\dots,n-1\},f(\omega_n^k)=b_k, if \exist k\in\N,n=2^k, in \mathcal{O}(n\log n) time and \mathcal{O}(1) space. ]]></description>
     <pubDate>Tue, 21 Jul 2026 12:51:17 GMT</pubDate>
   </item>
     </channel>

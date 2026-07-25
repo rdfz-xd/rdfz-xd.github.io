@@ -37,11 +37,11 @@ Let $S_f(n)=\sum_{k=1}^nf(k)$.
 > > \end{align}
 > > $$
 
-1. For each $k$ in $\{k:k\in\{1,2,\dots,\lfloor n^\frac{2}{3}\rfloor-1\}\land\exist p\in \mathbb{P},\exist e\in\N,k=p^e\}$, find $(f*g)(k)$.
+0. For each $k$ in $\{k:k\in\{1,2,\dots,\lfloor n^\frac{2}{3}\rfloor-1\}\land\exist p\in \mathbb{P},\exist e\in\N,k=p^e\}$, find $(f*g)(k)$.
 
-2. Use the results from Step 1 to find $(f*g)(1),(f*g)(2),\dots,(f*g)(\lfloor n^\frac{2}{3}\rfloor-1)$.
-3. Use the results from Step 2 to find $S_{f*g}(1),S_{f*g}(2),\dots,S_{f*g}(\lfloor n^\frac{2}{3}\rfloor-1)$.
-4. For each $k$ in $\{\lfloor\frac{n}{1}\rfloor,\lfloor\frac{n}{2}\rfloor,\dots,\lfloor\frac{n}{n}\rfloor\}\setminus\{1,2,\dots,\lfloor n^\frac{2}{3}\rfloor-1\}$, apply the lemma to find $S_{f*g}(k)$.
+1. Use the results from 0 to find $(f*g)(1),(f*g)(2),\dots,(f*g)(\lfloor n^\frac{2}{3}\rfloor-1)$.
+2. Use the results from 1 to find $S_{f*g}(1),S_{f*g}(2),\dots,S_{f*g}(\lfloor n^\frac{2}{3}\rfloor-1)$.
+3. For each $k$ in $\{\lfloor\frac{n}{1}\rfloor,\lfloor\frac{n}{2}\rfloor,\dots,\lfloor\frac{n}{n}\rfloor\}\setminus\{1,2,\dots,\lfloor n^\frac{2}{3}\rfloor-1\}$, apply the lemma to find $S_{f*g}(k)$.
 
 This algorithm solves the problem in $\mathcal{O}(n^\frac{2}{3})$ time and $\mathcal{O}(n^\frac{2}{3})$ space.
 
