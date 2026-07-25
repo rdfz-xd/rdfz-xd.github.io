@@ -47,8 +47,9 @@ This requires $\mathcal{O}(|\Sigma|\sum_{s\in S}|s|)$ space.
 > \forall s\in P\setminus\{\varepsilon\},\forall\sigma\in\Sigma,s\sigma\in P\Rightarrow \phi(s\sigma)=\delta(\phi(s),\sigma)
 > $$
 
-1. Build a [[Trie]] for $S$.
-2. For each prefix $s$ in increasing order of length, apply the lemmas to find the $\delta$ and $\phi$ for $s$.
+0. Build a [[Trie]] for $S$.
+
+1. For each prefix $s$ in increasing order of length, apply the lemmas to find the $\delta$ and $\phi$ of $s$.
 
 This algorithm solves the problem in $\mathcal{O}(|\Sigma|\sum_{s\in S}|s|)$ time and $\mathcal{O}(\sum_{s\in S}|s|)$ space.
 

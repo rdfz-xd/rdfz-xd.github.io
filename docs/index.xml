@@ -10,7 +10,25 @@
     <link>https://dxing.blog/Algorithms/Bluestein's-Algorithm</link>
     <guid>https://dxing.blog/Algorithms/Bluestein's-Algorithm</guid>
     <description><![CDATA[ Bluestein’s Algorithm is an algorithm that computes f(z^0),f(z^1),\dots,f(z^{m-1}) for a polynomial f(x)=\sum_{i=0}^{n-1}a_ix^i in \mathcal{O}((n+m)\log(n+m)) time and \mathcal{O}(n+m) space. ]]></description>
-    <pubDate>Sat, 25 Jul 2026 03:19:19 GMT</pubDate>
+    <pubDate>Sat, 25 Jul 2026 04:05:43 GMT</pubDate>
+  </item><item>
+    <title>Du&#039;s Second Division Sieve</title>
+    <link>https://dxing.blog/Algorithms/Du's-Sieves/Du's-Second-Division-Sieve</link>
+    <guid>https://dxing.blog/Algorithms/Du's-Sieves/Du's-Second-Division-Sieve</guid>
+    <description><![CDATA[  Lemma \forall n\in\Z_+,\left|\left\{\left\lfloor\frac{n}{1}\right\rfloor,\left\lfloor\frac{n}{2}\right\rfloor,\dots,\left\lfloor\frac{n}{n}\right\rfloor\right\}\right|\in\mathcal{O}(\sqrt n) Proof \begin{align} \left|\left\{\left\lfloor\frac{n}{1}\right\rfloor,\left\lfloor\frac{n}{2}\right\rfloor,\... ]]></description>
+    <pubDate>Sat, 25 Jul 2026 04:05:43 GMT</pubDate>
+  </item><item>
+    <title>Du&#039;s Second Multiplication Sieve</title>
+    <link>https://dxing.blog/Algorithms/Du's-Sieves/Du's-Second-Multiplication-Sieve</link>
+    <guid>https://dxing.blog/Algorithms/Du's-Sieves/Du's-Second-Multiplication-Sieve</guid>
+    <description><![CDATA[  Lemma \forall n\in\Z_+,\left|\left\{\left\lfloor\frac{n}{1}\right\rfloor,\left\lfloor\frac{n}{2}\right\rfloor,\dots,\left\lfloor\frac{n}{n}\right\rfloor\right\}\right|\in\mathcal{O}(\sqrt n) Proof \begin{align} \left|\left\{\left\lfloor\frac{n}{1}\right\rfloor,\left\lfloor\frac{n}{2}\right\rfloor,\... ]]></description>
+    <pubDate>Sat, 25 Jul 2026 04:05:43 GMT</pubDate>
+  </item><item>
+    <title>Fast Fourier Transform</title>
+    <link>https://dxing.blog/Algorithms/Fast-Fourier-Transform/Fast-Fourier-Transform</link>
+    <guid>https://dxing.blog/Algorithms/Fast-Fourier-Transform/Fast-Fourier-Transform</guid>
+    <description><![CDATA[ The Fast Fourier Transform is an algorithm that computes f(\omega_n^0),f(\omega_n^1),\dots,f(\omega_n^{n-1}) for a polynomial f(x)=\sum_{i=0}^{n-1}a_ix^i, if \exist k\in\N,n=2^k, in \mathcal{O}(n\log n) time and \mathcal{O}(1) space. ]]></description>
+    <pubDate>Sat, 25 Jul 2026 04:05:43 GMT</pubDate>
   </item><item>
     <title>Binary Heap</title>
     <link>https://dxing.blog/Data-Structures/Binary-Heap</link>
@@ -47,24 +65,6 @@
     <guid>https://dxing.blog/Algorithms/Fast-Mobius-Transform/Fast-Mobius-Transform</guid>
     <description><![CDATA[ The Fast Mobius Transform is an algorithm that computes f(S)=\sum_{T\subseteq S}g(T) for a function g defined on \mathcal{P}(\{0,1,\dots,n-1\}) in \mathcal{O}(n2^n) time and \mathcal{O}(1) space. ]]></description>
     <pubDate>Wed, 22 Jul 2026 09:07:37 GMT</pubDate>
-  </item><item>
-    <title>Aho-Corasick Automaton</title>
-    <link>https://dxing.blog/Data-Structures/Aho-Corasick-Automaton</link>
-    <guid>https://dxing.blog/Data-Structures/Aho-Corasick-Automaton</guid>
-    <description><![CDATA[ The Aho-Corasick Automaton is a data structure that maintains a set S of strings in \Sigma^* by maintaining a deterministic finite automaton that accepts and only accepts strings containing a string from S as a suffix. ]]></description>
-    <pubDate>Wed, 22 Jul 2026 09:07:37 GMT</pubDate>
-  </item><item>
-    <title>Euclidean Algorithm</title>
-    <link>https://dxing.blog/Algorithms/Euclidean-Algorithm/Euclidean-Algorithm</link>
-    <guid>https://dxing.blog/Algorithms/Euclidean-Algorithm/Euclidean-Algorithm</guid>
-    <description><![CDATA[ The Euclidean Algorithm is an algorithm that computes \gcd\{a, b\} for non-negative integers a and b in \mathcal{O}(\log a+\log b) time and \mathcal{O}(\log a+\log b) space. ]]></description>
-    <pubDate>Tue, 21 Jul 2026 12:51:17 GMT</pubDate>
-  </item><item>
-    <title>Extended Euclidean Algorithm</title>
-    <link>https://dxing.blog/Algorithms/Euclidean-Algorithm/Extended-Euclidean-Algorithm</link>
-    <guid>https://dxing.blog/Algorithms/Euclidean-Algorithm/Extended-Euclidean-Algorithm</guid>
-    <description><![CDATA[ The Extended Euclidean Algorithm is an algorithm that finds a pair of integers x and y such that ax+by=\gcd\{a,b\} for non-negative integers a and b in \mathcal{O}(\log a+\log b) time and \mathcal{O}(\log a+\log b) space. ]]></description>
-    <pubDate>Tue, 21 Jul 2026 12:51:17 GMT</pubDate>
   </item>
     </channel>
   </rss>
