@@ -2,20 +2,6 @@
 tags: [Computer Science]
 ---
 
-> [!info] Lemma
-> $$
-> \forall n\in\Z_+,\left|\left\{\left\lfloor\frac{n}{1}\right\rfloor,\left\lfloor\frac{n}{2}\right\rfloor,\dots,\left\lfloor\frac{n}{n}\right\rfloor\right\}\right|\in\mathcal{O}(\sqrt n)
-> $$
->
-> > [!note]- Proof
-> > $$
-> > \begin{align}
-> > \left|\left\{\left\lfloor\frac{n}{1}\right\rfloor,\left\lfloor\frac{n}{2}\right\rfloor,\dots,\left\lfloor\frac{n}{n}\right\rfloor\right\}\right|&\le\left|\left\{\left\lfloor\frac{n}{d}\right\rfloor:d\in\{1,2,\dots,\lfloor\sqrt n\rfloor\}\right\}\right|+\left|\left\{\left\lfloor\frac{n}{1}\right\rfloor,\left\lfloor\frac{n}{2}\right\rfloor,\dots,\left\lfloor\frac{n}{n}\right\rfloor\right\}\cap\{1,2,\dots,\lfloor\sqrt n\rfloor\}\right|\\
-> > &\le2\sqrt n\\
-> > &\in\mathcal{O}(\sqrt n)
-> > \end{align}
-> > $$
-
 Let $S_f(n)=\sum_{k=1}^nf(k)$.
 
 [[Du's Second Multiplication Sieve]] is an algorithm that computes $S_{f*g}(1),S_{f*g}(2),\dots,S_{f*g}(\lfloor n^\frac{2}{3}\rfloor-1)$ and $S_{f*g}(\lfloor\frac{n}{1}\rfloor),S_{f*g}(\lfloor\frac{n}{2}\rfloor),\dots,S_{f*g}(\lfloor\frac{n}{n}\rfloor)$ for **multiplicative** functions $f$ and $g$, if $S_f(1),S_f(2),\dots,S_f(\lfloor n^\frac{2}{3}\rfloor-1)$, $S_f(\lfloor\frac{n}{1}\rfloor),S_f(\lfloor\frac{n}{2}\rfloor),\dots,S_f(\lfloor\frac{n}{n}\rfloor)$, $S_g(1),S_g(2),\dots,S_g(\lfloor n^\frac{2}{3}\rfloor-1)$, and $S_g(\lfloor\frac{n}{1}\rfloor),S_g(\lfloor\frac{n}{2}\rfloor),\dots,S_g(\lfloor\frac{n}{n}\rfloor)$ are given, in $\mathcal{O}(n^\frac{2}{3})$ time and $\mathcal{O}(n^\frac{2}{3})$ space.
@@ -46,7 +32,7 @@ Let $S_f(n)=\sum_{k=1}^nf(k)$.
 This algorithm solves the problem in $\mathcal{O}(n^\frac{2}{3})$ time and $\mathcal{O}(n^\frac{2}{3})$ space.
 
 ~~~c++
-std::unordered_map<int, int> du(int n, const std::unordered_map<int, int> &sf, const std::unordered_map<int, int> &sg) {
+std::unordered_map<int, int> du_mul(int n, const std::unordered_map<int, int> &sf, const std::unordered_map<int, int> &sg) {
 	int m = std::pow(n, .67);
 
 	std::vector<int> h(m);
@@ -78,6 +64,20 @@ std::unordered_map<int, int> du(int n, const std::unordered_map<int, int> &sf, c
 ~~~
 
 > [!note]- Proof
+>
+> > [!info] Lemma
+> > $$
+> > \forall n\in\Z_+,\left|\left\{\left\lfloor\frac{n}{1}\right\rfloor,\left\lfloor\frac{n}{2}\right\rfloor,\dots,\left\lfloor\frac{n}{n}\right\rfloor\right\}\right|\in\mathcal{O}(\sqrt n)
+> > $$
+> >
+> > > [!note]- Proof
+> > > $$
+> > > \begin{align}
+> > > \left|\left\{\left\lfloor\frac{n}{1}\right\rfloor,\left\lfloor\frac{n}{2}\right\rfloor,\dots,\left\lfloor\frac{n}{n}\right\rfloor\right\}\right|&\le\left|\left\{\left\lfloor\frac{n}{d}\right\rfloor:d\in\{1,2,\dots,\lfloor\sqrt n\rfloor\}\right\}\right|+\left|\left\{\left\lfloor\frac{n}{1}\right\rfloor,\left\lfloor\frac{n}{2}\right\rfloor,\dots,\left\lfloor\frac{n}{n}\right\rfloor\right\}\cap\{1,2,\dots,\lfloor\sqrt n\rfloor\}\right|\\
+> > > &\le2\sqrt n\\
+> > > &\in\mathcal{O}(\sqrt n)
+> > > \end{align}
+> > > $$
 >
 > Applying the lemma yields that this algorithm solves the problem in
 > $$

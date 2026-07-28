@@ -36,17 +36,17 @@ This algorithm solves the problem in $\mathcal{O}((n+m)\log(n+m))$ time and $\ma
 
 ```c++
 std::vector<std::complex<double>> bluestein(int n, const std::vector<std::complex<double>> &a, std::complex<double> z, int m) {
-	int k = std::bit_ceil<u32>(2 * n + m - 1);
-
-	std::vector f(k, std::complex(0.));
+	std::vector<std::complex<double>> f(n);
 	for (int i = 0; i < n; i++) {
 		f[n - i - 1] = a[i] / std::pow(z, 1. * i * i / 2);
 	}
-	std::vector g(k, std::complex(0.));
+	std::vector<std::complex<double>> g(n + m);
 	for (int i = 0; i < n + m; i++) {
 		g[i] = std::pow(z, 1. * i * i / 2);
 	}
 
+	int k = std::bit_ceil<u32>(2 * n + m - 1);
+	f.resize(k, 0), g.resize(k, 0);
 	fft(k, f), fft(k, g);
 	for (int i = 0; i < k; i++) {
 		f[i] *= g[i];

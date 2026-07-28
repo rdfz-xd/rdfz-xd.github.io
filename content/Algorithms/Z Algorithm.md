@@ -2,10 +2,11 @@
 tags: [Computer Science, Computer Science/String Theory]
 ---
 
-The [[Z Algorithm]] is an algorithm that computes $z(0),z(1),\dots,z(n-1)$ for a string $s$ of length $n$ in $\mathcal{O}(n)$ time and $\mathcal{O}(n)$ space, where
+The [[Z Algorithm]] is an algorithm that computes $z(0),z(1),\dots,z(n-1)$ for a string $s$ of length $n$, where
 $$
 z(i)=\operatorname{lcp}(s,s_is_{i+1}\dots s_{n-1})
 $$
+in $\mathcal{O}(n)$ time and $\mathcal{O}(n)$ space.
 
 ### Algorithm 0
 
@@ -59,7 +60,7 @@ std::vector<int> z(int n, const std::string &s) {
 
 > [!note]- Proof
 >
-> It is easy to prove that the upper bound on the total number of executions of `z[i]++` is
+> It is easy to prove that the total number of executions of `z[i]++` is bounded by
 > $$
 > \max_{i=1}^{n-1}(i+z(i))
 > $$

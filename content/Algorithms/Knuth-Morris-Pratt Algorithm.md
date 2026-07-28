@@ -2,10 +2,12 @@
 tags: [Computer Science, Computer Science/String Theory]
 ---
 
-The [[Knuth-Morris-Pratt Algorithm]] is an algorithm that computes $\pi(1),\pi(2),\dots,\pi(n)$ for a string $s$ of length $n$ in $\mathcal{O}(n)$ time and $\mathcal{O}(n)$ space, where
+The [[Knuth-Morris-Pratt Algorithm]] is an algorithm that computes $\pi(1),\pi(2),\dots,\pi(n)$ for a string $s$ of length $n$, where
 $$
 \pi(i)=\max\{j:j<i\land s_0s_1\dots s_{j-1}=s_{i-j}s_{i-j+1}\dots s_{i-1}\}
 $$
+
+in $\mathcal{O}(n)$ time and $\mathcal{O}(n)$ space.
 
 ### Algorithm 0
 
@@ -100,7 +102,7 @@ std::vector<int> knuth_morris_pratt(int n, const std::string &s) {
 > > \end{align}
 > > $$
 
-Based on [[Knuth-Morris-Pratt-Algorithm#Algorithm 1]], applying the lemma to rule out some impossible $j$ yields an algorithm that solves the problem in $\mathcal{O}(n)$ time and $\mathcal{O}(n)$ space.
+Based on [[Knuth-Morris-Pratt-Algorithm#Algorithm 1]], applying the lemma to skip some useless $j$ yields an algorithm that solves the problem in $\mathcal{O}(n)$ time and $\mathcal{O}(n)$ space.
 
 ~~~c++
 std::vector<int> knuth_morris_pratt(int n, const std::string &s) {

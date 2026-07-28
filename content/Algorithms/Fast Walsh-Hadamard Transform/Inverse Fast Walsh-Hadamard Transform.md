@@ -2,6 +2,15 @@
 tags: [Computer Science]
 ---
 
+Let $\mathbf{H}_n$ be a $2^n\times2^n$ matrix satisfying
+$$
+\mathbf{H}_0=\begin{pmatrix}
+1
+\end{pmatrix}\land\forall n\in\N,\mathbf{H}_{n+1}=\begin{pmatrix}
+\mathbf{H}_n&\mathbf{H}_n\\
+\mathbf{H}_n&-\mathbf{H}_n
+\end{pmatrix}
+$$
 The [[Inverse Fast Walsh-Hadamard Transform]] is an algorithm that finds a vector $\mathbf{x}$ such that $\mathbf{H}_n\mathbf{x}=\mathbf{y}$ for a vector
 $$
 \mathbf{y}=\begin{pmatrix}
@@ -11,16 +20,7 @@ y_1\\
 y_{2^n-1}
 \end{pmatrix}
 $$
-in $\mathcal{O}(n2^n)$ time and $\mathcal{O}(1)$ space, where $\mathbf{H}_n$ is a matrix satisfying
-$$
-\mathbf{H}_0=\begin{pmatrix}
-1
-\end{pmatrix}\land\forall n\in\N,\mathbf{H}_{n+1}=\begin{pmatrix}
-\mathbf{H}_n&\mathbf{H}_n\\
-\mathbf{H}_n&-\mathbf{H}_n
-\end{pmatrix}
-$$
-
+in $\mathcal{O}(n2^n)$ time and $\mathcal{O}(1)$ space.
 ### Algorithm
 
 > [!info] Lemma

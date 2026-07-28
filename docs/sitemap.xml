@@ -42,7 +42,7 @@
     <lastmod>2026-07-21T12:51:17.000Z</lastmod>
   </url><url>
     <loc>https://dxing.blog/Algorithms/Euclidean-Algorithm/Extended-Euclidean-Algorithm</loc>
-    <lastmod>2026-07-21T12:51:17.000Z</lastmod>
+    <lastmod>2026-07-25T09:03:32.000Z</lastmod>
   </url><url>
     <loc>https://dxing.blog/Algorithms/Euler's-Sieve</loc>
     <lastmod>2026-07-09T09:06:19.000Z</lastmod>
@@ -54,7 +54,7 @@
     <lastmod>2026-07-21T12:51:17.000Z</lastmod>
   </url><url>
     <loc>https://dxing.blog/Algorithms/Fast-Mobius-Transform/Fast-Mobius-Transform</loc>
-    <lastmod>2026-07-22T09:07:37.000Z</lastmod>
+    <lastmod>2026-07-25T09:03:32.000Z</lastmod>
   </url><url>
     <loc>https://dxing.blog/Algorithms/Fast-Mobius-Transform/Inverse-Fast-Mobius-Transform</loc>
     <lastmod>2026-07-23T06:01:22.000Z</lastmod>
@@ -98,6 +98,21 @@
     <loc>https://dxing.blog/Algorithms/Merge-Sort</loc>
     <lastmod>2026-07-15T03:57:30.000Z</lastmod>
   </url><url>
+    <loc>https://dxing.blog/Algorithms/Newton's-Methods/Newton's-Method-for-Polynomial-Exponentiation</loc>
+    <lastmod>2026-07-28T01:47:04.598Z</lastmod>
+  </url><url>
+    <loc>https://dxing.blog/Algorithms/Newton's-Methods/Newton's-Method-for-Polynomial-Inversion</loc>
+    <lastmod>2026-07-28T01:53:53.043Z</lastmod>
+  </url><url>
+    <loc>https://dxing.blog/Algorithms/Newton's-Methods/Newton's-Method-for-Polynomial-Logarithms</loc>
+    <lastmod>2026-07-27T04:09:20.086Z</lastmod>
+  </url><url>
+    <loc>https://dxing.blog/Algorithms/Newton's-Methods/Newton's-Method-for-Polynomial-Powers</loc>
+    <lastmod>2026-07-28T02:21:56.944Z</lastmod>
+  </url><url>
+    <loc>https://dxing.blog/Algorithms/Newton's-Methods/Newton's-Method-for-Polynomial-Square-Roots</loc>
+    <lastmod>2026-07-28T02:16:23.412Z</lastmod>
+  </url><url>
     <loc>https://dxing.blog/Algorithms/Prim's-Algorithm</loc>
     <lastmod>2026-07-18T02:47:13.000Z</lastmod>
   </url><url>
@@ -126,7 +141,7 @@
     <lastmod>2026-07-08T12:19:50.000Z</lastmod>
   </url><url>
     <loc>https://dxing.blog/Data-Structures/Aho-Corasick-Automaton</loc>
-    <lastmod>2026-07-22T09:07:37.000Z</lastmod>
+    <lastmod>2026-07-25T09:03:32.000Z</lastmod>
   </url><url>
     <loc>https://dxing.blog/Data-Structures/Binary-Heap</loc>
     <lastmod>2026-07-23T09:08:08.000Z</lastmod>

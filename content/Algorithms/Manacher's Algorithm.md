@@ -2,10 +2,11 @@
 tags: [Computer Science, Computer Science/String Theory]
 ---
 
-[[Manacher's Algorithm]] is an algorithm that computes $d(0),d(1),\dots,d(n-1)$ for a string $s$ of length $n$ in $\mathcal{O}(n)$ time and $\mathcal{O}(n)$ space, where
+[[Manacher's Algorithm]] is an algorithm that computes $d(0),d(1),\dots,d(n-1)$ for a string $s$ of length $n$, where
 $$
 d(i)=\max\{j:i-j\ge0\land i+j<n\land s_is_{i-1}\dots s_{i-j}=s_is_{i+1}\dots s_{i+j}\}
 $$
+in $\mathcal{O}(n)$ time and $\mathcal{O}(n)$ space.
 
 ### Algorithm 0
 
@@ -59,7 +60,7 @@ std::vector<int> manacher(int n, const std::string &s) {
 
 > [!note]- Proof
 >
-> It is easy to prove that the upper bound on the total number of executions of `d[i]++` is
+> It is easy to prove that the total number of executions of `d[i]++` bounded by
 > $$
 > \max_{i=0}^{n-1}(i+d(i))
 > $$
