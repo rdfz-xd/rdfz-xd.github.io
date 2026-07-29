@@ -28,7 +28,7 @@ std::vector<int> manacher(int n, const std::string &s) {
 
 > [!info] Lemma
 > $$
-> \forall j\in\{0,1,\dots,n-1\},\forall i\in\{j,j+1,\dots,n-1\},d(i)\ge\min\{d(2j-i),j+d(j)-i\}
+> \forall i\in\{0,1,\dots,n-1\},\forall j\in\{0,1,\dots,i-1\},i<j+d(j)\Rightarrow d(i)\ge\min\{d(2j-i),j+d(j)-i\}
 > $$
 >
 > > [!note]- Proof
@@ -40,18 +40,18 @@ std::vector<int> manacher(int n, const std::string &s) {
 > > \end{align}
 > > $$
 
-Based on [[Manacher's Algorithm#Algorithm 0]], maintaining $\arg\max_{j=0}^{i-1}(j+d(j))$ and applying the lemma to get an lower bound for $d(i)$ yield an algorithm that solves the problem in $\mathcal{O}(n)$ time and $\mathcal{O}(n)$ space.
+Based on [[Manacher's Algorithm#Algorithm 0]], maintaining $\arg\max_{j=0}^{i-1}(j+d(j))$ and applying the lemma to find a lower bound for $d(i)$ yield an algorithm that solves the problem in $\mathcal{O}(n)$ time and $\mathcal{O}(n)$ space.
 
 ~~~c++
 std::vector<int> manacher(int n, const std::string &s) {
 	std::vector<int> d(n);
-	for (int i = 0, l = 0, r = 0; i < n; i++) {
-		d[i] = i < r ? std::min(d[l + r - i - 1], r - i - 1) : 0;
+	for (int i = 0, j = -1; i < n; i++) {
+		d[i] = ~j && i < j + d[j] ? std::min(d[2 * j - i], j + d[j] - i) : 0;
 		while (i - d[i] - 1 >= 0 && i + d[i] + 1 < n && s[i - d[i] - 1] == s[i + d[i] + 1]) {
 			d[i]++;
 		}
-		if (i + d[i] + 1 > r) {
-			l = i - d[i], r = i + d[i] + 1;
+		if (j == -1 || j + d[j] < i + d[i]) {
+			j = i;
 		}
 	}
 	return d;
@@ -60,7 +60,7 @@ std::vector<int> manacher(int n, const std::string &s) {
 
 > [!note]- Proof
 >
-> It is easy to prove that the total number of executions of `d[i]++` bounded by
+> It is easy to prove that the total number of executions of `d[i]++` is bounded by
 > $$
 > \max_{i=0}^{n-1}(i+d(i))
 > $$

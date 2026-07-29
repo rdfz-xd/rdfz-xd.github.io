@@ -32,6 +32,10 @@ tags: [Computer Science]
 >
 > This problem can also be solved by [[Quickselect]] in $\mathcal{O}(n^2)$ time and $\mathcal{O}(n)$ space.
 
+> [!tip]
+>
+> This problem can also be solved by [[Radix Sort]] in $\mathcal{O}\left(n+\frac{n\log m}{\log n}\right)$ time and $\mathcal{O}(n)$ space.
+
 ### Algorithm
 
 0. For each $i$ in $\{0,1,\dots,m-1\}$, find the number of occurrences $c_i$ of $i$ in $a_0,a_1,\dots,a_{n-1}$.

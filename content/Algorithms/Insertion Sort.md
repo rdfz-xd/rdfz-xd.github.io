@@ -58,4 +58,3 @@ void insertion_sort(int n, std::vector<int> &a) {
 	}
 }
 ```
-

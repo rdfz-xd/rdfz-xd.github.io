@@ -136,7 +136,7 @@ int quickselect(int n, std::vector<int> a, int k) {
 > > > \end{align}
 > > > $$
 >
-> Let $X$ be the number of comparisons performed between distinct elements when running on $a_0,a_1,\dots,a_{n-1}$, $X'$ be the number when running on $(a_0,0),(a_1,1),\dots,(a_{n-1},n-1)$, then, it is easy to prove that
+> Let $X$ be the number of comparisons performed between distinct elements when running on $a_0,a_1,\dots,a_{n-1}$, $X'$ be the number when running on $\langle a_0,0\rangle,\langle a_1,1\rangle,\dots,\langle a_{n-1},n-1\rangle$, then, it is easy to prove that
 > $$
 > \begin{align}
 > \mathbb{E}[X]&\le\mathbb{E}[X']\\
@@ -149,7 +149,7 @@ int quickselect(int n, std::vector<int> a, int k) {
 Based on [[Algorithm 0]], instead of choosing $x$ at random, determine $x$ in the following way:
 
 0. Divide $a_0,a_1,\dots,a_{n-1}$ into $\left\lfloor\frac{n}{5}\right\rfloor$ groups of $5$, ignoring the remainder.
-1. Apply an appropriate sorting algorithm (e.g., [[Selection Sort]], [[Insertion Sort]], [[Bubble Sort]], [[Merge Sort]], [[Heapsort]], [[Quicksort]]) to find the median of each group.
+1. Apply an appropriate sorting algorithm (e.g., [[Selection Sort]], [[Insertion Sort]], [[Bubble Sort]], [[Merge Sort]], [[Heapsort]]) to find the median of each group.
 2. Find the median of these medians recursively, and set $x$ to this median.
 
 This algorithm solves the problem in $\mathcal{O}(n)$ time and $\mathcal{O}(n)$ space.

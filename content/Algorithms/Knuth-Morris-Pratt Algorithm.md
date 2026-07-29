@@ -35,16 +35,15 @@ std::vector<int> knuth_morris_pratt(int n, const std::string &s) {
 > \forall i\in\{2,3,\dots,n\},\pi(i)\le\pi(i-1)+1
 > $$
 >
-> > [!node]- Proof
+> > [!note]- Proof
 > > $$
 > > \begin{align}
-> > \pi(i)=j&\implies s_0s_1\dots s_{j-1}=s_{i-j}s_{i-j+1}\dots s_{i-1}\\
-> > &\implies s_0s_1\dots s_{j-2}=s_{i-j}s_{i-j+1}\dots s_{i-2}\\
-> > &\implies\pi(i-1)\ge j-1
+> > s_0s_1\dots s_{\pi(i)-1}=s_{i-\pi(i)}s_{i-\pi(i)+1}\dots s_{i-1}&\implies s_0s_1\dots s_{\pi(i)-2}=s_{i-\pi(i)}s_{i-\pi(i)+1}\dots s_{i-2}\\
+> > &\implies\pi(i-1)\ge\pi(i)-1
 > > \end{align}
 > > $$
 
-Based on [[Knuth-Morris-Pratt-Algorithm#Algorithm 0]], applying the lemma to get an upper bound for $\pi(i)$ yields an algorithm that solves the problem in $\mathcal{O}(n^2)$ time and $\mathcal{O}(n)$ space.
+Based on [[Knuth-Morris-Pratt-Algorithm#Algorithm 0]], applying the lemma to find an upper bound for $\pi(i)$ yields an algorithm that solves the problem in $\mathcal{O}(n^2)$ time and $\mathcal{O}(n)$ space.
 
 ~~~c++
 std::vector<int> knuth_morris_pratt(int n, const std::string &s) {
@@ -102,12 +101,11 @@ std::vector<int> knuth_morris_pratt(int n, const std::string &s) {
 > > \end{align}
 > > $$
 
-Based on [[Knuth-Morris-Pratt-Algorithm#Algorithm 1]], applying the lemma to skip some useless $j$ yields an algorithm that solves the problem in $\mathcal{O}(n)$ time and $\mathcal{O}(n)$ space.
+Based on [[Knuth-Morris-Pratt-Algorithm#Algorithm 1]], applying the lemma to skip some useless `j` yields an algorithm that solves the problem in $\mathcal{O}(n)$ time and $\mathcal{O}(n)$ space.
 
 ~~~c++
 std::vector<int> knuth_morris_pratt(int n, const std::string &s) {
-	std::vector<int> pi(n + 1);
-	pi[0] = pi[1] = 0;
+	std::vector pi(n + 1, 0);
 	for (int i = 1, j = 0; i < n; i++) {
 		while (j && s[j] != s[i]) {
 			j = pi[j];

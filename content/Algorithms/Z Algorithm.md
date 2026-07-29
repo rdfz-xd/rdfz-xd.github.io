@@ -28,7 +28,7 @@ std::vector<int> z(int n, const std::string &s) {
 
 > [!info] Lemma
 > $$
-> \forall j\in\{0,1,\dots,n-1\},\forall i\in\{j,j+1,\dots,n-1\},z(i)\ge\min\{z(i-j),j+z(j)-i\}
+> \forall i\in\{0,1,\dots,n-1\},\forall j\in\{1,2,\dots,i-1\},i<j+z(j)\Rightarrow z(i)\ge\min\{z(i-j),j+z(j)-i\}
 > $$
 >
 > > [!note]- Proof
@@ -39,19 +39,19 @@ std::vector<int> z(int n, const std::string &s) {
 > > \end{align}
 > > $$
 
-Based on [[Z Algorithm#Algorithm 0]], maintaining $\arg\max_{j=1}^{i-1}(j+z(j))$ and applying the lemma to get a lower bound for $z(i)$ yield an algorithm that solves the problem in $\mathcal{O}(n)$ time and $\mathcal{O}(n)$ space.
+Based on [[Z Algorithm#Algorithm 0]], maintaining $\arg\max_{j=1}^{i-1}(j+z(j))$ and applying the lemma to find a lower bound for $z(i)$ yield an algorithm that solves the problem in $\mathcal{O}(n)$ time and $\mathcal{O}(n)$ space.
 
 ~~~c++
 std::vector<int> z(int n, const std::string &s) {
 	std::vector<int> z(n);
 	z[0] = n;
-	for (int i = 1, l = 0, r = 0; i < n; i++) {
-		z[i] = i < r ? std::min(z[i - l], r - i) : 0;
+	for (int i = 1, j = -1; i < n; i++) {
+		z[i] = ~j && i < j + z[j] ? std::min(z[i - j], j + z[j] - i) : 0;
 		while (i + z[i] < n && s[z[i]] == s[i + z[i]]) {
 			z[i]++;
 		}
-		if (i + z[i] > r) {
-			l = i, r = i + z[i];
+		if (j == -1 || j + z[j] < i + z[i]) {
+			j = i;
 		}
 	}
 	return z;
@@ -71,4 +71,3 @@ std::vector<int> z(int n, const std::string &s) {
 > &\in\mathcal{O}(n)
 > \end{align}
 > $$
-
