@@ -30,10 +30,6 @@ tags: [Computer Science]
 
 > [!tip]
 >
-> This problem can also be solved by [[Quickselect]] in $\mathcal{O}(n^2)$ time and $\mathcal{O}(n)$ space.
-
-> [!tip]
->
 > This problem can also be solved by [[Counting Sort]] in $\mathcal{O}(n+m^d)$ time and $\mathcal{O}(m^d)$ space.
 
 ### Algorithm

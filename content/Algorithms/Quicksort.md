@@ -24,10 +24,6 @@ tags: [Computer Science]
 >
 > This problem can also be solved by [[Heapsort]] in $\mathcal{O}(n\log n)$ time and $\mathcal{O}(1)$ space.
 
-> [!tip]
->
-> This problem can also be solved by [[Quickselect]] in $\mathcal{O}(n^2)$ time and $\mathcal{O}(n)$ space.
-
 ### Algorithm 0
 
 0. Let $x$ be a number chosen uniformly at random from $a_0,a_1,\dots,a_{n-1}$.

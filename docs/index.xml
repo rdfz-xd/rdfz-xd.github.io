@@ -6,6 +6,18 @@
       <description>Last 10 notes on Dong Xing&#039;s Blog</description>
       <generator>Quartz -- quartz.jzhao.xyz</generator>
       <item>
+    <title>Kasai&#039;s Algorithm</title>
+    <link>https://dxing.blog/Algorithms/Kasai's-Algorithm</link>
+    <guid>https://dxing.blog/Algorithms/Kasai's-Algorithm</guid>
+    <description><![CDATA[ Kasai’s Algorithm is an algorithm that computes h(0),h(1),\dots,h(n-2) for a string of length n, where h(i)=\left|\operatorname{lcp}\{s_{a_i}s_{a_i+1}\dots s_{n-1},s_{a_{i+1}}s_{a_{i+1}+1}\dots s_{n-1}\}\right| where a_i denotes the starting index of the i-th lexicographically smallest suffix of s, ... ]]></description>
+    <pubDate>Sat, 01 Aug 2026 02:25:40 GMT</pubDate>
+  </item><item>
+    <title>Manber-Myers Algorithm</title>
+    <link>https://dxing.blog/Algorithms/Manber-Myers-Algorithm</link>
+    <guid>https://dxing.blog/Algorithms/Manber-Myers-Algorithm</guid>
+    <description><![CDATA[ The Manber-Myers Algorithm is an algorithm that finds the lexicographical order of the suffixes of a string s of length n in \mathcal{O}(n\log n) time and \mathcal{O}(n) space. ]]></description>
+    <pubDate>Fri, 31 Jul 2026 01:17:01 GMT</pubDate>
+  </item><item>
     <title>Counting Sort</title>
     <link>https://dxing.blog/Algorithms/Counting-Sort</link>
     <guid>https://dxing.blog/Algorithms/Counting-Sort</guid>
@@ -51,20 +63,8 @@
     <title>Z Algorithm</title>
     <link>https://dxing.blog/Algorithms/Z-Algorithm</link>
     <guid>https://dxing.blog/Algorithms/Z-Algorithm</guid>
-    <description><![CDATA[ The Z Algorithm is an algorithm that computes z(0),z(1),\dots,z(n-1) for a string s of length n, where z(i)=\operatorname{lcp}(s,s_is_{i+1}\dots s_{n-1}) in \mathcal{O}(n) time and \mathcal{O}(n) space. ]]></description>
+    <description><![CDATA[ The Z Algorithm is an algorithm that computes z(0),z(1),\dots,z(n-1) for a string s of length n, where z(i)=\left|\operatorname{lcp}\{s,s_is_{i+1}\dots s_{n-1}\}\right| in \mathcal{O}(n) time and \mathcal{O}(n) space. ]]></description>
     <pubDate>Wed, 29 Jul 2026 09:03:41 GMT</pubDate>
-  </item><item>
-    <title>Wavelet Tree</title>
-    <link>https://dxing.blog/Data-Structures/Wavelet-Tree</link>
-    <guid>https://dxing.blog/Data-Structures/Wavelet-Tree</guid>
-    <description><![CDATA[ The Wavelet Tree is a data structure that maintains an array of n integers a_0,a_1,\dots,a_{n-1}\in\{0,1,\dots,2^m-1\} by maintaining the Wavelet Matrix of the array. ]]></description>
-    <pubDate>Wed, 29 Jul 2026 09:03:41 GMT</pubDate>
-  </item><item>
-    <title>Bluestein&#039;s Algorithm</title>
-    <link>https://dxing.blog/Algorithms/Bluestein's-Algorithm</link>
-    <guid>https://dxing.blog/Algorithms/Bluestein's-Algorithm</guid>
-    <description><![CDATA[ Bluestein’s Algorithm is an algorithm that computes f(z^0),f(z^1),\dots,f(z^{m-1}) for a polynomial f(x)=\sum_{i=0}^{n-1}a_ix^i in \mathcal{O}((n+m)\log(n+m)) time and \mathcal{O}(n+m) space. ]]></description>
-    <pubDate>Tue, 28 Jul 2026 02:31:39 GMT</pubDate>
   </item>
     </channel>
   </rss>

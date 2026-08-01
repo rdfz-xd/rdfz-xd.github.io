@@ -24,10 +24,6 @@ tags: [Computer Science]
 >
 > This problem can also be solved by [[Quicksort]] in $\mathcal{O}(n\log n)$ time and $\mathcal{O}(\log n)$ space.
 
-> [!tip]
->
-> This problem can also be solved by [[Quickselect]] in $\mathcal{O}(n^2)$ time and $\mathcal{O}(n)$ space.
-
 ### Algorithm 0
 
 0. Sort $a_0,a_1,\dots,a_{n-2}$ recursively.

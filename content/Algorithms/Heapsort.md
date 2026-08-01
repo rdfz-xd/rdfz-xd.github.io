@@ -24,10 +24,6 @@ tags: [Computer Science]
 >
 > This problem can also be solved by [[Quicksort]] in $\mathcal{O}(n\log n)$ time and $\mathcal{O}(\log n)$ space.
 
-> [!tip]
->
-> This problem can also be solved by [[Quickselect]] in $\mathcal{O}(n^2)$ time and $\mathcal{O}(n)$ space.
-
 ### Algorithm 0
 
 0. Let multiset $S=\{a_0,a_1,\dots,a_{n-1}\}$.
@@ -47,7 +43,7 @@ void heapsort(int n, std::vector<int> &a) {
 
 ### Algorithm 1
 
-Based on [[Algorithm 0]], instead of building a [[Binary Heap]] explicitly, operating directly on the array yields an algorithm that solves the problem in $\mathcal{O}(n\log n)$ time and $\mathcal{O}(1)$ space.
+Based on [[Algorithm 0]], instead of constructing a [[Binary Heap]] explicitly, operating directly on the array yields an algorithm that solves the problem in $\mathcal{O}(n\log n)$ time and $\mathcal{O}(1)$ space.
 
 ```c++
 void heapsort(int n, std::vector<int> &a) {

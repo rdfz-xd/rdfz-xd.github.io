@@ -71,7 +71,7 @@ tags: [Computer Science, Computer Science/Graph Theory]
 Applying the lemma to check if $v$ is a *root* yields an algorithm that solves the problem in $\mathcal{O}(|V|+|E|)$ time and $\mathcal{O}(|V|+|E|)$ space.
 
 ```c++
-std::vector<std::vector<int>> tarjan(int n, int m, const std::vector<int> &u, const std::vector<int> &v) {
+std::vector<std::vector<int>> tarjan_scc(int n, int m, const std::vector<int> &u, const std::vector<int> &v) {
 	std::vector<std::vector<int>> adj(n);
 	for (int i = 0; i < m; i++) {
 		adj[u[i]].push_back(v[i]);

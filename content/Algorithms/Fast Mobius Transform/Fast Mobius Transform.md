@@ -2,7 +2,7 @@
 tags: [Computer Science]
 ---
 
-The [[Fast Mobius Transform]] is an algorithm that computes $f(S)=\sum_{T\subseteq S}g(T)$ for a function $g$ defined on $\mathcal{P}(\{0,1,\dots,n-1\})$ in $\mathcal{O}(n2^n)$ time and $\mathcal{O}(1)$ space.
+The [[Fast Mobius Transform]] is an algorithm that computes $f(S)=\sum_{T\subseteq S}g(T)$ for a function $g$ defined on $2^{\{0,1,\dots,n-1\}}$ in $\mathcal{O}(n2^n)$ time and $\mathcal{O}(1)$ space.
 
 ### Algorithm
 

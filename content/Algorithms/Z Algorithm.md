@@ -4,9 +4,13 @@ tags: [Computer Science, Computer Science/String Theory]
 
 The [[Z Algorithm]] is an algorithm that computes $z(0),z(1),\dots,z(n-1)$ for a string $s$ of length $n$, where
 $$
-z(i)=\operatorname{lcp}(s,s_is_{i+1}\dots s_{n-1})
+z(i)=\left|\operatorname{lcp}\{s,s_is_{i+1}\dots s_{n-1}\}\right|
 $$
 in $\mathcal{O}(n)$ time and $\mathcal{O}(n)$ space.
+
+> [!tip]
+>
+> This problem can also be solved by [[Kasai's Algorithm]] in $\mathcal{O}(n\log n)$ time and $\mathcal{O}(n)$ space.
 
 ### Algorithm 0
 
