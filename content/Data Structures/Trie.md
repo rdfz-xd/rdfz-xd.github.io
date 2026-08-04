@@ -4,14 +4,14 @@ tags: [Computer Science, Computer Science/String Theory]
 
 The [[Trie]] is a data structure that maintains a set $S$ of strings in $\Sigma^*$ by maintaining a deterministic finite automaton that accepts and only accepts strings in $S$.
 
-Specifically, let $P$ be the set of the prefixes of the strings in $S$, $\delta$ be a function in $(P\cup\{q_\perp\})\times\Sigma\to P\cup\{q_\perp\}$ satisfying
+Specifically, let $P$ be the set of the prefixes of the strings in $S$, $\delta$ be a function in $(P\cup\{\perp\})\times\Sigma\to P\cup\{\perp\}$ satisfying
 $$
-\forall s\in P\cup\{q_\perp\},\forall\sigma\in\Sigma,\delta(s,\sigma)=\begin{cases}
+\forall s\in P,\forall\sigma\in\Sigma,\delta(s,\sigma)=\begin{cases}
 s\sigma,&s\sigma\in P\\
-q_\perp,&s\sigma\not\in P
-\end{cases}
+\perp,&s\sigma\not\in P
+\end{cases}\land\forall\sigma\in\Sigma,\delta(\perp,\sigma)=\perp
 $$
-Then it is easy to prove that $M=(P\cup\{q_\perp\},\Sigma,\delta,\varepsilon,S)$ is a deterministic finite automaton that accepts and only accepts strings in $S$.
+Then it is easy to prove that $M=(P\cup\{\perp\},\Sigma,\delta,\varepsilon,S)$ is a deterministic finite automaton that accepts and only accepts strings in $S$.
 
 This requires $\mathcal{O}(|\Sigma|\sum_{s\in S}|s|)$ space.
 

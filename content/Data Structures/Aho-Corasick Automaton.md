@@ -18,7 +18,7 @@ $$
 > \forall s\in\Sigma^*,\arg\max_{t\in E(s)}|t|=\{\delta(\dots\delta(\delta(\varepsilon,s_0),s_1)\dots,s_{|s|-1})\}
 > $$
 
-Let $F=\{s:s\in P\land\exist t\in S,t=s_{|s|-|t|}s_{|s|-|t|+1}\dots s_{|s|-1}\}$, then applying the lemma yields that $M=(P,\Sigma,\delta,\varepsilon,F)$ is a deterministic finite automaton that accepts and only accepts strings containing a string from $S$ as a suffix.
+Applying the lemma yields that $M=(P,\Sigma,\delta,\varepsilon,\{s:s\in P\land\exist t\in S,t=s_{|s|-|t|}s_{|s|-|t|+1}\dots s_{|s|-1}\})$ is a deterministic finite automaton that accepts and only accepts strings containing a string from $S$ as a suffix.
 
 This requires $\mathcal{O}(|\Sigma|\sum_{s\in S}|s|)$ space.
 
@@ -27,6 +27,8 @@ This requires $\mathcal{O}(|\Sigma|\sum_{s\in S}|s|)$ space.
 [[Aho-Corasick Automaton#Build]] builds an [[Aho-Corasick Automaton]] for $S$ in $\mathcal{O}(|\Sigma|\sum_{s\in S}|s|)$ time and $\mathcal{O}(\sum_{s\in S}|s|)$ space.
 
 ### Algorithm
+
+0. Build a [[Trie]] for $S$.
 
 > [!info] Lemma
 >
@@ -47,9 +49,7 @@ This requires $\mathcal{O}(|\Sigma|\sum_{s\in S}|s|)$ space.
 > \forall s\in P\setminus\{\varepsilon\},\forall\sigma\in\Sigma,s\sigma\in P\Rightarrow \phi(s\sigma)=\delta(\phi(s),\sigma)
 > $$
 
-0. Build a [[Trie]] for $S$.
-
-1. For each prefix $s$ in increasing order of length, apply the lemmas to find the $\delta$ and $\phi$ of $s$.
+1. For each prefix $s$ in increasing order of length, apply the lemmas to find $\delta(s,\sigma)$ and $\phi(s\sigma)$ for each $\sigma$ in $\Sigma$.
 
 This algorithm solves the problem in $\mathcal{O}(|\Sigma|\sum_{s\in S}|s|)$ time and $\mathcal{O}(\sum_{s\in S}|s|)$ space.
 

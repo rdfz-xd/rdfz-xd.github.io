@@ -6,65 +6,65 @@
       <description>Last 10 notes on Dong Xing&#039;s Blog</description>
       <generator>Quartz -- quartz.jzhao.xyz</generator>
       <item>
-    <title>Kasai&#039;s Algorithm</title>
-    <link>https://dxing.blog/Algorithms/Kasai's-Algorithm</link>
-    <guid>https://dxing.blog/Algorithms/Kasai's-Algorithm</guid>
-    <description><![CDATA[ Kasai’s Algorithm is an algorithm that computes h(0),h(1),\dots,h(n-2) for a string of length n, where h(i)=\left|\operatorname{lcp}\{s_{a_i}s_{a_i+1}\dots s_{n-1},s_{a_{i+1}}s_{a_{i+1}+1}\dots s_{n-1}\}\right| where a_i denotes the starting index of the i-th lexicographically smallest suffix of s, ... ]]></description>
-    <pubDate>Sat, 01 Aug 2026 02:25:40 GMT</pubDate>
+    <title>Knuth-Morris-Pratt Automaton</title>
+    <link>https://dxing.blog/Data-Structures/Knuth-Morris-Pratt-Automaton</link>
+    <guid>https://dxing.blog/Data-Structures/Knuth-Morris-Pratt-Automaton</guid>
+    <description><![CDATA[ The Knuth-Morris-Pratt Automaton is a data structure that maintains a string s in \Sigma^* by maintaining a deterministic finite automaton that accepts and only accepts strings containing s as a suffix. ]]></description>
+    <pubDate>Tue, 04 Aug 2026 03:54:53 GMT</pubDate>
   </item><item>
-    <title>Manber-Myers Algorithm</title>
-    <link>https://dxing.blog/Algorithms/Manber-Myers-Algorithm</link>
-    <guid>https://dxing.blog/Algorithms/Manber-Myers-Algorithm</guid>
-    <description><![CDATA[ The Manber-Myers Algorithm is an algorithm that finds the lexicographical order of the suffixes of a string s of length n in \mathcal{O}(n\log n) time and \mathcal{O}(n) space. ]]></description>
-    <pubDate>Fri, 31 Jul 2026 01:17:01 GMT</pubDate>
+    <title>Bubble Sort</title>
+    <link>https://dxing.blog/Algorithms/Bubble-Sort</link>
+    <guid>https://dxing.blog/Algorithms/Bubble-Sort</guid>
+    <description><![CDATA[ Bubble Sort is an algorithm that sorts an array of n numbers a_0,a_1,\dots,a_{n-1} in non-decreasing order in \mathcal{O}(n^2) time and \mathcal{O}(1) space. ]]></description>
+    <pubDate>Sat, 01 Aug 2026 03:59:16 GMT</pubDate>
   </item><item>
     <title>Counting Sort</title>
     <link>https://dxing.blog/Algorithms/Counting-Sort</link>
     <guid>https://dxing.blog/Algorithms/Counting-Sort</guid>
     <description><![CDATA[ Counting Sort is an algorithm that sorts an array of n integers a_0,a_1,\dots,a_{n-1}\in\{0,1,\dots,m-1\} in non-decreasing order in \mathcal{O}(n+m) time and \mathcal{O}(m) space. ]]></description>
-    <pubDate>Wed, 29 Jul 2026 09:03:41 GMT</pubDate>
+    <pubDate>Sat, 01 Aug 2026 03:59:16 GMT</pubDate>
+  </item><item>
+    <title>Fast Mobius Transform</title>
+    <link>https://dxing.blog/Algorithms/Fast-Mobius-Transform/Fast-Mobius-Transform</link>
+    <guid>https://dxing.blog/Algorithms/Fast-Mobius-Transform/Fast-Mobius-Transform</guid>
+    <description><![CDATA[ The Fast Mobius Transform is an algorithm that computes f(S)=\sum_{T\subseteq S}g(T) for a function g defined on 2^{\{0,1,\dots,n-1\}} in \mathcal{O}(n2^n) time and \mathcal{O}(1) space. ]]></description>
+    <pubDate>Sat, 01 Aug 2026 03:59:16 GMT</pubDate>
+  </item><item>
+    <title>Heapsort</title>
+    <link>https://dxing.blog/Algorithms/Heapsort</link>
+    <guid>https://dxing.blog/Algorithms/Heapsort</guid>
+    <description><![CDATA[ Heapsort is an algorithm that sorts an array of n numbers a_0,a_1,\dots,a_{n-1} in non-decreasing order in \mathcal{O}(n\log n) time and \mathcal{O}(1) space. ]]></description>
+    <pubDate>Sat, 01 Aug 2026 03:59:16 GMT</pubDate>
   </item><item>
     <title>Insertion Sort</title>
     <link>https://dxing.blog/Algorithms/Insertion-Sort</link>
     <guid>https://dxing.blog/Algorithms/Insertion-Sort</guid>
     <description><![CDATA[ Insertion Sort is an algorithm that sorts an array of n numbers a_0,a_1,\dots,a_{n-1} in non-decreasing order in \mathcal{O}(n^2) time and \mathcal{O}(1) space. ]]></description>
-    <pubDate>Wed, 29 Jul 2026 09:03:41 GMT</pubDate>
+    <pubDate>Sat, 01 Aug 2026 03:59:16 GMT</pubDate>
   </item><item>
-    <title>Knuth-Morris-Pratt Algorithm</title>
-    <link>https://dxing.blog/Algorithms/Knuth-Morris-Pratt-Algorithm</link>
-    <guid>https://dxing.blog/Algorithms/Knuth-Morris-Pratt-Algorithm</guid>
-    <description><![CDATA[ The Knuth-Morris-Pratt Algorithm is an algorithm that computes \pi(1),\pi(2),\dots,\pi(n) for a string s of length n, where \pi(i)=\max\{j:j&lt;i\land s_0s_1\dots s_{j-1}=s_{i-j}s_{i-j+1}\dots s_{i-1}\} in \mathcal{O}(n) time and \mathcal{O}(n) space. ]]></description>
-    <pubDate>Wed, 29 Jul 2026 09:03:41 GMT</pubDate>
+    <title>Kasai&#039;s Algorithm</title>
+    <link>https://dxing.blog/Algorithms/Kasai's-Algorithm</link>
+    <guid>https://dxing.blog/Algorithms/Kasai's-Algorithm</guid>
+    <description><![CDATA[ Kasai’s Algorithm is an algorithm that computes h(0),h(1),\dots,h(n-2) for a string of length n, where h(i)=\left|\operatorname{lcp}\{s_{a_i}s_{a_i+1}\dots s_{n-1},s_{a_{i+1}}s_{a_{i+1}+1}\dots s_{n-1}\}\right| where a_i denotes the starting index of the i-th lexicographically smallest suffix of s, ... ]]></description>
+    <pubDate>Sat, 01 Aug 2026 03:59:16 GMT</pubDate>
   </item><item>
-    <title>Manacher&#039;s Algorithm</title>
-    <link>https://dxing.blog/Algorithms/Manacher's-Algorithm</link>
-    <guid>https://dxing.blog/Algorithms/Manacher's-Algorithm</guid>
-    <description><![CDATA[ Manacher’s Algorithm is an algorithm that computes d(0),d(1),\dots,d(n-1) for a string s of length n, where d(i)=\max\{j:i-j\ge0\land i+j&lt;n\land s_is_{i-1}\dots s_{i-j}=s_is_{i+1}\dots s_{i+j}\} in \mathcal{O}(n) time and \mathcal{O}(n) space. ]]></description>
-    <pubDate>Wed, 29 Jul 2026 09:03:41 GMT</pubDate>
+    <title>Manber-Myers Algorithm</title>
+    <link>https://dxing.blog/Algorithms/Manber-Myers-Algorithm</link>
+    <guid>https://dxing.blog/Algorithms/Manber-Myers-Algorithm</guid>
+    <description><![CDATA[ The Manber-Myers Algorithm is an algorithm that finds the lexicographical order of the suffixes of a string s of length n in \mathcal{O}(n\log n) time and \mathcal{O}(n) space. ]]></description>
+    <pubDate>Sat, 01 Aug 2026 03:59:16 GMT</pubDate>
   </item><item>
-    <title>Quickselect</title>
-    <link>https://dxing.blog/Algorithms/Quickselect</link>
-    <guid>https://dxing.blog/Algorithms/Quickselect</guid>
-    <description><![CDATA[ Quickselect is an algorithm that finds the k-th smallest element in an array of n numbers a_0,a_1,\dots,a_{n-1} in \mathcal{O}(n) time and \mathcal{O}(n) space. ]]></description>
-    <pubDate>Wed, 29 Jul 2026 09:03:41 GMT</pubDate>
+    <title>Merge Sort</title>
+    <link>https://dxing.blog/Algorithms/Merge-Sort</link>
+    <guid>https://dxing.blog/Algorithms/Merge-Sort</guid>
+    <description><![CDATA[ Merge Sort is an algorithm that sorts an array of n numbers a_0,a_1,\dots,a_{n-1} in non-decreasing order in \mathcal{O}(n\log n) time and \mathcal{O}(n) space. ]]></description>
+    <pubDate>Sat, 01 Aug 2026 03:59:16 GMT</pubDate>
   </item><item>
     <title>Quicksort</title>
     <link>https://dxing.blog/Algorithms/Quicksort</link>
     <guid>https://dxing.blog/Algorithms/Quicksort</guid>
     <description><![CDATA[ Quicksort is an algorithm that sorts an array of n numbers a_0,a_1,\dots,a_{n-1} in non-decreasing order in \mathcal{O}(n\log n) time and \mathcal{O}(\log n) space. ]]></description>
-    <pubDate>Wed, 29 Jul 2026 09:03:41 GMT</pubDate>
-  </item><item>
-    <title>Radix Sort</title>
-    <link>https://dxing.blog/Algorithms/Radix-Sort</link>
-    <guid>https://dxing.blog/Algorithms/Radix-Sort</guid>
-    <description><![CDATA[ Radix Sort is an algorithm that sorts an array of n integers a_0,a_1,\dots,a_{n-1}\in\{0,1,\dots,m^d-1\} in non-decreasing order in \mathcal{O}(d(n+m)) time and \mathcal{O}(n+m) space. ]]></description>
-    <pubDate>Wed, 29 Jul 2026 09:03:41 GMT</pubDate>
-  </item><item>
-    <title>Z Algorithm</title>
-    <link>https://dxing.blog/Algorithms/Z-Algorithm</link>
-    <guid>https://dxing.blog/Algorithms/Z-Algorithm</guid>
-    <description><![CDATA[ The Z Algorithm is an algorithm that computes z(0),z(1),\dots,z(n-1) for a string s of length n, where z(i)=\left|\operatorname{lcp}\{s,s_is_{i+1}\dots s_{n-1}\}\right| in \mathcal{O}(n) time and \mathcal{O}(n) space. ]]></description>
-    <pubDate>Wed, 29 Jul 2026 09:03:41 GMT</pubDate>
+    <pubDate>Sat, 01 Aug 2026 03:59:16 GMT</pubDate>
   </item>
     </channel>
   </rss>
