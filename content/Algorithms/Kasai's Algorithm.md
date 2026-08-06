@@ -1,5 +1,5 @@
 ---
-tags: [Computer Science, Computer Science/String Theory]
+tags: [Computer Science, Computer Science/Stringology]
 ---
 
 [[Kasai's Algorithm]] is an algorithm that computes $h(0),h(1),\dots,h(n-2)$ for a string of length $n$, where

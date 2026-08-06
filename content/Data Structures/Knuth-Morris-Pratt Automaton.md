@@ -1,21 +1,21 @@
 ---
-tags: [Computer Science, Computer Science/String Theory]
+tags: [Computer Science, Computer Science/Automata Theory, Computer Science/Stringology]
 ---
 
 The [[Knuth-Morris-Pratt Automaton]] is a data structure that maintains a string $s$ in $\Sigma^*$ by maintaining a deterministic finite automaton that accepts and only accepts strings containing $s$ as a suffix.
 
 Specifically, let
 $$
-E(t)=\{i:s_0s_1\dots s_{i-1}=t_{|t|-i}t_{|t|-i+1}\dots t_{|t|-1}\}
+E(t)=\{i:i\in\{0,1,\dots,\min\{|s|,|t|\}\}\land s_0s_1\dots s_{i-1}=t_{|t|-i}t_{|t|-i+1}\dots t_{|t|-1}\}
 $$
-and let $\delta$ be a function in $\{0,1,\dots,|s|\}\times\Sigma\to\{0,1,\dots,|s|\}$ satisfying
+and let $\delta$ be a function in $\{0,1,\dots,|s|\}\times\Sigma\to\{0,1,\dots,|s|\}$ such that
 $$
 \forall i\in\{0,1,\dots,|s|\},\forall\sigma\in\Sigma,\delta(i,\sigma)=\max E(s_0s_1\dots s_{i-1}\sigma)
 $$
 
 > [!info] Lemma
 > $$
-> \forall t\in\Sigma^*,\max E(t)=\delta(\dots\delta(\delta(0,t_0),t_1)\dots,t_{|t|-1})
+> \forall t\in\Sigma^*,\delta(\dots\delta(\delta(0,t_0),t_1)\dots,t_{|t|-1})=\max E(t)
 > $$
 
 Applying the lemma yields that $M=(\{0,1,\dots,|s|\},\Sigma,\delta,0,\{|s|\})$ is a deterministic finite automaton that accepts and only accepts strings containing $s$ as a suffix.
@@ -34,11 +34,11 @@ This requires $\mathcal{O}(|\Sigma||s|)$ space.
 > $$
 > \forall i\in\{1,2,\dots,|s|\},\forall\sigma\in\Sigma,\delta(i,\sigma)=\begin{cases}
 > i+1,&i<|s|\land\sigma=s_i\\
-> \delta(\pi(i),\sigma),&i=|s|\lor\sigma\ne s_i
+> \delta(\pi(i),\sigma),&\neg(i<|s|\land\sigma=s_i)
 > \end{cases}
 > $$
 
-1. For $i=0,1,\dots,|s|$, apply the lemma to find $\delta(i,\sigma)$ for each $\sigma$ in $\Sigma$.
+1. For $i=1,2\dots,|s|$, apply the lemma to find $\delta(i,\sigma)$ for each $\sigma$ in $\Sigma$.
 
 This algorithm solves the problem in $\mathcal{O}(|\Sigma||s|)$ time and $\mathcal{O}(|s|)$ space.
 
@@ -58,7 +58,7 @@ void build(const std::string &s) {
 
 ## Find
 
-[[Knuth-Morris-Pratt Automaton#Find]] checks if $s=t_{|t|-|s|}t_{|t|-|s|+1}\dots t_{|t|-1}$ in $\mathcal{O}(|t|)$ time and $\mathcal{O}(1)$ space.
+[[Knuth-Morris-Pratt Automaton#Find]] checks if $t$ contains $s$ as a suffix in $\mathcal{O}(|t|)$ time and $\mathcal{O}(1)$ space.
 
 ### Algorithm
 
@@ -73,4 +73,3 @@ bool find(const std::string &t) {
 	return o == n;
 }
 ```
-

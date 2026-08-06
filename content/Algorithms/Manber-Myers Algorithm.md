@@ -1,5 +1,5 @@
 ---
-tags: [Computer Science, Computer Science/String Theory]
+tags: [Computer Science, Computer Science/Stringology]
 ---
 
 The [[Manber-Myers Algorithm]] is an algorithm that finds the lexicographical order of the suffixes of a string $s$ of length $n$ in $\mathcal{O}(n\log n)$ time and $\mathcal{O}(n)$ space.

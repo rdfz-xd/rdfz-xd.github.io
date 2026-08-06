@@ -8,7 +8,7 @@ The **Wavelet Matrix** $W$ is an $m\times n$ matrix constructed in the following
 
 1. Let $A_m=a$.
 2. For $i=m-1,m-2,\dots,0$, $A_i$ is obtained by stably sorting $A_{i+1}$ based on the $i$-th bit in the binary representation.
-3. Set $W_{i,j}$ to $1$ if the $i$-th bit of $A_{i+1,j}$ is $0$, and $0$ otherwise.
+3. Set $W_{i,j}$ to $1$ if the $i$-th bit of $A_{i+1,j}$ is $0$, or $0$ otherwise.
 
 In addition,
 $$

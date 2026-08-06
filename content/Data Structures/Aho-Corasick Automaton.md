@@ -1,24 +1,24 @@
 ---
-tags: [Computer Science, Computer Science/String Theory]
+tags: [Computer Science, Computer Science/Automata Theory, Computer Science/Stringology]
 ---
 
 The [[Aho-Corasick Automaton]] is a data structure that maintains a set $S$ of strings in $\Sigma^*$ by maintaining a deterministic finite automaton that accepts and only accepts strings containing a string from $S$ as a suffix.
 
 Specifically, let $P$ be the set of the prefixes of the strings in $S$, and let
 $$
-E(s)=\{t:t\in P\land t=s_{|s|-|t|}s_{|s|-|t|+1}\dots s_{|s|-1}\}
+E(s)=\{t:t\in P\land|t|\le|s|\land t=s_{|s|-|t|}s_{|s|-|t|+1}\dots s_{|s|-1}\}
 $$
-and let $\delta$ be a function in $P\times\Sigma\to P$ satisfying
+and let $\delta$ be a function in $P\times\Sigma\to P$ such that
 $$
 \forall s\in P,\forall\sigma\in\Sigma,\delta(s,\sigma)\in\arg\max_{t\in E(s\sigma)}|t|
 $$
 
 > [!info] Lemma
 > $$
-> \forall s\in\Sigma^*,\arg\max_{t\in E(s)}|t|=\{\delta(\dots\delta(\delta(\varepsilon,s_0),s_1)\dots,s_{|s|-1})\}
+> \forall s\in\Sigma^*,\delta(\dots\delta(\delta(\varepsilon,s_0),s_1)\dots,s_{|s|-1})\in\arg\max_{t\in E(s)}|t|
 > $$
 
-Applying the lemma yields that $M=(P,\Sigma,\delta,\varepsilon,\{s:s\in P\land\exist t\in S,t=s_{|s|-|t|}s_{|s|-|t|+1}\dots s_{|s|-1}\})$ is a deterministic finite automaton that accepts and only accepts strings containing a string from $S$ as a suffix.
+Applying the lemma yields that $M=(P,\Sigma,\delta,\varepsilon,\{s:s\in P\land\exist t\in S,|t|\le|s|\land t=s_{|s|-|t|}s_{|s|-|t|+1}\dots s_{|s|-1}\})$ is a deterministic finite automaton that accepts and only accepts strings containing a string from $S$ as a suffix.
 
 This requires $\mathcal{O}(|\Sigma|\sum_{s\in S}|s|)$ space.
 
@@ -49,20 +49,22 @@ This requires $\mathcal{O}(|\Sigma|\sum_{s\in S}|s|)$ space.
 > \forall s\in P\setminus\{\varepsilon\},\forall\sigma\in\Sigma,s\sigma\in P\Rightarrow \phi(s\sigma)=\delta(\phi(s),\sigma)
 > $$
 
-1. For each prefix $s$ in increasing order of length, apply the lemmas to find $\delta(s,\sigma)$ and $\phi(s\sigma)$ for each $\sigma$ in $\Sigma$.
+1. For each non-empty prefix $s$ in increasing order of length, apply the lemmas to find $\delta(s,\sigma)$ and $\phi(s\sigma)$ for each $\sigma$ in $\Sigma$.
 
 This algorithm solves the problem in $\mathcal{O}(|\Sigma|\sum_{s\in S}|s|)$ time and $\mathcal{O}(\sum_{s\in S}|s|)$ space.
 
 ```c++
 void build(int n, const std::vector<std::string> &s) {
 	next.assign(2, {});
-	next[0].fill(1);
-	f.assign(2, false);
+	for (char c : alphabet) {
+		next[0][c] = 1;
+	}
 
+	f.assign(2, false);
 	for (int i = 0; i < n; i++) {
 		int o = 1;
 		for (char c : s[i]) {
-			if (!next[o][c]) {
+			if (!next[o].contains(c)) {
 				next[o][c] = next.size();
 				next.emplace_back();
 				f.push_back(false);
@@ -72,17 +74,18 @@ void build(int n, const std::vector<std::string> &s) {
 		f[o] = true;
 	}
 
-	std::vector fail(next.size(), 0);
-
+	std::vector<int> fail(next.size());
+	fail[1] = 0;
 	std::queue<int> q;
 	q.push(1);
+
 	while (!q.empty()) {
 		int o = q.front();
 		q.pop();
 
 		f[o] = f[o] || f[fail[o]];
 		for (char c : alphabet) {
-			if (next[o][c]) {
+			if (next[o].contains(c)) {
 				fail[next[o][c]] = next[fail[o]][c];
 				q.push(next[o][c]);
 			} else {
@@ -95,7 +98,7 @@ void build(int n, const std::vector<std::string> &s) {
 
 ## Find
 
-[[Find]] checks if $\exist t\in S,t=s_{|s|-|t|}s_{|s|-|t|+1}\dots s_{|s|-1}$ in $\mathcal{O}(|s|)$ time and $\mathcal{O}(1)$ space.
+[[Find]] checks if $t$ contains a string from $S$ as a suffix in $\mathcal{O}(|s|)$ time and $\mathcal{O}(1)$ space.
 
 ### Algorithm
 

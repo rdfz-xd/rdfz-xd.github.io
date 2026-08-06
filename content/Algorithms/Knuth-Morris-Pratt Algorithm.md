@@ -1,10 +1,10 @@
 ---
-tags: [Computer Science, Computer Science/String Theory]
+tags: [Computer Science, Computer Science/Stringology]
 ---
 
 The [[Knuth-Morris-Pratt Algorithm]] is an algorithm that computes $\pi(1),\pi(2),\dots,\pi(n)$ for a string $s$ of length $n$, where
 $$
-\pi(i)=\max\{j:j<i\land s_0s_1\dots s_{j-1}=s_{i-j}s_{i-j+1}\dots s_{i-1}\}
+\pi(i)=\max\{j:j\in\{0,1,\dots,i-1\}\land s_0s_1\dots s_{j-1}=s_{i-j}s_{i-j+1}\dots s_{i-1}\}
 $$
 
 in $\mathcal{O}(n)$ time and $\mathcal{O}(n)$ space.
@@ -81,12 +81,12 @@ std::vector<int> knuth_morris_pratt(int n, const std::string &s) {
 >
 > Let $\pi(0)=0$, then
 > $$
-> \{j:j<i\land s_0s_1\dots s_{j-1}=s_{i-j}s_{i-j+1}\dots s_{i-1}\}=\{\pi(i),\pi(\pi(i)),\pi(\pi(\pi(i))),\dots\}
+> \{j:j\in\{0,1,\dots,i-1\}\land s_0s_1\dots s_{j-1}=s_{i-j}s_{i-j+1}\dots s_{i-1}\}=\{\pi(i),\pi(\pi(i)),\pi(\pi(\pi(i))),\dots\}
 > $$
 >
 > > [!note]- Proof
 > >
-> > Let $S=$ $\{j:j<i\land s_0s_1\dots s_{j-1}=s_{i-j}s_{i-j+1}\dots s_{i-1}\}$, and let $a_j$ denote the $j$-th largest element in $S$.
+> > Let $S=$ $\{j:j\in\{0,1,\dots,i-1\}\land s_0s_1\dots s_{j-1}=s_{i-j}s_{i-j+1}\dots s_{i-1}\}$, and let $a_j$ denote the $j$-th largest element in $S$.
 > >
 > > Then, for each $j$ in $\{0,1,\dots,|S|-2\}$, since
 > > $$
@@ -95,8 +95,8 @@ std::vector<int> knuth_morris_pratt(int n, const std::string &s) {
 > > it follows that
 > > $$
 > > \begin{align}
-> > a_{j+1}&=\max\{k:k<a_j\land s_0s_1\dots s_{k-1}=s_{i-k}s_{i-k+1}\dots s_{i-1}\}\\
-> > &=\max\{k:k<a_j\land s_0s_1\dots s_{k-1}=s_{a_j-k}s_{a_j-k+1}\dots s_{a_j-1}\}\\
+> > a_{j+1}&=\max\{k:k\in\{0,1,\dots,a_j-1\}\land s_0s_1\dots s_{k-1}=s_{i-k}s_{i-k+1}\dots s_{i-1}\}\\
+> > &=\max\{k:k\in\{0,1,\dots,a_j-1\}\land s_0s_1\dots s_{k-1}=s_{a_j-k}s_{a_j-k+1}\dots s_{a_j-1}\}\\
 > > &=\pi(a_j)
 > > \end{align}
 > > $$

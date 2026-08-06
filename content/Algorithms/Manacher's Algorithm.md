@@ -1,10 +1,10 @@
 ---
-tags: [Computer Science, Computer Science/String Theory]
+tags: [Computer Science, Computer Science/Stringology]
 ---
 
 [[Manacher's Algorithm]] is an algorithm that computes $d(0),d(1),\dots,d(n-1)$ for a string $s$ of length $n$, where
 $$
-d(i)=\max\{j:i-j\ge0\land i+j<n\land s_is_{i-1}\dots s_{i-j}=s_is_{i+1}\dots s_{i+j}\}
+d(i)=\max\{j:j\in\{0,1,\dots,\min\{i,n-i-1\}\}\land s_is_{i-1}\dots s_{i-j}=s_is_{i+1}\dots s_{i+j}\}
 $$
 in $\mathcal{O}(n)$ time and $\mathcal{O}(n)$ space.
 

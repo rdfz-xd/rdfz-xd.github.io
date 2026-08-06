@@ -6,11 +6,29 @@
       <description>Last 10 notes on Dong Xing&#039;s Blog</description>
       <generator>Quartz -- quartz.jzhao.xyz</generator>
       <item>
+    <title>Subsequence Automaton</title>
+    <link>https://dxing.blog/Data-Structures/Subsequence-Automaton</link>
+    <guid>https://dxing.blog/Data-Structures/Subsequence-Automaton</guid>
+    <description><![CDATA[ The Subsequence Automaton is a data structure that maintains a string s in \Sigma^* by maintaining a deterministic finite automaton that accepts and only accepts subsequences of s. ]]></description>
+    <pubDate>Thu, 06 Aug 2026 02:20:53 GMT</pubDate>
+  </item><item>
+    <title>Aho-Corasick Automaton</title>
+    <link>https://dxing.blog/Data-Structures/Aho-Corasick-Automaton</link>
+    <guid>https://dxing.blog/Data-Structures/Aho-Corasick-Automaton</guid>
+    <description><![CDATA[ The Aho-Corasick Automaton is a data structure that maintains a set S of strings in \Sigma^* by maintaining a deterministic finite automaton that accepts and only accepts strings containing a string from S as a suffix. ]]></description>
+    <pubDate>Tue, 04 Aug 2026 04:07:51 GMT</pubDate>
+  </item><item>
     <title>Knuth-Morris-Pratt Automaton</title>
     <link>https://dxing.blog/Data-Structures/Knuth-Morris-Pratt-Automaton</link>
     <guid>https://dxing.blog/Data-Structures/Knuth-Morris-Pratt-Automaton</guid>
     <description><![CDATA[ The Knuth-Morris-Pratt Automaton is a data structure that maintains a string s in \Sigma^* by maintaining a deterministic finite automaton that accepts and only accepts strings containing s as a suffix. ]]></description>
-    <pubDate>Tue, 04 Aug 2026 03:54:53 GMT</pubDate>
+    <pubDate>Tue, 04 Aug 2026 04:07:51 GMT</pubDate>
+  </item><item>
+    <title>Trie</title>
+    <link>https://dxing.blog/Data-Structures/Trie</link>
+    <guid>https://dxing.blog/Data-Structures/Trie</guid>
+    <description><![CDATA[ The Trie is a data structure that maintains a set S of strings in \Sigma^* by maintaining a deterministic finite automaton that accepts and only accepts strings in S. ]]></description>
+    <pubDate>Tue, 04 Aug 2026 04:07:51 GMT</pubDate>
   </item><item>
     <title>Bubble Sort</title>
     <link>https://dxing.blog/Algorithms/Bubble-Sort</link>
@@ -46,24 +64,6 @@
     <link>https://dxing.blog/Algorithms/Kasai's-Algorithm</link>
     <guid>https://dxing.blog/Algorithms/Kasai's-Algorithm</guid>
     <description><![CDATA[ Kasai’s Algorithm is an algorithm that computes h(0),h(1),\dots,h(n-2) for a string of length n, where h(i)=\left|\operatorname{lcp}\{s_{a_i}s_{a_i+1}\dots s_{n-1},s_{a_{i+1}}s_{a_{i+1}+1}\dots s_{n-1}\}\right| where a_i denotes the starting index of the i-th lexicographically smallest suffix of s, ... ]]></description>
-    <pubDate>Sat, 01 Aug 2026 03:59:16 GMT</pubDate>
-  </item><item>
-    <title>Manber-Myers Algorithm</title>
-    <link>https://dxing.blog/Algorithms/Manber-Myers-Algorithm</link>
-    <guid>https://dxing.blog/Algorithms/Manber-Myers-Algorithm</guid>
-    <description><![CDATA[ The Manber-Myers Algorithm is an algorithm that finds the lexicographical order of the suffixes of a string s of length n in \mathcal{O}(n\log n) time and \mathcal{O}(n) space. ]]></description>
-    <pubDate>Sat, 01 Aug 2026 03:59:16 GMT</pubDate>
-  </item><item>
-    <title>Merge Sort</title>
-    <link>https://dxing.blog/Algorithms/Merge-Sort</link>
-    <guid>https://dxing.blog/Algorithms/Merge-Sort</guid>
-    <description><![CDATA[ Merge Sort is an algorithm that sorts an array of n numbers a_0,a_1,\dots,a_{n-1} in non-decreasing order in \mathcal{O}(n\log n) time and \mathcal{O}(n) space. ]]></description>
-    <pubDate>Sat, 01 Aug 2026 03:59:16 GMT</pubDate>
-  </item><item>
-    <title>Quicksort</title>
-    <link>https://dxing.blog/Algorithms/Quicksort</link>
-    <guid>https://dxing.blog/Algorithms/Quicksort</guid>
-    <description><![CDATA[ Quicksort is an algorithm that sorts an array of n numbers a_0,a_1,\dots,a_{n-1} in non-decreasing order in \mathcal{O}(n\log n) time and \mathcal{O}(\log n) space. ]]></description>
     <pubDate>Sat, 01 Aug 2026 03:59:16 GMT</pubDate>
   </item>
     </channel>
