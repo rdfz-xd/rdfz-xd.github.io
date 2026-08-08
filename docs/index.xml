@@ -6,6 +6,12 @@
       <description>Last 10 notes on Dong Xing&#039;s Blog</description>
       <generator>Quartz -- quartz.jzhao.xyz</generator>
       <item>
+    <title>Monotonic Queue</title>
+    <link>https://dxing.blog/Data-Structures/Monotonic-Queue</link>
+    <guid>https://dxing.blog/Data-Structures/Monotonic-Queue</guid>
+    <description><![CDATA[ The Monotonic Queue is a data structure that maintains an array of n numbers a_0,a_1,\dots,a_{n-1} by maintaining S=\{i:i\in\{0,1,\dots,n-1\}\land\forall j\in\{i+1,i+2,\dots,n-1\},a_i\ge a_j\} This requires \mathcal{O}(n) space. ]]></description>
+    <pubDate>Sat, 08 Aug 2026 03:37:20 GMT</pubDate>
+  </item><item>
     <title>Kasai&#039;s Algorithm</title>
     <link>https://dxing.blog/Algorithms/Kasai's-Algorithm</link>
     <guid>https://dxing.blog/Algorithms/Kasai's-Algorithm</guid>
@@ -58,12 +64,6 @@
     <link>https://dxing.blog/Data-Structures/Subsequence-Automaton</link>
     <guid>https://dxing.blog/Data-Structures/Subsequence-Automaton</guid>
     <description><![CDATA[ The Subsequence Automaton is a data structure that maintains a string s in \Sigma^* by maintaining a deterministic finite automaton that accepts and only accepts subsequences of s. ]]></description>
-    <pubDate>Thu, 06 Aug 2026 02:41:29 GMT</pubDate>
-  </item><item>
-    <title>Trie</title>
-    <link>https://dxing.blog/Data-Structures/Trie</link>
-    <guid>https://dxing.blog/Data-Structures/Trie</guid>
-    <description><![CDATA[ The Trie is a data structure that maintains a set S of strings in \Sigma^* by maintaining a deterministic finite automaton that accepts and only accepts strings in S. ]]></description>
     <pubDate>Thu, 06 Aug 2026 02:41:29 GMT</pubDate>
   </item>
     </channel>

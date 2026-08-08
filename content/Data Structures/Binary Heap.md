@@ -29,24 +29,6 @@ void push(int x) {
 }
 ~~~
 
-## Top
-
-[[Binary Heap#Top]] finds $\max S$ in $\mathcal{O}(1)$ time and $\mathcal{O}(1)$ space.
-
-### Algorithm
-
-> [!info] Lemma
->
-> The element in the root is $\max S$.
-
-Applying the lemma to find $\max S$ yields an algorithm that solves the problem in $\mathcal{O}(1)$ time and $\mathcal{O}(1)$ space.
-
-~~~c++
-int top() {
-	return a[1];
-}
-~~~
-
 ## Pop
 
 [[Binary Heap#Pop]] updates $S$ to $S\setminus\{\max S\}$ in $\mathcal{O}(\log|S|)$ time and $\mathcal{O}(1)$ space.
@@ -72,5 +54,23 @@ void pop() {
 			break;
 		}
 	}
+}
+~~~
+
+## Top
+
+[[Binary Heap#Top]] finds $\max S$ in $\mathcal{O}(1)$ time and $\mathcal{O}(1)$ space.
+
+### Algorithm
+
+> [!info] Lemma
+>
+> The element in the root is $\max S$.
+
+Applying the lemma to find $\max S$ yields an algorithm that solves the problem in $\mathcal{O}(1)$ time and $\mathcal{O}(1)$ space.
+
+~~~c++
+int top() {
+	return a[1];
 }
 ~~~
