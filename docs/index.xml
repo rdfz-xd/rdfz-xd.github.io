@@ -6,11 +6,35 @@
       <description>Last 10 notes on Dong Xing&#039;s Blog</description>
       <generator>Quartz -- quartz.jzhao.xyz</generator>
       <item>
+    <title>Quickselect</title>
+    <link>https://dxing.blog/Algorithms/Quickselect</link>
+    <guid>https://dxing.blog/Algorithms/Quickselect</guid>
+    <description><![CDATA[ Quickselect is an algorithm that finds the k-th smallest element in an array of n numbers a_0,a_1,\dots,a_{n-1} in \mathcal{O}(n) time and \mathcal{O}(n) space. ]]></description>
+    <pubDate>Sat, 08 Aug 2026 03:59:40 GMT</pubDate>
+  </item><item>
+    <title>Quicksort</title>
+    <link>https://dxing.blog/Algorithms/Quicksort</link>
+    <guid>https://dxing.blog/Algorithms/Quicksort</guid>
+    <description><![CDATA[ Quicksort is an algorithm that sorts an array of n numbers a_0,a_1,\dots,a_{n-1} in non-decreasing order in \mathcal{O}(n\log n) time and \mathcal{O}(\log n) space. ]]></description>
+    <pubDate>Sat, 08 Aug 2026 03:59:40 GMT</pubDate>
+  </item><item>
+    <title>Binary Heap</title>
+    <link>https://dxing.blog/Data-Structures/Binary-Heap</link>
+    <guid>https://dxing.blog/Data-Structures/Binary-Heap</guid>
+    <description><![CDATA[ The Binary Heap is a data structure that maintains a multiset S of numbers by maintaining a complete binary tree. ]]></description>
+    <pubDate>Sat, 08 Aug 2026 03:59:40 GMT</pubDate>
+  </item><item>
+    <title>Cartesian Tree</title>
+    <link>https://dxing.blog/Data-Structures/Cartesian-Tree</link>
+    <guid>https://dxing.blog/Data-Structures/Cartesian-Tree</guid>
+    <description><![CDATA[ The Cartesian Tree is a data structure that maintains an array of n numbers a_0,a_1,\dots,a_{n-1} by maintaining a binary tree. ]]></description>
+    <pubDate>Sat, 08 Aug 2026 03:59:40 GMT</pubDate>
+  </item><item>
     <title>Monotonic Queue</title>
     <link>https://dxing.blog/Data-Structures/Monotonic-Queue</link>
     <guid>https://dxing.blog/Data-Structures/Monotonic-Queue</guid>
     <description><![CDATA[ The Monotonic Queue is a data structure that maintains an array of n numbers a_0,a_1,\dots,a_{n-1} by maintaining S=\{i:i\in\{0,1,\dots,n-1\}\land\forall j\in\{i+1,i+2,\dots,n-1\},a_i\ge a_j\} This requires \mathcal{O}(n) space. ]]></description>
-    <pubDate>Sat, 08 Aug 2026 03:37:20 GMT</pubDate>
+    <pubDate>Sat, 08 Aug 2026 03:59:40 GMT</pubDate>
   </item><item>
     <title>Kasai&#039;s Algorithm</title>
     <link>https://dxing.blog/Algorithms/Kasai's-Algorithm</link>
@@ -40,30 +64,6 @@
     <link>https://dxing.blog/Algorithms/Z-Algorithm</link>
     <guid>https://dxing.blog/Algorithms/Z-Algorithm</guid>
     <description><![CDATA[ The Z Algorithm is an algorithm that computes z(0),z(1),\dots,z(n-1) for a string s of length n, where z(i)=\left|\operatorname{lcp}\{s,s_is_{i+1}\dots s_{n-1}\}\right| in \mathcal{O}(n) time and \mathcal{O}(n) space. ]]></description>
-    <pubDate>Thu, 06 Aug 2026 02:41:29 GMT</pubDate>
-  </item><item>
-    <title>Aho-Corasick Automaton</title>
-    <link>https://dxing.blog/Data-Structures/Aho-Corasick-Automaton</link>
-    <guid>https://dxing.blog/Data-Structures/Aho-Corasick-Automaton</guid>
-    <description><![CDATA[ The Aho-Corasick Automaton is a data structure that maintains a set S of strings in \Sigma^* by maintaining a deterministic finite automaton that accepts and only accepts strings containing a string from S as a suffix. ]]></description>
-    <pubDate>Thu, 06 Aug 2026 02:41:29 GMT</pubDate>
-  </item><item>
-    <title>Binary Heap</title>
-    <link>https://dxing.blog/Data-Structures/Binary-Heap</link>
-    <guid>https://dxing.blog/Data-Structures/Binary-Heap</guid>
-    <description><![CDATA[ The Binary Heap is a data structure that maintains a multiset S of numbers by maintaining a complete binary tree. ]]></description>
-    <pubDate>Thu, 06 Aug 2026 02:41:29 GMT</pubDate>
-  </item><item>
-    <title>Knuth-Morris-Pratt Automaton</title>
-    <link>https://dxing.blog/Data-Structures/Knuth-Morris-Pratt-Automaton</link>
-    <guid>https://dxing.blog/Data-Structures/Knuth-Morris-Pratt-Automaton</guid>
-    <description><![CDATA[ The Knuth-Morris-Pratt Automaton is a data structure that maintains a string s in \Sigma^* by maintaining a deterministic finite automaton that accepts and only accepts strings containing s as a suffix. ]]></description>
-    <pubDate>Thu, 06 Aug 2026 02:41:29 GMT</pubDate>
-  </item><item>
-    <title>Subsequence Automaton</title>
-    <link>https://dxing.blog/Data-Structures/Subsequence-Automaton</link>
-    <guid>https://dxing.blog/Data-Structures/Subsequence-Automaton</guid>
-    <description><![CDATA[ The Subsequence Automaton is a data structure that maintains a string s in \Sigma^* by maintaining a deterministic finite automaton that accepts and only accepts subsequences of s. ]]></description>
     <pubDate>Thu, 06 Aug 2026 02:41:29 GMT</pubDate>
   </item>
     </channel>
