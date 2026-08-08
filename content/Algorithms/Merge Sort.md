@@ -2,7 +2,7 @@
 tags: [Computer Science]
 ---
 
-[[Merge Sort]] is an algorithm that sorts an array of $n$ numbers $a_0,a_1,\dots,a_{n-1}$ in non-decreasing order in $\mathcal{O}(n\log n)$ time and $\mathcal{O}(n)$ space.
+[[Merge Sort]] is an algorithm that sorts a sequence of $n$ numbers $a_0,a_1,\dots,a_{n-1}$ in non-decreasing order in $\mathcal{O}(n\log n)$ time and $\mathcal{O}(n)$ space.
 
 > [!tip]
 >
@@ -23,6 +23,10 @@ tags: [Computer Science]
 > [!tip]
 >
 > This problem can also be solved by [[Quicksort]] in $\mathcal{O}(n\log n)$ time and $\mathcal{O}(\log n)$ space.
+
+> [!tip]
+>
+> This problem can also be solved by the [[Manber-Myers Algorithm]] in $\mathcal{O}(n\log n)$ time and $\mathcal{O}(n)$ space.
 
 ### Algorithm
 

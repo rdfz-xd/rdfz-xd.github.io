@@ -2,7 +2,7 @@
 tags: [Computer Science]
 ---
 
-The [[Boyer-Moore Majority Vote Algorithm]] is an algorithm that finds the majority of an array of $n$ numbers $a_0,a_1,\dots,a_{n-1}$, if the majority exists, in $\mathcal{O}(n)$ time and $\mathcal{O}(1)$ space.
+The [[Boyer-Moore Majority Vote Algorithm]] is an algorithm that finds the majority of a sequence of $n$ numbers $a_0,a_1,\dots,a_{n-1}$, if the majority exists, in $\mathcal{O}(n)$ time and $\mathcal{O}(1)$ space.
 
 > [!tip]
 >
@@ -35,7 +35,7 @@ The [[Boyer-Moore Majority Vote Algorithm]] is an algorithm that finds the major
 This algorithm solves the problem in $\mathcal{O}(n)$ time and $\mathcal{O}(1)$ space.
 
 ```c++
-int boyer_moore(int n, const std::vector<int> &a) {
+int boyer_moore_majority_vote(int n, const std::vector<int> &a) {
 	int x = 0, c = 0;
 	for (int i = 0; i < n; i++) {
 		if (c) {

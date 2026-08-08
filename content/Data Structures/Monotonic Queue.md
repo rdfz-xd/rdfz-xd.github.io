@@ -2,7 +2,7 @@
 tags: [Computer Science]
 ---
 
-The [[Monotonic Queue]] is a data structure that maintains an array of $n$ numbers $a_0,a_1,\dots,a_{n-1}$ by maintaining
+The [[Monotonic Queue]] is a data structure that maintains a sequence of $n$ numbers $a_0,a_1,\dots,a_{n-1}$ by maintaining
 $$
 S=\{i:i\in\{0,1,\dots,n-1\}\land\forall j\in\{i+1,i+2,\dots,n-1\},a_i\ge a_j\}
 $$

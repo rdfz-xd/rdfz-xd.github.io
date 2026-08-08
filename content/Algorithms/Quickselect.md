@@ -2,7 +2,7 @@
 tags: [Computer Science]
 ---
 
-[[Quickselect]] is an algorithm that finds the $k$-th smallest element in an array of $n$ numbers $a_0,a_1,\dots,a_{n-1}$ in $\mathcal{O}(n)$ time and $\mathcal{O}(n)$ space.
+[[Quickselect]] is an algorithm that finds the $k$-th smallest element in a sequence of $n$ numbers $a_0,a_1,\dots,a_{n-1}$ in $\mathcal{O}(n)$ time and $\mathcal{O}(n)$ space.
 
 > [!tip]
 >
@@ -203,7 +203,7 @@ int quickselect(int n, std::vector<int> a, int k) {
 > > \sum_{i=0}^{n-1}[a_i\ge x]\ge\frac{3n}{10}
 > > $$
 >
-> Let $T(n)$ denote the worst-case running time of this algorithm on an array of length $n$, and let $N$ and $c$ be sufficiently large positive integers.
+> Let $T(n)$ denote the worst-case running time of this algorithm on a sequence of length $n$, and let $N$ and $c$ be sufficiently large positive integers.
 >
 > Then, for each $n$ in $\{N,N+1,N+2,\dots,\}$, if $\forall m\in\{1,2,\dots,n-1\},T(m)\le10cm$,
 > $$

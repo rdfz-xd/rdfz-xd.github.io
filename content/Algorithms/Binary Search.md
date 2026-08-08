@@ -2,7 +2,7 @@
 tags: [Computer Science]
 ---
 
-[[Binary Search]] is an algorithm that counts the number of true values in an array of $n$ booleans $f_0,f_1,\dots,f_{n-1}$ satisfying $\forall i\in\{1,2,\dots,n-1\},f_i\Rightarrow f_{i-1}$ in $\mathcal{O}(\log n)$ time and $\mathcal{O}(1)$ space.
+[[Binary Search]] is an algorithm that counts the number of true values in a sequence of $n$ booleans $f_0,f_1,\dots,f_{n-1}$ satisfying $\forall i\in\{1,2,\dots,n-1\},f_i\Rightarrow f_{i-1}$ in $\mathcal{O}(\log n)$ time and $\mathcal{O}(1)$ space.
 
 ### Algorithm
 

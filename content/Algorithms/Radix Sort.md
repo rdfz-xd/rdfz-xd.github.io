@@ -2,7 +2,7 @@
 tags: [Computer Science]
 ---
 
-[[Radix Sort]] is an algorithm that sorts an array of $n$ integers $a_0,a_1,\dots,a_{n-1}\in\{0,1,\dots,m^d-1\}$ in non-decreasing order in $\mathcal{O}(d(n+m))$ time and $\mathcal{O}(n+m)$ space.
+[[Radix Sort]] is an algorithm that sorts a sequence of $n$ integers $a_0,a_1,\dots,a_{n-1}\in\{0,1,\dots,m^d-1\}$ in non-decreasing order in $\mathcal{O}(d(n+m))$ time and $\mathcal{O}(n+m)$ space.
 
 > [!tip]
 >

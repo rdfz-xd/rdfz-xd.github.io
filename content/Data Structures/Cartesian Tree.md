@@ -2,9 +2,9 @@
 tags: [Computer Science]
 ---
 
-The [[Cartesian Tree]] is a data structure that maintains an array of $n$ numbers $a_0,a_1,\dots,a_{n-1}$ by maintaining a binary tree.
+The [[Cartesian Tree]] is a data structure that maintains a sequence of $n$ numbers $a_0,a_1,\dots,a_{n-1}$ by maintaining a binary tree.
 
-Specifically, in the binary tree, each node stores an element in $a_0,a_1,\dots,a_{n-1}$. The binary tree satisfies that the in-order traversal order of the nodes matches their order in the array, and the element in each node is less than or equal to the element in its parent.
+Specifically, in the binary tree, each node stores an element in $a_0,a_1,\dots,a_{n-1}$. The binary tree satisfies that the in-order traversal order of the nodes matches their order in the sequence, and the element in each node is less than or equal to the element in its parent.
 
 This requires $\mathcal{O}(n)$ space.
 

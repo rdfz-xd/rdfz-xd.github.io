@@ -2,7 +2,7 @@
 tags: [Computer Science]
 ---
 
-[[Heapsort]] is an algorithm that sorts an array of $n$ numbers $a_0,a_1,\dots,a_{n-1}$ in non-decreasing order in $\mathcal{O}(n\log n)$ time and $\mathcal{O}(1)$ space.
+[[Heapsort]] is an algorithm that sorts a sequence of $n$ numbers $a_0,a_1,\dots,a_{n-1}$ in non-decreasing order in $\mathcal{O}(n\log n)$ time and $\mathcal{O}(1)$ space.
 
 > [!tip]
 >
@@ -24,6 +24,10 @@ tags: [Computer Science]
 >
 > This problem can also be solved by [[Quicksort]] in $\mathcal{O}(n\log n)$ time and $\mathcal{O}(\log n)$ space.
 
+> [!tip]
+>
+> This problem can also be solved by the [[Manber-Myers Algorithm]] in $\mathcal{O}(n\log n)$ time and $\mathcal{O}(n)$ space.
+
 ### Algorithm 0
 
 0. Let multiset $S=\{a_0,a_1,\dots,a_{n-1}\}$.
@@ -43,7 +47,7 @@ void heapsort(int n, std::vector<int> &a) {
 
 ### Algorithm 1
 
-Based on [[Algorithm 0]], instead of constructing a [[Binary Heap]] explicitly, operating directly on the array yields an algorithm that solves the problem in $\mathcal{O}(n\log n)$ time and $\mathcal{O}(1)$ space.
+Based on [[Algorithm 0]], instead of constructing a [[Binary Heap]] explicitly, operating directly on the sequence yields an algorithm that solves the problem in $\mathcal{O}(n\log n)$ time and $\mathcal{O}(1)$ space.
 
 ```c++
 void heapsort(int n, std::vector<int> &a) {
