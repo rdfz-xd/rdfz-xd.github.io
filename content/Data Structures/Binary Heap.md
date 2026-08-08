@@ -53,10 +53,6 @@ int top() {
 
 ### Algorithm
 
-> [!info] Lemma
->
-> The element in the root is $\max S$.
-
 0. Swap the element in the root with the element in the rightmost leaf.
 
 1. Delete the rightmost leaf.

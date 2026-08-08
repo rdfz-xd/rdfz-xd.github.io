@@ -6,30 +6,6 @@ The [[Boyer-Moore Majority Vote Algorithm]] is an algorithm that finds the major
 
 > [!tip]
 >
-> This problem can also be solved by [[Selection Sort]] in $\mathcal{O}(n^2)$ time and $\mathcal{O}(n)$ space.
-
-> [!tip]
->
-> This problem can also be solved by [[Insertion Sort]] in $\mathcal{O}(n^2)$ time and $\mathcal{O}(n)$ space.
-
-> [!tip]
->
-> This problem can also be solved by [[Bubble Sort]] in $\mathcal{O}(n^2)$ time and $\mathcal{O}(n)$ space.
-
-> [!tip]
->
-> This problem can also be solved by [[Merge Sort]] in $\mathcal{O}(n\log n)$ time and $\mathcal{O}(n)$ space.
-
-> [!tip]
->
-> This problem can also be solved by [[Heapsort]] in $\mathcal{O}(n\log n)$ time and $\mathcal{O}(n)$ space.
-
-> [!tip]
->
-> This problem can also be solved by [[Quicksort]] in $\mathcal{O}(n\log n)$ time and $\mathcal{O}(n)$ space.
-
-> [!tip]
->
 > This problem can also be solved by [[Quickselect]] in $\mathcal{O}(n)$ time and $\mathcal{O}(n)$ space.
 
 ### Algorithm
