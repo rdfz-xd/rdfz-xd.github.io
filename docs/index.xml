@@ -6,17 +6,17 @@
       <description>Last 10 notes on Dong Xing&#039;s Blog</description>
       <generator>Quartz -- quartz.jzhao.xyz</generator>
       <item>
-    <title>Inverse Fast Cantor Expansion</title>
-    <link>https://dxing.blog/Algorithms/Fast-Cantor-Expansion/Inverse-Fast-Cantor-Expansion</link>
-    <guid>https://dxing.blog/Algorithms/Fast-Cantor-Expansion/Inverse-Fast-Cantor-Expansion</guid>
-    <description><![CDATA[ The Inverse Fast Cantor Expansion is an algorithm that finds the k-th lexicographically smallest permutation of \{0,1,\dots,n-1\} in \mathcal{O}(n\log n) time and \mathcal{O}(n) space. ]]></description>
-    <pubDate>Sun, 09 Aug 2026 06:48:17 GMT</pubDate>
-  </item><item>
     <title>Fast Cantor Expansion</title>
     <link>https://dxing.blog/Algorithms/Fast-Cantor-Expansion/Fast-Cantor-Expansion</link>
     <guid>https://dxing.blog/Algorithms/Fast-Cantor-Expansion/Fast-Cantor-Expansion</guid>
     <description><![CDATA[ The Fast Cantor Expansion is an algorithm that finds the lexicographical rank of a permutation p_0,p_1,\dots,p_{n-1} of \{0,1,\dots,n-1\} among all permutations of \{0,1,\dots,n-1\} in \mathcal{O}(n\log n) time and \mathcal{O}(n) space. ]]></description>
-    <pubDate>Sun, 09 Aug 2026 06:48:11 GMT</pubDate>
+    <pubDate>Sun, 09 Aug 2026 07:03:31 GMT</pubDate>
+  </item><item>
+    <title>Inverse Fast Cantor Expansion</title>
+    <link>https://dxing.blog/Algorithms/Fast-Cantor-Expansion/Inverse-Fast-Cantor-Expansion</link>
+    <guid>https://dxing.blog/Algorithms/Fast-Cantor-Expansion/Inverse-Fast-Cantor-Expansion</guid>
+    <description><![CDATA[ The Inverse Fast Cantor Expansion is an algorithm that finds the k-th lexicographically smallest permutation of \{0,1,\dots,n-1\} in \mathcal{O}(n\log n) time and \mathcal{O}(n) space. ]]></description>
+    <pubDate>Sun, 09 Aug 2026 07:03:31 GMT</pubDate>
   </item><item>
     <title>Binary Search</title>
     <link>https://dxing.blog/Algorithms/Binary-Search</link>
