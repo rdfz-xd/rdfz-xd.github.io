@@ -13,7 +13,7 @@ tags: [Computer Science, Computer Science/Graph Theory]
 
 > [!tip]
 >
-> This problem can also be solved by [[Boruvka's Algorithm]] in $\mathcal{O}(|E|\log|V|)$ time and $\mathcal{O}(|E|)$ space.
+> This problem can also be solved by [[Boruvka's Algorithm|Borůvka's Algorithm]] in $\mathcal{O}(|E|\log|V|)$ time and $\mathcal{O}(|E|)$ space.
 
 ### Algorithm
 

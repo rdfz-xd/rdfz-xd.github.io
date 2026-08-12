@@ -1,8 +1,9 @@
 ---
+title: [Inverse Fast Möbius Transform]
 tags: [Computer Science]
 ---
 
-The [[Inverse Fast Mobius Transform]] is an algorithm that finds a function $g$ such that $\forall S\subseteq\{0,1,\dots,n-1\},\sum_{T\subseteq S}g(T)=f(S)$ in $\mathcal{O}(n2^n)$ time and $\mathcal{O}(1)$ space.
+The [[Inverse Fast Mobius Transform|Inverse Fast Möbius Transform]] is an algorithm that finds a function $g$ such that $\forall S\subseteq\{0,1,\dots,n-1\},\sum_{T\subseteq S}g(T)=f(S)$ in $\mathcal{O}(n2^n)$ time and $\mathcal{O}(1)$ space.
 
 ### Algorithm
 
@@ -24,7 +25,7 @@ The [[Inverse Fast Mobius Transform]] is an algorithm that finds a function $g$ 
 > > \end{align}
 > > $$
 
-0. Apply the [[Fast Mobius Transform]] to find $\sum_{T\subseteq S}(-1)^{|T|}f(T)$ for each subset $S$ of $\{0,1,\dots,n-1\}$.
+0. Apply the [[Fast Mobius Transform|Fast Möbius Transform]] to find $\sum_{T\subseteq S}(-1)^{|T|}f(T)$ for each subset $S$ of $\{0,1,\dots,n-1\}$.
 1. Apply the lemma to find $g$.
 
 This algorithm solves the problem in $\mathcal{O}(n2^n)$ time and $\mathcal{O}(1)$ space.

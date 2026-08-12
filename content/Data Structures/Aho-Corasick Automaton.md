@@ -98,7 +98,7 @@ void build(int n, const std::vector<std::string> &s) {
 
 ## Find
 
-[[Find]] checks if $t$ contains a string from $S$ as a suffix in $\mathcal{O}(|s|)$ time and $\mathcal{O}(1)$ space.
+[[Aho-Corasick Automaton#Find]] checks if $t$ contains a string from $S$ as a suffix in $\mathcal{O}(|s|)$ time and $\mathcal{O}(1)$ space.
 
 ### Algorithm
 
