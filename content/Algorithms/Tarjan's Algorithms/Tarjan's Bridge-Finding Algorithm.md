@@ -2,7 +2,7 @@
 tags: [Computer Science, Computer Science/Graph Theory]
 ---
 
-[[Tarjan's Bridge-Finding Algorithm]] is an algorithm that finds the bridges in an undirected graph $G=(V,E)$ in $\mathcal{O}(|V|+|E|)$ time and $\mathcal{O}(|V|+|E|)$ space.
+[[Tarjan's Bridge-Finding Algorithm]] is an algorithm that finds the bridges in an undirected graph $G=\langle V,E\rangle$ in $\mathcal{O}(|V|+|E|)$ time and $\mathcal{O}(|V|+|E|)$ space.
 
 ### Algorithm
 

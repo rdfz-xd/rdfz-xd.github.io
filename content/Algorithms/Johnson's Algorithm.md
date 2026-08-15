@@ -2,7 +2,7 @@
 tags: [Computer Science, Computer Science/Graph Theory]
 ---
 
-[[Johnson's Algorithm]] is an algorithm that computes the length of the shortest path between every pair of vertices in a directed graph $G=(V,E)$ with edge weights and no negative cycles in
+[[Johnson's Algorithm]] is an algorithm that computes the length of the shortest path between every pair of vertices in a directed graph $G=\langle V,E\rangle$ with edge weights and no negative cycles in
 
 - $\mathcal{O}(|V|^3+|V||E|)$ time and $\mathcal{O}(|V|^2+|E|)$ space, or
 
@@ -20,7 +20,7 @@ tags: [Computer Science, Computer Science/Graph Theory]
 
 Let $\operatorname{dist}_G(x,y)$ denote the length of the shortest path between $x$ and $y$ in graph $G$.
 
-0. Let $s$ be a new vertex, and let $G^*=(V\cup\{s\},E\cup\{(s,v,0):v\in V\})$.
+0. Let $s$ be a new vertex, and let $G^*=\langle V\cup\{s\},E\cup\{\langle s,v,0\rangle:v\in V\}\rangle$.
 
 1. Apply the [[Bellman-Ford Algorithm]] to find $\operatorname{dist}_{G^*}(s,v)$ for each vertex $v$ in $V$.
 
@@ -41,7 +41,7 @@ Let $\operatorname{dist}_G(x,y)$ denote the length of the shortest path between 
 > >
 > > By contradiction, it follows that $w(e)+h(s(e))-h(t(e))\ge0$.
 
-3. Let $G'=(V,\{(s(e),t(e),w(e)+h(s(e))-h(t(e)):e\in E\})$, then applying the lemma yields that $G'$ is a directed graph with non-negative edge weights.
+3. Let $G'=\langle V,\{\langle s(e),t(e),w(e)+h(s(e))-h(t(e))\rangle:e\in E\}\rangle$, then applying the lemma yields that $G'$ is a directed graph with non-negative edge weights.
 4. Apply [[Dijkstra's Algorithm]] $|V|$ times to find $\operatorname{dist}_{G'}(x,y)$ for each pair of vertices $x$ and $y$ in $V$.
 
 > [!info] Lemma
@@ -69,13 +69,12 @@ This algorithm solves the problem in
 
 ```c++
 std::vector<std::vector<int>> johnson(int n, int m, std::vector<int> u, std::vector<int> v, std::vector<int> w) {
-	for (int i = 0; i < n; i++) {
-		u.push_back(n);
-		v.push_back(i);
-		w.push_back(0);
-	}
+	u.resize(m + n, n), v.resize(m + n), w.resize(m + n, 0);
+	std::iota(v.begin() + m, v.end(), 0);
 
-	auto h = bellman_ford(n, m, u, v, w, n);
+	auto h = bellman_ford(n + 1, m + n, u, v, w, n);
+
+	u.resize(m), v.resize(m), w.resize(m);
 	for (int i = 0; i < m; i++) {
 		w[i] += h[u[i]] - h[v[i]];
 	}

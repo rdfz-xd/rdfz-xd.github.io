@@ -3,7 +3,7 @@ title: "Borůvka's Algorithm"
 tags: [Computer Science, Computer Science/Graph Theory]
 ---
 
-[[Boruvka's Algorithm|Borůvka's Algorithm]] is an algorithm that computes the weight of the minimum spanning tree of a connected undirected graph $G=(V,E)$ with edge weights in $\mathcal{O}(|E|\log|V|)$ time and $\mathcal{O}(|E|)$ space.
+[[Boruvka's Algorithm|Borůvka's Algorithm]] is an algorithm that computes the weight of the minimum spanning tree of a connected undirected graph $G=\langle V,E\rangle$ with edge weights in $\mathcal{O}(|E|\log|V|)$ time and $\mathcal{O}(|E|)$ space.
 
 > [!tip]
 >

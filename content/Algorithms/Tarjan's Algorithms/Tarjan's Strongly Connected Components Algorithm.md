@@ -2,7 +2,7 @@
 tags: [Computer Science, Computer Science/Graph Theory]
 ---
 
-[[Tarjan's Strongly Connected Components Algorithm]] is an algorithm that finds the strongly connected components of a directed graph $G=(V,E)$ in $\mathcal{O}(|V|+|E|)$ and $\mathcal{O}(|V|+|E|)$ space.
+[[Tarjan's Strongly Connected Components Algorithm]] is an algorithm that finds the strongly connected components of a directed graph $G=\langle V,E\rangle$ in $\mathcal{O}(|V|+|E|)$ and $\mathcal{O}(|V|+|E|)$ space.
 
 > [!tip]
 >
@@ -58,7 +58,7 @@ tags: [Computer Science, Computer Science/Graph Theory]
 > >
 > >       Then, since $p\leadsto v$, it follows that $v_0,v_1,\dots,v_{n-1}$ are in the same connected component as $v$, which implies that $v_0,v_1,\dots,v_{n-1}$ are all unassigned.
 > >
-> >       Since $v$ is in the subtree but $p$ is not, there exists an $i$ in $\{1,2,\dots,n-1\}$ such that $v_{i-1}$ is in the subtree but $v_i$ is not, which implies that $(v_{i-1},v_i)$ is an edge directed from a vertex in the subtree to an unassigned vertex outside the subtree.
+> >       Since $v$ is in the subtree but $p$ is not, there exists an $i$ in $\{1,2,\dots,n-1\}$ such that $v_{i-1}$ is in the subtree but $v_i$ is not, which implies that $\langle v_{i-1},v_i\rangle$ is an edge directed from a vertex in the subtree to an unassigned vertex outside the subtree.
 > >
 > >     By contradiction, it follows that $p$ and $v$ are not strongly connected, which implies that $v$ is a *root*.
 

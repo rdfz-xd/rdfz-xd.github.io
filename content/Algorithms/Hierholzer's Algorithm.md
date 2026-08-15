@@ -2,7 +2,7 @@
 tags: [Computer Science, Computer Science/Graph Theory]
 ---
 
-[[Hierholzer's Algorithm]] is an algorithm that finds an Eulerian circuit in a weakly connected directed graph $G=(V,E)$, where the in-degree of each vertex equals its out-degree, in $\mathcal{O}(|E|)$ time and $\mathcal{O}(|E|)$ space.
+[[Hierholzer's Algorithm]] is an algorithm that finds an Eulerian circuit in a weakly connected directed graph $G=\langle V,E\rangle$, where the in-degree of each vertex equals its out-degree, in $\mathcal{O}(|E|)$ time and $\mathcal{O}(|E|)$ space.
 
 ### Algorithm 0
 

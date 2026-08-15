@@ -16,7 +16,7 @@ $$
 >
 > For any $t$ in $\Sigma^*$, $\delta(\dots\delta(\delta(0,t_0),t_1)\dots,t_{|t|-1})$ equals the minimum $i$ in $\{0,1,\dots,|s|\}$ such that $t$ is a subsequence of $s_0s_1\dots s_{i-1}$ if $t$ is a subsequence of $s$, or $\perp$ otherwise.
 
-Applying the lemma yields that $M=(\{0,1,\dots,|s|,\perp\},\Sigma,\delta,0,\{0,1,\dots,|s|\})$ is a deterministic finite automaton that accepts and only accepts subsequences of $s$.
+Applying the lemma yields that $M=\langle\{0,1,\dots,|s|,\perp\},\Sigma,\delta,0,\{0,1,\dots,|s|\}\rangle$ is a deterministic finite automaton that accepts and only accepts subsequences of $s$.
 
 This requires $\mathcal{O}(|\Sigma||s|)$ space.
 

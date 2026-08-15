@@ -6,7 +6,7 @@ The [[Chinese Remainder Theorem]] is an algorithm that finds an integer $x$ such
 $$
 \forall i\in\{0,1,\dots,n-1\},x\equiv a_i\pmod{m_i}
 $$
-for integers $a_0,a_1,\dots,a_{n-1}$ and positive integers $m_0,m_1,\dots,m_{n-1}$ such that $m_0,m_1,\dots,m_{n-1}$ are **pairwise coprime** in $\mathcal{O}(\sum_{i=0}^{n-1}\log m_i)$ time and $\mathcal{O}(\sum_{i=0}^{n-1}\log m_i)$ space.
+for integers $a_0,a_1,\dots,a_{n-1}$ and **pairwise coprime** positive integers $m_0,m_1,\dots,m_{n-1}$ in $\mathcal{O}(\sum_{i=0}^{n-1}\log m_i)$ time and $\mathcal{O}(\sum_{i=0}^{n-1}\log m_i)$ space.
 
 > [!tip]
 >

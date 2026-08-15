@@ -18,7 +18,7 @@ $$
 > \forall s\in\Sigma^*,\delta(\dots\delta(\delta(\varepsilon,s_0),s_1)\dots,s_{|s|-1})\in\arg\max_{t\in E(s)}|t|
 > $$
 
-Applying the lemma yields that $M=(P,\Sigma,\delta,\varepsilon,\{s:s\in P\land\exist t\in S,|t|\le|s|\land t=s_{|s|-|t|}s_{|s|-|t|+1}\dots s_{|s|-1}\})$ is a deterministic finite automaton that accepts and only accepts strings containing a string from $S$ as a suffix.
+Applying the lemma yields that $M=\langle P,\Sigma,\delta,\varepsilon,\{s:s\in P\land\exist t\in S,|t|\le|s|\land t=s_{|s|-|t|}s_{|s|-|t|+1}\dots s_{|s|-1}\}\rangle$ is a deterministic finite automaton that accepts and only accepts strings containing a string from $S$ as a suffix.
 
 This requires $\mathcal{O}(|\Sigma|\sum_{s\in S}|s|)$ space.
 

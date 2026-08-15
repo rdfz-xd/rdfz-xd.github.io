@@ -2,11 +2,11 @@
 tags: [Computer Science]
 ---
 
-The [[Extended Chinese Remainder Theorem]] is an algorithm that checks if there exists an integer $x$ such that
+The [[Extended Chinese Remainder Theorem]] is an algorithm that checks if
 $$
-x\equiv a_0\pmod{m_0}\land x\equiv a_1\pmod{m_1}
+\exists x\in\Z,x\equiv a_0\pmod{m_0}\land x\equiv a_1\pmod{m_1}
 $$
-and finds such an $x$ if there exists for integers $a_0,a_1$ and postive integers $m_0,m_1$ in $\mathcal{O}(\log m_0+\log m_1)$ time and $\mathcal{O}(\log m_0+\log m_1)$ space.
+and finds such an integer $x$ if there exists for integers $a_0,a_1$ and postive integers $m_0,m_1$ in $\mathcal{O}(\log m_0+\log m_1)$ time and $\mathcal{O}(\log m_0+\log m_1)$ space.
 
 ### Algorithm
 

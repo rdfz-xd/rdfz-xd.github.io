@@ -18,7 +18,7 @@ $$
 > \forall t\in\Sigma^*,\delta(\dots\delta(\delta(0,t_0),t_1)\dots,t_{|t|-1})=\max E(t)
 > $$
 
-Applying the lemma yields that $M=(\{0,1,\dots,|s|\},\Sigma,\delta,0,\{|s|\})$ is a deterministic finite automaton that accepts and only accepts strings containing $s$ as a suffix.
+Applying the lemma yields that $M=\langle\{0,1,\dots,|s|\},\Sigma,\delta,0,\{|s|\}\rangle$ is a deterministic finite automaton that accepts and only accepts strings containing $s$ as a suffix.
 
 This requires $\mathcal{O}(|\Sigma||s|)$ space.
 

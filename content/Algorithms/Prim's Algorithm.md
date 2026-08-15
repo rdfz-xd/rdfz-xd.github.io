@@ -2,7 +2,7 @@
 tags: [Computer Science, Computer Science/Graph Theory]
 ---
 
-[[Prim's Algorithm]] is an algorithm that computes the weight of the minimum spanning tree of a connected undirected graph $G=(V,E)$ with edge weights in
+[[Prim's Algorithm]] is an algorithm that computes the weight of the minimum spanning tree of a connected undirected graph $G=\langle V,E\rangle$ with edge weights in
 
 - $\mathcal{O}(|V|^2+|E|)$ time and $\mathcal{O}(|E|)$ space, or
 - $\mathcal{O}(|E|\log|E|)$ time and $\mathcal{O}(|E|)$ space.

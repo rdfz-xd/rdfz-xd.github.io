@@ -11,7 +11,7 @@ s\sigma,&s\sigma\in P\\
 \perp,&s\sigma\not\in P
 \end{cases}\land\forall\sigma\in\Sigma,\delta(\perp,\sigma)=\perp
 $$
-Then it is easy to prove that $M=(P\cup\{\perp\},\Sigma,\delta,\varepsilon,S)$ is a deterministic finite automaton that accepts and only accepts strings in $S$.
+Then it is easy to prove that $M=\langle P\cup\{\perp\},\Sigma,\delta,\varepsilon,S\rangle$ is a deterministic finite automaton that accepts and only accepts strings in $S$.
 
 This requires $\mathcal{O}(\sum_{s\in S}|s|)$ space.
 

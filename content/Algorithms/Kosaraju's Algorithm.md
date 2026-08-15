@@ -2,7 +2,7 @@
 tags: [Computer Science, Computer Science/Graph Theory]
 ---
 
-[[Kosaraju's Algorithm]] is an algorithm that finds the strongly connected components of a directed graph $G=(V,E)$ in $\mathcal{O}(|V|+|E|)$ and $\mathcal{O}(|V|+|E|)$ space.
+[[Kosaraju's Algorithm]] is an algorithm that finds the strongly connected components of a directed graph $G=\langle V,E\rangle$ in $\mathcal{O}(|V|+|E|)$ and $\mathcal{O}(|V|+|E|)$ space.
 
 > [!tip]
 >

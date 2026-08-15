@@ -2,7 +2,7 @@
 tags: [Computer Science, Computer Science/Graph Theory]
 ---
 
-[[Kahn's Algorithm]] is an algorithm that finds a topological sort for a directed acyclic graph $G=(V,E)$ in $\mathcal{O}(|V|+|E|)$ time and $\mathcal{O}(|V|+|E|)$ space.
+[[Kahn's Algorithm]] is an algorithm that finds a topological sort for a directed acyclic graph $G=\langle V,E\rangle$ in $\mathcal{O}(|V|+|E|)$ time and $\mathcal{O}(|V|+|E|)$ space.
 
 ### Algorithm 0
 

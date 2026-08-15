@@ -2,7 +2,7 @@
 tags: [Computer Science, Computer Science/Graph Theory]
 ---
 
-[[Dijkstra's Algorithm]] is an algorithm that computes the length of the shortest path from a vertex $s$ to every vertex in a directed graph $G=(V,E)$ with **non-negative** edge weights in
+[[Dijkstra's Algorithm]] is an algorithm that computes the length of the shortest path from a vertex $s$ to every vertex in a directed graph $G=\langle V,E\rangle$ with **non-negative** edge weights in
 
 - $\mathcal{O}(|V|^2+|E|)$ time and $\mathcal{O}(|V|+|E|)$ space, or
 - $\mathcal{O}((|V|+|E|)\log|E|)$ time and $\mathcal{O}(|V|+|E|)$ space.

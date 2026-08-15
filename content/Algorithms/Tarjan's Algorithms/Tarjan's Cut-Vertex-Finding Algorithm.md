@@ -2,7 +2,7 @@
 tags: [Computer Science, Computer Science/Graph Theory]
 ---
 
-[[Tarjan's Cut-Vertex-Finding Algorithm]] is an algorithm that finds the cut vertices in an undirected graph $G=(V,E)$ in $\mathcal{O}(|V|+|E|)$ time and $\mathcal{O}(|V|+|E|)$ space.
+[[Tarjan's Cut-Vertex-Finding Algorithm]] is an algorithm that finds the cut vertices in an undirected graph $G=\langle V,E\rangle$ in $\mathcal{O}(|V|+|E|)$ time and $\mathcal{O}(|V|+|E|)$ space.
 
 ### Algorithm
 

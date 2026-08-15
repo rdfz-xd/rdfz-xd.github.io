@@ -2,7 +2,7 @@
 tags: [Computer Science, Computer Science/Graph Theory]
 ---
 
-[[Kruskal's Algorithm]] is an algorithm that computes the weight of the minimum spanning tree of a connected undirected graph $G=(V,E)$ with edge weights in $\mathcal{O}(|E|\log|E|)$ time and $\mathcal{O}(|E|)$ space.
+[[Kruskal's Algorithm]] is an algorithm that computes the weight of the minimum spanning tree of a connected undirected graph $G=\langle V,E\rangle$ with edge weights in $\mathcal{O}(|E|\log|E|)$ time and $\mathcal{O}(|E|)$ space.
 
 > [!tip]
 >
