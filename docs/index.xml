@@ -10,61 +10,61 @@
     <link>https://dxing.blog/Algorithms/Aspvall-Plass-Tarjan-Algorithm</link>
     <guid>https://dxing.blog/Algorithms/Aspvall-Plass-Tarjan-Algorithm</guid>
     <description><![CDATA[ The Aspvall-Plass-Tarjan Algorithm is an algorithm that checks if \exists x_0,x_1,\dots,x_{n-1}\in\{0,1\},\forall i\in\{0,1,\dots,m-1\},x_{u_i}=a_i\lor x_{v_i}=b_i and finds such a sequence x_0,x_1,\dots,x_{n-1} if there exists for u_0,u_1,\dots,u_{m-1},v_0,v_1,\dots,v_{m-1}\in\{0,1,\dots,n-1\} and ... ]]></description>
-    <pubDate>Sat, 15 Aug 2026 06:18:08 GMT</pubDate>
+    <pubDate>Sat, 15 Aug 2026 06:27:02 GMT</pubDate>
+  </item><item>
+    <title>Bellman-Ford Algorithm</title>
+    <link>https://dxing.blog/Algorithms/Bellman-Ford-Algorithm</link>
+    <guid>https://dxing.blog/Algorithms/Bellman-Ford-Algorithm</guid>
+    <description><![CDATA[ The Bellman-Ford Algorithm is an algorithm that computes the length of the shortest path from a vertex s to every vertex in a directed graph G=\langle V,E\rangle with edge weights and no negative cycles in \mathcal{O}(|V||E|) time and \mathcal{O}(|V|) space. ]]></description>
+    <pubDate>Sat, 15 Aug 2026 06:27:02 GMT</pubDate>
   </item><item>
     <title>Borůvka&#039;s Algorithm</title>
     <link>https://dxing.blog/Algorithms/Boruvka's-Algorithm</link>
     <guid>https://dxing.blog/Algorithms/Boruvka's-Algorithm</guid>
     <description><![CDATA[ Borůvka’s Algorithm is an algorithm that computes the weight of the minimum spanning tree of a connected undirected graph G=\langle V,E\rangle with edge weights in \mathcal{O}(|E|\log|V|) time and \mathcal{O}(|E|) space. ]]></description>
-    <pubDate>Wed, 12 Aug 2026 09:02:08 GMT</pubDate>
+    <pubDate>Sat, 15 Aug 2026 06:27:02 GMT</pubDate>
   </item><item>
     <title>Chinese Remainder Theorem</title>
     <link>https://dxing.blog/Algorithms/Chinese-Remainder-Theorem/Chinese-Remainder-Theorem</link>
     <guid>https://dxing.blog/Algorithms/Chinese-Remainder-Theorem/Chinese-Remainder-Theorem</guid>
     <description><![CDATA[ The Chinese Remainder Theorem is an algorithm that finds an integer x such that \forall i\in\{0,1,\dots,n-1\},x\equiv a_i\pmod{m_i} for integers a_0,a_1,\dots,a_{n-1} and pairwise coprime positive integers m_0,m_1,\dots,m_{n-1} in \mathcal{O}(\sum_{i=0}^{n-1}\log m_i) time and \mathcal{O}(\sum_{i=0}... ]]></description>
-    <pubDate>Wed, 12 Aug 2026 09:02:08 GMT</pubDate>
+    <pubDate>Sat, 15 Aug 2026 06:27:02 GMT</pubDate>
   </item><item>
     <title>Extended Chinese Remainder Theorem</title>
     <link>https://dxing.blog/Algorithms/Chinese-Remainder-Theorem/Extended-Chinese-Remainder-Theorem</link>
     <guid>https://dxing.blog/Algorithms/Chinese-Remainder-Theorem/Extended-Chinese-Remainder-Theorem</guid>
     <description><![CDATA[ The Extended Chinese Remainder Theorem is an algorithm that checks if \exists x\in\Z,x\equiv a_0\pmod{m_0}\land x\equiv a_1\pmod{m_1} and finds such an integer x if there exists for integers a_0,a_1 and postive integers m_0,m_1 in \mathcal{O}(\log m_0+\log m_1) time and \mathcal{O}(\log m_0+\log m_1... ]]></description>
-    <pubDate>Wed, 12 Aug 2026 09:02:08 GMT</pubDate>
+    <pubDate>Sat, 15 Aug 2026 06:27:02 GMT</pubDate>
   </item><item>
-    <title>Euclidean Algorithm</title>
-    <link>https://dxing.blog/Algorithms/Euclidean-Algorithm/Euclidean-Algorithm</link>
-    <guid>https://dxing.blog/Algorithms/Euclidean-Algorithm/Euclidean-Algorithm</guid>
-    <description><![CDATA[ The Euclidean Algorithm is an algorithm that computes \gcd\{a, b\} for non-negative integers a and b in \mathcal{O}(\log a+\log b) time and \mathcal{O}(\log a+\log b) space. ]]></description>
-    <pubDate>Wed, 12 Aug 2026 09:02:08 GMT</pubDate>
+    <title>Dijkstra&#039;s Algorithm</title>
+    <link>https://dxing.blog/Algorithms/Dijkstra's-Algorithm</link>
+    <guid>https://dxing.blog/Algorithms/Dijkstra's-Algorithm</guid>
+    <description><![CDATA[ Dijkstra’s Algorithm is an algorithm that computes the length of the shortest path from a vertex s to every vertex in a directed graph G=\langle V,E\rangle with non-negative edge weights in \mathcal{O}(|V|^2+|E|) time and \mathcal{O}(|V|+|E|) space, or \mathcal{O}((|V|+|E|)\log|E|) time and \mathcal... ]]></description>
+    <pubDate>Sat, 15 Aug 2026 06:27:02 GMT</pubDate>
   </item><item>
-    <title>Extended Euclidean Algorithm</title>
-    <link>https://dxing.blog/Algorithms/Euclidean-Algorithm/Extended-Euclidean-Algorithm</link>
-    <guid>https://dxing.blog/Algorithms/Euclidean-Algorithm/Extended-Euclidean-Algorithm</guid>
-    <description><![CDATA[ The Extended Euclidean Algorithm is an algorithm that finds a pair of integers x and y such that ax+by=\gcd\{a,b\} for non-negative integers a and b in \mathcal{O}(\log a+\log b) time and \mathcal{O}(\log a+\log b) space. ]]></description>
-    <pubDate>Wed, 12 Aug 2026 09:02:08 GMT</pubDate>
+    <title>Euler&#039;s Sieve</title>
+    <link>https://dxing.blog/Algorithms/Euler's-Sieve</link>
+    <guid>https://dxing.blog/Algorithms/Euler's-Sieve</guid>
+    <description><![CDATA[ Euler’s Sieve is an algorithm that finds the primes in 2,3,\dots,n in \mathcal{O}(n) time and \mathcal{O}(n) space. ]]></description>
+    <pubDate>Sat, 15 Aug 2026 06:27:02 GMT</pubDate>
   </item><item>
-    <title>Fast Möbius Transform</title>
-    <link>https://dxing.blog/Algorithms/Fast-Mobius-Transform/Fast-Mobius-Transform</link>
-    <guid>https://dxing.blog/Algorithms/Fast-Mobius-Transform/Fast-Mobius-Transform</guid>
-    <description><![CDATA[ The Fast Möbius Transform is an algorithm that computes f(S)=\sum_{T\subseteq S}g(T) for a function g defined on 2^{\{0,1,\dots,n-1\}} in \mathcal{O}(n2^n) time and \mathcal{O}(1) space. ]]></description>
-    <pubDate>Wed, 12 Aug 2026 09:02:08 GMT</pubDate>
+    <title>Floyd-Warshall Algorithm</title>
+    <link>https://dxing.blog/Algorithms/Floyd-Warshall-Algorithm</link>
+    <guid>https://dxing.blog/Algorithms/Floyd-Warshall-Algorithm</guid>
+    <description><![CDATA[ The Floyd-Warshall Algorithm is an algorithm that computes the length of the shortest path between every pair of vertices in a directed graph G=\langle V,E\rangle with edge weights and no negative cycles in \mathcal{O}(|V|^3+|E|) time and \mathcal{O}(|V|^2) space. ]]></description>
+    <pubDate>Sat, 15 Aug 2026 06:27:02 GMT</pubDate>
   </item><item>
-    <title>Inverse Fast Möbius Transform</title>
-    <link>https://dxing.blog/Algorithms/Fast-Mobius-Transform/Inverse-Fast-Mobius-Transform</link>
-    <guid>https://dxing.blog/Algorithms/Fast-Mobius-Transform/Inverse-Fast-Mobius-Transform</guid>
-    <description><![CDATA[ The Inverse Fast Möbius Transform is an algorithm that finds a function g such that \forall S\subseteq\{0,1,\dots,n-1\},\sum_{T\subseteq S}g(T)=f(S) in \mathcal{O}(n2^n) time and \mathcal{O}(1) space. ]]></description>
-    <pubDate>Wed, 12 Aug 2026 09:02:08 GMT</pubDate>
+    <title>Hierholzer&#039;s Algorithm</title>
+    <link>https://dxing.blog/Algorithms/Hierholzer's-Algorithm</link>
+    <guid>https://dxing.blog/Algorithms/Hierholzer's-Algorithm</guid>
+    <description><![CDATA[ Hierholzer’s Algorithm is an algorithm that finds an Eulerian circuit in a weakly connected directed graph G=\langle V,E\rangle, where the in-degree of each vertex equals its out-degree, in \mathcal{O}(|E|) time and \mathcal{O}(|E|) space. ]]></description>
+    <pubDate>Sat, 15 Aug 2026 06:27:02 GMT</pubDate>
   </item><item>
-    <title>Kruskal&#039;s Algorithm</title>
-    <link>https://dxing.blog/Algorithms/Kruskal's-Algorithm</link>
-    <guid>https://dxing.blog/Algorithms/Kruskal's-Algorithm</guid>
-    <description><![CDATA[ Kruskal’s Algorithm is an algorithm that computes the weight of the minimum spanning tree of a connected undirected graph G=\langle V,E\rangle with edge weights in \mathcal{O}(|E|\log|E|) time and \mathcal{O}(|E|) space. ]]></description>
-    <pubDate>Wed, 12 Aug 2026 09:02:08 GMT</pubDate>
-  </item><item>
-    <title>Prim&#039;s Algorithm</title>
-    <link>https://dxing.blog/Algorithms/Prim's-Algorithm</link>
-    <guid>https://dxing.blog/Algorithms/Prim's-Algorithm</guid>
-    <description><![CDATA[ Prim’s Algorithm is an algorithm that computes the weight of the minimum spanning tree of a connected undirected graph G=\langle V,E\rangle with edge weights in \mathcal{O}(|V|^2+|E|) time and \mathcal{O}(|E|) space, or \mathcal{O}(|E|\log|E|) time and \mathcal{O}(|E|) space. ]]></description>
-    <pubDate>Wed, 12 Aug 2026 09:02:08 GMT</pubDate>
+    <title>Johnson&#039;s Algorithm</title>
+    <link>https://dxing.blog/Algorithms/Johnson's-Algorithm</link>
+    <guid>https://dxing.blog/Algorithms/Johnson's-Algorithm</guid>
+    <description><![CDATA[ Johnson’s Algorithm is an algorithm that computes the length of the shortest path between every pair of vertices in a directed graph G=\langle V,E\rangle with edge weights and no negative cycles in \mathcal{O}(|V|^3+|V||E|) time and \mathcal{O}(|V|^2+|E|) space, or \mathcal{O}((|V|^2+|V||E|)\log|E|)... ]]></description>
+    <pubDate>Sat, 15 Aug 2026 06:27:02 GMT</pubDate>
   </item>
     </channel>
   </rss>
