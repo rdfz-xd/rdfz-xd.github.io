@@ -29,14 +29,14 @@ This algorithm solves the problem in $\mathcal{O}(\log a+\log b)$ time and $\mat
 
 ~~~c++
 std::pair<int, int> exgcd(int a, int b) {
-	return y_combinator([&](auto &&self, int a, int b) -> std::pair<int, int> {
+	return [&](this auto &&self, int a, int b) -> std::pair<int, int> {
 		if (!b) {
 			return {1, 0};
 		}
 	 
 		auto [x, y] = self(b, a % b);
 		return {y, x - a / b * y};
-	})(a, b);
+	} (a, b);
 }
 ~~~
 

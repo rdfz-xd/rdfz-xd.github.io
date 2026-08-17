@@ -27,7 +27,7 @@ Updating the maintained segments containing the given element yields an algorith
 
 ~~~c++
 void modify(int i, int x) {
-	y_combinator([&](auto &&self, int o, int s, int t) -> void {
+	[&](this auto &&self, int o, int s, int t) -> void {
 		if (s + 1 == t) {
 			sum[o] = x;
 			return;
@@ -40,7 +40,7 @@ void modify(int i, int x) {
 			self(o << 1 | 1, mid, t);
 		}
 		sum[o] = sum[o << 1] + sum[o << 1 | 1];
-	})(1, 0, n);
+	} (1, 0, n);
 }
 ~~~
 
@@ -58,7 +58,7 @@ Decomposing the query interval into maintained segments yields an algorithm that
 
 ~~~c++
 int range_sum_query(int l, int r) {
-	return y_combinator([&](auto &&self, int o, int s, int t) -> int {
+	return [&](this auto &&self, int o, int s, int t) -> int {
 		if (s >= r || t <= l) {
 			return 0;
 		}
@@ -68,7 +68,7 @@ int range_sum_query(int l, int r) {
 
 		int mid = std::midpoint(s, t);
 		return self(o << 1, s, mid) + self(o << 1 | 1, mid, t);
-	})(1, 0, n);
+	} (1, 0, n);
 }
 ~~~
 

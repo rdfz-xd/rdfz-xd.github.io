@@ -40,9 +40,8 @@ Applying an appropriate sorting algorithm (e.g., [[Merge Sort]], [[Heapsort]], [
 
 ~~~c++
 int kruskal(int n, int m, const std::vector<int> &u, const std::vector<int> &v, const std::vector<int> &w) {
-	std::vector<int> o(m);
-	std::iota(o.begin(), o.end(), 0);
-	std::ranges::sort(o, std::less(), [&](int i) -> int {
+	auto o = std::ranges::to<std::vector>(std::views::iota(0, m));
+	std::ranges::sort(o, {}, [&](int i) -> int {
 		return w[i];
 	});
 

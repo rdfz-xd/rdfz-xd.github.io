@@ -44,7 +44,7 @@ This algorithm solves the problem in $\mathcal{O}(n\log n)$ time and $\mathcal{O
 ```c++
 void merge_sort(int n, std::vector<int> &a) {
 	std::vector<int> tmp(n);
-	y_combinator([&](auto &&self, std::vector<int>::iterator l, std::vector<int>::iterator r) -> void {
+	[&](this auto &&self, std::vector<int>::iterator l, std::vector<int>::iterator r) -> void {
 		if (l + 1 == r) {
 			return;
 		}
@@ -64,7 +64,7 @@ void merge_sort(int n, std::vector<int> &a) {
 		}
 
 		std::copy(tmp.begin(), k, l);
-	})(a.begin(), a.end());
+	} (a.begin(), a.end());
 }
 ```
 

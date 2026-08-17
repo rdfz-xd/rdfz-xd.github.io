@@ -108,7 +108,7 @@ std::vector<std::vector<int>> kosaraju(int n, int m, const std::vector<int> &u, 
 			continue;
 		}
 
-		y_combinator([&](auto &&self, int u) -> void {
+		[&](this auto &&self, int u) -> void {
 			vis[u] = true;
 			for (int v : adj[u]) {
 				if (!vis[v]) {
@@ -116,7 +116,7 @@ std::vector<std::vector<int>> kosaraju(int n, int m, const std::vector<int> &u, 
 				}
 			}
 			o.push_back(u);
-		})(i);
+		} (i);
 	}
 
 	std::vector<std::vector<int>> res;
@@ -128,7 +128,7 @@ std::vector<std::vector<int>> kosaraju(int n, int m, const std::vector<int> &u, 
 		}
 
 		res.emplace_back();
-		y_combinator([&](auto &&self, int u) -> void {
+		[&](this auto &&self, int u) -> void {
 			res.back().push_back(u);
 			vis[u] = true;
 
@@ -137,7 +137,7 @@ std::vector<std::vector<int>> kosaraju(int n, int m, const std::vector<int> &u, 
 					self(v);
 				}
 			}
-		})(i);
+		} (i);
 	}
 
 	return res;

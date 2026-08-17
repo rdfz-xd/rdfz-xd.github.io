@@ -70,7 +70,7 @@ This algorithm solves the problem in
 ```c++
 std::vector<std::vector<int>> johnson(int n, int m, std::vector<int> u, std::vector<int> v, std::vector<int> w) {
 	u.resize(m + n, n), v.resize(m + n), w.resize(m + n, 0);
-	std::iota(v.begin() + m, v.end(), 0);
+	std::ranges::iota(v | std::views::drop(m), 0);
 
 	auto h = bellman_ford(n + 1, m + n, u, v, w, n);
 
@@ -89,4 +89,3 @@ std::vector<std::vector<int>> johnson(int n, int m, std::vector<int> u, std::vec
 	return dist;
 }
 ```
-

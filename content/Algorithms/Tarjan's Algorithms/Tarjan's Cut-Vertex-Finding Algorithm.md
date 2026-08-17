@@ -39,7 +39,7 @@ std::vector<int> tarjan_cut_vertex(int n, int m, const std::vector<int> &u, cons
 			continue;
 		}
 
-		y_combinator([&](auto &&self, int u) -> int {
+		[&](this auto &&self, int u) -> int {
 			int low = in[u] = t++, cnt = 0;
 			for (int v : adj[u]) {
 				if (in[v] == -1) {
@@ -55,7 +55,7 @@ std::vector<int> tarjan_cut_vertex(int n, int m, const std::vector<int> &u, cons
 			}
 
 			return low;
-		})(i);
+		} (i);
 	}
 
 	return res;

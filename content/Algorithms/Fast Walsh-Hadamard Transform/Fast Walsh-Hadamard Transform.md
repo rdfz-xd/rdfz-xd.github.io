@@ -72,7 +72,7 @@ This algorithm solves the problem in $\mathcal{O}(n2^n)$ time and $\mathcal{O}(n
 
 ```c++
 void fwht(int n, std::vector<int> &a) {
-	y_combinator([&](auto &&self, std::vector<int>::iterator l, std::vector<int>::iterator r) -> void {
+	[&](this auto &&self, std::vector<int>::iterator l, std::vector<int>::iterator r) -> void {
 		if (l + 1 == r) {
 			return;
 		}
@@ -84,7 +84,7 @@ void fwht(int n, std::vector<int> &a) {
 			l[i] = u + v;
 			mid[i] = u - v;
 		}
-	})(a.begin(), a.end());
+	} (a.begin(), a.end());
 }
 ```
 

@@ -63,4 +63,3 @@ std::vector<int> ifce(int n, int k) {
 	return p;
 }
 ```
-

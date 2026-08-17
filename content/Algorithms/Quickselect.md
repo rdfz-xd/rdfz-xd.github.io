@@ -156,7 +156,7 @@ This algorithm solves the problem in $\mathcal{O}(n)$ time and $\mathcal{O}(n)$ 
 
 ```c++
 int quickselect(int n, std::vector<int> a, int k) {
-	return y_combinator([&](auto &&self, std::vector<int>::iterator l, std::vector<int>::iterator r, int k) -> int {
+	return [&](this auto &&self, std::vector<int>::iterator l, std::vector<int>::iterator r, int k) -> int {
 		while (r - l >= 5) {
 			for (int i = 0; i < (r - l) / 5; i++) {
 				std::sort(l + 5 * i, l + 5 * (i + 1));
@@ -188,7 +188,7 @@ int quickselect(int n, std::vector<int> a, int k) {
 
 		std::sort(l, r);
 		return l[k];
-	})(a.begin(), a.end(), k);
+	} (a.begin(), a.end(), k);
 }
 ```
 

@@ -65,7 +65,7 @@ This algorithm solves the problem in **expected** $\mathcal{O}(\log n)$ time and
 
 ```c++
 std::pair<Node *, Node *> split(Node *o, int k) {
-	return y_combinator([&](auto &&self, Node *o, int k) -> std::pair<Node *, Node *> {
+	return [&](this auto &&self, Node *o, int k) -> std::pair<Node *, Node *> {
 		if (!o) {
 			return {nullptr, nullptr};
 		}
@@ -81,7 +81,7 @@ std::pair<Node *, Node *> split(Node *o, int k) {
 			o->siz = 1 + (o->lch ? o->lch->siz : 0) + (o->rch ? o->rch->siz : 0);
 			return {o, y};
 		}
-	})(o, k);
+	} (o, k);
 }
 ```
 
@@ -100,7 +100,7 @@ This algorithm solves the problem in **expected** $\mathcal{O}(\log n)$ time and
 
 ```c++
 Node *merge(Node *x, Node *y) {
-	return y_combinator([&](auto &&self, Node *x, Node *y) -> Node * {
+	return [&](this auto &&self, Node *x, Node *y) -> Node * {
 		if (!x) {
 			return y;
 		}
@@ -117,6 +117,6 @@ Node *merge(Node *x, Node *y) {
 			y->siz = 1 + (y->lch ? y->lch->siz : 0) + (y->rch ? y->rch->siz : 0);
 			return y;
 		}
-	})(x, y);
+	} (x, y);
 }
 ```

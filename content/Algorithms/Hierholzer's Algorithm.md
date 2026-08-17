@@ -40,9 +40,9 @@ std::vector<int> hierholzer(int n, int m, const std::vector<int> &u, const std::
 	}
 
 	std::vector<int> res;
-	y_combinator([&](auto &&self, int u) -> void {
+	[&](this auto &&self, int u) -> void {
 		std::vector<int> c;
-		y_combinator([&](auto &&self, int u) -> void {
+		[&](this auto &&self, int u) -> void {
 			c.push_back(u);
 			if (!adj[u].empty()) {
 				int v = adj[u].back();
@@ -50,7 +50,7 @@ std::vector<int> hierholzer(int n, int m, const std::vector<int> &u, const std::
 
 				self(v);
 			}
-		})(u);
+		} (u);
 
 		if (c.size() == 1) {
 			res.push_back(u);
@@ -59,7 +59,7 @@ std::vector<int> hierholzer(int n, int m, const std::vector<int> &u, const std::
 				self(v);
 			}
 		}
-	})(0);
+	} (0);
 
 	return res;
 }
@@ -77,7 +77,7 @@ std::vector<int> hierholzer(int n, int m, const std::vector<int> &u, const std::
 	}
 
 	std::vector<int> res;
-	y_combinator([&](auto &&self, int u) -> void {
+	[&](this auto &&self, int u) -> void {
 		while (!adj[u].empty()) {
 			int v = adj[u].back();
 			adj[u].pop_back();
@@ -85,7 +85,7 @@ std::vector<int> hierholzer(int n, int m, const std::vector<int> &u, const std::
 			self(v);
 		}
 		res.push_back(u);
-	})(0);
+	} (0);
 	std::ranges::reverse(res);
 
 	return res;

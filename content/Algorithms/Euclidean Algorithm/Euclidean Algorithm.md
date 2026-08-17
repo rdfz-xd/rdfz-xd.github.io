@@ -23,9 +23,9 @@ This algorithm solves the problem in $\mathcal{O}(\log a+\log b)$ time and $\mat
 
 ~~~c++
 int gcd(int a, int b) {
-	return y_combinator([&](auto &&self, int a, int b) -> int {
+	return [&](this auto &&self, int a, int b) -> int {
 		return b ? self(b, a % b) : a;
-	})(a, b);
+	} (a, b);
 }
 ~~~
 

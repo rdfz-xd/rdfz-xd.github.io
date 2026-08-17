@@ -88,7 +88,7 @@ std::vector<std::vector<int>> tarjan_scc(int n, int m, const std::vector<int> &u
 			continue;
 		}
 
-		y_combinator([&](auto &&self, int u) -> int {
+		[&](this auto &&self, int u) -> int {
 			int low = in[u] = t++;
 			stk.push_back(u);
 
@@ -114,7 +114,7 @@ std::vector<std::vector<int>> tarjan_scc(int n, int m, const std::vector<int> &u
 			}
 
 			return low;
-		})(i);
+		} (i);
 	}
 
 	return res;

@@ -76,10 +76,7 @@ void build(int n, const std::vector<std::string> &s) {
 
 	std::vector<int> fail(next.size());
 	fail[1] = 0;
-	std::queue<int> q;
-	q.push(1);
-
-	while (!q.empty()) {
+	for (auto q = std::ranges::to<std::queue>(std::views::single(1)); !q.empty(); ) {
 		int o = q.front();
 		q.pop();
 

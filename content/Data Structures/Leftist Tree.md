@@ -70,7 +70,7 @@ This algorithm solves the problem in $\mathcal{O}(\log|S|+\log|T|)$ time and $\m
 
 ```c++
 Node *merge(Node *x, Node *y) {
-	return y_combinator([&](auto &&self, Node *x, Node *y) -> Node * {
+	return [&](this auto &&self, Node *x, Node *y) -> Node * {
 		if (!x) {
 			return y;
 		}
@@ -86,6 +86,6 @@ Node *merge(Node *x, Node *y) {
 		z = self(z, y);
 		x->d = std::min(x->lch ? x->lch->d : 0, x->rch ? x->rch->d : 0) + 1;
 		return x;
-	})(x, y);
+	} (x, y);
 }
 ```

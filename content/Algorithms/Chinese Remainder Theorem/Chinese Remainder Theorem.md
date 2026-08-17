@@ -38,11 +38,9 @@ This algorithm solves the problem in $\mathcal{O}(\sum_{i=0}^{n-1}\log m_i)$ tim
 
 ```c++
 int crt(int n, const std::vector<int> &a, const std::vector<int> &m) {
-	int M = std::accumulate(m.begin(), m.end(), 1, std::multiplies()), x = 0;
-	for (int i = 0; i < n; i++) {
-		x += M / m[i] * exgcd(M / m[i], m[i]).first * a[i];
-	}
-	return x;
+	int M = std::ranges::fold_left(m, 1, std::multiplies());
+	return std::ranges::fold_left(std::views::iota(0, n) | std::views::transform([&](int i) -> int {
+		return M / m[i] * exgcd(M / m[i], m[i]).first * a[i];
+	}), 0, std::plus());
 }
 ```
-

@@ -93,11 +93,9 @@ std::optional<std::vector<bool>> aspvall_plass_tarjan(int n, int m, const std::v
 		return std::nullopt;
 	}
 
-	std::vector<bool> x(n);
-	for (int i = 0; i < n; i++) {
-		x[i] = topo[i << 1 | true] > topo[i << 1 | false];
-	}
-	return x;
+	return std::ranges::to<std::vector>(std::views::iota(0, n) | std::views::transform([&](int i) -> bool {
+		return topo[i << 1 | true] > topo[i << 1 | false];
+	}));
 }
 ```
 

@@ -37,8 +37,7 @@ This algorithm solves the problem in $\mathcal{O}(n\log n)$ time and $\mathcal{O
 
 ```c++
 std::vector<int> manber_myers(int n, const std::string &s) {
-	std::vector<int> sa(n);
-	std::iota(sa.begin(), sa.end(), 0);
+	auto sa = std::ranges::to<std::vector>(std::views::iota(0, n));
 	std::ranges::sort(sa, {}, [&](int i) -> char {
 		return s[i];
 	});
@@ -50,8 +49,7 @@ std::vector<int> manber_myers(int n, const std::string &s) {
 	}
 
 	for (int k = 1; k < n; k *= 2) {
-		std::vector<int> o(k);
-		std::iota(o.begin(), o.end(), n - k);
+		auto o = std::ranges::to<std::vector>(std::views::iota(n - k, n));
 		for (int i : sa) {
 			if (i >= k) {
 				o.push_back(i - k);

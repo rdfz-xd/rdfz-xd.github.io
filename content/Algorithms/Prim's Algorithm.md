@@ -49,11 +49,9 @@ int prim(int n, int m, const std::vector<int> &u, const std::vector<int> &v, con
 
 	std::vector dist(n, inf);
 	dist[0] = 0;
-	std::vector<int> s(n);
-	std::iota(s.begin(), s.end(), 0);
 	int sum = 0;
 
-	while (!s.empty()) {
+	for (auto s = std::ranges::to<std::vector>(std::views::iota(0, n)); !s.empty(); ) {
 		int u = std::ranges::min(s, std::less(), [&](int u) -> int {
 			return dist[u];
 		});
@@ -81,12 +79,10 @@ int prim(int n, int m, const std::vector<int> &u, const std::vector<int> &v, con
 		adj[v[i]].emplace_back(u[i], w[i]);
 	}
 
-	std::priority_queue<std::pair<int, int>, std::vector<std::pair<int, int>>, std::greater<>> q;
-	q.emplace(0, 0);
 	std::vector vis(n, false);
 	int sum = 0;
 
-	while (!q.empty()) {
+	for (auto q = std::ranges::to<std::priority_queue<std::pair<int, int>, std::vector<std::pair<int, int>>, std::greater<>>>(std::views::single(std::pair{0, 0})); !q.empty(); ) {
 		auto [d, u] = q.top();
 		q.pop();
 		if (vis[u]) {

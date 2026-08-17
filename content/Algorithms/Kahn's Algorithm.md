@@ -46,10 +46,9 @@ std::vector<int> kahn(int n, int m, const std::vector<int> &u, const std::vector
 		deg[v[i]]++;
 	}
 
-	std::vector<int> s(n), o;
-	std::iota(s.begin(), s.end(), 0);
-	while (!s.empty()) {
-		int u = std::ranges::min(s, std::less(), [&](int u) -> int {
+	std::vector<int> o;
+	for (auto s = std::ranges::to<std::vector>(std::views::iota(0, n)); !s.empty(); ) {
+		int u = std::ranges::min(s, {}, [&](int u) -> int {
 			return deg[u];
 		});
 		std::erase(s, u);
@@ -77,15 +76,10 @@ std::vector<int> kahn(int n, int m, const std::vector<int> &u, const std::vector
 		deg[v[i]]++;
 	}
 
-	std::queue<int> q;
-	for (int i = 0; i < n; i++) {
-		if (!deg[i]) {
-			q.push(i);
-		}
-	}
-
 	std::vector<int> o;
-	while (!q.empty()) {
+	for (auto q = std::ranges::to<std::queue>(std::views::iota(0, n) | std::views::filter([&](int i) -> bool {
+		return !deg[i];
+	})); !q.empty(); ) {
 		int u = q.front();
 		q.pop();
 
@@ -99,4 +93,3 @@ std::vector<int> kahn(int n, int m, const std::vector<int> &u, const std::vector
 	return o;
 }
 ```
-

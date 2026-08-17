@@ -43,7 +43,7 @@ std::vector<int> tarjan_bridge(int n, int m, const std::vector<int> &u, const st
 			continue;
 		}
 
-		y_combinator([&](auto &&self, int u, int i) -> int {
+		[&](this auto &&self, int u, int i) -> int {
 			int low = in[u] = t++;
 			for (auto [v, j] : adj[u]) {
 				if (j == i) {
@@ -61,7 +61,7 @@ std::vector<int> tarjan_bridge(int n, int m, const std::vector<int> &u, const st
 			}
 
 			return low;
-		})(i, -1);
+		} (i, -1);
 	}
 
 	return res;

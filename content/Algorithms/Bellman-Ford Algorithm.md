@@ -95,12 +95,10 @@ std::vector<int> bellman_ford(int n, int m, const std::vector<int> &u, const std
 
 	std::vector dist(n, inf);
 	dist[s] = 0;
-	std::queue<int> q;
-	q.push(s);
 	std::vector vis(n, false);
 	vis[s] = true;
 
-	while (!q.empty()) {
+	for (auto q = std::ranges::to<std::queue>(std::views::single(s)); !q.empty(); ) {
 		int u = q.front();
 		q.pop();
 		vis[u] = false;

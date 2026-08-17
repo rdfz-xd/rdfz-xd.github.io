@@ -39,7 +39,7 @@ This algorithm solves the problem in **expected** $\mathcal{O}(n\log n)$ time an
 
 ```c++
 void quicksort(int n, std::vector<int> &a) {
-	y_combinator([&](auto &&self, std::vector<int>::iterator l, std::vector<int>::iterator r) -> void {
+	[&](this auto &&self, std::vector<int>::iterator l, std::vector<int>::iterator r) -> void {
 		if (l == r) {
 			return;
 		}
@@ -57,7 +57,7 @@ void quicksort(int n, std::vector<int> &a) {
 			}
 		}
 		self(l, s), self(t, r);
-	})(a.begin(), a.end());
+	} (a.begin(), a.end());
 }
 ```
 
@@ -108,7 +108,7 @@ Based on [[Quicksort#Algorithm 0]], instead of sorting both subarrays recursivel
 
 ```c++
 void quicksort(int n, std::vector<int> &a) {
-	y_combinator([&](auto &&self, std::vector<int>::iterator l, std::vector<int>::iterator r) -> void {
+	[&](this auto &&self, std::vector<int>::iterator l, std::vector<int>::iterator r) -> void {
 		while (l != r) {
 			int x = l[std::uniform_int_distribution<>(0, r - l - 1)(rng)];
 
@@ -131,7 +131,7 @@ void quicksort(int n, std::vector<int> &a) {
 				r = s;
 			}
 		}
-	})(a.begin(), a.end());
+	} (a.begin(), a.end());
 }
 ```
 
@@ -145,7 +145,7 @@ This algorithm solves the problem in $\mathcal{O}(n\log n)$ time and $\mathcal{O
 
 ```c++
 void quicksort(int n, std::vector<int> &a) {
-	auto quickselect = y_combinator([&](auto &&self, std::vector<int>::iterator l, std::vector<int>::iterator r, int k) -> int {
+	auto quickselect = [&](this auto &&self, std::vector<int>::iterator l, std::vector<int>::iterator r, int k) -> int {
 		while (r - l >= 5) {
 			for (int i = 0; i < (r - l) / 5; i++) {
 				std::sort(l + 5 * i, l + 5 * (i + 1));
@@ -177,9 +177,9 @@ void quicksort(int n, std::vector<int> &a) {
 
 		std::sort(l, r);
 		return l[k];
-	});
+	};
 
-	y_combinator([&](auto &&self, std::vector<int>::iterator l, std::vector<int>::iterator r) -> void {
+	[&](this auto &&self, std::vector<int>::iterator l, std::vector<int>::iterator r) -> void {
 		if (l == r) {
 			return;
 		}
@@ -187,7 +187,7 @@ void quicksort(int n, std::vector<int> &a) {
 		int x = quickselect(l, r, (r - l) / 2);
 		self(l, std::lower_bound(l, r, x));
 		self(std::upper_bound(l, r, x), r);
-	})(a.begin(), a.end());
+	} (a.begin(), a.end());
 }
 ```
 

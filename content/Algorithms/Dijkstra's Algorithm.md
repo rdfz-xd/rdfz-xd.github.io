@@ -38,11 +38,8 @@ std::vector<int> dijkstra(int n, int m, const std::vector<int> &u, const std::ve
 
 	std::vector dist(n, inf);
 	dist[s] = 0;
-	std::vector<int> q(n);
-	std::iota(q.begin(), q.end(), 0);
-
-	while (!q.empty()) {
-		int u = std::ranges::min(q, std::less(), [&](int u) -> int {
+	for (auto q = std::ranges::to<std::vector>(std::views::iota(0, n)); !q.empty(); ) {
+		int u = std::ranges::min(q, {}, [&](int u) -> int {
 			return dist[u];
 		});
 		std::erase(q, u);
@@ -51,7 +48,6 @@ std::vector<int> dijkstra(int n, int m, const std::vector<int> &u, const std::ve
 			dist[v] = std::min(dist[v], dist[u] + w);
 		}
 	}
-
 	return dist;
 }
 ~~~
@@ -69,10 +65,7 @@ std::vector<int> dijkstra(int n, int m, const std::vector<int> &u, const std::ve
 
 	std::vector dist(n, inf);
 	dist[s] = 0;
-	std::priority_queue<std::pair<int, int>, std::vector<std::pair<int, int>>, std::greater<>> q;
-	q.emplace(dist[s], s);
-
-	while (!q.empty()) {
+	for (auto q = std::ranges::to<std::priority_queue<std::pair<int, int>, std::vector<std::pair<int, int>>, std::greater<>>>(std::views::single(std::pair{dist[s], s})); !q.empty(); ) {
 		auto [prio, u] = q.top();
 		q.pop();
 		if (prio != dist[u]) {
@@ -86,8 +79,6 @@ std::vector<int> dijkstra(int n, int m, const std::vector<int> &u, const std::ve
 			}
 		}
 	}
-
 	return dist;
 }
 ~~~
-

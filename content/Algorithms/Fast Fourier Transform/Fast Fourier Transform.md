@@ -54,7 +54,7 @@ This algorithm solves the problem in $\mathcal{O}(n\log n)$ time and $\mathcal{O
 ```c++
 void fft(int n, std::vector<std::complex<double>> &a) {
 	std::vector<std::complex<double>> tmp(n);
-	y_combinator([&](auto &&self, std::vector<std::complex<double>>::iterator l, std::vector<std::complex<double>>::iterator r) -> void {
+	[&](this auto &&self, std::vector<std::complex<double>>::iterator l, std::vector<std::complex<double>>::iterator r) -> void {
 		if (l + 1 == r) {
 			return;
 		}
@@ -72,7 +72,7 @@ void fft(int n, std::vector<std::complex<double>> &a) {
 			l[i] = u + v;
 			mid[i] = u - v;
 		}
-	})(a.begin(), a.end());
+	} (a.begin(), a.end());
 }
 ```
 

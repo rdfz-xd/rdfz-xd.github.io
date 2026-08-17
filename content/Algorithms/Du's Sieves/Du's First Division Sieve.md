@@ -45,7 +45,7 @@ std::unordered_map<int, int> du_div(int n, const std::unordered_map<int, int> &s
 	for (int i = n / m; i > 0; i--) {
 		d.push_back(n / i);
 	}
-	d.erase(std::unique(d.begin(), d.end()), d.end());
+	d.erase(std::ranges::unique(d).begin(), d.end());
 
 	std::unordered_map<int, int> sf;
 	for (int i : d) {
