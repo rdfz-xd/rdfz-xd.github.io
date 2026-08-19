@@ -4,7 +4,7 @@ tags: [Computer Science]
 
 The [[Fenwick Tree]] is a data structure that maintains a sequence of $n$ numbers $a_0,a_1,\dots,a_{n-1}$ by maintaining
 $$
-s(i)=\sum_{j=i-\operatorname{lsb}(i)}^{i-1}a_i
+s(i)=\sum_{j=i-\operatorname{lsb}i}^{i-1}a_i
 $$
 This requires $\mathcal{O}(n)$ space.
 
@@ -16,34 +16,34 @@ This requires $\mathcal{O}(n)$ space.
 
 > [!info] Lemma
 > 
-> Let $S_i=\{i-\operatorname{lsb}(i),i-\operatorname{lsb}(i)+1,\dots,i-1\}$, then
+> Let $S_i=\{i-\operatorname{lsb}i,i-\operatorname{lsb}i+1,\dots,i-1\}$, then
 > $$
->\forall i\in\N,S_i\subseteq S_{i+\operatorname{lsb}(i)}
+>\forall i\in\N,S_i\subseteq S_{i+\operatorname{lsb}i}
 > $$
 > 
 > > [!note]- Proof
 > >
-> > Let $i=2^{k+1}s+2^k$, then $\operatorname{lsb}(i)=2^k,i+\operatorname{lsb}(i)=2^{k+1}(s+1)$.
+> > Let $i=2^{k+1}s+2^k$, then $\operatorname{lsb}i=2^k,i+\operatorname{lsb}i=2^{k+1}(s+1)$.
 > >$$
 > > \begin{align}
-> > i+\operatorname{lsb}(i)=2^{k+1}(s+1)&\implies\operatorname{lsb}(i+\operatorname{lsb}(i))\ge2^{k+1}\\
-> > &\iff i+\operatorname{lsb}(i)-\operatorname{lsb}(i+\operatorname{lsb}(i))\le2^{k+1}s\\
-> > &\iff i+\operatorname{lsb}(i)-\operatorname{lsb}(i+\operatorname{lsb}(i))\le i-\operatorname{lsb}(i)\\
+> > i+\operatorname{lsb}i=2^{k+1}(s+1)&\implies\operatorname{lsb}(i+\operatorname{lsb}i)\ge2^{k+1}\\
+> > &\iff i+\operatorname{lsb}i-\operatorname{lsb}(i+\operatorname{lsb}i)\le2^{k+1}s\\
+> > &\iff i+\operatorname{lsb}i-\operatorname{lsb}(i+\operatorname{lsb}i)\le i-\operatorname{lsb}i\\
 > > \end{align}
 > > $$
 
 > [!info] Lemma
 > $$
-> \forall i\in\N,\forall j\in\{i+1,i+2,\dots,i+\operatorname{lsb}(i)-1\},S_i\cap S_j=\empty
+> \forall i\in\N,\forall j\in\{i+1,i+2,\dots,i+\operatorname{lsb}i-1\},S_i\cap S_j=\empty
 > $$
 >
 > > [!note]- Proof
 > >
-> > Let $i=2^{k+1}s+2^k,j=2^{k+1}s+2^k+t$, then $\operatorname{lsb}(j)=\operatorname{lsb}(t)$.
+> > Let $i=2^{k+1}s+2^k,j=2^{k+1}s+2^k+t$, then $\operatorname{lsb}j=\operatorname{lsb}t$.
 > >
 > > $$
 > > \begin{align}
-> > j-\operatorname{lsb}(j)&=2^{k+1}s+2^k+t-\operatorname{lsb}(t)\\
+> > j-\operatorname{lsb}j&=2^{k+1}s+2^k+t-\operatorname{lsb}t\\
 > > &\ge2^{k+1}s+2^k\\
 > > &=i
 > > \end{align}
@@ -65,8 +65,8 @@ void add(int i, int x) {
 
 ### Algorithm
 
-0. Find $\sum_{j=0}^{i-\operatorname{lsb}(i)-1}a_j$ recursively.
-1. $\sum_{j=0}^{i-1}a_j=\sum_{j=0}^{i-\operatorname{lsb}(i)-1}a_j+s(i)$.
+0. Find $\sum_{j=0}^{i-\operatorname{lsb}i-1}a_j$ recursively.
+1. $\sum_{j=0}^{i-1}a_j=\sum_{j=0}^{i-\operatorname{lsb}i-1}a_j+s(i)$.
 
 This algorithm solves the problem in $\mathcal{O}(\log n)$ time and $\mathcal{O}(1)$ space.
 

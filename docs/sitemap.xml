@@ -1,7 +1,4 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml"><url>
-    <loc>https://dxing.blog/A-Journey</loc>
-    <lastmod>2026-07-18T03:59:37.000Z</lastmod>
-  </url><url>
     <loc>https://dxing.blog/Algorithms/Aspvall-Plass-Tarjan-Algorithm</loc>
     <lastmod>2026-08-17T04:24:08.000Z</lastmod>
   </url><url>
@@ -202,6 +199,12 @@
   </url><url>
     <loc>https://dxing.blog/Data-Structures/Wavelet-Tree</loc>
     <lastmod>2026-08-08T09:12:48.000Z</lastmod>
+  </url><url>
+    <loc>https://dxing.blog/Data-Structures/XOR-Basis</loc>
+    <lastmod>2026-08-19T07:11:16.387Z</lastmod>
+  </url><url>
+    <loc>https://dxing.blog/Per-Aspera-Ad-Astra</loc>
+    <lastmod>2026-06-20T10:46:05.059Z</lastmod>
   </url><url>
     <loc>https://dxing.blog/The-World-Through-My-Eyes</loc>
     <lastmod>2026-06-21T08:03:14.000Z</lastmod>

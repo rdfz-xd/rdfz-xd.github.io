@@ -39,12 +39,15 @@ std::vector<int> eratosthenes(int n) {
 
 > [!note]- Proof
 >
-> Let $p_i$ be the $i$-th smallest prime, then
+> Let $p_i$ be the $i$-th smallest prime, then this algorithm solves the problem in
+> $$
+> \mathcal{O}\left(\sum_{i=0}^{\pi(n)-1}\frac{n}{p_i}\right)
+> $$
+> time.
 > $$
 > \begin{align}
-> T(n)&\in\mathcal{O}\left(\sum_{i=1}^{\pi(n)}\frac{n}{p_i}\right)\\
-> &=\mathcal{O}\left(n\sum_{i=2}^{\pi(n)}\frac{1}{i\log i}\right)\\
-> &=\mathcal{O}\left(n\int_{2}^{\pi(n)}\frac{\mathrm{d}x}{x\log x}\right)\\
+> \mathcal{O}\left(\sum_{i=0}^{\pi(n)-1}\frac{n}{p_i}\right)&=\mathcal{O}\left(n\sum_{i=2}^{\pi(n)-1}\frac{1}{i\log i}\right)\\
+> &=\mathcal{O}\left(n\int_{2}^{\pi(n)-1}\frac{\mathrm{d}x}{x\log x}\right)\\
 > &=\mathcal{O}(n\log\log n)
 > \end{align}
 > $$

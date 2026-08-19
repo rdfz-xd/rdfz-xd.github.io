@@ -6,6 +6,12 @@
       <description>Last 10 notes on Dong Xing&#039;s Blog</description>
       <generator>Quartz -- quartz.jzhao.xyz</generator>
       <item>
+    <title>XOR Basis</title>
+    <link>https://dxing.blog/Data-Structures/XOR-Basis</link>
+    <guid>https://dxing.blog/Data-Structures/XOR-Basis</guid>
+    <description><![CDATA[ Let \operatorname{span} S=\left\{\bigoplus_{x\in T}x:T\subseteq S\right\} The XOR Basis is a data structure that maintains a set S\subseteq\{0,1,\dots,2^m-1\} by maintaining a set B such that \operatorname{span}B=\operatorname{span}S\land\forall u,v\in B,u\ne v\Rightarrow\operatorname{msb}u\ne\opera... ]]></description>
+    <pubDate>Wed, 19 Aug 2026 07:11:16 GMT</pubDate>
+  </item><item>
     <title>Aspvall-Plass-Tarjan Algorithm</title>
     <link>https://dxing.blog/Algorithms/Aspvall-Plass-Tarjan-Algorithm</link>
     <guid>https://dxing.blog/Algorithms/Aspvall-Plass-Tarjan-Algorithm</guid>
@@ -58,12 +64,6 @@
     <link>https://dxing.blog/Algorithms/Euclidean-Algorithm/Extended-Euclidean-Algorithm</link>
     <guid>https://dxing.blog/Algorithms/Euclidean-Algorithm/Extended-Euclidean-Algorithm</guid>
     <description><![CDATA[ The Extended Euclidean Algorithm is an algorithm that finds a pair of integers x and y such that ax+by=\gcd\{a,b\} for non-negative integers a and b in \mathcal{O}(\log a+\log b) time and \mathcal{O}(\log a+\log b) space. ]]></description>
-    <pubDate>Mon, 17 Aug 2026 04:24:08 GMT</pubDate>
-  </item><item>
-    <title>Inverse Fast Cantor Expansion</title>
-    <link>https://dxing.blog/Algorithms/Fast-Cantor-Expansion/Inverse-Fast-Cantor-Expansion</link>
-    <guid>https://dxing.blog/Algorithms/Fast-Cantor-Expansion/Inverse-Fast-Cantor-Expansion</guid>
-    <description><![CDATA[ The Inverse Fast Cantor Expansion is an algorithm that finds the k-th lexicographically smallest permutation of \{0,1,\dots,n-1\} in \mathcal{O}(n\log n) time and \mathcal{O}(n) space. ]]></description>
     <pubDate>Mon, 17 Aug 2026 04:24:08 GMT</pubDate>
   </item>
     </channel>
