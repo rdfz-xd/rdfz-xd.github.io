@@ -10,7 +10,7 @@
     <link>https://dxing.blog/Data-Structures/Basis</link>
     <guid>https://dxing.blog/Data-Structures/Basis</guid>
     <description><![CDATA[ The Basis is a data structure that maintains a set S\subseteq\R^n by maintaining a set B such that \operatorname{span}B=\operatorname{span}S\land\forall\mathbf{u},\mathbf{v}\in B,\mathbf{u}\ne\mathbf{v}\Rightarrow f(\mathbf{u})\ne f(\mathbf{v}) where f(\mathbf{x})=\min\{i:i\in\{0,1,\dots,n-1\}\land\... ]]></description>
-    <pubDate>Fri, 21 Aug 2026 04:05:31 GMT</pubDate>
+    <pubDate>Fri, 21 Aug 2026 04:15:05 GMT</pubDate>
   </item><item>
     <title>Euler&#039;s Sieve</title>
     <link>https://dxing.blog/Algorithms/Euler's-Sieve</link>
