@@ -99,3 +99,17 @@ tags: [Album]
 ### May 26, 2026 · Clemson, South Carolina [toc: May 26, 2026 · Clemson, SC]
 
 ![photo](/assets/20260526.JPG)
+
+### August 23, 2026 · Beijing, China [toc: Aug 23, 2026 · Beijing, China]
+
+![photo](/assets/20260823_0.JPG)
+
+![photo](/assets/20260823_1.JPG)
+
+![photo](/assets/20260823_2.JPG)
+
+![photo](/assets/20260823_3.JPG)
+
+![photo](/assets/20260823_4.JPG)
+
+![photo](/assets/20260823_5.JPG)
