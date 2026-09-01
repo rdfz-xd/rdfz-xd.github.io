@@ -45,10 +45,10 @@ void counting_sort(int n, int m, std::vector<int> &a) {
 	for (int i = 0; i < n; i++) {
 		cnt[a[i]]++;
 	}
-	for (int i = 0, j = 0; i < m; i++) {
-		while (cnt[i]--) {
-			a[j++] = i;
-		}
+
+	a.clear();
+	for (int i = 0; i < m; i++) {
+		a.insert(a.end(), cnt[i], i);
 	}
 }
 ```
