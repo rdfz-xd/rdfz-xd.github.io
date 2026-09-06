@@ -96,14 +96,9 @@ int boruvka(int n, int m, const std::vector<int> &u, const std::vector<int> &v, 
 			f[e[i]] = true;
 		}
 	}
-
-	int sum = 0;
-	for (int i = 0; i < m; i++) {
-		if (f[i]) {
-			sum += w[i];
-		}
-	}
-	return sum;
+	return std::ranges::fold_left(std::views::iota(0, m) | std::views::transform([&](int i) -> int {
+		return f[i] * w[i];
+	}), 0, std::plus());
 }
 ~~~
 

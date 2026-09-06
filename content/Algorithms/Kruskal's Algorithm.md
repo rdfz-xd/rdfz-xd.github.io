@@ -46,14 +46,8 @@ int kruskal(int n, int m, const std::vector<int> &u, const std::vector<int> &v, 
 	});
 
 	DSU dsu(n);
-	int sum = 0;
-
-	for (int i : o) {
-		if (dsu.merge(u[i], v[i])) {
-			sum += w[i];
-		}
-	}
-
-	return sum;
+	return std::ranges::fold_left(o | std::views::transform([&](int i) -> int {
+		return dsu.merge(u[i], v[i]) * w[i];
+	}), 0, std::plus());
 }
 ~~~
