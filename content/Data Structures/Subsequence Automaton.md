@@ -47,9 +47,8 @@ void build(const std::string &s) {
 		next[n][c] = -1;
 	}
 	for (int i = n - 1; i >= 0; i--) {
-		for (char c : alphabet) {
-			next[i][c] = c == s[i] ? i + 1 : next[i + 1][c];
-		}
+		next[i] = next[i + 1];
+		next[i][s[i]] = i + 1;
 	}
 }
 ```
