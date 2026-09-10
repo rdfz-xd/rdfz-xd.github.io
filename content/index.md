@@ -2,7 +2,7 @@
 title: Welcome to My Blog!
 ---
 
-I am [Dong Xing](mailto:dong.xing@prismsus.org), a sophomore at [Princeton International School of Mathematics and Science](https://prismsus.org/).
+I am [Dong Xing](mailto:dong.xing@prismsus.org), a junior at [Princeton International School of Mathematics and Science](https://prismsus.org/).
 
 I am interested in [[tags/Computer Science]], especially [[Per Aspera Ad Astra|competitive programming]]. I was a [USA Computing Olympiad](https://usaco.org/) **Finalist** in [2026](https://usaco.org/index.php?page=finalists26).
 
