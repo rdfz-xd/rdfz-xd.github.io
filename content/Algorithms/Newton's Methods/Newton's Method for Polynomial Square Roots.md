@@ -59,7 +59,7 @@ std::vector<std::complex<double>> newton_sqrt(const std::vector<std::complex<dou
 
 		x.resize(2 * m, 0);
 		for (int i = 0; i < 2 * m; i++) {
-			x[i] = (x[i] + y[i]) / (1. * 2);
+			x[i] = .5 * (x[i] + y[i]);
 		}
 	}
 	x.resize(n);

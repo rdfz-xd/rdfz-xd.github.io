@@ -33,12 +33,9 @@ std::vector<std::complex<double>> newton_log(const std::vector<std::complex<doub
 		return {0};
 	}
 
-	std::vector x(n - 1, std::complex(0.));
-	for (int i = 1; i < std::min(n, int(a.size())); i++) {
-		x[i - 1] = 1. * i * a[i];
-	}
-
-	auto y = newton_inv(a, n - 1);
+	auto x = std::ranges::to<std::vector>(std::views::iota(1, n) | std::views::transform([&](int i) -> std::complex<double> {
+		return 1. * i * (i < int(a.size()) ? a[i] : 0);
+	})), y = newton_inv(a, n - 1);
 
 	int m = std::bit_ceil<u32>(2 * n - 3);
 	x.resize(m, 0), y.resize(m, 0);

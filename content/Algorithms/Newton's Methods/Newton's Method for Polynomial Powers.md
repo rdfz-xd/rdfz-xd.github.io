@@ -29,11 +29,9 @@ This algorithm solves the problem in $\mathcal{O}(n\log n)$ time and $\mathcal{O
 std::vector<std::complex<double>> newton_pow(const std::vector<std::complex<double>> &a, std::complex<double> z, int n) {
 	auto c = a[0];
 
-	std::vector x(n, std::complex(0.));
-	for (int i = 0; i < std::min(n, int(a.size())); i++) {
-		x[i] = a[i] / c;
-	}
-	x = newton_log(x, n);
+	auto x = newton_log(std::ranges::to<std::vector>(std::views::iota(0, n) | std::views::transform([&](int i) -> std::complex<double> {
+		return (i < int(a.size()) ? a[i] : 0) / c;
+	})), n);
 	for (int i = 0; i < n; i++) {
 		x[i] *= z;
 	}

@@ -36,14 +36,11 @@ This algorithm solves the problem in $\mathcal{O}((n+m)\log(n+m))$ time and $\ma
 
 ```c++
 std::vector<std::complex<double>> bluestein(int n, const std::vector<std::complex<double>> &a, std::complex<double> z, int m) {
-	std::vector<std::complex<double>> f(n);
-	for (int i = 0; i < n; i++) {
-		f[n - i - 1] = a[i] / std::pow(z, 1. * i * i / 2);
-	}
-	std::vector<std::complex<double>> g(n + m);
-	for (int i = 0; i < n + m; i++) {
-		g[i] = std::pow(z, 1. * i * i / 2);
-	}
+	auto f = std::ranges::to<std::vector>(std::views::iota(0, n) | std::views::transform([&](int i) -> std::complex<double> {
+		return a[i] / std::pow(z, 1. * i * i / 2);
+	}) | std::views::reverse), g = std::ranges::to<std::vector>(std::views::iota(0, n + m) | std::views::transform([&](int i) -> std::complex<double> {
+		return std::pow(z, 1. * i * i / 2);
+	}));
 
 	int k = std::bit_ceil<u32>(2 * n + m - 1);
 	f.resize(k, 0), g.resize(k, 0);
@@ -53,10 +50,8 @@ std::vector<std::complex<double>> bluestein(int n, const std::vector<std::comple
 	}
 	ifft(k, f);
 
-	std::vector<std::complex<double>> res(m);
-	for (int i = 0; i < m; i++) {
-		res[i] = f[n - 1 + i] / std::pow(z, 1. * i * i / 2);
-	}
-	return res;
+	return std::ranges::to<std::vector>(std::views::iota(0, m) | std::views::transform([&](int i) -> std::complex<double> {
+		return f[n - 1 + i] / std::pow(z, 1. * i * i / 2);
+	}));
 }
 ```
