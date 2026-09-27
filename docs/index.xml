@@ -6,6 +6,30 @@
       <description>Last 10 notes on Dong Xing&#039;s Blog</description>
       <generator>Quartz -- quartz.jzhao.xyz</generator>
       <item>
+    <title>Bluestein&#039;s Algorithm</title>
+    <link>https://dxing.blog/Algorithms/Bluestein's-Algorithm</link>
+    <guid>https://dxing.blog/Algorithms/Bluestein's-Algorithm</guid>
+    <description><![CDATA[ Bluestein’s Algorithm is an algorithm that computes f(z^0),f(z^1),\dots,f(z^{m-1}) for a polynomial f(x)=\sum_{i=0}^{n-1}a_ix^i in \mathcal{O}((n+m)\log(n+m)) time and \mathcal{O}(n+m) space. ]]></description>
+    <pubDate>Mon, 21 Sep 2026 14:16:26 GMT</pubDate>
+  </item><item>
+    <title>Newton&#039;s Method for Polynomial Logarithms</title>
+    <link>https://dxing.blog/Algorithms/Newton's-Methods/Newton's-Method-for-Polynomial-Logarithms</link>
+    <guid>https://dxing.blog/Algorithms/Newton's-Methods/Newton's-Method-for-Polynomial-Logarithms</guid>
+    <description><![CDATA[ Newton’s Method for Polynomial Logarithms is an algorithm that computes \log_ef(x)\bmod x^n for a formal power series f(x) such that f(0)=1 in \mathcal{O}(n\log n) time and \mathcal{O}(n) space. ]]></description>
+    <pubDate>Mon, 21 Sep 2026 14:16:26 GMT</pubDate>
+  </item><item>
+    <title>Newton&#039;s Method for Polynomial Powers</title>
+    <link>https://dxing.blog/Algorithms/Newton's-Methods/Newton's-Method-for-Polynomial-Powers</link>
+    <guid>https://dxing.blog/Algorithms/Newton's-Methods/Newton's-Method-for-Polynomial-Powers</guid>
+    <description><![CDATA[ Newton’s Method for Polynomial Powers is an algorithm that computes f(x)^z\bmod x^n for a formal power series f(x) such that f(0)\ne0 in \mathcal{O}(n\log n) time and \mathcal{O}(n) space. ]]></description>
+    <pubDate>Mon, 21 Sep 2026 14:16:26 GMT</pubDate>
+  </item><item>
+    <title>Newton&#039;s Method for Polynomial Square Roots</title>
+    <link>https://dxing.blog/Algorithms/Newton's-Methods/Newton's-Method-for-Polynomial-Square-Roots</link>
+    <guid>https://dxing.blog/Algorithms/Newton's-Methods/Newton's-Method-for-Polynomial-Square-Roots</guid>
+    <description><![CDATA[ Newton’s Method for Polynomial Square Roots is an algorithm that computes \sqrt{f(x)}\bmod x^n for a formal power series f(x) such that f(0)\ne0 in \mathcal{O}(n\log n) time and \mathcal{O}(n) space. ]]></description>
+    <pubDate>Mon, 21 Sep 2026 14:16:26 GMT</pubDate>
+  </item><item>
     <title>Welcome to My Blog!</title>
     <link>https://dxing.blog/</link>
     <guid>https://dxing.blog/</guid>
@@ -41,30 +65,6 @@
     <guid>https://dxing.blog/Algorithms/Insertion-Sort</guid>
     <description><![CDATA[ Insertion Sort is an algorithm that sorts a sequence of n numbers a_0,a_1,\dots,a_{n-1} in non-decreasing order in \mathcal{O}(n^2) time and \mathcal{O}(1) space. ]]></description>
     <pubDate>Mon, 31 Aug 2026 14:01:08 GMT</pubDate>
-  </item><item>
-    <title>Du&#039;s Second Division Sieve</title>
-    <link>https://dxing.blog/Algorithms/Du's-Sieves/Du's-Second-Division-Sieve</link>
-    <guid>https://dxing.blog/Algorithms/Du's-Sieves/Du's-Second-Division-Sieve</guid>
-    <description><![CDATA[ Let S_f(n)=\sum_{k=1}^nf(k). ]]></description>
-    <pubDate>Thu, 27 Aug 2026 05:04:11 GMT</pubDate>
-  </item><item>
-    <title>Du&#039;s Second Multiplication Sieve</title>
-    <link>https://dxing.blog/Algorithms/Du's-Sieves/Du's-Second-Multiplication-Sieve</link>
-    <guid>https://dxing.blog/Algorithms/Du's-Sieves/Du's-Second-Multiplication-Sieve</guid>
-    <description><![CDATA[ Let S_f(n)=\sum_{k=1}^nf(k). ]]></description>
-    <pubDate>Thu, 27 Aug 2026 05:04:11 GMT</pubDate>
-  </item><item>
-    <title>The World Through My Eyes</title>
-    <link>https://dxing.blog/The-World-Through-My-Eyes</link>
-    <guid>https://dxing.blog/The-World-Through-My-Eyes</guid>
-    <description><![CDATA[ Skeeter Davis - The End of the World August 25, 2025 · New York, New York August 26, 2025 · Cambridge, Massachusetts September 6, 2025 · Princeton, New Jersey September 8, 2025 · Princeton, New Jersey September 23, 2025 · Princeton, New Jersey September 29, 2025 · Princeton, New Jersey October 6, 20... ]]></description>
-    <pubDate>Mon, 24 Aug 2026 12:29:11 GMT</pubDate>
-  </item><item>
-    <title>Basis</title>
-    <link>https://dxing.blog/Data-Structures/Basis</link>
-    <guid>https://dxing.blog/Data-Structures/Basis</guid>
-    <description><![CDATA[ The Basis is a data structure that maintains a set S\subseteq\R^n by maintaining a set B such that \operatorname{span}B=\operatorname{span}S\land\forall\mathbf{u},\mathbf{v}\in B,\mathbf{u}\ne\mathbf{v}\Rightarrow f(\mathbf{u})\ne f(\mathbf{v}) where f(\mathbf{x})=\min\{i:i\in\{0,1,\dots,n-1\}\land\... ]]></description>
-    <pubDate>Fri, 21 Aug 2026 04:15:05 GMT</pubDate>
   </item>
     </channel>
   </rss>

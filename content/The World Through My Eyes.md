@@ -113,3 +113,9 @@ tags: [Album]
 ![photo](/assets/20260823_4.JPG)
 
 ![photo](/assets/20260823_5.JPG)
+
+### September 26, 2026 · Princeton, New Jersey [toc: Sept 26, 2026 · Princeton, NJ]
+
+![photo](/assets/20260926_0.JPG)
+
+![photo](/assets/20260926_1.JPG)
