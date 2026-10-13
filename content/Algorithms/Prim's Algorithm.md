@@ -82,7 +82,7 @@ int prim(int n, int m, const std::vector<int> &u, const std::vector<int> &v, con
 	std::vector vis(n, false);
 	int sum = 0;
 
-	for (auto q = std::ranges::to<std::priority_queue<std::pair<int, int>, std::vector<std::pair<int, int>>, std::greater<>>>(std::views::single(std::pair{0, 0})); !q.empty(); ) {
+	for (auto q = std::ranges::to<std::priority_queue<std::pair<int, int>, std::vector<std::pair<int, int>>, std::greater<>>>(std::array{std::pair{0, 0}}); !q.empty(); ) {
 		auto [d, u] = q.top();
 		q.pop();
 		if (vis[u]) {

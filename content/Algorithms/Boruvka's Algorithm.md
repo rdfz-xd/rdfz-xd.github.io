@@ -65,7 +65,7 @@ int boruvka(int n, int m, const std::vector<int> &u, const std::vector<int> &v, 
 			}
 
 			bel[i] = cnt;
-			for (auto q = std::ranges::to<std::queue>(std::views::single(i)); !q.empty(); ) {
+			for (auto q = std::ranges::to<std::queue>(std::array{i}); !q.empty(); ) {
 				int u = q.front();
 				q.pop();
 

@@ -65,7 +65,7 @@ std::vector<int> dijkstra(int n, int m, const std::vector<int> &u, const std::ve
 
 	std::vector dist(n, inf);
 	dist[s] = 0;
-	for (auto q = std::ranges::to<std::priority_queue<std::pair<int, int>, std::vector<std::pair<int, int>>, std::greater<>>>(std::views::single(std::pair{dist[s], s})); !q.empty(); ) {
+	for (auto q = std::ranges::to<std::priority_queue<std::pair<int, int>, std::vector<std::pair<int, int>>, std::greater<>>>(std::array{std::pair{dist[s], s}}); !q.empty(); ) {
 		auto [prio, u] = q.top();
 		q.pop();
 		if (prio != dist[u]) {
