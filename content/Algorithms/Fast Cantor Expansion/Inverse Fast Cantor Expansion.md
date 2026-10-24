@@ -51,15 +51,25 @@ std::vector<int> ifce(int n, int k) {
 		fac[i] = i * fac[i - 1];
 	}
 
-	FenwickTree fen(n, 1);
-	std::vector<int> p(n);
+	Fenwick<int> fen(n, 1);
 
+	auto select = [&](int k) -> int {
+		int x = 0, sum = 0;
+		for (int i = std::__lg(n); i >= 0; i--) {
+			if (x + (1 << i) <= n && sum + fen.s[x + (1 << i) - 1].sum() <= k) {
+				x += 1 << i;
+				sum += fen.s[x - 1].sum();
+			}
+		}
+		return x;
+	};
+
+	std::vector<int> p(n);
 	for (int i = 0; i < n; i++) {
-		p[i] = fen.select(k / fac[n - i - 1]);
+		p[i] = select(k / fac[n - i - 1]);
 		fen.add(p[i], -1);
 		k %= fac[n - i - 1];
 	}
-
 	return p;
 }
 ```

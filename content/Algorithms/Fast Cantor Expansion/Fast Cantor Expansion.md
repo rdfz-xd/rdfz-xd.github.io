@@ -45,7 +45,7 @@ int fce(int n, const std::vector<int> &p) {
 		fac[i] = i * fac[i - 1];
 	}
 
-	FenwickTree<int> fen(n);
+	Fenwick<int> fen(n);
 	int rank = 0;
 
 	for (int i = n - 1; i >= 0; i--) {
