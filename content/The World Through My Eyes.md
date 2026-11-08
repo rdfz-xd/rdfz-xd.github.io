@@ -119,3 +119,7 @@ tags: [Album]
 ![photo](/assets/20260926_0.JPG)
 
 ![photo](/assets/20260926_1.JPG)
+
+### November 7, 2026 · Lawrenceville, New Jersey [toc: Nov 7, 2026 · Lawrenceville, NJ]
+
+![photo](/assets/20261107.jpg)

@@ -6,6 +6,18 @@
       <description>Last 10 notes on Dong Xing&#039;s Blog</description>
       <generator>Quartz -- quartz.jzhao.xyz</generator>
       <item>
+    <title>Fast Cantor Expansion</title>
+    <link>https://dxing.blog/Algorithms/Fast-Cantor-Expansion/Fast-Cantor-Expansion</link>
+    <guid>https://dxing.blog/Algorithms/Fast-Cantor-Expansion/Fast-Cantor-Expansion</guid>
+    <description><![CDATA[ The Fast Cantor Expansion is an algorithm that finds the lexicographical rank of a permutation p_0,p_1,\dots,p_{n-1} of \{0,1,\dots,n-1\} among all permutations of \{0,1,\dots,n-1\} in \mathcal{O}(n\log n) time and \mathcal{O}(n) space. ]]></description>
+    <pubDate>Sat, 24 Oct 2026 14:37:55 GMT</pubDate>
+  </item><item>
+    <title>Inverse Fast Cantor Expansion</title>
+    <link>https://dxing.blog/Algorithms/Fast-Cantor-Expansion/Inverse-Fast-Cantor-Expansion</link>
+    <guid>https://dxing.blog/Algorithms/Fast-Cantor-Expansion/Inverse-Fast-Cantor-Expansion</guid>
+    <description><![CDATA[ The Inverse Fast Cantor Expansion is an algorithm that finds the k-th lexicographically smallest permutation of \{0,1,\dots,n-1\} in \mathcal{O}(n\log n) time and \mathcal{O}(n) space. ]]></description>
+    <pubDate>Sat, 24 Oct 2026 14:37:55 GMT</pubDate>
+  </item><item>
     <title>Bellman-Ford Algorithm</title>
     <link>https://dxing.blog/Algorithms/Bellman-Ford-Algorithm</link>
     <guid>https://dxing.blog/Algorithms/Bellman-Ford-Algorithm</guid>
@@ -52,18 +64,6 @@
     <link>https://dxing.blog/Algorithms/Newton's-Methods/Newton's-Method-for-Polynomial-Logarithms</link>
     <guid>https://dxing.blog/Algorithms/Newton's-Methods/Newton's-Method-for-Polynomial-Logarithms</guid>
     <description><![CDATA[ Newton’s Method for Polynomial Logarithms is an algorithm that computes \log_ef(x)\bmod x^n for a formal power series f(x) such that f(0)=1 in \mathcal{O}(n\log n) time and \mathcal{O}(n) space. ]]></description>
-    <pubDate>Mon, 21 Sep 2026 14:16:26 GMT</pubDate>
-  </item><item>
-    <title>Newton&#039;s Method for Polynomial Powers</title>
-    <link>https://dxing.blog/Algorithms/Newton's-Methods/Newton's-Method-for-Polynomial-Powers</link>
-    <guid>https://dxing.blog/Algorithms/Newton's-Methods/Newton's-Method-for-Polynomial-Powers</guid>
-    <description><![CDATA[ Newton’s Method for Polynomial Powers is an algorithm that computes f(x)^z\bmod x^n for a formal power series f(x) such that f(0)\ne0 in \mathcal{O}(n\log n) time and \mathcal{O}(n) space. ]]></description>
-    <pubDate>Mon, 21 Sep 2026 14:16:26 GMT</pubDate>
-  </item><item>
-    <title>Newton&#039;s Method for Polynomial Square Roots</title>
-    <link>https://dxing.blog/Algorithms/Newton's-Methods/Newton's-Method-for-Polynomial-Square-Roots</link>
-    <guid>https://dxing.blog/Algorithms/Newton's-Methods/Newton's-Method-for-Polynomial-Square-Roots</guid>
-    <description><![CDATA[ Newton’s Method for Polynomial Square Roots is an algorithm that computes \sqrt{f(x)}\bmod x^n for a formal power series f(x) such that f(0)\ne0 in \mathcal{O}(n\log n) time and \mathcal{O}(n) space. ]]></description>
     <pubDate>Mon, 21 Sep 2026 14:16:26 GMT</pubDate>
   </item>
     </channel>
