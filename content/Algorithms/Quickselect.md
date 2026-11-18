@@ -40,8 +40,7 @@ This algorithm solves the problem in **expected** $\mathcal{O}(n)$ time and $\ma
 
 ```c++
 int quickselect(int n, std::vector<int> a, int k) {
-	auto l = a.begin(), r = a.end();
-	while (true) {
+	for (auto l = a.begin(), r = a.end(); ; ) {
 		int x = l[std::uniform_int_distribution<>(0, r - l - 1)(rng)];
 
 		auto s = l, t = r;
